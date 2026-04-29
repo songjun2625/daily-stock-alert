@@ -106,13 +106,20 @@ def _fetch_yfinance(ticker: str, period: str = "1y") -> Optional[pd.DataFrame]:
 def fetch_history(ticker: str, market: str = "us", period_days: int = 365) -> Optional[pd.DataFrame]:
     """가격 시계열 — yfinance 1.3.0+ 우선, 실패 시 stooq 폴백.
 
-    yfinance 1.3.0+ 는 curl_cffi 자동 사용으로 Cloudflare 우회. 한국 IP 에서
-    stooq 가 connection timeout 자주 발생하므로 yfinance 가 더 안정적.
+    KR 종목(6자리)은 yfinance에서 '.KS' suffix 필수 → 자동으로 붙여줌.
     """
     period = "2y" if period_days > 250 else "1y"
-    df = _fetch_yfinance(ticker, period=period)
+    yf_ticker = ticker
+    if market == "kr" and ticker.isdigit() and "." not in ticker:
+        yf_ticker = f"{ticker}.KS"   # KOSPI 종목/ETF
+    df = _fetch_yfinance(yf_ticker, period=period)
     if df is not None and not df.empty:
         return df
+    # KOSPI에서 못 찾으면 KOSDAQ도 시도
+    if market == "kr" and yf_ticker.endswith(".KS"):
+        df = _fetch_yfinance(yf_ticker.replace(".KS", ".KQ"), period=period)
+        if df is not None and not df.empty:
+            return df
     return _fetch_stooq(ticker, market=market, period_days=period_days)
 
 

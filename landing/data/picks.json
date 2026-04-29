@@ -7,21 +7,21 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.95,
-      "label": "안정",
-      "light": "🟢",
-      "summary": "공포지수 낮아 변동성 안정"
+      "value": 18.21,
+      "label": "주의",
+      "light": "🟡",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
   },
   "kr": {
     "picks": [
       {
         "ticker": "207940",
-        "name": "207940",
+        "name": "삼성바이오로직스",
         "price": 1473000,
         "change_pct_1d": -2.0611702127659615,
         "market_cap": 0.0,
-        "rsi": 35.985501364565536,
+        "rsi": 35.98550136456552,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -34,7 +34,7 @@
         ],
         "narrative": {
           "one_liner": "RSI 36 저평가 구간, 기술적 신호 다수",
-          "thesis": "207940(207940)는 5일 평균 거래량의 평이한 거래량으로 RSI 36 저평가 구간에 진입한 상태입니다. ",
+          "thesis": "삼성바이오로직스(207940)는 5일 평균 거래량의 평이한 거래량으로 RSI 36 저평가 구간에 진입한 상태입니다. ",
           "signals": [
             {
               "label": "거래량 5일평균 2배+",
@@ -82,47 +82,183 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "352820",
+        "name": "하이브",
+        "price": 252500,
+        "change_pct_1d": 1.6096579476861272,
+        "market_cap": 0.0,
+        "rsi": 37.55763008651503,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 25.0,
+        "reasons": [
+          "RSI 38(저평가 반등 후보)"
+        ],
+        "narrative": {
+          "one_liner": "RSI 38 저평가 구간, 기술적 신호 다수",
+          "thesis": "하이브(352820)는 5일 평균 거래량의 평이한 거래량으로 RSI 38 저평가 구간에 진입한 상태입니다. ",
+          "signals": [
+            {
+              "label": "거래량 5일평균 2배+",
+              "value": "—",
+              "ok": false,
+              "explain": "큰손 자금이 갑자기 몰린 신호."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "38",
+              "ok": true,
+              "explain": "30~40이면 저평가 반등 후보."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기선이 중기선 위로 — 상승 시작."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "RSI 30~40",
+              "points": 25
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "105560",
+        "name": "KB금융",
+        "price": 160600,
+        "change_pct_1d": 1.133501259445846,
+        "market_cap": 0.0,
+        "rsi": 58.88893896190813,
+        "volume_spike": false,
+        "macd_golden_cross": true,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 15.0,
+        "reasons": [
+          "MACD 골든크로스"
+        ],
+        "narrative": {
+          "one_liner": "RSI 59 저평가 구간, 기술적 신호 다수",
+          "thesis": "KB금융(105560)는 5일 평균 거래량의 평이한 거래량으로 RSI 59 저평가 구간에 진입한 상태입니다. MACD 골든크로스로 단기 추세 전환 신호가 켜졌습니다.",
+          "signals": [
+            {
+              "label": "거래량 5일평균 2배+",
+              "value": "—",
+              "ok": false,
+              "explain": "큰손 자금이 갑자기 몰린 신호."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "59",
+              "ok": false,
+              "explain": "30~40이면 저평가 반등 후보."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "✓",
+              "ok": true,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기선이 중기선 위로 — 상승 시작."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "MACD 골든크로스",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        }
       }
     ],
-    "updated_at_iso": "2026-04-30T00:00:00.129915+09:00",
-    "updated_at_kst": "2026.04.30 (목) 00:00 KST"
+    "updated_at_iso": "2026-04-30T00:22:50.961690+09:00",
+    "updated_at_kst": "2026.04.30 (목) 00:22 KST"
   },
-  "updated_at_iso": "2026-04-30T00:00:13.133372+09:00",
-  "updated_at_kst": "2026.04.30 (목) 00:00 KST",
+  "updated_at_iso": "2026-04-30T00:22:58.092179+09:00",
+  "updated_at_kst": "2026.04.30 (목) 00:22 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 136.23500061035156,
-        "price_krw": 202140,
-        "change_pct_1d": -3.502615329344738,
-        "market_cap": 326660620288.0,
+        "price": 136.69920349121094,
+        "price_krw": 202955,
+        "change_pct_1d": -3.1738131583987306,
+        "market_cap": 327689469952.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 212.92189,
+        "pe_ratio": 213.59251,
         "sector": "Technology",
-        "avg_volume": 47175842.75,
-        "rsi": 42.395174751314904,
-        "drawdown_52w": 0.34243167570940336,
+        "avg_volume": 47247560.85,
+        "rsi": 42.772190013974765,
+        "drawdown_52w": 0.3401910979641101,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 8.6,
         "score": 135.63,
         "reasons": [
-          "RSI 42(과매도 반등 후보)",
+          "RSI 43(과매도 반등 후보)",
           "52주 고점 대비 -34%",
           "영업이익률 41%",
           "어닝 서프라이즈 +8.6%"
         ],
-        "entry_low": 131.93,
-        "entry_high": 139.31,
-        "target": 152.84,
-        "stoploss": 127.01,
+        "entry_low": 132.39,
+        "entry_high": 139.77,
+        "target": 153.31,
+        "stoploss": 127.47,
         "narrative": {
-          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 42 반등 신호.",
-          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 43 반등 신호.",
+          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -138,7 +274,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "42",
+              "value": "43",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -202,17 +338,17 @@
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 425.19500732421875,
-        "price_krw": 630887,
-        "change_pct_1d": -0.9446692313992422,
-        "market_cap": 3160172658688.0,
+        "price": 424.7300109863281,
+        "price_krw": 630588,
+        "change_pct_1d": -1.0529968581646787,
+        "market_cap": 3156623753216.0,
         "operating_margin": 0.47094002,
         "revenue_growth": 0.167,
-        "pe_ratio": 26.624296,
+        "pe_ratio": 26.594395,
         "sector": "Technology",
-        "avg_volume": 30799890.95,
-        "rsi": 62.30120977386321,
-        "drawdown_52w": 0.21234686521425303,
+        "avg_volume": 30851697.75,
+        "rsi": 61.964255524354115,
+        "drawdown_52w": 0.21320833734241756,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -223,10 +359,10 @@
           "영업이익률 47%",
           "어닝 서프라이즈 +5.7%"
         ],
-        "entry_low": 417.44,
-        "entry_high": 430.73,
-        "target": 455.1,
-        "stoploss": 408.58,
+        "entry_low": 416.98,
+        "entry_high": 430.27,
+        "target": 454.63,
+        "stoploss": 408.12,
         "narrative": {
           "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.7% / RSI 62 반등 신호.",
           "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 62로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -305,34 +441,34 @@
       {
         "ticker": "GE",
         "name": "GE Aerospace",
-        "price": 281.4049987792969,
-        "price_krw": 417537,
-        "change_pct_1d": -2.6953710576450907,
-        "market_cap": 294020284416.0,
+        "price": 281.69000244140625,
+        "price_krw": 418220,
+        "change_pct_1d": -2.5968220776729334,
+        "market_cap": 294318047232.0,
         "operating_margin": 0.20207001,
         "revenue_growth": 0.247,
-        "pe_ratio": 35.00062,
+        "pe_ratio": 35.03607,
         "sector": "Industrials",
-        "avg_volume": 6376031.65,
-        "rsi": 41.602356140780806,
-        "drawdown_52w": 0.1848934947526808,
+        "avg_volume": 6392863.25,
+        "rsi": 41.7338351968347,
+        "drawdown_52w": 0.18406796450264123,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 5.26,
+        "earnings_surprise_pct": 16.31,
         "score": 109.31,
         "reasons": [
           "RSI 42(과매도 반등 후보)",
           "52주 고점 대비 -18%",
           "영업이익률 20%",
-          "어닝 서프라이즈 +5.3%"
+          "어닝 서프라이즈 +16.3%"
         ],
-        "entry_low": 273.95,
-        "entry_high": 286.73,
-        "target": 310.16,
-        "stoploss": 265.43,
+        "entry_low": 274.24,
+        "entry_high": 287.01,
+        "target": 310.44,
+        "stoploss": 265.72,
         "narrative": {
-          "one_liner": "Industrials 영업이익률 20%, 어닝 서프라이즈 +5.3% / RSI 42 반등 신호.",
+          "one_liner": "Industrials 영업이익률 20%, 어닝 서프라이즈 +16.3% / RSI 42 반등 신호.",
           "thesis": "GE Aerospace는 매출 성장률 25% · 영업이익률 20%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 18% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
@@ -379,7 +515,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+5.3%",
+              "value": "+16.3%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -412,17 +548,203 @@
       }
     ],
     "traffic_light": {
-      "vix": 17.95,
+      "vix": 18.21,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T00:00:05.608074+09:00",
-    "updated_at_kst": "2026.04.30 (목) 00:00 KST"
+    "updated_at_iso": "2026-04-30T00:22:56.537560+09:00",
+    "updated_at_kst": "2026.04.30 (목) 00:22 KST"
   },
   "futures": {
-    "picks": [],
-    "updated_at_iso": "2026-04-30T00:00:13.133372+09:00",
-    "updated_at_kst": "2026.04.30 (목) 00:00 KST"
+    "picks": [
+      {
+        "ticker": "252670",
+        "name": "KODEX 200선물인버스2X",
+        "market": "kr",
+        "leveraged": true,
+        "price": 166.0,
+        "price_krw": 166,
+        "change_pct_1d": -1.7751479289940808,
+        "rsi": 30.371747915323198,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "drawdown_52w": 0.9233256351039261,
+        "score": 20.0,
+        "reasons": [
+          "RSI 30",
+          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의"
+        ],
+        "entry_low": 160.75,
+        "entry_high": 170.2,
+        "target": 181.75,
+        "stoploss": 155.5,
+        "hold_days_max": 5,
+        "position_size_pct": 15.0,
+        "narrative": {
+          "one_liner": "레버리지 ETF (변동 2~3배), RSI 30 반등, 거래량 급증",
+          "thesis": "KODEX 200선물인버스2X(252670)는 RSI 30에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
+          "signals": [
+            {
+              "label": "RSI",
+              "value": "30",
+              "ok": true,
+              "explain": "30~50 구간이 스윙 진입에 적합."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 모두 상승 시작."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 2배+ 거래."
+            }
+          ],
+          "risk": "⚠️ 레버리지 상품 — 손실이 2~3배로 확대됩니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 15.0% 이하로 제한하세요.",
+          "score_breakdown": [
+            {
+              "name": "RSI 30~50",
+              "points": 25
+            },
+            {
+              "name": "레버리지 페널티",
+              "points": -5
+            }
+          ],
+          "hold_days": 5,
+          "position_size_pct": 15.0,
+          "leveraged": true
+        }
+      },
+      {
+        "ticker": "229200",
+        "name": "KODEX 코스닥150",
+        "market": "kr",
+        "leveraged": false,
+        "price": 20490.0,
+        "price_krw": 20490,
+        "change_pct_1d": 0.3673769287288797,
+        "rsi": 60.70090624711459,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "drawdown_52w": 0.02890995260663507,
+        "score": 0.0,
+        "reasons": [],
+        "entry_low": 20258.21,
+        "entry_high": 20675.43,
+        "target": 21741.65,
+        "stoploss": 19794.64,
+        "hold_days_max": 5,
+        "position_size_pct": 20.0,
+        "narrative": {
+          "one_liner": "ETF, RSI 61 추세, 거래량 급증",
+          "thesis": "KODEX 코스닥150(229200)는 RSI 61에 위치한 ETF입니다. ",
+          "signals": [
+            {
+              "label": "RSI",
+              "value": "61",
+              "ok": false,
+              "explain": "30~50 구간이 스윙 진입에 적합."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 모두 상승 시작."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 2배+ 거래."
+            }
+          ],
+          "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
+          "score_breakdown": [],
+          "hold_days": 5,
+          "position_size_pct": 20.0,
+          "leveraged": false
+        }
+      },
+      {
+        "ticker": "SPY",
+        "name": "SPDR S&P 500",
+        "market": "us",
+        "leveraged": false,
+        "price": 710.719970703125,
+        "price_krw": 1055192,
+        "change_pct_1d": -0.13629975620756962,
+        "rsi": 66.3461146078917,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "drawdown_52w": 0.006222314013968181,
+        "score": 33.65388539210829,
+        "reasons": [
+          "진입 신호 미발생 — 추세 강세 자산"
+        ],
+        "entry_low": 707.48,
+        "entry_high": 713.31,
+        "target": 728.22,
+        "stoploss": 701.0,
+        "hold_days_max": 5,
+        "position_size_pct": 20.0,
+        "narrative": {
+          "one_liner": "선물·ETF, RSI 66 추세, 거래량 급증",
+          "thesis": "SPDR S&P 500(SPY)는 RSI 66에 위치한 선물·ETF입니다. ",
+          "signals": [
+            {
+              "label": "RSI",
+              "value": "66",
+              "ok": false,
+              "explain": "30~50 구간이 스윙 진입에 적합."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 모두 상승 시작."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 2배+ 거래."
+            }
+          ],
+          "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
+          "score_breakdown": [],
+          "hold_days": 5,
+          "position_size_pct": 20.0,
+          "leveraged": false
+        }
+      }
+    ],
+    "updated_at_iso": "2026-04-30T00:22:58.092179+09:00",
+    "updated_at_kst": "2026.04.30 (목) 00:22 KST"
   }
 }

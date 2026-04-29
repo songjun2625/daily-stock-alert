@@ -109,6 +109,7 @@ def _score(c: FuturesCandidate) -> float:
 def screen_futures(universe: Iterable[dict] = DEFAULT_FUTURES_UNIVERSE) -> list[FuturesCandidate]:
     fx = ds.usd_krw()
     cands: list[FuturesCandidate] = []
+    fallback: list[FuturesCandidate] = []
     for entry in universe:
         ticker, name, market, lev = entry["ticker"], entry["name"], entry["market"], entry["leveraged"]
         hist = ds.fetch_history(ticker, market=market, period_days=200)
@@ -126,9 +127,7 @@ def screen_futures(universe: Iterable[dict] = DEFAULT_FUTURES_UNIVERSE) -> list[
         price = float(close.iloc[-1])
         chg_1d = float((close.iloc[-1] / close.iloc[-2] - 1) * 100) if len(close) >= 2 else 0.0
 
-        # 게이트 완화: RSI 또는 진입 신호 중 1개만 충족해도 후보.
-        if not (30 <= rsi_v <= 65 or gx or ma_up or vspike):
-            continue
+        gate_passed = bool(30 <= rsi_v <= 65 or gx or ma_up or vspike)
 
         reasons = []
         if 30 <= rsi_v <= 50: reasons.append(f"RSI {rsi_v:.0f}")
@@ -150,9 +149,18 @@ def screen_futures(universe: Iterable[dict] = DEFAULT_FUTURES_UNIVERSE) -> list[
             position_size_pct=15.0 if lev else 20.0,
         )
         c.score = _score(c)
-        cands.append(c)
+        if gate_passed:
+            cands.append(c)
+        else:
+            if c.score == 0:
+                c.score = max(0, 50 - abs(rsi_v - 50))
+                c.reasons.append("진입 신호 미발생 — 추세 강세 자산")
+            fallback.append(c)
 
     cands.sort(key=lambda x: x.score, reverse=True)
+    fallback.sort(key=lambda x: x.score, reverse=True)
+    if len(cands) < 3:
+        cands.extend(fallback[: 3 - len(cands)])
     return cands[:5]
 
 

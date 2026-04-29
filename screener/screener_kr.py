@@ -35,8 +35,9 @@ from .config import KR_THRESH, TOP_N_KR, KST
 
 log = logging.getLogger(__name__)
 
-# 1차 유니버스: 코스피200 + 코스닥150 — 운영 시 시총·유동성 필터로 자동 갱신.
+# 1차 유니버스: 코스피200 + 코스닥150 핵심 — 운영 시 시총·유동성 필터로 자동 갱신.
 DEFAULT_KR_UNIVERSE = [
+    # 코스피 대형주
     "005930",  # 삼성전자
     "000660",  # SK하이닉스
     "051910",  # LG화학
@@ -45,13 +46,29 @@ DEFAULT_KR_UNIVERSE = [
     "035720",  # 카카오
     "207940",  # 삼성바이오로직스
     "068270",  # 셀트리온
-    "042700",  # 한미반도체
     "373220",  # LG에너지솔루션
+    "012450",  # 한화에어로스페이스
+    "000270",  # 기아
+    "105560",  # KB금융
+    "055550",  # 신한지주
+    "017670",  # SK텔레콤
+    "015760",  # 한국전력
+    "009150",  # 삼성전기
+    "006400",  # 삼성SDI
+    "032830",  # 삼성생명
+    "066570",  # LG전자
+    "003670",  # 포스코홀딩스
+    # 코스피 중형주 / 코스닥
+    "042700",  # 한미반도체
     "247540",  # 에코프로비엠
     "086520",  # 에코프로
     "028300",  # HLB
     "066970",  # 엘앤에프
-    "012450",  # 한화에어로스페이스
+    "196170",  # 알테오젠
+    "091990",  # 셀트리온헬스케어
+    "263750",  # 펄어비스
+    "041510",  # SM
+    "352820",  # 하이브
 ]
 
 
@@ -89,7 +106,24 @@ def _fetch_history(ticker: str) -> pd.DataFrame:
     return df if df is not None else pd.DataFrame()
 
 
+# KR 종목명 하드코딩 맵 — FDR StockListing이 GH Actions에서 실패 시 fallback.
+KR_TICKER_NAMES: dict[str, str] = {
+    "005930": "삼성전자",      "000660": "SK하이닉스",      "051910": "LG화학",
+    "005380": "현대차",        "035420": "NAVER",          "035720": "카카오",
+    "207940": "삼성바이오로직스", "068270": "셀트리온",       "042700": "한미반도체",
+    "373220": "LG에너지솔루션",  "247540": "에코프로비엠",   "086520": "에코프로",
+    "028300": "HLB",           "066970": "엘앤에프",        "012450": "한화에어로스페이스",
+    "000270": "기아",          "105560": "KB금융",         "055550": "신한지주",
+    "017670": "SK텔레콤",       "015760": "한국전력",       "009150": "삼성전기",
+    "006400": "삼성SDI",       "032830": "삼성생명",        "066570": "LG전자",
+    "003670": "포스코홀딩스",   "196170": "알테오젠",        "091990": "셀트리온헬스케어",
+    "263750": "펄어비스",       "041510": "SM",             "352820": "하이브",
+}
+
+
 def _name_of(ticker: str) -> str:
+    if ticker in KR_TICKER_NAMES:
+        return KR_TICKER_NAMES[ticker]
     if fdr is None:
         return ticker
     try:
@@ -137,6 +171,7 @@ def _score(c: KRCandidate) -> float:
 def screen_kr(universe: Iterable[str] = DEFAULT_KR_UNIVERSE,
               top_n: int = TOP_N_KR) -> list[KRCandidate]:
     cands: list[KRCandidate] = []
+    fallback: list[KRCandidate] = []   # 게이트 미통과 종목도 점수로 정렬해 백업으로 보유
     for ticker in universe:
         hist = _fetch_history(ticker)
         if hist.empty or len(hist) < 60:
@@ -150,9 +185,8 @@ def screen_kr(universe: Iterable[str] = DEFAULT_KR_UNIVERSE,
         ma_up = ind.is_ma_aligned_up(close)
         vspike = ind.volume_spike(vol, multiplier=KR_THRESH.volume_multiplier_min)
 
-        # 강세장에서도 상위 3개 노출되도록 게이트 완화: 모든 종목 후보로 두고 점수로 정렬.
-        if not (vspike or (KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high) or gx or ma_up):
-            continue
+        # 게이트 통과 여부 기록 — 통과 못 해도 fallback에 모아 항상 top N 노출.
+        gate_passed = bool(vspike or (KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high) or gx or ma_up)
 
         mc = _market_cap(ticker)
         if mc and mc < KR_THRESH.market_cap_min_krw:
@@ -185,9 +219,21 @@ def screen_kr(universe: Iterable[str] = DEFAULT_KR_UNIVERSE,
             score=0.0, reasons=reasons,
         )
         c.score = _score(c)
-        cands.append(c)
+        if gate_passed:
+            cands.append(c)
+        else:
+            # 게이트 미통과 — 부분 점수만 부여 (강세 추세지만 진입 신호는 아직 약함)
+            if c.score == 0:
+                # 최소한 점수 매겨두기 — 나중에 fallback으로 사용
+                c.score = max(0, 50 - abs(rsi_v - 50))  # RSI 50 기준 거리 역수
+                c.reasons.append("진입 신호 미발생 — 추세 강세 종목")
+            fallback.append(c)
 
     cands.sort(key=lambda x: x.score, reverse=True)
+    fallback.sort(key=lambda x: x.score, reverse=True)
+    # 게이트 통과 종목이 부족하면 fallback으로 채움
+    if len(cands) < top_n:
+        cands.extend(fallback[: top_n - len(cands)])
     return cands[:top_n]
 
 
