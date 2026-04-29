@@ -2,21 +2,20 @@ name: daily-screener
 
 on:
   schedule:
-    # KST = UTC+9. 각 장 "시작 직전"에 신선한 데이터로 갱신.
+    # KST = UTC+9. 각 장 "시작 10분 전" 1회만 발송 (구독자당 평일 2건).
     #
     # 한국장 (코스피·코스닥)  09:00 KST 시작
-    #   23:00 UTC = 08:00 KST  (장 시작 1시간 전 — 1차 갱신)
-    #   23:25 UTC = 08:25 KST  (장 시작 35분 전, 알림톡 08:30 직전 — 2차 갱신)
+    #   23:50 UTC = 08:50 KST  (장 시작 10분 전)
     #
-    # 미장 (NYSE/NASDAQ) 22:30~23:30 KST 시작 (서머타임에 따라 변동)
-    #   12:00 UTC = 21:00 KST  (개장 1시간 30분~30분 전 — 1차 갱신)
-    #   12:55 UTC = 21:55 KST  (알림톡 22:00 직전 — 2차 갱신)
+    # 미장 (NYSE/NASDAQ)
+    #   서머타임 (3월 둘째주~11월 첫째주): 22:30 KST 시작 → 22:20 KST 발송
+    #   표준시 (11월 첫째주~3월 둘째주):    23:30 KST 시작 → 22:20 KST 발송 (70분 전)
+    #   DST 가 8/12 개월이라 22:20 KST 1개로 운영. 표준시 기간엔 70분 전 발송.
+    #   13:20 UTC = 22:20 KST
     #
-    # cron 요일은 UTC 기준이라 'KST 평일' = 'UTC 일~목 23:00 또는 UTC 월~금 12:00'
-    - cron: '0 23 * * 0-4'    # KR  1차 (KST 월~금 08:00)
-    - cron: '25 23 * * 0-4'   # KR  2차 (KST 월~금 08:25)
-    - cron: '0 12 * * 1-5'    # US  1차 (KST 월~금 21:00)
-    - cron: '55 12 * * 1-5'   # US  2차 (KST 월~금 21:55)
+    # cron 요일은 UTC 기준이라 'KST 월~금' = 'UTC 일~목 23:xx 또는 UTC 월~금 13:xx'
+    - cron: '50 23 * * 0-4'   # KR (KST 월~금 08:50, 장 시작 10분 전)
+    - cron: '20 13 * * 1-5'   # US (KST 월~금 22:20, DST 기준 장 시작 10분 전)
   workflow_dispatch:
     inputs:
       market:
@@ -46,9 +45,9 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "${{ github.event.schedule }}" in
-              "0 23 * * 0-4"|"25 23 * * 0-4")  echo "market=kr"  >> $GITHUB_OUTPUT ;;
-              "0 12 * * 1-5"|"55 12 * * 1-5")  echo "market=us"  >> $GITHUB_OUTPUT ;;
-              *)                               echo "market=both" >> $GITHUB_OUTPUT ;;
+              "50 23 * * 0-4")  echo "market=kr"  >> $GITHUB_OUTPUT ;;
+              "20 13 * * 1-5")  echo "market=us"  >> $GITHUB_OUTPUT ;;
+              *)                echo "market=both" >> $GITHUB_OUTPUT ;;
             esac
           else
             echo "market=${{ github.event.inputs.market || 'both' }}" >> $GITHUB_OUTPUT
