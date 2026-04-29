@@ -74,18 +74,19 @@ class KRCandidate:
 
 
 def _fetch_history(ticker: str) -> pd.DataFrame:
-    if fdr is None:
-        log.warning("FinanceDataReader not installed")
-        return pd.DataFrame()
-    try:
-        end = datetime.now(KST).date()
-        start = end - timedelta(days=200)
-        df = fdr.DataReader(ticker, start, end)
-        df.columns = [c.capitalize() for c in df.columns]
-        return df
-    except Exception as e:
-        log.warning("FDR fetch failed for %s: %s", ticker, e)
-        return pd.DataFrame()
+    """KR 시계열 — FDR 우선, 실패 시 stooq 폴백 (KOSPI/KOSDAQ ticker .KS suffix)."""
+    if fdr is not None:
+        try:
+            end = datetime.now(KST).date()
+            start = end - timedelta(days=200)
+            df = fdr.DataReader(ticker, start, end)
+            if df is not None and not df.empty:
+                df.columns = [c.capitalize() for c in df.columns]
+                return df
+        except Exception as e:
+            log.warning("FDR fetch failed for %s: %s — stooq 폴백 시도", ticker, e)
+    df = ds.fetch_history(ticker, market="kr", period_days=200)
+    return df if df is not None else pd.DataFrame()
 
 
 def _name_of(ticker: str) -> str:

@@ -53,6 +53,11 @@ def publish_kr() -> dict:
     picks = screen_kr(top_n=TOP_N_KR)
     now = _now_kst()
     payload = _load_existing()
+    if not picks and payload.get("kr", {}).get("picks"):
+        # Graceful degradation: 데이터 fetch 실패 시 직전 결과 유지, stale 표시만 갱신.
+        log.warning("KR picks 비어있음 — 직전 결과 보존")
+        return {"market": "kr", "n": 0, "preserved_previous": True,
+                "previous_tickers": [p["ticker"] for p in payload["kr"]["picks"]]}
     payload["kr"] = {
         "picks": [asdict(p) for p in picks],
         "updated_at_iso": now.isoformat(),
@@ -70,6 +75,14 @@ def publish_us() -> dict:
     light = market_traffic_light()
     now = _now_kst()
     payload = _load_existing()
+    if not picks and payload.get("us", {}).get("picks"):
+        log.warning("US picks 비어있음 — 직전 결과 보존")
+        # 신호등은 새로 갱신
+        payload["us"]["traffic_light"] = light
+        _write(payload)
+        return {"market": "us", "n": 0, "preserved_previous": True,
+                "previous_tickers": [p["ticker"] for p in payload["us"]["picks"]],
+                "vix": light["vix"]}
     payload["us"] = {
         "picks": [asdict(p) for p in picks],
         "traffic_light": light,

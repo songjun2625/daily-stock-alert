@@ -67,12 +67,9 @@ class USCandidate:
 
 
 def _fetch_history(ticker: str, period: str = "1y") -> pd.DataFrame:
-    try:
-        df = yf.Ticker(ticker).history(period=period, auto_adjust=True)
-        return df
-    except Exception as e:
-        log.warning("yfinance fetch failed for %s: %s", ticker, e)
-        return pd.DataFrame()
+    """stooq → yfinance 폴백. Azure IP 차단 우회용."""
+    df = ds.fetch_history(ticker, market="us", period_days=365 if period == "1y" else 730)
+    return df if df is not None else pd.DataFrame()
 
 
 def _fetch_fundamentals(ticker: str) -> dict:

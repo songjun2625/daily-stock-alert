@@ -2,10 +2,21 @@ name: daily-screener
 
 on:
   schedule:
-    # KST = UTC+9. 한국장 picks 갱신: 평일 15:30 KST = 06:30 UTC (장 마감 30분 후)
-    # 미장 picks 갱신: 평일 21:30 KST = 12:30 UTC (NYSE 개장 1시간 전)
-    - cron: '30 6 * * 1-5'    # KR
-    - cron: '30 12 * * 1-5'   # US
+    # KST = UTC+9. 각 장 "시작 직전"에 신선한 데이터로 갱신.
+    #
+    # 한국장 (코스피·코스닥)  09:00 KST 시작
+    #   23:00 UTC = 08:00 KST  (장 시작 1시간 전 — 1차 갱신)
+    #   23:25 UTC = 08:25 KST  (장 시작 35분 전, 알림톡 08:30 직전 — 2차 갱신)
+    #
+    # 미장 (NYSE/NASDAQ) 22:30~23:30 KST 시작 (서머타임에 따라 변동)
+    #   12:00 UTC = 21:00 KST  (개장 1시간 30분~30분 전 — 1차 갱신)
+    #   12:55 UTC = 21:55 KST  (알림톡 22:00 직전 — 2차 갱신)
+    #
+    # cron 요일은 UTC 기준이라 'KST 평일' = 'UTC 일~목 23:00 또는 UTC 월~금 12:00'
+    - cron: '0 23 * * 0-4'    # KR  1차 (KST 월~금 08:00)
+    - cron: '25 23 * * 0-4'   # KR  2차 (KST 월~금 08:25)
+    - cron: '0 12 * * 1-5'    # US  1차 (KST 월~금 21:00)
+    - cron: '55 12 * * 1-5'   # US  2차 (KST 월~금 21:55)
   workflow_dispatch:
     inputs:
       market:
@@ -33,11 +44,11 @@ jobs:
         id: pick-market
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            if [ "${{ github.event.schedule }}" = "30 6 * * 1-5" ]; then
-              echo "market=kr" >> $GITHUB_OUTPUT
-            else
-              echo "market=us" >> $GITHUB_OUTPUT
-            fi
+            case "${{ github.event.schedule }}" in
+              "0 23 * * 0-4"|"25 23 * * 0-4")  echo "market=kr"  >> $GITHUB_OUTPUT ;;
+              "0 12 * * 1-5"|"55 12 * * 1-5")  echo "market=us"  >> $GITHUB_OUTPUT ;;
+              *)                               echo "market=both" >> $GITHUB_OUTPUT ;;
+            esac
           else
             echo "market=${{ github.event.inputs.market || 'both' }}" >> $GITHUB_OUTPUT
           fi

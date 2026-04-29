@@ -3,6 +3,8 @@ numpy==1.26.4
 yfinance==0.2.51
 finance-datareader==0.9.96
 pykrx==1.0.45
+pandas-datareader==0.10.0
+tenacity==9.0.0
 requests==2.32.3
 python-dateutil==2.9.0
 pytz==2024.2
