@@ -160,18 +160,21 @@ def _evaluate_one(ticker: str, fx: float) -> Optional[USCandidate]:
 
     f = _fetch_fundamentals(ticker)
 
-    # 1단계: 좋은 회사 — 모두 통과해야 후보
+    # 1단계: 좋은 회사 — 시총·거래량은 필수, 영업이익률·매출성장은 데이터 누락 시 통과
     if f["market_cap"] < US_THRESH.market_cap_min: return None
     if avg_vol < US_THRESH.avg_volume_min: return None
-    if f["operating_margin"] is None or f["operating_margin"] < US_THRESH.operating_margin_min: return None
-    if f["revenue_growth"] is None or f["revenue_growth"] < US_THRESH.revenue_growth_min: return None
+    # yfinance가 영업이익률·매출성장을 None으로 반환할 때도 있음 (해당 분기 미공시 등) — 통과시키되 점수 낮음
+    if f["operating_margin"] is not None and f["operating_margin"] < US_THRESH.operating_margin_min: return None
+    if f["revenue_growth"] is not None and f["revenue_growth"] < US_THRESH.revenue_growth_min: return None
 
     cheap_signals = sum([
         US_THRESH.rsi_low <= rsi_v <= US_THRESH.rsi_high,
         US_THRESH.drawdown_low <= dd <= US_THRESH.drawdown_high,
     ])
     entry_signals = sum([gx, ma_up, vspike])
-    if cheap_signals < 1 or entry_signals < 1: return None
+    # 강세장에서도 상위 3개 노출되도록 게이트 완화: cheap OR entry 신호 1개만 있어도 후보.
+    # 둘 다 없는 종목은 점수 계산에서 자연스럽게 후순위로 밀림.
+    if cheap_signals + entry_signals < 1: return None
 
     es = ds.us_earnings_surprise(ticker)
 

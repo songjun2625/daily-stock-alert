@@ -53,52 +53,67 @@ def _cache_set(key: str, value: str) -> None:
 
 # ---- 가격 시계열: stooq → yfinance 폴백 체인 ----------------------------
 
-@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=8),
-       retry=retry_if_exception_type(Exception), reraise=False)
 def _fetch_stooq(ticker: str, market: str = "us", period_days: int = 365) -> Optional[pd.DataFrame]:
-    """stooq.com 데이터. ticker 형식: AAPL.US / 005930.KS / ^VIX → ^VIX.US"""
+    """stooq.com 데이터. ticker 형식: AAPL.US / 005930.KS / ^VIX → ^VIX"""
     try:
         from pandas_datareader import data as pdr
     except ImportError:
+        log.warning("pandas-datareader 미설치")
         return None
     end = datetime.now().date()
     start = end - timedelta(days=period_days + 30)
-    suffix = ".KS" if market == "kr" else ".US"
-    sym = ticker if "." in ticker else (ticker.lstrip("^") + suffix if ticker.startswith("^") else ticker + suffix)
+    if "." in ticker:
+        sym = ticker
+    elif ticker.startswith("^"):
+        # stooq는 ^VIX → vix 라는 짧은 표기 사용. yfinance ^VIX 형식 변환.
+        sym = ticker  # stooq DataReader가 ^VIX 그대로 받기도 함
+    else:
+        suffix = ".KS" if market == "kr" else ".US"
+        sym = ticker + suffix
     try:
-        df = pdr.DataReader(sym, "stooq", start, end)
-        if df is None or df.empty: return None
-        df = df.sort_index()  # stooq returns descending
-        # 표준 OHLCV 컬럼명으로 통일
+        # stooq에 5초 타임아웃 (한국 IP에서 30초 hang 회피)
+        import socket
+        original_timeout = socket.getdefaulttimeout()
+        socket.setdefaulttimeout(5)
+        try:
+            df = pdr.DataReader(sym, "stooq", start, end)
+        finally:
+            socket.setdefaulttimeout(original_timeout)
+        if df is None or df.empty:
+            return None
+        df = df.sort_index()
         df.columns = [c.capitalize() for c in df.columns]
         return df
-    except Exception as e:
-        log.debug("stooq fetch failed for %s: %s", sym, e)
+    except Exception:
         return None
 
 
 def _fetch_yfinance(ticker: str, period: str = "1y") -> Optional[pd.DataFrame]:
-    """yfinance — UA 헤더 + 재시도. Azure IP 차단 시 None."""
+    """yfinance 1.3.0+. session 인자는 더 이상 권장되지 않음 — curl_cffi 자동 사용."""
     try:
         import yfinance as yf
-        import requests
-        session = requests.Session()
-        session.headers["User-Agent"] = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 DailyPick/1.0"
-        df = yf.Ticker(ticker, session=session).history(period=period, auto_adjust=True)
-        if df is None or df.empty: return None
+        df = yf.Ticker(ticker).history(period=period, auto_adjust=True)
+        if df is None or df.empty:
+            log.info("yfinance empty for %s", ticker)
+            return None
+        log.info("yfinance OK: %s (%d rows)", ticker, len(df))
         return df
     except Exception as e:
-        log.debug("yfinance fetch failed for %s: %s", ticker, e)
+        log.warning("yfinance failed for %s: %s", ticker, e)
         return None
 
 
 def fetch_history(ticker: str, market: str = "us", period_days: int = 365) -> Optional[pd.DataFrame]:
-    """가격 시계열 — stooq 우선, 실패 시 yfinance 폴백, 둘 다 실패 시 None."""
-    df = _fetch_stooq(ticker, market=market, period_days=period_days)
+    """가격 시계열 — yfinance 1.3.0+ 우선, 실패 시 stooq 폴백.
+
+    yfinance 1.3.0+ 는 curl_cffi 자동 사용으로 Cloudflare 우회. 한국 IP 에서
+    stooq 가 connection timeout 자주 발생하므로 yfinance 가 더 안정적.
+    """
+    period = "2y" if period_days > 250 else "1y"
+    df = _fetch_yfinance(ticker, period=period)
     if df is not None and not df.empty:
         return df
-    period = "2y" if period_days > 250 else "1y"
-    return _fetch_yfinance(ticker, period=period)
+    return _fetch_stooq(ticker, market=market, period_days=period_days)
 
 
 # ---- 환율 ---------------------------------------------------------------
@@ -108,15 +123,7 @@ def usd_krw(fallback: float = 1480.0) -> float:
     if cached:
         try: return float(cached)
         except ValueError: pass
-    # stooq 시도
-    try:
-        df = _fetch_stooq("USDKRW", market="us", period_days=10)
-        if df is not None and not df.empty:
-            rate = float(df["Close"].iloc[-1])
-            _cache_set("fx:usdkrw", str(rate))
-            return rate
-    except Exception: pass
-    # yfinance 폴백
+    # yfinance 우선 (1.3.0+, curl_cffi)
     df = _fetch_yfinance("KRW=X", period="5d")
     if df is not None and not df.empty:
         try:
@@ -124,7 +131,52 @@ def usd_krw(fallback: float = 1480.0) -> float:
             _cache_set("fx:usdkrw", str(rate))
             return rate
         except Exception: pass
+    # stooq 폴백
+    try:
+        df = _fetch_stooq("USDKRW", market="us", period_days=10)
+        if df is not None and not df.empty:
+            rate = float(df["Close"].iloc[-1])
+            _cache_set("fx:usdkrw", str(rate))
+            return rate
+    except Exception: pass
     log.warning("환율 조회 실패 → fallback %.1f", fallback)
+    return fallback
+
+
+# ---- KR 공포지수 (VKOSPI) ------------------------------------------------
+
+def vkospi_close(fallback: float = 18.0) -> float:
+    """한국장 변동성지수 V-KOSPI200. 주말·휴장 시 직전 영업일 값.
+
+    데이터 소스 우선순위:
+      1) pykrx.get_index_ohlcv_by_date('VKOSPI') — KRX 공식 (운영 권장)
+      2) stooq '^VKOSPI'
+      3) fallback
+    """
+    cached = _cache_get("vkospi:close", max_age_sec=4 * 3600)
+    if cached:
+        try: return float(cached)
+        except ValueError: pass
+
+    try:
+        from pykrx import stock as krx
+        end = datetime.now(KST).date()
+        start = end - timedelta(days=10)
+        df = krx.get_index_ohlcv_by_date(start.strftime("%Y%m%d"), end.strftime("%Y%m%d"), "1014")
+        if df is not None and not df.empty:
+            v = float(df["종가"].iloc[-1])
+            _cache_set("vkospi:close", str(v))
+            return v
+    except Exception as e:
+        log.debug("vkospi pykrx failed: %s", e)
+
+    df = _fetch_stooq("^VKOSPI", market="kr", period_days=10)
+    if df is not None and not df.empty:
+        v = float(df["Close"].iloc[-1])
+        _cache_set("vkospi:close", str(v))
+        return v
+
+    log.warning("VKOSPI 조회 실패 → fallback %.1f", fallback)
     return fallback
 
 
@@ -135,11 +187,6 @@ def vix_close(fallback: float = 18.0) -> float:
     if cached:
         try: return float(cached)
         except ValueError: pass
-    df = _fetch_stooq("^VIX", market="us", period_days=10)
-    if df is not None and not df.empty:
-        v = float(df["Close"].iloc[-1])
-        _cache_set("vix:close", str(v))
-        return v
     df = _fetch_yfinance("^VIX", period="5d")
     if df is not None and not df.empty:
         try:
@@ -147,6 +194,11 @@ def vix_close(fallback: float = 18.0) -> float:
             _cache_set("vix:close", str(v))
             return v
         except Exception: pass
+    df = _fetch_stooq("^VIX", market="us", period_days=10)
+    if df is not None and not df.empty:
+        v = float(df["Close"].iloc[-1])
+        _cache_set("vix:close", str(v))
+        return v
     log.warning("VIX 조회 실패 → fallback %.1f", fallback)
     return fallback
 

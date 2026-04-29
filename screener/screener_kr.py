@@ -150,8 +150,8 @@ def screen_kr(universe: Iterable[str] = DEFAULT_KR_UNIVERSE,
         ma_up = ind.is_ma_aligned_up(close)
         vspike = ind.volume_spike(vol, multiplier=KR_THRESH.volume_multiplier_min)
 
-        # 1단계: 거래량 + RSI 동시 충족 또는 진입 신호 1개 이상
-        if not (vspike and (KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high)) and not (gx or ma_up):
+        # 강세장에서도 상위 3개 노출되도록 게이트 완화: 모든 종목 후보로 두고 점수로 정렬.
+        if not (vspike or (KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high) or gx or ma_up):
             continue
 
         mc = _market_cap(ticker)

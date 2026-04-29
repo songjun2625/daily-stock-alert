@@ -4,27 +4,41 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>오늘의 종목 — 데일리 픽</title>
-<meta name="description" content="코스피·코스닥·나스닥 단기 스윙 후보 종목 3개씩, 매일 자동 갱신." />
+<meta name="description" content="코스피·코스닥·나스닥·선물·ETF 단기 스윙(3~5일) 후보 종목 + 매수/매도 가이드 + 공포지수." />
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
 <style>
-  body { font-family: 'Pretendard Variable', Pretendard, system-ui, sans-serif; color:#0B1B3D; background:#F7F8FB; }
+  body { font-family:'Pretendard Variable',Pretendard,system-ui,sans-serif; color:#0B1B3D; background:#F7F8FB; }
   .container-x { max-width:1140px; margin-inline:auto; padding-inline:20px; }
   .grid-card { background:#fff; border:1px solid #EAEAF0; border-radius:18px; }
   .chip { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; background:#EEF2FF; color:#1E3A8A; font-size:13px; font-weight:600; }
-  .ticker { font-variant-numeric: tabular-nums; font-feature-settings:"tnum"; }
-  .pill { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; }
-  .pill-green { background:#DCFCE7; color:#166534; }
-  .pill-yellow{ background:#FEF3C7; color:#92400E; }
-  .pill-red   { background:#FEE2E2; color:#991B1B; }
-  .pill-soft  { background:#F1F5F9; color:#334155; }
-  .stale { background:#FEF3C7; border:1px solid #FDE68A; color:#92400E; font-size:13px; padding:10px 14px; border-radius:10px; }
-  .legal { background:#FFF7ED; border:1px solid #FED7AA; color:#9A3412; font-size:13px; padding:14px 16px; border-radius:12px; line-height:1.6; }
+  .ticker { font-variant-numeric:tabular-nums; font-feature-settings:"tnum"; }
+  .num    { font-variant-numeric:tabular-nums; }
+  .pill   { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; }
+  .pill-green  { background:#DCFCE7; color:#166534; }
+  .pill-yellow { background:#FEF3C7; color:#92400E; }
+  .pill-red    { background:#FEE2E2; color:#991B1B; }
+  .pill-soft   { background:#F1F5F9; color:#334155; }
+  .pill-blue   { background:#DBEAFE; color:#1E40AF; }
+  .pill-warn   { background:#FFE4E6; color:#9F1239; }
+  .stale  { background:#FEF3C7; border:1px solid #FDE68A; color:#92400E; font-size:13px; padding:10px 14px; border-radius:10px; }
+  .legal  { background:#FFF7ED; border:1px solid #FED7AA; color:#9A3412; font-size:13px; padding:14px 16px; border-radius:12px; line-height:1.6; }
   .tab-btn { padding:10px 14px; border-radius:999px; font-weight:600; font-size:14px; border:1px solid #E5E7EB; background:#fff; color:#374151; }
   .tab-btn.active { background:#0B1B3D; color:#fff; border-color:#0B1B3D; }
-  .num { font-variant-numeric: tabular-nums; }
-  details summary { cursor:pointer; }
+  .signal-row { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; padding:8px 0; border-bottom:1px solid #F1F5F9; }
+  .signal-row:last-child { border-bottom:0; }
+  .signal-ok    { color:#166534; font-weight:600; }
+  .signal-miss  { color:#9CA3AF; }
+  .score-bar { background:#F1F5F9; border-radius:6px; overflow:hidden; height:8px; }
+  .score-bar > span { display:block; height:100%; background:linear-gradient(90deg,#1E3A8A,#3B82F6); }
+  details summary { cursor:pointer; list-style:none; }
   details summary::-webkit-details-marker { display:none; }
+  details[open] .arrow { transform:rotate(180deg); }
+  .arrow { display:inline-block; transition:transform .2s; }
+  .price-box { text-align:center; border-radius:12px; padding:10px 6px; font-size:13px; }
+  .px-entry  { background:#F1F5F9; }
+  .px-stop   { background:#FEE2E2; }
+  .px-target { background:#DCFCE7; }
 </style>
 </head>
 <body>
@@ -46,15 +60,16 @@
 
 <main>
 
+<!-- ===== 헤더 + 공포지수 ===== -->
 <section class="container-x py-10">
   <div class="flex items-end justify-between flex-wrap gap-4">
     <div>
-      <span class="chip">자동 갱신</span>
+      <span class="chip">자동 갱신 · 매일 장 시작 직전</span>
       <h1 class="mt-3 text-2xl md:text-4xl font-extrabold leading-tight">
         오늘의 종목 <span style="color:#1E3A8A">3개 × 시장별</span>
       </h1>
       <p class="mt-2 text-[#6B7280] text-sm">
-        매일 한국장 마감 후 (코스피·코스닥) / 미장 시작 전 (나스닥·NYSE) 알고리즘이 자동 선정합니다.
+        매일 한국장 08:25 / 미장 21:55 KST 알고리즘이 자동 선정 · 매수/매도/손절 가격 포함
       </p>
     </div>
     <div class="text-right">
@@ -63,12 +78,34 @@
     </div>
   </div>
 
-  <!-- Stale data warning -->
-  <div id="stale-warning" class="stale mt-6 hidden">
-    ⚠️ 마지막 갱신이 24시간을 초과했습니다. 휴장일·장 종료 직후이거나 데이터 파이프라인 점검 중일 수 있습니다.
+  <!-- 공포지수 카드 (이중) -->
+  <div class="mt-7 grid md:grid-cols-2 gap-4">
+    <div class="grid-card p-5" id="fear-vkospi">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-semibold text-[#6B7280]">🇰🇷 한국장 공포지수 (VKOSPI)</span>
+        <span class="num text-2xl font-extrabold" id="vkospi-value">—</span>
+      </div>
+      <div class="mt-2 flex items-center gap-2 flex-wrap">
+        <span class="pill" id="vkospi-pill">로드 중</span>
+        <span class="text-sm text-[#374151]" id="vkospi-summary"></span>
+      </div>
+    </div>
+    <div class="grid-card p-5" id="fear-vix">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-semibold text-[#6B7280]">🇺🇸 미장 공포지수 (VIX)</span>
+        <span class="num text-2xl font-extrabold" id="vix-value">—</span>
+      </div>
+      <div class="mt-2 flex items-center gap-2 flex-wrap">
+        <span class="pill" id="vix-pill">로드 중</span>
+        <span class="text-sm text-[#374151]" id="vix-summary"></span>
+      </div>
+    </div>
   </div>
 
-  <!-- Market tabs -->
+  <div id="stale-warning" class="stale mt-6 hidden">
+    ⚠️ 마지막 갱신이 24시간을 초과했습니다. 휴장일·장 종료 직후이거나 데이터 점검 중일 수 있습니다.
+  </div>
+
   <div class="mt-8 flex flex-wrap gap-2" role="tablist">
     <button class="tab-btn active" data-tab="kr">🇰🇷 코스피·코스닥</button>
     <button class="tab-btn" data-tab="us">🇺🇸 나스닥·NYSE</button>
@@ -76,28 +113,18 @@
   </div>
 </section>
 
-<!-- KR section -->
 <section id="tab-kr" class="container-x pb-12">
   <div class="grid md:grid-cols-3 gap-5" id="kr-cards"></div>
 </section>
 
-<!-- US section -->
 <section id="tab-us" class="container-x pb-12 hidden">
-  <div id="us-traffic" class="grid-card p-5 mb-6"></div>
   <div class="grid md:grid-cols-3 gap-5" id="us-cards"></div>
 </section>
 
-<!-- Futures section -->
 <section id="tab-futures" class="container-x pb-12 hidden">
-  <div class="grid-card p-6 text-center text-[#6B7280]">
-    선물·ETF 종목 정보는 Pro 플랜 회원에게 카카오 알림톡으로 발송됩니다.
-    <div class="mt-4">
-      <a href="index.html#pricing" class="inline-block rounded-lg bg-[#0B1B3D] text-white text-sm font-semibold px-4 py-2">Pro 플랜 보기</a>
-    </div>
-  </div>
+  <div class="grid md:grid-cols-3 gap-5" id="futures-cards"></div>
 </section>
 
-<!-- Compliance footer -->
 <section class="container-x pb-16">
   <div class="legal">
     <b>면책 및 고지</b><br/>
@@ -109,128 +136,166 @@
 </main>
 
 <script>
-const KR_CARDS = document.getElementById('kr-cards');
-const US_CARDS = document.getElementById('us-cards');
-const US_TRAFFIC = document.getElementById('us-traffic');
-const STALE = document.getElementById('stale-warning');
-const LAST = document.getElementById('last-updated');
+const $ = (id) => document.getElementById(id);
+const KR_CARDS = $('kr-cards'), US_CARDS = $('us-cards'), FUT_CARDS = $('futures-cards');
+const LAST = $('last-updated'), STALE = $('stale-warning');
 
-// Tabs
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    ['kr','us','futures'].forEach(t => {
-      document.getElementById('tab-'+t).classList.toggle('hidden', t !== btn.dataset.tab);
-    });
+    ['kr','us','futures'].forEach(t => $('tab-'+t).classList.toggle('hidden', t !== btn.dataset.tab));
   });
 });
 
-// Skeleton placeholders
-function renderSkeleton(container, n=3) {
+function skel(container, n=3) {
   container.innerHTML = '';
-  for (let i=0;i<n;i++) {
-    container.innerHTML += `<div class="grid-card p-5 animate-pulse">
-      <div class="h-4 bg-[#E5E7EB] rounded w-1/3 mb-3"></div>
-      <div class="h-6 bg-[#E5E7EB] rounded w-2/3 mb-4"></div>
-      <div class="h-3 bg-[#E5E7EB] rounded w-full mb-2"></div>
-      <div class="h-3 bg-[#E5E7EB] rounded w-5/6"></div>
-    </div>`;
-  }
+  for (let i=0;i<n;i++) container.innerHTML += `<div class="grid-card p-5 animate-pulse"><div class="h-4 bg-[#E5E7EB] rounded w-1/3 mb-3"></div><div class="h-6 bg-[#E5E7EB] rounded w-2/3 mb-4"></div><div class="h-3 bg-[#E5E7EB] rounded w-full mb-2"></div><div class="h-3 bg-[#E5E7EB] rounded w-5/6"></div></div>`;
 }
-renderSkeleton(KR_CARDS); renderSkeleton(US_CARDS);
+skel(KR_CARDS); skel(US_CARDS); skel(FUT_CARDS);
 
-// KR card
+function lightCls(l) { return l === '🟢' ? 'pill-green' : l === '🟡' ? 'pill-yellow' : 'pill-red'; }
+function chgCls(v) { return v > 0 ? 'text-red-600' : v < 0 ? 'text-blue-600' : 'text-gray-500'; }
+function fmt(v, d=2) { return (v ?? 0).toLocaleString(undefined, {minimumFractionDigits:d, maximumFractionDigits:d}); }
+
+function renderFear(meta, valId, pillId, sumId) {
+  if (!meta) { $(valId).textContent = '—'; $(pillId).textContent = '데이터 없음'; $(pillId).className = 'pill pill-soft'; return; }
+  $(valId).textContent = (meta.value ?? 0).toFixed(1);
+  $(pillId).textContent = `${meta.light} ${meta.label}`;
+  $(pillId).className = 'pill ' + lightCls(meta.light);
+  $(sumId).textContent = '— ' + meta.summary;
+}
+
+function signalRow(s) {
+  const v = s.ok ? `<span class="signal-ok">${s.value} ✓</span>` : `<span class="signal-miss">${s.value || '—'}</span>`;
+  return `<div class="signal-row"><div><div class="font-semibold text-sm">${s.label}</div><div class="text-xs text-[#6B7280] mt-1">${s.explain}</div></div><div class="text-sm shrink-0">${v}</div></div>`;
+}
+
+function priceBoxes(p, currency='$') {
+  const fmt2 = (v) => currency === '₩' ? Math.round(v).toLocaleString()+'원' : currency+(v||0).toFixed(2);
+  return `<div class="grid grid-cols-3 gap-2 mt-3">
+    <div class="price-box px-entry"><div class="text-[#6B7280]">📥 진입</div><div class="font-bold num">${fmt2(p.entry_low)}~${fmt2(p.entry_high)}</div></div>
+    <div class="price-box px-stop"><div class="text-[#6B7280]">🛑 손절</div><div class="font-bold num text-red-700">${fmt2(p.stoploss)}</div></div>
+    <div class="price-box px-target"><div class="text-[#6B7280]">🎯 목표</div><div class="font-bold num text-green-700">${fmt2(p.target)}</div></div>
+  </div>`;
+}
+
+function scoreBd(narr) {
+  if (!narr?.score_breakdown?.length) return '';
+  const total = narr.score_breakdown.reduce((s,b)=>s+b.points, 0);
+  const items = narr.score_breakdown.map(b => {
+    const pct = Math.max(0, Math.min(100, b.points / Math.max(total, 1) * 100));
+    return `<div class="mb-2"><div class="flex justify-between text-xs"><span>${b.name}</span><span class="font-semibold">${b.points > 0 ? '+' : ''}${b.points}점</span></div><div class="score-bar mt-1"><span style="width:${pct}%"></span></div></div>`;
+  }).join('');
+  return `<div class="mt-4"><div class="text-xs font-semibold text-[#374151] mb-2">점수 분해 (총 ${total}점)</div>${items}</div>`;
+}
+
+function makeCard({ pill, header, price, oneLiner, narr, body, currency }) {
+  const sigBlock = (narr?.signals || []).map(signalRow).join('');
+  const thesisBlock = narr?.thesis ? `<div class="mt-4 text-sm leading-relaxed text-[#374151] bg-[#F8FAFC] p-3 rounded-lg">💡 ${narr.thesis}</div>` : '';
+  const riskBlock = narr?.risk ? `<div class="mt-3 text-xs text-[#9F1239] bg-[#FFF1F2] p-3 rounded-lg">⚠️ ${narr.risk}</div>` : '';
+  const holdBlock = narr?.hold_days ? `<div class="mt-2 text-xs text-[#6B7280]">⏱️ 권장 보유 기간: 약 ${narr.hold_days}일</div>` : '';
+  const posBlock = narr?.position_size_pct ? `<div class="text-xs text-[#6B7280]">💰 권장 비중: 전체 자산의 ${narr.position_size_pct}% 이하</div>` : '';
+
+  return `<div class="grid-card p-5">
+    <div class="flex items-center justify-between flex-wrap gap-2">${pill}${header}</div>
+    <div class="mt-3">${price}</div>
+    ${oneLiner ? `<div class="mt-3 text-sm text-[#374151]">${oneLiner}</div>` : ''}
+    ${body}
+    <details class="mt-4">
+      <summary class="text-sm font-semibold text-[#1E3A8A] inline-flex items-center gap-1">상세보기 <span class="arrow">⌄</span></summary>
+      <div class="mt-3">
+        ${thesisBlock}
+        <div class="mt-4">
+          <div class="text-xs font-semibold text-[#374151] mb-2">기술적·펀더멘털 신호</div>
+          ${sigBlock}
+        </div>
+        ${scoreBd(narr)}
+        ${holdBlock}${posBlock}
+        ${riskBlock}
+      </div>
+    </details>
+  </div>`;
+}
+
 function krCard(p) {
-  const reasons = (p.reasons || []).map(r => `<li>· ${r}</li>`).join('');
-  const change = (p.change_pct_1d ?? 0);
-  const changeClass = change > 0 ? 'text-red-600' : change < 0 ? 'text-blue-600' : 'text-gray-500';
-  return `<div class="grid-card p-5">
-    <div class="flex items-center justify-between">
-      <span class="pill pill-soft">코스피·코스닥</span>
-      <span class="text-sm ${changeClass} num">${change > 0 ? '+' : ''}${change.toFixed(2)}%</span>
-    </div>
-    <div class="mt-3 text-lg font-bold">${p.name} <span class="text-sm font-normal text-[#6B7280] ticker">(${p.ticker})</span></div>
-    <div class="mt-1 num text-2xl font-extrabold">${(p.price ?? 0).toLocaleString()}원</div>
-    <ul class="mt-4 text-sm text-[#374151] space-y-1">${reasons}</ul>
-    <div class="mt-4 text-xs text-[#9CA3AF]">스크리너 점수 ${(p.score ?? 0).toFixed(1)}점</div>
-  </div>`;
+  const change = p.change_pct_1d ?? 0;
+  return makeCard({
+    pill: `<span class="pill pill-soft">코스피·코스닥</span>`,
+    header: `<span class="text-sm ${chgCls(change)} num">${change>0?'+':''}${change.toFixed(2)}%</span>`,
+    price: `<div class="text-lg font-bold">${p.name} <span class="text-sm font-normal text-[#6B7280] ticker">(${p.ticker})</span></div>
+            <div class="num text-2xl font-extrabold mt-1">${(p.price ?? 0).toLocaleString()}원</div>
+            <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
+    oneLiner: p.narrative?.one_liner || (p.reasons||[]).slice(0,2).join(', '),
+    narr: p.narrative,
+    body: '',
+    currency: '₩',
+  });
 }
 
-// US card
 function usCard(p) {
-  const reasons = (p.reasons || []).map(r => `<li>· ${r}</li>`).join('');
-  const change = (p.change_pct_1d ?? 0);
-  const changeClass = change > 0 ? 'text-red-600' : change < 0 ? 'text-blue-600' : 'text-gray-500';
-  return `<div class="grid-card p-5">
-    <div class="flex items-center justify-between">
-      <span class="pill pill-soft">${p.sector || '미장'}</span>
-      <span class="text-sm ${changeClass} num">${change > 0 ? '+' : ''}${change.toFixed(2)}%</span>
-    </div>
-    <div class="mt-3 text-lg font-bold ticker">${p.ticker} <span class="text-sm font-normal text-[#6B7280]">${(p.name||'').slice(0,20)}</span></div>
-    <div class="mt-1 num text-2xl font-extrabold">$${(p.price ?? 0).toFixed(2)}</div>
-    <div class="text-xs text-[#6B7280] num">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div>
-    <ul class="mt-4 text-sm text-[#374151] space-y-1">${reasons}</ul>
-    <div class="mt-4 grid grid-cols-3 gap-2 text-xs">
-      <div class="text-center bg-[#F1F5F9] rounded-lg py-2">
-        <div class="text-[#6B7280]">진입</div>
-        <div class="font-semibold num">$${(p.entry_low||0).toFixed(2)}~$${(p.entry_high||0).toFixed(2)}</div>
-      </div>
-      <div class="text-center bg-[#FEE2E2] rounded-lg py-2">
-        <div class="text-[#6B7280]">손절</div>
-        <div class="font-semibold num text-red-700">$${(p.stoploss||0).toFixed(2)}</div>
-      </div>
-      <div class="text-center bg-[#DCFCE7] rounded-lg py-2">
-        <div class="text-[#6B7280]">목표</div>
-        <div class="font-semibold num text-green-700">$${(p.target||0).toFixed(2)}</div>
-      </div>
-    </div>
-    <div class="mt-3 text-xs text-[#9CA3AF]">스크리너 점수 ${(p.score ?? 0).toFixed(1)}점</div>
-  </div>`;
+  const change = p.change_pct_1d ?? 0;
+  return makeCard({
+    pill: `<span class="pill pill-soft">${p.sector || '미장'}</span>`,
+    header: `<span class="text-sm ${chgCls(change)} num">${change>0?'+':''}${change.toFixed(2)}%</span>`,
+    price: `<div class="text-lg font-bold ticker">${p.ticker} <span class="text-sm font-normal text-[#6B7280]">${(p.name||'').slice(0,20)}</span></div>
+            <div class="flex items-baseline gap-2 mt-1"><div class="num text-2xl font-extrabold">$${fmt(p.price,2)}</div><div class="text-xs text-[#6B7280] num">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div></div>
+            <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
+    oneLiner: p.narrative?.one_liner,
+    narr: p.narrative,
+    body: priceBoxes(p, '$'),
+    currency: '$',
+  });
 }
 
-function lightPill(light) {
-  if (!light) return '<span class="pill pill-soft">시장 데이터 로드 중</span>';
-  const cls = light.light === '🟢' ? 'pill-green' : light.light === '🟡' ? 'pill-yellow' : 'pill-red';
-  return `<div class="flex items-center gap-3 flex-wrap">
-    <span class="pill ${cls}">${light.light} ${light.label}</span>
-    <span class="text-sm text-[#6B7280] num">VIX ${light.vix}</span>
-    <span class="text-sm text-[#374151]">— ${light.summary}</span>
-  </div>`;
+function futCard(p) {
+  const change = p.change_pct_1d ?? 0;
+  const cur = p.market === 'us' ? '$' : '₩';
+  const lev = p.leveraged ? `<span class="pill pill-warn">레버리지 (변동 2~3배)</span>` : '';
+  const priceTxt = cur === '$' ? `$${fmt(p.price,2)}` : `${(p.price ?? 0).toLocaleString()}원`;
+  const krwTxt = cur === '$' ? `<div class="text-xs text-[#6B7280] num">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div>` : '';
+  return makeCard({
+    pill: `<span class="pill pill-soft">${p.market === 'us' ? '미국 ETF' : '국내 ETF'}</span>${lev}`,
+    header: `<span class="text-sm ${chgCls(change)} num">${change>0?'+':''}${change.toFixed(2)}%</span>`,
+    price: `<div class="text-lg font-bold">${p.name} <span class="text-sm font-normal text-[#6B7280] ticker">(${p.ticker})</span></div>
+            <div class="num text-2xl font-extrabold mt-1">${priceTxt}</div>${krwTxt}
+            <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
+    oneLiner: p.narrative?.one_liner,
+    narr: p.narrative,
+    body: priceBoxes(p, cur),
+    currency: cur,
+  });
 }
 
-async function loadPicks() {
+function emptyMsg(market) {
+  const map = { kr: '코스피·코스닥', us: '미장', futures: '선물·ETF' };
+  return `<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다. 보수적인 시장에서는 발송 종목이 없을 수 있습니다.</div>`;
+}
+
+async function load() {
   try {
     const res = await fetch('data/picks.json?ts=' + Date.now());
     if (!res.ok) throw new Error('no data');
-    const data = await res.json();
+    const d = await res.json();
 
-    LAST.textContent = data.updated_at_kst || '데이터 없음';
+    LAST.textContent = d.updated_at_kst || '데이터 없음';
+    if (d.updated_at_iso && Date.now() - new Date(d.updated_at_iso).getTime() > 24*3600*1000) STALE.classList.remove('hidden');
 
-    // Stale check
-    if (data.updated_at_iso) {
-      const t = new Date(data.updated_at_iso).getTime();
-      if (Date.now() - t > 24 * 3600 * 1000) STALE.classList.remove('hidden');
-    }
+    renderFear(d.fear?.vkospi, 'vkospi-value', 'vkospi-pill', 'vkospi-summary');
+    renderFear(d.fear?.vix,    'vix-value',    'vix-pill',    'vix-summary');
 
-    // KR
-    const kr = data.kr?.picks || [];
-    if (kr.length) KR_CARDS.innerHTML = kr.map(krCard).join('');
-    else KR_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 코스피·코스닥 조건을 만족하는 종목이 없습니다.</div>';
-
-    // US
-    US_TRAFFIC.innerHTML = lightPill(data.us?.traffic_light);
-    const us = data.us?.picks || [];
-    if (us.length) US_CARDS.innerHTML = us.map(usCard).join('');
-    else US_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 미장 조건을 만족하는 종목이 없습니다.</div>';
+    const kr = d.kr?.picks || []; KR_CARDS.innerHTML = kr.length ? kr.map(krCard).join('') : emptyMsg('kr');
+    const us = d.us?.picks || []; US_CARDS.innerHTML = us.length ? us.map(usCard).join('') : emptyMsg('us');
+    const fu = d.futures?.picks || []; FUT_CARDS.innerHTML = fu.length ? fu.map(futCard).join('') : emptyMsg('futures');
   } catch (e) {
     console.error(e);
-    KR_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.</div>';
-    US_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">데이터를 불러올 수 없습니다.</div>';
+    KR_CARDS.innerHTML = emptyMsg('kr');
+    US_CARDS.innerHTML = emptyMsg('us');
+    FUT_CARDS.innerHTML = emptyMsg('futures');
     LAST.textContent = '연결 실패';
   }
 }
-loadPicks();
+load();
 </script>
 
 </body>
