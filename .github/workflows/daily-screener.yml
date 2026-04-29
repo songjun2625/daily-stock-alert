@@ -2,23 +2,65 @@ name: daily-screener
 
 on:
   schedule:
-    # KST = UTC+9. 한국장 발송: 08:30 KST = 23:30 UTC (전일)
-    # 미장 발송:    22:00 KST = 13:00 UTC
-    - cron: '30 23 * * 0-4'   # KR: 월~금 08:30 KST (UTC 일요일=월요일 KST 시작)
-    - cron: '0 13 * * 1-5'    # US: 월~금 22:00 KST
-  workflow_dispatch: {}
+    # KST = UTC+9. 한국장 picks 갱신: 평일 15:30 KST = 06:30 UTC (장 마감 30분 후)
+    # 미장 picks 갱신: 평일 21:30 KST = 12:30 UTC (NYSE 개장 1시간 전)
+    - cron: '30 6 * * 1-5'    # KR
+    - cron: '30 12 * * 1-5'   # US
+  workflow_dispatch:
+    inputs:
+      market:
+        description: '시장 선택 (kr / us / both)'
+        required: false
+        default: 'both'
+
+permissions:
+  contents: write          # picks.json 자동 커밋
 
 jobs:
-  kr:
-    if: github.event.schedule == '30 23 * * 0-4' || github.event_name == 'workflow_dispatch'
+  screen-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
-      - run: pip install -r screener/requirements.txt
-      - name: Run KR screener
+        with: { python-version: '3.11', cache: 'pip' }
+
+      - name: Install deps
+        run: pip install -r screener/requirements.txt
+
+      - name: Decide which market
+        id: pick-market
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "${{ github.event.schedule }}" = "30 6 * * 1-5" ]; then
+              echo "market=kr" >> $GITHUB_OUTPUT
+            else
+              echo "market=us" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "market=${{ github.event.inputs.market || 'both' }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run screener and publish picks.json
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}   # 옵션 — 없으면 yfinance 폴백
+        run: python -m screener.publish ${{ steps.pick-market.outputs.market }}
+
+      - name: Commit & push picks.json (only if changed)
+        run: |
+          git config user.name "daily-pick-bot"
+          git config user.email "bot@dailypick.kr"
+          git add landing/data/picks.json
+          if git diff --staged --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "data: ${{ steps.pick-market.outputs.market }} picks $(date -u +%Y-%m-%dT%H:%M)"
+          git push
+
+      - name: Optional alimtalk send (only if AUTO_SEND=true and templates approved)
+        if: ${{ env.AUTO_SEND == 'true' }}
         env:
           AUTO_SEND: ${{ secrets.AUTO_SEND }}
           SOLAPI_API_KEY:    ${{ secrets.SOLAPI_API_KEY }}
@@ -26,33 +68,11 @@ jobs:
           SOLAPI_SENDER:     ${{ secrets.SOLAPI_SENDER }}
           ALIMTALK_PFID:     ${{ secrets.ALIMTALK_PFID }}
           ALIMTALK_TEMPLATE_ID_KR: ${{ secrets.ALIMTALK_TEMPLATE_ID_KR }}
-          SUBSCRIBERS_JSON:  ./subscribers.json
-        run: python -m orchestrator run_kr
-      - uses: actions/upload-artifact@v4
-        with:
-          name: queue-kr-${{ github.run_id }}
-          path: queue/
-
-  us:
-    if: github.event.schedule == '0 13 * * 1-5' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
-      - run: pip install -r screener/requirements.txt
-      - name: Run US screener
-        env:
-          AUTO_SEND: ${{ secrets.AUTO_SEND }}
-          SOLAPI_API_KEY:    ${{ secrets.SOLAPI_API_KEY }}
-          SOLAPI_API_SECRET: ${{ secrets.SOLAPI_API_SECRET }}
-          SOLAPI_SENDER:     ${{ secrets.SOLAPI_SENDER }}
-          ALIMTALK_PFID:     ${{ secrets.ALIMTALK_PFID }}
           ALIMTALK_TEMPLATE_ID_US: ${{ secrets.ALIMTALK_TEMPLATE_ID_US }}
-          SUBSCRIBERS_JSON:  ./subscribers.json
-        run: python -m orchestrator run_us
-      - uses: actions/upload-artifact@v4
-        with:
-          name: queue-us-${{ github.run_id }}
-          path: queue/
+          SUBSCRIBERS_JSON: ./subscribers.json
+        run: |
+          if [ "${{ steps.pick-market.outputs.market }}" = "kr" ]; then
+            python orchestrator.py run_kr
+          elif [ "${{ steps.pick-market.outputs.market }}" = "us" ]; then
+            python orchestrator.py run_us
+          fi

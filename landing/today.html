@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>오늘의 종목 — 데일리 픽</title>
+<meta name="description" content="코스피·코스닥·나스닥 단기 스윙 후보 종목 3개씩, 매일 자동 갱신." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
+<style>
+  body { font-family: 'Pretendard Variable', Pretendard, system-ui, sans-serif; color:#0B1B3D; background:#F7F8FB; }
+  .container-x { max-width:1140px; margin-inline:auto; padding-inline:20px; }
+  .grid-card { background:#fff; border:1px solid #EAEAF0; border-radius:18px; }
+  .chip { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; background:#EEF2FF; color:#1E3A8A; font-size:13px; font-weight:600; }
+  .ticker { font-variant-numeric: tabular-nums; font-feature-settings:"tnum"; }
+  .pill { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; }
+  .pill-green { background:#DCFCE7; color:#166534; }
+  .pill-yellow{ background:#FEF3C7; color:#92400E; }
+  .pill-red   { background:#FEE2E2; color:#991B1B; }
+  .pill-soft  { background:#F1F5F9; color:#334155; }
+  .stale { background:#FEF3C7; border:1px solid #FDE68A; color:#92400E; font-size:13px; padding:10px 14px; border-radius:10px; }
+  .legal { background:#FFF7ED; border:1px solid #FED7AA; color:#9A3412; font-size:13px; padding:14px 16px; border-radius:12px; line-height:1.6; }
+  .tab-btn { padding:10px 14px; border-radius:999px; font-weight:600; font-size:14px; border:1px solid #E5E7EB; background:#fff; color:#374151; }
+  .tab-btn.active { background:#0B1B3D; color:#fff; border-color:#0B1B3D; }
+  .num { font-variant-numeric: tabular-nums; }
+  details summary { cursor:pointer; }
+  details summary::-webkit-details-marker { display:none; }
+</style>
+</head>
+<body>
+
+<header class="border-b border-[#EAEAF0] bg-white/80 backdrop-blur sticky top-0 z-40">
+  <div class="container-x flex items-center justify-between py-3">
+    <a href="index.html" class="flex items-center gap-2 font-bold text-[17px]">
+      <span class="inline-block w-7 h-7 rounded-lg" style="background:linear-gradient(135deg,#0B1B3D,#1E3A8A);"></span>
+      데일리 픽
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm text-[#374151]">
+      <a href="index.html" class="hover:text-[#0B1B3D]">서비스 소개</a>
+      <a href="today.html" class="text-[#0B1B3D] font-semibold">오늘의 종목</a>
+      <a href="index.html#pricing" class="hover:text-[#0B1B3D]">요금제</a>
+    </nav>
+    <a href="index.html#signup" class="text-sm font-semibold rounded-lg px-4 py-2 text-white" style="background:#0B1B3D;">7일 무료체험</a>
+  </div>
+</header>
+
+<main>
+
+<section class="container-x py-10">
+  <div class="flex items-end justify-between flex-wrap gap-4">
+    <div>
+      <span class="chip">자동 갱신</span>
+      <h1 class="mt-3 text-2xl md:text-4xl font-extrabold leading-tight">
+        오늘의 종목 <span style="color:#1E3A8A">3개 × 시장별</span>
+      </h1>
+      <p class="mt-2 text-[#6B7280] text-sm">
+        매일 한국장 마감 후 (코스피·코스닥) / 미장 시작 전 (나스닥·NYSE) 알고리즘이 자동 선정합니다.
+      </p>
+    </div>
+    <div class="text-right">
+      <div class="text-xs text-[#6B7280]">마지막 갱신</div>
+      <div id="last-updated" class="num text-sm font-semibold">로드 중…</div>
+    </div>
+  </div>
+
+  <!-- Stale data warning -->
+  <div id="stale-warning" class="stale mt-6 hidden">
+    ⚠️ 마지막 갱신이 24시간을 초과했습니다. 휴장일·장 종료 직후이거나 데이터 파이프라인 점검 중일 수 있습니다.
+  </div>
+
+  <!-- Market tabs -->
+  <div class="mt-8 flex flex-wrap gap-2" role="tablist">
+    <button class="tab-btn active" data-tab="kr">🇰🇷 코스피·코스닥</button>
+    <button class="tab-btn" data-tab="us">🇺🇸 나스닥·NYSE</button>
+    <button class="tab-btn" data-tab="futures">📊 선물·ETF</button>
+  </div>
+</section>
+
+<!-- KR section -->
+<section id="tab-kr" class="container-x pb-12">
+  <div class="grid md:grid-cols-3 gap-5" id="kr-cards"></div>
+</section>
+
+<!-- US section -->
+<section id="tab-us" class="container-x pb-12 hidden">
+  <div id="us-traffic" class="grid-card p-5 mb-6"></div>
+  <div class="grid md:grid-cols-3 gap-5" id="us-cards"></div>
+</section>
+
+<!-- Futures section -->
+<section id="tab-futures" class="container-x pb-12 hidden">
+  <div class="grid-card p-6 text-center text-[#6B7280]">
+    선물·ETF 종목 정보는 Pro 플랜 회원에게 카카오 알림톡으로 발송됩니다.
+    <div class="mt-4">
+      <a href="index.html#pricing" class="inline-block rounded-lg bg-[#0B1B3D] text-white text-sm font-semibold px-4 py-2">Pro 플랜 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- Compliance footer -->
+<section class="container-x pb-16">
+  <div class="legal">
+    <b>면책 및 고지</b><br/>
+    본 정보는 투자 권유가 아니며, 모든 투자 결과는 투자자 본인에게 귀속됩니다. 과거 성과는 미래 수익을 보장하지 않습니다. 본 서비스는 「자본시장법」상 유사투자자문업(불특정 다수 1:多 일방 발송)으로 신고된 사업이며, 회원별 1:1 자문이나 자산·포트폴리오 분석은 제공하지 않습니다. 레버리지 ETF·선물·옵션은 손실이 원금의 2~3배로 확대될 수 있습니다.<br/>
+    유사투자자문업 신고번호: 제○○○○-○○○호 (신고 처리 후 표기)
+  </div>
+</section>
+
+</main>
+
+<script>
+const KR_CARDS = document.getElementById('kr-cards');
+const US_CARDS = document.getElementById('us-cards');
+const US_TRAFFIC = document.getElementById('us-traffic');
+const STALE = document.getElementById('stale-warning');
+const LAST = document.getElementById('last-updated');
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    ['kr','us','futures'].forEach(t => {
+      document.getElementById('tab-'+t).classList.toggle('hidden', t !== btn.dataset.tab);
+    });
+  });
+});
+
+// Skeleton placeholders
+function renderSkeleton(container, n=3) {
+  container.innerHTML = '';
+  for (let i=0;i<n;i++) {
+    container.innerHTML += `<div class="grid-card p-5 animate-pulse">
+      <div class="h-4 bg-[#E5E7EB] rounded w-1/3 mb-3"></div>
+      <div class="h-6 bg-[#E5E7EB] rounded w-2/3 mb-4"></div>
+      <div class="h-3 bg-[#E5E7EB] rounded w-full mb-2"></div>
+      <div class="h-3 bg-[#E5E7EB] rounded w-5/6"></div>
+    </div>`;
+  }
+}
+renderSkeleton(KR_CARDS); renderSkeleton(US_CARDS);
+
+// KR card
+function krCard(p) {
+  const reasons = (p.reasons || []).map(r => `<li>· ${r}</li>`).join('');
+  const change = (p.change_pct_1d ?? 0);
+  const changeClass = change > 0 ? 'text-red-600' : change < 0 ? 'text-blue-600' : 'text-gray-500';
+  return `<div class="grid-card p-5">
+    <div class="flex items-center justify-between">
+      <span class="pill pill-soft">코스피·코스닥</span>
+      <span class="text-sm ${changeClass} num">${change > 0 ? '+' : ''}${change.toFixed(2)}%</span>
+    </div>
+    <div class="mt-3 text-lg font-bold">${p.name} <span class="text-sm font-normal text-[#6B7280] ticker">(${p.ticker})</span></div>
+    <div class="mt-1 num text-2xl font-extrabold">${(p.price ?? 0).toLocaleString()}원</div>
+    <ul class="mt-4 text-sm text-[#374151] space-y-1">${reasons}</ul>
+    <div class="mt-4 text-xs text-[#9CA3AF]">스크리너 점수 ${(p.score ?? 0).toFixed(1)}점</div>
+  </div>`;
+}
+
+// US card
+function usCard(p) {
+  const reasons = (p.reasons || []).map(r => `<li>· ${r}</li>`).join('');
+  const change = (p.change_pct_1d ?? 0);
+  const changeClass = change > 0 ? 'text-red-600' : change < 0 ? 'text-blue-600' : 'text-gray-500';
+  return `<div class="grid-card p-5">
+    <div class="flex items-center justify-between">
+      <span class="pill pill-soft">${p.sector || '미장'}</span>
+      <span class="text-sm ${changeClass} num">${change > 0 ? '+' : ''}${change.toFixed(2)}%</span>
+    </div>
+    <div class="mt-3 text-lg font-bold ticker">${p.ticker} <span class="text-sm font-normal text-[#6B7280]">${(p.name||'').slice(0,20)}</span></div>
+    <div class="mt-1 num text-2xl font-extrabold">$${(p.price ?? 0).toFixed(2)}</div>
+    <div class="text-xs text-[#6B7280] num">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div>
+    <ul class="mt-4 text-sm text-[#374151] space-y-1">${reasons}</ul>
+    <div class="mt-4 grid grid-cols-3 gap-2 text-xs">
+      <div class="text-center bg-[#F1F5F9] rounded-lg py-2">
+        <div class="text-[#6B7280]">진입</div>
+        <div class="font-semibold num">$${(p.entry_low||0).toFixed(2)}~$${(p.entry_high||0).toFixed(2)}</div>
+      </div>
+      <div class="text-center bg-[#FEE2E2] rounded-lg py-2">
+        <div class="text-[#6B7280]">손절</div>
+        <div class="font-semibold num text-red-700">$${(p.stoploss||0).toFixed(2)}</div>
+      </div>
+      <div class="text-center bg-[#DCFCE7] rounded-lg py-2">
+        <div class="text-[#6B7280]">목표</div>
+        <div class="font-semibold num text-green-700">$${(p.target||0).toFixed(2)}</div>
+      </div>
+    </div>
+    <div class="mt-3 text-xs text-[#9CA3AF]">스크리너 점수 ${(p.score ?? 0).toFixed(1)}점</div>
+  </div>`;
+}
+
+function lightPill(light) {
+  if (!light) return '<span class="pill pill-soft">시장 데이터 로드 중</span>';
+  const cls = light.light === '🟢' ? 'pill-green' : light.light === '🟡' ? 'pill-yellow' : 'pill-red';
+  return `<div class="flex items-center gap-3 flex-wrap">
+    <span class="pill ${cls}">${light.light} ${light.label}</span>
+    <span class="text-sm text-[#6B7280] num">VIX ${light.vix}</span>
+    <span class="text-sm text-[#374151]">— ${light.summary}</span>
+  </div>`;
+}
+
+async function loadPicks() {
+  try {
+    const res = await fetch('data/picks.json?ts=' + Date.now());
+    if (!res.ok) throw new Error('no data');
+    const data = await res.json();
+
+    LAST.textContent = data.updated_at_kst || '데이터 없음';
+
+    // Stale check
+    if (data.updated_at_iso) {
+      const t = new Date(data.updated_at_iso).getTime();
+      if (Date.now() - t > 24 * 3600 * 1000) STALE.classList.remove('hidden');
+    }
+
+    // KR
+    const kr = data.kr?.picks || [];
+    if (kr.length) KR_CARDS.innerHTML = kr.map(krCard).join('');
+    else KR_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 코스피·코스닥 조건을 만족하는 종목이 없습니다.</div>';
+
+    // US
+    US_TRAFFIC.innerHTML = lightPill(data.us?.traffic_light);
+    const us = data.us?.picks || [];
+    if (us.length) US_CARDS.innerHTML = us.map(usCard).join('');
+    else US_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 미장 조건을 만족하는 종목이 없습니다.</div>';
+  } catch (e) {
+    console.error(e);
+    KR_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.</div>';
+    US_CARDS.innerHTML = '<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">데이터를 불러올 수 없습니다.</div>';
+    LAST.textContent = '연결 실패';
+  }
+}
+loadPicks();
+</script>
+
+</body>
+</html>
