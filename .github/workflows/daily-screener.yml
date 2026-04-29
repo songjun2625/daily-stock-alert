@@ -59,16 +59,28 @@ jobs:
         run: python -m screener.publish ${{ steps.pick-market.outputs.market }}
 
       - name: Commit & push picks.json (only if changed)
+        id: commit
         run: |
           git config user.name "daily-pick-bot"
           git config user.email "bot@dailypick.kr"
           git add landing/data/picks.json
           if git diff --staged --quiet; then
             echo "no changes"
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
           git commit -m "data: ${{ steps.pick-market.outputs.market }} picks $(date -u +%Y-%m-%dT%H:%M)"
           git push
+          echo "changed=true" >> $GITHUB_OUTPUT
+
+      # ⚠️ 중요: GITHUB_TOKEN 으로 푸시한 커밋은 다른 워크플로(pages.yml) 의
+      # push 트리거를 발화시키지 않는다. workflow_dispatch 만 GITHUB_TOKEN 으로
+      # 가능하므로 명시적으로 Pages 워크플로를 트리거해야 라이브 URL이 갱신된다.
+      - name: Trigger Pages deploy (workaround for GITHUB_TOKEN 제약)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run pages.yml --ref main
 
       - name: Optional alimtalk send (only if AUTO_SEND=true and templates approved)
         if: ${{ env.AUTO_SEND == 'true' }}
