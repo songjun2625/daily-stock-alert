@@ -35,10 +35,23 @@
   details summary::-webkit-details-marker { display:none; }
   details[open] .arrow { transform:rotate(180deg); }
   .arrow { display:inline-block; transition:transform .2s; }
-  .price-box { text-align:center; border-radius:12px; padding:10px 6px; font-size:13px; }
-  .px-entry  { background:#F1F5F9; }
-  .px-stop   { background:#FEE2E2; }
-  .px-target { background:#DCFCE7; }
+  /* 모바일: 가격 행을 세로로 (레이블 좌·값 우) — 가격 텍스트가 절대 잘리지 않게 */
+  .price-rows { display:flex; flex-direction:column; gap:6px; margin-top:12px; }
+  .price-row {
+    display:flex; align-items:center; justify-content:space-between;
+    border-radius:8px; padding:10px 12px; font-size:14px;
+    gap:10px;
+  }
+  .price-row .label { font-weight:600; white-space:nowrap; flex-shrink:0; }
+  .price-row .value { font-weight:700; text-align:right; word-break:break-all; line-height:1.3; }
+  .px-entry  { background:#F1F5F9; color:#334155; }
+  .px-stop   { background:#FEE2E2; color:#991B1B; }
+  .px-target { background:#DCFCE7; color:#166534; }
+  /* 데스크탑(>=768px): 3열 가로 — 단, 텍스트 잘림 방지를 위해 fr 단위 + 충분한 패딩 */
+  @media (min-width: 768px) {
+    .price-rows { flex-direction:row; }
+    .price-row { flex:1; min-width:0; }
+  }
 </style>
 </head>
 <body>
@@ -172,11 +185,12 @@ function signalRow(s) {
 }
 
 function priceBoxes(p, currency='$') {
-  const fmt2 = (v) => currency === '₩' ? Math.round(v).toLocaleString()+'원' : currency+(v||0).toFixed(2);
-  return `<div class="grid grid-cols-3 gap-2 mt-3">
-    <div class="price-box px-entry"><div class="text-[#6B7280]">📥 진입</div><div class="font-bold num">${fmt2(p.entry_low)}~${fmt2(p.entry_high)}</div></div>
-    <div class="price-box px-stop"><div class="text-[#6B7280]">🛑 손절</div><div class="font-bold num text-red-700">${fmt2(p.stoploss)}</div></div>
-    <div class="price-box px-target"><div class="text-[#6B7280]">🎯 목표</div><div class="font-bold num text-green-700">${fmt2(p.target)}</div></div>
+  const fmt2 = (v) => currency === '₩' ? Math.round(v||0).toLocaleString()+'원' : currency+(v||0).toFixed(2);
+  // 모바일: 세로 3행, 데스크탑(>=768px): 가로 3열 — 가격 텍스트가 절대 잘리지 않게
+  return `<div class="price-rows">
+    <div class="price-row px-entry"><span class="label">📥 진입</span><span class="value num">${fmt2(p.entry_low)} ~ ${fmt2(p.entry_high)}</span></div>
+    <div class="price-row px-stop"><span class="label">🛑 손절</span><span class="value num">${fmt2(p.stoploss)}</span></div>
+    <div class="price-row px-target"><span class="label">🎯 목표</span><span class="value num">${fmt2(p.target)}</span></div>
   </div>`;
 }
 

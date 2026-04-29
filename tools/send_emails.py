@@ -139,6 +139,8 @@ def build_html(data: dict, name: str = "") -> str:
             stp = _fmt_money(p.get("stoploss"), market)
             tgt = _fmt_money(p.get("target"), market)
 
+            # 매매가격 표는 항상 3행(레이블+값) 세로 배치 — 모바일/데스크탑 모두 안전.
+            # 좁은 화면에서 가로 3열은 가격 텍스트가 잘림. 세로면 어떤 길이도 OK.
             html.append(f'''
 <div style="border:1px solid #EAEAF0;border-radius:12px;padding:14px;margin-bottom:10px">
   <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
@@ -149,13 +151,20 @@ def build_html(data: dict, name: str = "") -> str:
     </div>
     <span style="background:#DBEAFE;color:#1E40AF;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600">{score_str}점</span>
   </div>
-  <div style="margin-top:6px;font-size:18px;font-weight:700">{price_fmt}</div>
-  <div style="margin-top:6px;font-size:13px;color:#374151">{one_liner}</div>
-  <table style="width:100%;margin-top:8px;font-size:12px;border-collapse:collapse">
+  <div style="margin-top:6px;font-size:18px;font-weight:700;word-break:break-all">{price_fmt}</div>
+  <div style="margin-top:6px;font-size:13px;color:#374151;line-height:1.5">{one_liner}</div>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:10px;font-size:13px;border-collapse:separate;border-spacing:0 4px">
     <tr>
-      <td style="background:#F1F5F9;padding:8px;text-align:center;border-radius:6px;width:33%">📥 진입<br/><strong>{elo}~{ehi}</strong></td>
-      <td style="background:#FEE2E2;padding:8px;text-align:center;border-radius:6px;color:#991B1B;width:33%">🛑 손절<br/><strong>{stp}</strong></td>
-      <td style="background:#DCFCE7;padding:8px;text-align:center;border-radius:6px;color:#166534;width:33%">🎯 목표<br/><strong>{tgt}</strong></td>
+      <td style="background:#F1F5F9;padding:10px 12px;border-radius:8px;font-weight:600;color:#334155;white-space:nowrap;width:1%">📥 진입</td>
+      <td style="background:#F1F5F9;padding:10px 12px;border-radius:8px;font-weight:700;text-align:right;word-break:break-all">{elo} ~ {ehi}</td>
+    </tr>
+    <tr>
+      <td style="background:#FEE2E2;padding:10px 12px;border-radius:8px;font-weight:600;color:#991B1B;white-space:nowrap;width:1%">🛑 손절</td>
+      <td style="background:#FEE2E2;padding:10px 12px;border-radius:8px;font-weight:700;color:#991B1B;text-align:right;word-break:break-all">{stp}</td>
+    </tr>
+    <tr>
+      <td style="background:#DCFCE7;padding:10px 12px;border-radius:8px;font-weight:600;color:#166534;white-space:nowrap;width:1%">🎯 목표</td>
+      <td style="background:#DCFCE7;padding:10px 12px;border-radius:8px;font-weight:700;color:#166534;text-align:right;word-break:break-all">{tgt}</td>
     </tr>
   </table>
 </div>''')
