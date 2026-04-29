@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.59,
+      "value": 18.6,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -235,27 +235,27 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T01:35:20.004691+09:00",
-    "updated_at_kst": "2026.04.30 (목) 01:35 KST"
+    "updated_at_iso": "2026-04-30T01:42:17.423597+09:00",
+    "updated_at_kst": "2026.04.30 (목) 01:42 KST"
   },
-  "updated_at_iso": "2026-04-30T01:35:26.490176+09:00",
-  "updated_at_kst": "2026.04.30 (목) 01:35 KST",
+  "updated_at_iso": "2026-04-30T01:42:23.521200+09:00",
+  "updated_at_kst": "2026.04.30 (목) 01:42 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 136.73500061035156,
-        "price_krw": 203295,
-        "change_pct_1d": -3.148457498250179,
-        "market_cap": 327775289344.0,
+        "price": 136.9550018310547,
+        "price_krw": 203649,
+        "change_pct_1d": -2.992627187925434,
+        "market_cap": 328314650624.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 213.64844,
+        "pe_ratio": 214.00002,
         "sector": "Technology",
-        "avg_volume": 47431883.1,
-        "rsi": 42.801542315951366,
-        "drawdown_52w": 0.3400183152611169,
+        "avg_volume": 47445673.8,
+        "rsi": 42.9828234597735,
+        "drawdown_52w": 0.33895643077187765,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -267,10 +267,10 @@
           "영업이익률 41%",
           "어닝 서프라이즈 +8.6%"
         ],
-        "entry_low": 132.43,
-        "entry_high": 139.81,
-        "target": 153.34,
-        "stoploss": 127.51,
+        "entry_low": 132.65,
+        "entry_high": 140.03,
+        "target": 153.56,
+        "stoploss": 127.73,
         "narrative": {
           "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 43 반등 신호.",
           "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -353,17 +353,17 @@
       {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 667.094970703125,
-        "price_krw": 991823,
-        "change_pct_1d": -0.6323257935665572,
-        "market_cap": 1693369368576.0,
+        "price": 667.6400146484375,
+        "price_krw": 992767,
+        "change_pct_1d": -0.5511383291656236,
+        "market_cap": 1694752964608.0,
         "operating_margin": 0.41314998,
         "revenue_growth": 0.238,
-        "pe_ratio": 28.38702,
+        "pe_ratio": 28.410213,
         "sector": "Communication Services",
-        "avg_volume": 13654995.7,
-        "rsi": 57.825693936527905,
-        "drawdown_52w": 0.1535928081342315,
+        "avg_volume": 13666759.4,
+        "rsi": 58.03616367014351,
+        "drawdown_52w": 0.15290125875152646,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -374,10 +374,10 @@
           "영업이익률 41%",
           "어닝 서프라이즈 +8.0%"
         ],
-        "entry_low": 656.04,
-        "entry_high": 674.99,
-        "target": 709.73,
-        "stoploss": 643.41,
+        "entry_low": 656.59,
+        "entry_high": 675.53,
+        "target": 710.26,
+        "stoploss": 643.96,
         "narrative": {
           "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +8.0% / RSI 58 반등 신호.",
           "thesis": "Meta Platforms, Inc.는 매출 성장률 24% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 15% 떨어진 상태에서 RSI 58로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -456,17 +456,17 @@
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 420.8800048828125,
-        "price_krw": 625756,
-        "change_pct_1d": -1.949911500800816,
-        "market_cap": 3128139186176.0,
+        "price": 421.70001220703125,
+        "price_krw": 627059,
+        "change_pct_1d": -1.7588789267253935,
+        "market_cap": 3134456856576.0,
         "operating_margin": 0.47094002,
         "revenue_growth": 0.167,
-        "pe_ratio": 26.354414,
+        "pe_ratio": 26.40764,
         "sector": "Technology",
-        "avg_volume": 31020611.85,
-        "rsi": 59.30841107474075,
-        "drawdown_52w": 0.2203401980169362,
+        "avg_volume": 31046132.2,
+        "rsi": 59.85481880372498,
+        "drawdown_52w": 0.218821262531945,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -477,13 +477,13 @@
           "영업이익률 47%",
           "어닝 서프라이즈 +5.7%"
         ],
-        "entry_low": 413.08,
-        "entry_high": 426.45,
-        "target": 450.96,
-        "stoploss": 404.17,
+        "entry_low": 413.87,
+        "entry_high": 427.29,
+        "target": 451.89,
+        "stoploss": 404.93,
         "narrative": {
-          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.7% / RSI 59 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 22% 떨어진 상태에서 RSI 59로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.7% / RSI 60 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 22% 떨어진 상태에서 RSI 60로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -499,7 +499,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "59",
+              "value": "60",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -558,13 +558,13 @@
       }
     ],
     "traffic_light": {
-      "vix": 18.59,
+      "vix": 18.6,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T01:35:24.990656+09:00",
-    "updated_at_kst": "2026.04.30 (목) 01:35 KST"
+    "updated_at_iso": "2026-04-30T01:42:22.204510+09:00",
+    "updated_at_kst": "2026.04.30 (목) 01:42 KST"
   },
   "futures": {
     "picks": [
@@ -699,20 +699,22 @@
         "name": "SPDR S&P 500",
         "market": "us",
         "leveraged": false,
-        "price": 709.0499877929688,
-        "price_krw": 1054201,
-        "change_pct_1d": -0.37095008211174285,
-        "rsi": 64.67137155255948,
+        "price": 709.7150268554688,
+        "price_krw": 1055332,
+        "change_pct_1d": -0.2775050343776786,
+        "rsi": 65.32807253108899,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.008557399308461089,
-        "score": 0.0,
-        "reasons": [],
-        "entry_low": 705.78,
-        "entry_high": 711.66,
-        "target": 726.69,
-        "stoploss": 699.25,
+        "drawdown_52w": 0.007627495819232087,
+        "score": 34.67192746891101,
+        "reasons": [
+          "진입 신호 미발생 — 추세 강세 자산"
+        ],
+        "entry_low": 706.45,
+        "entry_high": 712.33,
+        "target": 727.36,
+        "stoploss": 699.91,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
@@ -752,7 +754,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T01:35:26.490176+09:00",
-    "updated_at_kst": "2026.04.30 (목) 01:35 KST"
+    "updated_at_iso": "2026-04-30T01:42:23.521200+09:00",
+    "updated_at_kst": "2026.04.30 (목) 01:42 KST"
   }
 }
