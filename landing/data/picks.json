@@ -1,183 +1,21 @@
 {
-  "updated_at_iso": "2026-04-29T08:30:00+09:00",
-  "updated_at_kst": "2026.04.29 (수) 08:30 KST",
+  "updated_at_iso": "2026-04-29T23:34:27.395895+09:00",
+  "updated_at_kst": "2026.04.29 (수) 23:34 KST",
   "_note": "샘플 데이터입니다. 매일 GitHub Actions가 자동 갱신합니다.",
   "kr": {
-    "updated_at_iso": "2026-04-29T08:30:00+09:00",
-    "updated_at_kst": "2026.04.29 (수) 08:30 KST",
-    "picks": [
-      {
-        "ticker": "005930",
-        "name": "삼성전자",
-        "price": 78400,
-        "change_pct_1d": 1.42,
-        "market_cap": 470000000000000,
-        "rsi": 34.2,
-        "volume_spike": true,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "foreign_streak": 5,
-        "institution_streak": 3,
-        "earnings_surprise": null,
-        "score": 75.0,
-        "reasons": [
-          "거래량 5일 평균 2배+",
-          "RSI 34(저평가 반등 후보)",
-          "5/20일선 정배열 시작",
-          "외국인 5일 연속 순매수"
-        ]
-      },
-      {
-        "ticker": "051910",
-        "name": "LG화학",
-        "price": 412000,
-        "change_pct_1d": 2.15,
-        "market_cap": 29000000000000,
-        "rsi": 38.5,
-        "volume_spike": true,
-        "macd_golden_cross": true,
-        "ma_aligned_up": true,
-        "foreign_streak": 2,
-        "institution_streak": 5,
-        "earnings_surprise": 8.4,
-        "score": 80.0,
-        "reasons": [
-          "거래량 5일 평균 2배+",
-          "RSI 38(저평가 반등 후보)",
-          "MACD 골든크로스",
-          "5/20일선 정배열 시작",
-          "기관 5일 연속 순매수",
-          "어닝 서프라이즈 +8.4%"
-        ]
-      },
-      {
-        "ticker": "042700",
-        "name": "한미반도체",
-        "price": 168500,
-        "change_pct_1d": -0.59,
-        "market_cap": 16000000000000,
-        "rsi": 36.0,
-        "volume_spike": false,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "foreign_streak": 6,
-        "institution_streak": 1,
-        "earnings_surprise": null,
-        "score": 52.0,
-        "reasons": [
-          "RSI 36(저평가 반등 후보)",
-          "MACD 골든크로스",
-          "외국인 6일 연속 순매수"
-        ]
-      }
-    ]
+    "picks": [],
+    "updated_at_iso": "2026-04-29T23:34:22.526575+09:00",
+    "updated_at_kst": "2026.04.29 (수) 23:34 KST"
   },
   "us": {
-    "updated_at_iso": "2026-04-28T22:00:00+09:00",
-    "updated_at_kst": "2026.04.28 (화) 22:00 KST",
+    "picks": [],
     "traffic_light": {
-      "vix": 16.4,
+      "vix": 18.0,
       "light": "🟢",
-      "label": "매수 가능 환경",
-      "summary": "공포지수 낮아서 변동성 안정"
+      "label": "매수 OK",
+      "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "picks": [
-      {
-        "ticker": "NVDA",
-        "name": "NVIDIA Corporation",
-        "price": 120.42,
-        "price_krw": 178222,
-        "change_pct_1d": 2.18,
-        "market_cap": 2960000000000,
-        "operating_margin": 0.55,
-        "revenue_growth": 0.85,
-        "pe_ratio": 60.0,
-        "sector": "Technology",
-        "avg_volume": 220000000,
-        "rsi": 38.0,
-        "drawdown_52w": 0.18,
-        "macd_golden_cross": true,
-        "ma_aligned_up": true,
-        "volume_spike": true,
-        "earnings_surprise_pct": 6.2,
-        "score": 92.0,
-        "reasons": [
-          "RSI 38(과매도 반등 후보)",
-          "52주 고점 대비 -18%",
-          "MACD 골든크로스",
-          "5/20일선 정배열 시작",
-          "거래량 5일 평균 2배+",
-          "영업이익률 55%",
-          "어닝 서프라이즈 +6.2%"
-        ],
-        "entry_low": 118.20,
-        "entry_high": 120.60,
-        "target": 128.00,
-        "stoploss": 115.20
-      },
-      {
-        "ticker": "APP",
-        "name": "AppLovin Corporation",
-        "price": 298.75,
-        "price_krw": 442150,
-        "change_pct_1d": 0.95,
-        "market_cap": 102000000000,
-        "operating_margin": 0.42,
-        "revenue_growth": 0.85,
-        "pe_ratio": 75.0,
-        "sector": "Technology",
-        "avg_volume": 5800000,
-        "rsi": 42.0,
-        "drawdown_52w": 0.22,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "volume_spike": true,
-        "earnings_surprise_pct": 12.5,
-        "score": 84.0,
-        "reasons": [
-          "RSI 42(과매도 반등 후보)",
-          "52주 고점 대비 -22%",
-          "5/20일선 정배열 시작",
-          "거래량 5일 평균 2배+",
-          "영업이익률 42%",
-          "어닝 서프라이즈 +12.5%"
-        ],
-        "entry_low": 295.00,
-        "entry_high": 300.50,
-        "target": 314.00,
-        "stoploss": 284.00
-      },
-      {
-        "ticker": "AAPL",
-        "name": "Apple Inc.",
-        "price": 216.40,
-        "price_krw": 320272,
-        "change_pct_1d": 0.38,
-        "market_cap": 3300000000000,
-        "operating_margin": 0.31,
-        "revenue_growth": 0.12,
-        "pe_ratio": 32.0,
-        "sector": "Technology",
-        "avg_volume": 55000000,
-        "rsi": 44.0,
-        "drawdown_52w": 0.15,
-        "macd_golden_cross": true,
-        "ma_aligned_up": true,
-        "volume_spike": false,
-        "earnings_surprise_pct": null,
-        "score": 68.0,
-        "reasons": [
-          "RSI 44(과매도 반등 후보)",
-          "52주 고점 대비 -15%",
-          "MACD 골든크로스",
-          "5/20일선 정배열 시작",
-          "영업이익률 31%"
-        ],
-        "entry_low": 213.50,
-        "entry_high": 217.50,
-        "target": 224.00,
-        "stoploss": 207.70
-      }
-    ]
+    "updated_at_iso": "2026-04-29T23:34:27.395895+09:00",
+    "updated_at_kst": "2026.04.29 (수) 23:34 KST"
   }
 }
