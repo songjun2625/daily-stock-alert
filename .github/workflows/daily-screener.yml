@@ -26,6 +26,7 @@ on:
 
 permissions:
   contents: write          # picks.json 자동 커밋
+  actions:  write          # pages.yml workflow_dispatch 트리거 (GITHUB_TOKEN 제약 우회)
 
 jobs:
   screen-and-publish:
