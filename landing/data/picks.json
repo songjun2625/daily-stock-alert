@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.23,
+      "value": 18.21,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -235,27 +235,27 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T00:43:43.624566+09:00",
-    "updated_at_kst": "2026.04.30 (목) 00:43 KST"
+    "updated_at_iso": "2026-04-30T00:49:10.840957+09:00",
+    "updated_at_kst": "2026.04.30 (목) 00:49 KST"
   },
-  "updated_at_iso": "2026-04-30T00:43:51.338074+09:00",
-  "updated_at_kst": "2026.04.30 (목) 00:43 KST",
+  "updated_at_iso": "2026-04-30T00:49:17.548831+09:00",
+  "updated_at_kst": "2026.04.30 (목) 00:49 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 136.77000427246094,
-        "price_krw": 203127,
-        "change_pct_1d": -3.123663856144132,
-        "market_cap": 327859175424.0,
+        "price": 136.95989990234375,
+        "price_krw": 203427,
+        "change_pct_1d": -2.9891578073168668,
+        "market_cap": 328278704128.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 213.70314,
+        "pe_ratio": 213.97658,
         "sector": "Technology",
-        "avg_volume": 47304787.9,
-        "rsi": 42.83028299527467,
-        "drawdown_52w": 0.33984936235375707,
+        "avg_volume": 47317255.05,
+        "rsi": 42.986876949900086,
+        "drawdown_52w": 0.3389327891488338,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -267,10 +267,10 @@
           "영업이익률 41%",
           "어닝 서프라이즈 +8.6%"
         ],
-        "entry_low": 132.46,
-        "entry_high": 139.85,
-        "target": 153.38,
-        "stoploss": 127.54,
+        "entry_low": 132.65,
+        "entry_high": 140.03,
+        "target": 153.57,
+        "stoploss": 127.73,
         "narrative": {
           "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 43 반등 신호.",
           "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -353,17 +353,17 @@
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 424.55999755859375,
-        "price_krw": 630544,
-        "change_pct_1d": -1.0926039467457738,
-        "market_cap": 3155490242560.0,
+        "price": 424.8999938964844,
+        "price_krw": 631104,
+        "change_pct_1d": -1.0133968790950743,
+        "market_cap": 3158017310720.0,
         "operating_margin": 0.47094002,
         "revenue_growth": 0.167,
-        "pe_ratio": 26.584846,
+        "pe_ratio": 26.606136,
         "sector": "Technology",
-        "avg_volume": 30899961.45,
-        "rsi": 61.84196538640528,
-        "drawdown_52w": 0.2135232789383048,
+        "avg_volume": 30907158.8,
+        "rsi": 62.087008186907944,
+        "drawdown_52w": 0.2128934522788577,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -374,10 +374,10 @@
           "영업이익률 47%",
           "어닝 서프라이즈 +5.7%"
         ],
-        "entry_low": 416.81,
-        "entry_high": 430.1,
-        "target": 454.46,
-        "stoploss": 407.95,
+        "entry_low": 417.15,
+        "entry_high": 430.44,
+        "target": 454.8,
+        "stoploss": 408.29,
         "narrative": {
           "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.7% / RSI 62 반등 신호.",
           "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 62로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -456,17 +456,17 @@
       {
         "ticker": "GE",
         "name": "GE Aerospace",
-        "price": 281.8500061035156,
-        "price_krw": 418595,
-        "change_pct_1d": -2.5414957791405346,
-        "market_cap": 294485229568.0,
+        "price": 281.9100036621094,
+        "price_krw": 418721,
+        "change_pct_1d": -2.520749736242456,
+        "market_cap": 294547914752.0,
         "operating_margin": 0.20207001,
         "revenue_growth": 0.247,
-        "pe_ratio": 35.05597,
+        "pe_ratio": 35.063435,
         "sector": "Industrials",
-        "avg_volume": 6402310.65,
-        "rsi": 41.80801363641026,
-        "drawdown_52w": 0.18360450427125055,
+        "avg_volume": 6405463.7,
+        "rsi": 41.83589681348645,
+        "drawdown_52w": 0.18343071773397912,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -478,10 +478,10 @@
           "영업이익률 20%",
           "어닝 서프라이즈 +5.3%"
         ],
-        "entry_low": 274.4,
-        "entry_high": 287.17,
-        "target": 310.6,
-        "stoploss": 265.88,
+        "entry_low": 274.46,
+        "entry_high": 287.23,
+        "target": 310.66,
+        "stoploss": 265.94,
         "narrative": {
           "one_liner": "Industrials 영업이익률 20%, 어닝 서프라이즈 +5.3% / RSI 42 반등 신호.",
           "thesis": "GE Aerospace는 매출 성장률 25% · 영업이익률 20%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 18% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -563,13 +563,13 @@
       }
     ],
     "traffic_light": {
-      "vix": 18.23,
+      "vix": 18.21,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T00:43:49.032705+09:00",
-    "updated_at_kst": "2026.04.30 (목) 00:43 KST"
+    "updated_at_iso": "2026-04-30T00:49:15.410092+09:00",
+    "updated_at_kst": "2026.04.30 (목) 00:49 KST"
   },
   "futures": {
     "picks": [
@@ -704,22 +704,22 @@
         "name": "SPDR S&P 500",
         "market": "us",
         "leveraged": false,
-        "price": 710.7249755859375,
-        "price_krw": 1055547,
-        "change_pct_1d": -0.13559651704510012,
-        "rsi": 66.3512641332386,
+        "price": 710.6900024414062,
+        "price_krw": 1055588,
+        "change_pct_1d": -0.14051061509499085,
+        "rsi": 66.31529696927333,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.0062153158416006354,
-        "score": 33.6487358667614,
+        "drawdown_52w": 0.006264217704607998,
+        "score": 33.684703030726666,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 707.48,
-        "entry_high": 713.32,
-        "target": 728.23,
-        "stoploss": 701.0,
+        "entry_low": 707.45,
+        "entry_high": 713.28,
+        "target": 728.19,
+        "stoploss": 700.97,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
@@ -759,7 +759,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T00:43:51.338074+09:00",
-    "updated_at_kst": "2026.04.30 (목) 00:43 KST"
+    "updated_at_iso": "2026-04-30T00:49:17.548831+09:00",
+    "updated_at_kst": "2026.04.30 (목) 00:49 KST"
   }
 }
