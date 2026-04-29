@@ -83,6 +83,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run pages.yml --ref main
 
+      # Google Sheet 누적 기록 + 이메일 알림 (Apps Script 웹앱 호출)
+      - name: Notify update (Google Sheet + Email)
+        if: steps.commit.outputs.changed == 'true' && env.SHEETS_WEBHOOK_URL != ''
+        env:
+          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL:  ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python tools/notify_update.py
+
       - name: Optional alimtalk send (only if AUTO_SEND=true and templates approved)
         if: ${{ env.AUTO_SEND == 'true' }}
         env:
