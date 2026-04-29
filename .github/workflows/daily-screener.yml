@@ -83,12 +83,21 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run pages.yml --ref main
 
-      # Google Sheet 누적 기록 + 이메일 알림 (Apps Script 웹앱 호출)
-      - name: Notify update (Google Sheet + Email)
-        if: steps.commit.outputs.changed == 'true' && env.SHEETS_WEBHOOK_URL != ''
+      # Gmail SMTP 직접 발송 (Apps Script 불필요, 어떤 Google 계정에서도 작동)
+      # 구독자 목록은 공개 구글시트 CSV 에서 매번 fetch — 시트 행 추가 즉시 반영.
+      - name: Send emails to subscribers
+        if: steps.commit.outputs.changed == 'true' && env.GMAIL_USER != ''
         env:
-          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
-          SLACK_WEBHOOK_URL:  ${{ secrets.SLACK_WEBHOOK_URL }}
+          GMAIL_USER:            ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD:    ${{ secrets.GMAIL_APP_PASSWORD }}
+          SUBSCRIBERS_SHEET_CSV: ${{ secrets.SUBSCRIBERS_SHEET_CSV }}
+        run: python tools/send_emails.py
+
+      # (옵션) Slack 요약 발송
+      - name: Slack notification
+        if: steps.commit.outputs.changed == 'true' && env.SLACK_WEBHOOK_URL != ''
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python tools/notify_update.py
 
       - name: Optional alimtalk send (only if AUTO_SEND=true and templates approved)
