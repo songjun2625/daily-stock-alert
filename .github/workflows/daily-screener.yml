@@ -1,0 +1,58 @@
+name: daily-screener
+
+on:
+  schedule:
+    # KST = UTC+9. 한국장 발송: 08:30 KST = 23:30 UTC (전일)
+    # 미장 발송:    22:00 KST = 13:00 UTC
+    - cron: '30 23 * * 0-4'   # KR: 월~금 08:30 KST (UTC 일요일=월요일 KST 시작)
+    - cron: '0 13 * * 1-5'    # US: 월~금 22:00 KST
+  workflow_dispatch: {}
+
+jobs:
+  kr:
+    if: github.event.schedule == '30 23 * * 0-4' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r screener/requirements.txt
+      - name: Run KR screener
+        env:
+          AUTO_SEND: ${{ secrets.AUTO_SEND }}
+          SOLAPI_API_KEY:    ${{ secrets.SOLAPI_API_KEY }}
+          SOLAPI_API_SECRET: ${{ secrets.SOLAPI_API_SECRET }}
+          SOLAPI_SENDER:     ${{ secrets.SOLAPI_SENDER }}
+          ALIMTALK_PFID:     ${{ secrets.ALIMTALK_PFID }}
+          ALIMTALK_TEMPLATE_ID_KR: ${{ secrets.ALIMTALK_TEMPLATE_ID_KR }}
+          SUBSCRIBERS_JSON:  ./subscribers.json
+        run: python -m orchestrator run_kr
+      - uses: actions/upload-artifact@v4
+        with:
+          name: queue-kr-${{ github.run_id }}
+          path: queue/
+
+  us:
+    if: github.event.schedule == '0 13 * * 1-5' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r screener/requirements.txt
+      - name: Run US screener
+        env:
+          AUTO_SEND: ${{ secrets.AUTO_SEND }}
+          SOLAPI_API_KEY:    ${{ secrets.SOLAPI_API_KEY }}
+          SOLAPI_API_SECRET: ${{ secrets.SOLAPI_API_SECRET }}
+          SOLAPI_SENDER:     ${{ secrets.SOLAPI_SENDER }}
+          ALIMTALK_PFID:     ${{ secrets.ALIMTALK_PFID }}
+          ALIMTALK_TEMPLATE_ID_US: ${{ secrets.ALIMTALK_TEMPLATE_ID_US }}
+          SUBSCRIBERS_JSON:  ./subscribers.json
+        run: python -m orchestrator run_us
+      - uses: actions/upload-artifact@v4
+        with:
+          name: queue-us-${{ github.run_id }}
+          path: queue/

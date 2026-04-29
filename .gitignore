@@ -1,0 +1,39 @@
+# 비밀
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# 회원 데이터 (운영 DB로 이전 후 로컬 폴백 파일은 절대 커밋 금지)
+subscribers.json
+queue/
+
+# 캐시
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# 빌드 결과물
+dist/
+build/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/

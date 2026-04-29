@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>데일리 픽 — 매일 아침 8:30, 오늘의 종목 3개를 카톡으로</title>
+<meta name="description" content="코스피·코스닥·나스닥 단기 스윙 종목을 매일 아침 카카오 알림톡으로 받아보세요. 종목 찾는 시간을 줄여드립니다." />
+<meta property="og:title" content="데일리 픽 — 매일 아침 8:30, 오늘의 종목 3개를 카톡으로" />
+<meta property="og:description" content="코스피·코스닥·나스닥 단기 스윙 종목을 매일 아침 카카오 알림톡으로." />
+<meta property="og:type" content="website" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
+<style>
+  :root { --brand:#0B1B3D; --brand-2:#1E3A8A; --accent:#FFB020; }
+  html, body { font-family: 'Pretendard Variable', Pretendard, -apple-system, system-ui, sans-serif; }
+  body { color:#0B1B3D; background:#F7F8FB; }
+  .container-x { max-width: 1140px; margin-inline:auto; padding-inline:20px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:14px 22px; border-radius:12px; font-weight:600; transition:transform .15s ease, box-shadow .15s ease; }
+  .btn-primary { background:var(--brand); color:#fff; box-shadow:0 6px 22px rgba(11,27,61,.18); }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow:0 10px 28px rgba(11,27,61,.25); }
+  .btn-ghost { background:#fff; color:var(--brand); border:1px solid #E5E7EB; }
+  .chip { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; background:#EEF2FF; color:#1E3A8A; font-size:13px; font-weight:600; }
+  .grid-card { background:#fff; border:1px solid #EAEAF0; border-radius:18px; }
+  .gradient-hero {
+    background:
+      radial-gradient(80% 60% at 80% 0%, rgba(255,176,32,0.08), transparent 60%),
+      radial-gradient(60% 60% at 0% 0%, rgba(30,58,138,0.10), transparent 60%),
+      linear-gradient(180deg,#F7F8FB 0%, #FFFFFF 100%);
+  }
+  .kakao-msg {
+    background:#FFEB33;
+    border-radius:18px;
+    padding:18px 18px 14px 18px;
+    box-shadow: 0 18px 40px rgba(11,27,61,.15);
+    color:#191919;
+    font-size:14px;
+    line-height:1.55;
+    max-width: 360px;
+  }
+  .kakao-msg .head { display:flex; gap:8px; align-items:center; margin-bottom:10px; font-weight:700; }
+  .kakao-msg .head .dot { width:8px; height:8px; background:#191919; border-radius:50%; }
+  .kakao-msg ul { margin:6px 0 0 0; padding-left:0; list-style:none; }
+  .kakao-msg .divider { height:1px; background: rgba(0,0,0,.18); margin:12px 0; }
+  .kakao-msg .disclaim { font-size:11px; color:#444; line-height:1.5; }
+  .ticker { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+  .price-card.recommend { border:2px solid var(--brand); transform: translateY(-6px); box-shadow:0 24px 48px rgba(11,27,61,.12); }
+  .badge-recommend { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--brand); color:#fff; font-size:12px; font-weight:700; padding:4px 12px; border-radius:999px; }
+  details { background:#fff; border:1px solid #EAEAF0; border-radius:14px; padding:18px 20px; }
+  details + details { margin-top:10px; }
+  details summary { cursor:pointer; font-weight:600; list-style:none; display:flex; justify-content:space-between; align-items:center; }
+  details summary::-webkit-details-marker { display:none; }
+  details[open] summary .arrow { transform: rotate(180deg); }
+  .arrow { transition: transform .2s ease; }
+  .step-num { width:32px; height:32px; border-radius:999px; background:var(--brand); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700; }
+  .legal-banner { background:#FFF7ED; border:1px solid #FED7AA; color:#9A3412; border-radius:12px; padding:14px 16px; font-size:13px; line-height:1.6; }
+  .footer-mini { font-size:12px; color:#6B7280; line-height:1.7; }
+  table.compare { width:100%; border-collapse: separate; border-spacing:0; background:#fff; border-radius:16px; overflow:hidden; border:1px solid #EAEAF0; }
+  table.compare th, table.compare td { padding:14px 16px; text-align:left; border-bottom:1px solid #F1F2F6; font-size:14px; }
+  table.compare th { background:#F7F8FB; font-weight:600; color:#374151; }
+  table.compare td.center, table.compare th.center { text-align:center; }
+  /* mobile sticky CTA */
+  .sticky-cta { position:fixed; left:0; right:0; bottom:0; padding:12px 16px; background:rgba(255,255,255,.95); backdrop-filter:blur(8px); border-top:1px solid #EAEAF0; display:none; z-index:50; }
+  @media (max-width: 720px) { .sticky-cta { display:block; } main { padding-bottom:80px; } }
+</style>
+</head>
+<body>
+
+<!-- Top nav -->
+<header class="border-b border-[#EAEAF0] bg-white/80 backdrop-blur sticky top-0 z-40">
+  <div class="container-x flex items-center justify-between py-3">
+    <a href="#top" class="flex items-center gap-2 font-bold text-[17px]">
+      <span class="inline-block w-7 h-7 rounded-lg" style="background:linear-gradient(135deg,#0B1B3D,#1E3A8A);"></span>
+      데일리 픽
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm text-[#374151]">
+      <a href="#how" class="hover:text-[#0B1B3D]">서비스 흐름</a>
+      <a href="#example" class="hover:text-[#0B1B3D]">알림톡 예시</a>
+      <a href="#pricing" class="hover:text-[#0B1B3D]">요금제</a>
+      <a href="#faq" class="hover:text-[#0B1B3D]">FAQ</a>
+    </nav>
+    <a href="#signup" class="btn btn-primary text-sm" style="padding:10px 16px;">7일 무료체험</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ====== HERO ====== -->
+<section class="gradient-hero">
+  <div class="container-x py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <span class="chip">🇰🇷 코스피·코스닥 · 🇺🇸 나스닥 · 선물·ETF</span>
+      <h1 class="mt-4 text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">
+        매일 아침 8:30,<br/>
+        <span style="color:#1E3A8A">오늘의 종목 3개</span>를<br/>
+        카톡으로 받아보세요.
+      </h1>
+      <p class="mt-5 text-[#374151] text-lg leading-relaxed">
+        매일 시장 종료 후 알고리즘이 단기 스윙(3~5일) 후보를 자동 선정합니다.<br/>
+        종목 찾는 시간을 줄여드립니다.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#signup" class="btn btn-primary">7일 무료체험 시작</a>
+        <a href="#example" class="btn btn-ghost">알림톡 예시 보기</a>
+      </div>
+      <p class="mt-4 text-xs text-[#6B7280] leading-relaxed">
+        7일 동안 무료, 언제든 해지 가능 · 결제 7일 전 사전 안내 · 7일 이내 청약철회 보장
+      </p>
+    </div>
+
+    <!-- Phone mockup with KakaoTalk message -->
+    <div class="flex justify-center md:justify-end">
+      <div class="relative" aria-hidden="true">
+        <div class="absolute -top-6 -left-6 w-24 h-24 rounded-full" style="background:radial-gradient(closest-side, rgba(255,176,32,.35), transparent);"></div>
+        <div class="kakao-msg">
+          <div class="head"><span class="dot"></span> 데일리 픽 · 2026.05.10 (월)</div>
+          <div><b>■ 코스피 관심 종목</b></div>
+          <ul>
+            <li>· <span class="ticker">삼성전자(005930)</span> — RSI 34, 5일선 지지</li>
+            <li>· <span class="ticker">LG화학(051910)</span> — 거래량 급증</li>
+          </ul>
+          <div style="height:8px"></div>
+          <div><b>■ 미장 관심 종목 (10일 자정 기준)</b></div>
+          <ul>
+            <li>· <span class="ticker">NVDA</span> — 어닝 컨센서스 상회</li>
+            <li>· <span class="ticker">AAPL</span> — 50일선 돌파</li>
+          </ul>
+          <div class="divider"></div>
+          <div class="disclaim">
+            본 정보는 투자 권유가 아니며, 투자 결과는 투자자 본인에게 귀속됩니다.<br/>
+            과거 수익률은 미래 수익을 보장하지 않습니다.<br/>
+            유사투자자문업 신고: 제○○○○-○○○호 / 수신거부: 080-***-****
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROBLEM ====== -->
+<section class="py-16">
+  <div class="container-x grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <span class="chip">왜 데일리 픽인가요?</span>
+      <h2 class="mt-3 text-2xl md:text-3xl font-bold leading-snug">
+        종목 찾는데<br/>매일 2시간 쓰지 마세요.
+      </h2>
+      <p class="mt-4 text-[#374151] leading-relaxed">
+        직장인 투자자분들의 가장 큰 고민은 <b>시간</b>입니다.<br/>
+        장 마감 후 차트·뉴스·재무를 일일이 확인하는 대신,<br/>
+        매일 아침 알고리즘이 선정한 후보 종목 3개를 카톡으로 확인하세요.
+      </p>
+      <ul class="mt-6 space-y-2 text-[#374151]">
+        <li>✅ 평일 매일 자동 발송 (한국장 8:30 / 미장 22:00)</li>
+        <li>✅ 5가지 기술적·수급 조건을 통과한 종목만</li>
+        <li>✅ 사람 1명이 발송 직전 검수 후 전송</li>
+      </ul>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="grid-card p-5"><div class="text-3xl font-extrabold">2h</div><div class="text-sm text-[#6B7280] mt-1">매일 종목 리서치에 쓰는 평균 시간</div></div>
+      <div class="grid-card p-5"><div class="text-3xl font-extrabold">3개</div><div class="text-sm text-[#6B7280] mt-1">매일 후보 종목</div></div>
+      <div class="grid-card p-5"><div class="text-3xl font-extrabold">8:30</div><div class="text-sm text-[#6B7280] mt-1">오전 알림 발송 시각 (한국장)</div></div>
+      <div class="grid-card p-5"><div class="text-3xl font-extrabold">5일</div><div class="text-sm text-[#6B7280] mt-1">평균 보유 기간 (단기 스윙)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== HOW IT WORKS ====== -->
+<section id="how" class="py-16 bg-white border-y border-[#EAEAF0]">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto">
+      <span class="chip">How it works</span>
+      <h2 class="mt-3 text-2xl md:text-3xl font-bold">3단계로 시작</h2>
+      <p class="mt-3 text-[#374151]">가입 → 시장 선택 → 매일 알림. 끝.</p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-5">
+      <div class="grid-card p-6">
+        <div class="step-num">1</div>
+        <h3 class="mt-4 text-lg font-bold">가입 + 카톡 인증</h3>
+        <p class="mt-2 text-sm text-[#374151]">전화번호로 카카오 알림톡 수신을 인증합니다. 7일 무료체험은 결제 정보 등록 후 시작됩니다.</p>
+      </div>
+      <div class="grid-card p-6">
+        <div class="step-num">2</div>
+        <h3 class="mt-4 text-lg font-bold">시장 선택</h3>
+        <p class="mt-2 text-sm text-[#374151]">코스피·코스닥, 나스닥, 선물·ETF 중 받고 싶은 시장을 고릅니다. 언제든 변경 가능합니다.</p>
+      </div>
+      <div class="grid-card p-6">
+        <div class="step-num">3</div>
+        <h3 class="mt-4 text-lg font-bold">매일 알림 수신</h3>
+        <p class="mt-2 text-sm text-[#374151]">한국장 오전 8:30, 미장 밤 10:00에 후보 종목 3개를 카카오톡으로 받아보세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ALIMTALK EXAMPLES ====== -->
+<section id="example" class="py-16">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto">
+      <span class="chip">실제 알림톡 포맷</span>
+      <h2 class="mt-3 text-2xl md:text-3xl font-bold">시장별 알림톡 예시</h2>
+      <p class="mt-3 text-[#374151]">아래는 발송 포맷 예시입니다. 종목·수치는 매일 자동으로 갱신됩니다.</p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <!-- KOSPI -->
+      <div class="flex flex-col items-center">
+        <div class="kakao-msg">
+          <div class="head"><span class="dot"></span> 데일리 픽 · 코스피·코스닥</div>
+          <div><b>■ 관심 종목 (5/10 월)</b></div>
+          <ul>
+            <li>· <span class="ticker">삼성전자(005930)</span> — RSI 34, 5일선 지지</li>
+            <li>· <span class="ticker">LG화학(051910)</span> — 거래량 5일 평균 2.3배</li>
+            <li>· <span class="ticker">한미반도체(042700)</span> — 외국인 5일 연속 순매수</li>
+          </ul>
+          <div class="divider"></div>
+          <div class="disclaim">본 정보는 투자 권유가 아니며, 결과는 투자자 본인에게 귀속됩니다. 과거 수익률은 미래 수익을 보장하지 않습니다. 유사투자자문업 신고: 제○○○○-○○○호</div>
+        </div>
+        <div class="mt-4 text-sm font-semibold">코스피·코스닥 · 매일 오전 8:30</div>
+      </div>
+
+      <!-- NASDAQ -->
+      <div class="flex flex-col items-center">
+        <div class="kakao-msg">
+          <div class="head"><span class="dot"></span> 데일리 픽 · 미장</div>
+          <div><b>■ 관심 종목 (5/10 자정 기준)</b></div>
+          <ul>
+            <li>· <span class="ticker">NVDA</span> — 어닝 컨센서스 +6.2%</li>
+            <li>· <span class="ticker">AAPL</span> — 50일선 돌파</li>
+            <li>· <span class="ticker">PLTR</span> — MACD 골든크로스</li>
+          </ul>
+          <div class="divider"></div>
+          <div class="disclaim">본 정보는 투자 권유가 아니며, 결과는 투자자 본인에게 귀속됩니다. 과거 수익률은 미래 수익을 보장하지 않습니다. 유사투자자문업 신고: 제○○○○-○○○호</div>
+        </div>
+        <div class="mt-4 text-sm font-semibold">나스닥·NYSE · 매일 밤 22:00</div>
+      </div>
+
+      <!-- FUTURES / ETF -->
+      <div class="flex flex-col items-center">
+        <div class="kakao-msg">
+          <div class="head"><span class="dot"></span> 데일리 픽 · 선물·ETF</div>
+          <div><b>■ 관심 종목 (5/10 기준)</b></div>
+          <ul>
+            <li>· <span class="ticker">KODEX 200(069500)</span> — 5/20일선 정배열</li>
+            <li>· <span class="ticker">TIGER 미국나스닥100</span> — 거래량 급증</li>
+            <li>· <span class="ticker">KS200 선물</span> — 베이시스 확대</li>
+          </ul>
+          <div class="divider"></div>
+          <div class="disclaim">본 정보는 투자 권유가 아니며, 결과는 투자자 본인에게 귀속됩니다. 과거 수익률은 미래 수익을 보장하지 않습니다. 유사투자자문업 신고: 제○○○○-○○○호</div>
+        </div>
+        <div class="mt-4 text-sm font-semibold">선물·ETF · Pro 플랜 전용</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SWING PROGRAM EXPLAINER ====== -->
+<section class="py-16 bg-white border-y border-[#EAEAF0]">
+  <div class="container-x">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div>
+        <span class="chip">단기 스윙 프로그램이란?</span>
+        <h2 class="mt-3 text-2xl md:text-3xl font-bold leading-snug">
+          3~5일 보유를 목표로 하는<br/>알고리즘 기반 종목 선정
+        </h2>
+        <p class="mt-4 text-[#374151] leading-relaxed">
+          데이트레이딩보다 길고, 중장기 투자보다 짧은 영역.<br/>
+          기술적 지표·수급·이벤트를 조합해 단기간 변동 가능성이 높은 종목을 찾습니다.
+        </p>
+        <div class="mt-6 grid grid-cols-3 gap-3">
+          <div class="grid-card p-4 text-center"><div class="text-2xl font-bold">3~5일</div><div class="text-xs text-[#6B7280] mt-1">평균 보유</div></div>
+          <div class="grid-card p-4 text-center"><div class="text-2xl font-bold">3~5개</div><div class="text-xs text-[#6B7280] mt-1">일일 후보 종목</div></div>
+          <div class="grid-card p-4 text-center"><div class="text-2xl font-bold">5단계</div><div class="text-xs text-[#6B7280] mt-1">자동 스크리닝</div></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">자동 스크리너 5단계</h3>
+        <ol class="space-y-3">
+          <li class="grid-card p-4 flex gap-3">
+            <span class="step-num shrink-0">1</span>
+            <div>
+              <div class="font-semibold">거래량 + RSI 필터</div>
+              <div class="text-sm text-[#6B7280]">거래량 5일 평균 대비 2배 이상 + RSI 30~40 (저평가 반등 후보)</div>
+            </div>
+          </li>
+          <li class="grid-card p-4 flex gap-3">
+            <span class="step-num shrink-0">2</span>
+            <div>
+              <div class="font-semibold">추세 전환 감지</div>
+              <div class="text-sm text-[#6B7280]">MACD 골든크로스 + 5일선·20일선 정배열 시작</div>
+            </div>
+          </li>
+          <li class="grid-card p-4 flex gap-3">
+            <span class="step-num shrink-0">3</span>
+            <div>
+              <div class="font-semibold">이벤트 모멘텀</div>
+              <div class="text-sm text-[#6B7280]">어닝 서프라이즈 (컨센서스 +5% 이상)</div>
+            </div>
+          </li>
+          <li class="grid-card p-4 flex gap-3">
+            <span class="step-num shrink-0">4</span>
+            <div>
+              <div class="font-semibold">수급 검증</div>
+              <div class="text-sm text-[#6B7280]">기관·외국인 5일 연속 순매수</div>
+            </div>
+          </li>
+          <li class="grid-card p-4 flex gap-3">
+            <span class="step-num shrink-0">5</span>
+            <div>
+              <div class="font-semibold">점수화 + 사람 검수</div>
+              <div class="text-sm text-[#6B7280]">종목별 점수 산출 → 상위 3~5개 선정 → 발송 전 사람 1명이 최종 확인</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Track record disclaimer block -->
+    <div class="mt-12">
+      <div class="grid-card p-6">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <h3 class="text-lg font-bold">백테스트 방법론</h3>
+            <p class="text-sm text-[#6B7280] mt-1">2023.01 ~ 2026.04 KOSPI 200 종목 대상 일별 백테스트 결과는 별도 문서로 제공합니다.</p>
+          </div>
+          <a href="docs/backtest-methodology.pdf" class="btn btn-ghost text-sm" style="padding:10px 16px;">백테스트 방법론 PDF</a>
+        </div>
+        <div class="legal-banner mt-5">
+          ⚠️ <b>과거 성과는 미래 수익을 보장하지 않습니다.</b> 백테스트 결과는 과거 시점의 시뮬레이션이며, 실제 투자 환경(슬리피지·세금·수수료·체결가능성)과 차이가 발생할 수 있습니다. 본 서비스는 종목 추천이 아니라 단순 정보 제공이며, 모든 투자 판단·결과는 투자자 본인에게 귀속됩니다.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PRICING ====== -->
+<section id="pricing" class="py-16">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto">
+      <span class="chip">Pricing</span>
+      <h2 class="mt-3 text-2xl md:text-3xl font-bold">시작은 7일 무료체험부터</h2>
+      <p class="mt-3 text-[#374151]">언제든 해지 가능. 다음 결제 7일 전 사전 안내. 7일 이내 청약철회 보장.</p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-4 gap-5">
+      <!-- LITE -->
+      <div class="grid-card p-6 relative price-card">
+        <div class="text-sm font-semibold text-[#6B7280]">Lite</div>
+        <div class="mt-2 flex items-baseline gap-1"><span class="text-3xl font-extrabold">9,900</span><span class="text-sm text-[#6B7280]">원/월</span></div>
+        <div class="mt-1 text-xs text-[#6B7280]">국장 입문자용</div>
+        <ul class="mt-5 text-sm space-y-2">
+          <li>✅ 코스피·코스닥</li>
+          <li>✅ 주 3회 (월·수·금 8:30)</li>
+          <li>✅ 카카오 알림톡 수신</li>
+          <li>❌ 미장 / 선물·ETF</li>
+        </ul>
+        <button data-plan="lite" data-price="9900" class="btn btn-ghost w-full mt-6 plan-btn">선택</button>
+      </div>
+
+      <!-- STANDARD (recommended) -->
+      <div class="grid-card p-6 relative price-card recommend">
+        <div class="badge-recommend">가장 인기</div>
+        <div class="text-sm font-semibold text-[#1E3A8A]">Standard</div>
+        <div class="mt-2 flex items-baseline gap-1"><span class="text-3xl font-extrabold">19,900</span><span class="text-sm text-[#6B7280]">원/월</span></div>
+        <div class="mt-1 text-xs text-[#6B7280]">직장인 분산 투자자</div>
+        <ul class="mt-5 text-sm space-y-2">
+          <li>✅ 코스피·코스닥 + 나스닥</li>
+          <li>✅ 매일 발송 (한국 8:30 / 미장 22:00)</li>
+          <li>✅ 알림톡 + 이메일 백업</li>
+          <li>❌ 선물·ETF / 시황 라이브</li>
+        </ul>
+        <button data-plan="standard" data-price="19900" class="btn btn-primary w-full mt-6 plan-btn">7일 무료체험</button>
+      </div>
+
+      <!-- PRO -->
+      <div class="grid-card p-6 relative price-card">
+        <div class="text-sm font-semibold text-[#6B7280]">Pro</div>
+        <div class="mt-2 flex items-baseline gap-1"><span class="text-3xl font-extrabold">39,900</span><span class="text-sm text-[#6B7280]">원/월</span></div>
+        <div class="mt-1 text-xs text-[#6B7280]">적극 트레이더</div>
+        <ul class="mt-5 text-sm space-y-2">
+          <li>✅ 국장 + 미장 + 선물·ETF</li>
+          <li>✅ 매일 + 시황 라이브</li>
+          <li>✅ 알림톡 + 이메일 백업</li>
+          <li>✅ 종목 선정 근거 상세</li>
+        </ul>
+        <button data-plan="pro" data-price="39900" class="btn btn-ghost w-full mt-6 plan-btn">선택</button>
+      </div>
+
+      <!-- ANNUAL -->
+      <div class="grid-card p-6 relative price-card">
+        <div class="text-sm font-semibold text-[#6B7280]">Annual</div>
+        <div class="mt-2 flex items-baseline gap-1"><span class="text-3xl font-extrabold">390,000</span><span class="text-sm text-[#6B7280]">원/년</span></div>
+        <div class="mt-1 text-xs text-[#6B7280]">Pro 연결제 · 18% 할인</div>
+        <ul class="mt-5 text-sm space-y-2">
+          <li>✅ Pro 동일 + 분기 시장 리포트</li>
+          <li>✅ 우선 CS 응답</li>
+          <li>✅ 12개월 가격 고정</li>
+        </ul>
+        <button data-plan="annual" data-price="390000" class="btn btn-ghost w-full mt-6 plan-btn">선택</button>
+      </div>
+    </div>
+
+    <!-- Compare table -->
+    <div class="mt-10 overflow-x-auto">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th class="center">Lite</th>
+            <th class="center">Standard</th>
+            <th class="center">Pro</th>
+            <th class="center">Annual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>코스피·코스닥</td><td class="center">✅</td><td class="center">✅</td><td class="center">✅</td><td class="center">✅</td></tr>
+          <tr><td>나스닥·NYSE</td><td class="center">—</td><td class="center">✅</td><td class="center">✅</td><td class="center">✅</td></tr>
+          <tr><td>선물·ETF</td><td class="center">—</td><td class="center">—</td><td class="center">✅</td><td class="center">✅</td></tr>
+          <tr><td>발송 빈도</td><td class="center">주 3회</td><td class="center">매일</td><td class="center">매일+라이브</td><td class="center">매일+라이브</td></tr>
+          <tr><td>분기 시장 리포트</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">✅</td></tr>
+          <tr><td>월 환산 가격</td><td class="center">9,900</td><td class="center">19,900</td><td class="center">39,900</td><td class="center">32,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SIGNUP / PAYMENT ====== -->
+<section id="signup" class="py-16 bg-white border-y border-[#EAEAF0]">
+  <div class="container-x grid md:grid-cols-2 gap-12">
+    <div>
+      <span class="chip">7일 무료체험 신청</span>
+      <h2 class="mt-3 text-2xl md:text-3xl font-bold">정보 입력 → 카카오 인증 → 알림톡 자동 수신</h2>
+      <p class="mt-4 text-[#374151] leading-relaxed">
+        아래 정보를 입력하면 카카오 알림톡으로 본인 인증 메시지가 발송됩니다.<br/>
+        인증 완료 후 다음 영업일부터 매일 종목 알림이 자동으로 도착합니다.
+      </p>
+      <ul class="mt-6 space-y-2 text-sm text-[#374151]">
+        <li>· 7일 무료체험 종료 7일 전 결제 안내 알림</li>
+        <li>· 결제는 토스페이먼츠 정기결제로 안전하게</li>
+        <li>· 마이페이지에서 언제든 해지 (즉시 발송 중단)</li>
+      </ul>
+      <div class="legal-banner mt-6">
+        본 정보는 투자 권유가 아니며, 투자 결과는 투자자 본인에게 귀속됩니다. 가입 시 정보성 메시지(가입자 대상)와 광고성 메시지(별도 동의 시)는 분리하여 발송됩니다.
+      </div>
+    </div>
+
+    <form id="signup-form" class="grid-card p-6 space-y-4" novalidate>
+      <div>
+        <label class="block text-sm font-semibold mb-1">이름</label>
+        <input name="name" required class="w-full border border-[#E5E7EB] rounded-lg px-3 py-3 focus:outline-none focus:border-[#1E3A8A]" placeholder="홍길동" />
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">휴대전화 (카카오 알림톡 수신)</label>
+        <input name="phone" required inputmode="numeric" pattern="[0-9-]{10,13}" class="w-full border border-[#E5E7EB] rounded-lg px-3 py-3 focus:outline-none focus:border-[#1E3A8A]" placeholder="010-1234-5678" />
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">이메일</label>
+        <input name="email" type="email" required class="w-full border border-[#E5E7EB] rounded-lg px-3 py-3 focus:outline-none focus:border-[#1E3A8A]" placeholder="you@example.com" />
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">받고 싶은 시장</label>
+        <div class="grid grid-cols-3 gap-2 text-sm">
+          <label class="grid-card p-3 cursor-pointer flex items-center gap-2"><input type="checkbox" name="markets" value="kospi" checked /> 코스피·코스닥</label>
+          <label class="grid-card p-3 cursor-pointer flex items-center gap-2"><input type="checkbox" name="markets" value="us" /> 나스닥·NYSE</label>
+          <label class="grid-card p-3 cursor-pointer flex items-center gap-2"><input type="checkbox" name="markets" value="futures" /> 선물·ETF</label>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold mb-1">플랜 선택</label>
+        <select name="plan" id="plan-select" class="w-full border border-[#E5E7EB] rounded-lg px-3 py-3 bg-white">
+          <option value="lite">Lite — 9,900원/월</option>
+          <option value="standard" selected>Standard — 19,900원/월 (가장 인기)</option>
+          <option value="pro">Pro — 39,900원/월</option>
+          <option value="annual">Annual — 390,000원/년</option>
+        </select>
+      </div>
+
+      <div class="space-y-2 pt-2">
+        <label class="flex items-start gap-2 text-sm"><input type="checkbox" name="agree_terms" required class="mt-1" /> <span>[필수] 이용약관 및 환불정책에 동의합니다. <a href="docs/terms.html" class="underline">보기</a></span></label>
+        <label class="flex items-start gap-2 text-sm"><input type="checkbox" name="agree_privacy" required class="mt-1" /> <span>[필수] 개인정보 수집·이용에 동의합니다. <a href="docs/privacy.html" class="underline">보기</a></span></label>
+        <label class="flex items-start gap-2 text-sm"><input type="checkbox" name="agree_alimtalk" required class="mt-1" /> <span>[필수] 카카오 알림톡 정보성 메시지 수신에 동의합니다.</span></label>
+        <label class="flex items-start gap-2 text-sm"><input type="checkbox" name="agree_marketing" class="mt-1" /> <span>[선택] 광고성 정보(친구톡) 수신에 동의합니다. (야간 21~익일 8시 자동 차단)</span></label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-full">7일 무료체험 시작 → 결제수단 등록</button>
+      <p class="text-xs text-[#6B7280] text-center">결제수단 등록 후 7일간 무료. 7일 후 자동 결제 (사전 안내 발송)</p>
+    </form>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section id="faq" class="py-16">
+  <div class="container-x max-w-3xl">
+    <div class="text-center">
+      <span class="chip">FAQ</span>
+      <h2 class="mt-3 text-2xl md:text-3xl font-bold">자주 묻는 질문</h2>
+    </div>
+    <div class="mt-8">
+      <details>
+        <summary>발송 시간이 어떻게 되나요? <span class="arrow">⌄</span></summary>
+        <p class="mt-3 text-sm text-[#374151]">한국장은 평일 매일 오전 8:30, 미장은 한국시간 밤 22:00에 발송됩니다. 휴장일에는 발송하지 않습니다. 광고성 메시지는 야간 21시~익일 8시 발송이 차단됩니다.</p>
+      </details>
+      <details>
+        <summary>종목은 어떻게 선정되나요? <span class="arrow">⌄</span></summary>
+        <p class="mt-3 text-sm text-[#374151]">매일 시장 종료 후 5가지 조건(거래량+RSI, MACD 골든크로스+이평 정배열, 어닝 서프라이즈, 수급, 점수화)을 적용해 자동 선정한 뒤, 사람 1명이 발송 직전 검수합니다.</p>
+      </details>
+      <details>
+        <summary>해지·환불은 어떻게 하나요? <span class="arrow">⌄</span></summary>
+        <p class="mt-3 text-sm text-[#374151]">마이페이지에서 즉시 해지 가능합니다. 결제 후 7일 이내 청약철회를 보장하며(콘텐츠 일부 사용 시 제한 가능 — 약관 명시), 다음 결제 7일 전 사전 안내를 발송합니다.</p>
+      </details>
+      <details>
+        <summary>회원별로 다른 종목을 추천해주나요? <span class="arrow">⌄</span></summary>
+        <p class="mt-3 text-sm text-[#374151]">아니요. 본 서비스는 유사투자자문업으로 신고된 1:多 일방 발송 서비스입니다. 모든 회원에게 동일한 종목 정보가 제공되며, 개별 자산·포트폴리오에 대한 1:1 자문은 제공하지 않습니다.</p>
+      </details>
+      <details>
+        <summary>수익이 보장되나요? <span class="arrow">⌄</span></summary>
+        <p class="mt-3 text-sm text-[#374151]">아니요. 본 정보는 투자 권유가 아니며, 모든 투자 결과는 투자자 본인에게 귀속됩니다. 과거 성과는 미래 수익을 보장하지 않습니다.</p>
+      </details>
+      <details>
+        <summary>알림톡이 안 와요. <span class="arrow">⌄</span></summary>
+        <p class="mt-3 text-sm text-[#374151]">카카오톡 알림 차단 여부를 먼저 확인해주세요. 그래도 미수신 시 이메일·SMS 폴백 채널이 자동 작동합니다. 고객센터로 문의하시면 발송 로그를 확인해드립니다.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="bg-white border-t border-[#EAEAF0] py-10">
+  <div class="container-x">
+    <div class="legal-banner">
+      <b>면책 및 고지</b><br/>
+      본 정보는 투자 권유가 아니며, 모든 투자 결과는 투자자 본인에게 귀속됩니다. 과거 성과는 미래 수익을 보장하지 않습니다. 본 서비스는 「자본시장법」상 유사투자자문업(불특정 다수 대상 1:多 일방 발송)으로 신고된 사업이며, 회원별 1:1 자문이나 자산·포트폴리오 분석은 제공하지 않습니다.
+    </div>
+    <div class="footer-mini mt-6 grid md:grid-cols-2 gap-6">
+      <div>
+        <div><b>(주)포트존</b> · 대표: 송준 · 사업자등록번호: ***-**-*****</div>
+        <div>주소: 서울특별시 ***</div>
+        <div>유사투자자문업 신고번호: 제○○○○-○○○호 (신고 처리 후 등록)</div>
+        <div>통신판매업 신고번호: 제0000-서울***-****호</div>
+        <div>고객센터: 080-***-**** · cs@dailypick.kr</div>
+      </div>
+      <div>
+        <div><a href="docs/terms.html" class="underline">이용약관</a> · <a href="docs/privacy.html" class="underline">개인정보처리방침</a> · <a href="docs/refund.html" class="underline">환불정책</a> · <a href="docs/disclaimer.html" class="underline">면책조항</a></div>
+        <div class="mt-2">© 2026 PortZone. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- Mobile sticky CTA -->
+<div class="sticky-cta">
+  <a href="#signup" class="btn btn-primary w-full">7일 무료체험 시작</a>
+</div>
+
+<script>
+  // Plan card → form select sync
+  document.querySelectorAll('.plan-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const plan = btn.dataset.plan;
+      const sel = document.getElementById('plan-select');
+      if (sel) sel.value = plan;
+      document.getElementById('signup').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Signup form submit (placeholder — calls backend)
+  const form = document.getElementById('signup-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.markets = Array.from(form.querySelectorAll('input[name="markets"]:checked')).map(i => i.value);
+      try {
+        // Replace with your deployed backend URL
+        const API = window.DAILYPICK_API || 'http://localhost:8000';
+        const res = await fetch(`${API}/api/subscribe`, {
+          method: 'POST',
+          headers: { 'Content-Type':'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (!res.ok) throw new Error('subscribe failed');
+        const json = await res.json();
+        // Move user to payment provider (Toss / Iamport hosted)
+        if (json.redirect_url) {
+          window.location.href = json.redirect_url;
+        } else {
+          alert('가입 신청이 접수되었습니다. 결제 페이지로 이동합니다.');
+        }
+      } catch (err) {
+        alert('일시적으로 가입 처리에 실패했습니다. 잠시 후 다시 시도해주세요.');
+        console.error(err);
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
