@@ -76,6 +76,7 @@ DEFAULT_KR_UNIVERSE = [
 class KRCandidate:
     ticker: str
     name: str
+    sector: str                   # '대형주' / '중형주' / '코스닥' 등 — 미장 카드와 동일한 칩에 사용
     price: int
     change_pct_1d: float
     market_cap: float
@@ -88,6 +89,11 @@ class KRCandidate:
     earnings_surprise: Optional[float] = None  # OpenDART 키 있을 때만
     score: float = 0.0
     reasons: list = field(default_factory=list)
+    # 매매 가이드 (원 단위)
+    entry_low: int = 0
+    entry_high: int = 0
+    target: int = 0
+    stoploss: int = 0
 
 
 def _fetch_history(ticker: str) -> pd.DataFrame:
@@ -119,6 +125,49 @@ KR_TICKER_NAMES: dict[str, str] = {
     "003670": "포스코홀딩스",   "196170": "알테오젠",        "091990": "셀트리온헬스케어",
     "263750": "펄어비스",       "041510": "SM",             "352820": "하이브",
 }
+
+
+# 시총 기준 단순 분류 — 화면 칩에 사용. 운영 시 KRX 분류 코드로 정밀화 가능.
+KR_SECTOR_OVERRIDE: dict[str, str] = {
+    "005930": "반도체",          "000660": "반도체",        "042700": "반도체",
+    "051910": "화학·배터리",      "373220": "화학·배터리",   "247540": "화학·배터리",
+    "086520": "화학·배터리",      "066970": "화학·배터리",   "006400": "화학·배터리",
+    "005380": "자동차",          "000270": "자동차",
+    "035420": "IT 플랫폼",       "035720": "IT 플랫폼",      "066570": "IT 가전",
+    "207940": "바이오·헬스케어",   "068270": "바이오·헬스케어", "028300": "바이오·헬스케어",
+    "196170": "바이오·헬스케어",   "091990": "바이오·헬스케어",
+    "012450": "방산",            "003670": "철강·소재",
+    "105560": "금융",            "055550": "금융",          "032830": "금융",
+    "017670": "통신",            "015760": "유틸리티",
+    "009150": "전자부품",
+    "263750": "게임",            "041510": "엔터",          "352820": "엔터",
+}
+
+
+def _atr(hist: pd.DataFrame, period: int = 14) -> Optional[float]:
+    if hist is None or len(hist) < period + 1: return None
+    high, low, close = hist["High"], hist["Low"], hist["Close"]
+    prev = close.shift(1)
+    tr = pd.concat([(high - low), (high - prev).abs(), (low - prev).abs()], axis=1).max(axis=1)
+    return float(tr.rolling(period).mean().iloc[-1])
+
+
+def _kr_trade_plan(price: int, atr: Optional[float]) -> tuple[int,int,int,int]:
+    """KR 매매 가이드 — ATR 가능 시 ATR 기반, 아니면 % 기반.
+    한국장은 호가 단위가 있어 단순 정수로 반올림 (실호가 단위는 운영 시 종목별 적용)."""
+    p = float(price)
+    if atr and atr > 0:
+        entry_low  = int(round(p - 0.7 * atr))
+        entry_high = int(round(p + 0.5 * atr))
+        stop       = int(round(p - 1.5 * atr))
+        risk       = p - stop
+        target     = int(round(p + 1.8 * risk))
+    else:
+        entry_low  = int(round(p * 0.985))
+        entry_high = int(round(p * 1.005))
+        stop       = int(round(p * 0.96))
+        target     = int(round(p * 1.06))
+    return entry_low, entry_high, target, stop
 
 
 def _name_of(ticker: str) -> str:
@@ -208,15 +257,19 @@ def screen_kr(universe: Iterable[str] = DEFAULT_KR_UNIVERSE,
 
         price = int(close.iloc[-1])
         chg_1d = float((close.iloc[-1] / close.iloc[-2] - 1) * 100) if len(close) >= 2 else 0.0
+        atr = _atr(hist)
+        e_lo, e_hi, tgt, stop = _kr_trade_plan(price, atr)
+        sector = KR_SECTOR_OVERRIDE.get(ticker, "코스피·코스닥")
 
         c = KRCandidate(
-            ticker=ticker, name=_name_of(ticker),
+            ticker=ticker, name=_name_of(ticker), sector=sector,
             price=price, change_pct_1d=chg_1d, market_cap=mc,
             rsi=rsi_v, volume_spike=vspike,
             macd_golden_cross=gx, ma_aligned_up=ma_up,
             foreign_streak=f_streak, institution_streak=i_streak,
             earnings_surprise=es,
             score=0.0, reasons=reasons,
+            entry_low=e_lo, entry_high=e_hi, target=tgt, stoploss=stop,
         )
         c.score = _score(c)
         if gate_passed:

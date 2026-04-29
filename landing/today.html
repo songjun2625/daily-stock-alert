@@ -221,14 +221,14 @@ function makeCard({ pill, header, price, oneLiner, narr, body, currency }) {
 function krCard(p) {
   const change = p.change_pct_1d ?? 0;
   return makeCard({
-    pill: `<span class="pill pill-soft">코스피·코스닥</span>`,
+    pill: `<span class="pill pill-soft">${p.sector || '코스피·코스닥'}</span>`,
     header: `<span class="text-sm ${chgCls(change)} num">${change>0?'+':''}${change.toFixed(2)}%</span>`,
-    price: `<div class="text-lg font-bold">${p.name} <span class="text-sm font-normal text-[#6B7280] ticker">(${p.ticker})</span></div>
+    price: `<div class="text-lg font-bold ticker">${p.ticker} <span class="text-sm font-normal text-[#6B7280]">${(p.name||'').slice(0,20)}</span></div>
             <div class="num text-2xl font-extrabold mt-1">${(p.price ?? 0).toLocaleString()}원</div>
             <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
     oneLiner: p.narrative?.one_liner || (p.reasons||[]).slice(0,2).join(', '),
     narr: p.narrative,
-    body: '',
+    body: priceBoxes(p, '₩'),
     currency: '₩',
   });
 }
