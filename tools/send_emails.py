@@ -62,7 +62,8 @@ def fetch_subscribers(csv_url: str) -> list[dict]:
         active = active_raw in ("", "true", "1", "y", "yes", "checked")
         if not active:
             continue
-        markets_raw = norm.get("markets", "")
+        # 컬럼명이 'markets' 또는 'market' 둘 다 허용
+        markets_raw = norm.get("markets") or norm.get("market") or ""
         markets = [m.strip() for m in markets_raw.split(",") if m.strip()] if markets_raw else ["kr", "us", "futures"]
         rows.append({
             "email": email,
