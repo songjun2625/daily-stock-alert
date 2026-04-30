@@ -21,7 +21,7 @@
         "sector": "바이오·헬스케어",
         "price": 201500,
         "change_pct_1d": -1.225490196078427,
-        "market_cap": 44179778437120.0,
+        "market_cap": 44070424543232.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
@@ -33,7 +33,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 115.0,
+        "score": 97.0,
         "reasons": [
           "52주 고점 대비 -19%",
           "영업이익률 35%",
@@ -124,33 +124,33 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-        "price": 1480000,
-        "change_pct_1d": 0.4752206381534174,
-        "market_cap": 68510608785408.0,
+        "price": 1481000,
+        "change_pct_1d": 0.5431093007467691,
+        "market_cap": 68556901318656.0,
         "operating_margin": 0.46221,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.24681933842239187,
-        "rsi": 37.3309484982864,
+        "drawdown_52w": 0.24631043256997456,
+        "rsi": 37.51911741032243,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 97.5,
+        "score": 82.0,
         "reasons": [
-          "RSI 37(과매도 반등 후보)",
+          "RSI 38(과매도 반등 후보)",
           "52주 고점 대비 -25%",
           "영업이익률 46%"
         ],
-        "entry_low": 1456250,
-        "entry_high": 1496964,
-        "target": 1571607,
-        "stoploss": 1429107,
+        "entry_low": 1457150,
+        "entry_high": 1498036,
+        "target": 1572993,
+        "stoploss": 1429893,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 37 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 38 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 38로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -166,7 +166,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "37",
+              "value": "38",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -226,58 +226,59 @@
         }
       },
       {
-        "ticker": "035420",
-        "name": "NAVER",
-        "sector": "IT 플랫폼",
-        "price": 214000,
-        "change_pct_1d": -2.7272727272727226,
-        "market_cap": 31989751087104.0,
-        "operating_margin": 0.19112,
-        "revenue_growth": 0.107,
+        "ticker": "251270",
+        "name": "Netmarble",
+        "sector": "코스피·코스닥",
+        "price": 50700,
+        "change_pct_1d": -1.1695906432748537,
+        "market_cap": 4154082721792.0,
+        "operating_margin": 0.12943,
+        "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.2556008751037843,
-        "rsi": 49.993295898256136,
+        "drawdown_52w": 0.2428567178440737,
+        "rsi": 49.18799343934189,
         "volume_spike": false,
         "macd_golden_cross": false,
-        "ma_aligned_up": false,
+        "ma_aligned_up": true,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 94.88,
+        "score": 77.89,
         "reasons": [
-          "52주 고점 대비 -26%",
-          "영업이익률 19%",
-          "매출 성장 +11%"
+          "52주 고점 대비 -24%",
+          "5/20일선 정배열 시작",
+          "영업이익률 13%",
+          "매출 성장 +23%"
         ],
-        "entry_low": 209190,
-        "entry_high": 217436,
-        "target": 232553,
-        "stoploss": 203693,
+        "entry_low": 49710,
+        "entry_high": 51407,
+        "target": 54518,
+        "stoploss": 48579,
         "narrative": {
-          "one_liner": "IT 플랫폼 영업이익률 19% / RSI 50 반등 신호",
-          "thesis": "NAVER(035420)는 매출 성장률 11% · 영업이익률 19%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 49 반등 신호",
+          "thesis": "Netmarble(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 49로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "19%",
+              "value": "13%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "11%",
+              "value": "23%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "50",
+              "value": "49",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-26%",
+              "value": "-24%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -289,8 +290,8 @@
             },
             {
               "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
+              "value": "✓",
+              "ok": true,
               "explain": "단기·중기 추세선 모두 상승 시작."
             },
             {
@@ -316,26 +317,30 @@
           "score_breakdown": [
             {
               "name": "영업이익률 ≥10%",
-              "points": 47.8
+              "points": 32.4
             },
             {
               "name": "매출 성장 ≥5%",
-              "points": 32.1
+              "points": 37.5
             },
             {
               "name": "52주 -10~-35%",
               "points": 15
+            },
+            {
+              "name": "5/20일선 정배열",
+              "points": 8
             }
           ],
           "hold_days": 5
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T11:04:52.776257+09:00",
-    "updated_at_kst": "2026.04.30 (목) 11:04 KST"
+    "updated_at_iso": "2026-04-30T11:16:35.189529+09:00",
+    "updated_at_kst": "2026.04.30 (목) 11:16 KST"
   },
-  "updated_at_iso": "2026-04-30T11:05:00.964901+09:00",
-  "updated_at_kst": "2026.04.30 (목) 11:05 KST",
+  "updated_at_iso": "2026-04-30T11:16:35.189529+09:00",
+  "updated_at_kst": "2026.04.30 (목) 11:16 KST",
   "us": {
     "picks": [
       {
@@ -852,5 +857,10 @@
     ],
     "updated_at_iso": "2026-04-30T11:05:00.964901+09:00",
     "updated_at_kst": "2026.04.30 (목) 11:05 KST"
+  },
+  "runtime": {
+    "market_mode": "normal",
+    "geopolitical_note": "",
+    "updated_at_kst": "2026.04.30 (목) 11:30 KST"
   }
 }

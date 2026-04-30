@@ -73,19 +73,21 @@ def us_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
 
 
 def kr_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
-    """KR — 보수적 AND 게이트 (실제 KR 변동성·승률 고려).
-      필수 1: RSI 30~40 저평가 구간
-      필수 2: MACD 골든크로스 또는 거래량 5일평균 2배+ 또는 5/20일선 정배열 시작.
-    드로우다운만으로는 진입 안 함 (KR 약세장에서 추세 추종 위험)."""
+    """KR v2 — 점수 임계(60점)와 등가가 되도록 빡빡한 신호.
+    cheap (RSI 30~35 골든존 OR dd ≥30%) AND entry (MACD 골든 OR 거래량 2배+)."""
     if idx < 60: return False
     sub_close = close.iloc[: idx + 1]
     sub_vol   = vol.iloc[: idx + 1]
     rsi_v = float(ind.rsi(sub_close).iloc[-1])
-    if not (30.0 <= rsi_v <= 40.0):
-        return False
     macd_l, sig_l, _ = ind.macd(sub_close)
+    peak = sub_close.tail(252).max()
+    dd = float((peak - sub_close.iloc[-1]) / peak) if peak > 0 else 0
+    cheap = (
+        (KR_THRESH.rsi_golden_low <= rsi_v <= KR_THRESH.rsi_golden_high) or
+        (dd >= KR_THRESH.drawdown_deep_low)
+    )
+    if not cheap: return False
     entry = (ind.is_macd_golden_cross(macd_l, sig_l)
-             or ind.is_ma_aligned_up(sub_close)
              or ind.volume_spike(sub_vol, multiplier=2.0))
     return bool(entry)
 

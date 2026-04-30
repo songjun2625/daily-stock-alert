@@ -135,6 +135,16 @@
     ⚠️ 마지막 갱신이 24시간을 초과했습니다. 휴장일·장 종료 직후이거나 데이터 점검 중일 수 있습니다.
   </div>
 
+  <!-- 런타임 모드 배너 (defensive/crisis 시 노출) -->
+  <div id="runtime-banner" class="hidden mt-6" style="border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+    <span id="runtime-icon" style="font-size:22px"></span>
+    <div style="flex:1;min-width:200px">
+      <div id="runtime-title" style="font-weight:800;font-size:15px"></div>
+      <div id="runtime-note" style="font-size:13px;line-height:1.55;margin-top:4px"></div>
+    </div>
+    <span id="runtime-pill" class="pill" style="font-weight:700"></span>
+  </div>
+
   <div class="mt-8 flex flex-wrap gap-2" role="tablist">
     <button class="tab-btn active" data-tab="kr">🇰🇷 코스피·코스닥</button>
     <button class="tab-btn" data-tab="us">🇺🇸 나스닥·NYSE</button>
@@ -288,6 +298,34 @@ skel(KR_CARDS); skel(US_CARDS); skel(FUT_CARDS);
 function lightCls(l) { return l === '🟢' ? 'pill-green' : l === '🟡' ? 'pill-yellow' : 'pill-red'; }
 function chgCls(v) { return v > 0 ? 'text-red-600' : v < 0 ? 'text-blue-600' : 'text-gray-500'; }
 function fmt(v, d=2) { return (v ?? 0).toLocaleString(undefined, {minimumFractionDigits:d, maximumFractionDigits:d}); }
+
+function renderRuntime(rt) {
+  const el = document.getElementById('runtime-banner');
+  if (!el) return;
+  const mode = (rt?.market_mode || 'normal').toLowerCase();
+  const note = rt?.geopolitical_note || '';
+  // normal 이면서 note 도 비어 있으면 배너 미표시
+  if (mode === 'normal' && !note) { el.classList.add('hidden'); return; }
+  let bg, border, color, icon, title, pillBg, pillColor;
+  if (mode === 'crisis') {
+    bg='#FEF2F2'; border='1px solid #FCA5A5'; color='#7F1D1D'; icon='🚨';
+    title='⚠️ 위기 모드 — 신규 추천 전면 보류'; pillBg='#FCA5A5'; pillColor='#7F1D1D';
+  } else if (mode === 'defensive') {
+    bg='#FFF7ED'; border='1px solid #FED7AA'; color='#9A3412'; icon='🛡️';
+    title='🛡️ 방어 모드 — 추천 임계 +20점, 변동성 모니터링 강화'; pillBg='#FED7AA'; pillColor='#9A3412';
+  } else {
+    bg='#EFF6FF'; border='1px solid #BFDBFE'; color='#1E3A8A'; icon='📰';
+    title='📰 시장 안내'; pillBg='#DBEAFE'; pillColor='#1E40AF';
+  }
+  el.style.background = bg; el.style.border = border; el.style.color = color;
+  document.getElementById('runtime-icon').textContent = icon;
+  document.getElementById('runtime-title').textContent = title;
+  document.getElementById('runtime-note').textContent = note || '시장 상황 모니터링 중 — 매일 자동 업데이트.';
+  const pill = document.getElementById('runtime-pill');
+  pill.textContent = mode.toUpperCase();
+  pill.style.background = pillBg; pill.style.color = pillColor;
+  el.classList.remove('hidden');
+}
 
 function renderFear(meta, valId, pillId, sumId) {
   if (!meta) { $(valId).textContent = '—'; $(pillId).textContent = '데이터 없음'; $(pillId).className = 'pill pill-soft'; return; }
@@ -568,6 +606,7 @@ async function load() {
 
     renderFear(d.fear?.vkospi, 'vkospi-value', 'vkospi-pill', 'vkospi-summary');
     renderFear(d.fear?.vix,    'vix-value',    'vix-pill',    'vix-summary');
+    renderRuntime(d.runtime);
 
     const kr = d.kr?.picks || [];
     KR_CARDS.innerHTML = kr.length ? kr.map(krCard).join('')

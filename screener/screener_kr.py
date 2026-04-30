@@ -37,11 +37,12 @@ except Exception:
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from . import indicators as ind
 from . import data_sources as ds
-from .config import KR_THRESH, TOP_N_KR, KST
+from .config import KR_THRESH, KR_SECTOR_BONUS, TOP_N_KR, KST
 
 log = logging.getLogger(__name__)
 
-# 1차 유니버스: 코스피·코스닥 핵심 — 운영 시 시총·유동성 필터로 자동 갱신.
+# 확장 유니버스 — 2026 핫섹터 (반도체·HBM·2차전지·방산·전력) 위주.
+# 1월~4월 승자 TOP 15 분석에서 추출 (analyze_kr_winners.py).
 DEFAULT_KR_UNIVERSE = [
     # 코스피 대형주
     "005930",  # 삼성전자
@@ -64,17 +65,37 @@ DEFAULT_KR_UNIVERSE = [
     "032830",  # 삼성생명
     "066570",  # LG전자
     "003670",  # 포스코홀딩스
-    # 코스피 중형주 / 코스닥
-    "042700",  # 한미반도체
+    "012330",  # 현대모비스
+    # 반도체 사이클 (HBM·AI 메모리)
+    "042700",  # 한미반도체 (HBM)
+    "388050",  # SFA반도체
+    "058470",  # 리노공업
+    "240810",  # 원익IPS
+    "036930",  # 주성엔지니어링 (분석 1위 +313%)
+    "095340",  # ISC
+    "403870",  # HPSP
+    "140860",  # 파크시스템스
+    "108320",  # LX세미콘
+    # 2차전지·소재
     "247540",  # 에코프로비엠
     "086520",  # 에코프로
-    "028300",  # HLB
     "066970",  # 엘앤에프
-    "196170",  # 알테오젠
-    "091990",  # 셀트리온헬스케어
-    "263750",  # 펄어비스
-    "041510",  # SM
-    "352820",  # 하이브
+    "020150",  # 일진머티리얼즈
+    "002990",  # 금호석유
+    "010120",  # LS ELECTRIC (전력기기)
+    # 바이오·헬스케어 (분석상 약세 — 후순위)
+    "028300", "196170", "302440", "214450", "145020",
+    # 엔터·게임
+    "035900", "041510", "352820", "263750",
+    "112040", "036570", "251270",
+    # 방산·우주
+    "079550",  # LIG넥스원
+    "047810",  # 한국항공우주 (KAI)
+    "272210",  # 한화시스템
+    # 조선
+    "010140",  # 삼성중공업
+    "009540",  # HD한국조선해양
+    "042660",  # 한화오션
 ]
 
 
@@ -244,41 +265,58 @@ def _institution_foreign_streak(ticker: str, days: int = 7) -> tuple[int, int]:
 
 
 def _score(c: KRCandidate) -> float:
-    """US 와 동일한 가중 — 좋은 회사(영업이익률·성장)에 가중치 최대.
+    """KR v2 알고리즘 — 2026 승자 분석 기반 (반도체·2차전지·방산 사이클 가중).
 
-    임계값을 통과한 만큼 비례 보너스 (cap 2.5×):
-      - 영업이익률 ≥10% : 25 ~ 62.5점 (실제 수치/임계값 비례)
-      - 매출 성장 ≥5%   : 15 ~ 37.5점
-      - RSI 30~45        : +20점
-      - 드로우다운 -10~-35%: +15점
-      - MACD 골든크로스   : +10점
-      - 5/20일선 정배열   : +8점
-      - 거래량 1.5배+    : +7점
-      - 어닝 서프라이즈 ≥5%: +12점
-      - (KR 전용 가점) 외국인 5일+ : +12 / 기관 5일+ : +13
+    핵심 변경:
+      - 섹터 보너스 (+5~+30) — 반도체/2차전지/방산이 승자의 73%
+      - RSI 골든존 30~35 (+30점) vs 일반 35~45 (+15)
+      - 추세 지속 패턴 50~65 + 정배열 (+25점)
+      - 깊은 드로우다운 30~45% (+25점) — 승자 평균 -34.5% 에서 반등
+      - 신고가 breakout (drawdown ≤ 5% + 정배열) (+20점)
     """
     s = 0.0
+
+    # --- 섹터 사이클 보너스 (2026 핫섹터) ---
+    s += KR_SECTOR_BONUS.get(c.sector, 0)
+
+    # --- 펀더멘털 (cap 2.5x) ---
     if c.operating_margin and c.operating_margin >= KR_THRESH.operating_margin_min:
-        s += 25 * min(c.operating_margin / KR_THRESH.operating_margin_min, 2.5)
+        s += 20 * min(c.operating_margin / KR_THRESH.operating_margin_min, 2.5)
     if c.revenue_growth and c.revenue_growth >= KR_THRESH.revenue_growth_min:
-        s += 15 * min(c.revenue_growth / KR_THRESH.revenue_growth_min, 2.5)
-    if KR_THRESH.rsi_low <= c.rsi <= KR_THRESH.rsi_high:
-        s += 20
-    if KR_THRESH.drawdown_low <= c.drawdown_52w <= KR_THRESH.drawdown_high:
-        s += 15
-    if c.macd_golden_cross:
-        s += 10
-    if c.ma_aligned_up:
-        s += 8
-    if c.volume_spike:
-        s += 7
+        s += 12 * min(c.revenue_growth / KR_THRESH.revenue_growth_min, 2.5)
+
+    # --- RSI 영역별 가산 (mutually exclusive) ---
+    if KR_THRESH.rsi_golden_low <= c.rsi <= KR_THRESH.rsi_golden_high:
+        s += 30   # 승자 평균 33.9 — 골든존
+    elif KR_THRESH.rsi_golden_high < c.rsi <= KR_THRESH.rsi_high:
+        s += 15   # RSI 35~45 보통 저평가
+    elif KR_THRESH.rsi_trend_low <= c.rsi <= KR_THRESH.rsi_trend_high and c.ma_aligned_up:
+        s += 25   # 추세 지속 (50~65 + 정배열) — 모멘텀 종목
+
+    # --- 드로우다운 영역별 ---
+    if KR_THRESH.drawdown_deep_low <= c.drawdown_52w <= KR_THRESH.drawdown_deep_high:
+        s += 25   # 깊은 세일 (-30~-45%) — 승자 패턴
+    elif KR_THRESH.drawdown_low <= c.drawdown_52w < KR_THRESH.drawdown_deep_low:
+        s += 12   # 보통 세일 (-10~-30%)
+    elif c.drawdown_52w <= KR_THRESH.drawdown_breakout_max and c.ma_aligned_up:
+        s += 20   # 신고가 breakout (52w -5% 이내 + 정배열)
+
+    # --- 진입 신호 ---
+    if c.macd_golden_cross: s += 12
+    if c.ma_aligned_up:     s += 10
+    if c.volume_spike:      s += 10  # 1.5배+ (KR 변동성 고려 완화)
+
+    # --- 어닝 서프라이즈 ---
     if c.earnings_surprise and c.earnings_surprise >= KR_THRESH.earnings_surprise_min * 100:
         s += 12
-    # KR 고유 — 수급 신호
-    if c.foreign_streak >= KR_THRESH.institutional_streak_days:
-        s += 12
-    if c.institution_streak >= KR_THRESH.institutional_streak_days:
-        s += 13
+
+    # --- 수급 (외국인·기관) — 3일로 완화, 동반매수 보너스 ---
+    streak = KR_THRESH.institutional_streak_days
+    if c.foreign_streak >= streak:    s += 10
+    if c.institution_streak >= streak: s += 10
+    if c.foreign_streak >= 5 and c.institution_streak >= 5:
+        s += 12   # 외+기 동반 5일+ 강한 수급
+
     return round(s, 2)
 
 
@@ -310,11 +348,12 @@ def _evaluate_one(ticker: str) -> Optional[KRCandidate]:
     if f["revenue_growth"] is not None and f["revenue_growth"] < KR_THRESH.revenue_growth_min:
         return None
 
-    # 게이트: cheap (RSI / 드로우다운) + entry (gx / ma_up / vspike) 합쳐 1개 이상
-    cheap_signals = sum([
-        KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high,
-        KR_THRESH.drawdown_low <= dd <= KR_THRESH.drawdown_high,
-    ])
+    # 게이트 v2: cheap (RSI 30~45 / 드로우다운 ≥10% / 추세지속 / breakout) + entry 합쳐 ≥1
+    rsi_cheap = KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high
+    rsi_trend = (KR_THRESH.rsi_trend_low <= rsi_v <= KR_THRESH.rsi_trend_high) and ma_up
+    dd_cheap = dd >= KR_THRESH.drawdown_low
+    breakout = (dd <= KR_THRESH.drawdown_breakout_max) and ma_up
+    cheap_signals = sum([rsi_cheap, rsi_trend, dd_cheap, breakout])
     entry_signals = sum([gx, ma_up, vspike])
     if cheap_signals + entry_signals < 1:
         return None

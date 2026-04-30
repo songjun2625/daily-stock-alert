@@ -24,7 +24,7 @@ from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
-from .config import KST, TOP_N_KR, TOP_N_US, QUALITY
+from .config import KST, TOP_N_KR, TOP_N_US, QUALITY, KR_SECTOR_BONUS
 from .screener_us import screen_us, market_traffic_light
 from .screener_kr import screen_kr
 from .screener_futures import screen_futures
@@ -33,6 +33,45 @@ from . import narrative
 
 log = logging.getLogger(__name__)
 PICKS_PATH = Path(os.getenv("PICKS_JSON", "landing/data/picks.json"))
+RUNTIME_PATH = Path(os.getenv("RUNTIME_CONFIG_JSON", "landing/data/runtime_config.json"))
+
+
+def _load_runtime() -> dict:
+    """런타임 설정 — market_mode, sector_blacklist, 임계값 override 등.
+    파일 없거나 파싱 실패 시 기본값 (normal mode) 반환."""
+    if not RUNTIME_PATH.exists():
+        return {"market_mode": "normal", "geopolitical_note": "",
+                "sector_blacklist": [], "sector_bonus_overrides": {},
+                "min_score_kr_override": None, "min_score_us_override": None,
+                "fear_index_max_override": None}
+    try:
+        return json.loads(RUNTIME_PATH.read_text(encoding="utf-8"))
+    except Exception as e:
+        log.warning("runtime_config 파싱 실패 → normal mode: %s", e)
+        return {"market_mode": "normal"}
+
+
+def _apply_runtime_overrides(picks_kr: list, picks_us: list, rt: dict) -> tuple[list, list]:
+    """런타임 설정으로 picks 후처리 — 섹터 블랙리스트 / 보너스 덮어쓰기 / 점수 재계산."""
+    blacklist = set(rt.get("sector_blacklist") or [])
+    bonus_overrides: dict = rt.get("sector_bonus_overrides") or {}
+
+    def _filter_and_rescore(picks: list, market: str) -> list:
+        out = []
+        for p in picks:
+            sec = getattr(p, "sector", "")
+            if sec in blacklist:
+                continue
+            # 섹터 보너스 덮어쓰기 — 기본 보너스를 빼고 override 보너스를 더함
+            if market == "kr" and bonus_overrides:
+                base_bonus = KR_SECTOR_BONUS.get(sec, 0)
+                if sec in bonus_overrides:
+                    p.score = max(0, p.score - base_bonus + float(bonus_overrides[sec]))
+            out.append(p)
+        out.sort(key=lambda x: x.score, reverse=True)
+        return out
+
+    return _filter_and_rescore(picks_kr, "kr"), _filter_and_rescore(picks_us, "us")
 
 
 def _now_kst() -> datetime:
@@ -105,43 +144,75 @@ def _to_json_fut(c) -> dict:
 
 # ---- Publisher ----------------------------------------------------------
 
-def _gate_kr(picks: list, vkospi: float) -> tuple[list, str | None]:
-    """KR 품질 게이트 — 공포지수 + 점수 임계.
-    Reason 반환 시 picks 는 빈 리스트로 강제."""
-    if vkospi > QUALITY.vkospi_max:
-        return [], (f"한국장 변동성 매우 높음 (VKOSPI {vkospi:.1f} > {QUALITY.vkospi_max:.0f}) — "
+def _effective_threshold(default: float, override, mode: str, defensive_bump: float = 20) -> float:
+    """런타임 임계값 — override > mode 부스트 > 기본값."""
+    if override is not None:
+        return float(override)
+    if mode == "defensive":
+        return float(default + defensive_bump)
+    return float(default)
+
+
+def _gate_kr(picks: list, vkospi: float, rt: dict) -> tuple[list, str | None]:
+    """KR 품질 게이트 — 공포지수 + 점수 임계 + 런타임 mode 반영."""
+    mode = (rt.get("market_mode") or "normal").lower()
+    if mode == "crisis":
+        return [], (f"⚠️ 위기 모드 활성화 — 신규 추천 전면 보류. "
+                    f"{rt.get('geopolitical_note') or '시장 상황 모니터링 중'}")
+    fear_max = float(rt.get("fear_index_max_override") or QUALITY.vkospi_max)
+    if vkospi > fear_max:
+        return [], (f"한국장 변동성 매우 높음 (VKOSPI {vkospi:.1f} > {fear_max:.0f}) — "
                     "신규 진입 자제 권장. 오늘은 미추천")
-    qualified = [p for p in picks if (p.score or 0) >= QUALITY.min_score_kr]
+    threshold = _effective_threshold(QUALITY.min_score_kr,
+                                     rt.get("min_score_kr_override"), mode)
+    qualified = [p for p in picks if (p.score or 0) >= threshold]
     if not qualified:
         top = picks[0].score if picks else 0
-        return [], (f"오늘 코스피·코스닥에서 추천 임계({QUALITY.min_score_kr:.0f}점)를 넘는 종목 없음 "
+        mode_note = " (방어 모드)" if mode == "defensive" else ""
+        return [], (f"오늘 코스피·코스닥에서 추천 임계({threshold:.0f}점{mode_note})를 넘는 종목 없음 "
                     f"(최고 {top:.0f}점). 약한 신호로 무리하게 진입하지 않습니다")
     return qualified, None
 
 
-def _gate_us(picks: list, vix: float) -> tuple[list, str | None]:
-    """US 품질 게이트 — VIX + 점수 임계."""
-    if vix > QUALITY.vix_max:
-        return [], (f"미장 변동성 매우 높음 (VIX {vix:.1f} > {QUALITY.vix_max:.0f}) — "
+def _gate_us(picks: list, vix: float, rt: dict) -> tuple[list, str | None]:
+    """US 품질 게이트 — VIX + 점수 임계 + 런타임 mode 반영."""
+    mode = (rt.get("market_mode") or "normal").lower()
+    if mode == "crisis":
+        return [], (f"⚠️ 위기 모드 활성화 — 신규 추천 전면 보류. "
+                    f"{rt.get('geopolitical_note') or '시장 상황 모니터링 중'}")
+    fear_max = float(rt.get("fear_index_max_override") or QUALITY.vix_max)
+    if vix > fear_max:
+        return [], (f"미장 변동성 매우 높음 (VIX {vix:.1f} > {fear_max:.0f}) — "
                     "신규 진입 자제 권장. 오늘은 미추천")
-    qualified = [p for p in picks if (p.score or 0) >= QUALITY.min_score_us]
+    threshold = _effective_threshold(QUALITY.min_score_us,
+                                     rt.get("min_score_us_override"), mode)
+    qualified = [p for p in picks if (p.score or 0) >= threshold]
     if not qualified:
         top = picks[0].score if picks else 0
-        return [], (f"오늘 미장에서 추천 임계({QUALITY.min_score_us:.0f}점)를 넘는 종목 없음 "
+        mode_note = " (방어 모드)" if mode == "defensive" else ""
+        return [], (f"오늘 미장에서 추천 임계({threshold:.0f}점{mode_note})를 넘는 종목 없음 "
                     f"(최고 {top:.0f}점). 약한 신호로 무리하게 진입하지 않습니다")
     return qualified, None
 
 
 def publish_kr() -> dict:
     log.info("publish KR start")
-    picks = screen_kr(top_n=TOP_N_KR)
+    rt = _load_runtime()
+    picks = screen_kr(top_n=TOP_N_KR * 3)  # 3배수로 뽑아 블랙리스트·재정렬 후 자르기
+    picks, _ = _apply_runtime_overrides(picks, [], rt)
+    picks = picks[:TOP_N_KR]
     now = _now_kst()
     payload = _load_existing()
     payload.setdefault("fear", {})
     vkospi = ds.vkospi_close()
     payload["fear"]["vkospi"] = _vkospi_meta(vkospi)
+    payload["runtime"] = {
+        "market_mode": rt.get("market_mode", "normal"),
+        "geopolitical_note": rt.get("geopolitical_note", ""),
+        "updated_at_kst": rt.get("updated_at_kst", ""),
+    }
 
-    qualified, no_reason = _gate_kr(picks, vkospi)
+    qualified, no_reason = _gate_kr(picks, vkospi, rt)
     if no_reason:
         log.info("KR 미추천: %s", no_reason)
         payload["kr"] = {
@@ -166,14 +237,22 @@ def publish_kr() -> dict:
 
 def publish_us() -> dict:
     log.info("publish US start")
-    picks = screen_us(top_n=TOP_N_US)
+    rt = _load_runtime()
+    picks = screen_us(top_n=TOP_N_US * 3)
+    _, picks = _apply_runtime_overrides([], picks, rt)
+    picks = picks[:TOP_N_US]
     light = market_traffic_light()
     now = _now_kst()
     payload = _load_existing()
     payload.setdefault("fear", {})
     payload["fear"]["vix"] = _vix_meta(light["vix"])
+    payload["runtime"] = {
+        "market_mode": rt.get("market_mode", "normal"),
+        "geopolitical_note": rt.get("geopolitical_note", ""),
+        "updated_at_kst": rt.get("updated_at_kst", ""),
+    }
 
-    qualified, no_reason = _gate_us(picks, light["vix"])
+    qualified, no_reason = _gate_us(picks, light["vix"], rt)
     if no_reason:
         log.info("US 미추천: %s", no_reason)
         payload["us"] = {

@@ -10,8 +10,8 @@
       "stoploss": 1420768.0,
       "target": 1567018.0,
       "hold_days": 5,
-      "current_price": 1480000.0,
-      "pnl_pct": 0.475,
+      "current_price": 1482000.0,
+      "pnl_pct": 0.611,
       "days_held": 0,
       "status": "open",
       "score": 25.0
@@ -26,8 +26,8 @@
       "stoploss": 239161.0,
       "target": 276510.0,
       "hold_days": 5,
-      "current_price": 268500.0,
-      "pnl_pct": 6.337,
+      "current_price": 269500.0,
+      "pnl_pct": 6.733,
       "days_held": 0,
       "status": "open",
       "score": 25.0
@@ -42,8 +42,8 @@
       "stoploss": 154975.0,
       "target": 170725.0,
       "hold_days": 5,
-      "current_price": 161600.0,
-      "pnl_pct": 0.623,
+      "current_price": 162000.0,
+      "pnl_pct": 0.872,
       "days_held": 0,
       "status": "open",
       "score": 15.0
@@ -138,14 +138,52 @@
       "stoploss": 1322821.0,
       "target": 1552922.0,
       "hold_days": 5,
-      "current_price": 1415000.0,
-      "pnl_pct": 0.712,
+      "current_price": 1428000.0,
+      "pnl_pct": 1.637,
       "days_held": 0,
       "status": "open",
       "score": 48.12168819861081
+    },
+    {
+      "ticker": "251270",
+      "market": "kr",
+      "name": "Netmarble",
+      "sector": "코스피·코스닥",
+      "entry_date": "2026-04-30",
+      "entry_price": 50700.0,
+      "stoploss": 48579.0,
+      "target": 54518.0,
+      "hold_days": 5,
+      "current_price": 50800.0,
+      "pnl_pct": 0.197,
+      "days_held": 0,
+      "status": "open",
+      "score": 77.89
     }
   ],
   "closed_trades": [
+    {
+      "ticker": "041510",
+      "market": "kr",
+      "name": "SM",
+      "entry_date": "2026-04-29",
+      "exit_date": "2026-04-29",
+      "bars_held": 1,
+      "pnl_pct": -0.759,
+      "reason": "time",
+      "source": "backtest"
+    },
+    {
+      "ticker": "214450",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-04-27",
+      "exit_date": "2026-04-28",
+      "bars_held": 2,
+      "pnl_pct": -2.648,
+      "reason": "stop",
+      "source": "backtest"
+    },
     {
       "ticker": "PLTR",
       "market": "us",
@@ -213,6 +251,17 @@
       "source": "backtest"
     },
     {
+      "ticker": "214450",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-04-09",
+      "exit_date": "2026-04-15",
+      "bars_held": 5,
+      "pnl_pct": 1.45,
+      "reason": "time",
+      "source": "backtest"
+    },
+    {
       "ticker": "META",
       "market": "us",
       "name": "Meta Platforms",
@@ -257,6 +306,17 @@
       "source": "backtest"
     },
     {
+      "ticker": "112040",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-04-09",
+      "exit_date": "2026-04-14",
+      "bars_held": 4,
+      "pnl_pct": 3.846,
+      "reason": "target",
+      "source": "backtest"
+    },
+    {
       "ticker": "041510",
       "market": "kr",
       "name": "SM",
@@ -279,13 +339,13 @@
       "source": "backtest"
     },
     {
-      "ticker": "035420",
+      "ticker": "035720",
       "market": "kr",
-      "name": "NAVER",
-      "entry_date": "2026-04-10",
+      "name": "카카오",
+      "entry_date": "2026-04-09",
       "exit_date": "2026-04-13",
-      "bars_held": 2,
-      "pnl_pct": -2.647,
+      "bars_held": 3,
+      "pnl_pct": -2.648,
       "reason": "stop",
       "source": "backtest"
     },
@@ -298,6 +358,17 @@
       "bars_held": 5,
       "pnl_pct": 1.777,
       "reason": "time",
+      "source": "backtest"
+    },
+    {
+      "ticker": "145020",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-04-09",
+      "exit_date": "2026-04-10",
+      "bars_held": 2,
+      "pnl_pct": 3.846,
+      "reason": "target",
       "source": "backtest"
     },
     {
@@ -330,6 +401,17 @@
       "exit_date": "2026-04-09",
       "bars_held": 2,
       "pnl_pct": -4.146,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
+      "ticker": "015760",
+      "market": "kr",
+      "name": "한국전력",
+      "entry_date": "2026-04-09",
+      "exit_date": "2026-04-09",
+      "bars_held": 1,
+      "pnl_pct": -2.648,
       "reason": "stop",
       "source": "backtest"
     },
@@ -378,23 +460,23 @@
       "source": "backtest"
     },
     {
+      "ticker": "352820",
+      "market": "kr",
+      "name": "하이브",
+      "entry_date": "2026-04-03",
+      "exit_date": "2026-04-07",
+      "bars_held": 3,
+      "pnl_pct": -2.647,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
       "ticker": "035420",
       "market": "kr",
       "name": "NAVER",
       "entry_date": "2026-04-01",
       "exit_date": "2026-04-02",
       "bars_held": 2,
-      "pnl_pct": -2.647,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "207940",
-      "market": "kr",
-      "name": "삼성바이오로직스",
-      "entry_date": "2026-04-01",
-      "exit_date": "2026-04-01",
-      "bars_held": 1,
       "pnl_pct": -2.647,
       "reason": "stop",
       "source": "backtest"
@@ -411,6 +493,17 @@
       "source": "backtest"
     },
     {
+      "ticker": "028300",
+      "market": "kr",
+      "name": "HLB",
+      "entry_date": "2026-03-31",
+      "exit_date": "2026-03-31",
+      "bars_held": 1,
+      "pnl_pct": -2.647,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
       "ticker": "AAPL",
       "market": "us",
       "name": "Apple",
@@ -419,6 +512,28 @@
       "bars_held": 5,
       "pnl_pct": -2.281,
       "reason": "time",
+      "source": "backtest"
+    },
+    {
+      "ticker": "196170",
+      "market": "kr",
+      "name": "알테오젠",
+      "entry_date": "2026-03-27",
+      "exit_date": "2026-03-27",
+      "bars_held": 1,
+      "pnl_pct": -2.648,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
+      "ticker": "112040",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-03-26",
+      "exit_date": "2026-03-26",
+      "bars_held": 1,
+      "pnl_pct": -2.647,
+      "reason": "stop",
       "source": "backtest"
     },
     {
@@ -466,6 +581,39 @@
       "source": "backtest"
     },
     {
+      "ticker": "028300",
+      "market": "kr",
+      "name": "HLB",
+      "entry_date": "2026-03-19",
+      "exit_date": "2026-03-23",
+      "bars_held": 3,
+      "pnl_pct": -2.648,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
+      "ticker": "196170",
+      "market": "kr",
+      "name": "알테오젠",
+      "entry_date": "2026-03-23",
+      "exit_date": "2026-03-23",
+      "bars_held": 1,
+      "pnl_pct": -2.648,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
+      "ticker": "145020",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-03-20",
+      "exit_date": "2026-03-20",
+      "bars_held": 1,
+      "pnl_pct": -2.648,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
       "ticker": "263750",
       "market": "kr",
       "name": "펄어비스",
@@ -488,17 +636,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "003670",
-      "market": "kr",
-      "name": "포스코홀딩스",
-      "entry_date": "2026-03-16",
-      "exit_date": "2026-03-16",
-      "bars_held": 1,
-      "pnl_pct": 3.846,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
       "ticker": "AMD",
       "market": "us",
       "name": "AMD",
@@ -506,6 +643,17 @@
       "exit_date": "2026-03-13",
       "bars_held": 4,
       "pnl_pct": -4.146,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
+      "ticker": "214450",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-03-12",
+      "exit_date": "2026-03-12",
+      "bars_held": 1,
+      "pnl_pct": -2.647,
       "reason": "stop",
       "source": "backtest"
     },
@@ -642,6 +790,17 @@
       "source": "backtest"
     },
     {
+      "ticker": "112040",
+      "market": "kr",
+      "name": "",
+      "entry_date": "2026-03-05",
+      "exit_date": "2026-03-05",
+      "bars_held": 1,
+      "pnl_pct": 3.846,
+      "reason": "target",
+      "source": "backtest"
+    },
+    {
       "ticker": "015760",
       "market": "kr",
       "name": "한국전력",
@@ -649,6 +808,17 @@
       "exit_date": "2026-03-04",
       "bars_held": 1,
       "pnl_pct": -2.648,
+      "reason": "stop",
+      "source": "backtest"
+    },
+    {
+      "ticker": "028300",
+      "market": "kr",
+      "name": "HLB",
+      "entry_date": "2026-03-04",
+      "exit_date": "2026-03-04",
+      "bars_held": 1,
+      "pnl_pct": -2.647,
       "reason": "stop",
       "source": "backtest"
     },
@@ -665,21 +835,21 @@
     }
   ],
   "summary": {
-    "total_trades": 47,
-    "win_rate_pct": 51.1,
-    "cum_return_pct": 52.3,
-    "avg_pnl_pct": 0.993,
-    "avg_hold_days": 2.5,
+    "total_trades": 61,
+    "win_rate_pct": 44.3,
+    "cum_return_pct": 26.44,
+    "avg_pnl_pct": 0.469,
+    "avg_hold_days": 2.4,
     "best_pct": 5.84,
     "worst_pct": -4.15
   },
   "by_market": {
     "kr": {
-      "total_trades": 11,
-      "win_rate_pct": 36.4,
-      "cum_return_pct": -3.62,
-      "avg_pnl_pct": -0.286,
-      "avg_hold_days": 1.3,
+      "total_trades": 25,
+      "win_rate_pct": 28.0,
+      "cum_return_pct": -19.98,
+      "avg_pnl_pct": -0.85,
+      "avg_hold_days": 1.7,
       "best_pct": 3.85,
       "worst_pct": -2.65
     },
@@ -695,6 +865,6 @@
   },
   "period_start": "2026-03-01",
   "period_end": "2026-04-30",
-  "updated_at_iso": "2026-04-30T11:02:24+09:00",
-  "updated_at_kst": "2026.04.30 (Thu) 11:02 KST"
+  "updated_at_iso": "2026-04-30T11:18:45+09:00",
+  "updated_at_kst": "2026.04.30 (Thu) 11:18 KST"
 }

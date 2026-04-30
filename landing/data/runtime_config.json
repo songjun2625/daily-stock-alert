@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "updated_at_kst": "2026.04.30 (목) 11:30 KST",
+  "updated_by": "songjun (initial)",
+  "market_mode": "normal",
+  "_help": {
+    "market_mode": "normal | defensive | crisis. defensive=점수 임계 +20·시총 큰 종목 우선. crisis=신규 추천 전면 보류.",
+    "geopolitical_note": "사용자에게 표시될 안내 문구. 비워두면 배너 미표시.",
+    "sector_blacklist": "이 섹터 종목은 추천에서 제외 (예: 중국·러시아 익스포저 큰 섹터).",
+    "sector_bonus_overrides": "config.KR_SECTOR_BONUS 의 점수를 임시로 덮어씀. {sector: bonus}",
+    "min_score_kr_override": "KR 임계점수 강제 변경. null=기본값(60).",
+    "min_score_us_override": "US 임계점수 강제 변경. null=기본값(80).",
+    "fear_index_max_override": "VKOSPI/VIX 차단 임계 강제 변경. null=기본값(25)."
+  },
+  "geopolitical_note": "",
+  "sector_blacklist": [],
+  "sector_bonus_overrides": {},
+  "min_score_kr_override": null,
+  "min_score_us_override": null,
+  "fear_index_max_override": null,
+  "auto_regime": {
+    "kospi_above_50ma": null,
+    "spy_above_50ma": null,
+    "vix_regime": null,
+    "vkospi_regime": null,
+    "last_auto_check": null,
+    "_note": "tools/runtime_tune.py 가 매일 자동 갱신"
+  }
+}

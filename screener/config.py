@@ -54,21 +54,64 @@ class USSwingThresholds:
 
 US_THRESH = USSwingThresholds()
 
-# 한국장 스크리닝 임계값 — US 알고리즘 (4월 +54%) 의 펀더멘털 필터를 KR 에 이식.
+# 한국장 스크리닝 임계값 — 2026.01.01~04.30 승자 TOP 15 데이터 기반 v2 알고리즘.
+# 분석 결과:
+#   - 승자 73% 가 반도체(HBM·장비)/2차전지/방산 섹터에 집중 → 섹터 가산점 도입
+#   - 본격 반등 직전 RSI 평균 33.9 (25%~75% [33.4, 34.4]) → 골든존 30~35 좁힘
+#   - 본격 반등 직전 52주 -34.5% (25%~75% [33.4%, 35.5%]) → 깊은 드로우다운 우대
+#   - 변동성 5~8% 종목들이 잘 오름 → 너무 안정적인 종목은 후순위
 @dataclass(frozen=True)
 class KRSwingThresholds:
-    volume_multiplier_min: float = 1.5      # 거래량 5일 평균 1.5배+ (US 와 동일하게 완화)
-    rsi_low: float  = 30.0
-    rsi_high: float = 45.0                  # US 와 동일 (30~45 — 저평가 + 약세 구간)
-    drawdown_low:  float = 0.10             # 52주 -10~-35% '세일 중'
-    drawdown_high: float = 0.35
-    operating_margin_min: float = 0.10      # 영업이익률 10%+ (한국 기업 평균 고려해 US 의 20% 보다 완화)
-    revenue_growth_min: float = 0.05        # 매출 성장 5%+
+    volume_multiplier_min: float = 1.5
+    # RSI 영역 분할 — 30~35 강한 가산, 35~45 약한 가산, 50~65+ma_up 추세지속
+    rsi_golden_low:  float = 30.0
+    rsi_golden_high: float = 35.0           # 승자 평균 33.9
+    rsi_low:  float = 30.0                  # 호환 — 기존 코드 참조
+    rsi_high: float = 45.0
+    rsi_trend_low:  float = 50.0
+    rsi_trend_high: float = 65.0
+    # 52w drawdown — 깊은 하락 우대 (-30~-40% 가 진짜 세일)
+    drawdown_deep_low:  float = 0.30        # 승자 평균 -34.5%
+    drawdown_deep_high: float = 0.45
+    drawdown_low:  float = 0.10             # 호환 — 기존 코드 참조
+    drawdown_high: float = 0.40
+    # 신고가 breakout (52w 고점 5% 이내 + 정배열)
+    drawdown_breakout_max: float = 0.05
+    # 펀더멘털 — KR 평균 고려해 완화 (US 의 20%/10% 보다 낮음)
+    operating_margin_min: float = 0.10
+    revenue_growth_min: float = 0.05
     earnings_surprise_min: float = 0.05
-    institutional_streak_days: int = 5
+    # 수급 — 5일 → 3일로 완화 (KR 은 데이 트레이딩 수급 변동 빠름)
+    institutional_streak_days: int = 3
     market_cap_min_krw: float = 5.0e11      # 시총 5,000억 이상
+    # 변동성 — 너무 낮은 (< 1.5%) 종목은 큰 수익 기대 어려움
+    min_volatility_pct: float = 1.5
 
 KR_THRESH = KRSwingThresholds()
+
+# 2026 KR 핫섹터 가산점 — 승자 분석 기반.
+# 사이클 / 테마가 KR 시장의 70%+ 를 결정. US 같은 펀더멘털 단독으로는 못 이김.
+KR_SECTOR_BONUS: dict[str, float] = {
+    "반도체-HBM":   30,
+    "반도체-장비":   25,
+    "반도체-검사":   25,
+    "반도체-소재":   22,
+    "반도체":       22,
+    "2차전지":      20,
+    "2차전지-소재":  20,
+    "화학·배터리":   18,
+    "방산":         20,
+    "방산·전자":    20,
+    "방산·우주":    18,
+    "전자부품":     15,
+    "전력기기":     15,
+    "AI":          15,
+    "조선":        12,
+    "자동차부품":   10,
+    "자동차":      8,
+    "바이오":      5,
+    "바이오·헬스케어": 5,
+}
 
 # 시장별 손절·목표 (한국장 변동성 좁아 더 타이트하게)
 @dataclass(frozen=True)
