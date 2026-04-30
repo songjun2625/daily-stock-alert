@@ -201,8 +201,9 @@
       <div class="mt-4">
         <div class="flex items-center justify-between mb-2">
           <div class="text-xs font-semibold text-[#374151]">📜 청산된 거래 이력 (누적)</div>
-          <div class="flex gap-1 text-[11px]" id="perf-trade-filters">
+          <div class="flex gap-1 text-[11px] flex-wrap" id="perf-trade-filters">
             <button class="filter-btn active" data-f="all">전체</button>
+            <button class="filter-btn" data-f="open">진행중</button>
             <button class="filter-btn" data-f="kr">🇰🇷</button>
             <button class="filter-btn" data-f="us">🇺🇸</button>
             <button class="filter-btn" data-f="win">수익</button>
@@ -419,17 +420,39 @@ function renderTrades() {
     if (_tradeFilter === 'all') return true;
     if (_tradeFilter === 'kr') return t.market === 'kr';
     if (_tradeFilter === 'us') return t.market === 'us';
-    if (_tradeFilter === 'win') return t.pnl_pct > 0;
-    if (_tradeFilter === 'loss') return t.pnl_pct < 0;
+    if (_tradeFilter === 'open') return t.status === 'open';
+    if (_tradeFilter === 'win')  return t.status !== 'open' && t.pnl_pct > 0;
+    if (_tradeFilter === 'loss') return t.status !== 'open' && t.pnl_pct < 0;
     return true;
   });
-  // 최신 진입일 기준 내림차순
-  filtered.sort((a,b) => (a.entry_date < b.entry_date ? 1 : -1));
+  // 진행 중을 위로(최신 진입일순) → 청산 거래 최신순
+  filtered.sort((a,b) => {
+    const ao = a.status === 'open' ? 0 : 1;
+    const bo = b.status === 'open' ? 0 : 1;
+    if (ao !== bo) return ao - bo;
+    return (a.entry_date < b.entry_date ? 1 : -1);
+  });
+  const reasonMap = { target: '🎯 목표', stop: '🛑 손절', time: '⏱️ 만기' };
   const rows = filtered.map(t => {
+    const flag = t.market === 'kr' ? '🇰🇷' : t.market === 'us' ? '🇺🇸' : '📊';
+    if (t.status === 'open') {
+      const livePnl = (t.pnl_pct ?? 0);
+      const liveCls = livePnl > 0 ? 'text-red-600' : livePnl < 0 ? 'text-blue-600' : 'text-gray-500';
+      const liveSign = livePnl > 0 ? '+' : '';
+      return `<tr>
+        <td class="ticker font-semibold">${t.ticker}</td>
+        <td>${flag}</td>
+        <td class="num text-[#6B7280]">${t.entry_date}</td>
+        <td class="text-[#9CA3AF]">—</td>
+        <td class="text-right">
+          <span class="pill pill-blue" style="font-weight:700">진행중</span>
+          <span class="num ${liveCls} text-[11px] ml-1">${liveSign}${livePnl.toFixed(2)}%</span>
+        </td>
+        <td class="text-[#6B7280]">⏳ ${t.days_held ?? 0}/${t.hold_days ?? 5}일</td>
+      </tr>`;
+    }
     const cls = t.pnl_pct > 0 ? 'text-red-600 font-semibold' : t.pnl_pct < 0 ? 'text-blue-600 font-semibold' : 'text-gray-500';
     const sign = t.pnl_pct > 0 ? '+' : '';
-    const flag = t.market === 'kr' ? '🇰🇷' : t.market === 'us' ? '🇺🇸' : '📊';
-    const reasonMap = { target: '🎯 목표', stop: '🛑 손절', time: '⏱️ 만기' };
     return `<tr>
       <td class="ticker font-semibold">${t.ticker}</td>
       <td>${flag}</td>
@@ -441,7 +464,10 @@ function renderTrades() {
   }).join('');
   document.getElementById('perf-trades-tbody').innerHTML = rows ||
     '<tr><td colspan="6" class="text-center py-6 text-[#9CA3AF]">조건에 맞는 거래 없음</td></tr>';
-  document.getElementById('perf-trades-count').textContent = `표시 ${filtered.length}건 / 전체 ${all.length}건`;
+  const openCnt = filtered.filter(t => t.status === 'open').length;
+  const closedCnt = filtered.length - openCnt;
+  document.getElementById('perf-trades-count').textContent =
+    `표시 ${filtered.length}건 (진행중 ${openCnt} / 청산 ${closedCnt}) · 전체 ${all.length}건`;
 }
 
 async function loadBacktest() {
@@ -452,10 +478,18 @@ async function loadBacktest() {
     if (!res.ok) res = await fetch('data/backtest.json?ts=' + Date.now());
     if (!res.ok) throw new Error('no data');
     _backtestData = await res.json();
-    // live_trades.json은 closed_trades 키, backtest.json은 trades 키 — 통합
+    // live_trades.json: closed_trades + open_positions 를 한 표에 통합 (진행중은 status=open)
     if (isLive) {
-      _backtestData.trades = _backtestData.closed_trades || [];
-      document.getElementById('perf-meta').textContent = '서비스 시작 이후 누적 추천 결과 (라이브 트래킹)';
+      const closed = _backtestData.closed_trades || [];
+      const openAsTrades = (_backtestData.open_positions || []).map(p => ({
+        ticker: p.ticker, market: p.market, name: p.name || '',
+        entry_date: p.entry_date, exit_date: '',
+        bars_held: p.days_held || 0, pnl_pct: p.pnl_pct || 0,
+        days_held: p.days_held || 0, hold_days: p.hold_days || 5,
+        status: 'open',
+      }));
+      _backtestData.trades = [...openAsTrades, ...closed];
+      document.getElementById('perf-meta').textContent = '서비스 시작 이후 누적 추천 (진행중 + 청산 통합)';
     } else {
       document.getElementById('perf-meta').textContent = '백테스트 시뮬레이션 (라이브 데이터 누적 시작 전)';
     }

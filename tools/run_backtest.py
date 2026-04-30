@@ -36,17 +36,18 @@ from screener import indicators as ind
 from screener import data_sources as ds
 from screener.screener_us import DEFAULT_UNIVERSE as US_UNIVERSE
 from screener.screener_kr import DEFAULT_KR_UNIVERSE as KR_UNIVERSE
-from screener.config import US_THRESH, KR_THRESH
+from screener.config import US_THRESH, KR_THRESH, EXIT_KR, EXIT_US
 
 log = logging.getLogger("backtest")
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-START_DATE = "2026-04-01"
+START_DATE = "2026-03-01"
 COMM = 0.00025      # 수수료 0.025% (편도)
 SLIP = 0.001        # 슬리피지 0.1% (편도)
 HOLD_DAYS = 5
-STOP_PCT = 0.04
-TARGET_PCT = 0.06
+# 시장별 손절·목표 — config.EXIT_KR / EXIT_US 동기화
+STOP_PCT_US, TARGET_PCT_US = EXIT_US.stop_pct, EXIT_US.target_pct  # -4% / +6%
+STOP_PCT_KR, TARGET_PCT_KR = EXIT_KR.stop_pct, EXIT_KR.target_pct  # -2.5% / +4%
 
 
 # ---- 시그널 (현재 라이브 알고리즘과 동일 -----------------------------------
@@ -72,14 +73,21 @@ def us_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
 
 
 def kr_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
-    """KR AND 게이트 — RSI 30~40 + 거래량 5일평균 2배+ 동시 충족 필요."""
+    """KR — 보수적 AND 게이트 (실제 KR 변동성·승률 고려).
+      필수 1: RSI 30~40 저평가 구간
+      필수 2: MACD 골든크로스 또는 거래량 5일평균 2배+ 또는 5/20일선 정배열 시작.
+    드로우다운만으로는 진입 안 함 (KR 약세장에서 추세 추종 위험)."""
     if idx < 60: return False
     sub_close = close.iloc[: idx + 1]
     sub_vol   = vol.iloc[: idx + 1]
     rsi_v = float(ind.rsi(sub_close).iloc[-1])
-    rsi_ok = KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high
-    vspike = ind.volume_spike(sub_vol, multiplier=KR_THRESH.volume_multiplier_min)
-    return bool(rsi_ok and vspike)
+    if not (30.0 <= rsi_v <= 40.0):
+        return False
+    macd_l, sig_l, _ = ind.macd(sub_close)
+    entry = (ind.is_macd_golden_cross(macd_l, sig_l)
+             or ind.is_ma_aligned_up(sub_close)
+             or ind.volume_spike(sub_vol, multiplier=2.0))
+    return bool(entry)
 
 
 # ---- 단일 종목 백테스트 ---------------------------------------------------
@@ -110,8 +118,11 @@ def backtest_one(history: pd.DataFrame, ticker: str, market: str,
         if entry_idx >= len(close): break
         entry_open = float(opens.iloc[entry_idx])
         entry_px = entry_open * (1 + SLIP)
-        target_px = entry_px * (1 + TARGET_PCT)
-        stop_px   = entry_px * (1 - STOP_PCT)
+        # 시장별 손절·목표
+        target_pct = TARGET_PCT_KR if market == "kr" else TARGET_PCT_US
+        stop_pct   = STOP_PCT_KR   if market == "kr" else STOP_PCT_US
+        target_px  = entry_px * (1 + target_pct)
+        stop_px    = entry_px * (1 - stop_pct)
 
         exit_idx = None; exit_px = None; reason = "time"
         for j in range(entry_idx, min(entry_idx + HOLD_DAYS, len(close))):
