@@ -293,7 +293,35 @@ def build_html(data: dict, name: str = "") -> str:
         '</div>',
     ]
 
-    rank_colors = ["#F59E0B", "#94A3B8", "#A16207", "#0B1B3D", "#0B1B3D"]   # 1금/2은/3동/4-5남색
+    # 부족분 사유 결정
+    runtime = data.get("runtime") or {}
+    mode = (runtime.get("market_mode") or "normal").lower()
+    vkospi = (fear.get("vkospi") or {}).get("value")
+    vix = (fear.get("vix") or {}).get("value")
+    def blank_reason(market: str) -> str:
+        if mode == "crisis":    return "⚠️ 위기 모드 활성화 — 신규 추천 전면 보류 중"
+        if mode == "defensive": return "🛡️ 방어 모드 — 추천 임계 +20점 상향, 통과 종목 부족"
+        if market == "us" and vix and vix > 25:
+            return f"미장 변동성 높음 (VIX {vix:.1f}) — 안전 진입대 미충족"
+        if market == "kr" and vkospi and vkospi > 25:
+            return f"한국장 변동성 높음 (VKOSPI {vkospi:.1f}) — 안전 진입대 미충족"
+        if market == "us": return "SPY 50일선 strict regime + 임계 80점을 동시 통과하는 추가 후보 부족"
+        if market == "kr": return "영업이익률·매출성장 + 임계 60점을 동시 통과하는 추가 후보 부족"
+        return "오늘 임계 점수를 넘는 추가 후보 부족"
+
+    def blank_slot_html(slot_num: int, reason: str) -> str:
+        return (
+            f'<div style="border:1px dashed #CBD5E1;background:#F8FAFC;border-radius:12px;'
+            f'padding:14px;margin-bottom:10px;text-align:center">'
+            f'<div style="font-size:22px;opacity:.45">🔍</div>'
+            f'<div style="font-weight:700;font-size:12px;color:#475569;margin:6px 0 4px">#{slot_num} 추천 종목 없음</div>'
+            f'<div style="font-size:10px;color:#6B7280;line-height:1.5">{reason}</div>'
+            f'<div style="font-size:9px;color:#94A3B8;margin-top:6px">💡 강제로 채우지 않습니다</div>'
+            f'</div>'
+        )
+
+    rank_colors = ["#F59E0B", "#94A3B8", "#A16207", "#0B1B3D", "#0B1B3D"]
+    TARGET_TECH = 4
     for market, label in [("kr", "🇰🇷 코스피·코스닥"), ("us", "🇺🇸 나스닥·NYSE"), ("futures", "📊 선물·ETF")]:
         market_block = data.get(market) or {}
         picks = market_block.get("picks") or []
@@ -303,9 +331,10 @@ def build_html(data: dict, name: str = "") -> str:
         # 시장별 퀀트 픽 (재무재표 기반) 먼저
         if quant_pick:
             html.append(_market_quant_pick_html(quant_pick, market))
-        # 기술 분석 TOP N
+        # 기술 분석 TOP N + 부족분 블랭크 (시장 KR/US만 4개 기준, 선물은 그대로)
         if picks:
-            html.append(f'<div style="font-size:10px;font-weight:600;color:#6B7280;margin:10px 0 6px 0;letter-spacing:.3px">📈 기술적 분석 TOP {len(picks)}</div>')
+            tech_target = TARGET_TECH if market in ("kr", "us") else len(picks)
+            html.append(f'<div style="font-size:10px;font-weight:600;color:#6B7280;margin:10px 0 6px 0;letter-spacing:.3px">📈 기술적 분석 TOP {tech_target}</div>')
         for idx, p in enumerate(picks, 1):
             cur = "$" if market == "us" else ""
             try:
@@ -360,6 +389,12 @@ def build_html(data: dict, name: str = "") -> str:
     </tr>
   </table>
 </div>''')
+
+        # 부족분 블랭크 슬롯 추가 (KR/US 만 4개 기준)
+        if market in ("kr", "us") and len(picks) < TARGET_TECH:
+            reason = blank_reason(market)
+            for slot in range(len(picks) + 1, TARGET_TECH + 1):
+                html.append(blank_slot_html(slot, reason))
 
     html.append(f'''
   <div style="margin-top:18px">

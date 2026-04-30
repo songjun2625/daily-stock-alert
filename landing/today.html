@@ -670,12 +670,43 @@ function futCard(p, rank) {
 function emptyMsg(market) {
   const map = { kr: '코스피·코스닥', us: '미장', futures: '선물·ETF' };
   const next = market === 'kr' ? '평일 오전 08:30 KST' : market === 'us' ? '평일 밤 22:00 KST' : '한국장·미장 갱신 시점';
-  return `<div class="grid-card p-8 text-center md:col-span-3" style="background:#F8FAFC">
+  return `<div class="grid-card p-8 text-center md:col-span-2 lg:col-span-4" style="background:#F8FAFC">
     <div style="font-size:32px;margin-bottom:12px">🔍</div>
     <div class="font-bold text-[#374151] mb-2">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다</div>
-    <div class="text-sm text-[#6B7280] leading-relaxed">보수적인 시장에서는 무리하게 진입하지 않습니다 — 강제로 3개를 채우지 않고 기회를 기다립니다.<br/>
+    <div style="font-size:12px;color:#6B7280;line-height:1.6">보수적인 시장에서는 무리하게 진입하지 않습니다 — 강제로 4개를 채우지 않고 기회를 기다립니다.<br/>
     다음 갱신: <b>${next}</b></div>
   </div>`;
+}
+
+// 4개 미달 시 채우는 블랭크 슬롯 카드 — 사유 안내
+function blankSlotCard(slotNum, reason) {
+  return `<div class="grid-card" style="
+    padding:14px;background:#F8FAFC;border:1px dashed #CBD5E1;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;min-height:240px;color:#6B7280">
+    <div style="font-size:28px;opacity:.45;margin-bottom:6px">🔍</div>
+    <div style="font-weight:700;font-size:12px;color:#475569;margin-bottom:6px">
+      <span class="rank-badge rank-other" style="background:#CBD5E1;width:20px;height:20px;font-size:10px;margin-right:4px">#${slotNum}</span>
+      추천 종목 없음
+    </div>
+    <div style="font-size:11px;line-height:1.55;color:#6B7280;max-width:200px">${reason}</div>
+    <div style="margin-top:8px;font-size:10px;color:#94A3B8">
+      💡 강제로 채우지 않습니다
+    </div>
+  </div>`;
+}
+
+function blankReasonFor(market, runtime, fear) {
+  const mode = (runtime?.market_mode || 'normal').toLowerCase();
+  const vkospi = fear?.vkospi?.value;
+  const vix = fear?.vix?.value;
+  if (mode === 'crisis')    return '⚠️ 위기 모드 활성화 — 신규 추천 전면 보류 중';
+  if (mode === 'defensive') return '🛡️ 방어 모드 — 추천 임계가 +20점 상향되어 통과 종목 부족';
+  if (market === 'us' && vix && vix > 25) return `미장 변동성 높음 (VIX ${vix.toFixed(1)}) — 안전 진입대 미충족`;
+  if (market === 'kr' && vkospi && vkospi > 25) return `한국장 변동성 높음 (VKOSPI ${vkospi.toFixed(1)}) — 안전 진입대 미충족`;
+  if (market === 'us') return 'SPY 50일선 strict regime + 임계 80점을 동시 통과하는 추가 후보가 부족합니다';
+  if (market === 'kr') return '영업이익률·매출성장 + 임계 60점을 동시 통과하는 추가 후보가 부족합니다';
+  return '오늘 임계 점수를 넘는 추가 후보가 부족합니다';
 }
 
 function noPickBlock(market, reason) {
@@ -918,12 +949,22 @@ async function load() {
     renderQuantPickInline('kr', d.kr?.quant_pick);
     renderQuantPickInline('us', d.us?.quant_pick);
 
-    const kr = d.kr?.picks || [];
-    KR_CARDS.innerHTML = kr.length ? kr.map((p, i) => krCard(p, i + 1)).join('')
-      : (d.kr?.no_pick_reason ? noPickBlock('kr', d.kr.no_pick_reason) : emptyMsg('kr'));
-    const us = d.us?.picks || [];
-    US_CARDS.innerHTML = us.length ? us.map((p, i) => usCard(p, i + 1)).join('')
-      : (d.us?.no_pick_reason ? noPickBlock('us', d.us.no_pick_reason) : emptyMsg('us'));
+    // 시장별 4 기술 픽 + 부족분 블랭크 채우기
+    const TARGET = 4;
+    const renderMarket = (picks, container, cardFn, market, noPickReason) => {
+      if (!picks.length) {
+        container.innerHTML = noPickReason ? noPickBlock(market, noPickReason) : emptyMsg(market);
+        return;
+      }
+      const cards = picks.map((p, i) => cardFn(p, i + 1)).join('');
+      const missing = Math.max(0, TARGET - picks.length);
+      const reason = blankReasonFor(market, d.runtime, d.fear);
+      const blanks = Array.from({length: missing},
+        (_, i) => blankSlotCard(picks.length + i + 1, reason)).join('');
+      container.innerHTML = cards + blanks;
+    };
+    renderMarket(d.kr?.picks || [], KR_CARDS, krCard, 'kr', d.kr?.no_pick_reason);
+    renderMarket(d.us?.picks || [], US_CARDS, usCard, 'us', d.us?.no_pick_reason);
     const fu = d.futures?.picks || [];
     FUT_CARDS.innerHTML = fu.length ? fu.map((p, i) => futCard(p, i + 1)).join('') : emptyMsg('futures');
   } catch (e) {
