@@ -19,14 +19,14 @@
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 201000,
-        "change_pct_1d": -1.4705882352941124,
-        "market_cap": 43961066455040.0,
+        "price": 200500,
+        "change_pct_1d": -1.715686274509809,
+        "market_cap": 43851712561152.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.19114688128772636,
-        "rsi": 46.60502759628993,
+        "drawdown_52w": 0.193158953722334,
+        "rsi": 46.1498329711271,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -39,13 +39,13 @@
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 197210,
-        "entry_high": 203707,
-        "target": 215618,
-        "stoploss": 192879,
+        "entry_low": 196710,
+        "entry_high": 203207,
+        "target": 215118,
+        "stoploss": 192379,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 47 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 46 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -61,7 +61,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "47",
+              "value": "46",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -124,14 +124,14 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-        "price": 1479000,
-        "change_pct_1d": 0.40733197556008793,
-        "market_cap": 68464316252160.0,
+        "price": 1480000,
+        "change_pct_1d": 0.4752206381534174,
+        "market_cap": 68510608785408.0,
         "operating_margin": 0.46221,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.24732824427480915,
-        "rsi": 37.141642774659864,
+        "drawdown_52w": 0.24681933842239187,
+        "rsi": 37.3309484982864,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -144,10 +144,10 @@
           "52주 고점 대비 -25%",
           "영업이익률 46%"
         ],
-        "entry_low": 1455150,
-        "entry_high": 1496036,
-        "target": 1570993,
-        "stoploss": 1427893,
+        "entry_low": 1456150,
+        "entry_high": 1497036,
+        "target": 1571993,
+        "stoploss": 1428893,
         "narrative": {
           "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 37 반등 신호",
           "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -229,14 +229,14 @@
         "ticker": "251270",
         "name": "넷마블",
         "sector": "코스피·코스닥",
-        "price": 50400,
-        "change_pct_1d": -1.7543859649122862,
-        "market_cap": 4129502265344.0,
+        "price": 50300,
+        "change_pct_1d": -1.949317738791423,
+        "market_cap": 4121308692480.0,
         "operating_margin": 0.12943,
         "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.24733685560830995,
-        "rsi": 47.95544149696382,
+        "drawdown_52w": 0.24883023486305536,
+        "rsi": 47.558203929214336,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": true,
@@ -250,10 +250,10 @@
           "영업이익률 13%",
           "매출 성장 +23%"
         ],
-        "entry_low": 49400,
-        "entry_high": 51114,
-        "target": 54257,
-        "stoploss": 48257,
+        "entry_low": 49300,
+        "entry_high": 51014,
+        "target": 54157,
+        "stoploss": 48157,
         "narrative": {
           "one_liner": "코스피·코스닥 영업이익률 13% / RSI 48 반등 신호",
           "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 48로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
@@ -336,18 +336,18 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T12:30:32.862511+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:30 KST"
+    "updated_at_iso": "2026-04-30T12:35:27.466140+09:00",
+    "updated_at_kst": "2026.04.30 (목) 12:35 KST"
   },
-  "updated_at_iso": "2026-04-30T12:30:39.812526+09:00",
-  "updated_at_kst": "2026.04.30 (목) 12:30 KST",
+  "updated_at_iso": "2026-04-30T12:35:33.778945+09:00",
+  "updated_at_kst": "2026.04.30 (목) 12:35 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "price": 137.97000122070312,
-        "price_krw": 204814,
+        "price_krw": 204759,
         "change_pct_1d": -2.273687223125054,
         "market_cap": 330735779840.0,
         "operating_margin": 0.40901002,
@@ -454,7 +454,7 @@
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "price": 424.4599914550781,
-        "price_krw": 630102,
+        "price_krw": 629933,
         "change_pct_1d": -1.1159018159398681,
         "market_cap": 3154747064320.0,
         "operating_margin": 0.47094002,
@@ -462,8 +462,8 @@
         "pe_ratio": 26.578585,
         "sector": "Technology",
         "avg_volume": 31926939.6,
-        "rsi": 61.77025651522246,
-        "drawdown_52w": 0.2137085353751604,
+        "rsi": 61.77025651333294,
+        "drawdown_52w": 0.21370844647337733,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -560,8 +560,8 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T12:30:38.060683+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:30 KST"
+    "updated_at_iso": "2026-04-30T12:35:32.294358+09:00",
+    "updated_at_kst": "2026.04.30 (목) 12:35 KST"
   },
   "futures": {
     "picks": [
@@ -639,20 +639,22 @@
         "name": "KODEX 코스닥150",
         "market": "kr",
         "leveraged": false,
-        "price": 20047.0,
-        "price_krw": 20047,
-        "change_pct_1d": -2.1620302586627616,
-        "rsi": 55.173590426229296,
+        "price": 20015.0,
+        "price_krw": 20015,
+        "change_pct_1d": -2.3182040019521732,
+        "rsi": 54.81305378548806,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.04990521327014218,
-        "score": 0.0,
-        "reasons": [],
-        "entry_low": 19808.61,
-        "entry_high": 20237.71,
-        "target": 21334.32,
-        "stoploss": 19331.82,
+        "drawdown_52w": 0.051421800947867295,
+        "score": 10.0,
+        "reasons": [
+          "52주 고점 대비 -5%"
+        ],
+        "entry_low": 19776.07,
+        "entry_high": 20206.14,
+        "target": 21305.22,
+        "stoploss": 19298.21,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
@@ -685,7 +687,12 @@
             }
           ],
           "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
-          "score_breakdown": [],
+          "score_breakdown": [
+            {
+              "name": "52주 -5~-30%",
+              "points": 10
+            }
+          ],
           "hold_days": 5,
           "position_size_pct": 20.0,
           "leveraged": false
@@ -697,14 +704,14 @@
         "market": "us",
         "leveraged": false,
         "price": 711.5800170898438,
-        "price_krw": 1056326,
+        "price_krw": 1056042,
         "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833970693,
+        "rsi": 67.24290833971605,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "drawdown_52w": 0.00501973783310127,
-        "score": 32.75709166029307,
+        "score": 32.75709166028395,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
@@ -751,8 +758,8 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T12:30:39.812526+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:30 KST"
+    "updated_at_iso": "2026-04-30T12:35:33.778945+09:00",
+    "updated_at_kst": "2026.04.30 (목) 12:35 KST"
   },
   "runtime": {
     "market_mode": "normal",
