@@ -16,42 +16,270 @@
   "kr": {
     "picks": [
       {
+        "ticker": "068270",
+        "name": "셀트리온",
+        "sector": "바이오·헬스케어",
+        "price": 201000,
+        "change_pct_1d": -1.4705882352941124,
+        "market_cap": 43961066455040.0,
+        "operating_margin": 0.35382,
+        "revenue_growth": 0.251,
+        "pe_ratio": null,
+        "drawdown_52w": 0.19114688128772636,
+        "rsi": 46.60502759628993,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 115.0,
+        "reasons": [
+          "52주 고점 대비 -19%",
+          "영업이익률 35%",
+          "매출 성장 +25%"
+        ],
+        "entry_low": 197210,
+        "entry_high": 203707,
+        "target": 215618,
+        "stoploss": 192879,
+        "narrative": {
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 47 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "35%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "25%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "47",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-19%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "207940",
+        "name": "삼성바이오로직스",
+        "sector": "바이오·헬스케어",
+        "price": 1479000,
+        "change_pct_1d": 0.40733197556008793,
+        "market_cap": 68464316252160.0,
+        "operating_margin": 0.46221,
+        "revenue_growth": null,
+        "pe_ratio": null,
+        "drawdown_52w": 0.24732824427480915,
+        "rsi": 37.141642774659864,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 97.5,
+        "reasons": [
+          "RSI 37(과매도 반등 후보)",
+          "52주 고점 대비 -25%",
+          "영업이익률 46%"
+        ],
+        "entry_low": 1455300,
+        "entry_high": 1495929,
+        "target": 1570415,
+        "stoploss": 1428214,
+        "narrative": {
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 37 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "—",
+              "ok": false,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "37",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-25%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
         "ticker": "035420",
         "name": "NAVER",
         "sector": "IT 플랫폼",
-        "price": 213000,
-        "change_pct_1d": -3.1818181818181857,
-        "market_cap": 0.0,
-        "rsi": 48.90975592856296,
+        "price": 213500,
+        "change_pct_1d": -2.954545454545454,
+        "market_cap": 31915008589824.0,
+        "operating_margin": 0.19112,
+        "revenue_growth": 0.107,
+        "pe_ratio": null,
+        "drawdown_52w": 0.2573401253955979,
+        "rsi": 49.50015986306622,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 48.90975592856296,
+        "score": 94.88,
         "reasons": [
-          "진입 신호 미발생 — 추세 강세 종목"
+          "52주 고점 대비 -26%",
+          "영업이익률 19%",
+          "매출 성장 +11%"
         ],
-        "entry_low": 208190,
-        "entry_high": 216436,
-        "target": 231553,
-        "stoploss": 202693,
+        "entry_low": 208690,
+        "entry_high": 216936,
+        "target": 232053,
+        "stoploss": 203193,
         "narrative": {
-          "one_liner": "RSI 49 저평가 구간, 기술적 신호 다수",
-          "thesis": "NAVER(035420)는 5일 평균 거래량의 평이한 거래량으로 RSI 49 저평가 구간에 진입한 상태입니다. ",
+          "one_liner": "IT 플랫폼 영업이익률 19% / RSI 50 반등 신호",
+          "thesis": "NAVER(035420)는 매출 성장률 11% · 영업이익률 19%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
-              "label": "거래량 5일평균 2배+",
-              "value": "—",
-              "ok": false,
-              "explain": "큰손 자금이 갑자기 몰린 신호."
+              "label": "영업이익률",
+              "value": "19%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "11%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "49",
+              "value": "50",
               "ok": false,
-              "explain": "30~40이면 저평가 반등 후보."
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-26%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
               "label": "MACD 골든크로스",
@@ -63,7 +291,13 @@
               "label": "5/20일선 정배열",
               "value": "—",
               "ok": false,
-              "explain": "단기선이 중기선 위로 — 상승 시작."
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
             },
             {
               "label": "외국인 연속 순매수",
@@ -79,159 +313,36 @@
             }
           ],
           "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "012450",
-        "name": "한화에어로스페이스",
-        "sector": "방산",
-        "price": 1405000,
-        "change_pct_1d": -1.0563380281690127,
-        "market_cap": 0.0,
-        "rsi": 48.12168819861081,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 48.12168819861081,
-        "reasons": [
-          "진입 신호 미발생 — 추세 강세 종목"
-        ],
-        "entry_low": 1366650,
-        "entry_high": 1432393,
-        "target": 1552922,
-        "stoploss": 1322821,
-        "narrative": {
-          "one_liner": "RSI 48 저평가 구간, 기술적 신호 다수",
-          "thesis": "한화에어로스페이스(012450)는 5일 평균 거래량의 평이한 거래량으로 RSI 48 저평가 구간에 진입한 상태입니다. ",
-          "signals": [
+          "score_breakdown": [
             {
-              "label": "거래량 5일평균 2배+",
-              "value": "—",
-              "ok": false,
-              "explain": "큰손 자금이 갑자기 몰린 신호."
+              "name": "영업이익률 ≥10%",
+              "points": 47.8
             },
             {
-              "label": "RSI (과매도 지수)",
-              "value": "48",
-              "ok": false,
-              "explain": "30~40이면 저평가 반등 후보."
+              "name": "매출 성장 ≥5%",
+              "points": 32.1
             },
             {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기선이 중기선 위로 — 상승 시작."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+              "name": "52주 -10~-35%",
+              "points": 15
             }
           ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "352820",
-        "name": "하이브",
-        "sector": "엔터",
-        "price": 268000,
-        "change_pct_1d": 6.138613861386144,
-        "market_cap": 0.0,
-        "rsi": 47.83901990715553,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 47.83901990715553,
-        "reasons": [
-          "진입 신호 미발생 — 추세 강세 종목"
-        ],
-        "entry_low": 260850,
-        "entry_high": 273107,
-        "target": 295578,
-        "stoploss": 252679,
-        "narrative": {
-          "one_liner": "RSI 48 저평가 구간, 기술적 신호 다수",
-          "thesis": "하이브(352820)는 5일 평균 거래량의 평이한 거래량으로 RSI 48 저평가 구간에 진입한 상태입니다. ",
-          "signals": [
-            {
-              "label": "거래량 5일평균 2배+",
-              "value": "—",
-              "ok": false,
-              "explain": "큰손 자금이 갑자기 몰린 신호."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "48",
-              "ok": false,
-              "explain": "30~40이면 저평가 반등 후보."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기선이 중기선 위로 — 상승 시작."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [],
           "hold_days": 5
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T10:27:03.938577+09:00",
-    "updated_at_kst": "2026.04.30 (목) 10:27 KST"
+    "updated_at_iso": "2026-04-30T10:50:58.173587+09:00",
+    "updated_at_kst": "2026.04.30 (목) 10:50 KST"
   },
-  "updated_at_iso": "2026-04-30T10:27:03.938577+09:00",
-  "updated_at_kst": "2026.04.30 (목) 10:27 KST",
+  "updated_at_iso": "2026-04-30T10:51:04.430315+09:00",
+  "updated_at_kst": "2026.04.30 (목) 10:51 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "price": 137.97000122070312,
-        "price_krw": 205368,
+        "price_krw": 205172,
         "change_pct_1d": -2.273687223125054,
         "market_cap": 330735779840.0,
         "operating_margin": 0.40901002,
@@ -339,14 +450,14 @@
         "ticker": "APP",
         "name": "Applovin Corporation",
         "price": 443.42999267578125,
-        "price_krw": 660046,
+        "price_krw": 659416,
         "change_pct_1d": -1.2471340709394485,
         "market_cap": 149108178944.0,
         "operating_margin": 0.76917,
         "revenue_growth": 0.659,
-        "pe_ratio": 44.078526,
+        "pe_ratio": 44.25449,
         "sector": "Communication Services",
-        "avg_volume": 4032833.5,
+        "avg_volume": 4033567.0,
         "rsi": 49.8156091011201,
         "drawdown_52w": 0.3955425198568103,
         "macd_golden_cross": false,
@@ -442,15 +553,15 @@
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
         "price": 669.1199951171875,
-        "price_krw": 995985,
+        "price_krw": 995035,
         "change_pct_1d": -0.3306866341159176,
         "market_cap": 1698509750272.0,
         "operating_margin": 0.41314998,
         "revenue_growth": 0.238,
-        "pe_ratio": 28.473192,
+        "pe_ratio": 24.331636,
         "sector": "Communication Services",
-        "avg_volume": 14136447.45,
-        "rsi": 58.615466276315935,
+        "avg_volume": 14223167.8,
+        "rsi": 58.61546627345847,
         "drawdown_52w": 0.1510234659820044,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -548,8 +659,8 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T05:46:24.704238+09:00",
-    "updated_at_kst": "2026.04.30 (목) 05:46 KST"
+    "updated_at_iso": "2026-04-30T10:51:03.183846+09:00",
+    "updated_at_kst": "2026.04.30 (목) 10:51 KST"
   },
   "futures": {
     "picks": [
@@ -558,32 +669,32 @@
         "name": "KODEX 200선물인버스2X",
         "market": "kr",
         "leveraged": true,
-        "price": 166.0,
-        "price_krw": 166,
-        "change_pct_1d": -1.7751479289940808,
-        "rsi": 30.371747915323212,
+        "price": 167.0,
+        "price_krw": 167,
+        "change_pct_1d": 0.6024096385542244,
+        "rsi": 30.90241921406522,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.9233256351039261,
+        "drawdown_52w": 0.9228637413394919,
         "score": 20.0,
         "reasons": [
-          "RSI 30",
+          "RSI 31",
           "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의"
         ],
-        "entry_low": 160.75,
-        "entry_high": 170.2,
-        "target": 181.75,
-        "stoploss": 155.5,
+        "entry_low": 162.0,
+        "entry_high": 171.0,
+        "target": 182.0,
+        "stoploss": 157.0,
         "hold_days_max": 5,
         "position_size_pct": 15.0,
         "narrative": {
-          "one_liner": "레버리지 ETF (변동 2~3배), RSI 30 반등, 거래량 급증",
-          "thesis": "KODEX 200선물인버스2X(252670)는 RSI 30에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
+          "one_liner": "레버리지 ETF (변동 2~3배), RSI 31 반등, 거래량 급증",
+          "thesis": "KODEX 200선물인버스2X(252670)는 RSI 31에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
           "signals": [
             {
               "label": "RSI",
-              "value": "30",
+              "value": "31",
               "ok": true,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -627,29 +738,29 @@
         "name": "KODEX 코스닥150",
         "market": "kr",
         "leveraged": false,
-        "price": 20490.0,
-        "price_krw": 20490,
-        "change_pct_1d": 0.3673769287288797,
-        "rsi": 60.70090624711459,
+        "price": 20180.0,
+        "price_krw": 20180,
+        "change_pct_1d": -1.512933138116157,
+        "rsi": 56.72432110535415,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.02890995260663507,
+        "drawdown_52w": 0.043601895734597156,
         "score": 0.0,
         "reasons": [],
-        "entry_low": 20258.21,
-        "entry_high": 20675.43,
-        "target": 21741.65,
-        "stoploss": 19794.64,
+        "entry_low": 19943.39,
+        "entry_high": 20369.29,
+        "target": 21457.68,
+        "stoploss": 19470.18,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
-          "one_liner": "ETF, RSI 61 추세, 거래량 급증",
-          "thesis": "KODEX 코스닥150(229200)는 RSI 61에 위치한 ETF입니다. ",
+          "one_liner": "ETF, RSI 57 추세, 거래량 급증",
+          "thesis": "KODEX 코스닥150(229200)는 RSI 57에 위치한 ETF입니다. ",
           "signals": [
             {
               "label": "RSI",
-              "value": "61",
+              "value": "57",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -684,31 +795,31 @@
         "name": "SPDR S&P 500",
         "market": "us",
         "leveraged": false,
-        "price": 709.9500122070312,
-        "price_krw": 1056278,
-        "change_pct_1d": -0.2444870980913172,
-        "rsi": 65.56331195902214,
+        "price": 711.5800170898438,
+        "price_krw": 1058176,
+        "change_pct_1d": -0.015454109399481997,
+        "rsi": 67.24290834070553,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.00729892309221927,
-        "score": 34.436688040977856,
+        "drawdown_52w": 0.00501973783310127,
+        "score": 32.757091659294474,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 706.68,
-        "entry_high": 712.56,
-        "target": 727.59,
-        "stoploss": 700.15,
+        "entry_low": 708.29,
+        "entry_high": 714.21,
+        "target": 729.33,
+        "stoploss": 701.72,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
-          "one_liner": "선물·ETF, RSI 66 추세, 거래량 급증",
-          "thesis": "SPDR S&P 500(SPY)는 RSI 66에 위치한 선물·ETF입니다. ",
+          "one_liner": "선물·ETF, RSI 67 추세, 거래량 급증",
+          "thesis": "SPDR S&P 500(SPY)는 RSI 67에 위치한 선물·ETF입니다. ",
           "signals": [
             {
               "label": "RSI",
-              "value": "66",
+              "value": "67",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -739,7 +850,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T01:53:23.243301+09:00",
-    "updated_at_kst": "2026.04.30 (목) 01:53 KST"
+    "updated_at_iso": "2026-04-30T10:51:04.430315+09:00",
+    "updated_at_kst": "2026.04.30 (목) 10:51 KST"
   }
 }
