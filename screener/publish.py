@@ -24,7 +24,7 @@ from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
-from .config import KST, TOP_N_KR, TOP_N_US
+from .config import KST, TOP_N_KR, TOP_N_US, QUALITY
 from .screener_us import screen_us, market_traffic_light
 from .screener_kr import screen_kr
 from .screener_futures import screen_futures
@@ -105,27 +105,63 @@ def _to_json_fut(c) -> dict:
 
 # ---- Publisher ----------------------------------------------------------
 
+def _gate_kr(picks: list, vkospi: float) -> tuple[list, str | None]:
+    """KR 품질 게이트 — 공포지수 + 점수 임계.
+    Reason 반환 시 picks 는 빈 리스트로 강제."""
+    if vkospi > QUALITY.vkospi_max:
+        return [], (f"한국장 변동성 매우 높음 (VKOSPI {vkospi:.1f} > {QUALITY.vkospi_max:.0f}) — "
+                    "신규 진입 자제 권장. 오늘은 미추천")
+    qualified = [p for p in picks if (p.score or 0) >= QUALITY.min_score_kr]
+    if not qualified:
+        top = picks[0].score if picks else 0
+        return [], (f"오늘 코스피·코스닥에서 추천 임계({QUALITY.min_score_kr:.0f}점)를 넘는 종목 없음 "
+                    f"(최고 {top:.0f}점). 약한 신호로 무리하게 진입하지 않습니다")
+    return qualified, None
+
+
+def _gate_us(picks: list, vix: float) -> tuple[list, str | None]:
+    """US 품질 게이트 — VIX + 점수 임계."""
+    if vix > QUALITY.vix_max:
+        return [], (f"미장 변동성 매우 높음 (VIX {vix:.1f} > {QUALITY.vix_max:.0f}) — "
+                    "신규 진입 자제 권장. 오늘은 미추천")
+    qualified = [p for p in picks if (p.score or 0) >= QUALITY.min_score_us]
+    if not qualified:
+        top = picks[0].score if picks else 0
+        return [], (f"오늘 미장에서 추천 임계({QUALITY.min_score_us:.0f}점)를 넘는 종목 없음 "
+                    f"(최고 {top:.0f}점). 약한 신호로 무리하게 진입하지 않습니다")
+    return qualified, None
+
+
 def publish_kr() -> dict:
     log.info("publish KR start")
     picks = screen_kr(top_n=TOP_N_KR)
     now = _now_kst()
     payload = _load_existing()
     payload.setdefault("fear", {})
-    payload["fear"]["vkospi"] = _vkospi_meta(ds.vkospi_close())
+    vkospi = ds.vkospi_close()
+    payload["fear"]["vkospi"] = _vkospi_meta(vkospi)
 
-    if not picks and payload.get("kr", {}).get("picks"):
-        log.warning("KR picks 비어있음 — 직전 결과 보존")
-        return {"market": "kr", "n": 0, "preserved_previous": True}
-
-    payload["kr"] = {
-        "picks": [_to_json_kr(p) for p in picks],
-        "updated_at_iso": now.isoformat(),
-        "updated_at_kst": _format_kst(now),
-    }
+    qualified, no_reason = _gate_kr(picks, vkospi)
+    if no_reason:
+        log.info("KR 미추천: %s", no_reason)
+        payload["kr"] = {
+            "picks": [],
+            "no_pick_reason": no_reason,
+            "updated_at_iso": now.isoformat(),
+            "updated_at_kst": _format_kst(now),
+        }
+    else:
+        payload["kr"] = {
+            "picks": [_to_json_kr(p) for p in qualified],
+            "updated_at_iso": now.isoformat(),
+            "updated_at_kst": _format_kst(now),
+        }
     payload["updated_at_iso"] = now.isoformat()
     payload["updated_at_kst"] = _format_kst(now)
     _write(payload)
-    return {"market": "kr", "n": len(picks), "tickers": [p.ticker for p in picks]}
+    return {"market": "kr", "n": len(qualified),
+            "tickers": [p.ticker for p in qualified],
+            "no_pick_reason": no_reason}
 
 
 def publish_us() -> dict:
@@ -137,23 +173,29 @@ def publish_us() -> dict:
     payload.setdefault("fear", {})
     payload["fear"]["vix"] = _vix_meta(light["vix"])
 
-    if not picks and payload.get("us", {}).get("picks"):
-        log.warning("US picks 비어있음 — 직전 결과 보존")
-        payload["us"]["traffic_light"] = light
-        _write(payload)
-        return {"market": "us", "n": 0, "preserved_previous": True}
-
-    payload["us"] = {
-        "picks": [_to_json_us(p) for p in picks],
-        "traffic_light": light,
-        "updated_at_iso": now.isoformat(),
-        "updated_at_kst": _format_kst(now),
-    }
+    qualified, no_reason = _gate_us(picks, light["vix"])
+    if no_reason:
+        log.info("US 미추천: %s", no_reason)
+        payload["us"] = {
+            "picks": [],
+            "no_pick_reason": no_reason,
+            "traffic_light": light,
+            "updated_at_iso": now.isoformat(),
+            "updated_at_kst": _format_kst(now),
+        }
+    else:
+        payload["us"] = {
+            "picks": [_to_json_us(p) for p in qualified],
+            "traffic_light": light,
+            "updated_at_iso": now.isoformat(),
+            "updated_at_kst": _format_kst(now),
+        }
     payload["updated_at_iso"] = now.isoformat()
     payload["updated_at_kst"] = _format_kst(now)
     _write(payload)
-    return {"market": "us", "n": len(picks), "tickers": [p.ticker for p in picks],
-            "vix": light["vix"]}
+    return {"market": "us", "n": len(qualified),
+            "tickers": [p.ticker for p in qualified],
+            "vix": light["vix"], "no_pick_reason": no_reason}
 
 
 def publish_futures() -> dict:

@@ -80,5 +80,16 @@ class ExitRules:
 EXIT_KR = ExitRules(stop_pct=0.025, target_pct=0.04, hold_days=5)   # 한국장: -2.5% / +4%
 EXIT_US = ExitRules(stop_pct=0.04,  target_pct=0.06, hold_days=5)   # 미장:   -4%   / +6%
 
+# 품질 게이트 — 점수가 낮거나 공포지수가 높으면 그 날은 추천 자체를 보류.
+# 강제로 3개를 채우려고 약한 신호를 끼워 넣는 것보다, '오늘은 미추천' 이 정직.
+@dataclass(frozen=True)
+class QualityGate:
+    min_score_kr:   float = 60.0   # KR 점수 임계 — 영업이익률·매출성장 + 신호 1개 이상 필요
+    min_score_us:   float = 80.0   # US 점수 임계 — 영업이익률 가점 비중이 커서 더 높게 설정
+    vkospi_max:     float = 25.0   # 한국장 변동성 25 초과 시 미추천
+    vix_max:        float = 25.0   # 미장 변동성 25 초과 시 미추천
+
+QUALITY = QualityGate()
+
 # 환율 (원화 병기용 — 실제 운영 시 매일 한국은행 API에서 갱신)
 USD_KRW_FALLBACK = 1480.0

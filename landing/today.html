@@ -404,6 +404,21 @@ function emptyMsg(market) {
   return `<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다. 보수적인 시장에서는 발송 종목이 없을 수 있습니다.</div>`;
 }
 
+function noPickBlock(market, reason) {
+  const map = { kr: '코스피·코스닥', us: '미장' };
+  return `<div class="md:col-span-3" style="background:#FFF7ED;border:1px solid #FED7AA;border-radius:18px;padding:28px 24px;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px">
+      <span style="font-size:24px">🚫</span>
+      <span style="font-size:18px;font-weight:800;color:#9A3412">오늘은 ${map[market]} 미추천</span>
+      <span class="pill" style="background:#FED7AA;color:#9A3412;font-weight:700">신규 진입 보류</span>
+    </div>
+    <div style="color:#9A3412;font-size:14px;line-height:1.7;margin-top:8px">${reason}</div>
+    <div style="margin-top:14px;padding-top:14px;border-top:1px dashed #FED7AA;font-size:12px;color:#C2410C;line-height:1.6">
+      💡 강제로 3개를 채우지 않고 정직하게 '미추천'으로 표시합니다 — 약한 신호로 무리하게 진입해 손실을 키우는 것보다, 좋은 기회를 기다리는 게 장기적으로 유리합니다.
+    </div>
+  </div>`;
+}
+
 let _backtestData = null;
 let _tradeFilter = 'all';
 
@@ -547,8 +562,12 @@ async function load() {
     renderFear(d.fear?.vkospi, 'vkospi-value', 'vkospi-pill', 'vkospi-summary');
     renderFear(d.fear?.vix,    'vix-value',    'vix-pill',    'vix-summary');
 
-    const kr = d.kr?.picks || []; KR_CARDS.innerHTML = kr.length ? kr.map(krCard).join('') : emptyMsg('kr');
-    const us = d.us?.picks || []; US_CARDS.innerHTML = us.length ? us.map(usCard).join('') : emptyMsg('us');
+    const kr = d.kr?.picks || [];
+    KR_CARDS.innerHTML = kr.length ? kr.map(krCard).join('')
+      : (d.kr?.no_pick_reason ? noPickBlock('kr', d.kr.no_pick_reason) : emptyMsg('kr'));
+    const us = d.us?.picks || [];
+    US_CARDS.innerHTML = us.length ? us.map(usCard).join('')
+      : (d.us?.no_pick_reason ? noPickBlock('us', d.us.no_pick_reason) : emptyMsg('us'));
     const fu = d.futures?.picks || []; FUT_CARDS.innerHTML = fu.length ? fu.map(futCard).join('') : emptyMsg('futures');
   } catch (e) {
     console.error(e);
