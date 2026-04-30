@@ -58,12 +58,18 @@ jobs:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}   # 옵션 — 없으면 yfinance 폴백
         run: python -m screener.publish ${{ steps.pick-market.outputs.market }}
 
+      - name: Fetch company info (DART 공시 + yfinance 어닝 + 섹터 모멘텀)
+        env:
+          OPEN_DART_KEY: ${{ secrets.OPEN_DART_KEY }}
+        run: python tools/fetch_company_info.py
+        continue-on-error: true   # 외부 API 일시 장애가 picks 발행을 막지 않도록
+
       - name: Commit & push picks.json (only if changed)
         id: commit
         run: |
           git config user.name "daily-pick-bot"
           git config user.email "bot@dailypick.kr"
-          git add landing/data/picks.json
+          git add landing/data/picks.json landing/data/company_info.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "no changes"
             echo "changed=false" >> $GITHUB_OUTPUT

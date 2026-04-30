@@ -1,0 +1,63 @@
+{
+  "068270": {
+    "ticker": "068270",
+    "market": "kr",
+    "name": "셀트리온",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -1.2,
+    "sector_status": "📉 약세"
+  },
+  "035420": {
+    "ticker": "035420",
+    "market": "kr",
+    "name": "NAVER",
+    "sector": "IT 플랫폼"
+  },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -1.2,
+    "sector_status": "📉 약세"
+  },
+  "373220": {
+    "ticker": "373220",
+    "market": "kr",
+    "name": "LG에너지솔루션",
+    "sector": "화학·배터리"
+  },
+  "251270": {
+    "ticker": "251270",
+    "market": "kr",
+    "name": "넷마블",
+    "sector": "코스피·코스닥"
+  },
+  "PLTR": {
+    "ticker": "PLTR",
+    "market": "us",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-05-05",
+    "last_earnings_surprise_pct": 8.6,
+    "last_earnings_date": "2026-02-02",
+    "sector_momentum_5d_pct": 0.65,
+    "sector_status": "➡️ 보합"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "market": "us",
+    "name": "Microsoft Corporation",
+    "sector": "Technology",
+    "next_earnings": "2026-04-30",
+    "last_earnings_surprise_pct": 5.22,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": 0.65,
+    "sector_status": "➡️ 보합"
+  },
+  "_meta": {
+    "generated_at_iso": "2026-04-30T18:41:26+09:00",
+    "tickers_count": 7,
+    "dart_enabled": false
+  }
+}
