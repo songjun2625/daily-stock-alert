@@ -149,7 +149,7 @@
     {
       "ticker": "PLTR",
       "market": "us",
-      "name": "",
+      "name": "Palantir",
       "entry_date": "2026-04-20",
       "exit_date": "2026-04-24",
       "bars_held": 5,
@@ -160,7 +160,7 @@
     {
       "ticker": "CRWD",
       "market": "us",
-      "name": "",
+      "name": "CrowdStrike",
       "entry_date": "2026-04-17",
       "exit_date": "2026-04-21",
       "bars_held": 3,
@@ -171,7 +171,7 @@
     {
       "ticker": "NOW",
       "market": "us",
-      "name": "",
+      "name": "ServiceNow",
       "entry_date": "2026-04-20",
       "exit_date": "2026-04-21",
       "bars_held": 2,
@@ -182,7 +182,7 @@
     {
       "ticker": "SNOW",
       "market": "us",
-      "name": "",
+      "name": "Snowflake",
       "entry_date": "2026-04-20",
       "exit_date": "2026-04-21",
       "bars_held": 2,
@@ -193,7 +193,7 @@
     {
       "ticker": "352820",
       "market": "kr",
-      "name": "",
+      "name": "하이브",
       "entry_date": "2026-04-17",
       "exit_date": "2026-04-17",
       "bars_held": 1,
@@ -204,7 +204,7 @@
     {
       "ticker": "APP",
       "market": "us",
-      "name": "",
+      "name": "Applovin",
       "entry_date": "2026-04-16",
       "exit_date": "2026-04-16",
       "bars_held": 1,
@@ -215,7 +215,7 @@
     {
       "ticker": "META",
       "market": "us",
-      "name": "",
+      "name": "Meta Platforms",
       "entry_date": "2026-04-10",
       "exit_date": "2026-04-15",
       "bars_held": 4,
@@ -226,7 +226,7 @@
     {
       "ticker": "TSLA",
       "market": "us",
-      "name": "",
+      "name": "Tesla",
       "entry_date": "2026-04-15",
       "exit_date": "2026-04-15",
       "bars_held": 1,
@@ -237,7 +237,7 @@
     {
       "ticker": "SHOP",
       "market": "us",
-      "name": "",
+      "name": "Shopify",
       "entry_date": "2026-04-15",
       "exit_date": "2026-04-15",
       "bars_held": 1,
@@ -248,7 +248,7 @@
     {
       "ticker": "GE",
       "market": "us",
-      "name": "",
+      "name": "GE Aerospace",
       "entry_date": "2026-04-08",
       "exit_date": "2026-04-14",
       "bars_held": 5,
@@ -259,7 +259,7 @@
     {
       "ticker": "041510",
       "market": "kr",
-      "name": "",
+      "name": "SM",
       "entry_date": "2026-04-13",
       "exit_date": "2026-04-14",
       "bars_held": 2,
@@ -270,7 +270,7 @@
     {
       "ticker": "MSFT",
       "market": "us",
-      "name": "",
+      "name": "Microsoft",
       "entry_date": "2026-04-07",
       "exit_date": "2026-04-13",
       "bars_held": 5,
@@ -281,7 +281,7 @@
     {
       "ticker": "035420",
       "market": "kr",
-      "name": "",
+      "name": "NAVER",
       "entry_date": "2026-04-10",
       "exit_date": "2026-04-13",
       "bars_held": 2,
@@ -292,7 +292,7 @@
     {
       "ticker": "NFLX",
       "market": "us",
-      "name": "",
+      "name": "Netflix",
       "entry_date": "2026-04-06",
       "exit_date": "2026-04-10",
       "bars_held": 5,
@@ -303,7 +303,7 @@
     {
       "ticker": "PLTR",
       "market": "us",
-      "name": "",
+      "name": "Palantir",
       "entry_date": "2026-04-10",
       "exit_date": "2026-04-10",
       "bars_held": 1,
@@ -314,7 +314,7 @@
     {
       "ticker": "ADBE",
       "market": "us",
-      "name": "",
+      "name": "Adobe",
       "entry_date": "2026-04-06",
       "exit_date": "2026-04-09",
       "bars_held": 4,
@@ -325,7 +325,7 @@
     {
       "ticker": "CRWD",
       "market": "us",
-      "name": "",
+      "name": "CrowdStrike",
       "entry_date": "2026-04-08",
       "exit_date": "2026-04-09",
       "bars_held": 2,
@@ -336,7 +336,7 @@
     {
       "ticker": "AMZN",
       "market": "us",
-      "name": "",
+      "name": "Amazon",
       "entry_date": "2026-04-02",
       "exit_date": "2026-04-08",
       "bars_held": 4,
@@ -347,7 +347,7 @@
     {
       "ticker": "PANW",
       "market": "us",
-      "name": "",
+      "name": "Palo Alto Networks",
       "entry_date": "2026-04-06",
       "exit_date": "2026-04-08",
       "bars_held": 3,
@@ -358,7 +358,7 @@
     {
       "ticker": "AVGO",
       "market": "us",
-      "name": "",
+      "name": "Broadcom",
       "entry_date": "2026-04-07",
       "exit_date": "2026-04-08",
       "bars_held": 2,
@@ -369,7 +369,7 @@
     {
       "ticker": "SHOP",
       "market": "us",
-      "name": "",
+      "name": "Shopify",
       "entry_date": "2026-04-07",
       "exit_date": "2026-04-08",
       "bars_held": 2,
@@ -380,7 +380,7 @@
     {
       "ticker": "035420",
       "market": "kr",
-      "name": "",
+      "name": "NAVER",
       "entry_date": "2026-04-01",
       "exit_date": "2026-04-02",
       "bars_held": 2,
@@ -391,7 +391,7 @@
     {
       "ticker": "207940",
       "market": "kr",
-      "name": "",
+      "name": "삼성바이오로직스",
       "entry_date": "2026-04-01",
       "exit_date": "2026-04-01",
       "bars_held": 1,
@@ -402,7 +402,7 @@
     {
       "ticker": "META",
       "market": "us",
-      "name": "",
+      "name": "Meta Platforms",
       "entry_date": "2026-03-27",
       "exit_date": "2026-03-31",
       "bars_held": 3,
@@ -413,7 +413,7 @@
     {
       "ticker": "AAPL",
       "market": "us",
-      "name": "",
+      "name": "Apple",
       "entry_date": "2026-03-23",
       "exit_date": "2026-03-27",
       "bars_held": 5,
@@ -424,7 +424,7 @@
     {
       "ticker": "GOOGL",
       "market": "us",
-      "name": "",
+      "name": "Alphabet",
       "entry_date": "2026-03-23",
       "exit_date": "2026-03-25",
       "bars_held": 3,
@@ -435,7 +435,7 @@
     {
       "ticker": "AMD",
       "market": "us",
-      "name": "",
+      "name": "AMD",
       "entry_date": "2026-03-24",
       "exit_date": "2026-03-25",
       "bars_held": 2,
@@ -446,7 +446,7 @@
     {
       "ticker": "CRWD",
       "market": "us",
-      "name": "",
+      "name": "CrowdStrike",
       "entry_date": "2026-03-23",
       "exit_date": "2026-03-24",
       "bars_held": 2,
@@ -457,7 +457,7 @@
     {
       "ticker": "PANW",
       "market": "us",
-      "name": "",
+      "name": "Palo Alto Networks",
       "entry_date": "2026-03-23",
       "exit_date": "2026-03-24",
       "bars_held": 2,
@@ -468,7 +468,7 @@
     {
       "ticker": "263750",
       "market": "kr",
-      "name": "",
+      "name": "펄어비스",
       "entry_date": "2026-03-20",
       "exit_date": "2026-03-20",
       "bars_held": 1,
@@ -479,7 +479,7 @@
     {
       "ticker": "TSLA",
       "market": "us",
-      "name": "",
+      "name": "Tesla",
       "entry_date": "2026-03-17",
       "exit_date": "2026-03-19",
       "bars_held": 3,
@@ -490,7 +490,7 @@
     {
       "ticker": "003670",
       "market": "kr",
-      "name": "",
+      "name": "포스코홀딩스",
       "entry_date": "2026-03-16",
       "exit_date": "2026-03-16",
       "bars_held": 1,
@@ -501,7 +501,7 @@
     {
       "ticker": "AMD",
       "market": "us",
-      "name": "",
+      "name": "AMD",
       "entry_date": "2026-03-10",
       "exit_date": "2026-03-13",
       "bars_held": 4,
@@ -512,7 +512,7 @@
     {
       "ticker": "MSFT",
       "market": "us",
-      "name": "",
+      "name": "Microsoft",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-11",
       "bars_held": 5,
@@ -523,7 +523,7 @@
     {
       "ticker": "ADBE",
       "market": "us",
-      "name": "",
+      "name": "Adobe",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-11",
       "bars_held": 5,
@@ -534,7 +534,7 @@
     {
       "ticker": "SNOW",
       "market": "us",
-      "name": "",
+      "name": "Snowflake",
       "entry_date": "2026-03-10",
       "exit_date": "2026-03-10",
       "bars_held": 1,
@@ -545,7 +545,7 @@
     {
       "ticker": "PANW",
       "market": "us",
-      "name": "",
+      "name": "Palo Alto Networks",
       "entry_date": "2026-03-04",
       "exit_date": "2026-03-09",
       "bars_held": 4,
@@ -556,7 +556,7 @@
     {
       "ticker": "META",
       "market": "us",
-      "name": "",
+      "name": "Meta Platforms",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-09",
       "bars_held": 3,
@@ -567,7 +567,7 @@
     {
       "ticker": "TSLA",
       "market": "us",
-      "name": "",
+      "name": "Tesla",
       "entry_date": "2026-03-06",
       "exit_date": "2026-03-09",
       "bars_held": 2,
@@ -578,7 +578,7 @@
     {
       "ticker": "AVGO",
       "market": "us",
-      "name": "",
+      "name": "Broadcom",
       "entry_date": "2026-03-06",
       "exit_date": "2026-03-09",
       "bars_held": 2,
@@ -589,7 +589,7 @@
     {
       "ticker": "PLTR",
       "market": "us",
-      "name": "",
+      "name": "Palantir",
       "entry_date": "2026-03-04",
       "exit_date": "2026-03-06",
       "bars_held": 3,
@@ -600,7 +600,7 @@
     {
       "ticker": "CRWD",
       "market": "us",
-      "name": "",
+      "name": "CrowdStrike",
       "entry_date": "2026-03-04",
       "exit_date": "2026-03-05",
       "bars_held": 2,
@@ -611,7 +611,7 @@
     {
       "ticker": "068270",
       "market": "kr",
-      "name": "",
+      "name": "셀트리온",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-05",
       "bars_held": 1,
@@ -622,7 +622,7 @@
     {
       "ticker": "247540",
       "market": "kr",
-      "name": "",
+      "name": "에코프로비엠",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-05",
       "bars_held": 1,
@@ -633,7 +633,7 @@
     {
       "ticker": "196170",
       "market": "kr",
-      "name": "",
+      "name": "알테오젠",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-05",
       "bars_held": 1,
@@ -644,7 +644,7 @@
     {
       "ticker": "015760",
       "market": "kr",
-      "name": "",
+      "name": "한국전력",
       "entry_date": "2026-03-04",
       "exit_date": "2026-03-04",
       "bars_held": 1,
@@ -655,7 +655,7 @@
     {
       "ticker": "NOW",
       "market": "us",
-      "name": "",
+      "name": "ServiceNow",
       "entry_date": "2026-03-03",
       "exit_date": "2026-03-03",
       "bars_held": 1,

@@ -202,22 +202,55 @@ def _by_market(closed: list[dict]) -> dict:
     return out
 
 
+def _ticker_name_lookup() -> dict[str, str]:
+    """KR/US 티커 → 종목명 매핑. KR 은 하드코딩, US 는 yfinance 캐시 활용 시도."""
+    # KR
+    try:
+        from screener.screener_kr import KR_TICKER_NAMES
+        kr_names = dict(KR_TICKER_NAMES)
+    except Exception:
+        kr_names = {}
+    # US — 자주 등장하는 미장 티커는 하드코딩 (피처 추가 시 yfinance.info 호출도 가능하지만 비용↑)
+    us_names = {
+        "AAPL": "Apple", "MSFT": "Microsoft", "NVDA": "NVIDIA", "GOOGL": "Alphabet",
+        "AMZN": "Amazon", "META": "Meta Platforms", "TSLA": "Tesla", "APP": "Applovin",
+        "GE": "GE Aerospace", "NOW": "ServiceNow", "CRWD": "CrowdStrike",
+        "SNOW": "Snowflake", "PANW": "Palo Alto Networks", "ADBE": "Adobe",
+        "AVGO": "Broadcom", "ASML": "ASML", "PLTR": "Palantir", "COIN": "Coinbase",
+        "SHOP": "Shopify", "AMD": "AMD", "NFLX": "Netflix",
+        "SPY": "SPDR S&P 500", "QQQ": "Invesco QQQ", "TQQQ": "ProShares 3x QQQ",
+        "SOXL": "Direxion 3x Semis",
+    }
+    return {**kr_names, **us_names}
+
+
+_NAME_LOOKUP_CACHE: dict[str, str] | None = None
+
+
+def _name_for(ticker: str) -> str:
+    global _NAME_LOOKUP_CACHE
+    if _NAME_LOOKUP_CACHE is None:
+        _NAME_LOOKUP_CACHE = _ticker_name_lookup()
+    return _NAME_LOOKUP_CACHE.get(ticker, "")
+
+
 def _seed_from_backtest() -> list[dict]:
     """첫 실행 시 backtest.json 의 거래를 closed_trades 로 시드.
     "알고리즘이 지금까지 추천한 종목" 누적 이력의 베이스라인."""
     bt = _load_json(BACKTEST_PATH, {})
     seeded = []
     for t in (bt.get("trades") or []):
+        ticker = t.get("ticker", "")
         seeded.append({
-            "ticker": t.get("ticker", ""),
+            "ticker": ticker,
             "market": t.get("market", "us"),
-            "name": t.get("name", ""),
+            "name": t.get("name") or _name_for(ticker),
             "entry_date": t.get("entry_date", ""),
             "exit_date": t.get("exit_date", ""),
             "bars_held": int(t.get("bars_held", 0)),
             "pnl_pct": float(t.get("pnl_pct", 0)),
             "reason": t.get("reason", ""),
-            "source": "backtest",  # 시뮬레이션 거래 표시
+            "source": "backtest",
         })
     return seeded
 

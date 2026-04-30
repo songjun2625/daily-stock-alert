@@ -448,6 +448,13 @@ function renderTrades() {
     return (a.entry_date < b.entry_date ? 1 : -1);
   });
   const reasonMap = { target: '🎯 목표', stop: '🛑 손절', time: '⏱️ 만기' };
+  const tickerCell = (t) => {
+    const nm = (t.name || '').trim();
+    return `<td class="font-semibold">
+      <span class="ticker">${t.ticker}</span>
+      ${nm ? `<span class="text-[11px] font-normal text-[#6B7280] ml-1">${nm}</span>` : ''}
+    </td>`;
+  };
   const rows = filtered.map(t => {
     const flag = t.market === 'kr' ? '🇰🇷' : t.market === 'us' ? '🇺🇸' : '📊';
     if (t.status === 'open') {
@@ -455,7 +462,7 @@ function renderTrades() {
       const liveCls = livePnl > 0 ? 'text-red-600' : livePnl < 0 ? 'text-blue-600' : 'text-gray-500';
       const liveSign = livePnl > 0 ? '+' : '';
       return `<tr>
-        <td class="ticker font-semibold">${t.ticker}</td>
+        ${tickerCell(t)}
         <td>${flag}</td>
         <td class="num text-[#6B7280]">${t.entry_date}</td>
         <td class="text-[#9CA3AF]">—</td>
@@ -469,7 +476,7 @@ function renderTrades() {
     const cls = t.pnl_pct > 0 ? 'text-red-600 font-semibold' : t.pnl_pct < 0 ? 'text-blue-600 font-semibold' : 'text-gray-500';
     const sign = t.pnl_pct > 0 ? '+' : '';
     return `<tr>
-      <td class="ticker font-semibold">${t.ticker}</td>
+      ${tickerCell(t)}
       <td>${flag}</td>
       <td class="num text-[#6B7280]">${t.entry_date}</td>
       <td class="num text-[#6B7280]">${t.exit_date}</td>
