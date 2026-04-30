@@ -142,27 +142,7 @@
   </div>
 </section>
 
-<!-- ===== 현재 진행 중 포지션 (라이브 P&L) ===== -->
-<section class="container-x pb-6" id="open-positions-section">
-  <div class="grid-card" style="padding:16px 20px;">
-    <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
-      <div class="flex items-center gap-2">
-        <span class="text-base">🔴</span>
-        <span class="text-sm font-semibold text-[#374151]">현재 진행 중 포지션</span>
-        <span class="pill pill-soft text-xs" id="open-count">0건</span>
-      </div>
-      <div class="text-xs text-[#9CA3AF]" id="open-meta">실시간 가격 — 5분 캐시</div>
-    </div>
-    <div id="open-positions-list" class="space-y-1">
-      <div class="text-center text-sm text-[#9CA3AF] py-6">진행 중 포지션을 불러오는 중…</div>
-    </div>
-    <div class="text-[11px] text-[#9CA3AF] mt-3">
-      💡 매일 추천된 종목은 자동으로 5일간 추적됩니다 — 목표/손절가 도달 또는 5거래일 만기 시 자동으로 청산되어 아래 누적 이력에 기록됩니다.
-    </div>
-  </div>
-</section>
-
-<!-- ===== "실시간 누적 추천 성과" (이전: 과거에 이용했다면?) — 라이브 트레이드 누적 ===== -->
+<!-- ===== "실시간 누적 추천 성과" — 알고리즘이 지금까지 추천한 모든 종목 누적 ===== -->
 <section class="container-x pb-6" id="performance-section">
   <details class="grid-card" style="padding:14px 18px;" open>
     <summary class="cursor-pointer flex items-center justify-between gap-3 flex-wrap">
@@ -464,65 +444,6 @@ function renderTrades() {
   document.getElementById('perf-trades-count').textContent = `표시 ${filtered.length}건 / 전체 ${all.length}건`;
 }
 
-function renderOpenPositions(positions) {
-  const list = document.getElementById('open-positions-list');
-  const cnt  = document.getElementById('open-count');
-  cnt.textContent = `${(positions || []).length}건`;
-  if (!positions || positions.length === 0) {
-    list.innerHTML = `<div class="text-center text-sm text-[#9CA3AF] py-6">현재 진행 중인 포지션이 없습니다 — 오늘의 신규 추천 종목 확인하기.</div>`;
-    return;
-  }
-  // 진입일 최신 순
-  const sorted = [...positions].sort((a,b)=> a.entry_date < b.entry_date ? 1 : -1);
-  const fmtPrice = (v, market) => market === 'us' ? '$'+(v||0).toFixed(2) : Math.round(v||0).toLocaleString()+'원';
-  const rows = sorted.map(p => {
-    const pnlCls = p.pnl_pct > 0 ? 'pos-pnl-pos' : p.pnl_pct < 0 ? 'pos-pnl-neg' : 'pos-pnl-flat';
-    const sign = p.pnl_pct > 0 ? '+' : '';
-    const flag = p.market === 'kr' ? '🇰🇷' : p.market === 'us' ? '🇺🇸' : '📊';
-    const heldPct = Math.min(100, Math.max(0, (p.days_held / Math.max(p.hold_days || 5, 1)) * 100));
-    return `<div class="pos-row py-3">
-      <div class="flex items-center justify-between flex-wrap gap-2">
-        <div class="flex items-center gap-2 flex-wrap">
-          <span class="text-base">${flag}</span>
-          <span class="ticker font-bold text-sm">${p.ticker}</span>
-          <span class="text-xs text-[#6B7280]">${p.name || ''}</span>
-          <span class="pill pill-soft text-[10px]">진입 ${p.entry_date}</span>
-        </div>
-        <div class="text-right">
-          <div class="text-sm ${pnlCls} num">${sign}${(p.pnl_pct ?? 0).toFixed(2)}%</div>
-          <div class="text-[11px] text-[#9CA3AF] num">현재가 ${fmtPrice(p.current_price, p.market)}</div>
-        </div>
-      </div>
-      <div class="mt-2 grid grid-cols-3 gap-2 text-[11px] text-[#6B7280]">
-        <div>📥 진입 <span class="num">${fmtPrice(p.entry_price, p.market)}</span></div>
-        <div>🛑 손절 <span class="num">${fmtPrice(p.stoploss, p.market)}</span></div>
-        <div>🎯 목표 <span class="num">${fmtPrice(p.target, p.market)}</span></div>
-      </div>
-      <div class="mt-2 flex items-center gap-2">
-        <div class="progress flex-1"><span style="width:${heldPct}%"></span></div>
-        <div class="text-[10px] text-[#9CA3AF] whitespace-nowrap">${p.days_held}/${p.hold_days || 5}일</div>
-      </div>
-    </div>`;
-  }).join('');
-  list.innerHTML = rows;
-}
-
-async function loadLiveTrades() {
-  // 우선 live_trades.json (라이브 누적) 시도, 없으면 backtest.json 폴백
-  let url = 'data/live_trades.json?ts=' + Date.now();
-  try {
-    let res = await fetch(url);
-    if (!res.ok) throw new Error('no live');
-    const data = await res.json();
-    renderOpenPositions(data.open_positions || []);
-    return data;
-  } catch (e) {
-    document.getElementById('open-meta').textContent = '데이터 준비 중 — 첫 추천 시점부터 누적';
-    renderOpenPositions([]);
-    return null;
-  }
-}
-
 async function loadBacktest() {
   try {
     // 1순위: 라이브 누적 (live_trades.json), 폴백: 백테스트 시뮬레이션
@@ -580,7 +501,6 @@ async function loadBacktest() {
 }
 
 async function load() {
-  loadLiveTrades();
   loadBacktest();
   try {
     const res = await fetch('data/picks.json?ts=' + Date.now());

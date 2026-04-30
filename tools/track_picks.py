@@ -47,6 +47,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "landing" / "data"
 PICKS_PATH = DATA_DIR / "picks.json"
 LIVE_PATH  = DATA_DIR / "live_trades.json"
+BACKTEST_PATH = DATA_DIR / "backtest.json"
 
 HOLD_DAYS = 5
 COMM_ROUND_TRIP = 0.0025  # 0.25% 왕복 거래비용
@@ -201,23 +202,53 @@ def _by_market(closed: list[dict]) -> dict:
     return out
 
 
+def _seed_from_backtest() -> list[dict]:
+    """첫 실행 시 backtest.json 의 거래를 closed_trades 로 시드.
+    "알고리즘이 지금까지 추천한 종목" 누적 이력의 베이스라인."""
+    bt = _load_json(BACKTEST_PATH, {})
+    seeded = []
+    for t in (bt.get("trades") or []):
+        seeded.append({
+            "ticker": t.get("ticker", ""),
+            "market": t.get("market", "us"),
+            "name": t.get("name", ""),
+            "entry_date": t.get("entry_date", ""),
+            "exit_date": t.get("exit_date", ""),
+            "bars_held": int(t.get("bars_held", 0)),
+            "pnl_pct": float(t.get("pnl_pct", 0)),
+            "reason": t.get("reason", ""),
+            "source": "backtest",  # 시뮬레이션 거래 표시
+        })
+    return seeded
+
+
 def update_live_trades(picks_path: Path = PICKS_PATH,
                        live_path: Path = LIVE_PATH) -> dict:
     today = _today_str()
     picks_data = _load_json(picks_path, {})
-    live_data  = _load_json(live_path, {
-        "open_positions": [],
-        "closed_trades": [],
-        "summary": {},
-        "by_market": {},
-        "period_start": today,
-        "period_end": today,
-        "updated_at_iso": "",
-        "updated_at_kst": "",
-    })
+    live_data  = _load_json(live_path, None)
+    is_first_run = live_data is None
+    if live_data is None:
+        live_data = {
+            "open_positions": [],
+            "closed_trades": [],
+            "summary": {},
+            "by_market": {},
+            "period_start": today,
+            "period_end": today,
+            "updated_at_iso": "",
+            "updated_at_kst": "",
+        }
 
     open_positions: list[dict] = list(live_data.get("open_positions", []))
     closed_trades: list[dict]  = list(live_data.get("closed_trades", []))
+
+    # 처음 실행이거나 closed_trades 비어 있으면 backtest 시드
+    if not closed_trades:
+        seeded = _seed_from_backtest()
+        if seeded:
+            closed_trades.extend(seeded)
+            log.info("seeded %d closed trades from backtest.json", len(seeded))
 
     # 1) 신규 추천 종목 → 같은 종목이 이미 open 이면 추가하지 않음 (중복 방지)
     open_keys = {(p["ticker"], p["market"]) for p in open_positions}
