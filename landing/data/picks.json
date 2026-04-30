@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.28,
-      "label": "주의",
-      "light": "🟡",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "value": 17.37,
+      "label": "안정",
+      "light": "🟢",
+      "summary": "공포지수 낮아 변동성 안정"
     }
   },
   "runtime": {
@@ -550,41 +550,41 @@
     "updated_at_iso": "2026-04-30T19:21:24.336543+09:00",
     "updated_at_kst": "2026.04.30 (목) 19:21 KST"
   },
-  "updated_at_iso": "2026-04-30T19:21:30.278394+09:00",
-  "updated_at_kst": "2026.04.30 (목) 19:21 KST",
+  "updated_at_iso": "2026-05-01T00:24:26.986193+09:00",
+  "updated_at_kst": "2026.05.01 (금) 00:24 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 137.97000122070312,
-        "price_krw": 203863,
-        "change_pct_1d": -2.273687223125054,
-        "market_cap": 330735779840.0,
+        "price": 139.63999938964844,
+        "price_krw": 206374,
+        "change_pct_1d": 1.210406721874202,
+        "market_cap": 334786723840.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 219.0,
+        "pe_ratio": 221.68237,
         "sector": "Technology",
-        "avg_volume": 48105710.0,
-        "rsi": 43.83946503978797,
-        "drawdown_52w": 0.3340573120078528,
+        "avg_volume": 47022468.45,
+        "rsi": 45.75503722887211,
+        "drawdown_52w": 0.32599669694856614,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 8.6,
+        "earnings_surprise_pct": 32.03,
         "score": 115.63,
         "reasons": [
           "52주 고점 대비 -33%",
           "영업이익률 41%",
-          "어닝 서프라이즈 +8.6%"
+          "어닝 서프라이즈 +32.0%"
         ],
-        "entry_low": 133.66,
-        "entry_high": 141.05,
-        "target": 154.58,
-        "stoploss": 128.74,
+        "entry_low": 135.55,
+        "entry_high": 142.56,
+        "target": 155.43,
+        "stoploss": 130.87,
         "narrative": {
-          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 44 반등 신호.",
-          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +32.0% / RSI 46 반등 신호.",
+          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 46로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -600,8 +600,8 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "44",
-              "ok": true,
+              "value": "46",
+              "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
@@ -630,7 +630,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+8.6%",
+              "value": "+32.0%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -644,6 +644,109 @@
             {
               "name": "매출 성장 ≥10%",
               "points": 37.5
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "price": 605.8300170898438,
+        "price_krw": 895356,
+        "change_pct_1d": -9.458688798600223,
+        "market_cap": 1537852964864.0,
+        "operating_margin": 0.41314998,
+        "revenue_growth": 0.238,
+        "pe_ratio": 22.030182,
+        "sector": "Communication Services",
+        "avg_volume": 14368938.2,
+        "rsi": 40.15594947253675,
+        "drawdown_52w": 0.2313255143079089,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 7.2,
+        "score": 114.34,
+        "reasons": [
+          "52주 고점 대비 -23%",
+          "영업이익률 41%",
+          "어닝 서프라이즈 +7.2%"
+        ],
+        "entry_low": 592.02,
+        "entry_high": 615.7,
+        "target": 659.11,
+        "stoploss": 576.23,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 40 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 24% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "41%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "24%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "40",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-23%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+7.2%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 51.6
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 35.7
             },
             {
               "name": "RSI 30~45 구간",
@@ -664,34 +767,34 @@
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 424.4599914550781,
-        "price_krw": 627178,
-        "change_pct_1d": -1.1159018159398681,
-        "market_cap": 3154747064320.0,
+        "price": 403.9549865722656,
+        "price_krw": 597005,
+        "change_pct_1d": -4.830845143383222,
+        "market_cap": 3002345979904.0,
         "operating_margin": 0.47094002,
         "revenue_growth": 0.167,
-        "pe_ratio": 26.595238,
+        "pe_ratio": 25.310463,
         "sector": "Technology",
-        "avg_volume": 32204950.0,
-        "rsi": 61.770256513314145,
-        "drawdown_52w": 0.21370844647337733,
+        "avg_volume": 32084004.7,
+        "rsi": 49.178578070069165,
+        "drawdown_52w": 0.2516929737997507,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
         "score": 110.92,
         "reasons": [
-          "52주 고점 대비 -21%",
+          "52주 고점 대비 -25%",
           "영업이익률 47%",
           "어닝 서프라이즈 +5.2%"
         ],
-        "entry_low": 416.63,
-        "entry_high": 430.05,
-        "target": 454.65,
-        "stoploss": 407.69,
+        "entry_low": 395.19,
+        "entry_high": 410.21,
+        "target": 437.75,
+        "stoploss": 385.18,
         "narrative": {
-          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.2% / RSI 62 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 62로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.2% / RSI 49 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 49로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -707,13 +810,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "62",
+              "value": "49",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-21%",
+              "value": "-25%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -767,13 +870,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 18.28,
+      "vix": 17.37,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T19:21:29.166111+09:00",
-    "updated_at_kst": "2026.04.30 (목) 19:21 KST"
+    "updated_at_iso": "2026-05-01T00:24:26.986193+09:00",
+    "updated_at_kst": "2026.05.01 (금) 00:24 KST"
   },
   "futures": {
     "picks": [

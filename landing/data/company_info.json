@@ -4,8 +4,8 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.2,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": 0.54,
+    "sector_status": "➡️ 보합"
   },
   "035420": {
     "ticker": "035420",
@@ -18,8 +18,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.2,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": 0.54,
+    "sector_status": "➡️ 보합"
   },
   "373220": {
     "ticker": "373220",
@@ -39,10 +39,21 @@
     "name": "Palantir Technologies Inc.",
     "sector": "Technology",
     "next_earnings": "2026-05-04",
-    "last_earnings_surprise_pct": 8.6,
+    "last_earnings_surprise_pct": 32.03,
     "last_earnings_date": "2026-02-02",
-    "sector_momentum_5d_pct": 0.65,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.77,
+    "sector_status": "📈 호조"
+  },
+  "META": {
+    "ticker": "META",
+    "market": "us",
+    "name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-07-29",
+    "last_earnings_surprise_pct": 7.2,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": -1.52,
+    "sector_status": "📉 약세"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -52,12 +63,12 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 0.65,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.77,
+    "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-04-30T19:21:32+09:00",
-    "tickers_count": 7,
+    "generated_at_iso": "2026-05-01T00:24:30+09:00",
+    "tickers_count": 8,
     "dart_enabled": false
   }
 }
