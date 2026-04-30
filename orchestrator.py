@@ -24,6 +24,12 @@ from sender.send_alimtalk import (
     broadcast_kr, broadcast_us, SolapiClient, Subscriber, is_kr_window, is_us_window,
 )
 
+# 라이브 추천 트래커 — 매일 실행 후 picks 를 open_positions 에 누적·청산 처리
+try:
+    from tools.track_picks import update_live_trades
+except Exception:
+    update_live_trades = None
+
 log = logging.getLogger(__name__)
 QUEUE_DIR = Path(os.getenv("QUEUE_DIR", "queue"))
 QUEUE_DIR.mkdir(exist_ok=True, parents=True)
@@ -47,6 +53,17 @@ def _save_queue(name: str, payload: dict) -> Path:
     return out
 
 
+def _tick_live_tracker() -> None:
+    """orchestrator 가 picks.json 갱신 후 호출 — open_positions 누적·청산 처리.
+    실패해도 발송 본 흐름은 막지 않도록 격리."""
+    if update_live_trades is None:
+        return
+    try:
+        update_live_trades()
+    except Exception as e:
+        log.warning("live tracker tick failed: %s", e)
+
+
 def run_kr(auto_send: bool = False) -> dict:
     log.info("KR screener start")
     picks = screen_kr(top_n=TOP_N_KR)
@@ -55,6 +72,7 @@ def run_kr(auto_send: bool = False) -> dict:
     payload = {"market": "kr", "picks": [asdict(p) for p in picks], "message": msg}
     qpath = _save_queue("kr", payload)
     log.info("KR queued at %s — picks: %s", qpath, [p.ticker for p in picks])
+    _tick_live_tracker()
 
     if auto_send:
         if not is_kr_window():
@@ -80,6 +98,7 @@ def run_us(auto_send: bool = False) -> dict:
     }
     qpath = _save_queue("us", payload)
     log.info("US queued at %s — picks: %s", qpath, [p.ticker for p in picks])
+    _tick_live_tracker()
 
     if auto_send:
         if not is_us_window():

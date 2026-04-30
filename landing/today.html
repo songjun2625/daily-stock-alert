@@ -43,15 +43,31 @@
     gap:10px;
   }
   .price-row .label { font-weight:600; white-space:nowrap; flex-shrink:0; }
-  .price-row .value { font-weight:700; text-align:right; word-break:break-all; line-height:1.3; }
+  .price-row .value { font-weight:700; text-align:right; line-height:1.35; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .price-row .value .range-second { display:inline; }
   .px-entry  { background:#F1F5F9; color:#334155; }
   .px-stop   { background:#FEE2E2; color:#991B1B; }
   .px-target { background:#DCFCE7; color:#166534; }
-  /* 데스크탑(>=768px): 3열 가로 — 단, 텍스트 잘림 방지를 위해 fr 단위 + 충분한 패딩 */
+  /* 데스크탑(>=768px): 3열 가로 — 카드 폭이 좁으므로 라벨↑값↓ 스택해서 숫자가 절대 글자별로 끊기지 않게 */
   @media (min-width: 768px) {
-    .price-rows { flex-direction:row; }
-    .price-row { flex:1; min-width:0; }
+    .price-rows { flex-direction:row; gap:8px; }
+    .price-row {
+      flex:1; min-width:0;
+      flex-direction:column; align-items:flex-start; gap:4px;
+      padding:10px 10px;
+    }
+    .price-row .label { font-size:12px; }
+    .price-row .value { font-size:13px; text-align:left; white-space:normal; }
+    .price-row .value .range-second { display:block; }
   }
+  /* 진행 중 포지션 — 라이브 P&L */
+  .pos-row { border-bottom:1px solid #F1F5F9; }
+  .pos-row:last-child { border-bottom:0; }
+  .pos-pnl-pos { color:#DC2626; font-weight:700; }
+  .pos-pnl-neg { color:#2563EB; font-weight:700; }
+  .pos-pnl-flat { color:#6B7280; font-weight:600; }
+  .progress { background:#F1F5F9; border-radius:999px; height:6px; overflow:hidden; }
+  .progress > span { display:block; height:100%; background:linear-gradient(90deg,#10B981,#3B82F6); }
 </style>
 </head>
 <body>
@@ -126,13 +142,33 @@
   </div>
 </section>
 
-<!-- ===== "과거에 이용했다면?" 컴팩트 요약 (상세보기 토글) ===== -->
+<!-- ===== 현재 진행 중 포지션 (라이브 P&L) ===== -->
+<section class="container-x pb-6" id="open-positions-section">
+  <div class="grid-card" style="padding:16px 20px;">
+    <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+      <div class="flex items-center gap-2">
+        <span class="text-base">🔴</span>
+        <span class="text-sm font-semibold text-[#374151]">현재 진행 중 포지션</span>
+        <span class="pill pill-soft text-xs" id="open-count">0건</span>
+      </div>
+      <div class="text-xs text-[#9CA3AF]" id="open-meta">실시간 가격 — 5분 캐시</div>
+    </div>
+    <div id="open-positions-list" class="space-y-1">
+      <div class="text-center text-sm text-[#9CA3AF] py-6">진행 중 포지션을 불러오는 중…</div>
+    </div>
+    <div class="text-[11px] text-[#9CA3AF] mt-3">
+      💡 매일 추천된 종목은 자동으로 5일간 추적됩니다 — 목표/손절가 도달 또는 5거래일 만기 시 자동으로 청산되어 아래 누적 이력에 기록됩니다.
+    </div>
+  </div>
+</section>
+
+<!-- ===== "실시간 누적 추천 성과" (이전: 과거에 이용했다면?) — 라이브 트레이드 누적 ===== -->
 <section class="container-x pb-6" id="performance-section">
-  <details class="grid-card" style="padding:14px 18px;">
+  <details class="grid-card" style="padding:14px 18px;" open>
     <summary class="cursor-pointer flex items-center justify-between gap-3 flex-wrap">
       <div class="flex items-center gap-2 flex-wrap">
         <span class="text-sm">📊</span>
-        <span class="text-sm font-semibold text-[#374151]">과거에 이용했다면?</span>
+        <span class="text-sm font-semibold text-[#374151]">실시간 누적 추천 성과</span>
         <span class="text-xs text-[#9CA3AF]" id="perf-period-mini">기간 로드 중…</span>
       </div>
       <div class="flex items-center gap-3 text-sm">
@@ -147,8 +183,8 @@
 
     <div class="mt-4 pt-4 border-t border-[#F1F5F9]">
       <div class="text-xs text-[#9CA3AF] mb-3">
-        보유 5일 · 손절 -4% · 목표 +6% · 거래비용 왕복 0.25% 차감 ·
-        <span id="perf-meta">현재 알고리즘으로 시뮬레이션</span>
+        보유 최대 5일 · 손절/목표 도달 시 자동 청산 · 거래비용 왕복 0.25% 차감 ·
+        <span id="perf-meta">서비스 시작 이후 누적 추천 결과 (라이브 트래킹)</span>
       </div>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -181,10 +217,10 @@
         </div>
       </div>
 
-      <!-- 거래 이력 -->
+      <!-- 거래 이력 — 라이브 누적 -->
       <div class="mt-4">
         <div class="flex items-center justify-between mb-2">
-          <div class="text-xs font-semibold text-[#374151]">📜 거래 이력 (누적)</div>
+          <div class="text-xs font-semibold text-[#374151]">📜 청산된 거래 이력 (누적)</div>
           <div class="flex gap-1 text-[11px]" id="perf-trade-filters">
             <button class="filter-btn active" data-f="all">전체</button>
             <button class="filter-btn" data-f="kr">🇰🇷</button>
@@ -287,9 +323,9 @@ function signalRow(s) {
 
 function priceBoxes(p, currency='$') {
   const fmt2 = (v) => currency === '₩' ? Math.round(v||0).toLocaleString()+'원' : currency+(v||0).toFixed(2);
-  // 모바일: 세로 3행, 데스크탑(>=768px): 가로 3열 — 가격 텍스트가 절대 잘리지 않게
+  // 진입 범위는 두 가격 — 데스크탑에서는 두 줄로(범위 두 번째 가격을 .range-second 로 분리)
   return `<div class="price-rows">
-    <div class="price-row px-entry"><span class="label">📥 진입</span><span class="value num">${fmt2(p.entry_low)} ~ ${fmt2(p.entry_high)}</span></div>
+    <div class="price-row px-entry"><span class="label">📥 진입</span><span class="value num">${fmt2(p.entry_low)}<span class="range-second"> ~ ${fmt2(p.entry_high)}</span></span></div>
     <div class="price-row px-stop"><span class="label">🛑 손절</span><span class="value num">${fmt2(p.stoploss)}</span></div>
     <div class="price-row px-target"><span class="label">🎯 목표</span><span class="value num">${fmt2(p.target)}</span></div>
   </div>`;
@@ -428,11 +464,80 @@ function renderTrades() {
   document.getElementById('perf-trades-count').textContent = `표시 ${filtered.length}건 / 전체 ${all.length}건`;
 }
 
+function renderOpenPositions(positions) {
+  const list = document.getElementById('open-positions-list');
+  const cnt  = document.getElementById('open-count');
+  cnt.textContent = `${(positions || []).length}건`;
+  if (!positions || positions.length === 0) {
+    list.innerHTML = `<div class="text-center text-sm text-[#9CA3AF] py-6">현재 진행 중인 포지션이 없습니다 — 오늘의 신규 추천 종목 확인하기.</div>`;
+    return;
+  }
+  // 진입일 최신 순
+  const sorted = [...positions].sort((a,b)=> a.entry_date < b.entry_date ? 1 : -1);
+  const fmtPrice = (v, market) => market === 'us' ? '$'+(v||0).toFixed(2) : Math.round(v||0).toLocaleString()+'원';
+  const rows = sorted.map(p => {
+    const pnlCls = p.pnl_pct > 0 ? 'pos-pnl-pos' : p.pnl_pct < 0 ? 'pos-pnl-neg' : 'pos-pnl-flat';
+    const sign = p.pnl_pct > 0 ? '+' : '';
+    const flag = p.market === 'kr' ? '🇰🇷' : p.market === 'us' ? '🇺🇸' : '📊';
+    const heldPct = Math.min(100, Math.max(0, (p.days_held / Math.max(p.hold_days || 5, 1)) * 100));
+    return `<div class="pos-row py-3">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="text-base">${flag}</span>
+          <span class="ticker font-bold text-sm">${p.ticker}</span>
+          <span class="text-xs text-[#6B7280]">${p.name || ''}</span>
+          <span class="pill pill-soft text-[10px]">진입 ${p.entry_date}</span>
+        </div>
+        <div class="text-right">
+          <div class="text-sm ${pnlCls} num">${sign}${(p.pnl_pct ?? 0).toFixed(2)}%</div>
+          <div class="text-[11px] text-[#9CA3AF] num">현재가 ${fmtPrice(p.current_price, p.market)}</div>
+        </div>
+      </div>
+      <div class="mt-2 grid grid-cols-3 gap-2 text-[11px] text-[#6B7280]">
+        <div>📥 진입 <span class="num">${fmtPrice(p.entry_price, p.market)}</span></div>
+        <div>🛑 손절 <span class="num">${fmtPrice(p.stoploss, p.market)}</span></div>
+        <div>🎯 목표 <span class="num">${fmtPrice(p.target, p.market)}</span></div>
+      </div>
+      <div class="mt-2 flex items-center gap-2">
+        <div class="progress flex-1"><span style="width:${heldPct}%"></span></div>
+        <div class="text-[10px] text-[#9CA3AF] whitespace-nowrap">${p.days_held}/${p.hold_days || 5}일</div>
+      </div>
+    </div>`;
+  }).join('');
+  list.innerHTML = rows;
+}
+
+async function loadLiveTrades() {
+  // 우선 live_trades.json (라이브 누적) 시도, 없으면 backtest.json 폴백
+  let url = 'data/live_trades.json?ts=' + Date.now();
+  try {
+    let res = await fetch(url);
+    if (!res.ok) throw new Error('no live');
+    const data = await res.json();
+    renderOpenPositions(data.open_positions || []);
+    return data;
+  } catch (e) {
+    document.getElementById('open-meta').textContent = '데이터 준비 중 — 첫 추천 시점부터 누적';
+    renderOpenPositions([]);
+    return null;
+  }
+}
+
 async function loadBacktest() {
   try {
-    const res = await fetch('data/backtest.json?ts=' + Date.now());
-    if (!res.ok) throw new Error('no backtest');
+    // 1순위: 라이브 누적 (live_trades.json), 폴백: 백테스트 시뮬레이션
+    let res = await fetch('data/live_trades.json?ts=' + Date.now());
+    let isLive = res.ok;
+    if (!res.ok) res = await fetch('data/backtest.json?ts=' + Date.now());
+    if (!res.ok) throw new Error('no data');
     _backtestData = await res.json();
+    // live_trades.json은 closed_trades 키, backtest.json은 trades 키 — 통합
+    if (isLive) {
+      _backtestData.trades = _backtestData.closed_trades || [];
+      document.getElementById('perf-meta').textContent = '서비스 시작 이후 누적 추천 결과 (라이브 트래킹)';
+    } else {
+      document.getElementById('perf-meta').textContent = '백테스트 시뮬레이션 (라이브 데이터 누적 시작 전)';
+    }
     const s = _backtestData.summary || {};
 
     // 헤더 (compact)
@@ -475,6 +580,7 @@ async function loadBacktest() {
 }
 
 async function load() {
+  loadLiveTrades();
   loadBacktest();
   try {
     const res = await fetch('data/picks.json?ts=' + Date.now());

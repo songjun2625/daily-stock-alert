@@ -54,17 +54,31 @@ class USSwingThresholds:
 
 US_THRESH = USSwingThresholds()
 
-# 한국장 스크리닝 임계값 (PDF 사업화 리포트 §3-3 그대로)
+# 한국장 스크리닝 임계값 — US 알고리즘 (4월 +54%) 의 펀더멘털 필터를 KR 에 이식.
 @dataclass(frozen=True)
 class KRSwingThresholds:
-    volume_multiplier_min: float = 2.0      # 거래량 5일 평균 대비 2배 이상
+    volume_multiplier_min: float = 1.5      # 거래량 5일 평균 1.5배+ (US 와 동일하게 완화)
     rsi_low: float  = 30.0
-    rsi_high: float = 40.0                  # 한국장은 30~40 (저평가 반등)
-    earnings_surprise_min: float = 0.05     # 어닝 컨센서스 +5% 이상
-    institutional_streak_days: int = 5      # 기관·외국인 5일 연속 순매수
-    market_cap_min_krw: float = 5.0e11      # 시총 5,000억 이상 (소형주 제외)
+    rsi_high: float = 45.0                  # US 와 동일 (30~45 — 저평가 + 약세 구간)
+    drawdown_low:  float = 0.10             # 52주 -10~-35% '세일 중'
+    drawdown_high: float = 0.35
+    operating_margin_min: float = 0.10      # 영업이익률 10%+ (한국 기업 평균 고려해 US 의 20% 보다 완화)
+    revenue_growth_min: float = 0.05        # 매출 성장 5%+
+    earnings_surprise_min: float = 0.05
+    institutional_streak_days: int = 5
+    market_cap_min_krw: float = 5.0e11      # 시총 5,000억 이상
 
 KR_THRESH = KRSwingThresholds()
+
+# 시장별 손절·목표 (한국장 변동성 좁아 더 타이트하게)
+@dataclass(frozen=True)
+class ExitRules:
+    stop_pct: float
+    target_pct: float
+    hold_days: int
+
+EXIT_KR = ExitRules(stop_pct=0.025, target_pct=0.04, hold_days=5)   # 한국장: -2.5% / +4%
+EXIT_US = ExitRules(stop_pct=0.04,  target_pct=0.06, hold_days=5)   # 미장:   -4%   / +6%
 
 # 환율 (원화 병기용 — 실제 운영 시 매일 한국은행 API에서 갱신)
 USD_KRW_FALLBACK = 1480.0

@@ -106,51 +106,103 @@ def narrate_us(c) -> dict:
 
 
 def narrate_kr(c) -> dict:
-    rsi_status = "과매도(반등 임박)" if c.rsi <= 32 else "저평가 구간"
-    one_liner = (f"RSI {c.rsi:.0f} {rsi_status}, "
-                 f"{'외국인·기관 동반 순매수' if c.foreign_streak >= 5 and c.institution_streak >= 5 else ('외국인 ' + str(c.foreign_streak) + '일 연속 매수' if c.foreign_streak >= 5 else ('기관 ' + str(c.institution_streak) + '일 연속 매수' if c.institution_streak >= 5 else '기술적 신호 다수'))}")
-    thesis = (
-        f"{c.name}({c.ticker})는 5일 평균 거래량의 {'2배 이상' if c.volume_spike else '평이한'} 거래량으로 "
-        f"RSI {c.rsi:.0f} {rsi_status}에 진입한 상태입니다. "
-    )
-    if c.foreign_streak >= 5:
-        thesis += f"외국인이 {c.foreign_streak}일 연속 순매수 중이라 수급이 강해지고 있습니다. "
-    if c.institution_streak >= 5:
-        thesis += f"기관도 {c.institution_streak}일 연속 매수해 양대 수급이 동반 유입되는 모습입니다. "
-    if c.macd_golden_cross:
-        thesis += "MACD 골든크로스로 단기 추세 전환 신호가 켜졌습니다."
+    """KR 내러티브 — US 알고리즘 이식판. 영업이익률·매출성장·드로우다운·RSI·수급 종합."""
+    om = c.operating_margin
+    rg = c.revenue_growth
+    dd = getattr(c, "drawdown_52w", 0.0) or 0.0
+    rsi_status = "과매도(반등 임박)" if c.rsi <= 35 else "약세 구간(반등 가능)" if c.rsi <= 45 else "중립"
+    one_liner_parts = []
+    if om: one_liner_parts.append(f"영업이익률 {om*100:.0f}%")
+    if c.earnings_surprise and c.earnings_surprise >= 5:
+        one_liner_parts.append(f"어닝 서프라이즈 +{c.earnings_surprise:.1f}%")
+    one_liner_parts.append(f"RSI {c.rsi:.0f} 반등 신호")
+    one_liner = f"{c.sector or '코스피·코스닥'} " + " / ".join(one_liner_parts)
 
-    signals = [
-        {"label": "거래량 5일평균 2배+", "value": "✓" if c.volume_spike else "—", "ok": c.volume_spike,
-         "explain": "큰손 자금이 갑자기 몰린 신호."},
-        {"label": "RSI (과매도 지수)", "value": f"{c.rsi:.0f}", "ok": 30 <= c.rsi <= 40,
-         "explain": "30~40이면 저평가 반등 후보."},
-        {"label": "MACD 골든크로스", "value": "✓" if c.macd_golden_cross else "—", "ok": c.macd_golden_cross,
-         "explain": "추세 전환의 첫 신호."},
-        {"label": "5/20일선 정배열", "value": "✓" if c.ma_aligned_up else "—", "ok": c.ma_aligned_up,
-         "explain": "단기선이 중기선 위로 — 상승 시작."},
-        {"label": "외국인 연속 순매수", "value": f"{c.foreign_streak}일", "ok": c.foreign_streak >= 5,
-         "explain": "외국인은 시장 방향성을 가장 빠르게 반영."},
-        {"label": "기관 연속 순매수", "value": f"{c.institution_streak}일", "ok": c.institution_streak >= 5,
-         "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."},
-    ]
+    thesis = f"{c.name}({c.ticker})는 "
+    if om and rg:
+        thesis += f"매출 성장률 {rg*100:.0f}% · 영업이익률 {om*100:.0f}%로 꾸준히 돈을 잘 버는 회사입니다. "
+    elif om:
+        thesis += f"영업이익률 {om*100:.0f}%의 안정적 수익 구조를 가진 기업입니다. "
+    if 0.10 <= dd:
+        thesis += f"52주 고점 대비 {dd*100:.0f}% 떨어진 상태에서 "
+    thesis += f"RSI {c.rsi:.0f}로 {rsi_status} 구간이며, "
+    if c.macd_golden_cross:
+        thesis += "MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다."
+    elif c.ma_aligned_up:
+        thesis += "5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다."
+    elif c.foreign_streak >= 5 or c.institution_streak >= 5:
+        who = []
+        if c.foreign_streak >= 5: who.append(f"외국인 {c.foreign_streak}일")
+        if c.institution_streak >= 5: who.append(f"기관 {c.institution_streak}일")
+        thesis += f"{' / '.join(who)} 연속 순매수로 수급이 강해지고 있습니다."
+    elif c.volume_spike:
+        thesis += "거래량 1.5배+로 자금 유입이 확인됩니다."
+    else:
+        thesis += "기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다."
+
+    signals = []
+    signals.append({
+        "label": "영업이익률",
+        "value": f"{om*100:.0f}%" if om else "—",
+        "ok": bool(om and om >= 0.10),
+        "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성.",
+    })
+    signals.append({
+        "label": "매출 성장",
+        "value": f"{rg*100:.0f}%" if rg else "—",
+        "ok": bool(rg and rg >= 0.05),
+        "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업.",
+    })
+    signals.append({
+        "label": "RSI (과매도 지수)",
+        "value": f"{c.rsi:.0f}",
+        "ok": 30 <= c.rsi <= 45,
+        "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간.",
+    })
+    signals.append({
+        "label": "52주 고점 대비",
+        "value": f"-{dd*100:.0f}%",
+        "ok": 0.10 <= dd <= 0.35,
+        "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'.",
+    })
+    signals.append({"label": "MACD 골든크로스", "value": "✓" if c.macd_golden_cross else "—",
+                    "ok": c.macd_golden_cross, "explain": "추세 전환의 첫 신호."})
+    signals.append({"label": "5/20일선 정배열", "value": "✓" if c.ma_aligned_up else "—",
+                    "ok": c.ma_aligned_up, "explain": "단기·중기 추세선 모두 상승 시작."})
+    signals.append({"label": "거래량 1.5배+", "value": "✓" if c.volume_spike else "—",
+                    "ok": c.volume_spike, "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."})
+    signals.append({"label": "외국인 연속 순매수", "value": f"{c.foreign_streak}일",
+                    "ok": c.foreign_streak >= 5,
+                    "explain": "외국인은 시장 방향성을 가장 빠르게 반영."})
+    signals.append({"label": "기관 연속 순매수", "value": f"{c.institution_streak}일",
+                    "ok": c.institution_streak >= 5,
+                    "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."})
     if c.earnings_surprise is not None:
-        signals.append({"label": "어닝 서프라이즈", "value": f"+{c.earnings_surprise:.1f}%",
+        signals.append({"label": "어닝 서프라이즈",
+                        "value": f"+{c.earnings_surprise:.1f}%",
                         "ok": c.earnings_surprise >= 5,
                         "explain": "최근 분기 영업이익이 컨센서스 대비 +5%↑이면 모멘텀."})
 
-    risk = ("개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. "
-            "정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.")
+    if dd >= 0.30:
+        risk = "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수."
+    else:
+        risk = ("개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. "
+                "정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.")
 
     score_bd = []
-    if c.volume_spike: score_bd.append({"name": "거래량 5일평균 2배+", "points": 25})
-    if 30 <= c.rsi <= 40: score_bd.append({"name": "RSI 30~40", "points": 25})
-    if c.macd_golden_cross: score_bd.append({"name": "MACD 골든크로스", "points": 15})
-    if c.ma_aligned_up: score_bd.append({"name": "5/20일선 정배열", "points": 10})
+    if om and om >= 0.10:
+        score_bd.append({"name": "영업이익률 ≥10%", "points": round(min(25 * om / 0.10, 25*2.5), 1)})
+    if rg and rg >= 0.05:
+        score_bd.append({"name": "매출 성장 ≥5%", "points": round(min(15 * rg / 0.05, 15*2.5), 1)})
+    if 30 <= c.rsi <= 45: score_bd.append({"name": "RSI 30~45 구간", "points": 20})
+    if 0.10 <= dd <= 0.35: score_bd.append({"name": "52주 -10~-35%", "points": 15})
+    if c.macd_golden_cross: score_bd.append({"name": "MACD 골든크로스", "points": 10})
+    if c.ma_aligned_up: score_bd.append({"name": "5/20일선 정배열", "points": 8})
+    if c.volume_spike: score_bd.append({"name": "거래량 1.5배+", "points": 7})
+    if c.earnings_surprise and c.earnings_surprise >= 5:
+        score_bd.append({"name": "어닝 서프라이즈 +5%↑", "points": 12})
     if c.foreign_streak >= 5: score_bd.append({"name": "외국인 5일+ 연속매수", "points": 12})
     if c.institution_streak >= 5: score_bd.append({"name": "기관 5일+ 연속매수", "points": 13})
-    if c.earnings_surprise and c.earnings_surprise >= 5:
-        score_bd.append({"name": "어닝 서프라이즈 +5%↑", "points": 10})
 
     return {
         "one_liner": one_liner,
