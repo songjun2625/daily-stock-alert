@@ -132,6 +132,84 @@ def _score_block_html(score, sector: str = "") -> str:
     )
 
 
+def _market_quant_pick_html(qp: dict | None, market: str) -> str:
+    """시장별 퀀트 픽 — 재무재표 기반. 시장 섹션 최상단에 노출."""
+    if not qp or not qp.get("ticker"):
+        return ""
+    is_us = market == "us"
+    flag = "🇺🇸" if is_us else "🇰🇷"
+    price = qp.get("price") or 0
+    if is_us:
+        price_txt = f"${price:,.2f}"
+        krw = qp.get("price_krw") or 0
+        krw_html = f' <span style="font-size:10px;color:#A5B4FC;font-weight:500">≈ {krw:,}원</span>' if krw else ''
+        fmt = lambda x: f"${(x or 0):.2f}"
+    else:
+        price_txt = f"{int(price):,}원"
+        krw_html = ''
+        fmt = lambda x: f"{int(x or 0):,}원"
+    sector_html = (f'<span style="background:rgba(255,255,255,.15);color:#fff;'
+                   f'padding:1px 7px;border-radius:999px;font-size:10px;margin-left:6px">{qp.get("sector","")}</span>'
+                   ) if qp.get("sector") else ''
+    # 펀더멘털 메트릭
+    om = (qp.get("operating_margin") or 0) * 100
+    rg = (qp.get("revenue_growth") or 0) * 100
+    pe = qp.get("pe_ratio") or 0
+    es_pct = qp.get("earnings_surprise_pct") if is_us else (qp.get("earnings_surprise") or 0)
+    es = float(es_pct or 0)
+    om_str = f"{om:.0f}%" if om else "—"
+    rg_str = f"{rg:.0f}%" if rg else "—"
+    pe_str = f"{pe:.1f}" if pe and pe > 0 else "—"
+    es_str = f"{'+' if es >= 0 else ''}{es:.1f}%" if es != 0 else "—"
+    qscore = qp.get("quant_score") or qp.get("score") or 0
+    return (
+        f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;'
+        f'background:linear-gradient(135deg,#0B1B3D 0%,#312E81 50%,#7C3AED 100%);'
+        f'border-radius:12px;margin:8px 0 8px 0;color:#fff">'
+        f'<tr><td style="padding:12px 14px">'
+        f'<div style="font-size:9px;font-weight:700;letter-spacing:.5px;color:#FFB020;text-transform:uppercase;margin-bottom:5px">'
+        f'🌟 Quant Pick · 재무재표 기반</div>'
+        f'<div style="font-size:14px;font-weight:800;line-height:1.3">'
+        f'{flag} {qp.get("ticker","")} <span style="color:#E0E7FF;font-weight:500;font-size:12px">{qp.get("name","")}</span>'
+        f'{sector_html}</div>'
+        f'<div style="margin-top:5px">'
+        f'<span style="font-size:18px;font-weight:800">{price_txt}</span>{krw_html}'
+        f'&nbsp;<span style="background:rgba(255,255,255,.12);'
+        f'padding:2px 7px;border-radius:999px;font-size:10px;font-weight:700;white-space:nowrap">'
+        f'퀀트 {qscore:.0f}점</span>'
+        f'</div>'
+        # 4 펀더멘털 메트릭
+        f'<table style="width:100%;margin-top:7px;border-collapse:collapse;table-layout:fixed"><tr>'
+        f'<td style="background:rgba(255,255,255,.08);border-radius:5px;padding:5px 7px;width:24%">'
+        f'<div style="color:#A5B4FC;font-size:8px">영업이익률</div><div style="font-weight:700;font-size:11px">{om_str}</div></td>'
+        f'<td style="width:1%"></td>'
+        f'<td style="background:rgba(255,255,255,.08);border-radius:5px;padding:5px 7px;width:24%">'
+        f'<div style="color:#A5B4FC;font-size:8px">매출 성장</div><div style="font-weight:700;font-size:11px">{rg_str}</div></td>'
+        f'<td style="width:1%"></td>'
+        f'<td style="background:rgba(255,255,255,.08);border-radius:5px;padding:5px 7px;width:24%">'
+        f'<div style="color:#A5B4FC;font-size:8px">PER</div><div style="font-weight:700;font-size:11px">{pe_str}</div></td>'
+        f'<td style="width:1%"></td>'
+        f'<td style="background:rgba(255,255,255,.08);border-radius:5px;padding:5px 7px;width:25%">'
+        f'<div style="color:#A5B4FC;font-size:8px">어닝</div><div style="font-weight:700;font-size:11px">{es_str}</div></td>'
+        f'</tr></table>'
+        # 진입/손절/목표
+        f'<table style="width:100%;margin-top:6px;border-collapse:collapse;table-layout:fixed"><tr>'
+        f'<td style="background:rgba(255,255,255,.10);border-radius:5px;padding:5px 7px;width:42%">'
+        f'<div style="color:#A5B4FC;font-size:8px">📥 진입</div>'
+        f'<div style="font-weight:700;font-size:10px;white-space:nowrap">{fmt(qp.get("entry_low"))}~{fmt(qp.get("entry_high"))}</div></td>'
+        f'<td style="width:1%"></td>'
+        f'<td style="background:rgba(254,202,202,.18);border-radius:5px;padding:5px 7px;width:28%">'
+        f'<div style="color:#FCA5A5;font-size:8px">🛑 손절</div>'
+        f'<div style="font-weight:700;font-size:10px;white-space:nowrap">{fmt(qp.get("stoploss"))}</div></td>'
+        f'<td style="width:1%"></td>'
+        f'<td style="background:rgba(167,243,208,.20);border-radius:5px;padding:5px 7px;width:28%">'
+        f'<div style="color:#86EFAC;font-size:8px">🎯 목표</div>'
+        f'<div style="font-weight:700;font-size:10px;white-space:nowrap">{fmt(qp.get("target"))}</div></td>'
+        f'</tr></table>'
+        f'</td></tr></table>'
+    )
+
+
 def _load_live_summary() -> dict:
     """live_trades.json 의 누적 성과 — 메일 헤더 KPI 용."""
     p = Path("landing/data/live_trades.json")
@@ -215,11 +293,20 @@ def build_html(data: dict, name: str = "") -> str:
         '</div>',
     ]
 
+    rank_colors = ["#F59E0B", "#94A3B8", "#A16207", "#0B1B3D", "#0B1B3D"]   # 1금/2은/3동/4-5남색
     for market, label in [("kr", "🇰🇷 코스피·코스닥"), ("us", "🇺🇸 나스닥·NYSE"), ("futures", "📊 선물·ETF")]:
-        picks = ((data.get(market) or {}).get("picks")) or []
-        if not picks: continue
-        html.append(f'<h3 style="margin:18px 0 8px 0;font-size:14px;border-bottom:2px solid #1E3A8A;padding-bottom:5px">{label}</h3>')
-        for p in picks:
+        market_block = data.get(market) or {}
+        picks = market_block.get("picks") or []
+        quant_pick = market_block.get("quant_pick")
+        if not picks and not quant_pick: continue
+        html.append(f'<h3 style="margin:18px 0 6px 0;font-size:14px;border-bottom:2px solid #1E3A8A;padding-bottom:5px">{label}</h3>')
+        # 시장별 퀀트 픽 (재무재표 기반) 먼저
+        if quant_pick:
+            html.append(_market_quant_pick_html(quant_pick, market))
+        # 기술 분석 TOP N
+        if picks:
+            html.append(f'<div style="font-size:10px;font-weight:600;color:#6B7280;margin:10px 0 6px 0;letter-spacing:.3px">📈 기술적 분석 TOP {len(picks)}</div>')
+        for idx, p in enumerate(picks, 1):
             cur = "$" if market == "us" else ""
             try:
                 price = float(p.get("price") or 0)
@@ -243,12 +330,17 @@ def build_html(data: dict, name: str = "") -> str:
             stp = _fmt_money(p.get("stoploss"), market)
             tgt = _fmt_money(p.get("target"), market)
 
-            # 모바일 우선: 종목 헤더 + 가격 + verdict 점수 블록
+            # 모바일 우선: 헤더 좌측 순위 배지 → 우측 가격 + verdict 점수 블록
             score_html = _score_block_html(score, sector)
+            rank_color = rank_colors[idx-1] if idx <= 5 else "#0B1B3D"
+            rank_badge = (f'<span style="display:inline-block;width:22px;height:22px;border-radius:50%;'
+                          f'background:{rank_color};color:#fff;font-weight:800;font-size:11px;'
+                          f'text-align:center;line-height:22px;margin-right:6px;vertical-align:middle">'
+                          f'#{idx}</span>')
             html.append(f'''
 <div style="border:1px solid #EAEAF0;border-radius:12px;padding:12px;margin-bottom:10px">
   <div style="font-size:14px;font-weight:700;line-height:1.3">
-    {ticker} <span style="color:#6B7280;font-weight:500;font-size:12px">{cname}</span>
+    {rank_badge}{ticker} <span style="color:#6B7280;font-weight:500;font-size:12px">{cname}</span>
   </div>
   <div style="margin-top:4px;font-size:16px;font-weight:800;color:#0B1B3D">{price_fmt}</div>
   {score_html}

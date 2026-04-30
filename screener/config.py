@@ -21,9 +21,10 @@ US_SEND_HOUR, US_SEND_MIN = 22, 0
 AD_BLOCK_START = 21
 AD_BLOCK_END   = 8
 
-# 스크리너 결과 상위 N개만 발송 (사람 검수 단계 후)
-TOP_N_KR = 3
-TOP_N_US = 3
+# 시장별 표시 구조: 기술적 분석 4 + 퀀트(재무) 1 = 시장당 5종목.
+# 점수 임계(KR 60 / US 80) 미달은 자동 제외 — 4개 다 채우지 못할 수도 있음.
+TOP_N_KR = 4
+TOP_N_US = 4
 
 # 백테스트·발송 모두에서 반드시 출력되는 면책 문구. 절대 생략 금지.
 LEGAL_FOOTER = (

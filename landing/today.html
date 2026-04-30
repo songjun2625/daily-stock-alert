@@ -87,6 +87,16 @@
   .score-gauge .marker { position:absolute; top:-3px; width:11px; height:11px; border-radius:50%; background:#fff; border:2.5px solid #0B1B3D; transform:translateX(-50%); }
   .score-scale-labels { display:flex; justify-content:space-between; font-size:9px; color:#9CA3AF; margin-top:3px; }
   .verdict-badge { display:inline-flex; align-items:center; gap:4px; padding:3px 9px; border-radius:999px; font-size:11px; font-weight:700; }
+  /* 순위 배지 */
+  .rank-badge {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:24px; height:24px; border-radius:50%; font-weight:800; font-size:11px;
+    color:#fff; flex-shrink:0;
+  }
+  .rank-1 { background:linear-gradient(135deg,#FFD700,#F59E0B); box-shadow:0 2px 6px rgba(245,158,11,.35); }
+  .rank-2 { background:linear-gradient(135deg,#C0C0C0,#94A3B8); box-shadow:0 2px 5px rgba(148,163,184,.3); }
+  .rank-3 { background:linear-gradient(135deg,#CD7F32,#A16207); box-shadow:0 2px 5px rgba(161,98,7,.3); }
+  .rank-other { background:#0B1B3D; }
   /* live dot — 데이터 신선도 표시 */
   .live-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#10B981; box-shadow:0 0 0 0 rgba(16,185,129,.6); animation:pulse-dot 2s infinite; vertical-align:middle; margin-right:6px; }
   @keyframes pulse-dot { 0%{box-shadow:0 0 0 0 rgba(16,185,129,.6)} 70%{box-shadow:0 0 0 8px rgba(16,185,129,0)} 100%{box-shadow:0 0 0 0 rgba(16,185,129,0)} }
@@ -125,10 +135,10 @@
     <div>
       <span class="chip">자동 갱신 · 매일 장 시작 직전</span>
       <h1 class="mt-2 text-xl md:text-3xl font-extrabold leading-tight">
-        오늘의 종목 <span style="color:#1E3A8A">3개 × 시장별</span>
+        오늘의 종목 <span style="color:#1E3A8A">TOP 5 × 시장별</span>
       </h1>
       <p class="mt-2 text-[#6B7280]" style="font-size:12px">
-        매일 한국장 08:25 / 미장 21:55 KST 알고리즘이 자동 선정 · 매수/매도/손절 가격 포함
+        매일 한국장 08:25 / 미장 21:55 KST 알고리즘이 점수 순으로 자동 선정 · 매수/매도/손절 가격 포함
       </p>
     </div>
     <div class="text-right">
@@ -334,15 +344,27 @@
 </style>
 
 <section id="tab-kr" class="container-x pb-12">
-  <div class="grid md:grid-cols-3 gap-5" id="kr-cards"></div>
+  <div id="kr-quant-pick" class="mb-4"></div>
+  <div id="kr-tech-divider" class="hidden mb-3" style="display:flex;align-items:center;gap:10px">
+    <div style="flex:1;height:1px;background:#E5E7EB"></div>
+    <div style="font-size:11px;font-weight:700;color:#6B7280;letter-spacing:.4px">📈 기술적 분석 TOP 4</div>
+    <div style="flex:1;height:1px;background:#E5E7EB"></div>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="kr-cards"></div>
 </section>
 
 <section id="tab-us" class="container-x pb-12 hidden">
-  <div class="grid md:grid-cols-3 gap-5" id="us-cards"></div>
+  <div id="us-quant-pick" class="mb-4"></div>
+  <div id="us-tech-divider" class="hidden mb-3" style="display:flex;align-items:center;gap:10px">
+    <div style="flex:1;height:1px;background:#E5E7EB"></div>
+    <div style="font-size:11px;font-weight:700;color:#6B7280;letter-spacing:.4px">📈 기술적 분석 TOP 4</div>
+    <div style="flex:1;height:1px;background:#E5E7EB"></div>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="us-cards"></div>
 </section>
 
 <section id="tab-futures" class="container-x pb-12 hidden">
-  <div class="grid md:grid-cols-3 gap-5" id="futures-cards"></div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="futures-cards"></div>
 </section>
 
 <section class="container-x pb-16">
@@ -409,6 +431,74 @@ function scoreHeaderBlock(score, sector) {
   <div class="score-gauge mt-1.5"><span class="marker" style="left:${pct}%"></span></div>
   <div class="score-scale-labels"><span>0</span><span>60 관망</span><span>80 신중</span><span>100 매수</span><span>130+ 강력</span></div>
   <div class="text-[#6B7280] mt-1" style="font-size:10.5px;line-height:1.4">${v.desc}</div>`;
+}
+
+function renderQuantPickInline(market, qp) {
+  const containerId = market + '-quant-pick';
+  const dividerId = market + '-tech-divider';
+  const container = document.getElementById(containerId);
+  const divider = document.getElementById(dividerId);
+  if (!container) return;
+  if (!qp || !qp.ticker) { container.innerHTML = ''; if (divider) divider.classList.add('hidden'); return; }
+  const isUs = market === 'us';
+  const flag = isUs ? '🇺🇸' : '🇰🇷';
+  const priceTxt = isUs
+    ? `$${(qp.price ?? 0).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+    : `${Math.round(qp.price || 0).toLocaleString()}원`;
+  const krwTxt = isUs && qp.price_krw
+    ? ` <span style="font-size:11px;color:#A5B4FC;font-weight:500">≈ ${qp.price_krw.toLocaleString()}원</span>`
+    : '';
+  const fmtP = (x) => isUs ? `$${(x ?? 0).toFixed(2)}` : `${Math.round(x || 0).toLocaleString()}원`;
+  const om  = qp.operating_margin != null ? (qp.operating_margin * 100).toFixed(0) + '%' : '—';
+  const rg  = qp.revenue_growth   != null ? (qp.revenue_growth   * 100).toFixed(0) + '%' : '—';
+  const pe  = qp.pe_ratio         != null && qp.pe_ratio > 0 ? qp.pe_ratio.toFixed(1) : '—';
+  const es_pct = isUs ? qp.earnings_surprise_pct : qp.earnings_surprise;
+  const es  = es_pct != null ? (es_pct >= 0 ? '+' : '') + es_pct.toFixed(1) + '%' : '—';
+  const sectorPill = qp.sector ? `<span class="pill" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.18);font-size:10px">${qp.sector}</span>` : '';
+  const qScore = qp.quant_score != null ? qp.quant_score.toFixed(0) : (qp.score ?? 0).toFixed(0);
+  container.innerHTML = `
+    <div style="background:linear-gradient(135deg,#0B1B3D 0%,#312E81 50%,#7C3AED 100%);
+                border-radius:14px;padding:14px 16px;color:#fff;
+                box-shadow:0 10px 28px rgba(11,27,61,.22);position:relative;overflow:hidden">
+      <div style="position:absolute;top:-30px;right:-30px;width:110px;height:110px;background:radial-gradient(circle,rgba(255,176,32,.25),transparent 70%);pointer-events:none"></div>
+      <div class="flex items-center gap-2 flex-wrap" style="position:relative">
+        <span style="font-size:18px">🌟</span>
+        <span style="font-size:10px;font-weight:700;letter-spacing:.5px;color:#FFB020;text-transform:uppercase">Quant Pick · 재무재표 기반</span>
+        ${sectorPill}
+      </div>
+      <div class="mt-2" style="position:relative">
+        <div class="flex items-baseline gap-2 flex-wrap">
+          <span style="font-size:14px">${flag}</span>
+          <span class="ticker" style="font-size:16px;font-weight:800">${qp.ticker}</span>
+          <span style="font-size:12px;color:#E0E7FF">${qp.name || ''}</span>
+        </div>
+        <div class="mt-1 flex items-end gap-2 flex-wrap">
+          <span class="num" style="font-size:20px;font-weight:800">${priceTxt}</span>${krwTxt}
+          <span class="num" style="background:rgba(255,255,255,.12);padding:2px 8px;border-radius:999px;font-size:10px;font-weight:700">퀀트 ${qScore}점</span>
+        </div>
+        <div class="mt-2 grid grid-cols-2 md:grid-cols-4 gap-1.5" style="font-size:10px">
+          <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:4px 6px"><div style="color:#A5B4FC;font-size:8px">영업이익률</div><div class="num" style="font-weight:700">${om}</div></div>
+          <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:4px 6px"><div style="color:#A5B4FC;font-size:8px">매출 성장</div><div class="num" style="font-weight:700">${rg}</div></div>
+          <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:4px 6px"><div style="color:#A5B4FC;font-size:8px">PER</div><div class="num" style="font-weight:700">${pe}</div></div>
+          <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:4px 6px"><div style="color:#A5B4FC;font-size:8px">어닝 서프라이즈</div><div class="num" style="font-weight:700">${es}</div></div>
+        </div>
+        <div class="mt-2 grid grid-cols-3 gap-1.5" style="font-size:10px">
+          <div style="background:rgba(255,255,255,.10);border-radius:5px;padding:4px 7px">
+            <div style="color:#A5B4FC;font-size:8px">📥 진입</div>
+            <div class="num" style="font-weight:700;white-space:nowrap;font-size:10px">${fmtP(qp.entry_low)}~${fmtP(qp.entry_high)}</div>
+          </div>
+          <div style="background:rgba(254,202,202,.18);border-radius:5px;padding:4px 7px">
+            <div style="color:#FCA5A5;font-size:8px">🛑 손절</div>
+            <div class="num" style="font-weight:700">${fmtP(qp.stoploss)}</div>
+          </div>
+          <div style="background:rgba(167,243,208,.20);border-radius:5px;padding:4px 7px">
+            <div style="color:#86EFAC;font-size:8px">🎯 목표</div>
+            <div class="num" style="font-weight:700">${fmtP(qp.target)}</div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  if (divider) divider.classList.remove('hidden');
 }
 
 function renderRuntime(rt) {
@@ -487,15 +577,24 @@ function scoreBd(narr) {
   return `<div class="mt-4"><div class="text-xs font-semibold text-[#374151] mb-2">점수 분해 (총 ${total}점)</div>${items}</div>`;
 }
 
-function makeCard({ pill, header, price, oneLiner, narr, body, currency }) {
+function rankBadge(rank) {
+  if (!rank) return '';
+  const cls = rank === 1 ? 'rank-1' : rank === 2 ? 'rank-2' : rank === 3 ? 'rank-3' : 'rank-other';
+  return `<span class="rank-badge ${cls}" title="순위 #${rank}">#${rank}</span>`;
+}
+
+function makeCard({ pill, header, price, oneLiner, narr, body, currency, rank }) {
   const sigBlock = (narr?.signals || []).map(signalRow).join('');
   const thesisBlock = narr?.thesis ? `<div class="mt-3 text-[#374151] bg-[#F8FAFC] rounded-lg" style="font-size:12px;line-height:1.55;padding:10px 12px">💡 ${narr.thesis}</div>` : '';
   const riskBlock = narr?.risk ? `<div class="mt-3 text-[#9F1239] bg-[#FFF1F2] rounded-lg" style="font-size:11px;padding:10px 12px;line-height:1.5">⚠️ ${narr.risk}</div>` : '';
   const holdBlock = narr?.hold_days ? `<div class="mt-2 text-[#6B7280]" style="font-size:11px">⏱️ 권장 보유 기간: 약 ${narr.hold_days}일</div>` : '';
   const posBlock = narr?.position_size_pct ? `<div class="text-[#6B7280]" style="font-size:11px">💰 권장 비중: 전체 자산의 ${narr.position_size_pct}% 이하</div>` : '';
 
-  return `<div class="grid-card" style="padding:14px">
-    <div class="flex items-center justify-between flex-wrap gap-2">${pill}${header}</div>
+  return `<div class="grid-card" style="padding:14px;position:relative">
+    <div class="flex items-center justify-between flex-wrap gap-2">
+      <div class="flex items-center gap-2">${rankBadge(rank)}${pill}</div>
+      ${header}
+    </div>
     <div class="mt-2">${price}</div>
     ${oneLiner ? `<div class="mt-2 text-[#374151]" style="font-size:12px;line-height:1.5">${oneLiner}</div>` : ''}
     ${body}
@@ -515,9 +614,10 @@ function makeCard({ pill, header, price, oneLiner, narr, body, currency }) {
   </div>`;
 }
 
-function krCard(p) {
+function krCard(p, rank) {
   const change = p.change_pct_1d ?? 0;
   return makeCard({
+    rank,
     pill: '',
     header: `<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
     price: `<div class="font-bold ticker" style="font-size:14px">${p.ticker} <span class="font-normal text-[#6B7280]" style="font-size:12px">${(p.name||'').slice(0,20)}</span></div>
@@ -530,9 +630,10 @@ function krCard(p) {
   });
 }
 
-function usCard(p) {
+function usCard(p, rank) {
   const change = p.change_pct_1d ?? 0;
   return makeCard({
+    rank,
     pill: '',
     header: `<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
     price: `<div class="font-bold ticker" style="font-size:14px">${p.ticker} <span class="font-normal text-[#6B7280]" style="font-size:12px">${(p.name||'').slice(0,20)}</span></div>
@@ -545,7 +646,7 @@ function usCard(p) {
   });
 }
 
-function futCard(p) {
+function futCard(p, rank) {
   const change = p.change_pct_1d ?? 0;
   const cur = p.market === 'us' ? '$' : '₩';
   const lev = p.leveraged ? `<span class="pill pill-warn">레버리지</span>` : '';
@@ -553,6 +654,7 @@ function futCard(p) {
   const krwTxt = cur === '$' ? `<div class="text-[#6B7280] num" style="font-size:11px">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div>` : '';
   const sectorLabel = p.market === 'us' ? '미국 ETF' : '국내 ETF';
   return makeCard({
+    rank,
     pill: '',
     header: `${lev}<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
     price: `<div class="font-bold" style="font-size:13px">${p.name} <span class="font-normal text-[#6B7280] ticker" style="font-size:11px">(${p.ticker})</span></div>
@@ -812,13 +914,18 @@ async function load() {
     renderFear(d.fear?.vix,    'vix-value',    'vix-pill',    'vix-summary',    'vix-marker',    40);
     renderRuntime(d.runtime);
 
+    // 시장별 — 퀀트 픽 (재무재표 기반) + 기술 분석 4
+    renderQuantPickInline('kr', d.kr?.quant_pick);
+    renderQuantPickInline('us', d.us?.quant_pick);
+
     const kr = d.kr?.picks || [];
-    KR_CARDS.innerHTML = kr.length ? kr.map(krCard).join('')
+    KR_CARDS.innerHTML = kr.length ? kr.map((p, i) => krCard(p, i + 1)).join('')
       : (d.kr?.no_pick_reason ? noPickBlock('kr', d.kr.no_pick_reason) : emptyMsg('kr'));
     const us = d.us?.picks || [];
-    US_CARDS.innerHTML = us.length ? us.map(usCard).join('')
+    US_CARDS.innerHTML = us.length ? us.map((p, i) => usCard(p, i + 1)).join('')
       : (d.us?.no_pick_reason ? noPickBlock('us', d.us.no_pick_reason) : emptyMsg('us'));
-    const fu = d.futures?.picks || []; FUT_CARDS.innerHTML = fu.length ? fu.map(futCard).join('') : emptyMsg('futures');
+    const fu = d.futures?.picks || [];
+    FUT_CARDS.innerHTML = fu.length ? fu.map((p, i) => futCard(p, i + 1)).join('') : emptyMsg('futures');
   } catch (e) {
     console.error(e);
     KR_CARDS.innerHTML = emptyMsg('kr');

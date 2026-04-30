@@ -142,6 +142,67 @@ def _to_json_fut(c) -> dict:
     d = asdict(c); d["narrative"] = narrative.narrate_futures(c); return d
 
 
+# ---- 퀀트(재무재표 위주) 점수 — 기술적 점수와 별도 -----------------------
+# 영업이익률·매출성장·PER·ROE·어닝서프라이즈에 가중치 집중. 기술 신호는 sanity check 만.
+
+def _quant_score(c, market: str) -> float:
+    """재무 펀더멘털 위주 점수 — 0~250 스케일 (cap 무거움).
+      - 영업이익률 (≥ 시장 임계) : 35 × 비례 (cap 3.0× = 105)
+      - 매출 성장 (≥ 시장 임계)  : 25 × 비례 (cap 3.0× = 75)
+      - PER 저평가 (0~30)        : 20 × (30-PER)/30 (저PER 가산)
+      - 어닝 서프라이즈 ≥ +5%   : 25 × min(es/5, 3.0) (cap 75)
+      - 시총 점프 (KR 1조 / US 50B) : +10 (대형주 안정성)
+      - 기술 sanity (RSI 30~70)   : +5
+    """
+    s = 0.0
+    om = c.operating_margin
+    rg = c.revenue_growth
+    pe = c.pe_ratio
+    es = (c.earnings_surprise_pct if market == "us"
+          else (c.earnings_surprise / 100 if c.earnings_surprise else None))
+
+    om_min = 0.20 if market == "us" else 0.10
+    rg_min = 0.10 if market == "us" else 0.05
+    if om and om >= om_min:
+        s += 35 * min(om / om_min, 3.0)
+    if rg and rg >= rg_min:
+        s += 25 * min(rg / rg_min, 3.0)
+    if pe and 0 < pe < 30:
+        s += 20 * (30 - pe) / 30
+    elif pe and 30 <= pe < 60:
+        s += 6
+    if es is not None:
+        es_pct = float(es) if isinstance(es, (int, float)) else 0
+        if es_pct >= 5:
+            s += 25 * min(es_pct / 5, 3.0)
+    # 대형주 가산
+    mc_threshold = 1e12 if market == "kr" else 5e10  # KR 1조원 / US $50B
+    if (c.market_cap or 0) >= mc_threshold:
+        s += 10
+    # RSI sanity (과매도/과매수 회피 — 펀더멘털 진입에 적합)
+    if 30 <= (c.rsi or 50) <= 70:
+        s += 5
+    return round(s, 2)
+
+
+def _split_tech_quant(picks: list, market: str, n_tech: int) -> tuple[list, dict | None]:
+    """top N picks 중 상위 n_tech 개는 기술 분석, 나머지에서 quant_score 1위를 퀀트 픽으로.
+    quant 픽이 기술 4개와 겹치면 차순위(퀀트 점수 2등) 사용."""
+    if not picks:
+        return [], None
+    tech_picks = picks[:n_tech]
+    tech_keys = {p.ticker for p in tech_picks}
+    # 기술 4 + 후보군 추가 (다른 기술 픽이 quant 로 안 뽑히도록)
+    pool = picks[n_tech:] if len(picks) > n_tech else []
+    if not pool:
+        return tech_picks, None
+    pool_scored = sorted(pool, key=lambda p: _quant_score(p, market), reverse=True)
+    quant_pick_obj = pool_scored[0]
+    if _quant_score(quant_pick_obj, market) <= 0:
+        return tech_picks, None
+    return tech_picks, quant_pick_obj
+
+
 # ---- Publisher ----------------------------------------------------------
 
 def _effective_threshold(default: float, override, mode: str, defensive_bump: float = 20) -> float:
@@ -198,9 +259,9 @@ def _gate_us(picks: list, vix: float, rt: dict) -> tuple[list, str | None]:
 def publish_kr() -> dict:
     log.info("publish KR start")
     rt = _load_runtime()
-    picks = screen_kr(top_n=TOP_N_KR * 3)  # 3배수로 뽑아 블랙리스트·재정렬 후 자르기
+    # 4 (tech) + 1 (quant) 구조 — 풍부한 후보 위해 8개 fetch
+    picks = screen_kr(top_n=TOP_N_KR * 3)
     picks, _ = _apply_runtime_overrides(picks, [], rt)
-    picks = picks[:TOP_N_KR]
     now = _now_kst()
     payload = _load_existing()
     payload.setdefault("fear", {})
@@ -216,22 +277,29 @@ def publish_kr() -> dict:
     if no_reason:
         log.info("KR 미추천: %s", no_reason)
         payload["kr"] = {
-            "picks": [],
+            "picks": [], "quant_pick": None,
             "no_pick_reason": no_reason,
             "updated_at_iso": now.isoformat(),
             "updated_at_kst": _format_kst(now),
         }
     else:
+        tech_picks, quant_obj = _split_tech_quant(qualified, "kr", TOP_N_KR)
+        quant_json = None
+        if quant_obj is not None:
+            quant_json = _to_json_kr(quant_obj)
+            quant_json["quant_score"] = _quant_score(quant_obj, "kr")
         payload["kr"] = {
-            "picks": [_to_json_kr(p) for p in qualified],
+            "picks": [_to_json_kr(p) for p in tech_picks],
+            "quant_pick": quant_json,
             "updated_at_iso": now.isoformat(),
             "updated_at_kst": _format_kst(now),
         }
     payload["updated_at_iso"] = now.isoformat()
     payload["updated_at_kst"] = _format_kst(now)
     _write(payload)
-    return {"market": "kr", "n": len(qualified),
-            "tickers": [p.ticker for p in qualified],
+    return {"market": "kr",
+            "tech_n": len(payload["kr"].get("picks") or []),
+            "quant": (payload["kr"].get("quant_pick") or {}).get("ticker"),
             "no_pick_reason": no_reason}
 
 
@@ -240,7 +308,6 @@ def publish_us() -> dict:
     rt = _load_runtime()
     picks = screen_us(top_n=TOP_N_US * 3)
     _, picks = _apply_runtime_overrides([], picks, rt)
-    picks = picks[:TOP_N_US]
     light = market_traffic_light()
     now = _now_kst()
     payload = _load_existing()
@@ -256,15 +323,21 @@ def publish_us() -> dict:
     if no_reason:
         log.info("US 미추천: %s", no_reason)
         payload["us"] = {
-            "picks": [],
+            "picks": [], "quant_pick": None,
             "no_pick_reason": no_reason,
             "traffic_light": light,
             "updated_at_iso": now.isoformat(),
             "updated_at_kst": _format_kst(now),
         }
     else:
+        tech_picks, quant_obj = _split_tech_quant(qualified, "us", TOP_N_US)
+        quant_json = None
+        if quant_obj is not None:
+            quant_json = _to_json_us(quant_obj)
+            quant_json["quant_score"] = _quant_score(quant_obj, "us")
         payload["us"] = {
-            "picks": [_to_json_us(p) for p in qualified],
+            "picks": [_to_json_us(p) for p in tech_picks],
+            "quant_pick": quant_json,
             "traffic_light": light,
             "updated_at_iso": now.isoformat(),
             "updated_at_kst": _format_kst(now),
@@ -272,8 +345,9 @@ def publish_us() -> dict:
     payload["updated_at_iso"] = now.isoformat()
     payload["updated_at_kst"] = _format_kst(now)
     _write(payload)
-    return {"market": "us", "n": len(qualified),
-            "tickers": [p.ticker for p in qualified],
+    return {"market": "us",
+            "tech_n": len(payload["us"].get("picks") or []),
+            "quant": (payload["us"].get("quant_pick") or {}).get("ticker"),
             "vix": light["vix"], "no_pick_reason": no_reason}
 
 
