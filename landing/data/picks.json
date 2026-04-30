@@ -7,11 +7,16 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.72,
+      "value": 18.68,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
+  },
+  "runtime": {
+    "market_mode": "normal",
+    "geopolitical_note": "",
+    "updated_at_kst": "2026.04.30 (목) 11:30 KST"
   },
   "kr": {
     "picks": [
@@ -234,16 +239,6 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-<<<<<<< Updated upstream
-        "price": 1480000,
-        "change_pct_1d": 0.4752206381534174,
-        "market_cap": 68510608785408.0,
-        "operating_margin": 0.46221,
-        "revenue_growth": null,
-        "pe_ratio": null,
-        "drawdown_52w": 0.24681933842239187,
-        "rsi": 37.3309484982864,
-=======
         "price": 1470000,
         "change_pct_1d": -0.20366598778004397,
         "market_cap": 68047700230144.0,
@@ -252,7 +247,6 @@
         "pe_ratio": null,
         "drawdown_52w": 0.25190839694656486,
         "rsi": 35.65229707290841,
->>>>>>> Stashed changes
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -265,17 +259,10 @@
           "52주 고점 대비 -25%",
           "영업이익률 46%"
         ],
-<<<<<<< Updated upstream
-        "entry_low": 1456150,
-        "entry_high": 1497036,
-        "target": 1571993,
-        "stoploss": 1428893,
-=======
         "entry_low": 1446150,
         "entry_high": 1487036,
         "target": 1561993,
         "stoploss": 1418893,
->>>>>>> Stashed changes
         "narrative": {
           "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 36 반등 신호",
           "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -354,19 +341,6 @@
         }
       },
       {
-<<<<<<< Updated upstream
-        "ticker": "251270",
-        "name": "넷마블",
-        "sector": "코스피·코스닥",
-        "price": 50300,
-        "change_pct_1d": -1.949317738791423,
-        "market_cap": 4121308692480.0,
-        "operating_margin": 0.12943,
-        "revenue_growth": 0.229,
-        "pe_ratio": null,
-        "drawdown_52w": 0.24883023486305536,
-        "rsi": 47.558203929214336,
-=======
         "ticker": "373220",
         "name": "LG에너지솔루션",
         "sector": "화학·배터리",
@@ -378,7 +352,6 @@
         "pe_ratio": null,
         "drawdown_52w": 0.10408560311284047,
         "rsi": 58.89417996496116,
->>>>>>> Stashed changes
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -390,17 +363,10 @@
           "52주 고점 대비 -10%",
           "영업이익률 19%"
         ],
-<<<<<<< Updated upstream
-        "entry_low": 49300,
-        "entry_high": 51014,
-        "target": 54157,
-        "stoploss": 48157,
-=======
         "entry_low": 447775,
         "entry_high": 469589,
         "target": 509582,
         "stoploss": 433232,
->>>>>>> Stashed changes
         "narrative": {
           "one_liner": "화학·배터리 영업이익률 19% / RSI 59 반등 신호",
           "thesis": "LG에너지솔루션(373220)는 영업이익률 19%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 10% 떨어진 상태에서 RSI 59로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -475,13 +441,6 @@
         }
       }
     ],
-<<<<<<< Updated upstream
-    "updated_at_iso": "2026-04-30T12:35:27.466140+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:35 KST"
-  },
-  "updated_at_iso": "2026-04-30T12:35:33.778945+09:00",
-  "updated_at_kst": "2026.04.30 (목) 12:35 KST",
-=======
     "quant_pick": {
       "ticker": "251270",
       "name": "넷마블",
@@ -588,23 +547,18 @@
       },
       "quant_score": 135.3
     },
-    "updated_at_iso": "2026-04-30T16:40:35.548463+09:00",
-    "updated_at_kst": "2026.04.30 (목) 16:40 KST"
+    "updated_at_iso": "2026-04-30T16:41:59.183739+09:00",
+    "updated_at_kst": "2026.04.30 (목) 16:41 KST"
   },
-  "updated_at_iso": "2026-04-30T16:40:41.885055+09:00",
-  "updated_at_kst": "2026.04.30 (목) 16:40 KST",
->>>>>>> Stashed changes
+  "updated_at_iso": "2026-04-30T16:42:04.703038+09:00",
+  "updated_at_kst": "2026.04.30 (목) 16:42 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "price": 137.97000122070312,
-<<<<<<< Updated upstream
-        "price_krw": 204759,
-=======
-        "price_krw": 205090,
->>>>>>> Stashed changes
+        "price_krw": 204498,
         "change_pct_1d": -2.273687223125054,
         "market_cap": 330735779840.0,
         "operating_margin": 0.40901002,
@@ -612,7 +566,7 @@
         "pe_ratio": 219.0,
         "sector": "Technology",
         "avg_volume": 48105710.0,
-        "rsi": 43.839465039787974,
+        "rsi": 43.83946503978797,
         "drawdown_52w": 0.3340573120078528,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -711,41 +665,32 @@
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "price": 424.4599914550781,
-<<<<<<< Updated upstream
-        "price_krw": 629933,
-=======
-        "price_krw": 630951,
->>>>>>> Stashed changes
+        "price_krw": 629130,
         "change_pct_1d": -1.1159018159398681,
         "market_cap": 3154747064320.0,
         "operating_margin": 0.47094002,
         "revenue_growth": 0.167,
         "pe_ratio": 26.595238,
         "sector": "Technology",
-<<<<<<< Updated upstream
-        "avg_volume": 31926939.6,
-        "rsi": 61.77025651333294,
-=======
         "avg_volume": 32204950.0,
-        "rsi": 61.770256513332946,
->>>>>>> Stashed changes
-        "drawdown_52w": 0.21370844647337733,
+        "rsi": 61.77025651515749,
+        "drawdown_52w": 0.2137085353751604,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 5.69,
+        "earnings_surprise_pct": 5.22,
         "score": 110.92,
         "reasons": [
           "52주 고점 대비 -21%",
           "영업이익률 47%",
-          "어닝 서프라이즈 +5.7%"
+          "어닝 서프라이즈 +5.2%"
         ],
         "entry_low": 416.63,
         "entry_high": 430.05,
         "target": 454.65,
         "stoploss": 407.69,
         "narrative": {
-          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.7% / RSI 62 반등 신호.",
+          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.2% / RSI 62 반등 신호.",
           "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 62로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
@@ -792,7 +737,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+5.7%",
+              "value": "+5.2%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -822,18 +767,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 18.72,
+      "vix": 18.68,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-<<<<<<< Updated upstream
-    "updated_at_iso": "2026-04-30T12:35:32.294358+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:35 KST"
-=======
-    "updated_at_iso": "2026-04-30T16:40:40.210859+09:00",
-    "updated_at_kst": "2026.04.30 (목) 16:40 KST"
->>>>>>> Stashed changes
+    "updated_at_iso": "2026-04-30T16:42:03.732969+09:00",
+    "updated_at_kst": "2026.04.30 (목) 16:42 KST"
   },
   "futures": {
     "picks": [
@@ -911,28 +851,10 @@
         "name": "KODEX 코스닥150",
         "market": "kr",
         "leveraged": false,
-<<<<<<< Updated upstream
-        "price": 20015.0,
-        "price_krw": 20015,
-        "change_pct_1d": -2.3182040019521732,
-        "rsi": 54.81305378548806,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "drawdown_52w": 0.051421800947867295,
-        "score": 10.0,
-        "reasons": [
-          "52주 고점 대비 -5%"
-        ],
-        "entry_low": 19776.07,
-        "entry_high": 20206.14,
-        "target": 21305.22,
-        "stoploss": 19298.21,
-=======
         "price": 19855.0,
         "price_krw": 19855,
         "change_pct_1d": -3.0990727183992206,
-        "rsi": 53.07881310761004,
+        "rsi": 53.078813107610024,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -945,7 +867,6 @@
         "entry_high": 20052.29,
         "target": 21186.68,
         "stoploss": 19115.18,
->>>>>>> Stashed changes
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
@@ -995,24 +916,14 @@
         "market": "us",
         "leveraged": false,
         "price": 711.5800170898438,
-<<<<<<< Updated upstream
-        "price_krw": 1056042,
+        "price_krw": 1054697,
         "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833971605,
-=======
-        "price_krw": 1057749,
-        "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833809272,
->>>>>>> Stashed changes
+        "rsi": 67.24290833809273,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "drawdown_52w": 0.00501973783310127,
-<<<<<<< Updated upstream
-        "score": 32.75709166028395,
-=======
-        "score": 32.75709166190728,
->>>>>>> Stashed changes
+        "score": 32.75709166190727,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
@@ -1059,32 +970,7 @@
         }
       }
     ],
-<<<<<<< Updated upstream
-    "updated_at_iso": "2026-04-30T12:35:33.778945+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:35 KST"
-=======
-    "updated_at_iso": "2026-04-30T16:40:41.885055+09:00",
-    "updated_at_kst": "2026.04.30 (목) 16:40 KST"
->>>>>>> Stashed changes
-  },
-  "runtime": {
-    "market_mode": "normal",
-    "geopolitical_note": "",
-    "updated_at_kst": "2026.04.30 (목) 11:30 KST"
-  },
-  "quant_pick": {
-    "market": "us",
-    "ticker": "PLTR",
-    "name": "Palantir Technologies Inc.",
-    "sector": "Technology",
-    "score": 115.6,
-    "price": 137.97000122070312,
-    "price_krw": 205090,
-    "entry_low": 133.66,
-    "entry_high": 141.05,
-    "stoploss": 128.74,
-    "target": 154.58,
-    "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 44 반등 신호.",
-    "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다."
+    "updated_at_iso": "2026-04-30T16:42:04.703038+09:00",
+    "updated_at_kst": "2026.04.30 (목) 16:42 KST"
   }
 }
