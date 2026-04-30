@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.35,
+      "value": 18.28,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -547,18 +547,18 @@
       },
       "quant_score": 135.3
     },
-    "updated_at_iso": "2026-04-30T19:15:58.933789+09:00",
-    "updated_at_kst": "2026.04.30 (목) 19:15 KST"
+    "updated_at_iso": "2026-04-30T19:21:24.336543+09:00",
+    "updated_at_kst": "2026.04.30 (목) 19:21 KST"
   },
-  "updated_at_iso": "2026-04-30T19:16:08.324569+09:00",
-  "updated_at_kst": "2026.04.30 (목) 19:16 KST",
+  "updated_at_iso": "2026-04-30T19:21:30.278394+09:00",
+  "updated_at_kst": "2026.04.30 (목) 19:21 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "price": 137.97000122070312,
-        "price_krw": 203801,
+        "price_krw": 203863,
         "change_pct_1d": -2.273687223125054,
         "market_cap": 330735779840.0,
         "operating_margin": 0.40901002,
@@ -665,7 +665,7 @@
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "price": 424.4599914550781,
-        "price_krw": 626987,
+        "price_krw": 627178,
         "change_pct_1d": -1.1159018159398681,
         "market_cap": 3154747064320.0,
         "operating_margin": 0.47094002,
@@ -673,8 +673,8 @@
         "pe_ratio": 26.595238,
         "sector": "Technology",
         "avg_volume": 32204950.0,
-        "rsi": 61.770256515222506,
-        "drawdown_52w": 0.2137085353751604,
+        "rsi": 61.770256513314145,
+        "drawdown_52w": 0.21370844647337733,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -767,13 +767,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 18.35,
+      "vix": 18.28,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T19:16:05.626928+09:00",
-    "updated_at_kst": "2026.04.30 (목) 19:16 KST"
+    "updated_at_iso": "2026-04-30T19:21:29.166111+09:00",
+    "updated_at_kst": "2026.04.30 (목) 19:21 KST"
   },
   "futures": {
     "picks": [
@@ -916,14 +916,14 @@
         "market": "us",
         "leveraged": false,
         "price": 711.5800170898438,
-        "price_krw": 1051103,
+        "price_krw": 1051423,
         "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833809273,
+        "rsi": 67.24290833788544,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "drawdown_52w": 0.00501973783310127,
-        "score": 32.75709166190727,
+        "score": 32.75709166211456,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
@@ -970,7 +970,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T19:16:08.324569+09:00",
-    "updated_at_kst": "2026.04.30 (목) 19:16 KST"
+    "updated_at_iso": "2026-04-30T19:21:30.278394+09:00",
+    "updated_at_kst": "2026.04.30 (목) 19:21 KST"
   }
 }
