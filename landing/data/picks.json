@@ -16,30 +16,30 @@
   "kr": {
     "picks": [
       {
-        "ticker": "207940",
-        "name": "삼성바이오로직스",
-        "sector": "바이오·헬스케어",
-        "price": 1473000,
-        "change_pct_1d": -2.0611702127659615,
+        "ticker": "035420",
+        "name": "NAVER",
+        "sector": "IT 플랫폼",
+        "price": 213000,
+        "change_pct_1d": -3.1818181818181857,
         "market_cap": 0.0,
-        "rsi": 35.985501364565536,
+        "rsi": 48.90975592856296,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 25.0,
+        "score": 48.90975592856296,
         "reasons": [
-          "RSI 36(저평가 반등 후보)"
+          "진입 신호 미발생 — 추세 강세 종목"
         ],
-        "entry_low": 1448625,
-        "entry_high": 1490411,
-        "target": 1567018,
-        "stoploss": 1420768,
+        "entry_low": 208190,
+        "entry_high": 216436,
+        "target": 231553,
+        "stoploss": 202693,
         "narrative": {
-          "one_liner": "RSI 36 저평가 구간, 기술적 신호 다수",
-          "thesis": "삼성바이오로직스(207940)는 5일 평균 거래량의 평이한 거래량으로 RSI 36 저평가 구간에 진입한 상태입니다. ",
+          "one_liner": "RSI 49 저평가 구간, 기술적 신호 다수",
+          "thesis": "NAVER(035420)는 5일 평균 거래량의 평이한 거래량으로 RSI 49 저평가 구간에 진입한 상태입니다. ",
           "signals": [
             {
               "label": "거래량 5일평균 2배+",
@@ -49,8 +49,8 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "36",
-              "ok": true,
+              "value": "49",
+              "ok": false,
               "explain": "30~40이면 저평가 반등 후보."
             },
             {
@@ -79,12 +79,75 @@
             }
           ],
           "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
+          "score_breakdown": [],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "012450",
+        "name": "한화에어로스페이스",
+        "sector": "방산",
+        "price": 1405000,
+        "change_pct_1d": -1.0563380281690127,
+        "market_cap": 0.0,
+        "rsi": 48.12168819861081,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 48.12168819861081,
+        "reasons": [
+          "진입 신호 미발생 — 추세 강세 종목"
+        ],
+        "entry_low": 1366650,
+        "entry_high": 1432393,
+        "target": 1552922,
+        "stoploss": 1322821,
+        "narrative": {
+          "one_liner": "RSI 48 저평가 구간, 기술적 신호 다수",
+          "thesis": "한화에어로스페이스(012450)는 5일 평균 거래량의 평이한 거래량으로 RSI 48 저평가 구간에 진입한 상태입니다. ",
+          "signals": [
             {
-              "name": "RSI 30~40",
-              "points": 25
+              "label": "거래량 5일평균 2배+",
+              "value": "—",
+              "ok": false,
+              "explain": "큰손 자금이 갑자기 몰린 신호."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "48",
+              "ok": false,
+              "explain": "30~40이면 저평가 반등 후보."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기선이 중기선 위로 — 상승 시작."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
             }
           ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [],
           "hold_days": 5
         }
       },
@@ -92,27 +155,27 @@
         "ticker": "352820",
         "name": "하이브",
         "sector": "엔터",
-        "price": 252500,
-        "change_pct_1d": 1.6096579476861272,
+        "price": 268000,
+        "change_pct_1d": 6.138613861386144,
         "market_cap": 0.0,
-        "rsi": 37.55763008651502,
+        "rsi": 47.83901990715553,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 25.0,
+        "score": 47.83901990715553,
         "reasons": [
-          "RSI 38(저평가 반등 후보)"
+          "진입 신호 미발생 — 추세 강세 종목"
         ],
-        "entry_low": 246275,
-        "entry_high": 256946,
-        "target": 276510,
-        "stoploss": 239161,
+        "entry_low": 260850,
+        "entry_high": 273107,
+        "target": 295578,
+        "stoploss": 252679,
         "narrative": {
-          "one_liner": "RSI 38 저평가 구간, 기술적 신호 다수",
-          "thesis": "하이브(352820)는 5일 평균 거래량의 평이한 거래량으로 RSI 38 저평가 구간에 진입한 상태입니다. ",
+          "one_liner": "RSI 48 저평가 구간, 기술적 신호 다수",
+          "thesis": "하이브(352820)는 5일 평균 거래량의 평이한 거래량으로 RSI 48 저평가 구간에 진입한 상태입니다. ",
           "signals": [
             {
               "label": "거래량 5일평균 2배+",
@@ -122,8 +185,8 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "38",
-              "ok": true,
+              "value": "48",
+              "ok": false,
               "explain": "30~40이면 저평가 반등 후보."
             },
             {
@@ -152,94 +215,16 @@
             }
           ],
           "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "RSI 30~40",
-              "points": 25
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "105560",
-        "name": "KB금융",
-        "sector": "금융",
-        "price": 160600,
-        "change_pct_1d": 1.133501259445846,
-        "market_cap": 0.0,
-        "rsi": 58.88893896190813,
-        "volume_spike": false,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 15.0,
-        "reasons": [
-          "MACD 골든크로스"
-        ],
-        "entry_low": 157975,
-        "entry_high": 162475,
-        "target": 170725,
-        "stoploss": 154975,
-        "narrative": {
-          "one_liner": "RSI 59 저평가 구간, 기술적 신호 다수",
-          "thesis": "KB금융(105560)는 5일 평균 거래량의 평이한 거래량으로 RSI 59 저평가 구간에 진입한 상태입니다. MACD 골든크로스로 단기 추세 전환 신호가 켜졌습니다.",
-          "signals": [
-            {
-              "label": "거래량 5일평균 2배+",
-              "value": "—",
-              "ok": false,
-              "explain": "큰손 자금이 갑자기 몰린 신호."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "59",
-              "ok": false,
-              "explain": "30~40이면 저평가 반등 후보."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기선이 중기선 위로 — 상승 시작."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "MACD 골든크로스",
-              "points": 15
-            }
-          ],
+          "score_breakdown": [],
           "hold_days": 5
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T01:53:17.649564+09:00",
-    "updated_at_kst": "2026.04.30 (목) 01:53 KST"
+    "updated_at_iso": "2026-04-30T10:27:03.938577+09:00",
+    "updated_at_kst": "2026.04.30 (목) 10:27 KST"
   },
-  "updated_at_iso": "2026-04-30T05:46:24.704238+09:00",
-  "updated_at_kst": "2026.04.30 (목) 05:46 KST",
+  "updated_at_iso": "2026-04-30T10:27:03.938577+09:00",
+  "updated_at_kst": "2026.04.30 (목) 10:27 KST",
   "us": {
     "picks": [
       {
