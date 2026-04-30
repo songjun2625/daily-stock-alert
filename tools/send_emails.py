@@ -107,12 +107,19 @@ def _verdict(score: float) -> dict:
 
 
 def _score_block_html(score, sector: str = "") -> str:
-    """이메일용 점수 게이지 — verdict 배지 + 0~150 progress bar (gradient 시뮬)."""
+    """이메일용 점수 게이지 — verdict 배지 + 0~150 progress bar.
+    이메일 클라이언트는 calc() / position:absolute 가 자주 깨짐 → table 2-cell 구조로 교체."""
     v = _verdict(score)
     s = float(score or 0)
     pct = max(0, min(100, s / 150 * 100))
+    filled_pct = pct
+    empty_pct  = 100 - pct
     sector_pill = (f'<span style="background:#F1F5F9;color:#334155;padding:2px 7px;border-radius:999px;'
                    f'font-size:10px;white-space:nowrap;margin-right:4px">{sector}</span>') if sector else ""
+    # Gmail/Outlook 호환 — table 2셀 progress bar + 별도 마커 레이어
+    # 좌측 셀(채워진 영역): 점수 컬러 그라데이션 / 우측 셀(빈 영역): 회색
+    # 마커는 좌측 셀의 우측 가장자리에 위치 — 추가 마커 라인을 하단에 한 개 더
+    fill_color = v["border"]   # verdict 컬러 사용 (강력매수=진녹/매수=녹/신중=주황/관망=노랑/미추천=회색)
     return (
         f'<div style="margin-top:6px">'
         f'<div style="margin-bottom:4px">'
@@ -120,14 +127,26 @@ def _score_block_html(score, sector: str = "") -> str:
         f'  <span style="background:{v["bg"]};color:{v["color"]};border:1px solid {v["border"]};'
         f'padding:2px 8px;border-radius:999px;font-size:10px;font-weight:700;white-space:nowrap">'
         f'{v["emoji"]} {v["label"]}</span>'
-        f'  <span style="color:#374151;font-size:10px;margin-left:4px">점수 {s:.0f}</span>'
+        f'  <span style="color:#374151;font-size:10px;margin-left:4px">점수 {s:.0f} / 150</span>'
         f'</div>'
-        f'<div style="position:relative;height:5px;background:linear-gradient(90deg,#E5E7EB 0%,#FBBF24 40%,'
-        f'#10B981 67%,#059669 87%);border-radius:999px;margin-top:4px">'
-        f'<div style="position:absolute;left:calc({pct:.1f}% - 5px);top:-3px;width:11px;height:11px;'
-        f'background:#fff;border:2.5px solid #0B1B3D;border-radius:50%"></div>'
-        f'</div>'
-        f'<div style="font-size:9px;color:#6B7280;margin-top:4px;line-height:1.5">{v["desc"]}</div>'
+        # 게이지 — table 기반 (이메일 호환)
+        f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin-top:6px">'
+        f'<tr>'
+        f'<td style="width:{filled_pct:.1f}%;height:6px;background:{fill_color};border-radius:3px 0 0 3px;font-size:0;line-height:0">&nbsp;</td>'
+        f'<td style="width:{empty_pct:.1f}%;height:6px;background:#E5E7EB;border-radius:0 3px 3px 0;font-size:0;line-height:0">&nbsp;</td>'
+        f'</tr>'
+        f'</table>'
+        # 스케일 라벨
+        f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;margin-top:3px;font-size:8px;color:#9CA3AF">'
+        f'<tr>'
+        f'<td style="text-align:left;width:20%">0</td>'
+        f'<td style="text-align:center;width:20%">60 관망</td>'
+        f'<td style="text-align:center;width:20%">80 신중</td>'
+        f'<td style="text-align:center;width:20%">100 매수</td>'
+        f'<td style="text-align:right;width:20%">130+ 강력</td>'
+        f'</tr>'
+        f'</table>'
+        f'<div style="font-size:10px;color:#6B7280;margin-top:5px;line-height:1.5">{v["desc"]}</div>'
         f'</div>'
     )
 
