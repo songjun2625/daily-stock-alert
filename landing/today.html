@@ -126,6 +126,57 @@
   </div>
 </section>
 
+<!-- ===== 성과 요약 (4월 1일 ~ 오늘 모의 운용) ===== -->
+<section class="container-x pb-12" id="performance-section">
+  <div class="grid-card p-6">
+    <div class="flex items-center justify-between flex-wrap gap-3">
+      <div>
+        <span class="chip">📊 모의 운용 성과</span>
+        <h2 class="mt-2 text-xl md:text-2xl font-bold">현재 알고리즘 백테스트</h2>
+        <div class="text-sm text-[#6B7280] mt-1" id="perf-period">기간 로드 중…</div>
+      </div>
+      <div class="text-right text-xs text-[#9CA3AF]">
+        보유 5일 · 손절 -4% · 목표 +6% · 거래비용 0.25%/회 차감
+      </div>
+    </div>
+
+    <div class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-3" id="perf-kpi">
+      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
+        <div class="text-xs text-[#6B7280]">총 발주 수</div>
+        <div class="num text-2xl font-extrabold mt-1" id="perf-trades">—</div>
+      </div>
+      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
+        <div class="text-xs text-[#6B7280]">승률</div>
+        <div class="num text-2xl font-extrabold mt-1" id="perf-winrate">—</div>
+      </div>
+      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
+        <div class="text-xs text-[#6B7280]">누적 수익률</div>
+        <div class="num text-2xl font-extrabold mt-1" id="perf-cum">—</div>
+      </div>
+      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
+        <div class="text-xs text-[#6B7280]">평균 보유</div>
+        <div class="num text-2xl font-extrabold mt-1" id="perf-hold">—</div>
+      </div>
+    </div>
+
+    <div class="mt-4 grid md:grid-cols-2 gap-3" id="perf-by-market">
+      <div class="border border-[#EAEAF0] rounded-xl p-4">
+        <div class="text-sm font-semibold text-[#374151]">🇰🇷 코스피·코스닥</div>
+        <div class="mt-2 text-xs text-[#6B7280]" id="perf-kr">로드 중…</div>
+      </div>
+      <div class="border border-[#EAEAF0] rounded-xl p-4">
+        <div class="text-sm font-semibold text-[#374151]">🇺🇸 나스닥·NYSE</div>
+        <div class="mt-2 text-xs text-[#6B7280]" id="perf-us">로드 중…</div>
+      </div>
+    </div>
+
+    <div class="legal mt-4">
+      ⚠️ 본 결과는 과거 시점 시뮬레이션이며, 실제 거래 환경(슬리피지·세금·환차손·체결가능성)과 차이가 있을 수 있습니다.
+      과거 성과는 미래 수익을 보장하지 않습니다. 본 정보는 투자 권유가 아닙니다.
+    </div>
+  </div>
+</section>
+
 <section id="tab-kr" class="container-x pb-12">
   <div class="grid md:grid-cols-3 gap-5" id="kr-cards"></div>
 </section>
@@ -286,7 +337,35 @@ function emptyMsg(market) {
   return `<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다. 보수적인 시장에서는 발송 종목이 없을 수 있습니다.</div>`;
 }
 
+async function loadBacktest() {
+  try {
+    const res = await fetch('data/backtest.json?ts=' + Date.now());
+    if (!res.ok) throw new Error('no backtest');
+    const b = await res.json();
+    const s = b.summary || {};
+    $('perf-period').textContent = `${b.period_start} ~ ${b.period_end} (생성: ${(b.generated_at || '').slice(0,10)})`;
+    $('perf-trades').textContent = (s.total_trades || 0) + '건';
+    const wr = s.win_rate_pct || 0;
+    $('perf-winrate').innerHTML = `<span class="${wr >= 50 ? 'text-green-600' : 'text-gray-600'}">${wr.toFixed(1)}%</span>`;
+    const cr = s.cum_return_pct || 0;
+    $('perf-cum').innerHTML = `<span class="${cr >= 0 ? 'text-red-600' : 'text-blue-600'}">${cr >= 0 ? '+' : ''}${cr.toFixed(2)}%</span>`;
+    $('perf-hold').textContent = (s.avg_hold_days || 0).toFixed(1) + '일';
+
+    const fmtMkt = (m) => {
+      if (!m || !m.total_trades) return '거래 없음';
+      const sign = m.cum_return_pct >= 0 ? '+' : '';
+      const cls = m.cum_return_pct >= 0 ? 'text-red-600 font-semibold' : 'text-blue-600 font-semibold';
+      return `발주 ${m.total_trades}건 · 승률 ${m.win_rate_pct.toFixed(1)}% · 누적 <span class="${cls}">${sign}${m.cum_return_pct.toFixed(2)}%</span> · 최고 +${m.best_pct.toFixed(2)}% / 최저 ${m.worst_pct.toFixed(2)}%`;
+    };
+    $('perf-kr').innerHTML = fmtMkt((b.by_market || {}).kr);
+    $('perf-us').innerHTML = fmtMkt((b.by_market || {}).us);
+  } catch (e) {
+    $('perf-period').textContent = '백테스트 데이터 준비 중 (다음 자동 갱신 후 표시됩니다)';
+  }
+}
+
 async function load() {
+  loadBacktest();
   try {
     const res = await fetch('data/picks.json?ts=' + Date.now());
     if (!res.ok) throw new Error('no data');

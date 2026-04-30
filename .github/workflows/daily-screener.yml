@@ -2,26 +2,16 @@ name: daily-screener
 
 on:
   schedule:
-    # KST = UTC+9. 각 장 "시작 10분 전 + 끝나기 10분 전" 발송 (시장별 2회).
+    # KST = UTC+9. 각 장 시작 10분 전에만 발송 (장 시작 전 추천이 핵심 — close 발송은 새벽 시간이라 제외).
     #
-    # 한국장 (코스피·코스닥)  09:00 ~ 15:30 KST
+    # 한국장 (코스피·코스닥)  09:00 KST 시작
     #   23:50 UTC = 08:50 KST  (장 시작 10분 전)
-    #   06:20 UTC = 15:20 KST  (장 마감 10분 전)
     #
-    # 미장 (NYSE/NASDAQ) DST: 22:30 ~ 05:00 KST  /  표준시: 23:30 ~ 06:00 KST
-    #   13:20 UTC = 22:20 KST  (장 시작 10분 전, DST 기준)
-    #   19:50 UTC = 04:50 KST  (장 마감 10분 전, DST 기준)
+    # 미장 (NYSE/NASDAQ) DST: 22:30 KST 시작 / 표준시: 23:30 KST 시작
+    #   13:20 UTC = 22:20 KST  (DST 기준 장 시작 10분 전)
     #   표준시 기간엔 자동으로 70분 전 발송. cron 단순화 위해 단일 cron 유지.
-    #
-    # cron 요일은 UTC 기준이라:
-    #   KR 시작: UTC 일~목 23:50 = KST 월~금 08:50
-    #   KR 마감: UTC 월~금 06:20 = KST 월~금 15:20
-    #   US 시작: UTC 월~금 13:20 = KST 월~금 22:20
-    #   US 마감: UTC 월~금 19:50 = KST 화~토 04:50  (월요일 close = 화요일 새벽)
     - cron: '50 23 * * 0-4'   # KR open  (KST 월~금 08:50)
-    - cron: '20 6  * * 1-5'   # KR close (KST 월~금 15:20)
     - cron: '20 13 * * 1-5'   # US open  (KST 월~금 22:20)
-    - cron: '50 19 * * 1-5'   # US close (KST 화~토 04:50, 월~금장 마감)
   workflow_dispatch:
     inputs:
       market:
@@ -51,9 +41,9 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "${{ github.event.schedule }}" in
-              "50 23 * * 0-4"|"20 6 * * 1-5")    echo "market=kr"   >> $GITHUB_OUTPUT ;;
-              "20 13 * * 1-5"|"50 19 * * 1-5")   echo "market=us"   >> $GITHUB_OUTPUT ;;
-              *)                                  echo "market=both" >> $GITHUB_OUTPUT ;;
+              "50 23 * * 0-4")  echo "market=kr"   >> $GITHUB_OUTPUT ;;
+              "20 13 * * 1-5")  echo "market=us"   >> $GITHUB_OUTPUT ;;
+              *)                echo "market=both" >> $GITHUB_OUTPUT ;;
             esac
           else
             echo "market=${{ github.event.inputs.market || 'both' }}" >> $GITHUB_OUTPUT
