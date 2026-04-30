@@ -72,18 +72,14 @@ def us_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
 
 
 def kr_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
+    """KR AND 게이트 — RSI 30~40 + 거래량 5일평균 2배+ 동시 충족 필요."""
     if idx < 60: return False
     sub_close = close.iloc[: idx + 1]
     sub_vol   = vol.iloc[: idx + 1]
     rsi_v = float(ind.rsi(sub_close).iloc[-1])
-    macd_l, sig_l, _ = ind.macd(sub_close)
-    triggers = (
-        ind.volume_spike(sub_vol, multiplier=KR_THRESH.volume_multiplier_min),
-        KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high,
-        ind.is_macd_golden_cross(macd_l, sig_l),
-        ind.is_ma_aligned_up(sub_close),
-    )
-    return any(triggers)
+    rsi_ok = KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high
+    vspike = ind.volume_spike(sub_vol, multiplier=KR_THRESH.volume_multiplier_min)
+    return bool(rsi_ok and vspike)
 
 
 # ---- 단일 종목 백테스트 ---------------------------------------------------

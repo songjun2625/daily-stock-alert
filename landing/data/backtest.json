@@ -1,25 +1,25 @@
 {
   "period_start": "2026-04-01",
   "period_end": "2026-04-30",
-  "generated_at": "2026-04-30T10:00:25.807244",
+  "generated_at": "2026-04-30T10:03:05.243664",
   "summary": {
-    "total_trades": 64,
-    "win_rate_pct": 46.9,
-    "cum_return_pct": -2.37,
-    "avg_pnl_pct": 0.062,
-    "avg_hold_days": 2.59,
+    "total_trades": 19,
+    "win_rate_pct": 73.7,
+    "cum_return_pct": 55.63,
+    "avg_pnl_pct": 2.443,
+    "avg_hold_days": 3.05,
     "best_pct": 5.84,
     "worst_pct": -4.15
   },
   "by_market": {
     "kr": {
-      "total_trades": 46,
-      "win_rate_pct": 37.0,
-      "cum_return_pct": -36.61,
-      "avg_pnl_pct": -0.9,
-      "avg_hold_days": 2.46,
-      "best_pct": 5.84,
-      "worst_pct": -4.15
+      "total_trades": 1,
+      "win_rate_pct": 100.0,
+      "cum_return_pct": 1.06,
+      "avg_pnl_pct": 1.055,
+      "avg_hold_days": 5.0,
+      "best_pct": 1.05,
+      "worst_pct": 1.05
     },
     "us": {
       "total_trades": 18,
@@ -42,60 +42,6 @@
       "reason": "target"
     },
     {
-      "ticker": "207940",
-      "market": "kr",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-08",
-      "bars_held": 5,
-      "pnl_pct": 0.505,
-      "reason": "time"
-    },
-    {
-      "ticker": "068270",
-      "market": "kr",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-02",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "015760",
-      "market": "kr",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-02",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "006400",
-      "market": "kr",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-06",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "041510",
-      "market": "kr",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-02",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "352820",
-      "market": "kr",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-02",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
       "ticker": "035420",
       "market": "kr",
       "entry_date": "2026-04-03",
@@ -103,42 +49,6 @@
       "bars_held": 5,
       "pnl_pct": 1.055,
       "reason": "time"
-    },
-    {
-      "ticker": "035720",
-      "market": "kr",
-      "entry_date": "2026-04-03",
-      "exit_date": "2026-04-06",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "012450",
-      "market": "kr",
-      "entry_date": "2026-04-03",
-      "exit_date": "2026-04-07",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "003670",
-      "market": "kr",
-      "entry_date": "2026-04-03",
-      "exit_date": "2026-04-03",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "066970",
-      "market": "kr",
-      "entry_date": "2026-04-03",
-      "exit_date": "2026-04-03",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
     },
     {
       "ticker": "PANW",
@@ -195,15 +105,6 @@
       "reason": "target"
     },
     {
-      "ticker": "009150",
-      "market": "kr",
-      "entry_date": "2026-04-07",
-      "exit_date": "2026-04-07",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
       "ticker": "META",
       "market": "us",
       "entry_date": "2026-04-08",
@@ -231,123 +132,6 @@
       "reason": "stop"
     },
     {
-      "ticker": "005930",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-09",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "051910",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-09",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "055550",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-14",
-      "bars_held": 5,
-      "pnl_pct": 1.823,
-      "reason": "time"
-    },
-    {
-      "ticker": "017670",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-09",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "015760",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-14",
-      "bars_held": 5,
-      "pnl_pct": 2.407,
-      "reason": "time"
-    },
-    {
-      "ticker": "032830",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-08",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "196170",
-      "market": "kr",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-13",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "000660",
-      "market": "kr",
-      "entry_date": "2026-04-09",
-      "exit_date": "2026-04-14",
-      "bars_held": 4,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "068270",
-      "market": "kr",
-      "entry_date": "2026-04-09",
-      "exit_date": "2026-04-13",
-      "bars_held": 3,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "105560",
-      "market": "kr",
-      "entry_date": "2026-04-09",
-      "exit_date": "2026-04-09",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "086520",
-      "market": "kr",
-      "entry_date": "2026-04-09",
-      "exit_date": "2026-04-10",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "028300",
-      "market": "kr",
-      "entry_date": "2026-04-09",
-      "exit_date": "2026-04-13",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "041510",
-      "market": "kr",
-      "entry_date": "2026-04-09",
-      "exit_date": "2026-04-15",
-      "bars_held": 5,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
       "ticker": "PLTR",
       "market": "us",
       "entry_date": "2026-04-10",
@@ -355,33 +139,6 @@
       "bars_held": 1,
       "pnl_pct": -4.146,
       "reason": "stop"
-    },
-    {
-      "ticker": "000270",
-      "market": "kr",
-      "entry_date": "2026-04-10",
-      "exit_date": "2026-04-13",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "066570",
-      "market": "kr",
-      "entry_date": "2026-04-10",
-      "exit_date": "2026-04-15",
-      "bars_held": 4,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "005380",
-      "market": "kr",
-      "entry_date": "2026-04-13",
-      "exit_date": "2026-04-15",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target"
     },
     {
       "ticker": "TSLA",
@@ -402,15 +159,6 @@
       "reason": "target"
     },
     {
-      "ticker": "042700",
-      "market": "kr",
-      "entry_date": "2026-04-15",
-      "exit_date": "2026-04-20",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
       "ticker": "APP",
       "market": "us",
       "entry_date": "2026-04-16",
@@ -420,38 +168,11 @@
       "reason": "stop"
     },
     {
-      "ticker": "035720",
-      "market": "kr",
-      "entry_date": "2026-04-16",
-      "exit_date": "2026-04-21",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "352820",
-      "market": "kr",
-      "entry_date": "2026-04-16",
-      "exit_date": "2026-04-21",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
       "ticker": "CRWD",
       "market": "us",
       "entry_date": "2026-04-17",
       "exit_date": "2026-04-21",
       "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "086520",
-      "market": "kr",
-      "entry_date": "2026-04-17",
-      "exit_date": "2026-04-20",
-      "bars_held": 2,
       "pnl_pct": 5.844,
       "reason": "target"
     },
@@ -481,132 +202,6 @@
       "bars_held": 5,
       "pnl_pct": -4.146,
       "reason": "stop"
-    },
-    {
-      "ticker": "000270",
-      "market": "kr",
-      "entry_date": "2026-04-20",
-      "exit_date": "2026-04-24",
-      "bars_held": 5,
-      "pnl_pct": -3.461,
-      "reason": "time"
-    },
-    {
-      "ticker": "003670",
-      "market": "kr",
-      "entry_date": "2026-04-20",
-      "exit_date": "2026-04-21",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target"
-    },
-    {
-      "ticker": "066970",
-      "market": "kr",
-      "entry_date": "2026-04-20",
-      "exit_date": "2026-04-20",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "373220",
-      "market": "kr",
-      "entry_date": "2026-04-22",
-      "exit_date": "2026-04-22",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "006400",
-      "market": "kr",
-      "entry_date": "2026-04-22",
-      "exit_date": "2026-04-22",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "247540",
-      "market": "kr",
-      "entry_date": "2026-04-22",
-      "exit_date": "2026-04-22",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "207940",
-      "market": "kr",
-      "entry_date": "2026-04-24",
-      "exit_date": "2026-04-30",
-      "bars_held": 5,
-      "pnl_pct": -3.784,
-      "reason": "time"
-    },
-    {
-      "ticker": "032830",
-      "market": "kr",
-      "entry_date": "2026-04-24",
-      "exit_date": "2026-04-27",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "263750",
-      "market": "kr",
-      "entry_date": "2026-04-28",
-      "exit_date": "2026-04-29",
-      "bars_held": 2,
-      "pnl_pct": 0.085,
-      "reason": "time"
-    },
-    {
-      "ticker": "005380",
-      "market": "kr",
-      "entry_date": "2026-04-29",
-      "exit_date": "2026-04-30",
-      "bars_held": 2,
-      "pnl_pct": -3.783,
-      "reason": "time"
-    },
-    {
-      "ticker": "066570",
-      "market": "kr",
-      "entry_date": "2026-04-29",
-      "exit_date": "2026-04-29",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop"
-    },
-    {
-      "ticker": "041510",
-      "market": "kr",
-      "entry_date": "2026-04-29",
-      "exit_date": "2026-04-29",
-      "bars_held": 1,
-      "pnl_pct": -0.759,
-      "reason": "time"
-    },
-    {
-      "ticker": "105560",
-      "market": "kr",
-      "entry_date": "2026-04-30",
-      "exit_date": "2026-04-30",
-      "bars_held": 1,
-      "pnl_pct": 0.55,
-      "reason": "time"
-    },
-    {
-      "ticker": "352820",
-      "market": "kr",
-      "entry_date": "2026-04-30",
-      "exit_date": "2026-04-30",
-      "bars_held": 1,
-      "pnl_pct": -0.802,
-      "reason": "time"
     }
   ]
 }

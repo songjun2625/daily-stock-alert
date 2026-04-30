@@ -126,56 +126,106 @@
   </div>
 </section>
 
-<!-- ===== 성과 요약 (4월 1일 ~ 오늘 모의 운용) ===== -->
-<section class="container-x pb-12" id="performance-section">
-  <div class="grid-card p-6">
-    <div class="flex items-center justify-between flex-wrap gap-3">
-      <div>
-        <span class="chip">📊 모의 운용 성과</span>
-        <h2 class="mt-2 text-xl md:text-2xl font-bold">현재 알고리즘 백테스트</h2>
-        <div class="text-sm text-[#6B7280] mt-1" id="perf-period">기간 로드 중…</div>
+<!-- ===== "과거에 이용했다면?" 컴팩트 요약 (상세보기 토글) ===== -->
+<section class="container-x pb-6" id="performance-section">
+  <details class="grid-card" style="padding:14px 18px;">
+    <summary class="cursor-pointer flex items-center justify-between gap-3 flex-wrap">
+      <div class="flex items-center gap-2 flex-wrap">
+        <span class="text-sm">📊</span>
+        <span class="text-sm font-semibold text-[#374151]">과거에 이용했다면?</span>
+        <span class="text-xs text-[#9CA3AF]" id="perf-period-mini">기간 로드 중…</span>
       </div>
-      <div class="text-right text-xs text-[#9CA3AF]">
-        보유 5일 · 손절 -4% · 목표 +6% · 거래비용 0.25%/회 차감
+      <div class="flex items-center gap-3 text-sm">
+        <span id="perf-cum-mini" class="font-bold">—</span>
+        <span class="text-[#9CA3AF]">·</span>
+        <span class="text-[#374151]" id="perf-trades-mini">—건</span>
+        <span class="text-[#9CA3AF]">·</span>
+        <span class="text-[#374151]" id="perf-winrate-mini">승률 —</span>
+        <span class="text-xs text-[#1E3A8A] arrow ml-1">⌄</span>
       </div>
-    </div>
+    </summary>
 
-    <div class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-3" id="perf-kpi">
-      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
-        <div class="text-xs text-[#6B7280]">총 발주 수</div>
-        <div class="num text-2xl font-extrabold mt-1" id="perf-trades">—</div>
+    <div class="mt-4 pt-4 border-t border-[#F1F5F9]">
+      <div class="text-xs text-[#9CA3AF] mb-3">
+        보유 5일 · 손절 -4% · 목표 +6% · 거래비용 왕복 0.25% 차감 ·
+        <span id="perf-meta">현재 알고리즘으로 시뮬레이션</span>
       </div>
-      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
-        <div class="text-xs text-[#6B7280]">승률</div>
-        <div class="num text-2xl font-extrabold mt-1" id="perf-winrate">—</div>
-      </div>
-      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
-        <div class="text-xs text-[#6B7280]">누적 수익률</div>
-        <div class="num text-2xl font-extrabold mt-1" id="perf-cum">—</div>
-      </div>
-      <div class="text-center bg-[#F8FAFC] rounded-xl py-4">
-        <div class="text-xs text-[#6B7280]">평균 보유</div>
-        <div class="num text-2xl font-extrabold mt-1" id="perf-hold">—</div>
-      </div>
-    </div>
 
-    <div class="mt-4 grid md:grid-cols-2 gap-3" id="perf-by-market">
-      <div class="border border-[#EAEAF0] rounded-xl p-4">
-        <div class="text-sm font-semibold text-[#374151]">🇰🇷 코스피·코스닥</div>
-        <div class="mt-2 text-xs text-[#6B7280]" id="perf-kr">로드 중…</div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div class="text-center bg-[#F8FAFC] rounded-lg py-3">
+          <div class="text-[11px] text-[#6B7280]">총 발주</div>
+          <div class="num text-lg font-extrabold" id="perf-trades">—</div>
+        </div>
+        <div class="text-center bg-[#F8FAFC] rounded-lg py-3">
+          <div class="text-[11px] text-[#6B7280]">승률</div>
+          <div class="num text-lg font-extrabold" id="perf-winrate">—</div>
+        </div>
+        <div class="text-center bg-[#F8FAFC] rounded-lg py-3">
+          <div class="text-[11px] text-[#6B7280]">누적 수익률</div>
+          <div class="num text-lg font-extrabold" id="perf-cum">—</div>
+        </div>
+        <div class="text-center bg-[#F8FAFC] rounded-lg py-3">
+          <div class="text-[11px] text-[#6B7280]">평균 보유</div>
+          <div class="num text-lg font-extrabold" id="perf-hold">—</div>
+        </div>
       </div>
-      <div class="border border-[#EAEAF0] rounded-xl p-4">
-        <div class="text-sm font-semibold text-[#374151]">🇺🇸 나스닥·NYSE</div>
-        <div class="mt-2 text-xs text-[#6B7280]" id="perf-us">로드 중…</div>
-      </div>
-    </div>
 
-    <div class="legal mt-4">
-      ⚠️ 본 결과는 과거 시점 시뮬레이션이며, 실제 거래 환경(슬리피지·세금·환차손·체결가능성)과 차이가 있을 수 있습니다.
-      과거 성과는 미래 수익을 보장하지 않습니다. 본 정보는 투자 권유가 아닙니다.
+      <div class="mt-3 grid md:grid-cols-2 gap-2">
+        <div class="border border-[#EAEAF0] rounded-lg p-3">
+          <div class="text-xs font-semibold text-[#374151]">🇰🇷 코스피·코스닥</div>
+          <div class="mt-1 text-xs text-[#6B7280]" id="perf-kr">—</div>
+        </div>
+        <div class="border border-[#EAEAF0] rounded-lg p-3">
+          <div class="text-xs font-semibold text-[#374151]">🇺🇸 나스닥·NYSE</div>
+          <div class="mt-1 text-xs text-[#6B7280]" id="perf-us">—</div>
+        </div>
+      </div>
+
+      <!-- 거래 이력 -->
+      <div class="mt-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="text-xs font-semibold text-[#374151]">📜 거래 이력 (누적)</div>
+          <div class="flex gap-1 text-[11px]" id="perf-trade-filters">
+            <button class="filter-btn active" data-f="all">전체</button>
+            <button class="filter-btn" data-f="kr">🇰🇷</button>
+            <button class="filter-btn" data-f="us">🇺🇸</button>
+            <button class="filter-btn" data-f="win">수익</button>
+            <button class="filter-btn" data-f="loss">손실</button>
+          </div>
+        </div>
+        <div class="overflow-auto rounded-lg border border-[#EAEAF0]" style="max-height:340px">
+          <table class="w-full text-xs" id="perf-trades-table">
+            <thead class="sticky top-0 bg-[#F8FAFC] z-10">
+              <tr>
+                <th class="text-left px-3 py-2 font-semibold text-[#374151]">티커</th>
+                <th class="text-left px-3 py-2 font-semibold text-[#374151]">시장</th>
+                <th class="text-left px-3 py-2 font-semibold text-[#374151]">진입</th>
+                <th class="text-left px-3 py-2 font-semibold text-[#374151]">청산</th>
+                <th class="text-right px-3 py-2 font-semibold text-[#374151]">손익</th>
+                <th class="text-left px-3 py-2 font-semibold text-[#374151]">사유</th>
+              </tr>
+            </thead>
+            <tbody id="perf-trades-tbody"></tbody>
+          </table>
+        </div>
+        <div class="text-[11px] text-[#9CA3AF] mt-2" id="perf-trades-count"></div>
+      </div>
+
+      <div class="legal mt-3" style="font-size:11px">
+        ⚠️ 본 결과는 과거 시점 시뮬레이션이며, 실제 거래 환경(슬리피지·세금·환차손·체결가능성)과 차이가 있을 수 있습니다.
+        과거 성과는 미래 수익을 보장하지 않습니다. 본 정보는 투자 권유가 아닙니다.
+      </div>
     </div>
-  </div>
+  </details>
 </section>
+
+<style>
+  .filter-btn { padding:3px 8px; border-radius:999px; border:1px solid #E5E7EB; background:#fff; color:#6B7280; cursor:pointer; }
+  .filter-btn.active { background:#0B1B3D; color:#fff; border-color:#0B1B3D; }
+  #perf-trades-table tr { border-bottom:1px solid #F1F5F9; }
+  #perf-trades-table tbody tr:hover { background:#F8FAFC; }
+  #perf-trades-table td { padding:6px 12px; }
+</style>
 
 <section id="tab-kr" class="container-x pb-12">
   <div class="grid md:grid-cols-3 gap-5" id="kr-cards"></div>
@@ -337,30 +387,90 @@ function emptyMsg(market) {
   return `<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다. 보수적인 시장에서는 발송 종목이 없을 수 있습니다.</div>`;
 }
 
+let _backtestData = null;
+let _tradeFilter = 'all';
+
+function fmtCum(v) {
+  const sign = v >= 0 ? '+' : '';
+  const cls = v >= 0 ? 'text-red-600' : 'text-blue-600';
+  return `<span class="${cls}">${sign}${v.toFixed(2)}%</span>`;
+}
+
+function renderTrades() {
+  if (!_backtestData) return;
+  const all = _backtestData.trades || [];
+  const filtered = all.filter(t => {
+    if (_tradeFilter === 'all') return true;
+    if (_tradeFilter === 'kr') return t.market === 'kr';
+    if (_tradeFilter === 'us') return t.market === 'us';
+    if (_tradeFilter === 'win') return t.pnl_pct > 0;
+    if (_tradeFilter === 'loss') return t.pnl_pct < 0;
+    return true;
+  });
+  // 최신 진입일 기준 내림차순
+  filtered.sort((a,b) => (a.entry_date < b.entry_date ? 1 : -1));
+  const rows = filtered.map(t => {
+    const cls = t.pnl_pct > 0 ? 'text-red-600 font-semibold' : t.pnl_pct < 0 ? 'text-blue-600 font-semibold' : 'text-gray-500';
+    const sign = t.pnl_pct > 0 ? '+' : '';
+    const flag = t.market === 'kr' ? '🇰🇷' : t.market === 'us' ? '🇺🇸' : '📊';
+    const reasonMap = { target: '🎯 목표', stop: '🛑 손절', time: '⏱️ 만기' };
+    return `<tr>
+      <td class="ticker font-semibold">${t.ticker}</td>
+      <td>${flag}</td>
+      <td class="num text-[#6B7280]">${t.entry_date}</td>
+      <td class="num text-[#6B7280]">${t.exit_date}</td>
+      <td class="num text-right ${cls}">${sign}${t.pnl_pct.toFixed(2)}%</td>
+      <td class="text-[#6B7280]">${reasonMap[t.reason] || t.reason}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('perf-trades-tbody').innerHTML = rows ||
+    '<tr><td colspan="6" class="text-center py-6 text-[#9CA3AF]">조건에 맞는 거래 없음</td></tr>';
+  document.getElementById('perf-trades-count').textContent = `표시 ${filtered.length}건 / 전체 ${all.length}건`;
+}
+
 async function loadBacktest() {
   try {
     const res = await fetch('data/backtest.json?ts=' + Date.now());
     if (!res.ok) throw new Error('no backtest');
-    const b = await res.json();
-    const s = b.summary || {};
-    $('perf-period').textContent = `${b.period_start} ~ ${b.period_end} (생성: ${(b.generated_at || '').slice(0,10)})`;
-    $('perf-trades').textContent = (s.total_trades || 0) + '건';
+    _backtestData = await res.json();
+    const s = _backtestData.summary || {};
+
+    // 헤더 (compact)
+    const periodTxt = `${_backtestData.period_start} ~ ${_backtestData.period_end}`;
+    $('perf-period-mini').textContent = `(${periodTxt})`;
+    $('perf-cum-mini').innerHTML = fmtCum(s.cum_return_pct || 0);
+    $('perf-trades-mini').textContent = (s.total_trades || 0) + '건';
     const wr = s.win_rate_pct || 0;
+    $('perf-winrate-mini').textContent = `승률 ${wr.toFixed(1)}%`;
+
+    // 상세 KPI
+    $('perf-trades').textContent = (s.total_trades || 0) + '건';
     $('perf-winrate').innerHTML = `<span class="${wr >= 50 ? 'text-green-600' : 'text-gray-600'}">${wr.toFixed(1)}%</span>`;
-    const cr = s.cum_return_pct || 0;
-    $('perf-cum').innerHTML = `<span class="${cr >= 0 ? 'text-red-600' : 'text-blue-600'}">${cr >= 0 ? '+' : ''}${cr.toFixed(2)}%</span>`;
+    $('perf-cum').innerHTML = fmtCum(s.cum_return_pct || 0);
     $('perf-hold').textContent = (s.avg_hold_days || 0).toFixed(1) + '일';
 
     const fmtMkt = (m) => {
       if (!m || !m.total_trades) return '거래 없음';
-      const sign = m.cum_return_pct >= 0 ? '+' : '';
-      const cls = m.cum_return_pct >= 0 ? 'text-red-600 font-semibold' : 'text-blue-600 font-semibold';
-      return `발주 ${m.total_trades}건 · 승률 ${m.win_rate_pct.toFixed(1)}% · 누적 <span class="${cls}">${sign}${m.cum_return_pct.toFixed(2)}%</span> · 최고 +${m.best_pct.toFixed(2)}% / 최저 ${m.worst_pct.toFixed(2)}%`;
+      return `발주 ${m.total_trades}건 · 승률 ${m.win_rate_pct.toFixed(1)}% · 누적 ${fmtCum(m.cum_return_pct)} · 최고 +${m.best_pct.toFixed(2)}% / 최저 ${m.worst_pct.toFixed(2)}%`;
     };
-    $('perf-kr').innerHTML = fmtMkt((b.by_market || {}).kr);
-    $('perf-us').innerHTML = fmtMkt((b.by_market || {}).us);
+    $('perf-kr').innerHTML = fmtMkt((_backtestData.by_market || {}).kr);
+    $('perf-us').innerHTML = fmtMkt((_backtestData.by_market || {}).us);
+
+    // 거래 이력
+    renderTrades();
+
+    // 필터 버튼
+    document.querySelectorAll('#perf-trade-filters .filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('#perf-trade-filters .filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        _tradeFilter = btn.dataset.f;
+        renderTrades();
+      });
+    });
   } catch (e) {
-    $('perf-period').textContent = '백테스트 데이터 준비 중 (다음 자동 갱신 후 표시됩니다)';
+    $('perf-period-mini').textContent = '(데이터 준비 중)';
   }
 }
 

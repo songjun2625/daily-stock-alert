@@ -234,8 +234,13 @@ def screen_kr(universe: Iterable[str] = DEFAULT_KR_UNIVERSE,
         ma_up = ind.is_ma_aligned_up(close)
         vspike = ind.volume_spike(vol, multiplier=KR_THRESH.volume_multiplier_min)
 
-        # 게이트 통과 여부 기록 — 통과 못 해도 fallback에 모아 항상 top N 노출.
-        gate_passed = bool(vspike or (KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high) or gx or ma_up)
+        # KR 게이트 (AND 조건 — 옵션 A): 거짓 양성 제거를 위해 모든 진입 신호가 동시 충족돼야 함.
+        # 1차 조건 (필수, AND): RSI 30~40 + 거래량 5일평균 2배+
+        # 2차 조건 (보조 가점): MACD 골든크로스 또는 5/20일선 정배열 시작
+        rsi_ok = (KR_THRESH.rsi_low <= rsi_v <= KR_THRESH.rsi_high)
+        primary_pass = bool(vspike and rsi_ok)
+        secondary = bool(gx or ma_up)
+        gate_passed = primary_pass  # 1차 통과해야만 정식 진입 후보. 2차는 점수 가산.
 
         mc = _market_cap(ticker)
         if mc and mc < KR_THRESH.market_cap_min_krw:
