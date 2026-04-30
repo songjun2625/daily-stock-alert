@@ -124,14 +124,14 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-        "price": 1478000,
-        "change_pct_1d": 0.33944331296673624,
-        "market_cap": 68371735379968.0,
+        "price": 1479000,
+        "change_pct_1d": 0.40733197556008793,
+        "market_cap": 68464316252160.0,
         "operating_margin": 0.46221,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.24783715012722646,
-        "rsi": 36.95118990625701,
+        "drawdown_52w": 0.24732824427480915,
+        "rsi": 37.141642774659864,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -144,10 +144,10 @@
           "52주 고점 대비 -25%",
           "영업이익률 46%"
         ],
-        "entry_low": 1454150,
-        "entry_high": 1495036,
-        "target": 1569993,
-        "stoploss": 1426893,
+        "entry_low": 1455150,
+        "entry_high": 1496036,
+        "target": 1570993,
+        "stoploss": 1427893,
         "narrative": {
           "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 37 반등 신호",
           "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -227,7 +227,7 @@
       },
       {
         "ticker": "251270",
-        "name": "Netmarble",
+        "name": "넷마블",
         "sector": "코스피·코스닥",
         "price": 50400,
         "change_pct_1d": -1.7543859649122862,
@@ -256,7 +256,7 @@
         "stoploss": 48257,
         "narrative": {
           "one_liner": "코스피·코스닥 영업이익률 13% / RSI 48 반등 신호",
-          "thesis": "Netmarble(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 48로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 48로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -336,18 +336,18 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T12:25:59.818172+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:25 KST"
+    "updated_at_iso": "2026-04-30T12:30:32.862511+09:00",
+    "updated_at_kst": "2026.04.30 (목) 12:30 KST"
   },
-  "updated_at_iso": "2026-04-30T12:26:05.882533+09:00",
-  "updated_at_kst": "2026.04.30 (목) 12:26 KST",
+  "updated_at_iso": "2026-04-30T12:30:39.812526+09:00",
+  "updated_at_kst": "2026.04.30 (목) 12:30 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
         "price": 137.97000122070312,
-        "price_krw": 204827,
+        "price_krw": 204814,
         "change_pct_1d": -2.273687223125054,
         "market_cap": 330735779840.0,
         "operating_margin": 0.40901002,
@@ -454,7 +454,7 @@
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "price": 424.4599914550781,
-        "price_krw": 630145,
+        "price_krw": 630102,
         "change_pct_1d": -1.1159018159398681,
         "market_cap": 3154747064320.0,
         "operating_margin": 0.47094002,
@@ -462,8 +462,8 @@
         "pe_ratio": 26.578585,
         "sector": "Technology",
         "avg_volume": 31926939.6,
-        "rsi": 61.77025651331465,
-        "drawdown_52w": 0.21370844647337733,
+        "rsi": 61.77025651522246,
+        "drawdown_52w": 0.2137085353751604,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -560,8 +560,8 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T12:26:04.587164+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:26 KST"
+    "updated_at_iso": "2026-04-30T12:30:38.060683+09:00",
+    "updated_at_kst": "2026.04.30 (목) 12:30 KST"
   },
   "futures": {
     "picks": [
@@ -639,29 +639,29 @@
         "name": "KODEX 코스닥150",
         "market": "kr",
         "leveraged": false,
-        "price": 20080.0,
-        "price_krw": 20080,
-        "change_pct_1d": -2.000976085895556,
-        "rsi": 55.550395311557835,
+        "price": 20047.0,
+        "price_krw": 20047,
+        "change_pct_1d": -2.1620302586627616,
+        "rsi": 55.173590426229296,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.04834123222748815,
+        "drawdown_52w": 0.04990521327014218,
         "score": 0.0,
         "reasons": [],
-        "entry_low": 19841.79,
-        "entry_high": 20270.57,
-        "target": 21366.35,
-        "stoploss": 19365.36,
+        "entry_low": 19808.61,
+        "entry_high": 20237.71,
+        "target": 21334.32,
+        "stoploss": 19331.82,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
-          "one_liner": "ETF, RSI 56 추세, 거래량 급증",
-          "thesis": "KODEX 코스닥150(229200)는 RSI 56에 위치한 ETF입니다. ",
+          "one_liner": "ETF, RSI 55 추세, 거래량 급증",
+          "thesis": "KODEX 코스닥150(229200)는 RSI 55에 위치한 ETF입니다. ",
           "signals": [
             {
               "label": "RSI",
-              "value": "56",
+              "value": "55",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -697,14 +697,14 @@
         "market": "us",
         "leveraged": false,
         "price": 711.5800170898438,
-        "price_krw": 1056397,
+        "price_krw": 1056326,
         "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833809187,
+        "rsi": 67.24290833970693,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "drawdown_52w": 0.00501973783310127,
-        "score": 32.757091661908134,
+        "score": 32.75709166029307,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
@@ -751,8 +751,8 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T12:26:05.882533+09:00",
-    "updated_at_kst": "2026.04.30 (목) 12:26 KST"
+    "updated_at_iso": "2026-04-30T12:30:39.812526+09:00",
+    "updated_at_kst": "2026.04.30 (목) 12:30 KST"
   },
   "runtime": {
     "market_mode": "normal",
