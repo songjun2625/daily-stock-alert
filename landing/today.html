@@ -177,6 +177,19 @@
         <span id="perf-meta">서비스 시작 이후 누적 추천 결과 (라이브 트래킹)</span>
       </div>
 
+      <!-- 누적 수익률 차트 (SVG line) -->
+      <div class="bg-white border border-[#EAEAF0] rounded-lg p-3 mb-3" id="perf-chart-wrap">
+        <div class="flex items-center justify-between text-xs text-[#6B7280] mb-1">
+          <span><b>📈 누적 수익률 추이</b> <span class="text-[10px]">— 청산 거래 순서</span></span>
+          <div class="flex gap-2 text-[10px]">
+            <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#1E3A8A;border-radius:50%"></span>전체</span>
+            <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#DC2626;border-radius:50%"></span>🇰🇷 KR</span>
+            <span class="flex items-center gap-1"><span style="width:8px;height:8px;background:#2563EB;border-radius:50%"></span>🇺🇸 US</span>
+          </div>
+        </div>
+        <svg id="perf-chart" viewBox="0 0 600 160" style="width:100%;height:160px;display:block"></svg>
+      </div>
+
       <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
         <div class="text-center bg-[#F8FAFC] rounded-lg py-3">
           <div class="text-[11px] text-[#6B7280]">총 발주</div>
@@ -466,6 +479,71 @@ function fmtCum(v) {
   return `<span class="${cls}">${sign}${v.toFixed(2)}%</span>`;
 }
 
+function renderCumChart(closed) {
+  const svg = document.getElementById('perf-chart');
+  if (!svg) return;
+  const W = 600, H = 160, padL = 36, padR = 8, padT = 8, padB = 22;
+  // 청산 순서대로 누적 — 진입일 오름차순
+  const sorted = [...closed].sort((a,b) => a.entry_date < b.entry_date ? -1 : 1);
+  if (sorted.length === 0) { svg.innerHTML = ''; return; }
+  // 누적 곡선 3종 (전체, KR, US)
+  const seriesAll = [], seriesKR = [], seriesUS = [];
+  let cumAll = 1, cumKR = 1, cumUS = 1;
+  sorted.forEach(t => {
+    cumAll *= (1 + (t.pnl_pct || 0) / 100);
+    if (t.market === 'kr') cumKR *= (1 + (t.pnl_pct || 0) / 100);
+    if (t.market === 'us') cumUS *= (1 + (t.pnl_pct || 0) / 100);
+    seriesAll.push({date: t.entry_date, cum: (cumAll - 1) * 100});
+    seriesKR.push({date: t.entry_date, cum: (cumKR - 1) * 100});
+    seriesUS.push({date: t.entry_date, cum: (cumUS - 1) * 100});
+  });
+  const allCums = [...seriesAll, ...seriesKR, ...seriesUS].map(p => p.cum);
+  const yMin = Math.min(0, ...allCums) - 5;
+  const yMax = Math.max(0, ...allCums) + 5;
+  const xCount = sorted.length;
+  const xScale = i => padL + (i / Math.max(xCount - 1, 1)) * (W - padL - padR);
+  const yScale = v => padT + (1 - (v - yMin) / (yMax - yMin)) * (H - padT - padB);
+  const path = (series, color, width) => {
+    if (!series.length) return '';
+    const d = series.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xScale(i).toFixed(1)} ${yScale(p.cum).toFixed(1)}`).join(' ');
+    return `<path d="${d}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linejoin="round" />`;
+  };
+  // y 축 0 라인 + 그리드
+  const yZero = yScale(0);
+  const yTicks = [];
+  const tickStep = Math.ceil((yMax - yMin) / 4 / 5) * 5;
+  for (let v = Math.ceil(yMin / tickStep) * tickStep; v <= yMax; v += tickStep) {
+    yTicks.push(v);
+  }
+  const gridLines = yTicks.map(v => {
+    const y = yScale(v);
+    return `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="#F1F5F9" stroke-width="1" />
+            <text x="${padL - 4}" y="${y + 3}" text-anchor="end" fill="#9CA3AF" font-size="10">${v >= 0 ? '+' : ''}${v}%</text>`;
+  }).join('');
+  // 시작·끝 날짜 라벨
+  const startDate = sorted[0]?.entry_date || '';
+  const endDate = sorted[sorted.length - 1]?.entry_date || '';
+  const xAxisLabels = `
+    <text x="${padL}" y="${H - 6}" fill="#9CA3AF" font-size="10">${startDate}</text>
+    <text x="${W - padR}" y="${H - 6}" text-anchor="end" fill="#9CA3AF" font-size="10">${endDate}</text>`;
+  // 마지막 값 라벨
+  const lastAll = seriesAll[seriesAll.length - 1].cum;
+  const lastKR  = seriesKR[seriesKR.length - 1].cum;
+  const lastUS  = seriesUS[seriesUS.length - 1].cum;
+  const endLabels = `
+    <circle cx="${xScale(xCount - 1)}" cy="${yScale(lastAll)}" r="3" fill="#1E3A8A" />
+    <circle cx="${xScale(xCount - 1)}" cy="${yScale(lastKR)}" r="3" fill="#DC2626" />
+    <circle cx="${xScale(xCount - 1)}" cy="${yScale(lastUS)}" r="3" fill="#2563EB" />`;
+  svg.innerHTML = `
+    ${gridLines}
+    <line x1="${padL}" y1="${yZero}" x2="${W - padR}" y2="${yZero}" stroke="#9CA3AF" stroke-dasharray="3,3" stroke-width="1" />
+    ${path(seriesUS, '#2563EB', 1.5)}
+    ${path(seriesKR, '#DC2626', 1.5)}
+    ${path(seriesAll, '#1E3A8A', 2.5)}
+    ${endLabels}
+    ${xAxisLabels}`;
+}
+
 function renderTrades() {
   if (!_backtestData) return;
   const all = _backtestData.trades || [];
@@ -575,6 +653,9 @@ async function loadBacktest() {
     };
     $('perf-kr').innerHTML = fmtMkt((_backtestData.by_market || {}).kr);
     $('perf-us').innerHTML = fmtMkt((_backtestData.by_market || {}).us);
+
+    // 누적 수익률 차트 (청산만 사용)
+    renderCumChart(_backtestData.closed_trades || _backtestData.trades.filter(t => t.status !== 'open'));
 
     // 거래 이력
     renderTrades();

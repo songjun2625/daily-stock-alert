@@ -120,8 +120,11 @@ class ExitRules:
     target_pct: float
     hold_days: int
 
-EXIT_KR = ExitRules(stop_pct=0.025, target_pct=0.04, hold_days=5)   # 한국장: -2.5% / +4%
-EXIT_US = ExitRules(stop_pct=0.04,  target_pct=0.06, hold_days=5)   # 미장:   -4%   / +6%
+# 백테스트 스윕 결과 (tools/optimize_kr.py, 2026-01-01~04-30):
+#   기존 -2.5%/+4%/5d  → 누적 -33.63% / 승률 27.3% (KR 변동성에 손절 너무 타이트)
+#   최적 -3.5%/+6%/7d  → 누적 +50.26% / 승률 44.6% (정상 변동 견디고 큰 수익 잡음)
+EXIT_KR = ExitRules(stop_pct=0.035, target_pct=0.06, hold_days=7)
+EXIT_US = ExitRules(stop_pct=0.04,  target_pct=0.06, hold_days=5)
 
 # 품질 게이트 — 점수가 낮거나 공포지수가 높으면 그 날은 추천 자체를 보류.
 # 강제로 3개를 채우려고 약한 신호를 끼워 넣는 것보다, '오늘은 미추천' 이 정직.

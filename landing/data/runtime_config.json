@@ -25,5 +25,12 @@
     "vkospi_regime": null,
     "last_auto_check": null,
     "_note": "tools/runtime_tune.py 가 매일 자동 갱신"
+  },
+  "_macro_suggestion": {
+    "suggested_mode": "normal",
+    "checked_at_kst": "2026-04-30 11:28",
+    "defensive_hits": 0,
+    "crisis_hits": 0,
+    "_note": "자동 권고 — 실제 market_mode 변경은 운영자가 직접 결정"
   }
 }

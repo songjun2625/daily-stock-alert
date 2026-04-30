@@ -210,9 +210,9 @@ def _atr(hist: pd.DataFrame, period: int = 14) -> Optional[float]:
 
 
 def _kr_trade_plan(price: int, drawdown: float, atr: Optional[float]) -> tuple[int,int,int,int]:
-    """KR 매매 가이드 — US 와 동일한 RR 1:1.8 구조.
+    """KR 매매 가이드 — 백테스트 스윕 최적안 -3.5%/+6%/7d 반영.
       - ATR 가능: 진입 ±0.7~0.5×ATR / 손절 -1.5×ATR / 목표 손절폭 ×1.8
-      - 폴백: ±1.5% / -2.5% / +4% (KR 변동폭 좁아 US 보다 타이트)."""
+      - 폴백: ±1.5% / -3.5% / +6% (스윕 결과 KR 도 US 동일한 폭이 더 효과적)."""
     p = float(price)
     if atr and atr > 0:
         entry_low  = int(round(p - 0.7 * atr))
@@ -223,8 +223,8 @@ def _kr_trade_plan(price: int, drawdown: float, atr: Optional[float]) -> tuple[i
     else:
         entry_low  = int(round(p * 0.985))
         entry_high = int(round(p * 1.005))
-        stop       = int(round(p * 0.975))
-        target     = int(round(p * (1 + max(0.04, drawdown * 0.4))))
+        stop       = int(round(p * 0.965))   # -3.5%
+        target     = int(round(p * 1.06))    # +6%
     return entry_low, entry_high, target, stop
 
 

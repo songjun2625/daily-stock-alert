@@ -1,0 +1,214 @@
+{
+  "MSFT": {
+    "ticker": "MSFT",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "A New Chapter in AI’s Most Powerful Partnership",
+        "link": "https://www.fool.com/investing/2026/04/29/a-new-chapter-in-ais-most-powerful-partnership/",
+        "score": 5,
+        "positive": [
+          "partnership"
+        ],
+        "negative": []
+      }
+    ],
+    "positive": 1,
+    "negative": 0,
+    "score_adjust": 5,
+    "summary": "+1 / -0"
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "A New Chapter in AI’s Most Powerful Partnership",
+        "link": "https://www.fool.com/investing/2026/04/29/a-new-chapter-in-ais-most-powerful-partnership/",
+        "score": 5,
+        "positive": [
+          "partnership"
+        ],
+        "negative": []
+      }
+    ],
+    "positive": 1,
+    "negative": 0,
+    "score_adjust": 5,
+    "summary": "+1 / -0"
+  },
+  "META": {
+    "ticker": "META",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "Meta raises AI capex forecast, stock drops despite Q1 earnings beat",
+        "link": "https://finance.yahoo.com/video/meta-raises-ai-capex-forecast-stock-drops-despite-q1-earnings-beat-203704317.html",
+        "score": 5,
+        "positive": [
+          "earnings beat"
+        ],
+        "negative": []
+      }
+    ],
+    "positive": 1,
+    "negative": 0,
+    "score_adjust": 5,
+    "summary": "+1 / -0"
+  },
+  "NOW": {
+    "ticker": "NOW",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "Alphabet (GOOGL) Expands Anthropic Partnership with Up to $40B Investment",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-googl-expands-anthropic-partnership-063041671.html",
+        "score": 5,
+        "positive": [
+          "partnership"
+        ],
+        "negative": []
+      },
+      {
+        "title": "ServiceNow AI Partnerships Test Workflow Stickiness As Shares Slide",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/servicenow-ai-partnerships-test-workflow-210551821.html",
+        "score": 5,
+        "positive": [
+          "partnership"
+        ],
+        "negative": []
+      }
+    ],
+    "positive": 1,
+    "negative": 0,
+    "score_adjust": 10,
+    "summary": "+1 / -0"
+  },
+  "CRWD": {
+    "ticker": "CRWD",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "AI disruption triggers cybersecurity downgrades despite strong demand outlook",
+        "link": "https://finance.yahoo.com/sectors/technology/articles/ai-disruption-triggers-cybersecurity-downgrades-201701114.html",
+        "score": -10,
+        "positive": [],
+        "negative": [
+          "downgrade"
+        ]
+      },
+      {
+        "title": "A Look At CrowdStrike (CRWD) Valuation After Mizuho Upgrade And AI Cybersecurity Momentum",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/look-crowdstrike-crwd-valuation-mizuho-180742399.html",
+        "score": 5,
+        "positive": [
+          "upgrade"
+        ],
+        "negative": []
+      },
+      {
+        "title": "Mizuho Upgrades CrowdStrike With a $520 Price Target: Is AI Security the Next Mega-Trade?",
+        "link": "https://247wallst.com/investing/2026/04/27/mizuho-upgrades-crowdstrike-with-a-520-price-target-is-ai-security-the-next-mega-trade/",
+        "score": 5,
+        "positive": [
+          "upgrade"
+        ],
+        "negative": []
+      },
+      {
+        "title": "Snap upgraded, Pinterest downgrade: Wall Street's top analyst calls",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/snap-upgraded-pinterest-downgrade-wall-135144855.html",
+        "score": -5,
+        "positive": [
+          "upgrade"
+        ],
+        "negative": [
+          "downgrade"
+        ]
+      }
+    ],
+    "positive": 1,
+    "negative": 1,
+    "score_adjust": -5,
+    "summary": "+1 / -1"
+  },
+  "PANW": {
+    "ticker": "PANW",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "Mizuho Upgrades CrowdStrike With a $520 Price Target: Is AI Security the Next Mega-Trade?",
+        "link": "https://247wallst.com/investing/2026/04/27/mizuho-upgrades-crowdstrike-with-a-520-price-target-is-ai-security-the-next-mega-trade/",
+        "score": 5,
+        "positive": [
+          "upgrade"
+        ],
+        "negative": []
+      },
+      {
+        "title": "5 big analyst AI moves: Palo Alto and Reddit get fresh Buy calls, AMD upgraded",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/5-big-analyst-ai-moves-093502052.html",
+        "score": 5,
+        "positive": [
+          "upgrade"
+        ],
+        "negative": []
+      }
+    ],
+    "positive": 1,
+    "negative": 0,
+    "score_adjust": 10,
+    "summary": "+1 / -0"
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "Adobe Downgraded Despite AI Updates. The Stock Drops.",
+        "link": "https://www.barrons.com/articles/adobe-downgraded-despite-ai-updates-563e2dc5?siteid=yhoof2&yptr=yahoo",
+        "score": -10,
+        "positive": [],
+        "negative": [
+          "downgrade"
+        ]
+      }
+    ],
+    "positive": 0,
+    "negative": 1,
+    "score_adjust": -10,
+    "summary": "+0 / -1"
+  },
+  "AMD": {
+    "ticker": "AMD",
+    "market": "us",
+    "headlines": [
+      {
+        "title": "Stock Market Today, April 29: Advanced Micro Devices Rises After Analyst Upgrade Points to Data Center GPU Demand Ahead of Earnings",
+        "link": "https://www.fool.com/coverage/stock-market-today/2026/04/29/stock-market-today-april-29-advanced-micro-devices-rises-after-analyst-upgrade-points-to-data-center-gpu-demand-ahead-of-earnings/",
+        "score": 5,
+        "positive": [
+          "upgrade"
+        ],
+        "negative": []
+      }
+    ],
+    "positive": 1,
+    "negative": 0,
+    "score_adjust": 5,
+    "summary": "+1 / -0"
+  },
+  "_macro": {
+    "suggested_mode": "normal",
+    "checked_at_kst": "2026-04-30 11:28",
+    "crisis_hits": 0,
+    "crisis_kw": {},
+    "defensive_hits": 0,
+    "defensive_kw": {}
+  },
+  "_meta": {
+    "tickers_with_signals": 8,
+    "kr_headlines_total": 0,
+    "generated_at_iso": "2026-04-30T11:28:07+09:00"
+  }
+}

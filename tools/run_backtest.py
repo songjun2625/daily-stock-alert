@@ -41,7 +41,7 @@ from screener.config import US_THRESH, KR_THRESH, EXIT_KR, EXIT_US
 log = logging.getLogger("backtest")
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-START_DATE = "2026-03-01"
+START_DATE = "2026-01-01"
 COMM = 0.00025      # 수수료 0.025% (편도)
 SLIP = 0.001        # 슬리피지 0.1% (편도)
 HOLD_DAYS = 5
@@ -73,22 +73,21 @@ def us_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
 
 
 def kr_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
-    """KR v2 — 점수 임계(60점)와 등가가 되도록 빡빡한 신호.
-    cheap (RSI 30~35 골든존 OR dd ≥30%) AND entry (MACD 골든 OR 거래량 2배+)."""
+    """KR v3 — optimize_kr.py 스윕 1위 (F_rsi_30_45) 적용.
+    스윕 결과: 베이스 -33% → +50% (RSI 30~45 + dd≥30% + 거래량 1.5배+)."""
     if idx < 60: return False
     sub_close = close.iloc[: idx + 1]
     sub_vol   = vol.iloc[: idx + 1]
     rsi_v = float(ind.rsi(sub_close).iloc[-1])
     macd_l, sig_l, _ = ind.macd(sub_close)
+    ma_up = ind.is_ma_aligned_up(sub_close)
     peak = sub_close.tail(252).max()
     dd = float((peak - sub_close.iloc[-1]) / peak) if peak > 0 else 0
-    cheap = (
-        (KR_THRESH.rsi_golden_low <= rsi_v <= KR_THRESH.rsi_golden_high) or
-        (dd >= KR_THRESH.drawdown_deep_low)
-    )
+    cheap = (30.0 <= rsi_v <= 45.0) or (dd >= 0.30)
     if not cheap: return False
     entry = (ind.is_macd_golden_cross(macd_l, sig_l)
-             or ind.volume_spike(sub_vol, multiplier=2.0))
+             or ma_up
+             or ind.volume_spike(sub_vol, multiplier=1.5))
     return bool(entry)
 
 
