@@ -142,6 +142,20 @@ def _atr(hist: pd.DataFrame, period: int = 14) -> Optional[float]:
     return float(tr.rolling(period).mean().iloc[-1])
 
 
+def _spy_regime_ok() -> bool:
+    """SPY 50일선 strict regime 필터 — optimize_us.py 결과 -0.37% → +23.62%, MDD -26→-14% 개선.
+    조건: SPY 종가 > 50일선 AND 5일선 > 20일선 (단·중기 모두 상승 추세)."""
+    spy = _fetch_history("SPY")
+    if spy.empty or len(spy) < 50:
+        return True   # 데이터 없으면 통과 (보수적으로 차단하지 않음)
+    close = spy["Close"]
+    ma50 = float(close.rolling(50).mean().iloc[-1])
+    ma5  = float(close.rolling(5).mean().iloc[-1])
+    ma20 = float(close.rolling(20).mean().iloc[-1])
+    cur  = float(close.iloc[-1])
+    return cur >= ma50 and ma5 >= ma20
+
+
 def _evaluate_one(ticker: str, fx: float) -> Optional[USCandidate]:
     hist = _fetch_history(ticker)
     if hist.empty or len(hist) < 60:
@@ -151,7 +165,7 @@ def _evaluate_one(ticker: str, fx: float) -> Optional[USCandidate]:
     macd_l, sig_l, _ = ind.macd(close)
     gx = ind.is_macd_golden_cross(macd_l, sig_l)
     ma_up = ind.is_ma_aligned_up(close)
-    vspike = ind.volume_spike(vol)
+    vspike = ind.volume_spike(vol, multiplier=2.5)   # 2.0 → 2.5x (선별성 강화)
     dd = ind.drawdown_from_52w_high(close)
     avg_vol = float(vol.tail(20).mean())
     price = float(close.iloc[-1])
@@ -208,7 +222,19 @@ def screen_us(universe: Iterable[str] = DEFAULT_UNIVERSE,
               fx_usd_krw: Optional[float] = None,
               top_n: int = TOP_N_US,
               parallel: int = 8) -> list[USCandidate]:
-    """병렬 yfinance fetch + 캐싱된 환율·어닝. 30개 유니버스 ≤ 30초."""
+    """병렬 yfinance fetch + 캐싱된 환율·어닝. 30개 유니버스 ≤ 30초.
+
+    optimize_us.py 스윕 결과 (2026-01-01~04-30):
+      베이스라인 -0.37% / 승률 45% / MDD -26%
+      → SPY 50MA strict regime + RSI 30~40 + DD 20~35% + vspike 2.5x
+        +23.62% / 승률 58.8% / MDD -14% (J_strict)
+
+    SPY가 50일선 아래거나 단·중기 정배열 깨졌으면 약세장 → 진입 보류.
+    """
+    if not _spy_regime_ok():
+        log.info("US regime guard: SPY 50일선 아래 또는 단·중기 정배열 깨짐 — 신규 진입 보류")
+        return []
+
     fx = fx_usd_krw if fx_usd_krw is not None else ds.usd_krw(fallback=USD_KRW_FALLBACK)
     cands: list[USCandidate] = []
     with ThreadPoolExecutor(max_workers=parallel) as ex:

@@ -52,14 +52,53 @@ STOP_PCT_KR, TARGET_PCT_KR = EXIT_KR.stop_pct, EXIT_KR.target_pct  # -2.5% / +4%
 
 # ---- 시그널 (현재 라이브 알고리즘과 동일 -----------------------------------
 
+# SPY 시계열 (regime 필터용) — 모듈 로드 시 1회 fetch
+_SPY_CLOSE: pd.Series | None = None
+
+
+def _get_spy_close() -> pd.Series | None:
+    global _SPY_CLOSE
+    if _SPY_CLOSE is not None:
+        return _SPY_CLOSE
+    df = ds.fetch_history("SPY", market="us", period_days=400)
+    if df is not None and not df.empty:
+        c = df["Close"]
+        if c.index.tz is not None:
+            c.index = c.index.tz_localize(None)
+        _SPY_CLOSE = c
+        return c
+    return None
+
+
+def _spy_regime_ok_at(date_ts) -> bool:
+    """그날의 SPY regime — date_ts 시점에서 SPY > 50MA AND MA5 >= MA20."""
+    spy = _get_spy_close()
+    if spy is None: return True
+    loc = spy.index.searchsorted(date_ts)
+    if loc <= 50: return True
+    if loc >= len(spy): loc = len(spy) - 1
+    sub = spy.iloc[: loc + 1]
+    ma50 = float(sub.rolling(50).mean().iloc[-1])
+    ma5  = float(sub.rolling(5).mean().iloc[-1])
+    ma20 = float(sub.rolling(20).mean().iloc[-1])
+    cur  = float(sub.iloc[-1])
+    return cur >= ma50 and ma5 >= ma20
+
+
 def us_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
+    """US v2 — optimize_us.py 스윕 1위 (J_strict): SPY 50MA strict regime + RSI 30~40 + DD 20~35 + vspike 2.5배."""
     if idx < 60: return False
+    # SPY regime 우선 체크 — 약세장이면 즉시 차단
+    cur_date = close.index[idx]
+    if cur_date.tz is not None:
+        cur_date = cur_date.tz_localize(None)
+    if not _spy_regime_ok_at(cur_date):
+        return False
     sub_close = close.iloc[: idx + 1]
     sub_vol   = vol.iloc[: idx + 1]
     rsi_v = float(ind.rsi(sub_close).iloc[-1])
     cheap = (US_THRESH.rsi_low <= rsi_v <= US_THRESH.rsi_high)
     if not cheap:
-        # drawdown 시그널도 cheap 으로 인정
         peak = sub_close.tail(252).max()
         dd = (peak - sub_close.iloc[-1]) / peak if peak > 0 else 0
         if not (US_THRESH.drawdown_low <= dd <= US_THRESH.drawdown_high):
@@ -67,7 +106,7 @@ def us_signal(close: pd.Series, vol: pd.Series, idx: int) -> bool:
     macd_l, sig_l, _ = ind.macd(sub_close)
     if not (ind.is_macd_golden_cross(macd_l, sig_l)
             or ind.is_ma_aligned_up(sub_close)
-            or ind.volume_spike(sub_vol)):
+            or ind.volume_spike(sub_vol, multiplier=2.5)):
         return False
     return True
 

@@ -41,16 +41,18 @@ FORBIDDEN_TERMS = [
 
 @dataclass(frozen=True)
 class USSwingThresholds:
-    """us-swing-screener 스킬 스펙을 그대로 코드화한 임계값."""
+    """tools/optimize_us.py 스윕 (2026-01-01~04-30) 결과 J_strict 적용:
+      RSI 30~40 (넓은 30~45 → 좁힘) / DD 20~35% (15~40 → 깊지도 얕지도 않은 황금구간)
+      거래량 2.5배+ + SPY 50MA strict regime → 베이스 -0.37% → +23.62%, MDD -14%."""
     operating_margin_min: float = 0.20      # 영업이익률 ≥ 20%
     revenue_growth_min:  float = 0.10       # 매출 성장률 ≥ 10% (전년 대비)
     market_cap_min:      float = 2.0e9      # 시가총액 $2B 이상
     avg_volume_min:      int   = 1_000_000  # 일평균 거래량 100만주 이상
     rsi_low:             float = 30.0
-    rsi_high:            float = 45.0
-    drawdown_low:        float = 0.15       # 52주 최고 대비 -15% ~
-    drawdown_high:       float = 0.40       # ~ -40% (좋은 회사가 세일 중)
-    per_discount_vs_peer: float = 0.20      # 업종 평균 대비 -20% 이상 저평가
+    rsi_high:            float = 40.0       # 45 → 40 (선별성 강화)
+    drawdown_low:        float = 0.20       # 15 → 20 (얕은 하락 제외)
+    drawdown_high:       float = 0.35       # 40 → 35 (너무 깊은 하락 = fall knife 회피)
+    per_discount_vs_peer: float = 0.20
 
 US_THRESH = USSwingThresholds()
 

@@ -19,14 +19,14 @@
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 201500,
-        "change_pct_1d": -1.225490196078427,
-        "market_cap": 44070424543232.0,
+        "price": 202000,
+        "change_pct_1d": -0.9803921568627416,
+        "market_cap": 44179778437120.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.1891348088531187,
-        "rsi": 47.06929121310155,
+        "drawdown_52w": 0.18712273641851107,
+        "rsi": 47.542897575342835,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -39,13 +39,13 @@
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 197710,
-        "entry_high": 204207,
-        "target": 216118,
-        "stoploss": 193379,
+        "entry_low": 198210,
+        "entry_high": 204707,
+        "target": 216618,
+        "stoploss": 193879,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 47 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 48 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 48로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -61,7 +61,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "47",
+              "value": "48",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -229,14 +229,14 @@
         "ticker": "251270",
         "name": "Netmarble",
         "sector": "코스피·코스닥",
-        "price": 50700,
-        "change_pct_1d": -1.1695906432748537,
-        "market_cap": 4154082721792.0,
+        "price": 50800,
+        "change_pct_1d": -0.974658869395717,
+        "market_cap": 4162276032512.0,
         "operating_margin": 0.12943,
         "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.2428567178440737,
-        "rsi": 49.18799343934189,
+        "drawdown_52w": 0.2413633385893283,
+        "rsi": 49.61304534515697,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": true,
@@ -250,13 +250,13 @@
           "영업이익률 13%",
           "매출 성장 +23%"
         ],
-        "entry_low": 49710,
-        "entry_high": 51407,
-        "target": 54518,
-        "stoploss": 48579,
+        "entry_low": 49810,
+        "entry_high": 51507,
+        "target": 54618,
+        "stoploss": 48679,
         "narrative": {
-          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 49 반등 신호",
-          "thesis": "Netmarble(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 49로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 50 반등 신호",
+          "thesis": "Netmarble(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 50로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -272,7 +272,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "49",
+              "value": "50",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -336,11 +336,11 @@
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T11:16:35.189529+09:00",
-    "updated_at_kst": "2026.04.30 (목) 11:16 KST"
+    "updated_at_iso": "2026-04-30T11:35:38.755443+09:00",
+    "updated_at_kst": "2026.04.30 (목) 11:35 KST"
   },
-  "updated_at_iso": "2026-04-30T11:16:35.189529+09:00",
-  "updated_at_kst": "2026.04.30 (목) 11:16 KST",
+  "updated_at_iso": "2026-04-30T11:35:44.937415+09:00",
+  "updated_at_kst": "2026.04.30 (목) 11:35 KST",
   "us": {
     "picks": [
       {
@@ -352,7 +352,7 @@
         "market_cap": 330735779840.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 215.57812,
+        "pe_ratio": 219.0,
         "sector": "Technology",
         "avg_volume": 48053051.7,
         "rsi": 43.839465039787974,
@@ -361,9 +361,8 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 8.6,
-        "score": 135.63,
+        "score": 115.63,
         "reasons": [
-          "RSI 44(과매도 반등 후보)",
           "52주 고점 대비 -33%",
           "영업이익률 41%",
           "어닝 서프라이즈 +8.6%"
@@ -452,58 +451,58 @@
         }
       },
       {
-        "ticker": "APP",
-        "name": "Applovin Corporation",
-        "price": 443.42999267578125,
-        "price_krw": 659150,
-        "change_pct_1d": -1.2471340709394485,
-        "market_cap": 149108178944.0,
-        "operating_margin": 0.76917,
-        "revenue_growth": 0.659,
-        "pe_ratio": 44.25449,
-        "sector": "Communication Services",
-        "avg_volume": 4033567.0,
-        "rsi": 49.8156091011201,
-        "drawdown_52w": 0.3955425198568103,
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "price": 424.4599914550781,
+        "price_krw": 630951,
+        "change_pct_1d": -1.1159018159398681,
+        "market_cap": 3154747064320.0,
+        "operating_margin": 0.47094002,
+        "revenue_growth": 0.167,
+        "pe_ratio": 26.578585,
+        "sector": "Technology",
+        "avg_volume": 31926939.6,
+        "rsi": 61.770256513333024,
+        "drawdown_52w": 0.21370844647337733,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 10.05,
-        "score": 127.0,
+        "earnings_surprise_pct": 5.69,
+        "score": 110.92,
         "reasons": [
-          "52주 고점 대비 -40%",
-          "영업이익률 77%",
-          "어닝 서프라이즈 +10.1%"
+          "52주 고점 대비 -21%",
+          "영업이익률 47%",
+          "어닝 서프라이즈 +5.7%"
         ],
-        "entry_low": 426.11,
-        "entry_high": 455.8,
-        "target": 510.25,
-        "stoploss": 406.31,
+        "entry_low": 416.63,
+        "entry_high": 430.05,
+        "target": 454.65,
+        "stoploss": 407.69,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 77%, 어닝 서프라이즈 +10.1% / RSI 50 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 66% · 영업이익률 77%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 40% 떨어진 상태에서 RSI 50로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.7% / RSI 62 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 62로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "77%",
+              "value": "47%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
             },
             {
               "label": "매출 성장",
-              "value": "66%",
+              "value": "17%",
               "ok": true,
               "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "50",
+              "value": "62",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-40%",
+              "value": "-21%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -527,110 +526,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+10.1%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -15~-40%",
-              "points": 15
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "META",
-        "name": "Meta Platforms, Inc.",
-        "price": 669.1199951171875,
-        "price_krw": 994633,
-        "change_pct_1d": -0.3306866341159176,
-        "market_cap": 1698509750272.0,
-        "operating_margin": 0.41314998,
-        "revenue_growth": 0.238,
-        "pe_ratio": 24.331636,
-        "sector": "Communication Services",
-        "avg_volume": 14223167.8,
-        "rsi": 58.61546627354905,
-        "drawdown_52w": 0.1510234659820044,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "earnings_surprise_pct": 8.0,
-        "score": 114.34,
-        "reasons": [
-          "52주 고점 대비 -15%",
-          "영업이익률 41%",
-          "어닝 서프라이즈 +8.0%"
-        ],
-        "entry_low": 658.05,
-        "entry_high": 677.03,
-        "target": 711.82,
-        "stoploss": 645.4,
-        "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +8.0% / RSI 59 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 24% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 15% 떨어진 상태에서 RSI 59로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "41%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "24%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "59",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-15%",
-              "ok": true,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+8.0%",
+              "value": "+5.7%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -639,11 +535,11 @@
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
-              "points": 51.6
+              "points": 58.9
             },
             {
               "name": "매출 성장 ≥10%",
-              "points": 35.7
+              "points": 25.1
             },
             {
               "name": "52주 -15~-40%",
@@ -664,108 +560,39 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-04-30T11:04:59.328614+09:00",
-    "updated_at_kst": "2026.04.30 (목) 11:04 KST"
+    "updated_at_iso": "2026-04-30T11:35:43.467641+09:00",
+    "updated_at_kst": "2026.04.30 (목) 11:35 KST"
   },
   "futures": {
     "picks": [
-      {
-        "ticker": "252670",
-        "name": "KODEX 200선물인버스2X",
-        "market": "kr",
-        "leveraged": true,
-        "price": 166.0,
-        "price_krw": 166,
-        "change_pct_1d": 0.0,
-        "rsi": 30.37174710327203,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "drawdown_52w": 0.9233256351039261,
-        "score": 20.0,
-        "reasons": [
-          "RSI 30",
-          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의"
-        ],
-        "entry_low": 161.0,
-        "entry_high": 170.0,
-        "target": 181.0,
-        "stoploss": 156.0,
-        "hold_days_max": 5,
-        "position_size_pct": 15.0,
-        "narrative": {
-          "one_liner": "레버리지 ETF (변동 2~3배), RSI 30 반등, 거래량 급증",
-          "thesis": "KODEX 200선물인버스2X(252670)는 RSI 30에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
-          "signals": [
-            {
-              "label": "RSI",
-              "value": "30",
-              "ok": true,
-              "explain": "30~50 구간이 스윙 진입에 적합."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 모두 상승 시작."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 2배+ 거래."
-            }
-          ],
-          "risk": "⚠️ 레버리지 상품 — 손실이 2~3배로 확대됩니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 15.0% 이하로 제한하세요.",
-          "score_breakdown": [
-            {
-              "name": "RSI 30~50",
-              "points": 25
-            },
-            {
-              "name": "레버리지 페널티",
-              "points": -5
-            }
-          ],
-          "hold_days": 5,
-          "position_size_pct": 15.0,
-          "leveraged": true
-        }
-      },
       {
         "ticker": "229200",
         "name": "KODEX 코스닥150",
         "market": "kr",
         "leveraged": false,
-        "price": 20140.0,
-        "price_krw": 20140,
-        "change_pct_1d": -1.7081503172279189,
-        "rsi": 56.24884674235957,
+        "price": 20215.0,
+        "price_krw": 20215,
+        "change_pct_1d": -1.342118106393364,
+        "rsi": 57.147004323231194,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.04549763033175355,
+        "drawdown_52w": 0.04194312796208531,
         "score": 0.0,
         "reasons": [],
-        "entry_low": 19903.39,
-        "entry_high": 20329.29,
-        "target": 21417.68,
-        "stoploss": 19430.18,
+        "entry_low": 19978.39,
+        "entry_high": 20404.29,
+        "target": 21492.68,
+        "stoploss": 19505.18,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
-          "one_liner": "ETF, RSI 56 추세, 거래량 급증",
-          "thesis": "KODEX 코스닥150(229200)는 RSI 56에 위치한 ETF입니다. ",
+          "one_liner": "ETF, RSI 57 추세, 거래량 급증",
+          "thesis": "KODEX 코스닥150(229200)는 RSI 57에 위치한 ETF입니다. ",
           "signals": [
             {
               "label": "RSI",
-              "value": "56",
+              "value": "57",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -803,12 +630,12 @@
         "price": 711.5800170898438,
         "price_krw": 1057749,
         "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833778824,
+        "rsi": 67.24290833789524,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "drawdown_52w": 0.00501973783310127,
-        "score": 32.757091662211764,
+        "score": 32.757091662104756,
         "reasons": [
           "진입 신호 미발생 — 추세 강세 자산"
         ],
@@ -853,10 +680,75 @@
           "position_size_pct": 20.0,
           "leveraged": false
         }
+      },
+      {
+        "ticker": "TQQQ",
+        "name": "ProShares UltraPro QQQ (3x)",
+        "market": "us",
+        "leveraged": true,
+        "price": 61.86000061035156,
+        "price_krw": 91954,
+        "change_pct_1d": 1.8439231164556036,
+        "rsi": 70.06040669193544,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "drawdown_52w": 0.012452087913426346,
+        "score": 29.93959330806456,
+        "reasons": [
+          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의",
+          "진입 신호 미발생 — 추세 강세 자산"
+        ],
+        "entry_low": 60.73,
+        "entry_high": 62.76,
+        "target": 65.25,
+        "stoploss": 59.6,
+        "hold_days_max": 5,
+        "position_size_pct": 15.0,
+        "narrative": {
+          "one_liner": "레버리지 ETF (변동 2~3배), RSI 70 추세, 거래량 급증",
+          "thesis": "ProShares UltraPro QQQ (3x)(TQQQ)는 RSI 70에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
+          "signals": [
+            {
+              "label": "RSI",
+              "value": "70",
+              "ok": false,
+              "explain": "30~50 구간이 스윙 진입에 적합."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 모두 상승 시작."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 2배+ 거래."
+            }
+          ],
+          "risk": "⚠️ 레버리지 상품 — 손실이 2~3배로 확대됩니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 15.0% 이하로 제한하세요.",
+          "score_breakdown": [
+            {
+              "name": "레버리지 페널티",
+              "points": -5
+            }
+          ],
+          "hold_days": 5,
+          "position_size_pct": 15.0,
+          "leveraged": true
+        }
       }
     ],
-    "updated_at_iso": "2026-04-30T11:05:00.964901+09:00",
-    "updated_at_kst": "2026.04.30 (목) 11:05 KST"
+    "updated_at_iso": "2026-04-30T11:35:44.937415+09:00",
+    "updated_at_kst": "2026.04.30 (목) 11:35 KST"
   },
   "runtime": {
     "market_mode": "normal",

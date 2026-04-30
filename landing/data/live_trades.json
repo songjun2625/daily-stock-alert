@@ -10,8 +10,8 @@
       "stoploss": 1420768.0,
       "target": 1567018.0,
       "hold_days": 5,
-      "current_price": 1482000.0,
-      "pnl_pct": 0.611,
+      "current_price": 1481000.0,
+      "pnl_pct": 0.543,
       "days_held": 0,
       "status": "open",
       "score": 25.0
@@ -26,8 +26,8 @@
       "stoploss": 239161.0,
       "target": 276510.0,
       "hold_days": 5,
-      "current_price": 267000.0,
-      "pnl_pct": 5.743,
+      "current_price": 266000.0,
+      "pnl_pct": 5.347,
       "days_held": 0,
       "status": "open",
       "score": 25.0
@@ -42,8 +42,8 @@
       "stoploss": 154975.0,
       "target": 170725.0,
       "hold_days": 5,
-      "current_price": 162200.0,
-      "pnl_pct": 0.996,
+      "current_price": 162500.0,
+      "pnl_pct": 1.183,
       "days_held": 0,
       "status": "open",
       "score": 15.0
@@ -122,8 +122,8 @@
       "stoploss": 202943.0,
       "target": 231803.0,
       "hold_days": 5,
-      "current_price": 213000.0,
-      "pnl_pct": -0.117,
+      "current_price": 214000.0,
+      "pnl_pct": 0.352,
       "days_held": 0,
       "status": "open",
       "score": 94.88
@@ -138,8 +138,8 @@
       "stoploss": 1322821.0,
       "target": 1552922.0,
       "hold_days": 5,
-      "current_price": 1437000.0,
-      "pnl_pct": 2.278,
+      "current_price": 1447000.0,
+      "pnl_pct": 2.989,
       "days_held": 0,
       "status": "open",
       "score": 48.12168819861081
@@ -154,8 +154,8 @@
       "stoploss": 48579.0,
       "target": 54518.0,
       "hold_days": 5,
-      "current_price": 50800.0,
-      "pnl_pct": 0.197,
+      "current_price": 50900.0,
+      "pnl_pct": 0.394,
       "days_held": 0,
       "status": "open",
       "score": 77.89
@@ -207,6 +207,17 @@
       "source": "backtest"
     },
     {
+      "ticker": "NOW",
+      "market": "us",
+      "name": "ServiceNow",
+      "entry_date": "2026-04-24",
+      "exit_date": "2026-04-27",
+      "bars_held": 2,
+      "pnl_pct": 5.844,
+      "reason": "target",
+      "source": "backtest"
+    },
+    {
       "ticker": "240810",
       "market": "kr",
       "name": "",
@@ -240,36 +251,14 @@
       "source": "backtest"
     },
     {
-      "ticker": "CRWD",
+      "ticker": "NFLX",
       "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-04-17",
-      "exit_date": "2026-04-21",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "NOW",
-      "market": "us",
-      "name": "ServiceNow",
+      "name": "Netflix",
       "entry_date": "2026-04-20",
       "exit_date": "2026-04-21",
       "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SNOW",
-      "market": "us",
-      "name": "Snowflake",
-      "entry_date": "2026-04-20",
-      "exit_date": "2026-04-21",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
+      "pnl_pct": -4.146,
+      "reason": "stop",
       "source": "backtest"
     },
     {
@@ -284,12 +273,34 @@
       "source": "backtest"
     },
     {
+      "ticker": "CRWD",
+      "market": "us",
+      "name": "CrowdStrike",
+      "entry_date": "2026-04-14",
+      "exit_date": "2026-04-17",
+      "bars_held": 4,
+      "pnl_pct": 5.844,
+      "reason": "target",
+      "source": "backtest"
+    },
+    {
       "ticker": "403870",
       "market": "kr",
       "name": "",
       "entry_date": "2026-04-14",
       "exit_date": "2026-04-17",
       "bars_held": 4,
+      "pnl_pct": 5.844,
+      "reason": "target",
+      "source": "backtest"
+    },
+    {
+      "ticker": "MSFT",
+      "market": "us",
+      "name": "Microsoft",
+      "entry_date": "2026-04-15",
+      "exit_date": "2026-04-17",
+      "bars_held": 3,
       "pnl_pct": 5.844,
       "reason": "target",
       "source": "backtest"
@@ -314,17 +325,6 @@
       "bars_held": 5,
       "pnl_pct": 5.844,
       "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "APP",
-      "market": "us",
-      "name": "Applovin",
-      "entry_date": "2026-04-16",
-      "exit_date": "2026-04-16",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
       "source": "backtest"
     },
     {
@@ -394,17 +394,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "GE",
-      "market": "us",
-      "name": "GE Aerospace",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-14",
-      "bars_held": 5,
-      "pnl_pct": 2.352,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
       "ticker": "066570",
       "market": "kr",
       "name": "LG전자",
@@ -427,17 +416,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "MSFT",
-      "market": "us",
-      "name": "Microsoft",
-      "entry_date": "2026-04-07",
-      "exit_date": "2026-04-13",
-      "bars_held": 5,
-      "pnl_pct": 3.531,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
       "ticker": "015760",
       "market": "kr",
       "name": "한국전력",
@@ -446,17 +424,6 @@
       "bars_held": 3,
       "pnl_pct": -3.647,
       "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "NFLX",
-      "market": "us",
-      "name": "Netflix",
-      "entry_date": "2026-04-06",
-      "exit_date": "2026-04-10",
-      "bars_held": 5,
-      "pnl_pct": 1.777,
-      "reason": "time",
       "source": "backtest"
     },
     {
@@ -471,28 +438,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "ADBE",
-      "market": "us",
-      "name": "Adobe",
-      "entry_date": "2026-04-06",
-      "exit_date": "2026-04-09",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-04-08",
-      "exit_date": "2026-04-09",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "140860",
       "market": "kr",
       "name": "",
@@ -501,50 +446,6 @@
       "bars_held": 1,
       "pnl_pct": -3.647,
       "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMZN",
-      "market": "us",
-      "name": "Amazon",
-      "entry_date": "2026-04-02",
-      "exit_date": "2026-04-08",
-      "bars_held": 4,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "PANW",
-      "market": "us",
-      "name": "Palo Alto Networks",
-      "entry_date": "2026-04-06",
-      "exit_date": "2026-04-08",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AVGO",
-      "market": "us",
-      "name": "Broadcom",
-      "entry_date": "2026-04-07",
-      "exit_date": "2026-04-08",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SHOP",
-      "market": "us",
-      "name": "Shopify",
-      "entry_date": "2026-04-07",
-      "exit_date": "2026-04-08",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
       "source": "backtest"
     },
     {
@@ -658,17 +559,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "META",
-      "market": "us",
-      "name": "Meta Platforms",
-      "entry_date": "2026-03-27",
-      "exit_date": "2026-03-31",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
       "ticker": "207940",
       "market": "kr",
       "name": "삼성바이오로직스",
@@ -724,17 +614,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "AAPL",
-      "market": "us",
-      "name": "Apple",
-      "entry_date": "2026-03-23",
-      "exit_date": "2026-03-27",
-      "bars_held": 5,
-      "pnl_pct": -2.281,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
       "ticker": "035420",
       "market": "kr",
       "name": "NAVER",
@@ -779,17 +658,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "GOOGL",
-      "market": "us",
-      "name": "Alphabet",
-      "entry_date": "2026-03-23",
-      "exit_date": "2026-03-25",
-      "bars_held": 3,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "012330",
       "market": "kr",
       "name": "",
@@ -798,39 +666,6 @@
       "bars_held": 3,
       "pnl_pct": 5.844,
       "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMD",
-      "market": "us",
-      "name": "AMD",
-      "entry_date": "2026-03-24",
-      "exit_date": "2026-03-25",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-03-23",
-      "exit_date": "2026-03-24",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "PANW",
-      "market": "us",
-      "name": "Palo Alto Networks",
-      "entry_date": "2026-03-23",
-      "exit_date": "2026-03-24",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
       "source": "backtest"
     },
     {
@@ -889,17 +724,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "ADBE",
-      "market": "us",
-      "name": "Adobe",
-      "entry_date": "2026-03-13",
-      "exit_date": "2026-03-19",
-      "bars_held": 5,
-      "pnl_pct": -1.456,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
       "ticker": "196170",
       "market": "kr",
       "name": "알테오젠",
@@ -907,17 +731,6 @@
       "exit_date": "2026-03-19",
       "bars_held": 5,
       "pnl_pct": -3.647,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "TSLA",
-      "market": "us",
-      "name": "Tesla",
-      "entry_date": "2026-03-17",
-      "exit_date": "2026-03-19",
-      "bars_held": 3,
-      "pnl_pct": -4.146,
       "reason": "stop",
       "source": "backtest"
     },
@@ -949,83 +762,6 @@
       "name": "",
       "entry_date": "2026-03-13",
       "exit_date": "2026-03-17",
-      "bars_held": 3,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMD",
-      "market": "us",
-      "name": "AMD",
-      "entry_date": "2026-03-10",
-      "exit_date": "2026-03-13",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SNOW",
-      "market": "us",
-      "name": "Snowflake",
-      "entry_date": "2026-03-10",
-      "exit_date": "2026-03-10",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "PANW",
-      "market": "us",
-      "name": "Palo Alto Networks",
-      "entry_date": "2026-03-04",
-      "exit_date": "2026-03-09",
-      "bars_held": 4,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "META",
-      "market": "us",
-      "name": "Meta Platforms",
-      "entry_date": "2026-03-05",
-      "exit_date": "2026-03-09",
-      "bars_held": 3,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "TSLA",
-      "market": "us",
-      "name": "Tesla",
-      "entry_date": "2026-03-06",
-      "exit_date": "2026-03-09",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AVGO",
-      "market": "us",
-      "name": "Broadcom",
-      "entry_date": "2026-03-06",
-      "exit_date": "2026-03-09",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "PLTR",
-      "market": "us",
-      "name": "Palantir",
-      "entry_date": "2026-03-04",
-      "exit_date": "2026-03-06",
       "bars_held": 3,
       "pnl_pct": 5.844,
       "reason": "target",
@@ -1109,17 +845,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-03-04",
-      "exit_date": "2026-03-05",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
       "ticker": "068270",
       "market": "kr",
       "name": "셀트리온",
@@ -1175,17 +900,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "MSFT",
-      "market": "us",
-      "name": "Microsoft",
-      "entry_date": "2026-02-26",
-      "exit_date": "2026-03-04",
-      "bars_held": 5,
-      "pnl_pct": -0.129,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
       "ticker": "015760",
       "market": "kr",
       "name": "한국전력",
@@ -1230,28 +944,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "ADBE",
-      "market": "us",
-      "name": "Adobe",
-      "entry_date": "2026-02-25",
-      "exit_date": "2026-03-03",
-      "bars_held": 5,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMZN",
-      "market": "us",
-      "name": "Amazon",
-      "entry_date": "2026-02-26",
-      "exit_date": "2026-03-03",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "028300",
       "market": "kr",
       "name": "HLB",
@@ -1263,44 +955,11 @@
       "source": "backtest"
     },
     {
-      "ticker": "NFLX",
-      "market": "us",
-      "name": "Netflix",
-      "entry_date": "2026-02-26",
-      "exit_date": "2026-02-27",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
       "ticker": "SHOP",
       "market": "us",
       "name": "Shopify",
       "entry_date": "2026-02-27",
       "exit_date": "2026-02-27",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMD",
-      "market": "us",
-      "name": "AMD",
-      "entry_date": "2026-02-25",
-      "exit_date": "2026-02-26",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SNOW",
-      "market": "us",
-      "name": "Snowflake",
-      "entry_date": "2026-02-26",
-      "exit_date": "2026-02-26",
       "bars_held": 1,
       "pnl_pct": -4.146,
       "reason": "stop",
@@ -1329,94 +988,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "PLTR",
-      "market": "us",
-      "name": "Palantir",
-      "entry_date": "2026-02-23",
-      "exit_date": "2026-02-24",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "NOW",
-      "market": "us",
-      "name": "ServiceNow",
-      "entry_date": "2026-02-18",
-      "exit_date": "2026-02-23",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "APP",
-      "market": "us",
-      "name": "Applovin",
-      "entry_date": "2026-02-20",
-      "exit_date": "2026-02-23",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-02-23",
-      "exit_date": "2026-02-23",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SHOP",
-      "market": "us",
-      "name": "Shopify",
-      "entry_date": "2026-02-19",
-      "exit_date": "2026-02-20",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SNOW",
-      "market": "us",
-      "name": "Snowflake",
-      "entry_date": "2026-02-17",
-      "exit_date": "2026-02-18",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "COIN",
-      "market": "us",
-      "name": "Coinbase",
-      "entry_date": "2026-02-17",
-      "exit_date": "2026-02-18",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-02-17",
-      "exit_date": "2026-02-17",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "012450",
       "market": "kr",
       "name": "한화에어로스페이스",
@@ -1424,72 +995,6 @@
       "exit_date": "2026-02-13",
       "bars_held": 3,
       "pnl_pct": -3.646,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "APP",
-      "market": "us",
-      "name": "Applovin",
-      "entry_date": "2026-02-13",
-      "exit_date": "2026-02-13",
-      "bars_held": 1,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMZN",
-      "market": "us",
-      "name": "Amazon",
-      "entry_date": "2026-02-06",
-      "exit_date": "2026-02-12",
-      "bars_held": 5,
-      "pnl_pct": -1.776,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
-      "ticker": "NFLX",
-      "market": "us",
-      "name": "Netflix",
-      "entry_date": "2026-02-09",
-      "exit_date": "2026-02-12",
-      "bars_held": 4,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "PANW",
-      "market": "us",
-      "name": "Palo Alto Networks",
-      "entry_date": "2026-02-11",
-      "exit_date": "2026-02-12",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SHOP",
-      "market": "us",
-      "name": "Shopify",
-      "entry_date": "2026-02-12",
-      "exit_date": "2026-02-12",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AVGO",
-      "market": "us",
-      "name": "Broadcom",
-      "entry_date": "2026-02-10",
-      "exit_date": "2026-02-11",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
       "reason": "stop",
       "source": "backtest"
     },
@@ -1549,39 +1054,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "AAPL",
-      "market": "us",
-      "name": "Apple",
-      "entry_date": "2026-01-29",
-      "exit_date": "2026-02-04",
-      "bars_held": 5,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "PLTR",
-      "market": "us",
-      "name": "Palantir",
-      "entry_date": "2026-02-04",
-      "exit_date": "2026-02-04",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SHOP",
-      "market": "us",
-      "name": "Shopify",
-      "entry_date": "2026-02-04",
-      "exit_date": "2026-02-04",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "MSFT",
       "market": "us",
       "name": "Microsoft",
@@ -1593,34 +1065,12 @@
       "source": "backtest"
     },
     {
-      "ticker": "PANW",
+      "ticker": "CRWD",
       "market": "us",
-      "name": "Palo Alto Networks",
+      "name": "CrowdStrike",
       "entry_date": "2026-01-30",
       "exit_date": "2026-02-03",
       "bars_held": 3,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AVGO",
-      "market": "us",
-      "name": "Broadcom",
-      "entry_date": "2026-02-02",
-      "exit_date": "2026-02-03",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "APP",
-      "market": "us",
-      "name": "Applovin",
-      "entry_date": "2026-02-02",
-      "exit_date": "2026-02-02",
-      "bars_held": 1,
       "pnl_pct": -4.146,
       "reason": "stop",
       "source": "backtest"
@@ -1659,78 +1109,12 @@
       "source": "backtest"
     },
     {
-      "ticker": "GE",
-      "market": "us",
-      "name": "GE Aerospace",
-      "entry_date": "2026-01-23",
-      "exit_date": "2026-01-29",
-      "bars_held": 5,
-      "pnl_pct": 0.375,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
-      "ticker": "META",
-      "market": "us",
-      "name": "Meta Platforms",
-      "entry_date": "2026-01-26",
-      "exit_date": "2026-01-29",
-      "bars_held": 4,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SNOW",
-      "market": "us",
-      "name": "Snowflake",
-      "entry_date": "2026-01-27",
-      "exit_date": "2026-01-29",
-      "bars_held": 3,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "108320",
       "market": "kr",
       "name": "",
       "entry_date": "2026-01-22",
       "exit_date": "2026-01-28",
       "bars_held": 5,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "NOW",
-      "market": "us",
-      "name": "ServiceNow",
-      "entry_date": "2026-01-27",
-      "exit_date": "2026-01-28",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "NFLX",
-      "market": "us",
-      "name": "Netflix",
-      "entry_date": "2026-01-21",
-      "exit_date": "2026-01-27",
-      "bars_held": 5,
-      "pnl_pct": 3.451,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-01-26",
-      "exit_date": "2026-01-27",
-      "bars_held": 2,
       "pnl_pct": 5.844,
       "reason": "target",
       "source": "backtest"
@@ -1835,17 +1219,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "SHOP",
-      "market": "us",
-      "name": "Shopify",
-      "entry_date": "2026-01-15",
-      "exit_date": "2026-01-20",
-      "bars_held": 3,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "388050",
       "market": "kr",
       "name": "",
@@ -1865,17 +1238,6 @@
       "bars_held": 1,
       "pnl_pct": -3.647,
       "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMD",
-      "market": "us",
-      "name": "AMD",
-      "entry_date": "2026-01-14",
-      "exit_date": "2026-01-15",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
       "source": "backtest"
     },
     {
@@ -1923,28 +1285,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "META",
-      "market": "us",
-      "name": "Meta Platforms",
-      "entry_date": "2026-01-07",
-      "exit_date": "2026-01-13",
-      "bars_held": 5,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "SNOW",
-      "market": "us",
-      "name": "Snowflake",
-      "entry_date": "2026-01-06",
-      "exit_date": "2026-01-12",
-      "bars_held": 5,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
       "ticker": "214450",
       "market": "kr",
       "name": "",
@@ -1967,17 +1307,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "MSFT",
-      "market": "us",
-      "name": "Microsoft",
-      "entry_date": "2026-01-05",
-      "exit_date": "2026-01-09",
-      "bars_held": 5,
-      "pnl_pct": 0.849,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
       "ticker": "APP",
       "market": "us",
       "name": "Applovin",
@@ -1985,17 +1314,6 @@
       "exit_date": "2026-01-09",
       "bars_held": 5,
       "pnl_pct": 4.6,
-      "reason": "time",
-      "source": "backtest"
-    },
-    {
-      "ticker": "CRWD",
-      "market": "us",
-      "name": "CrowdStrike",
-      "entry_date": "2026-01-05",
-      "exit_date": "2026-01-09",
-      "bars_held": 5,
-      "pnl_pct": 2.357,
       "reason": "time",
       "source": "backtest"
     },
@@ -2088,28 +1406,6 @@
       "source": "backtest"
     },
     {
-      "ticker": "COIN",
-      "market": "us",
-      "name": "Coinbase",
-      "entry_date": "2026-01-06",
-      "exit_date": "2026-01-07",
-      "bars_held": 2,
-      "pnl_pct": -4.146,
-      "reason": "stop",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMZN",
-      "market": "us",
-      "name": "Amazon",
-      "entry_date": "2026-01-05",
-      "exit_date": "2026-01-06",
-      "bars_held": 2,
-      "pnl_pct": 5.844,
-      "reason": "target",
-      "source": "backtest"
-    },
-    {
       "ticker": "003670",
       "market": "kr",
       "name": "포스코홀딩스",
@@ -2140,17 +1436,6 @@
       "bars_held": 2,
       "pnl_pct": 5.844,
       "reason": "target",
-      "source": "backtest"
-    },
-    {
-      "ticker": "AMD",
-      "market": "us",
-      "name": "AMD",
-      "entry_date": "2026-01-05",
-      "exit_date": "2026-01-05",
-      "bars_held": 1,
-      "pnl_pct": -4.146,
-      "reason": "stop",
       "source": "backtest"
     },
     {
@@ -2199,11 +1484,11 @@
     }
   ],
   "summary": {
-    "total_trades": 185,
-    "win_rate_pct": 44.3,
-    "cum_return_pct": 33.56,
-    "avg_pnl_pct": 0.257,
-    "avg_hold_days": 2.7,
+    "total_trades": 120,
+    "win_rate_pct": 45.8,
+    "cum_return_pct": 65.72,
+    "avg_pnl_pct": 0.521,
+    "avg_hold_days": 2.6,
     "best_pct": 5.84,
     "worst_pct": -4.15
   },
@@ -2218,10 +1503,10 @@
       "worst_pct": -3.65
     },
     "us": {
-      "total_trades": 82,
-      "win_rate_pct": 45.1,
-      "cum_return_pct": -0.37,
-      "avg_pnl_pct": 0.1,
+      "total_trades": 17,
+      "win_rate_pct": 58.8,
+      "cum_return_pct": 23.62,
+      "avg_pnl_pct": 1.367,
       "avg_hold_days": 2.8,
       "best_pct": 5.84,
       "worst_pct": -4.15
@@ -2229,6 +1514,6 @@
   },
   "period_start": "2026-01-01",
   "period_end": "2026-04-30",
-  "updated_at_iso": "2026-04-30T11:25:50+09:00",
-  "updated_at_kst": "2026.04.30 (Thu) 11:25 KST"
+  "updated_at_iso": "2026-04-30T11:35:29+09:00",
+  "updated_at_kst": "2026.04.30 (Thu) 11:35 KST"
 }
