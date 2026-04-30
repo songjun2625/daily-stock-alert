@@ -82,6 +82,11 @@
   .fear-gauge { position:relative; height:6px; background:linear-gradient(90deg,#10B981 0%,#FBBF24 50%,#DC2626 100%); border-radius:999px; margin-top:10px; }
   .fear-gauge .marker { position:absolute; top:-4px; width:14px; height:14px; border-radius:50%; background:#fff; border:3px solid #0B1B3D; transform:translateX(-50%); transition:left .3s ease; box-shadow:0 2px 6px rgba(0,0,0,.15); }
   .fear-gauge-labels { display:flex; justify-content:space-between; font-size:10px; color:#9CA3AF; margin-top:4px; font-weight:500; }
+  /* 종목 점수 게이지 — verdict 별 색상 */
+  .score-gauge { position:relative; height:5px; background:linear-gradient(90deg,#9CA3AF 0%,#FBBF24 40%,#10B981 67%,#059669 87%); border-radius:999px; margin-top:6px; }
+  .score-gauge .marker { position:absolute; top:-3px; width:11px; height:11px; border-radius:50%; background:#fff; border:2.5px solid #0B1B3D; transform:translateX(-50%); }
+  .score-scale-labels { display:flex; justify-content:space-between; font-size:9px; color:#9CA3AF; margin-top:3px; }
+  .verdict-badge { display:inline-flex; align-items:center; gap:4px; padding:3px 9px; border-radius:999px; font-size:11px; font-weight:700; }
   /* live dot — 데이터 신선도 표시 */
   .live-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#10B981; box-shadow:0 0 0 0 rgba(16,185,129,.6); animation:pulse-dot 2s infinite; vertical-align:middle; margin-right:6px; }
   @keyframes pulse-dot { 0%{box-shadow:0 0 0 0 rgba(16,185,129,.6)} 70%{box-shadow:0 0 0 8px rgba(16,185,129,0)} 100%{box-shadow:0 0 0 0 rgba(16,185,129,0)} }
@@ -180,6 +185,35 @@
     <button class="tab-btn" data-tab="us">🇺🇸 나스닥·NYSE</button>
     <button class="tab-btn" data-tab="futures">📊 선물·ETF</button>
   </div>
+
+  <!-- 점수 시스템 설명 — 처음 방문자에게 의사결정 가이드 -->
+  <details class="mt-4 grid-card" style="padding:10px 14px;border:1px dashed #CBD5E1;background:#F8FAFC">
+    <summary class="cursor-pointer flex items-center justify-between gap-2 flex-wrap" style="font-size:11px;color:#475569">
+      <span>💡 <b>점수와 매수 의견(verdict)이란?</b></span>
+      <span style="font-size:10px;color:#94A3B8">자세히 보기 ⌄</span>
+    </summary>
+    <div class="mt-2 pt-2 border-t border-[#E2E8F0]" style="font-size:11px;line-height:1.65;color:#374151">
+      <div><b>점수 산정</b> — 각 종목은 5가지 영역에서 가산점을 합산해 0~150 스케일로 환산됩니다:</div>
+      <ul class="mt-1.5 mb-2 ml-4" style="list-style:disc">
+        <li><b>펀더멘털</b> (영업이익률·매출 성장) — 최대 +63점</li>
+        <li><b>저평가 신호</b> (RSI 30~45 / 52주 -10~-35%) — 최대 +45점</li>
+        <li><b>진입 신호</b> (MACD 골든크로스·정배열·거래량 1.5배+) — 최대 +30점</li>
+        <li><b>섹터 사이클</b> (반도체-HBM·2차전지·방산 등 가산점) — 최대 +30점</li>
+        <li><b>수급</b> (외국인·기관 연속 순매수) + <b>어닝 서프라이즈</b> — 최대 +37점</li>
+      </ul>
+      <div class="mt-2"><b>매수 의견(verdict)</b> — 점수에 따라 다음 5단계로 자동 분류:</div>
+      <div class="mt-1.5 grid grid-cols-2 md:grid-cols-5 gap-1.5">
+        <div style="background:#D1FAE5;color:#065F46;padding:5px 8px;border-radius:6px"><b>🟢 강력 매수</b><br/>130+</div>
+        <div style="background:#DCFCE7;color:#166534;padding:5px 8px;border-radius:6px"><b>🟢 매수</b><br/>100~130</div>
+        <div style="background:#FEF3C7;color:#92400E;padding:5px 8px;border-radius:6px"><b>🟡 신중 매수</b><br/>80~100</div>
+        <div style="background:#FEF9C3;color:#854D0E;padding:5px 8px;border-radius:6px"><b>🟡 관망</b><br/>60~80</div>
+        <div style="background:#F3F4F6;color:#374151;padding:5px 8px;border-radius:6px"><b>🔴 미추천</b><br/>60 미만</div>
+      </div>
+      <div class="mt-2.5" style="font-size:10.5px;color:#6B7280;line-height:1.6">
+        ※ 임계 60점 미달은 자동으로 추천에서 제외됩니다 (강제로 채우지 않음). 같은 매수 의견이라도 <b>자기 자본의 10~20% 이내 분할매수</b> 권장 — 손절가 도달 시 즉시 매도.
+      </div>
+    </div>
+  </details>
 </section>
 
 <!-- ===== "실시간 누적 추천 성과" — 알고리즘이 지금까지 추천한 모든 종목 누적 ===== -->
@@ -344,6 +378,39 @@ function lightCls(l) { return l === '🟢' ? 'pill-green' : l === '🟡' ? 'pill
 function chgCls(v) { return v > 0 ? 'text-red-600' : v < 0 ? 'text-blue-600' : 'text-gray-500'; }
 function fmt(v, d=2) { return (v ?? 0).toLocaleString(undefined, {minimumFractionDigits:d, maximumFractionDigits:d}); }
 
+// 종목 점수 → 매수 의견 매핑 (verdict)
+// 0~150 스케일 가정. 점수 산정 기준은 footer 에 explainer 로 노출.
+function scoreVerdict(score) {
+  const s = Number(score) || 0;
+  if (s >= 130) return { emoji: '🟢', label: '강력 매수', bg: '#D1FAE5', color: '#065F46', border: '#10B981',
+                          desc: '최상위 신호 다중 포착 — 펀더멘털·기술·섹터 모두 양호' };
+  if (s >= 100) return { emoji: '🟢', label: '매수',     bg: '#DCFCE7', color: '#166534', border: '#22C55E',
+                          desc: '복수의 강한 신호 — 단기 진입 우호' };
+  if (s >= 80)  return { emoji: '🟡', label: '신중 매수', bg: '#FEF3C7', color: '#92400E', border: '#F59E0B',
+                          desc: '기준 통과 — 분할매수 + 손절 엄수' };
+  if (s >= 60)  return { emoji: '🟡', label: '관망',     bg: '#FEF9C3', color: '#854D0E', border: '#FACC15',
+                          desc: '약한 신호 — 다음 신호 확인 후 진입' };
+  return                  { emoji: '🔴', label: '미추천',  bg: '#F3F4F6', color: '#374151', border: '#9CA3AF',
+                          desc: '임계 미달 — 신규 진입 자제' };
+}
+
+// 점수 헤더 블록 — verdict 배지 + 게이지 + 점수
+function scoreHeaderBlock(score, sector) {
+  const v = scoreVerdict(score);
+  const pct = Math.max(0, Math.min(100, (Number(score) || 0) / 150 * 100));
+  const sectorPill = sector ? `<span class="pill pill-soft">${sector}</span>` : '';
+  return `<div class="flex items-center gap-1.5 flex-wrap">
+    ${sectorPill}
+    <span class="verdict-badge" style="background:${v.bg};color:${v.color};border:1px solid ${v.border}">
+      ${v.emoji} ${v.label}
+    </span>
+    <span class="num text-[#374151] font-semibold" style="font-size:11px">점수 ${(score ?? 0).toFixed(0)}</span>
+  </div>
+  <div class="score-gauge mt-1.5"><span class="marker" style="left:${pct}%"></span></div>
+  <div class="score-scale-labels"><span>0</span><span>60 관망</span><span>80 신중</span><span>100 매수</span><span>130+ 강력</span></div>
+  <div class="text-[#6B7280] mt-1" style="font-size:10.5px;line-height:1.4">${v.desc}</div>`;
+}
+
 function renderRuntime(rt) {
   const el = document.getElementById('runtime-banner');
   if (!el) return;
@@ -451,11 +518,11 @@ function makeCard({ pill, header, price, oneLiner, narr, body, currency }) {
 function krCard(p) {
   const change = p.change_pct_1d ?? 0;
   return makeCard({
-    pill: `<span class="pill pill-soft">${p.sector || '코스피·코스닥'}</span>`,
+    pill: '',
     header: `<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
     price: `<div class="font-bold ticker" style="font-size:14px">${p.ticker} <span class="font-normal text-[#6B7280]" style="font-size:12px">${(p.name||'').slice(0,20)}</span></div>
             <div class="num font-extrabold mt-1" style="font-size:20px">${(p.price ?? 0).toLocaleString()}원</div>
-            <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
+            <div class="mt-2">${scoreHeaderBlock(p.score, p.sector || '코스피·코스닥')}</div>`,
     oneLiner: p.narrative?.one_liner || (p.reasons||[]).slice(0,2).join(', '),
     narr: p.narrative,
     body: priceBoxes(p, '₩'),
@@ -466,11 +533,11 @@ function krCard(p) {
 function usCard(p) {
   const change = p.change_pct_1d ?? 0;
   return makeCard({
-    pill: `<span class="pill pill-soft">${p.sector || '미장'}</span>`,
+    pill: '',
     header: `<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
     price: `<div class="font-bold ticker" style="font-size:14px">${p.ticker} <span class="font-normal text-[#6B7280]" style="font-size:12px">${(p.name||'').slice(0,20)}</span></div>
             <div class="flex items-baseline gap-2 mt-1"><div class="num font-extrabold" style="font-size:20px">$${fmt(p.price,2)}</div><div class="text-[#6B7280] num" style="font-size:11px">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div></div>
-            <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
+            <div class="mt-2">${scoreHeaderBlock(p.score, p.sector || '미장')}</div>`,
     oneLiner: p.narrative?.one_liner,
     narr: p.narrative,
     body: priceBoxes(p, '$'),
@@ -481,15 +548,16 @@ function usCard(p) {
 function futCard(p) {
   const change = p.change_pct_1d ?? 0;
   const cur = p.market === 'us' ? '$' : '₩';
-  const lev = p.leveraged ? `<span class="pill pill-warn">레버리지 (변동 2~3배)</span>` : '';
+  const lev = p.leveraged ? `<span class="pill pill-warn">레버리지</span>` : '';
   const priceTxt = cur === '$' ? `$${fmt(p.price,2)}` : `${(p.price ?? 0).toLocaleString()}원`;
   const krwTxt = cur === '$' ? `<div class="text-[#6B7280] num" style="font-size:11px">≈ ${(p.price_krw ?? 0).toLocaleString()}원</div>` : '';
+  const sectorLabel = p.market === 'us' ? '미국 ETF' : '국내 ETF';
   return makeCard({
-    pill: `<span class="pill pill-soft">${p.market === 'us' ? '미국 ETF' : '국내 ETF'}</span>${lev}`,
-    header: `<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
+    pill: '',
+    header: `${lev}<span class="${chgCls(change)} num" style="font-size:12px">${change>0?'+':''}${change.toFixed(2)}%</span>`,
     price: `<div class="font-bold" style="font-size:13px">${p.name} <span class="font-normal text-[#6B7280] ticker" style="font-size:11px">(${p.ticker})</span></div>
             <div class="num font-extrabold mt-1" style="font-size:20px">${priceTxt}</div>${krwTxt}
-            <div class="mt-2"><span class="pill pill-blue">점수 ${(p.score ?? 0).toFixed(0)}점</span></div>`,
+            <div class="mt-2">${scoreHeaderBlock(p.score, sectorLabel)}</div>`,
     oneLiner: p.narrative?.one_liner,
     narr: p.narrative,
     body: priceBoxes(p, cur),

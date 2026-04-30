@@ -91,6 +91,47 @@ def _fmt_money(value, market: str) -> str:
     except (TypeError, ValueError): return str(value)
 
 
+def _verdict(score: float) -> dict:
+    """종목 점수 → 매수 의견 매핑 (today.html scoreVerdict 와 동일)."""
+    s = float(score or 0)
+    if s >= 130: return {"emoji": "🟢", "label": "강력 매수", "bg": "#D1FAE5", "color": "#065F46", "border": "#10B981",
+                          "desc": "최상위 신호 다중 포착 — 펀더멘털·기술·섹터 모두 양호"}
+    if s >= 100: return {"emoji": "🟢", "label": "매수",     "bg": "#DCFCE7", "color": "#166534", "border": "#22C55E",
+                          "desc": "복수의 강한 신호 — 단기 진입 우호"}
+    if s >= 80:  return {"emoji": "🟡", "label": "신중 매수", "bg": "#FEF3C7", "color": "#92400E", "border": "#F59E0B",
+                          "desc": "기준 통과 — 분할매수 + 손절 엄수"}
+    if s >= 60:  return {"emoji": "🟡", "label": "관망",     "bg": "#FEF9C3", "color": "#854D0E", "border": "#FACC15",
+                          "desc": "약한 신호 — 다음 신호 확인 후 진입"}
+    return                {"emoji": "🔴", "label": "미추천",  "bg": "#F3F4F6", "color": "#374151", "border": "#9CA3AF",
+                          "desc": "임계 미달"}
+
+
+def _score_block_html(score, sector: str = "") -> str:
+    """이메일용 점수 게이지 — verdict 배지 + 0~150 progress bar (gradient 시뮬)."""
+    v = _verdict(score)
+    s = float(score or 0)
+    pct = max(0, min(100, s / 150 * 100))
+    sector_pill = (f'<span style="background:#F1F5F9;color:#334155;padding:2px 7px;border-radius:999px;'
+                   f'font-size:10px;white-space:nowrap;margin-right:4px">{sector}</span>') if sector else ""
+    return (
+        f'<div style="margin-top:6px">'
+        f'<div style="margin-bottom:4px">'
+        f'  {sector_pill}'
+        f'  <span style="background:{v["bg"]};color:{v["color"]};border:1px solid {v["border"]};'
+        f'padding:2px 8px;border-radius:999px;font-size:10px;font-weight:700;white-space:nowrap">'
+        f'{v["emoji"]} {v["label"]}</span>'
+        f'  <span style="color:#374151;font-size:10px;margin-left:4px">점수 {s:.0f}</span>'
+        f'</div>'
+        f'<div style="position:relative;height:5px;background:linear-gradient(90deg,#E5E7EB 0%,#FBBF24 40%,'
+        f'#10B981 67%,#059669 87%);border-radius:999px;margin-top:4px">'
+        f'<div style="position:absolute;left:calc({pct:.1f}% - 5px);top:-3px;width:11px;height:11px;'
+        f'background:#fff;border:2.5px solid #0B1B3D;border-radius:50%"></div>'
+        f'</div>'
+        f'<div style="font-size:9px;color:#6B7280;margin-top:4px;line-height:1.5">{v["desc"]}</div>'
+        f'</div>'
+    )
+
+
 def _load_live_summary() -> dict:
     """live_trades.json 의 누적 성과 — 메일 헤더 KPI 용."""
     p = Path("landing/data/live_trades.json")
@@ -163,6 +204,15 @@ def build_html(data: dict, name: str = "") -> str:
         kpi_block,
         fear_card("🇰🇷 한국장 (VKOSPI)", fear.get("vkospi")),
         fear_card("🇺🇸 미장 (VIX)", fear.get("vix")),
+        # 점수 시스템 안내 — 수신자 학습용
+        '<div style="background:#F8FAFC;border:1px dashed #CBD5E1;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:11px;color:#475569;line-height:1.65">'
+        '<b>💡 매수 의견(verdict) 안내</b> — 종목별 점수(0~150)를 5단계로 분류:<br/>'
+        '<span style="background:#D1FAE5;color:#065F46;padding:1px 6px;border-radius:4px;font-size:10px">🟢 강력매수 130+</span>&nbsp;'
+        '<span style="background:#DCFCE7;color:#166534;padding:1px 6px;border-radius:4px;font-size:10px">🟢 매수 100~130</span>&nbsp;'
+        '<span style="background:#FEF3C7;color:#92400E;padding:1px 6px;border-radius:4px;font-size:10px">🟡 신중매수 80~100</span>&nbsp;'
+        '<span style="background:#FEF9C3;color:#854D0E;padding:1px 6px;border-radius:4px;font-size:10px">🟡 관망 60~80</span>'
+        '<br/><span style="font-size:10px;color:#6B7280">점수 = 펀더멘털 + 저평가 + 진입신호 + 섹터사이클 + 수급. 60점 미달은 자동 미추천.</span>'
+        '</div>',
     ]
 
     for market, label in [("kr", "🇰🇷 코스피·코스닥"), ("us", "🇺🇸 나스닥·NYSE"), ("futures", "📊 선물·ETF")]:
@@ -193,18 +243,16 @@ def build_html(data: dict, name: str = "") -> str:
             stp = _fmt_money(p.get("stoploss"), market)
             tgt = _fmt_money(p.get("target"), market)
 
-            # 모바일 우선: 헤더 줄바꿈 시 깨짐 방지 — 한 줄에 sector + ticker, 다음 줄에 name + score
+            # 모바일 우선: 종목 헤더 + 가격 + verdict 점수 블록
+            score_html = _score_block_html(score, sector)
             html.append(f'''
 <div style="border:1px solid #EAEAF0;border-radius:12px;padding:12px;margin-bottom:10px">
-  <div style="font-size:11px;color:#334155;margin-bottom:4px">
-    <span style="background:#F1F5F9;padding:2px 8px;border-radius:999px;white-space:nowrap">{sector}</span>
-    <span style="background:#DBEAFE;color:#1E40AF;padding:2px 8px;border-radius:999px;font-weight:600;margin-left:4px;white-space:nowrap">{score_str}점</span>
-  </div>
   <div style="font-size:14px;font-weight:700;line-height:1.3">
     {ticker} <span style="color:#6B7280;font-weight:500;font-size:12px">{cname}</span>
   </div>
   <div style="margin-top:4px;font-size:16px;font-weight:800;color:#0B1B3D">{price_fmt}</div>
-  <div style="margin-top:6px;font-size:12px;color:#374151;line-height:1.5">{one_liner}</div>
+  {score_html}
+  <div style="margin-top:8px;font-size:12px;color:#374151;line-height:1.5">{one_liner}</div>
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:8px;font-size:12px;border-collapse:separate;border-spacing:0 3px">
     <tr>
       <td style="background:#F1F5F9;padding:8px 10px;border-radius:6px;font-weight:600;color:#334155;white-space:nowrap;width:60px">📥 진입</td>
