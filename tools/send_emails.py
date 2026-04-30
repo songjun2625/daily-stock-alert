@@ -195,15 +195,15 @@ def _market_quant_pick_html(qp: dict | None, market: str) -> str:
         # 진입/손절/목표
         f'<table style="width:100%;margin-top:6px;border-collapse:collapse;table-layout:fixed"><tr>'
         f'<td style="background:rgba(255,255,255,.10);border-radius:5px;padding:5px 7px;width:42%">'
-        f'<div style="color:#A5B4FC;font-size:8px">📥 진입</div>'
+        f'<div style="color:#A5B4FC;font-size:8px">📥 매수가</div>'
         f'<div style="font-weight:700;font-size:10px;white-space:nowrap">{fmt(qp.get("entry_low"))}~{fmt(qp.get("entry_high"))}</div></td>'
         f'<td style="width:1%"></td>'
         f'<td style="background:rgba(254,202,202,.18);border-radius:5px;padding:5px 7px;width:28%">'
-        f'<div style="color:#FCA5A5;font-size:8px">🛑 손절</div>'
+        f'<div style="color:#FCA5A5;font-size:8px">🛑 손절가</div>'
         f'<div style="font-weight:700;font-size:10px;white-space:nowrap">{fmt(qp.get("stoploss"))}</div></td>'
         f'<td style="width:1%"></td>'
         f'<td style="background:rgba(167,243,208,.20);border-radius:5px;padding:5px 7px;width:28%">'
-        f'<div style="color:#86EFAC;font-size:8px">🎯 목표</div>'
+        f'<div style="color:#86EFAC;font-size:8px">🎯 목표가</div>'
         f'<div style="font-weight:700;font-size:10px;white-space:nowrap">{fmt(qp.get("target"))}</div></td>'
         f'</tr></table>'
         f'</td></tr></table>'
@@ -282,15 +282,43 @@ def build_html(data: dict, name: str = "") -> str:
         kpi_block,
         fear_card("🇰🇷 한국장 (VKOSPI)", fear.get("vkospi")),
         fear_card("🇺🇸 미장 (VIX)", fear.get("vix")),
-        # 점수 시스템 안내 — 수신자 학습용
-        '<div style="background:#F8FAFC;border:1px dashed #CBD5E1;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:11px;color:#475569;line-height:1.65">'
-        '<b>💡 매수 의견(verdict) 안내</b> — 종목별 점수(0~150)를 5단계로 분류:<br/>'
-        '<span style="background:#D1FAE5;color:#065F46;padding:1px 6px;border-radius:4px;font-size:10px">🟢 강력매수 130+</span>&nbsp;'
-        '<span style="background:#DCFCE7;color:#166534;padding:1px 6px;border-radius:4px;font-size:10px">🟢 매수 100~130</span>&nbsp;'
-        '<span style="background:#FEF3C7;color:#92400E;padding:1px 6px;border-radius:4px;font-size:10px">🟡 신중매수 80~100</span>&nbsp;'
-        '<span style="background:#FEF9C3;color:#854D0E;padding:1px 6px;border-radius:4px;font-size:10px">🟡 관망 60~80</span>'
-        '<br/><span style="font-size:10px;color:#6B7280">점수 = 펀더멘털 + 저평가 + 진입신호 + 섹터사이클 + 수급. 60점 미달은 자동 미추천.</span>'
-        '</div>',
+        # 활용 가이드 — 초보자 4단계
+        '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;background:linear-gradient(135deg,#FAFBFF,#F0F5FF);border:1px solid #DBEAFE;border-radius:10px;margin-top:10px">'
+        '<tr><td style="padding:12px 14px">'
+        '<div style="font-size:11px;font-weight:800;color:#0B1B3D;margin-bottom:8px">🎯 어떻게 활용하나요? — 4단계</div>'
+        '<table style="width:100%;border-collapse:collapse;table-layout:fixed"><tr>'
+        '<td style="width:25%;text-align:center;padding:0 4px">'
+        '<div style="width:32px;height:32px;background:#1E3A8A;border-radius:50%;color:#fff;font-size:16px;line-height:32px;margin:0 auto">📨</div>'
+        '<div style="font-size:9px;font-weight:700;color:#FFB020;margin-top:3px">STEP 1</div>'
+        '<div style="font-size:10px;font-weight:700;color:#0B1B3D;margin-top:2px">메일 받기</div>'
+        '<div style="font-size:9px;color:#6B7280;margin-top:1px;line-height:1.4">매일 아침 자동</div></td>'
+        '<td style="width:25%;text-align:center;padding:0 4px">'
+        '<div style="width:32px;height:32px;background:#3B82F6;border-radius:50%;color:#fff;font-size:16px;line-height:32px;margin:0 auto">🔍</div>'
+        '<div style="font-size:9px;font-weight:700;color:#FFB020;margin-top:3px">STEP 2</div>'
+        '<div style="font-size:10px;font-weight:700;color:#0B1B3D;margin-top:2px">등급 확인</div>'
+        '<div style="font-size:9px;color:#6B7280;margin-top:1px;line-height:1.4">🟢 매수 / 🟡 신중</div></td>'
+        '<td style="width:25%;text-align:center;padding:0 4px">'
+        '<div style="width:32px;height:32px;background:#10B981;border-radius:50%;color:#fff;font-size:16px;line-height:32px;margin:0 auto">💰</div>'
+        '<div style="font-size:9px;font-weight:700;color:#FFB020;margin-top:3px">STEP 3</div>'
+        '<div style="font-size:10px;font-weight:700;color:#0B1B3D;margin-top:2px">분할 매수</div>'
+        '<div style="font-size:9px;color:#6B7280;margin-top:1px;line-height:1.4">자본 10~20%</div></td>'
+        '<td style="width:25%;text-align:center;padding:0 4px">'
+        '<div style="width:32px;height:32px;background:#F59E0B;border-radius:50%;color:#fff;font-size:16px;line-height:32px;margin:0 auto">⏰</div>'
+        '<div style="font-size:9px;font-weight:700;color:#FFB020;margin-top:3px">STEP 4</div>'
+        '<div style="font-size:10px;font-weight:700;color:#0B1B3D;margin-top:2px">자동 청산</div>'
+        '<div style="font-size:9px;color:#6B7280;margin-top:1px;line-height:1.4">5일 안에</div></td>'
+        '</tr></table>'
+        '<div style="font-size:10px;color:#475569;line-height:1.55;margin-top:10px;padding-top:8px;border-top:1px dashed #DBEAFE">'
+        '<b>매수의견(verdict)</b> — 점수 5단계: '
+        '<span style="background:#D1FAE5;color:#065F46;padding:1px 5px;border-radius:3px;font-size:9px">🟢 강력매수 130+</span> '
+        '<span style="background:#DCFCE7;color:#166534;padding:1px 5px;border-radius:3px;font-size:9px">🟢 매수 100~130</span> '
+        '<span style="background:#FEF3C7;color:#92400E;padding:1px 5px;border-radius:3px;font-size:9px">🟡 신중 80~100</span> '
+        '<span style="background:#FEF9C3;color:#854D0E;padding:1px 5px;border-radius:3px;font-size:9px">🟡 관망 60~80</span>'
+        '</div>'
+        '<div style="font-size:10px;color:#475569;line-height:1.55;margin-top:6px">'
+        '<b>3가지 원칙</b> · ✅ 손절가 무조건 지키기 · ✅ 한 종목 몰빵 금지 · ✅ 5일 안에 매도'
+        '</div>'
+        '</td></tr></table>',
     ]
 
     # 부족분 사유 결정
@@ -376,15 +404,15 @@ def build_html(data: dict, name: str = "") -> str:
   <div style="margin-top:8px;font-size:12px;color:#374151;line-height:1.5">{one_liner}</div>
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:8px;font-size:12px;border-collapse:separate;border-spacing:0 3px">
     <tr>
-      <td style="background:#F1F5F9;padding:8px 10px;border-radius:6px;font-weight:600;color:#334155;white-space:nowrap;width:60px">📥 진입</td>
+      <td style="background:#F1F5F9;padding:8px 10px;border-radius:6px;font-weight:600;color:#334155;white-space:nowrap;width:65px">📥 매수가</td>
       <td style="background:#F1F5F9;padding:8px 10px;border-radius:6px;font-weight:700;text-align:right;white-space:nowrap;font-size:12px">{elo} ~ {ehi}</td>
     </tr>
     <tr>
-      <td style="background:#FEE2E2;padding:8px 10px;border-radius:6px;font-weight:600;color:#991B1B;white-space:nowrap;width:60px">🛑 손절</td>
+      <td style="background:#FEE2E2;padding:8px 10px;border-radius:6px;font-weight:600;color:#991B1B;white-space:nowrap;width:65px">🛑 손절가</td>
       <td style="background:#FEE2E2;padding:8px 10px;border-radius:6px;font-weight:700;color:#991B1B;text-align:right;white-space:nowrap">{stp}</td>
     </tr>
     <tr>
-      <td style="background:#DCFCE7;padding:8px 10px;border-radius:6px;font-weight:600;color:#166534;white-space:nowrap;width:60px">🎯 목표</td>
+      <td style="background:#DCFCE7;padding:8px 10px;border-radius:6px;font-weight:600;color:#166534;white-space:nowrap;width:65px">🎯 목표가</td>
       <td style="background:#DCFCE7;padding:8px 10px;border-radius:6px;font-weight:700;color:#166534;text-align:right;white-space:nowrap">{tgt}</td>
     </tr>
   </table>
