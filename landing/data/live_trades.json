@@ -51,7 +51,7 @@
     {
       "ticker": "PLTR",
       "market": "us",
-      "name": "Palantir Technologies Inc.",
+      "name": "Palantir",
       "sector": "Technology",
       "entry_date": "2026-04-30",
       "entry_price": 137.97000122070312,
@@ -67,7 +67,7 @@
     {
       "ticker": "APP",
       "market": "us",
-      "name": "Applovin Corporation",
+      "name": "Applovin",
       "sector": "Communication Services",
       "entry_date": "2026-04-30",
       "entry_price": 443.42999267578125,
@@ -83,7 +83,7 @@
     {
       "ticker": "META",
       "market": "us",
-      "name": "Meta Platforms, Inc.",
+      "name": "Meta Platforms",
       "sector": "Communication Services",
       "entry_date": "2026-04-30",
       "entry_price": 669.1199951171875,
@@ -147,7 +147,7 @@
     {
       "ticker": "251270",
       "market": "kr",
-      "name": "Netmarble",
+      "name": "넷마블",
       "sector": "코스피·코스닥",
       "entry_date": "2026-04-30",
       "entry_price": 50700.0,
@@ -165,7 +165,7 @@
     {
       "ticker": "251270",
       "market": "kr",
-      "name": "",
+      "name": "넷마블",
       "entry_date": "2026-04-24",
       "exit_date": "2026-04-30",
       "bars_held": 5,
@@ -176,7 +176,7 @@
     {
       "ticker": "047810",
       "market": "kr",
-      "name": "",
+      "name": "한국항공우주",
       "entry_date": "2026-04-27",
       "exit_date": "2026-04-30",
       "bars_held": 4,
@@ -187,7 +187,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-04-27",
       "exit_date": "2026-04-29",
       "bars_held": 3,
@@ -220,7 +220,7 @@
     {
       "ticker": "240810",
       "market": "kr",
-      "name": "",
+      "name": "원익IPS",
       "entry_date": "2026-04-24",
       "exit_date": "2026-04-27",
       "bars_held": 2,
@@ -264,7 +264,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-04-17",
       "exit_date": "2026-04-20",
       "bars_held": 2,
@@ -286,7 +286,7 @@
     {
       "ticker": "403870",
       "market": "kr",
-      "name": "",
+      "name": "HPSP",
       "entry_date": "2026-04-14",
       "exit_date": "2026-04-17",
       "bars_held": 4,
@@ -341,7 +341,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-04-09",
       "exit_date": "2026-04-15",
       "bars_held": 5,
@@ -407,7 +407,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-04-09",
       "exit_date": "2026-04-14",
       "bars_held": 4,
@@ -440,7 +440,7 @@
     {
       "ticker": "140860",
       "market": "kr",
-      "name": "",
+      "name": "파크시스템스",
       "entry_date": "2026-04-09",
       "exit_date": "2026-04-09",
       "bars_held": 1,
@@ -473,7 +473,7 @@
     {
       "ticker": "302440",
       "market": "kr",
-      "name": "",
+      "name": "SK바이오사이언스",
       "entry_date": "2026-04-03",
       "exit_date": "2026-04-06",
       "bars_held": 2,
@@ -484,7 +484,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-04-03",
       "exit_date": "2026-04-06",
       "bars_held": 2,
@@ -528,7 +528,7 @@
     {
       "ticker": "042660",
       "market": "kr",
-      "name": "",
+      "name": "한화오션",
       "entry_date": "2026-04-01",
       "exit_date": "2026-04-02",
       "bars_held": 2,
@@ -539,7 +539,7 @@
     {
       "ticker": "009540",
       "market": "kr",
-      "name": "",
+      "name": "HD한국조선해양",
       "entry_date": "2026-04-02",
       "exit_date": "2026-04-02",
       "bars_held": 1,
@@ -550,7 +550,7 @@
     {
       "ticker": "010140",
       "market": "kr",
-      "name": "",
+      "name": "삼성중공업",
       "entry_date": "2026-03-31",
       "exit_date": "2026-04-01",
       "bars_held": 2,
@@ -583,7 +583,7 @@
     {
       "ticker": "108320",
       "market": "kr",
-      "name": "",
+      "name": "LX세미콘",
       "entry_date": "2026-03-24",
       "exit_date": "2026-03-30",
       "bars_held": 5,
@@ -594,7 +594,7 @@
     {
       "ticker": "035900",
       "market": "kr",
-      "name": "",
+      "name": "JYP Ent.",
       "entry_date": "2026-03-24",
       "exit_date": "2026-03-30",
       "bars_held": 5,
@@ -638,7 +638,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-03-26",
       "exit_date": "2026-03-26",
       "bars_held": 1,
@@ -660,7 +660,7 @@
     {
       "ticker": "012330",
       "market": "kr",
-      "name": "",
+      "name": "현대모비스",
       "entry_date": "2026-03-23",
       "exit_date": "2026-03-25",
       "bars_held": 3,
@@ -671,7 +671,7 @@
     {
       "ticker": "010140",
       "market": "kr",
-      "name": "",
+      "name": "삼성중공업",
       "entry_date": "2026-03-24",
       "exit_date": "2026-03-24",
       "bars_held": 1,
@@ -682,7 +682,7 @@
     {
       "ticker": "009540",
       "market": "kr",
-      "name": "",
+      "name": "HD한국조선해양",
       "entry_date": "2026-03-24",
       "exit_date": "2026-03-24",
       "bars_held": 1,
@@ -693,7 +693,7 @@
     {
       "ticker": "302440",
       "market": "kr",
-      "name": "",
+      "name": "SK바이오사이언스",
       "entry_date": "2026-03-20",
       "exit_date": "2026-03-23",
       "bars_held": 2,
@@ -737,7 +737,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-03-12",
       "exit_date": "2026-03-18",
       "bars_held": 5,
@@ -759,7 +759,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-03-13",
       "exit_date": "2026-03-17",
       "bars_held": 3,
@@ -792,7 +792,7 @@
     {
       "ticker": "020150",
       "market": "kr",
-      "name": "",
+      "name": "일진머티리얼즈",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-06",
       "bars_held": 2,
@@ -814,7 +814,7 @@
     {
       "ticker": "009540",
       "market": "kr",
-      "name": "",
+      "name": "HD한국조선해양",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-06",
       "bars_held": 2,
@@ -825,7 +825,7 @@
     {
       "ticker": "042660",
       "market": "kr",
-      "name": "",
+      "name": "한화오션",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-06",
       "bars_held": 2,
@@ -836,7 +836,7 @@
     {
       "ticker": "251270",
       "market": "kr",
-      "name": "",
+      "name": "넷마블",
       "entry_date": "2026-03-06",
       "exit_date": "2026-03-06",
       "bars_held": 1,
@@ -880,7 +880,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-05",
       "bars_held": 1,
@@ -891,7 +891,7 @@
     {
       "ticker": "047810",
       "market": "kr",
-      "name": "",
+      "name": "한국항공우주",
       "entry_date": "2026-03-05",
       "exit_date": "2026-03-05",
       "bars_held": 1,
@@ -913,7 +913,7 @@
     {
       "ticker": "302440",
       "market": "kr",
-      "name": "",
+      "name": "SK바이오사이언스",
       "entry_date": "2026-03-04",
       "exit_date": "2026-03-04",
       "bars_held": 1,
@@ -924,7 +924,7 @@
     {
       "ticker": "035900",
       "market": "kr",
-      "name": "",
+      "name": "JYP Ent.",
       "entry_date": "2026-03-04",
       "exit_date": "2026-03-04",
       "bars_held": 1,
@@ -968,7 +968,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-02-13",
       "exit_date": "2026-02-24",
       "bars_held": 5,
@@ -979,7 +979,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-02-13",
       "exit_date": "2026-02-24",
       "bars_held": 5,
@@ -1001,7 +1001,7 @@
     {
       "ticker": "009540",
       "market": "kr",
-      "name": "",
+      "name": "HD한국조선해양",
       "entry_date": "2026-02-10",
       "exit_date": "2026-02-10",
       "bars_held": 1,
@@ -1012,7 +1012,7 @@
     {
       "ticker": "010140",
       "market": "kr",
-      "name": "",
+      "name": "삼성중공업",
       "entry_date": "2026-02-03",
       "exit_date": "2026-02-06",
       "bars_held": 4,
@@ -1023,7 +1023,7 @@
     {
       "ticker": "036570",
       "market": "kr",
-      "name": "",
+      "name": "엔씨소프트",
       "entry_date": "2026-02-04",
       "exit_date": "2026-02-06",
       "bars_held": 3,
@@ -1034,7 +1034,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-02-06",
       "exit_date": "2026-02-06",
       "bars_held": 1,
@@ -1089,7 +1089,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-02-02",
       "exit_date": "2026-02-02",
       "bars_held": 1,
@@ -1100,7 +1100,7 @@
     {
       "ticker": "079550",
       "market": "kr",
-      "name": "",
+      "name": "LIG넥스원",
       "entry_date": "2026-02-02",
       "exit_date": "2026-02-02",
       "bars_held": 1,
@@ -1111,7 +1111,7 @@
     {
       "ticker": "108320",
       "market": "kr",
-      "name": "",
+      "name": "LX세미콘",
       "entry_date": "2026-01-22",
       "exit_date": "2026-01-28",
       "bars_held": 5,
@@ -1122,7 +1122,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-01-26",
       "exit_date": "2026-01-27",
       "bars_held": 2,
@@ -1133,7 +1133,7 @@
     {
       "ticker": "035900",
       "market": "kr",
-      "name": "",
+      "name": "JYP Ent.",
       "entry_date": "2026-01-22",
       "exit_date": "2026-01-26",
       "bars_held": 3,
@@ -1144,7 +1144,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-01-23",
       "exit_date": "2026-01-26",
       "bars_held": 2,
@@ -1188,7 +1188,7 @@
     {
       "ticker": "095340",
       "market": "kr",
-      "name": "",
+      "name": "ISC",
       "entry_date": "2026-01-21",
       "exit_date": "2026-01-22",
       "bars_held": 2,
@@ -1210,7 +1210,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-01-22",
       "exit_date": "2026-01-22",
       "bars_held": 1,
@@ -1221,7 +1221,7 @@
     {
       "ticker": "388050",
       "market": "kr",
-      "name": "",
+      "name": "SFA반도체",
       "entry_date": "2026-01-20",
       "exit_date": "2026-01-20",
       "bars_held": 1,
@@ -1232,7 +1232,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-01-19",
       "exit_date": "2026-01-19",
       "bars_held": 1,
@@ -1243,7 +1243,7 @@
     {
       "ticker": "302440",
       "market": "kr",
-      "name": "",
+      "name": "SK바이오사이언스",
       "entry_date": "2026-01-08",
       "exit_date": "2026-01-14",
       "bars_held": 5,
@@ -1254,7 +1254,7 @@
     {
       "ticker": "251270",
       "market": "kr",
-      "name": "",
+      "name": "넷마블",
       "entry_date": "2026-01-08",
       "exit_date": "2026-01-14",
       "bars_held": 5,
@@ -1276,7 +1276,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-01-12",
       "exit_date": "2026-01-14",
       "bars_held": 3,
@@ -1287,7 +1287,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-01-09",
       "exit_date": "2026-01-12",
       "bars_held": 2,
@@ -1298,7 +1298,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-01-12",
       "exit_date": "2026-01-12",
       "bars_held": 1,
@@ -1342,7 +1342,7 @@
     {
       "ticker": "108320",
       "market": "kr",
-      "name": "",
+      "name": "LX세미콘",
       "entry_date": "2026-01-05",
       "exit_date": "2026-01-09",
       "bars_held": 5,
@@ -1430,7 +1430,7 @@
     {
       "ticker": "009540",
       "market": "kr",
-      "name": "",
+      "name": "HD한국조선해양",
       "entry_date": "2026-01-05",
       "exit_date": "2026-01-06",
       "bars_held": 2,
@@ -1452,7 +1452,7 @@
     {
       "ticker": "214450",
       "market": "kr",
-      "name": "",
+      "name": "파마리서치",
       "entry_date": "2026-01-05",
       "exit_date": "2026-01-05",
       "bars_held": 1,
@@ -1463,7 +1463,7 @@
     {
       "ticker": "145020",
       "market": "kr",
-      "name": "",
+      "name": "휴젤",
       "entry_date": "2026-01-05",
       "exit_date": "2026-01-05",
       "bars_held": 1,
@@ -1474,7 +1474,7 @@
     {
       "ticker": "112040",
       "market": "kr",
-      "name": "",
+      "name": "위메이드",
       "entry_date": "2026-01-05",
       "exit_date": "2026-01-05",
       "bars_held": 1,

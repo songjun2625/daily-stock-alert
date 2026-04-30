@@ -120,60 +120,62 @@ def build_html(data: dict, name: str = "") -> str:
 
     kpi_block = ""
     if n > 0:
+        # 모바일 가독성: 폰트 22→16px / 라벨 11→10px / nowrap 강제 / 라벨 단축 / 패딩 축소
         kpi_block = (f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
                      f'style="width:100%;background:linear-gradient(135deg,#0B1B3D,#1E3A8A);'
-                     f'border-radius:14px;margin:0 0 18px 0;color:#fff">'
-                     f'<tr><td style="padding:18px 20px">'
-                     f'<div style="font-size:11px;color:#A5B4FC;letter-spacing:.5px;text-transform:uppercase;font-weight:600">'
-                     f'📊 누적 추천 성과 · {period_str}</div>'
-                     f'<table style="width:100%;margin-top:12px;border-collapse:collapse"><tr>'
-                     f'<td style="width:33%;padding:0 8px 0 0">'
-                     f'<div style="font-size:11px;color:#A5B4FC">누적 수익률</div>'
-                     f'<div style="font-size:22px;font-weight:800;color:{cum_color};line-height:1.2">{cum_sign}{cum:.2f}%</div>'
+                     f'border-radius:12px;margin:0 0 14px 0;color:#fff">'
+                     f'<tr><td style="padding:14px 14px 12px 14px">'
+                     f'<div style="font-size:10px;color:#A5B4FC;letter-spacing:.4px;text-transform:uppercase;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'
+                     f'📊 누적 성과 · {period_str}</div>'
+                     f'<table style="width:100%;margin-top:8px;border-collapse:collapse;table-layout:fixed"><tr>'
+                     f'<td style="width:40%;padding:0 4px 0 0;vertical-align:top">'
+                     f'<div style="font-size:10px;color:#A5B4FC;white-space:nowrap">누적 수익률</div>'
+                     f'<div style="font-size:18px;font-weight:800;color:{cum_color};line-height:1.15;white-space:nowrap">{cum_sign}{cum:.1f}%</div>'
                      f'</td>'
-                     f'<td style="width:33%;padding:0 8px">'
-                     f'<div style="font-size:11px;color:#A5B4FC">승률</div>'
-                     f'<div style="font-size:22px;font-weight:800;color:#fff;line-height:1.2">{win:.1f}%</div>'
+                     f'<td style="width:30%;padding:0 4px;vertical-align:top">'
+                     f'<div style="font-size:10px;color:#A5B4FC;white-space:nowrap">승률</div>'
+                     f'<div style="font-size:18px;font-weight:800;color:#fff;line-height:1.15;white-space:nowrap">{win:.1f}%</div>'
                      f'</td>'
-                     f'<td style="width:34%;padding:0 0 0 8px">'
-                     f'<div style="font-size:11px;color:#A5B4FC">청산 거래</div>'
-                     f'<div style="font-size:22px;font-weight:800;color:#fff;line-height:1.2">{n}건</div>'
+                     f'<td style="width:30%;padding:0 0 0 4px;vertical-align:top">'
+                     f'<div style="font-size:10px;color:#A5B4FC;white-space:nowrap">청산</div>'
+                     f'<div style="font-size:18px;font-weight:800;color:#fff;line-height:1.15;white-space:nowrap">{n}건</div>'
                      f'</td></tr></table>'
                      f'</td></tr></table>')
 
-    def fear_row(label, info):
+    # 공포지수 — 한 줄 카드 형태로 변경 (table 셀 wrap 이슈 회피)
+    def fear_card(label, info):
         if not info: return ""
-        return (f'<tr><td style="padding:4px 12px;color:#6B7280">{label}</td>'
-                f'<td style="padding:4px 12px;font-weight:600">{info.get("value")} {info.get("light","")} {info.get("label","")}</td>'
-                f'<td style="padding:4px 12px;color:#6B7280">{info.get("summary","")}</td></tr>')
+        return (f'<div style="display:block;padding:8px 12px;background:#F8FAFC;border-radius:8px;margin-bottom:6px;font-size:12px;line-height:1.5">'
+                f'<span style="color:#6B7280;white-space:nowrap">{label}</span>'
+                f'&nbsp;&nbsp;<span style="font-weight:700;white-space:nowrap">{info.get("value")} {info.get("light","")} {info.get("label","")}</span>'
+                f'&nbsp;<span style="color:#6B7280;font-size:11px">— {info.get("summary","")}</span>'
+                f'</div>')
 
     html = [
-        '<div style="font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;color:#0B1B3D;background:#F7F8FB;padding:20px">',
-        '<div style="background:#fff;border-radius:14px;padding:24px;border:1px solid #EAEAF0">',
-        '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">',
-        '  <span style="display:inline-block;width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,#0B1B3D,#1E3A8A)"></span>',
-        '  <span style="font-weight:800;font-size:14px;color:#0B1B3D;letter-spacing:.3px">데일리 픽</span>',
+        '<div style="font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;color:#0B1B3D;background:#F7F8FB;padding:14px">',
+        '<div style="background:#fff;border-radius:14px;padding:18px;border:1px solid #EAEAF0">',
+        '<div style="display:block;margin-bottom:6px">',
+        '  <span style="display:inline-block;width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#0B1B3D,#1E3A8A);vertical-align:middle"></span>',
+        '  <span style="font-weight:800;font-size:13px;color:#0B1B3D;letter-spacing:.3px;vertical-align:middle;margin-left:6px">데일리 픽</span>',
         '</div>',
-        '  <h2 style="margin:0 0 4px 0;font-size:22px">오늘의 종목</h2>',
-        f'  <div style="color:#6B7280;font-size:13px">{greeting}갱신: {data.get("updated_at_kst","")}</div>',
+        '  <h2 style="margin:0 0 3px 0;font-size:18px">오늘의 종목</h2>',
+        f'  <div style="color:#6B7280;font-size:11px">{greeting}갱신: {data.get("updated_at_kst","")}</div>',
         kpi_block,
-        '  <table style="border-collapse:collapse;margin:16px 0;font-size:13px">',
-        fear_row("🇰🇷 한국장 공포지수", fear.get("vkospi")),
-        fear_row("🇺🇸 미장 공포지수", fear.get("vix")),
-        '  </table>',
+        fear_card("🇰🇷 한국장 (VKOSPI)", fear.get("vkospi")),
+        fear_card("🇺🇸 미장 (VIX)", fear.get("vix")),
     ]
 
     for market, label in [("kr", "🇰🇷 코스피·코스닥"), ("us", "🇺🇸 나스닥·NYSE"), ("futures", "📊 선물·ETF")]:
         picks = ((data.get(market) or {}).get("picks")) or []
         if not picks: continue
-        html.append(f'<h3 style="margin:24px 0 8px 0;border-bottom:2px solid #1E3A8A;padding-bottom:6px">{label}</h3>')
+        html.append(f'<h3 style="margin:18px 0 8px 0;font-size:14px;border-bottom:2px solid #1E3A8A;padding-bottom:5px">{label}</h3>')
         for p in picks:
             cur = "$" if market == "us" else ""
             try:
                 price = float(p.get("price") or 0)
                 if market == "us":
                     krw = int(p.get("price_krw") or 0)
-                    price_fmt = f"${price:,.2f} (≈ {krw:,}원)"
+                    price_fmt = f"${price:,.2f} <span style=\"font-size:12px;color:#6B7280;font-weight:500\">≈ {krw:,}원</span>"
                 else:
                     price_fmt = f"{int(price):,}원"
             except (TypeError, ValueError):
@@ -191,50 +193,47 @@ def build_html(data: dict, name: str = "") -> str:
             stp = _fmt_money(p.get("stoploss"), market)
             tgt = _fmt_money(p.get("target"), market)
 
-            # 매매가격 표는 항상 3행(레이블+값) 세로 배치 — 모바일/데스크탑 모두 안전.
-            # 좁은 화면에서 가로 3열은 가격 텍스트가 잘림. 세로면 어떤 길이도 OK.
+            # 모바일 우선: 헤더 줄바꿈 시 깨짐 방지 — 한 줄에 sector + ticker, 다음 줄에 name + score
             html.append(f'''
-<div style="border:1px solid #EAEAF0;border-radius:12px;padding:14px;margin-bottom:10px">
-  <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
-    <div>
-      <span style="background:#F1F5F9;color:#334155;padding:2px 8px;border-radius:999px;font-size:11px">{sector}</span>
-      <strong style="font-size:16px;margin-left:6px">{ticker}</strong>
-      <span style="color:#6B7280;font-size:13px"> {cname}</span>
-    </div>
-    <span style="background:#DBEAFE;color:#1E40AF;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600">{score_str}점</span>
+<div style="border:1px solid #EAEAF0;border-radius:12px;padding:12px;margin-bottom:10px">
+  <div style="font-size:11px;color:#334155;margin-bottom:4px">
+    <span style="background:#F1F5F9;padding:2px 8px;border-radius:999px;white-space:nowrap">{sector}</span>
+    <span style="background:#DBEAFE;color:#1E40AF;padding:2px 8px;border-radius:999px;font-weight:600;margin-left:4px;white-space:nowrap">{score_str}점</span>
   </div>
-  <div style="margin-top:6px;font-size:18px;font-weight:700;word-break:break-all">{price_fmt}</div>
-  <div style="margin-top:6px;font-size:13px;color:#374151;line-height:1.5">{one_liner}</div>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:10px;font-size:13px;border-collapse:separate;border-spacing:0 4px">
+  <div style="font-size:14px;font-weight:700;line-height:1.3">
+    {ticker} <span style="color:#6B7280;font-weight:500;font-size:12px">{cname}</span>
+  </div>
+  <div style="margin-top:4px;font-size:16px;font-weight:800;color:#0B1B3D">{price_fmt}</div>
+  <div style="margin-top:6px;font-size:12px;color:#374151;line-height:1.5">{one_liner}</div>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:8px;font-size:12px;border-collapse:separate;border-spacing:0 3px">
     <tr>
-      <td style="background:#F1F5F9;padding:10px 12px;border-radius:8px;font-weight:600;color:#334155;white-space:nowrap;width:1%">📥 진입</td>
-      <td style="background:#F1F5F9;padding:10px 12px;border-radius:8px;font-weight:700;text-align:right;word-break:break-all">{elo} ~ {ehi}</td>
+      <td style="background:#F1F5F9;padding:8px 10px;border-radius:6px;font-weight:600;color:#334155;white-space:nowrap;width:60px">📥 진입</td>
+      <td style="background:#F1F5F9;padding:8px 10px;border-radius:6px;font-weight:700;text-align:right;white-space:nowrap;font-size:12px">{elo} ~ {ehi}</td>
     </tr>
     <tr>
-      <td style="background:#FEE2E2;padding:10px 12px;border-radius:8px;font-weight:600;color:#991B1B;white-space:nowrap;width:1%">🛑 손절</td>
-      <td style="background:#FEE2E2;padding:10px 12px;border-radius:8px;font-weight:700;color:#991B1B;text-align:right;word-break:break-all">{stp}</td>
+      <td style="background:#FEE2E2;padding:8px 10px;border-radius:6px;font-weight:600;color:#991B1B;white-space:nowrap;width:60px">🛑 손절</td>
+      <td style="background:#FEE2E2;padding:8px 10px;border-radius:6px;font-weight:700;color:#991B1B;text-align:right;white-space:nowrap">{stp}</td>
     </tr>
     <tr>
-      <td style="background:#DCFCE7;padding:10px 12px;border-radius:8px;font-weight:600;color:#166534;white-space:nowrap;width:1%">🎯 목표</td>
-      <td style="background:#DCFCE7;padding:10px 12px;border-radius:8px;font-weight:700;color:#166534;text-align:right;word-break:break-all">{tgt}</td>
+      <td style="background:#DCFCE7;padding:8px 10px;border-radius:6px;font-weight:600;color:#166534;white-space:nowrap;width:60px">🎯 목표</td>
+      <td style="background:#DCFCE7;padding:8px 10px;border-radius:6px;font-weight:700;color:#166534;text-align:right;white-space:nowrap">{tgt}</td>
     </tr>
   </table>
 </div>''')
 
     html.append(f'''
-  <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap">
-    <a href="{SITE_URL}" style="display:inline-block;background:#0B1B3D;color:#fff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px">📈 라이브 트래킹 페이지 →</a>
-    <a href="{SITE_URL.replace('today.html','index.html#pricing')}" style="display:inline-block;background:#fff;color:#0B1B3D;border:1px solid #E5E7EB;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px">요금제 보기</a>
+  <div style="margin-top:18px">
+    <a href="{SITE_URL}" style="display:block;background:#0B1B3D;color:#fff;padding:11px 16px;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px;text-align:center;margin-bottom:6px">📈 라이브 트래킹 페이지 보기 →</a>
+    <a href="{SITE_URL.replace('today.html','index.html#pricing')}" style="display:block;background:#fff;color:#0B1B3D;border:1px solid #E5E7EB;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:12px;text-align:center">요금제 보기</a>
   </div>
-  <p style="margin-top:24px;font-size:11px;color:#9A3412;background:#FFF7ED;border:1px solid #FED7AA;padding:12px;border-radius:8px;line-height:1.7">
+  <p style="margin-top:18px;font-size:10px;color:#9A3412;background:#FFF7ED;border:1px solid #FED7AA;padding:10px;border-radius:6px;line-height:1.6">
     <b>⚠️ 면책 및 고지</b><br/>
-    본 정보는 투자 권유가 아니며, 모든 투자 결과는 투자자 본인에게 귀속됩니다.
-    과거 수익률은 미래 수익을 보장하지 않습니다. 본 서비스는 「자본시장법」상 유사투자자문업으로 신고된 1:多 일방 발송 정보 서비스이며, 회원별 1:1 자문이나 자산·포트폴리오 분석은 제공하지 않습니다. 레버리지 ETF·선물·옵션은 손실이 원금의 2~3배로 확대될 수 있습니다.
+    본 정보는 투자 권유가 아니며, 모든 투자 결과는 투자자 본인에게 귀속됩니다. 과거 수익률은 미래 수익을 보장하지 않습니다. 본 서비스는 「자본시장법」상 유사투자자문업으로 신고된 1:多 일방 발송 정보 서비스이며, 회원별 1:1 자문이나 자산·포트폴리오 분석은 제공하지 않습니다. 레버리지 ETF·선물·옵션은 손실이 원금의 2~3배로 확대될 수 있습니다.
   </p>
 </div>
-<div style="text-align:center;padding:20px 8px;font-size:11px;color:#9CA3AF;line-height:1.7">
+<div style="text-align:center;padding:14px 6px;font-size:10px;color:#9CA3AF;line-height:1.6">
   © 2026 PortZone Inc. · (주)포트존 · 유사투자자문업 신고: 제○○○○-○○○호<br/>
-  문의: <a href="mailto:contact@portzone.kr" style="color:#6B7280">contact@portzone.kr</a> · 수신거부: 회신 또는 080-***-****
+  문의 <a href="mailto:contact@portzone.kr" style="color:#6B7280">contact@portzone.kr</a> · 수신거부 080-***-****
 </div>
 </div>''')
     return "\n".join(html)
