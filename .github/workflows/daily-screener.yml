@@ -18,6 +18,10 @@ on:
         description: '시장 선택 (kr / us / both)'
         required: false
         default: 'both'
+      test_recipient:
+        description: '테스트 발송 — 이 이메일에만 발송 (비워두면 시트 전체 발송). "self" = GMAIL_USER 본인'
+        required: false
+        default: ''
 
 permissions:
   contents: write          # picks.json 자동 커밋
@@ -80,12 +84,29 @@ jobs:
 
       # Gmail SMTP 직접 발송 (Apps Script 불필요, 어떤 Google 계정에서도 작동)
       # 구독자 목록은 공개 구글시트 CSV 에서 매번 fetch — 시트 행 추가 즉시 반영.
-      - name: Send emails to subscribers
-        if: steps.commit.outputs.changed == 'true' && env.GMAIL_USER != ''
+      # workflow_dispatch 의 test_recipient 입력이 있으면 한 명에게만 테스트 발송.
+      - name: Resolve test recipient
+        id: test_recipient
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          INPUT_RECIPIENT: ${{ github.event.inputs.test_recipient }}
+        run: |
+          if [ -z "$INPUT_RECIPIENT" ]; then
+            echo "email=" >> $GITHUB_OUTPUT
+          elif [ "$INPUT_RECIPIENT" = "self" ]; then
+            echo "email=$GMAIL_USER" >> $GITHUB_OUTPUT
+          else
+            echo "email=$INPUT_RECIPIENT" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send emails (production = subscribers / test = single recipient)
+        if: env.GMAIL_USER != '' && (steps.commit.outputs.changed == 'true' || steps.test_recipient.outputs.email != '')
         env:
           GMAIL_USER:            ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD:    ${{ secrets.GMAIL_APP_PASSWORD }}
           SUBSCRIBERS_SHEET_CSV: ${{ secrets.SUBSCRIBERS_SHEET_CSV }}
+          TEST_RECIPIENT_EMAIL:  ${{ steps.test_recipient.outputs.email }}
         run: python tools/send_emails.py
 
       # (옵션) Slack 요약 발송

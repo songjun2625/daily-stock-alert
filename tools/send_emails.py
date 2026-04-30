@@ -298,20 +298,29 @@ def main() -> int:
 
     data = json.loads(PICKS_PATH.read_text(encoding="utf-8"))
 
-    csv_url = os.getenv("SUBSCRIBERS_SHEET_CSV", "").strip()
-    if not csv_url:
-        log.warning("SUBSCRIBERS_SHEET_CSV 미설정 — 스킵 (이메일 발송 안 함)")
-        return 0
-
-    subs = fetch_subscribers(csv_url)
-    if not subs:
-        log.warning("활성 구독자 0명 — 발송 스킵")
-        return 0
-    log.info("구독자 %d명 fetch", len(subs))
-
     gmail_user = os.getenv("GMAIL_USER")
     gmail_pw   = (os.getenv("GMAIL_APP_PASSWORD") or "").replace(" ", "")
     dry = os.getenv("NOTIFY_DRY_RUN", "").lower() in ("1", "true", "yes")
+
+    # 테스트 모드 — TEST_RECIPIENT_EMAIL 가 설정되면 시트 무시하고 그 한 명에게만 발송
+    # (값이 비어있고 자동완성이 아니라면 GMAIL_USER 본인에게 발송)
+    test_email = (os.getenv("TEST_RECIPIENT_EMAIL") or "").strip()
+    if test_email:
+        if "@" not in test_email:
+            log.error("TEST_RECIPIENT_EMAIL 형식 오류: %s", test_email); return 4
+        subs = [{"email": test_email, "name": "Test", "markets": ["kr", "us", "futures"]}]
+        log.info("🧪 TEST 모드 — 단일 수신자 발송: %s", test_email)
+    else:
+        csv_url = os.getenv("SUBSCRIBERS_SHEET_CSV", "").strip()
+        if not csv_url:
+            log.warning("SUBSCRIBERS_SHEET_CSV 미설정 — 스킵 (이메일 발송 안 함)")
+            return 0
+        subs = fetch_subscribers(csv_url)
+        if not subs:
+            log.warning("활성 구독자 0명 — 발송 스킵")
+            return 0
+        log.info("구독자 %d명 fetch", len(subs))
+
     if not dry and not (gmail_user and gmail_pw):
         log.error("GMAIL_USER / GMAIL_APP_PASSWORD 미설정"); return 2
 
