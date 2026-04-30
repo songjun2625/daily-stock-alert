@@ -3,8 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>오늘의 종목 — 데일리 픽</title>
-<meta name="description" content="코스피·코스닥·나스닥·선물·ETF 단기 스윙(3~5일) 후보 종목 + 매수/매도 가이드 + 공포지수." />
+<title>오늘의 종목 — 데일리 픽 | 매일 자동 선정 단기 스윙 추천</title>
+<meta name="description" content="코스피·코스닥·나스닥 단기 스윙(3~5일) 후보 종목 자동 선정. 매수·손절·목표가 + 공포지수 + 누적 성과 라이브 트래킹." />
+<meta name="theme-color" content="#0B1B3D" />
+<meta name="author" content="Daily Pick" />
+<meta property="og:title" content="오늘의 종목 — 데일리 픽" />
+<meta property="og:description" content="매일 한국장 08:30 / 미장 22:00 자동 발송 · 매수·손절·목표가 + 누적 성과 +65.7% (1~4월)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://songjun2625.github.io/daily-stock-alert/today.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<!-- 인라인 SVG 파비콘 — 외부 이미지 호스팅 불필요 -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1B3D'/%3E%3Cpath d='M14 44 L24 30 L34 36 L50 18' stroke='%23FFB020' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='18' r='4' fill='%23FFB020'/%3E%3C/svg%3E" />
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
 <style>
@@ -68,6 +77,21 @@
   .pos-pnl-flat { color:#6B7280; font-weight:600; }
   .progress { background:#F1F5F9; border-radius:999px; height:6px; overflow:hidden; }
   .progress > span { display:block; height:100%; background:linear-gradient(90deg,#10B981,#3B82F6); }
+  /* 공포지수 게이지 */
+  .fear-gauge { position:relative; height:6px; background:linear-gradient(90deg,#10B981 0%,#FBBF24 50%,#DC2626 100%); border-radius:999px; margin-top:10px; }
+  .fear-gauge .marker { position:absolute; top:-4px; width:14px; height:14px; border-radius:50%; background:#fff; border:3px solid #0B1B3D; transform:translateX(-50%); transition:left .3s ease; box-shadow:0 2px 6px rgba(0,0,0,.15); }
+  .fear-gauge-labels { display:flex; justify-content:space-between; font-size:10px; color:#9CA3AF; margin-top:4px; font-weight:500; }
+  /* live dot — 데이터 신선도 표시 */
+  .live-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#10B981; box-shadow:0 0 0 0 rgba(16,185,129,.6); animation:pulse-dot 2s infinite; vertical-align:middle; margin-right:6px; }
+  @keyframes pulse-dot { 0%{box-shadow:0 0 0 0 rgba(16,185,129,.6)} 70%{box-shadow:0 0 0 8px rgba(16,185,129,0)} 100%{box-shadow:0 0 0 0 rgba(16,185,129,0)} }
+  /* 모바일 sticky CTA */
+  .sticky-cta-today { position:fixed; left:0; right:0; bottom:0; padding:12px 16px; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); border-top:1px solid #EAEAF0; display:none; z-index:50; }
+  @media (max-width: 720px) { .sticky-cta-today { display:flex; gap:8px; } main { padding-bottom:80px; } }
+  /* footer */
+  .site-footer { background:#0B1B3D; color:#CBD5E1; padding:40px 0 32px; margin-top:60px; font-size:13px; line-height:1.65; }
+  .site-footer a { color:#E5E7EB; text-decoration:none; }
+  .site-footer a:hover { color:#FFB020; }
+  .site-footer .col h4 { color:#fff; font-weight:700; margin-bottom:10px; font-size:14px; }
 </style>
 </head>
 <body>
@@ -102,12 +126,13 @@
       </p>
     </div>
     <div class="text-right">
-      <div class="text-xs text-[#6B7280]">마지막 갱신</div>
+      <div class="text-xs text-[#6B7280]"><span class="live-dot" title="실시간"></span>마지막 갱신</div>
       <div id="last-updated" class="num text-sm font-semibold">로드 중…</div>
+      <div id="last-updated-rel" class="text-[11px] text-[#9CA3AF]"></div>
     </div>
   </div>
 
-  <!-- 공포지수 카드 (이중) -->
+  <!-- 공포지수 카드 (이중) — 게이지 시각화 -->
   <div class="mt-7 grid md:grid-cols-2 gap-4">
     <div class="grid-card p-5" id="fear-vkospi">
       <div class="flex items-center justify-between">
@@ -118,6 +143,8 @@
         <span class="pill" id="vkospi-pill">로드 중</span>
         <span class="text-sm text-[#374151]" id="vkospi-summary"></span>
       </div>
+      <div class="fear-gauge"><span class="marker" id="vkospi-marker" style="left:0%"></span></div>
+      <div class="fear-gauge-labels"><span>0 안정</span><span>20</span><span>30 주의</span><span>40 위험</span><span>50+</span></div>
     </div>
     <div class="grid-card p-5" id="fear-vix">
       <div class="flex items-center justify-between">
@@ -128,6 +155,8 @@
         <span class="pill" id="vix-pill">로드 중</span>
         <span class="text-sm text-[#374151]" id="vix-summary"></span>
       </div>
+      <div class="fear-gauge"><span class="marker" id="vix-marker" style="left:0%"></span></div>
+      <div class="fear-gauge-labels"><span>0 안정</span><span>15</span><span>20 주의</span><span>30 위험</span><span>40+</span></div>
     </div>
   </div>
 
@@ -340,12 +369,27 @@ function renderRuntime(rt) {
   el.classList.remove('hidden');
 }
 
-function renderFear(meta, valId, pillId, sumId) {
+function renderFear(meta, valId, pillId, sumId, markerId, scaleMax) {
   if (!meta) { $(valId).textContent = '—'; $(pillId).textContent = '데이터 없음'; $(pillId).className = 'pill pill-soft'; return; }
-  $(valId).textContent = (meta.value ?? 0).toFixed(1);
+  const v = meta.value ?? 0;
+  $(valId).textContent = v.toFixed(1);
   $(pillId).textContent = `${meta.light} ${meta.label}`;
   $(pillId).className = 'pill ' + lightCls(meta.light);
   $(sumId).textContent = '— ' + meta.summary;
+  if (markerId && $(markerId)) {
+    const pct = Math.max(0, Math.min(100, (v / (scaleMax || 50)) * 100));
+    $(markerId).style.left = pct + '%';
+  }
+}
+
+function fmtRelativeTime(iso) {
+  if (!iso) return '';
+  const t = new Date(iso).getTime();
+  const diff = Math.floor((Date.now() - t) / 1000);
+  if (diff < 60) return '방금 전';
+  if (diff < 3600) return `${Math.floor(diff / 60)}분 전`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}시간 전`;
+  return `${Math.floor(diff / 86400)}일 전`;
 }
 
 function signalRow(s) {
@@ -452,7 +496,13 @@ function futCard(p) {
 
 function emptyMsg(market) {
   const map = { kr: '코스피·코스닥', us: '미장', futures: '선물·ETF' };
-  return `<div class="grid-card p-6 text-center text-[#6B7280] md:col-span-3">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다. 보수적인 시장에서는 발송 종목이 없을 수 있습니다.</div>`;
+  const next = market === 'kr' ? '평일 오전 08:30 KST' : market === 'us' ? '평일 밤 22:00 KST' : '한국장·미장 갱신 시점';
+  return `<div class="grid-card p-8 text-center md:col-span-3" style="background:#F8FAFC">
+    <div style="font-size:32px;margin-bottom:12px">🔍</div>
+    <div class="font-bold text-[#374151] mb-2">오늘은 ${map[market]} 조건을 만족하는 종목이 없습니다</div>
+    <div class="text-sm text-[#6B7280] leading-relaxed">보수적인 시장에서는 무리하게 진입하지 않습니다 — 강제로 3개를 채우지 않고 기회를 기다립니다.<br/>
+    다음 갱신: <b>${next}</b></div>
+  </div>`;
 }
 
 function noPickBlock(market, reason) {
@@ -683,10 +733,12 @@ async function load() {
     const d = await res.json();
 
     LAST.textContent = d.updated_at_kst || '데이터 없음';
+    const relEl = document.getElementById('last-updated-rel');
+    if (relEl) relEl.textContent = fmtRelativeTime(d.updated_at_iso);
     if (d.updated_at_iso && Date.now() - new Date(d.updated_at_iso).getTime() > 24*3600*1000) STALE.classList.remove('hidden');
 
-    renderFear(d.fear?.vkospi, 'vkospi-value', 'vkospi-pill', 'vkospi-summary');
-    renderFear(d.fear?.vix,    'vix-value',    'vix-pill',    'vix-summary');
+    renderFear(d.fear?.vkospi, 'vkospi-value', 'vkospi-pill', 'vkospi-summary', 'vkospi-marker', 50);
+    renderFear(d.fear?.vix,    'vix-value',    'vix-pill',    'vix-summary',    'vix-marker',    40);
     renderRuntime(d.runtime);
 
     const kr = d.kr?.picks || [];
@@ -705,7 +757,66 @@ async function load() {
   }
 }
 load();
+
+// 자동 새로고침 — 5분마다 picks.json + live_trades.json 재로드
+// 라이브 P&L 정확히 보이고, 새 발송 직후 즉시 반영됨
+setInterval(() => { load(); }, 5 * 60 * 1000);
+
+// 페이지 visibility 복귀 시 즉시 갱신 (모바일에서 백그라운드 후 복귀할 때)
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') load();
+});
 </script>
+
+<!-- 모바일 sticky CTA -->
+<div class="sticky-cta-today">
+  <a href="index.html#signup" class="flex-1 text-center text-sm font-bold rounded-lg px-4 py-3 text-white" style="background:#0B1B3D">
+    7일 무료체험 시작 →
+  </a>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container-x grid md:grid-cols-4 gap-8">
+    <div class="col">
+      <div class="flex items-center gap-2 font-bold text-white text-base mb-2">
+        <span class="inline-block w-7 h-7 rounded-lg" style="background:linear-gradient(135deg,#1E3A8A,#FFB020);"></span>
+        데일리 픽
+      </div>
+      <p style="color:#94A3B8;font-size:12px;line-height:1.7">매일 자동 선정되는 단기 스윙(3~5일) 후보 종목 알림 서비스. 코스피·코스닥·나스닥 동시 커버.</p>
+    </div>
+    <div class="col">
+      <h4>서비스</h4>
+      <ul class="space-y-1.5">
+        <li><a href="index.html">서비스 소개</a></li>
+        <li><a href="today.html">오늘의 종목</a></li>
+        <li><a href="index.html#pricing">요금제</a></li>
+        <li><a href="index.html#faq">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>회사·약관</h4>
+      <ul class="space-y-1.5">
+        <li>(주)포트존</li>
+        <li>유사투자자문업 신고: 제○○○○-○○○호</li>
+        <li>대표: 송준</li>
+        <li><a href="index.html#legal">이용약관 · 개인정보처리방침</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>고객센터</h4>
+      <ul class="space-y-1.5">
+        <li>이메일: <a href="mailto:contact@portzone.kr">contact@portzone.kr</a></li>
+        <li>운영시간: 평일 10:00 ~ 18:00 KST</li>
+        <li>수신거부: 080-***-****</li>
+        <li style="margin-top:6px"><a href="https://github.com/songjun2625/daily-stock-alert" target="_blank" rel="noopener">GitHub ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-x mt-8 pt-6" style="border-top:1px solid rgba(255,255,255,.08); font-size:11px; color:#64748B; line-height:1.7">
+    © 2026 PortZone Inc. · 본 서비스는 「자본시장법」상 유사투자자문업으로 신고된 1:多 일방 발송 정보 서비스입니다. 본 정보는 투자 권유가 아니며, 투자 결과는 투자자 본인에게 귀속됩니다. 과거 수익률은 미래 수익을 보장하지 않습니다. 레버리지 ETF·선물·옵션은 손실이 원금의 2~3배로 확대될 수 있습니다.
+  </div>
+</footer>
 
 </body>
 </html>

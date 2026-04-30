@@ -91,9 +91,55 @@ def _fmt_money(value, market: str) -> str:
     except (TypeError, ValueError): return str(value)
 
 
+def _load_live_summary() -> dict:
+    """live_trades.json 의 누적 성과 — 메일 헤더 KPI 용."""
+    p = Path("landing/data/live_trades.json")
+    if not p.exists(): return {}
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+        return {
+            "summary": d.get("summary", {}),
+            "period_start": d.get("period_start", ""),
+            "period_end": d.get("period_end", ""),
+        }
+    except Exception:
+        return {}
+
+
 def build_html(data: dict, name: str = "") -> str:
     greeting = f"{name}님, " if name else ""
     fear = data.get("fear", {}) or {}
+    live = _load_live_summary()
+    summary = live.get("summary") or {}
+    cum = summary.get("cum_return_pct", 0)
+    win = summary.get("win_rate_pct", 0)
+    n   = summary.get("total_trades", 0)
+    cum_color = "#FCA5A5" if cum >= 0 else "#93C5FD"
+    cum_sign  = "+" if cum >= 0 else ""
+    period_str = f"{live.get('period_start', '')} ~ {live.get('period_end', '')}" if live.get("period_start") else ""
+
+    kpi_block = ""
+    if n > 0:
+        kpi_block = (f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+                     f'style="width:100%;background:linear-gradient(135deg,#0B1B3D,#1E3A8A);'
+                     f'border-radius:14px;margin:0 0 18px 0;color:#fff">'
+                     f'<tr><td style="padding:18px 20px">'
+                     f'<div style="font-size:11px;color:#A5B4FC;letter-spacing:.5px;text-transform:uppercase;font-weight:600">'
+                     f'📊 누적 추천 성과 · {period_str}</div>'
+                     f'<table style="width:100%;margin-top:12px;border-collapse:collapse"><tr>'
+                     f'<td style="width:33%;padding:0 8px 0 0">'
+                     f'<div style="font-size:11px;color:#A5B4FC">누적 수익률</div>'
+                     f'<div style="font-size:22px;font-weight:800;color:{cum_color};line-height:1.2">{cum_sign}{cum:.2f}%</div>'
+                     f'</td>'
+                     f'<td style="width:33%;padding:0 8px">'
+                     f'<div style="font-size:11px;color:#A5B4FC">승률</div>'
+                     f'<div style="font-size:22px;font-weight:800;color:#fff;line-height:1.2">{win:.1f}%</div>'
+                     f'</td>'
+                     f'<td style="width:34%;padding:0 0 0 8px">'
+                     f'<div style="font-size:11px;color:#A5B4FC">청산 거래</div>'
+                     f'<div style="font-size:22px;font-weight:800;color:#fff;line-height:1.2">{n}건</div>'
+                     f'</td></tr></table>'
+                     f'</td></tr></table>')
 
     def fear_row(label, info):
         if not info: return ""
@@ -102,9 +148,15 @@ def build_html(data: dict, name: str = "") -> str:
                 f'<td style="padding:4px 12px;color:#6B7280">{info.get("summary","")}</td></tr>')
 
     html = [
-        '<div style="font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;color:#0B1B3D">',
-        '  <h2 style="margin:0 0 4px 0">데일리 픽 — 오늘의 종목</h2>',
+        '<div style="font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;color:#0B1B3D;background:#F7F8FB;padding:20px">',
+        '<div style="background:#fff;border-radius:14px;padding:24px;border:1px solid #EAEAF0">',
+        '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">',
+        '  <span style="display:inline-block;width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,#0B1B3D,#1E3A8A)"></span>',
+        '  <span style="font-weight:800;font-size:14px;color:#0B1B3D;letter-spacing:.3px">데일리 픽</span>',
+        '</div>',
+        '  <h2 style="margin:0 0 4px 0;font-size:22px">오늘의 종목</h2>',
         f'  <div style="color:#6B7280;font-size:13px">{greeting}갱신: {data.get("updated_at_kst","")}</div>',
+        kpi_block,
         '  <table style="border-collapse:collapse;margin:16px 0;font-size:13px">',
         fear_row("🇰🇷 한국장 공포지수", fear.get("vkospi")),
         fear_row("🇺🇸 미장 공포지수", fear.get("vix")),
@@ -170,16 +222,20 @@ def build_html(data: dict, name: str = "") -> str:
 </div>''')
 
     html.append(f'''
-  <div style="margin-top:24px">
-    <a href="{SITE_URL}" style="display:inline-block;background:#0B1B3D;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600">전체 보기 →</a>
+  <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap">
+    <a href="{SITE_URL}" style="display:inline-block;background:#0B1B3D;color:#fff;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px">📈 라이브 트래킹 페이지 →</a>
+    <a href="{SITE_URL.replace('today.html','index.html#pricing')}" style="display:inline-block;background:#fff;color:#0B1B3D;border:1px solid #E5E7EB;padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px">요금제 보기</a>
   </div>
-  <p style="margin-top:24px;font-size:11px;color:#9A3412;background:#FFF7ED;border:1px solid #FED7AA;padding:10px;border-radius:8px;line-height:1.6">
+  <p style="margin-top:24px;font-size:11px;color:#9A3412;background:#FFF7ED;border:1px solid #FED7AA;padding:12px;border-radius:8px;line-height:1.7">
+    <b>⚠️ 면책 및 고지</b><br/>
     본 정보는 투자 권유가 아니며, 모든 투자 결과는 투자자 본인에게 귀속됩니다.
-    과거 수익률은 미래 수익을 보장하지 않습니다. 본 서비스는 「자본시장법」상 유사투자자문업으로 신고된 1:多 일방 발송 정보 서비스입니다.
+    과거 수익률은 미래 수익을 보장하지 않습니다. 본 서비스는 「자본시장법」상 유사투자자문업으로 신고된 1:多 일방 발송 정보 서비스이며, 회원별 1:1 자문이나 자산·포트폴리오 분석은 제공하지 않습니다. 레버리지 ETF·선물·옵션은 손실이 원금의 2~3배로 확대될 수 있습니다.
   </p>
-  <p style="margin-top:8px;font-size:11px;color:#9CA3AF">
-    수신 거부를 원하시면 회신 주시거나 관리자에게 알려주세요.
-  </p>
+</div>
+<div style="text-align:center;padding:20px 8px;font-size:11px;color:#9CA3AF;line-height:1.7">
+  © 2026 PortZone Inc. · (주)포트존 · 유사투자자문업 신고: 제○○○○-○○○호<br/>
+  문의: <a href="mailto:contact@portzone.kr" style="color:#6B7280">contact@portzone.kr</a> · 수신거부: 회신 또는 080-***-****
+</div>
 </div>''')
     return "\n".join(html)
 
