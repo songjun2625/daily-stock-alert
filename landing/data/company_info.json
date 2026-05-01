@@ -33,17 +33,6 @@
     "name": "넷마블",
     "sector": "코스피·코스닥"
   },
-  "PLTR": {
-    "ticker": "PLTR",
-    "market": "us",
-    "name": "Palantir Technologies Inc.",
-    "sector": "Technology",
-    "next_earnings": "2026-05-04",
-    "last_earnings_surprise_pct": 32.03,
-    "last_earnings_date": "2026-02-02",
-    "sector_momentum_5d_pct": 2.35,
-    "sector_status": "📈 호조"
-  },
   "META": {
     "ticker": "META",
     "market": "us",
@@ -54,6 +43,17 @@
     "last_earnings_date": "2026-04-29",
     "sector_momentum_5d_pct": -0.75,
     "sector_status": "➡️ 보합"
+  },
+  "PLTR": {
+    "ticker": "PLTR",
+    "market": "us",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-05-04",
+    "last_earnings_surprise_pct": 32.03,
+    "last_earnings_date": "2026-02-02",
+    "sector_momentum_5d_pct": 2.35,
+    "sector_status": "📈 호조"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -66,9 +66,20 @@
     "sector_momentum_5d_pct": 2.35,
     "sector_status": "📈 호조"
   },
+  "GOOGL": {
+    "ticker": "GOOGL",
+    "market": "us",
+    "name": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-07-23",
+    "last_earnings_surprise_pct": 91.35,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": -0.75,
+    "sector_status": "➡️ 보합"
+  },
   "_meta": {
-    "generated_at_iso": "2026-05-01T10:28:27+09:00",
-    "tickers_count": 8,
+    "generated_at_iso": "2026-05-01T13:18:12+09:00",
+    "tickers_count": 9,
     "dart_enabled": false
   }
 }

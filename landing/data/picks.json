@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.37,
+      "value": 16.89,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -547,27 +547,139 @@
       },
       "quant_score": 135.3
     },
-    "updated_at_iso": "2026-05-01T10:28:20.376846+09:00",
-    "updated_at_kst": "2026.05.01 (금) 10:28 KST"
+    "updated_at_iso": "2026-05-01T13:18:01.964670+09:00",
+    "updated_at_kst": "2026.05.01 (금) 13:18 KST"
   },
-  "updated_at_iso": "2026-05-01T10:28:20.376846+09:00",
-  "updated_at_kst": "2026.05.01 (금) 10:28 KST",
+  "updated_at_iso": "2026-05-01T13:18:08.463123+09:00",
+  "updated_at_kst": "2026.05.01 (금) 13:18 KST",
   "us": {
     "picks": [
       {
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "price": 611.9099731445312,
+        "price_krw": 902377,
+        "change_pct_1d": -8.55003921421249,
+        "market_cap": 1553286561792.0,
+        "operating_margin": 0.41314998,
+        "revenue_growth": 0.238,
+        "pe_ratio": 22.275574,
+        "sector": "Communication Services",
+        "avg_volume": 15777825.0,
+        "rsi": 41.40870179668671,
+        "drawdown_52w": 0.2236112925600051,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": true,
+        "earnings_surprise_pct": 7.2,
+        "score": 121.34,
+        "reasons": [
+          "52주 고점 대비 -22%",
+          "거래량 5일 평균 2배+",
+          "영업이익률 41%",
+          "어닝 서프라이즈 +7.2%"
+        ],
+        "entry_low": 598.1,
+        "entry_high": 621.78,
+        "target": 665.19,
+        "stoploss": 582.31,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 41 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 24% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 22% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "41%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "24%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "41",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-22%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "✓",
+              "ok": true,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+7.2%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 51.6
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 35.7
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "거래량 5일평균 2배+",
+              "points": 7
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 139.63999938964844,
-        "price_krw": 206374,
-        "change_pct_1d": 1.210406721874202,
-        "market_cap": 334786723840.0,
+        "price": 139.11000061035156,
+        "price_krw": 205144,
+        "change_pct_1d": 0.8262661300008523,
+        "market_cap": 333468532736.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 221.68237,
+        "pe_ratio": 220.80952,
         "sector": "Technology",
-        "avg_volume": 47022468.45,
-        "rsi": 45.75503722887211,
-        "drawdown_52w": 0.32599669694856614,
+        "avg_volume": 48026925.0,
+        "rsi": 45.161411895820606,
+        "drawdown_52w": 0.3285548531317565,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -578,13 +690,13 @@
           "영업이익률 41%",
           "어닝 서프라이즈 +32.0%"
         ],
-        "entry_low": 135.55,
-        "entry_high": 142.56,
-        "target": 155.43,
-        "stoploss": 130.87,
+        "entry_low": 135.02,
+        "entry_high": 142.03,
+        "target": 154.9,
+        "stoploss": 130.34,
         "narrative": {
-          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +32.0% / RSI 46 반등 신호.",
-          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 46로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +32.0% / RSI 45 반등 신호.",
+          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 45로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -600,7 +712,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "46",
+              "value": "45",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -658,143 +770,36 @@
         }
       },
       {
-        "ticker": "META",
-        "name": "Meta Platforms, Inc.",
-        "price": 605.8300170898438,
-        "price_krw": 895356,
-        "change_pct_1d": -9.458688798600223,
-        "market_cap": 1537852964864.0,
-        "operating_margin": 0.41314998,
-        "revenue_growth": 0.238,
-        "pe_ratio": 22.030182,
-        "sector": "Communication Services",
-        "avg_volume": 14368938.2,
-        "rsi": 40.15594947253675,
-        "drawdown_52w": 0.2313255143079089,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "earnings_surprise_pct": 7.2,
-        "score": 114.34,
-        "reasons": [
-          "52주 고점 대비 -23%",
-          "영업이익률 41%",
-          "어닝 서프라이즈 +7.2%"
-        ],
-        "entry_low": 592.02,
-        "entry_high": 615.7,
-        "target": 659.11,
-        "stoploss": 576.23,
-        "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 40 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 24% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "41%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "24%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "40",
-              "ok": true,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-23%",
-              "ok": true,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+7.2%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 51.6
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 35.7
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            },
-            {
-              "name": "52주 -15~-40%",
-              "points": 15
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 403.9549865722656,
-        "price_krw": 597005,
-        "change_pct_1d": -4.830845143383222,
-        "market_cap": 3002345979904.0,
+        "price": 407.7799987792969,
+        "price_krw": 601349,
+        "change_pct_1d": -3.9296972651300055,
+        "market_cap": 3029167243264.0,
         "operating_margin": 0.47094002,
         "revenue_growth": 0.167,
-        "pe_ratio": 25.310463,
+        "pe_ratio": 25.550125,
         "sector": "Technology",
-        "avg_volume": 32084004.7,
-        "rsi": 49.178578070069165,
-        "drawdown_52w": 0.2516929737997507,
+        "avg_volume": 34348815.0,
+        "rsi": 51.122548543318295,
+        "drawdown_52w": 0.24460740955647337,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
         "score": 110.92,
         "reasons": [
-          "52주 고점 대비 -25%",
+          "52주 고점 대비 -24%",
           "영업이익률 47%",
           "어닝 서프라이즈 +5.2%"
         ],
-        "entry_low": 395.19,
-        "entry_high": 410.21,
-        "target": 437.75,
-        "stoploss": 385.18,
+        "entry_low": 398.91,
+        "entry_high": 414.12,
+        "target": 442.0,
+        "stoploss": 388.77,
         "narrative": {
-          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.2% / RSI 49 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 49로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +5.2% / RSI 51 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 17% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 51로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -810,13 +815,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "49",
+              "value": "51",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-25%",
+              "value": "-24%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -866,17 +871,120 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet Inc.",
+        "price": 384.79998779296875,
+        "price_krw": 567461,
+        "change_pct_1d": 9.961703465838955,
+        "market_cap": 4662022373376.0,
+        "operating_margin": 0.31568,
+        "revenue_growth": 0.18,
+        "pe_ratio": 29.329268,
+        "sector": "Communication Services",
+        "avg_volume": 26344545.0,
+        "rsi": 82.35461312977421,
+        "drawdown_52w": 0.0,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": true,
+        "earnings_surprise_pct": 91.35,
+        "score": 85.46,
+        "reasons": [
+          "거래량 5일 평균 2배+",
+          "영업이익률 32%",
+          "어닝 서프라이즈 +91.3%"
+        ],
+        "entry_low": 377.96,
+        "entry_high": 389.69,
+        "target": 411.19,
+        "stoploss": 370.14,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 32%, 어닝 서프라이즈 +91.3% / RSI 82 반등 신호.",
+          "thesis": "Alphabet Inc.는 매출 성장률 18% · 영업이익률 32%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 0% 떨어진 상태에서 RSI 82로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "32%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "18%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "82",
+              "ok": false,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-0%",
+              "ok": false,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "✓",
+              "ok": true,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+91.3%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 39.5
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 27.0
+            },
+            {
+              "name": "거래량 5일평균 2배+",
+              "points": 7
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        }
       }
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 17.37,
+      "vix": 16.89,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-05-01T00:24:26.986193+09:00",
-    "updated_at_kst": "2026.05.01 (금) 00:24 KST"
+    "updated_at_iso": "2026-05-01T13:18:07.427776+09:00",
+    "updated_at_kst": "2026.05.01 (금) 13:18 KST"
   },
   "futures": {
     "picks": [
@@ -957,19 +1065,19 @@
         "price": 19855.0,
         "price_krw": 19855,
         "change_pct_1d": -3.0990727183992206,
-        "rsi": 53.078813107610024,
+        "rsi": 53.31088098049533,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.05900473933649289,
+        "drawdown_52w": 0.057712355966598516,
         "score": 10.0,
         "reasons": [
           "52주 고점 대비 -6%"
         ],
-        "entry_low": 19608.39,
-        "entry_high": 20052.29,
-        "target": 21186.68,
-        "stoploss": 19115.18,
+        "entry_low": 19608.68,
+        "entry_high": 20052.06,
+        "target": 21185.15,
+        "stoploss": 19116.03,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
@@ -1014,31 +1122,32 @@
         }
       },
       {
-        "ticker": "SPY",
-        "name": "SPDR S&P 500",
-        "market": "us",
-        "leveraged": false,
-        "price": 711.5800170898438,
-        "price_krw": 1051423,
-        "change_pct_1d": -0.015454109399481997,
-        "rsi": 67.24290833788544,
+        "ticker": "122630",
+        "name": "KODEX 레버리지",
+        "market": "kr",
+        "leveraged": true,
+        "price": 115450.0,
+        "price_krw": 115450,
+        "change_pct_1d": -2.223163243701043,
+        "rsi": 67.39399199724195,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.00501973783310127,
-        "score": 32.75709166211456,
+        "drawdown_52w": 0.022231632437010374,
+        "score": 32.606008002758045,
         "reasons": [
+          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의",
           "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 708.29,
-        "entry_high": 714.21,
-        "target": 729.33,
-        "stoploss": 701.72,
+        "entry_low": 112796.25,
+        "entry_high": 117573.0,
+        "target": 123411.25,
+        "stoploss": 110142.5,
         "hold_days_max": 5,
-        "position_size_pct": 20.0,
+        "position_size_pct": 15.0,
         "narrative": {
-          "one_liner": "선물·ETF, RSI 67 추세, 거래량 급증",
-          "thesis": "SPDR S&P 500(SPY)는 RSI 67에 위치한 선물·ETF입니다. ",
+          "one_liner": "레버리지 ETF (변동 2~3배), RSI 67 추세, 거래량 급증",
+          "thesis": "KODEX 레버리지(122630)는 RSI 67에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
           "signals": [
             {
               "label": "RSI",
@@ -1065,15 +1174,20 @@
               "explain": "5일 평균 2배+ 거래."
             }
           ],
-          "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
-          "score_breakdown": [],
+          "risk": "⚠️ 레버리지 상품 — 손실이 2~3배로 확대됩니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 15.0% 이하로 제한하세요.",
+          "score_breakdown": [
+            {
+              "name": "레버리지 페널티",
+              "points": -5
+            }
+          ],
           "hold_days": 5,
-          "position_size_pct": 20.0,
-          "leveraged": false
+          "position_size_pct": 15.0,
+          "leveraged": true
         }
       }
     ],
-    "updated_at_iso": "2026-04-30T19:21:30.278394+09:00",
-    "updated_at_kst": "2026.04.30 (목) 19:21 KST"
+    "updated_at_iso": "2026-05-01T13:18:08.463123+09:00",
+    "updated_at_kst": "2026.05.01 (금) 13:18 KST"
   }
 }
