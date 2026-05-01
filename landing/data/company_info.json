@@ -41,7 +41,7 @@
     "next_earnings": "2026-05-04",
     "last_earnings_surprise_pct": 32.03,
     "last_earnings_date": "2026-02-02",
-    "sector_momentum_5d_pct": 1.77,
+    "sector_momentum_5d_pct": 2.35,
     "sector_status": "📈 호조"
   },
   "META": {
@@ -52,8 +52,8 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -1.52,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -0.75,
+    "sector_status": "➡️ 보합"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -63,11 +63,11 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 1.77,
+    "sector_momentum_5d_pct": 2.35,
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-01T00:24:30+09:00",
+    "generated_at_iso": "2026-05-01T10:28:27+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
