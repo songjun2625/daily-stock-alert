@@ -1,0 +1,29 @@
+name: extra-picks
+# 1회성 — 메인 추천 외 추가 후보군을 단일 수신자에게 발송.
+# 수동 트리거 전용 (workflow_dispatch).
+on:
+  workflow_dispatch:
+    inputs:
+      recipient:
+        description: '수신자 이메일 (필수, 단일 수신자만)'
+        required: true
+        default: 'songjun2625@gmail.com'
+
+jobs:
+  send-extras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: 'pip' }
+      - name: Install deps
+        run: pip install -r screener/requirements.txt
+
+      - name: Run extra picks email
+        env:
+          GMAIL_USER:           ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD:   ${{ secrets.GMAIL_APP_PASSWORD }}
+          TEST_RECIPIENT_EMAIL: ${{ github.event.inputs.recipient }}
+          FINNHUB_API_KEY:      ${{ secrets.FINNHUB_API_KEY }}
+        run: python tools/send_extra_picks.py
