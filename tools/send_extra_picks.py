@@ -194,17 +194,18 @@ def main():
         log.error("GMAIL_USER / GMAIL_APP_PASSWORD 미설정"); sys.exit(2)
 
     rt = _load_runtime()
-    log.info("📊 KR 스크리너 실행 (top 15)")
-    kr_all = screen_kr(top_n=15)
-    log.info("📊 US 스크리너 실행 (top 15)")
-    us_all = screen_us(top_n=15)
+    log.info("📊 KR 스크리너 실행 (top 30, 임계 완화)")
+    kr_all = screen_kr(top_n=30)
+    log.info("📊 US 스크리너 실행 (top 30, 임계 완화)")
+    us_all = screen_us(top_n=30)
 
     # 런타임 override 적용
     kr_all, us_all = _apply_runtime_overrides(kr_all, us_all, rt)
 
-    # 점수 임계 적용
-    min_kr = rt.get("min_score_kr_override") or QUALITY.min_score_kr
-    min_us = rt.get("min_score_us_override") or QUALITY.min_score_us
+    # 추가 후보군은 임계 -20점 으로 완화 (메인보다 약한 신호도 노출)
+    min_kr = max(40, (rt.get("min_score_kr_override") or QUALITY.min_score_kr) - 20)
+    min_us = max(60, (rt.get("min_score_us_override") or QUALITY.min_score_us) - 20)
+    log.info("추가 후보 임계 — KR ≥%.0f, US ≥%.0f", min_kr, min_us)
     kr_all = [c for c in kr_all if (c.score or 0) >= min_kr]
     us_all = [c for c in us_all if (c.score or 0) >= min_us]
 
