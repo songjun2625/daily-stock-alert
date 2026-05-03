@@ -126,116 +126,6 @@
         }
       },
       {
-        "ticker": "035420",
-        "name": "NAVER",
-        "sector": "IT 플랫폼",
-        "price": 211000,
-        "change_pct_1d": -4.09090909090909,
-        "market_cap": 31541296103424.0,
-        "operating_margin": 0.19112,
-        "revenue_growth": 0.107,
-        "pe_ratio": null,
-        "drawdown_52w": 0.26603637685466586,
-        "rsi": 47.173550157454514,
-        "volume_spike": true,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 85.9,
-        "reasons": [
-          "52주 고점 대비 -27%",
-          "거래량 5일평균 1.5배+",
-          "영업이익률 19%",
-          "매출 성장 +11%"
-        ],
-        "entry_low": 206090,
-        "entry_high": 214507,
-        "target": 229938,
-        "stoploss": 200479,
-        "narrative": {
-          "one_liner": "IT 플랫폼 영업이익률 19% / RSI 47 반등 신호",
-          "thesis": "NAVER(035420)는 매출 성장률 11% · 영업이익률 19%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 27% 떨어진 상태에서 RSI 47로 중립 구간이며, 거래량 1.5배+로 자금 유입이 확인됩니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "19%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "11%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "47",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-27%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "✓",
-              "ok": true,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 47.8
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 32.1
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            },
-            {
-              "name": "거래량 1.5배+",
-              "points": 7
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
@@ -439,119 +329,119 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "251270",
+        "name": "넷마블",
+        "sector": "코스피·코스닥",
+        "price": 49650,
+        "change_pct_1d": -3.2163742690058506,
+        "market_cap": 4068051255296.0,
+        "operating_margin": 0.12943,
+        "revenue_growth": 0.229,
+        "pe_ratio": null,
+        "drawdown_52w": 0.25853720001890057,
+        "rsi": 45.12837619857379,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 67.89,
+        "reasons": [
+          "52주 고점 대비 -26%",
+          "영업이익률 13%",
+          "매출 성장 +23%"
+        ],
+        "entry_low": 48612,
+        "entry_high": 50391,
+        "target": 53651,
+        "stoploss": 47427,
+        "narrative": {
+          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 45 반등 신호",
+          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 45로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "13%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "23%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "45",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-26%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 32.4
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        }
       }
     ],
-    "quant_pick": {
-      "ticker": "251270",
-      "name": "넷마블",
-      "sector": "코스피·코스닥",
-      "price": 49650,
-      "change_pct_1d": -3.2163742690058506,
-      "market_cap": 4068051255296.0,
-      "operating_margin": 0.12943,
-      "revenue_growth": 0.229,
-      "pe_ratio": null,
-      "drawdown_52w": 0.25853720001890057,
-      "rsi": 45.12837619857379,
-      "volume_spike": false,
-      "macd_golden_cross": false,
-      "ma_aligned_up": false,
-      "foreign_streak": 0,
-      "institution_streak": 0,
-      "earnings_surprise": null,
-      "score": 67.89,
-      "reasons": [
-        "52주 고점 대비 -26%",
-        "영업이익률 13%",
-        "매출 성장 +23%"
-      ],
-      "entry_low": 48612,
-      "entry_high": 50391,
-      "target": 53651,
-      "stoploss": 47427,
-      "narrative": {
-        "one_liner": "코스피·코스닥 영업이익률 13% / RSI 45 반등 신호",
-        "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 45로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-        "signals": [
-          {
-            "label": "영업이익률",
-            "value": "13%",
-            "ok": true,
-            "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-          },
-          {
-            "label": "매출 성장",
-            "value": "23%",
-            "ok": true,
-            "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-          },
-          {
-            "label": "RSI (과매도 지수)",
-            "value": "45",
-            "ok": false,
-            "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-          },
-          {
-            "label": "52주 고점 대비",
-            "value": "-26%",
-            "ok": true,
-            "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-          },
-          {
-            "label": "MACD 골든크로스",
-            "value": "—",
-            "ok": false,
-            "explain": "추세 전환의 첫 신호."
-          },
-          {
-            "label": "5/20일선 정배열",
-            "value": "—",
-            "ok": false,
-            "explain": "단기·중기 추세선 모두 상승 시작."
-          },
-          {
-            "label": "거래량 1.5배+",
-            "value": "—",
-            "ok": false,
-            "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-          },
-          {
-            "label": "외국인 연속 순매수",
-            "value": "0일",
-            "ok": false,
-            "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-          },
-          {
-            "label": "기관 연속 순매수",
-            "value": "0일",
-            "ok": false,
-            "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-          }
-        ],
-        "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-        "score_breakdown": [
-          {
-            "name": "영업이익률 ≥10%",
-            "points": 32.4
-          },
-          {
-            "name": "매출 성장 ≥5%",
-            "points": 37.5
-          },
-          {
-            "name": "52주 -10~-35%",
-            "points": 15
-          }
-        ],
-        "hold_days": 5
-      },
-      "quant_score": 135.3
-    },
-    "updated_at_iso": "2026-05-03T15:29:54.119885+09:00",
-    "updated_at_kst": "2026.05.03 (일) 15:29 KST"
+    "quant_pick": null,
+    "updated_at_iso": "2026-05-04T02:46:09.642383+09:00",
+    "updated_at_kst": "2026.05.04 (월) 02:46 KST"
   },
-  "updated_at_iso": "2026-05-03T15:30:00.917649+09:00",
-  "updated_at_kst": "2026.05.03 (일) 15:30 KST",
+  "updated_at_iso": "2026-05-04T02:46:18.692130+09:00",
+  "updated_at_kst": "2026.05.04 (월) 02:46 KST",
   "us": {
     "picks": [
       {
@@ -674,24 +564,24 @@
         "pe_ratio": 22.120094,
         "sector": "Communication Services",
         "avg_volume": 16174275.0,
-        "rsi": 40.69805049319006,
+        "rsi": 40.69805049322295,
         "drawdown_52w": 0.2276206527157485,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 7.2,
+        "earnings_surprise_pct": 56.79,
         "score": 115.27,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 41%",
-          "어닝 서프라이즈 +7.2%"
+          "어닝 서프라이즈 +56.8%"
         ],
         "entry_low": 594.83,
         "entry_high": 618.69,
         "target": 662.44,
         "stoploss": 578.92,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 41 반등 신호.",
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +56.8% / RSI 41 반등 신호.",
           "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
@@ -738,7 +628,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+7.2%",
+              "value": "+56.8%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -775,13 +665,13 @@
         "price": 414.44000244140625,
         "price_krw": 609732,
         "change_pct_1d": 1.6332345093055922,
-        "market_cap": 3078640631808.0,
+        "market_cap": 3076820566016.0,
         "operating_margin": 0.46326,
         "revenue_growth": 0.183,
-        "pe_ratio": 24.69845,
+        "pe_ratio": 24.68385,
         "sector": "Technology",
         "avg_volume": 34716645.0,
-        "rsi": 54.4953863239117,
+        "rsi": 54.49538632390697,
         "drawdown_52w": 0.23226999028548376,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -875,8 +765,8 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-05-03T15:29:59.103678+09:00",
-    "updated_at_kst": "2026.05.03 (일) 15:29 KST"
+    "updated_at_iso": "2026-05-04T02:46:16.317881+09:00",
+    "updated_at_kst": "2026.05.04 (월) 02:46 KST"
   },
   "futures": {
     "picks": [
@@ -1079,7 +969,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-05-03T15:30:00.917649+09:00",
-    "updated_at_kst": "2026.05.03 (일) 15:30 KST"
+    "updated_at_iso": "2026-05-04T02:46:18.692130+09:00",
+    "updated_at_kst": "2026.05.04 (월) 02:46 KST"
   }
 }

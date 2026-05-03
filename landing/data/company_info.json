@@ -7,12 +7,6 @@
     "sector_momentum_5d_pct": 0.54,
     "sector_status": "➡️ 보합"
   },
-  "035420": {
-    "ticker": "035420",
-    "market": "kr",
-    "name": "NAVER",
-    "sector": "IT 플랫폼"
-  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
@@ -50,7 +44,7 @@
     "name": "Meta Platforms, Inc.",
     "sector": "Communication Services",
     "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 7.2,
+    "last_earnings_surprise_pct": 56.79,
     "last_earnings_date": "2026-04-29",
     "sector_momentum_5d_pct": 1.02,
     "sector_status": "📈 호조"
@@ -67,8 +61,8 @@
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-03T15:30:04+09:00",
-    "tickers_count": 8,
+    "generated_at_iso": "2026-05-04T02:46:23+09:00",
+    "tickers_count": 7,
     "dart_enabled": false
   }
 }
