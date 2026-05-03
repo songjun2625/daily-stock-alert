@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.5,
+      "value": 16.99,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -547,45 +547,45 @@
       },
       "quant_score": 135.3
     },
-    "updated_at_iso": "2026-05-01T13:18:01.964670+09:00",
-    "updated_at_kst": "2026.05.01 (금) 13:18 KST"
+    "updated_at_iso": "2026-05-03T15:29:54.119885+09:00",
+    "updated_at_kst": "2026.05.03 (일) 15:29 KST"
   },
-  "updated_at_iso": "2026-05-01T23:34:13.875121+09:00",
-  "updated_at_kst": "2026.05.01 (금) 23:34 KST",
+  "updated_at_iso": "2026-05-03T15:30:00.917649+09:00",
+  "updated_at_kst": "2026.05.03 (일) 15:30 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 142.6497039794922,
-        "price_krw": 209410,
-        "change_pct_1d": 2.5445355140608195,
-        "market_cap": 341953740800.0,
+        "price": 144.07000732421875,
+        "price_krw": 211959,
+        "change_pct_1d": 3.5655284969484002,
+        "market_cap": 345358434304.0,
         "operating_margin": 0.40901002,
         "revenue_growth": 0.7,
-        "pe_ratio": 226.4281,
+        "pe_ratio": 228.68256,
         "sector": "Technology",
-        "avg_volume": 47121489.4,
-        "rsi": 49.16280546574943,
-        "drawdown_52w": 0.3114696929122561,
+        "avg_volume": 48167380.0,
+        "rsi": 50.60887172485428,
+        "drawdown_52w": 0.3046142850787922,
         "macd_golden_cross": true,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 8.6,
         "score": 125.63,
         "reasons": [
-          "52주 고점 대비 -31%",
+          "52주 고점 대비 -30%",
           "MACD 골든크로스",
           "영업이익률 41%",
           "어닝 서프라이즈 +8.6%"
         ],
-        "entry_low": 138.51,
-        "entry_high": 145.61,
-        "target": 158.62,
-        "stoploss": 133.78,
+        "entry_low": 139.93,
+        "entry_high": 147.03,
+        "target": 160.04,
+        "stoploss": 135.2,
         "narrative": {
-          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 49 반등 신호.",
-          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 31% 떨어진 상태에서 RSI 49로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "one_liner": "Technology 영업이익률 41%, 어닝 서프라이즈 +8.6% / RSI 51 반등 신호.",
+          "thesis": "Palantir Technologies Inc.는 매출 성장률 70% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 51로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -601,13 +601,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "49",
+              "value": "51",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-31%",
+              "value": "-30%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -665,33 +665,33 @@
       {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 608.02001953125,
-        "price_krw": 892573,
-        "change_pct_1d": -0.6357068497006568,
-        "market_cap": 1543386824704.0,
+        "price": 608.75,
+        "price_krw": 895605,
+        "change_pct_1d": -0.5164114466532643,
+        "market_cap": 1545252503552.0,
         "operating_margin": 0.40617,
         "revenue_growth": 0.331,
-        "pe_ratio": 22.133602,
+        "pe_ratio": 22.120094,
         "sector": "Communication Services",
-        "avg_volume": 15376820.0,
-        "rsi": 40.53733859188042,
-        "drawdown_52w": 0.22854684875350353,
+        "avg_volume": 16174275.0,
+        "rsi": 40.69805049319006,
+        "drawdown_52w": 0.2276206527157485,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 56.79,
+        "earnings_surprise_pct": 7.2,
         "score": 115.27,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 41%",
-          "어닝 서프라이즈 +56.8%"
+          "어닝 서프라이즈 +7.2%"
         ],
-        "entry_low": 594.2,
-        "entry_high": 617.89,
-        "target": 661.34,
-        "stoploss": 578.4,
+        "entry_low": 594.83,
+        "entry_high": 618.69,
+        "target": 662.44,
+        "stoploss": 578.92,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +56.8% / RSI 41 반등 신호.",
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 41 반등 신호.",
           "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
@@ -738,7 +738,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+56.8%",
+              "value": "+7.2%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -772,33 +772,32 @@
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 413.6449890136719,
-        "price_krw": 607231,
-        "change_pct_1d": 1.4382731502113888,
-        "market_cap": 3071917948928.0,
+        "price": 414.44000244140625,
+        "price_krw": 609732,
+        "change_pct_1d": 1.6332345093055922,
+        "market_cap": 3078640631808.0,
         "operating_margin": 0.46326,
         "revenue_growth": 0.183,
-        "pe_ratio": 24.61518,
+        "pe_ratio": 24.69845,
         "sector": "Technology",
-        "avg_volume": 33588317.1,
-        "rsi": 54.11743612882226,
-        "drawdown_52w": 0.23374280074943776,
+        "avg_volume": 34716645.0,
+        "rsi": 54.4953863239117,
+        "drawdown_52w": 0.23226999028548376,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 5.22,
-        "score": 112.36,
+        "earnings_surprise_pct": 4.9,
+        "score": 100.36,
         "reasons": [
           "52주 고점 대비 -23%",
-          "영업이익률 46%",
-          "어닝 서프라이즈 +5.2%"
+          "영업이익률 46%"
         ],
-        "entry_low": 405.03,
-        "entry_high": 419.8,
-        "target": 446.86,
-        "stoploss": 395.19,
+        "entry_low": 405.79,
+        "entry_high": 420.62,
+        "target": 447.81,
+        "stoploss": 395.9,
         "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 54 반등 신호.",
+          "one_liner": "Technology 영업이익률 46%, RSI 54 반등 신호.",
           "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 54로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
@@ -845,8 +844,8 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+5.2%",
-              "ok": true,
+              "value": "+4.9%",
+              "ok": false,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
           ],
@@ -863,10 +862,6 @@
             {
               "name": "52주 -15~-40%",
               "points": 15
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
             }
           ],
           "hold_days": 5
@@ -875,13 +870,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 16.5,
+      "vix": 16.99,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-05-01T23:34:13.875121+09:00",
-    "updated_at_kst": "2026.05.01 (금) 23:34 KST"
+    "updated_at_iso": "2026-05-03T15:29:59.103678+09:00",
+    "updated_at_kst": "2026.05.03 (일) 15:29 KST"
   },
   "futures": {
     "picks": [
@@ -1084,7 +1079,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-05-01T13:18:08.463123+09:00",
-    "updated_at_kst": "2026.05.01 (금) 13:18 KST"
+    "updated_at_iso": "2026-05-03T15:30:00.917649+09:00",
+    "updated_at_kst": "2026.05.03 (일) 15:30 KST"
   }
 }
