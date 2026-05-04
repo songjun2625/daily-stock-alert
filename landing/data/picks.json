@@ -24,30 +24,30 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-        "price": 1460000,
-        "change_pct_1d": -0.6802721088435382,
-        "market_cap": 67584791674880.0,
+        "price": 1461000,
+        "change_pct_1d": -0.6122448979591799,
+        "market_cap": 67631080013824.0,
         "operating_margin": 0.46221,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.25699745547073793,
-        "rsi": 34.51909263484288,
+        "drawdown_52w": 0.2564885496183206,
+        "rsi": 34.629161051781395,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 97.0,
+        "score": 107.0,
         "reasons": [
           "RSI 35(과매도 반등 후보)",
           "52주 고점 대비 -26%",
           "영업이익률 46%"
         ],
-        "entry_low": 1436300,
-        "entry_high": 1476929,
-        "target": 1551415,
-        "stoploss": 1409214,
+        "entry_low": 1437300,
+        "entry_high": 1477929,
+        "target": 1552415,
+        "stoploss": 1410214,
         "narrative": {
           "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 35 반등 신호",
           "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 35로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -123,20 +123,36 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 97.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+            "score": 10,
+            "positive": [
+              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 201000,
-        "change_pct_1d": 0.24937655860348684,
-        "market_cap": 43961066455040.0,
+        "price": 200000,
+        "change_pct_1d": -0.24937655860348684,
+        "market_cap": 43851712561152.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.19114688128772636,
-        "rsi": 46.71035395403492,
+        "drawdown_52w": 0.19517102615694165,
+        "rsi": 45.66946399243594,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -145,17 +161,17 @@
         "earnings_surprise": null,
         "score": 97.0,
         "reasons": [
-          "52주 고점 대비 -19%",
+          "52주 고점 대비 -20%",
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 197365,
-        "entry_high": 203596,
-        "target": 215020,
-        "stoploss": 193211,
+        "entry_low": 196365,
+        "entry_high": 202596,
+        "target": 214020,
+        "stoploss": 192211,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 47 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 46 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -171,13 +187,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "47",
+              "value": "46",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-19%",
+              "value": "-20%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -234,14 +250,14 @@
         "ticker": "251270",
         "name": "넷마블",
         "sector": "코스피·코스닥",
-        "price": 50600,
-        "change_pct_1d": 1.9133937562940684,
-        "market_cap": 4145889148928.0,
+        "price": 50200,
+        "change_pct_1d": 1.1077542799597273,
+        "market_cap": 4113115381760.0,
         "operating_margin": 0.12943,
         "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.24435009709881914,
-        "rsi": 49.21252531516445,
+        "drawdown_52w": 0.2503236141178008,
+        "rsi": 47.56938318576863,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -250,17 +266,17 @@
         "earnings_surprise": null,
         "score": 67.89,
         "reasons": [
-          "52주 고점 대비 -24%",
+          "52주 고점 대비 -25%",
           "영업이익률 13%",
           "매출 성장 +23%"
         ],
-        "entry_low": 49608,
-        "entry_high": 51309,
-        "target": 54429,
-        "stoploss": 48473,
+        "entry_low": 49208,
+        "entry_high": 50909,
+        "target": 54029,
+        "stoploss": 48073,
         "narrative": {
-          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 49 반등 신호",
-          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 49로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 48 반등 신호",
+          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 48로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -276,13 +292,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "49",
+              "value": "48",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
+              "value": "-25%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -337,11 +353,11 @@
       }
     ],
     "quant_pick": null,
-    "updated_at_iso": "2026-05-04T10:23:37.276319+09:00",
-    "updated_at_kst": "2026.05.04 (월) 10:23 KST"
+    "updated_at_iso": "2026-05-04T10:48:15.943799+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:48 KST"
   },
-  "updated_at_iso": "2026-05-04T10:23:46.740793+09:00",
-  "updated_at_kst": "2026.05.04 (월) 10:23 KST",
+  "updated_at_iso": "2026-05-04T10:48:21.831529+09:00",
+  "updated_at_kst": "2026.05.04 (월) 10:48 KST",
   "us": {
     "picks": [
       {
@@ -464,13 +480,13 @@
         "pe_ratio": 22.120094,
         "sector": "Communication Services",
         "avg_volume": 16174275.0,
-        "rsi": 40.69805048720569,
+        "rsi": 40.6980504872662,
         "drawdown_52w": 0.2276206527157485,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 56.79,
-        "score": 115.27,
+        "score": 120.27,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 41%",
@@ -557,7 +573,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 115.27,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Corning Meta Fiber Expansion Deepens Ties To AI Data Center Growth",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/corning-meta-fiber-expansion-deepens-120327666.html",
+            "score": 5,
+            "positive": [
+              "data center"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "MSFT",
@@ -571,13 +602,13 @@
         "pe_ratio": 24.68385,
         "sector": "Technology",
         "avg_volume": 34716645.0,
-        "rsi": 54.495386324714964,
+        "rsi": 54.49538632471501,
         "drawdown_52w": 0.23227007708861228,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 4.9,
-        "score": 100.36,
+        "score": 105.36,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 46%"
@@ -655,7 +686,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 100.36,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Data Center Expert Warns Gigawatt-Scale AI Buildouts Could Trigger Rolling Blackouts",
+            "link": "https://247wallst.com/investing/2026/05/03/data-center-expert-warns-gigawatt-scale-ai-buildouts-could-trigger-rolling-blackouts/",
+            "score": 5,
+            "positive": [
+              "data center"
+            ],
+            "negative": []
+          }
+        ]
       }
     ],
     "quant_pick": null,
@@ -665,8 +711,8 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-05-04T10:23:44.034518+09:00",
-    "updated_at_kst": "2026.05.04 (월) 10:23 KST"
+    "updated_at_iso": "2026-05-04T10:48:20.793817+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:48 KST"
   },
   "futures": {
     "picks": [
@@ -675,29 +721,29 @@
         "name": "KODEX 코스닥150",
         "market": "kr",
         "leveraged": false,
-        "price": 20325.0,
-        "price_krw": 20325,
-        "change_pct_1d": 2.3671619239486352,
-        "rsi": 57.543553131367354,
+        "price": 20240.0,
+        "price_krw": 20240,
+        "change_pct_1d": 1.939058171745156,
+        "rsi": 56.8358630902534,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.03540688164296726,
+        "drawdown_52w": 0.039440850403623974,
         "score": 0.0,
         "reasons": [],
-        "entry_low": 20075.09,
-        "entry_high": 20524.93,
-        "target": 21674.53,
-        "stoploss": 19575.26,
+        "entry_low": 19990.09,
+        "entry_high": 20439.93,
+        "target": 21589.53,
+        "stoploss": 19490.26,
         "hold_days_max": 5,
         "position_size_pct": 20.0,
         "narrative": {
-          "one_liner": "ETF, RSI 58 추세, 거래량 급증",
-          "thesis": "KODEX 코스닥150(229200)는 RSI 58에 위치한 ETF입니다. ",
+          "one_liner": "ETF, RSI 57 추세, 거래량 급증",
+          "thesis": "KODEX 코스닥150(229200)는 RSI 57에 위치한 ETF입니다. ",
           "signals": [
             {
               "label": "RSI",
-              "value": "58",
+              "value": "57",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -732,23 +778,23 @@
         "name": "KODEX 200선물인버스2X",
         "market": "kr",
         "leveraged": true,
-        "price": 161.0,
-        "price_krw": 161,
-        "change_pct_1d": -4.7337278106508895,
-        "rsi": 29.999596680661128,
+        "price": 159.0,
+        "price_krw": 159,
+        "change_pct_1d": -5.917159763313606,
+        "rsi": 29.5508127831295,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.9244131455399061,
-        "score": 29.999596680661128,
+        "drawdown_52w": 0.9253521126760563,
+        "score": 29.5508127831295,
         "reasons": [
           "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의",
           "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 156.0,
-        "entry_high": 165.0,
-        "target": 176.0,
-        "stoploss": 151.0,
+        "entry_low": 153.96,
+        "entry_high": 163.03,
+        "target": 174.1,
+        "stoploss": 148.93,
         "hold_days_max": 5,
         "position_size_pct": 15.0,
         "narrative": {
@@ -793,36 +839,35 @@
         }
       },
       {
-        "ticker": "122630",
-        "name": "KODEX 레버리지",
-        "market": "kr",
-        "leveraged": true,
-        "price": 121700.0,
-        "price_krw": 121700,
-        "change_pct_1d": 5.4135989605889945,
-        "rsi": 71.27267311766876,
+        "ticker": "SPY",
+        "name": "SPDR S&P 500",
+        "market": "us",
+        "leveraged": false,
+        "price": 720.6500244140625,
+        "price_krw": 1060235,
+        "change_pct_1d": 0.27691138283709726,
+        "rsi": 71.66598231520902,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "drawdown_52w": 0.0,
-        "score": 28.72732688233124,
+        "score": 28.33401768479098,
         "reasons": [
-          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의",
           "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 118979.82,
-        "entry_high": 123876.14,
-        "target": 129860.54,
-        "stoploss": 116259.64,
+        "entry_low": 717.28,
+        "entry_high": 723.34,
+        "target": 738.83,
+        "stoploss": 710.55,
         "hold_days_max": 5,
-        "position_size_pct": 15.0,
+        "position_size_pct": 20.0,
         "narrative": {
-          "one_liner": "레버리지 ETF (변동 2~3배), RSI 71 추세, 거래량 급증",
-          "thesis": "KODEX 레버리지(122630)는 RSI 71에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
+          "one_liner": "선물·ETF, RSI 72 추세, 거래량 급증",
+          "thesis": "SPDR S&P 500(SPY)는 RSI 72에 위치한 선물·ETF입니다. ",
           "signals": [
             {
               "label": "RSI",
-              "value": "71",
+              "value": "72",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -845,20 +890,15 @@
               "explain": "5일 평균 2배+ 거래."
             }
           ],
-          "risk": "⚠️ 레버리지 상품 — 손실이 2~3배로 확대됩니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 15.0% 이하로 제한하세요.",
-          "score_breakdown": [
-            {
-              "name": "레버리지 페널티",
-              "points": -5
-            }
-          ],
+          "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
+          "score_breakdown": [],
           "hold_days": 5,
-          "position_size_pct": 15.0,
-          "leveraged": true
+          "position_size_pct": 20.0,
+          "leveraged": false
         }
       }
     ],
-    "updated_at_iso": "2026-05-04T10:23:46.740793+09:00",
-    "updated_at_kst": "2026.05.04 (월) 10:23 KST"
+    "updated_at_iso": "2026-05-04T10:48:21.831529+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:48 KST"
   }
 }
