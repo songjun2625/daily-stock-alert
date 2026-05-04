@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 0.54,
+    "sector_momentum_5d_pct": -0.35,
     "sector_status": "➡️ 보합"
   },
   "207940": {
@@ -12,14 +12,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 0.54,
+    "sector_momentum_5d_pct": -0.35,
     "sector_status": "➡️ 보합"
-  },
-  "373220": {
-    "ticker": "373220",
-    "market": "kr",
-    "name": "LG에너지솔루션",
-    "sector": "화학·배터리"
   },
   "251270": {
     "ticker": "251270",
@@ -61,8 +55,8 @@
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-04T02:46:23+09:00",
-    "tickers_count": 7,
+    "generated_at_iso": "2026-05-04T10:19:42+09:00",
+    "tickers_count": 6,
     "dart_enabled": false
   }
 }

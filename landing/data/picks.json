@@ -21,111 +21,6 @@
   "kr": {
     "picks": [
       {
-        "ticker": "066970",
-        "name": "엘앤에프",
-        "sector": "화학·배터리",
-        "price": 221000,
-        "change_pct_1d": 13.275243464889797,
-        "market_cap": 8306610405376.0,
-        "operating_margin": 0.13349,
-        "revenue_growth": 0.691,
-        "pe_ratio": null,
-        "drawdown_52w": 0.0,
-        "rsi": 70.68685241946386,
-        "volume_spike": false,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 101.7,
-        "reasons": [
-          "MACD 골든크로스",
-          "영업이익률 13%",
-          "매출 성장 +69%"
-        ],
-        "entry_low": 211575,
-        "entry_high": 227732,
-        "target": 257353,
-        "stoploss": 200804,
-        "narrative": {
-          "one_liner": "화학·배터리 영업이익률 13% / RSI 71 반등 신호",
-          "thesis": "엘앤에프(066970)는 매출 성장률 69% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. RSI 71로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "13%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "69%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "71",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-0%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 33.4
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
@@ -136,7 +31,7 @@
         "revenue_growth": 0.251,
         "pe_ratio": null,
         "drawdown_52w": 0.19114688128772636,
-        "rsi": 46.710353954034915,
+        "rsi": 46.71035395403492,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -236,12 +131,12 @@
         "sector": "바이오·헬스케어",
         "price": 1461000,
         "change_pct_1d": -0.6122448979591799,
-        "market_cap": 67584791674880.0,
+        "market_cap": 67631080013824.0,
         "operating_margin": 0.46221,
         "revenue_growth": null,
         "pe_ratio": null,
         "drawdown_52w": 0.2564885496183206,
-        "rsi": 34.62916105178138,
+        "rsi": 34.629161051781395,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -346,7 +241,7 @@
         "revenue_growth": 0.229,
         "pe_ratio": null,
         "drawdown_52w": 0.24584347635356454,
-        "rsi": 48.81147134572693,
+        "rsi": 48.81147134572692,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -442,11 +337,11 @@
       }
     ],
     "quant_pick": null,
-    "updated_at_iso": "2026-05-04T10:17:11.565378+09:00",
-    "updated_at_kst": "2026.05.04 (월) 10:17 KST"
+    "updated_at_iso": "2026-05-04T10:19:31.532544+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:19 KST"
   },
-  "updated_at_iso": "2026-05-04T10:17:11.565378+09:00",
-  "updated_at_kst": "2026.05.04 (월) 10:17 KST",
+  "updated_at_iso": "2026-05-04T10:19:38.820101+09:00",
+  "updated_at_kst": "2026.05.04 (월) 10:19 KST",
   "us": {
     "picks": [
       {
@@ -569,7 +464,7 @@
         "pe_ratio": 22.120094,
         "sector": "Communication Services",
         "avg_volume": 16174275.0,
-        "rsi": 40.69805049322295,
+        "rsi": 40.69805048724444,
         "drawdown_52w": 0.2276206527157485,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -676,8 +571,8 @@
         "pe_ratio": 24.68385,
         "sector": "Technology",
         "avg_volume": 34716645.0,
-        "rsi": 54.49538632390697,
-        "drawdown_52w": 0.23226999028548376,
+        "rsi": 54.495386324714964,
+        "drawdown_52w": 0.23227007708861228,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
@@ -770,43 +665,100 @@
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-05-04T02:46:16.317881+09:00",
-    "updated_at_kst": "2026.05.04 (월) 02:46 KST"
+    "updated_at_iso": "2026-05-04T10:19:37.311298+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:19 KST"
   },
   "futures": {
     "picks": [
+      {
+        "ticker": "229200",
+        "name": "KODEX 코스닥150",
+        "market": "kr",
+        "leveraged": false,
+        "price": 20355.0,
+        "price_krw": 20355,
+        "change_pct_1d": 2.5182573659027874,
+        "rsi": 57.7878175216337,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "drawdown_52w": 0.03398312796273547,
+        "score": 0.0,
+        "reasons": [],
+        "entry_low": 20105.09,
+        "entry_high": 20554.93,
+        "target": 21704.53,
+        "stoploss": 19605.26,
+        "hold_days_max": 5,
+        "position_size_pct": 20.0,
+        "narrative": {
+          "one_liner": "ETF, RSI 58 추세, 거래량 급증",
+          "thesis": "KODEX 코스닥150(229200)는 RSI 58에 위치한 ETF입니다. ",
+          "signals": [
+            {
+              "label": "RSI",
+              "value": "58",
+              "ok": false,
+              "explain": "30~50 구간이 스윙 진입에 적합."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 모두 상승 시작."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 2배+ 거래."
+            }
+          ],
+          "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
+          "score_breakdown": [],
+          "hold_days": 5,
+          "position_size_pct": 20.0,
+          "leveraged": false
+        }
+      },
       {
         "ticker": "252670",
         "name": "KODEX 200선물인버스2X",
         "market": "kr",
         "leveraged": true,
-        "price": 169.0,
-        "price_krw": 169,
-        "change_pct_1d": 1.8072289156626509,
-        "rsi": 31.939860663476864,
+        "price": 160.0,
+        "price_krw": 160,
+        "change_pct_1d": -5.3254437869822535,
+        "rsi": 29.773513668907697,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.9219399538106235,
-        "score": 20.0,
+        "drawdown_52w": 0.9248826291079812,
+        "score": 29.773513668907697,
         "reasons": [
-          "RSI 32",
-          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의"
+          "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의",
+          "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 163.89,
-        "entry_high": 173.09,
-        "target": 184.31,
-        "stoploss": 158.79,
+        "entry_low": 155.0,
+        "entry_high": 164.0,
+        "target": 175.0,
+        "stoploss": 150.0,
         "hold_days_max": 5,
         "position_size_pct": 15.0,
         "narrative": {
-          "one_liner": "레버리지 ETF (변동 2~3배), RSI 32 반등, 거래량 급증",
-          "thesis": "KODEX 200선물인버스2X(252670)는 RSI 32에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
+          "one_liner": "레버리지 ETF (변동 2~3배), RSI 30 반등, 거래량 급증",
+          "thesis": "KODEX 200선물인버스2X(252670)는 RSI 30에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
           "signals": [
             {
               "label": "RSI",
-              "value": "32",
-              "ok": true,
+              "value": "30",
+              "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
             {
@@ -831,10 +783,6 @@
           "risk": "⚠️ 레버리지 상품 — 손실이 2~3배로 확대됩니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 15.0% 이하로 제한하세요.",
           "score_breakdown": [
             {
-              "name": "RSI 30~50",
-              "points": 25
-            },
-            {
               "name": "레버리지 페널티",
               "points": -5
             }
@@ -845,100 +793,36 @@
         }
       },
       {
-        "ticker": "229200",
-        "name": "KODEX 코스닥150",
-        "market": "kr",
-        "leveraged": false,
-        "price": 19855.0,
-        "price_krw": 19855,
-        "change_pct_1d": -3.0990727183992206,
-        "rsi": 53.31088098049533,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "drawdown_52w": 0.057712355966598516,
-        "score": 10.0,
-        "reasons": [
-          "52주 고점 대비 -6%"
-        ],
-        "entry_low": 19608.68,
-        "entry_high": 20052.06,
-        "target": 21185.15,
-        "stoploss": 19116.03,
-        "hold_days_max": 5,
-        "position_size_pct": 20.0,
-        "narrative": {
-          "one_liner": "ETF, RSI 53 추세, 거래량 급증",
-          "thesis": "KODEX 코스닥150(229200)는 RSI 53에 위치한 ETF입니다. ",
-          "signals": [
-            {
-              "label": "RSI",
-              "value": "53",
-              "ok": false,
-              "explain": "30~50 구간이 스윙 진입에 적합."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 모두 상승 시작."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 2배+ 거래."
-            }
-          ],
-          "risk": "ETF·선물도 단기 변동에 취약합니다. 정해둔 손절가 엄수, 한 종목 비중은 전체 자산의 20.0% 이하로 제한하세요.",
-          "score_breakdown": [
-            {
-              "name": "52주 -5~-30%",
-              "points": 10
-            }
-          ],
-          "hold_days": 5,
-          "position_size_pct": 20.0,
-          "leveraged": false
-        }
-      },
-      {
         "ticker": "122630",
         "name": "KODEX 레버리지",
         "market": "kr",
         "leveraged": true,
-        "price": 115450.0,
-        "price_krw": 115450,
-        "change_pct_1d": -2.223163243701043,
-        "rsi": 67.39399199724195,
+        "price": 121715.0,
+        "price_krw": 121715,
+        "change_pct_1d": 5.426591598094421,
+        "rsi": 71.28087226956734,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "drawdown_52w": 0.022231632437010374,
-        "score": 32.606008002758045,
+        "drawdown_52w": 0.0,
+        "score": 28.71912773043266,
         "reasons": [
           "⚠️ 레버리지 ETF — 손실 2~3배 확대 주의",
           "진입 신호 미발생 — 추세 강세 자산"
         ],
-        "entry_low": 112796.25,
-        "entry_high": 117573.0,
-        "target": 123411.25,
-        "stoploss": 110142.5,
+        "entry_low": 118994.82,
+        "entry_high": 123891.14,
+        "target": 129875.54,
+        "stoploss": 116274.64,
         "hold_days_max": 5,
         "position_size_pct": 15.0,
         "narrative": {
-          "one_liner": "레버리지 ETF (변동 2~3배), RSI 67 추세, 거래량 급증",
-          "thesis": "KODEX 레버리지(122630)는 RSI 67에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
+          "one_liner": "레버리지 ETF (변동 2~3배), RSI 71 추세, 거래량 급증",
+          "thesis": "KODEX 레버리지(122630)는 RSI 71에 위치한 레버리지 ETF (변동 2~3배)입니다. 레버리지 상품이므로 평소보다 보수적으로 진입하세요.",
           "signals": [
             {
               "label": "RSI",
-              "value": "67",
+              "value": "71",
               "ok": false,
               "explain": "30~50 구간이 스윙 진입에 적합."
             },
@@ -974,7 +858,7 @@
         }
       }
     ],
-    "updated_at_iso": "2026-05-04T02:46:18.692130+09:00",
-    "updated_at_kst": "2026.05.04 (월) 02:46 KST"
+    "updated_at_iso": "2026-05-04T10:19:38.820101+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:19 KST"
   }
 }
