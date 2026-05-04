@@ -55,47 +55,157 @@ KR_RSS_FEEDS = [
     "https://www.yna.co.kr/rss/economy.xml",   # 연합뉴스 경제
 ]
 
-# 호재/악재 키워드 (한국어)
+# 호재/악재 키워드 (한국어) — 정책·사회·거시 이슈까지 확장
 KR_POSITIVE_KEYWORDS = [
+    # 실적
     "어닝 서프라이즈", "실적 호조", "호실적", "흑자전환", "최대 매출", "최대 영업이익",
-    "수주", "계약 체결", "공급 계약", "MOU", "협력", "파트너십",
-    "인수", "M&A", "합병", "지분 인수",
-    "신약", "FDA 승인", "임상 성공", "임상 3상",
-    "신제품", "신규 사업", "사업 확장", "설비 투자", "증설",
-    "자사주 매입", "자사주 소각", "무상증자", "주주환원",
-    "목표가 상향", "투자의견 매수", "추천", "Buy",
-    "HBM", "AI 칩", "GPU", "수출 호조",
+    "사상 최대", "역대 최고", "사상 첫", "최대 분기", "최대 실적",
+    # 영업·수주
+    "수주", "계약 체결", "공급 계약", "MOU", "협력", "파트너십", "단독 공급", "독점 공급",
+    "수주 잭팟", "대규모 수주", "공급 협약",
+    # M&A·투자
+    "인수", "M&A", "합병", "지분 인수", "지분 투자", "전략적 투자",
+    # 바이오·R&D
+    "신약", "FDA 승인", "임상 성공", "임상 3상", "임상 통과", "특허 등록", "기술이전",
+    "기술 개발 성공", "신기술", "혁신",
+    # 사업 확장
+    "신제품", "신규 사업", "사업 확장", "설비 투자", "증설", "공장 신설",
+    "글로벌 진출", "해외 진출",
+    # 주주환원
+    "자사주 매입", "자사주 소각", "무상증자", "주주환원", "배당 인상", "배당 확대",
+    # 애널리스트
+    "목표가 상향", "투자의견 매수", "Buy", "Outperform", "최고 추천",
+    # 정책·거시 호재
+    "정부 지원", "보조금", "세제 혜택", "지원금", "특별법", "규제 완화",
+    "수출 호조", "환율 호재", "원화 약세 수혜",
+    # 테마 호재
+    "HBM", "AI 칩", "GPU", "전력 인프라", "AI 데이터센터", "방산 수출", "K-방산",
 ]
 KR_NEGATIVE_KEYWORDS = [
+    # 실적
     "어닝 쇼크", "실적 악화", "적자전환", "영업손실 확대", "매출 감소",
-    "가이던스 하향", "전망 하향", "실적 우려",
-    "분식회계", "회계 부정", "감사의견 거절", "감사 지정",
-    "횡령", "배임", "기소", "수사", "조사 착수",
-    "리콜", "결함", "사고", "화재",
-    "임원 매도", "대주주 매도", "지분 매각",
-    "소송", "패소", "손해배상", "특허 침해",
-    "유상증자", "전환사채 발행", "신주 발행",
-    "거래정지", "상장폐지", "관리종목",
-    "목표가 하향", "투자의견 매도", "Sell", "downgrade",
+    "가이던스 하향", "전망 하향", "실적 우려", "역성장", "사상 최악",
+    # 회계·법
+    "분식회계", "회계 부정", "감사의견 거절", "감사 지정", "한정 의견",
+    "횡령", "배임", "기소", "수사", "조사 착수", "검찰 조사", "압수수색",
+    # 제품·운영
+    "리콜", "결함", "사고", "화재", "공장 정지", "생산 차질",
+    # 지배구조
+    "임원 매도", "대주주 매도", "지분 매각", "최대주주 변경", "오너 리스크",
+    # 법적
+    "소송", "패소", "손해배상", "특허 침해", "특허 분쟁",
+    # 자본
+    "유상증자", "전환사채 발행", "신주 발행", "주주배정 유상증자",
+    "거래정지", "상장폐지", "관리종목", "투자주의", "투자경고",
+    # 애널리스트
+    "목표가 하향", "투자의견 매도", "Sell", "downgrade", "비중축소",
+    # 정책·거시 악재
+    "규제 강화", "처벌", "벌금", "과징금", "제재", "환경 부담", "탄소세",
+    "관세 부과", "수출 통제", "공급망 위기", "공급 차질",
+    # 노조·사회
+    "노조 파업", "직원 시위", "산재 사고", "환경 오염",
 ]
 
-# 호재/악재 키워드 (영문)
+# 호재/악재 키워드 (영문) — 정책·사회·거시 이슈까지 확장
 US_POSITIVE_KEYWORDS = [
-    "earnings beat", "beats expectations", "record revenue", "record earnings",
-    "raises guidance", "guidance raised", "outlook raised",
-    "FDA approval", "clinical success", "phase 3",
-    "acquisition", "merger", "buyback", "dividend increase",
-    "upgrade", "buy rating", "price target raised", "outperform",
-    "wins contract", "secures deal", "partnership",
+    # Earnings
+    "earnings beat", "beats expectations", "beat estimates", "record revenue",
+    "record earnings", "all-time high", "record high",
+    "raises guidance", "guidance raised", "outlook raised", "raises forecast",
+    # M&A / Strategic
+    "acquisition", "merger", "buyback", "share repurchase", "dividend increase",
+    "strategic investment", "ipo", "spin-off",
+    # Approvals / R&D
+    "FDA approval", "clinical success", "phase 3", "approval granted",
+    "regulatory approval", "patent granted", "breakthrough designation",
+    # Analyst
+    "upgrade", "buy rating", "outperform", "price target raised", "overweight",
+    "top pick", "conviction buy",
+    # Business
+    "wins contract", "secures deal", "partnership", "exclusive deal",
+    "major order", "expands operations",
+    # Macro / Theme
+    "tax credit", "government support", "subsidy", "stimulus",
+    "AI", "data center", "GPU demand", "chip demand",
 ]
 US_NEGATIVE_KEYWORDS = [
-    "earnings miss", "misses expectations", "revenue decline",
-    "lowers guidance", "guidance cut", "outlook cut",
-    "lawsuit", "investigation", "fraud", "settles",
-    "recall", "downgrade", "sell rating", "price target lowered",
-    "underperform", "bankruptcy", "going concern",
-    "FDA rejection", "clinical failure",
+    # Earnings
+    "earnings miss", "misses expectations", "missed estimates", "revenue decline",
+    "lowers guidance", "guidance cut", "outlook cut", "lowers forecast",
+    # Legal / Regulatory
+    "lawsuit", "investigation", "fraud", "settles", "settlement",
+    "regulatory probe", "doj investigation", "antitrust", "sec probe",
+    "subpoena", "indictment",
+    # Operations
+    "recall", "product recall", "defect", "plant shutdown", "production halt",
+    "data breach", "cyberattack",
+    # Analyst
+    "downgrade", "sell rating", "price target lowered", "underperform", "underweight",
+    # Capital / Corporate
+    "bankruptcy", "going concern", "delisting", "dilution", "secondary offering",
+    "ceo resignation", "fired ceo", "cfo departure",
+    # Approvals
+    "FDA rejection", "clinical failure", "rejected", "phase 3 failure",
+    # Macro / Trade
+    "tariff", "trade war", "export ban", "sanctions", "blacklist",
+    "supply shortage", "supply chain crisis",
 ]
+
+# 종목명 alias — RSS 헤드라인 매칭률 향상 (한국 + 영문 + 약칭)
+# 매칭 시 어느 alias 든 1개만 일치하면 ticker 매핑됨
+KR_ALIASES: dict[str, list[str]] = {
+    "005930": ["삼성전자", "삼전", "Samsung Electronics"],
+    "000660": ["SK하이닉스", "SK 하이닉스", "하이닉스", "Hynix"],
+    "207940": ["삼성바이오로직스", "삼성바이오", "Samsung Biologics"],
+    "373220": ["LG에너지솔루션", "LG엔솔", "LG Energy"],
+    "005380": ["현대차", "현대자동차", "Hyundai Motor"],
+    "035420": ["NAVER", "네이버"],
+    "035720": ["카카오", "Kakao"],
+    "068270": ["셀트리온", "Celltrion"],
+    "051910": ["LG화학", "LG Chem"],
+    "012450": ["한화에어로", "한화에어로스페이스"],
+    "000270": ["기아", "기아차", "Kia"],
+    "105560": ["KB금융", "KB Financial"],
+    "055550": ["신한지주", "신한금융"],
+    "017670": ["SK텔레콤", "SKT"],
+    "015760": ["한국전력", "한전", "KEPCO"],
+    "009150": ["삼성전기", "Samsung Electro"],
+    "006400": ["삼성SDI"],
+    "066570": ["LG전자", "LG Electronics"],
+    "003670": ["포스코홀딩스", "포스코", "POSCO"],
+    "012330": ["현대모비스", "Mobis"],
+    "042700": ["한미반도체"],
+    "388050": ["SFA반도체"],
+    "058470": ["리노공업"],
+    "240810": ["원익IPS"],
+    "036930": ["주성엔지니어링"],
+    "095340": ["ISC"],
+    "247540": ["에코프로비엠"],
+    "086520": ["에코프로"],
+    "066970": ["엘앤에프"],
+    "079550": ["LIG넥스원", "넥스원"],
+    "047810": ["한국항공우주", "KAI"],
+    "272210": ["한화시스템"],
+    "010140": ["삼성중공업"],
+    "009540": ["HD한국조선해양", "한국조선해양", "HD현대중공업"],
+    "042660": ["한화오션"],
+    "001440": ["대한전선"],
+    "010170": ["대한광통신"],
+    "006910": ["보성파워텍"],
+    "006340": ["대원전선"],
+    "062040": ["산일전기"],
+    "000500": ["가온전선"],
+    "103590": ["일진전기"],
+    "298040": ["효성중공업"],
+    "267260": ["HD현대일렉트릭", "현대일렉트릭"],
+    "112610": ["CS윈드"],
+    "263750": ["펄어비스"],
+    "041510": ["SM"],
+    "352820": ["하이브", "Hybe"],
+    "036570": ["엔씨소프트", "NC소프트", "NCSOFT"],
+    "112040": ["위메이드"],
+    "251270": ["넷마블", "Netmarble"],
+}
 
 # Macro 키워드 (지정학·정책·시장 위기)
 MACRO_KEYWORDS_DEFENSIVE = [
@@ -180,6 +290,42 @@ def fetch_us_news_for_ticker(ticker: str) -> list[dict]:
         return []
 
 
+def fetch_kr_news_for_ticker(ticker: str) -> list[dict]:
+    """yfinance.Ticker(ticker.KS/.KQ).news — KR 종목별 뉴스 (yfinance 제공).
+    .KS 와 .KQ 둘 다 시도, 첫 성공한 결과 반환."""
+    try:
+        import yfinance as yf
+    except ImportError:
+        return []
+    for suffix in (".KS", ".KQ"):
+        try:
+            news = yf.Ticker(ticker + suffix).news or []
+            items = []
+            for n in news[:10]:
+                t = n.get("title", "") or (n.get("content") or {}).get("title", "")
+                if t:
+                    items.append({
+                        "title": t,
+                        "link": n.get("link") or (n.get("content") or {}).get("canonicalUrl", {}).get("url", ""),
+                        "pub":  str(n.get("providerPublishTime", "")),
+                    })
+            if items:
+                return items
+        except Exception:
+            continue
+    return []
+
+
+def _matches_kr_company(headline: str, ticker: str, name: str) -> bool:
+    """RSS 일반 헤드라인에 종목 alias 매칭 — 종목명 단순 매칭보다 커버리지 ↑."""
+    aliases = KR_ALIASES.get(ticker, [])
+    if name and name not in aliases:
+        aliases = aliases + [name]
+    if ticker not in aliases:
+        aliases.append(ticker)
+    return any(a in headline for a in aliases if a)
+
+
 def classify_kr(headline: str) -> tuple[int, list[str], list[str]]:
     """KR 헤드라인 분류 — (score, [hit positive], [hit negative])."""
     text = headline.lower()
@@ -237,28 +383,45 @@ def main() -> None:
         name = KR_TICKER_NAMES.get(ticker)
         if not name:
             continue
-        # 종목명이 헤드라인에 등장하는 24h 뉴스 매칭
         matched = []
-        score_total = 0
         all_pos = set(); all_neg = set()
+
+        # 1차 — 종목별 yfinance.news (per-ticker, 가장 정확)
+        for it in fetch_kr_news_for_ticker(ticker):
+            title = it.get("title", "")
+            s, pos, neg = classify_kr(title)
+            if pos or neg:
+                matched.append({"title": title, "link": it.get("link", ""),
+                                "score": s, "positive": pos, "negative": neg})
+                all_pos.update(pos); all_neg.update(neg)
+        # 2차 — KR RSS 일반 뉴스에서 alias 매칭 (커버리지 보강)
         for it in kr_items:
             title = it.get("title", "")
-            if name in title or ticker in title:
-                s, pos, neg = classify_kr(title)
-                if pos or neg:
-                    matched.append({"title": title, "link": it.get("link", ""),
-                                    "score": s, "positive": pos, "negative": neg})
-                    score_total += s
-                    all_pos.update(pos); all_neg.update(neg)
+            if not _matches_kr_company(title, ticker, name):
+                continue
+            s, pos, neg = classify_kr(title)
+            if pos or neg:
+                matched.append({"title": title, "link": it.get("link", ""),
+                                "score": s, "positive": pos, "negative": neg})
+                all_pos.update(pos); all_neg.update(neg)
+
         if matched:
+            # 중복 헤드라인 제거 (같은 제목 여러 소스에서 잡힘)
+            seen = set(); deduped = []
+            for m in matched:
+                key = m["title"][:60]
+                if key in seen: continue
+                seen.add(key); deduped.append(m)
+            score_total = sum(m["score"] for m in deduped)
             out[ticker] = {
                 "ticker": ticker, "name": name, "market": "kr",
-                "headlines": matched[:5],
+                "headlines": deduped[:5],
                 "positive": len(all_pos),
                 "negative": len(all_neg),
                 "score_adjust": score_total,
                 "summary": f"호재 {len(all_pos)}건 / 악재 {len(all_neg)}건",
             }
+        time.sleep(0.1)   # yfinance rate limit 보호
 
     # US — yfinance.news 종목별 호출
     log.info("US 종목별 뉴스 fetch 시작 (%d종목)", len(US_UNIVERSE))

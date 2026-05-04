@@ -103,22 +103,55 @@ def _fetch_yfinance(ticker: str, period: str = "1y") -> Optional[pd.DataFrame]:
         return None
 
 
-def fetch_history(ticker: str, market: str = "us", period_days: int = 365) -> Optional[pd.DataFrame]:
-    """가격 시계열 — yfinance 1.3.0+ 우선, 실패 시 stooq 폴백.
+def _fetch_pykrx_ohlcv(ticker: str, period_days: int = 400) -> Optional[pd.DataFrame]:
+    """KR 종목 OHLC + 거래량 — pykrx 직접 호출. yfinance 누락 종목 (소형주·신규상장) 보완."""
+    try:
+        from pykrx import stock as krx
+    except ImportError:
+        return None
+    try:
+        end = datetime.now(KST).date()
+        start = end - timedelta(days=period_days)
+        df = krx.get_market_ohlcv_by_date(
+            start.strftime("%Y%m%d"), end.strftime("%Y%m%d"), ticker
+        )
+        if df is None or df.empty:
+            return None
+        df = df.rename(columns={
+            "시가": "Open", "고가": "High", "저가": "Low",
+            "종가": "Close", "거래량": "Volume"
+        })
+        # tz-naive 인덱스 정규화
+        if df.index.tz is not None:
+            df.index = df.index.tz_localize(None)
+        return df
+    except Exception as e:
+        log.debug("pykrx OHLCV failed for %s: %s", ticker, e)
+        return None
 
-    KR 종목(6자리)은 yfinance에서 '.KS' suffix 필수 → 자동으로 붙여줌.
+
+def fetch_history(ticker: str, market: str = "us", period_days: int = 365) -> Optional[pd.DataFrame]:
+    """가격 시계열 폴백 체인:
+       KR: yfinance.KS → yfinance.KQ → pykrx → stooq
+       US: yfinance → stooq
+    소형주·신규상장은 yfinance/stooq 모두 실패 가능 — pykrx 가 KRX 직접 조회로 가장 안정적.
     """
     period = "2y" if period_days > 250 else "1y"
     yf_ticker = ticker
     if market == "kr" and ticker.isdigit() and "." not in ticker:
-        yf_ticker = f"{ticker}.KS"   # KOSPI 종목/ETF
+        yf_ticker = f"{ticker}.KS"
     df = _fetch_yfinance(yf_ticker, period=period)
     if df is not None and not df.empty:
         return df
-    # KOSPI에서 못 찾으면 KOSDAQ도 시도
     if market == "kr" and yf_ticker.endswith(".KS"):
         df = _fetch_yfinance(yf_ticker.replace(".KS", ".KQ"), period=period)
         if df is not None and not df.empty:
+            return df
+    # KR pykrx 폴백 — 소형주·신규상장 우선
+    if market == "kr":
+        df = _fetch_pykrx_ohlcv(ticker, period_days=period_days)
+        if df is not None and not df.empty:
+            log.info("pykrx fallback OK: %s (%d rows)", ticker, len(df))
             return df
     return _fetch_stooq(ticker, market=market, period_days=period_days)
 
