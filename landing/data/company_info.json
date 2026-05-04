@@ -1,18 +1,18 @@
 {
-  "068270": {
-    "ticker": "068270",
-    "market": "kr",
-    "name": "셀트리온",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.35,
-    "sector_status": "➡️ 보합"
-  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.35,
+    "sector_momentum_5d_pct": -0.52,
+    "sector_status": "➡️ 보합"
+  },
+  "068270": {
+    "ticker": "068270",
+    "market": "kr",
+    "name": "셀트리온",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -0.52,
     "sector_status": "➡️ 보합"
   },
   "251270": {
@@ -55,7 +55,7 @@
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-04T10:19:42+09:00",
+    "generated_at_iso": "2026-05-04T10:22:14+09:00",
     "tickers_count": 6,
     "dart_enabled": false
   }

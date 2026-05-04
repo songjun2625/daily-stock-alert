@@ -21,111 +21,6 @@
   "kr": {
     "picks": [
       {
-        "ticker": "068270",
-        "name": "셀트리온",
-        "sector": "바이오·헬스케어",
-        "price": 201000,
-        "change_pct_1d": 0.24937655860348684,
-        "market_cap": 43961066455040.0,
-        "operating_margin": 0.35382,
-        "revenue_growth": 0.251,
-        "pe_ratio": null,
-        "drawdown_52w": 0.19114688128772636,
-        "rsi": 46.71035395403492,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 97.0,
-        "reasons": [
-          "52주 고점 대비 -19%",
-          "영업이익률 35%",
-          "매출 성장 +25%"
-        ],
-        "entry_low": 197365,
-        "entry_high": 203596,
-        "target": 215020,
-        "stoploss": 193211,
-        "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 47 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "35%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "25%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "47",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-19%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
@@ -231,17 +126,122 @@
         }
       },
       {
+        "ticker": "068270",
+        "name": "셀트리온",
+        "sector": "바이오·헬스케어",
+        "price": 201000,
+        "change_pct_1d": 0.24937655860348684,
+        "market_cap": 43851712561152.0,
+        "operating_margin": 0.35382,
+        "revenue_growth": 0.251,
+        "pe_ratio": null,
+        "drawdown_52w": 0.19114688128772636,
+        "rsi": 46.71035395403492,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 97.0,
+        "reasons": [
+          "52주 고점 대비 -19%",
+          "영업이익률 35%",
+          "매출 성장 +25%"
+        ],
+        "entry_low": 197365,
+        "entry_high": 203596,
+        "target": 215020,
+        "stoploss": 193211,
+        "narrative": {
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 47 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "35%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "25%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "47",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-19%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
         "ticker": "251270",
         "name": "넷마블",
         "sector": "코스피·코스닥",
-        "price": 50500,
-        "change_pct_1d": 1.7119838872104776,
-        "market_cap": 4137695576064.0,
+        "price": 50600,
+        "change_pct_1d": 1.9133937562940684,
+        "market_cap": 4145889148928.0,
         "operating_margin": 0.12943,
         "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.24584347635356454,
-        "rsi": 48.81147134572692,
+        "drawdown_52w": 0.24435009709881914,
+        "rsi": 49.21252531516445,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -250,17 +250,17 @@
         "earnings_surprise": null,
         "score": 67.89,
         "reasons": [
-          "52주 고점 대비 -25%",
+          "52주 고점 대비 -24%",
           "영업이익률 13%",
           "매출 성장 +23%"
         ],
-        "entry_low": 49508,
-        "entry_high": 51209,
-        "target": 54329,
-        "stoploss": 48373,
+        "entry_low": 49608,
+        "entry_high": 51309,
+        "target": 54429,
+        "stoploss": 48473,
         "narrative": {
           "one_liner": "코스피·코스닥 영업이익률 13% / RSI 49 반등 신호",
-          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 49로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 49로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -282,7 +282,7 @@
             },
             {
               "label": "52주 고점 대비",
-              "value": "-25%",
+              "value": "-24%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -337,11 +337,11 @@
       }
     ],
     "quant_pick": null,
-    "updated_at_iso": "2026-05-04T10:19:31.532544+09:00",
-    "updated_at_kst": "2026.05.04 (월) 10:19 KST"
+    "updated_at_iso": "2026-05-04T10:22:08.393311+09:00",
+    "updated_at_kst": "2026.05.04 (월) 10:22 KST"
   },
-  "updated_at_iso": "2026-05-04T10:19:38.820101+09:00",
-  "updated_at_kst": "2026.05.04 (월) 10:19 KST",
+  "updated_at_iso": "2026-05-04T10:22:08.393311+09:00",
+  "updated_at_kst": "2026.05.04 (월) 10:22 KST",
   "us": {
     "picks": [
       {
