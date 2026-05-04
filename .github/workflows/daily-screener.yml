@@ -64,6 +64,14 @@ jobs:
         run: python tools/fetch_company_info.py
         continue-on-error: true   # 외부 API 일시 장애가 picks 발행을 막지 않도록
 
+      - name: Fetch news signals (RSS + yfinance.news 호재/악재 자동 분류)
+        run: python tools/news_scraper.py
+        continue-on-error: true
+
+      - name: Apply news score boost to picks
+        run: python tools/apply_news_boost.py
+        continue-on-error: true
+
       - name: Commit & push picks.json (only if changed)
         id: commit
         run: |

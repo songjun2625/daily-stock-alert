@@ -151,6 +151,34 @@ def _score_block_html(score, sector: str = "") -> str:
     )
 
 
+def _news_block_html(p: dict) -> str:
+    """종목 pick 의 news_boost / headlines 표시. apply_news_boost.py 결과."""
+    boost = p.get("news_boost")
+    if boost is None: return ""
+    pos = p.get("news_positive", 0) or 0
+    neg = p.get("news_negative", 0) or 0
+    if boost == 0 and pos == 0 and neg == 0: return ""
+    sign = "+" if boost > 0 else ""
+    if boost > 0:   bg, color = "#D1FAE5", "#065F46"
+    elif boost < 0: bg, color = "#FEE2E2", "#991B1B"
+    else:           bg, color = "#F1F5F9", "#374151"
+    summary = f"📰 호재 {pos}건 / 악재 {neg}건 → 점수 {sign}{boost:.0f}"
+    heads = (p.get("news_headlines") or [])[:2]
+    items = ""
+    if heads:
+        rows = []
+        for h in heads:
+            tag = "🟢" if (h.get("positive") or []) else ("🔴" if (h.get("negative") or []) else "📋")
+            title = (h.get("title") or "").replace("<", "&lt;").replace(">", "&gt;")
+            link = h.get("link", "")
+            link_html = f'<a href="{link}" style="color:#1E3A8A;text-decoration:none">{title}</a>' if link else title
+            rows.append(f'<li style="margin:0;line-height:1.45">{tag} {link_html}</li>')
+        items = f'<ul style="margin:4px 0 0 0;padding-left:14px;list-style:disc;font-size:10px">{"".join(rows)}</ul>'
+    return (f'<div style="margin-top:6px;background:{bg};border-radius:6px;padding:6px 9px">'
+            f'<div style="font-size:10px;font-weight:700;color:{color}">{summary}</div>'
+            f'{items}</div>')
+
+
 def _market_quant_pick_html(qp: dict | None, market: str) -> str:
     """시장별 퀀트 픽 — 재무재표 기반. 시장 섹션 최상단에 노출."""
     if not qp or not qp.get("ticker"):
@@ -420,6 +448,7 @@ def build_html(data: dict, name: str = "") -> str:
   </div>
   <div style="margin-top:4px;font-size:16px;font-weight:800;color:#0B1B3D">{price_fmt}</div>
   {score_html}
+  {_news_block_html(p)}
   <div style="margin-top:8px;font-size:12px;color:#374151;line-height:1.5">{one_liner}</div>
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin-top:8px;font-size:12px;border-collapse:separate;border-spacing:0 3px">
     <tr>
