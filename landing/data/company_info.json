@@ -1,19 +1,33 @@
 {
-  "207940": {
-    "ticker": "207940",
+  "062040": {
+    "ticker": "062040",
     "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": NaN,
-    "sector_status": "❄️ 부진"
+    "name": "산일전기",
+    "sector": "전선·전력인프라"
+  },
+  "000660": {
+    "ticker": "000660",
+    "market": "kr",
+    "name": "SK하이닉스",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 7.92,
+    "sector_status": "🔥 강세"
+  },
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 7.92,
+    "sector_status": "🔥 강세"
   },
   "068270": {
     "ticker": "068270",
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": NaN,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -1.75,
+    "sector_status": "📉 약세"
   },
   "251270": {
     "ticker": "251270",
@@ -29,7 +43,7 @@
     "next_earnings": "2026-05-04",
     "last_earnings_surprise_pct": 8.6,
     "last_earnings_date": "2026-02-02",
-    "sector_momentum_5d_pct": 0.68,
+    "sector_momentum_5d_pct": 0.92,
     "sector_status": "➡️ 보합"
   },
   "META": {
@@ -40,7 +54,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 0.5,
+    "sector_momentum_5d_pct": 0.25,
     "sector_status": "➡️ 보합"
   },
   "MSFT": {
@@ -51,7 +65,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 4.9,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 0.68,
+    "sector_momentum_5d_pct": 0.92,
     "sector_status": "➡️ 보합"
   },
   "SHOP": {
@@ -62,12 +76,12 @@
     "next_earnings": "2026-05-05",
     "last_earnings_surprise_pct": -5.71,
     "last_earnings_date": "2026-02-11",
-    "sector_momentum_5d_pct": 0.68,
+    "sector_momentum_5d_pct": 0.92,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-05T00:23:54+09:00",
-    "tickers_count": 7,
+    "generated_at_iso": "2026-05-05T10:21:40+09:00",
+    "tickers_count": 9,
     "dart_enabled": false
   }
 }
