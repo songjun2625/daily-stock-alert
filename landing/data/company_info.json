@@ -4,22 +4,22 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.29,
-    "sector_status": "📉 약세"
-  },
-  "251270": {
-    "ticker": "251270",
-    "market": "kr",
-    "name": "넷마블",
-    "sector": "코스피·코스닥"
+    "sector_momentum_5d_pct": -3.38,
+    "sector_status": "❄️ 부진"
   },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.29,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.38,
+    "sector_status": "❄️ 부진"
+  },
+  "251270": {
+    "ticker": "251270",
+    "market": "kr",
+    "name": "넷마블",
+    "sector": "코스피·코스닥"
   },
   "010170": {
     "ticker": "010170",
@@ -33,6 +33,28 @@
     "name": "NAVER",
     "sector": "IT 플랫폼"
   },
+  "PLTR": {
+    "ticker": "PLTR",
+    "market": "us",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-08-03",
+    "last_earnings_surprise_pct": 18.08,
+    "last_earnings_date": "2026-05-04",
+    "sector_momentum_5d_pct": 7.61,
+    "sector_status": "🔥 강세"
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "market": "us",
+    "name": "NVIDIA Corporation",
+    "sector": "Technology",
+    "next_earnings": "2026-05-20",
+    "last_earnings_surprise_pct": 5.32,
+    "last_earnings_date": "2026-02-25",
+    "sector_momentum_5d_pct": 7.61,
+    "sector_status": "🔥 강세"
+  },
   "META": {
     "ticker": "META",
     "market": "us",
@@ -41,7 +63,18 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 1.79,
+    "sector_momentum_5d_pct": 1.43,
+    "sector_status": "📈 호조"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-08-05",
+    "last_earnings_surprise_pct": 2.96,
+    "last_earnings_date": "2026-05-06",
+    "sector_momentum_5d_pct": 1.43,
     "sector_status": "📈 호조"
   },
   "MSFT": {
@@ -52,44 +85,11 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 6.86,
-    "sector_status": "🔥 강세"
-  },
-  "NFLX": {
-    "ticker": "NFLX",
-    "market": "us",
-    "name": "Netflix, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-16",
-    "last_earnings_surprise_pct": -6.93,
-    "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": 1.79,
-    "sector_status": "📈 호조"
-  },
-  "ASML": {
-    "ticker": "ASML",
-    "market": "us",
-    "name": "ASML Holding N.V. - New York Re",
-    "sector": "Technology",
-    "next_earnings": "2026-07-15",
-    "last_earnings_surprise_pct": 7.99,
-    "last_earnings_date": "2026-04-14",
-    "sector_momentum_5d_pct": 6.86,
-    "sector_status": "🔥 강세"
-  },
-  "GE": {
-    "ticker": "GE",
-    "market": "us",
-    "name": "GE Aerospace",
-    "sector": "Industrials",
-    "next_earnings": "2026-07-16",
-    "last_earnings_surprise_pct": 16.31,
-    "last_earnings_date": "2026-04-21",
-    "sector_momentum_5d_pct": 4.08,
+    "sector_momentum_5d_pct": 7.61,
     "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-07T10:25:17+09:00",
+    "generated_at_iso": "2026-05-08T00:38:08+09:00",
     "tickers_count": 10,
     "dart_enabled": false
   }
