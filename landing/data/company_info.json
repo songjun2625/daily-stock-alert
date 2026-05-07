@@ -1,24 +1,10 @@
 {
-  "010170": {
-    "ticker": "010170",
-    "market": "kr",
-    "name": "대한광통신",
-    "sector": "전선·전력인프라"
-  },
   "068270": {
     "ticker": "068270",
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.97,
-    "sector_status": "📉 약세"
-  },
-  "207940": {
-    "ticker": "207940",
-    "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.97,
+    "sector_momentum_5d_pct": -2.29,
     "sector_status": "📉 약세"
   },
   "251270": {
@@ -26,6 +12,26 @@
     "market": "kr",
     "name": "넷마블",
     "sector": "코스피·코스닥"
+  },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -2.29,
+    "sector_status": "📉 약세"
+  },
+  "010170": {
+    "ticker": "010170",
+    "market": "kr",
+    "name": "대한광통신",
+    "sector": "전선·전력인프라"
+  },
+  "035420": {
+    "ticker": "035420",
+    "market": "kr",
+    "name": "NAVER",
+    "sector": "IT 플랫폼"
   },
   "META": {
     "ticker": "META",
@@ -35,7 +41,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 1.7,
+    "sector_momentum_5d_pct": 1.79,
     "sector_status": "📈 호조"
   },
   "MSFT": {
@@ -46,7 +52,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 6.21,
+    "sector_momentum_5d_pct": 6.86,
     "sector_status": "🔥 강세"
   },
   "NFLX": {
@@ -57,7 +63,7 @@
     "next_earnings": "2026-07-16",
     "last_earnings_surprise_pct": -6.93,
     "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": 1.7,
+    "sector_momentum_5d_pct": 1.79,
     "sector_status": "📈 호조"
   },
   "ASML": {
@@ -68,7 +74,7 @@
     "next_earnings": "2026-07-15",
     "last_earnings_surprise_pct": 7.99,
     "last_earnings_date": "2026-04-14",
-    "sector_momentum_5d_pct": 6.21,
+    "sector_momentum_5d_pct": 6.86,
     "sector_status": "🔥 강세"
   },
   "GE": {
@@ -79,12 +85,12 @@
     "next_earnings": "2026-07-16",
     "last_earnings_surprise_pct": 16.31,
     "last_earnings_date": "2026-04-21",
-    "sector_momentum_5d_pct": 3.85,
+    "sector_momentum_5d_pct": 4.08,
     "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-07T00:36:23+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-05-07T10:25:17+09:00",
+    "tickers_count": 10,
     "dart_enabled": false
   }
 }
