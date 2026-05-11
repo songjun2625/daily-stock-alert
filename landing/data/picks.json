@@ -24,33 +24,34 @@
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 198200,
-        "change_pct_1d": -2.123456790123457,
-        "market_cap": 43348672905216.0,
+        "price": 194500,
+        "change_pct_1d": -1.9657258064516125,
+        "market_cap": 42444334825472.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.20241448692152916,
-        "rsi": 45.57050335741294,
+        "drawdown_52w": 0.21730382293762576,
+        "rsi": 42.4512348822497,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 102.0,
+        "score": 112.0,
         "reasons": [
-          "52주 고점 대비 -20%",
+          "RSI 42(과매도 반등 후보)",
+          "52주 고점 대비 -22%",
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 194210,
-        "entry_high": 201050,
-        "target": 213590,
-        "stoploss": 189650,
+        "entry_low": 190380,
+        "entry_high": 197443,
+        "target": 210392,
+        "stoploss": 185671,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 46 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 42 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 22% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -66,13 +67,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "46",
-              "ok": false,
+              "value": "42",
+              "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-20%",
+              "value": "-22%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -118,59 +119,48 @@
               "points": 37.5
             },
             {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
               "name": "52주 -10~-35%",
               "points": 15
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 97.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "셀트리온 &quot;짐펜트라, 역대 최대 분기 처방량 기록…전년比 3배 증가&quot;",
-            "link": "https://www.mt.co.kr/thebio/2026/05/08/2026050808313475602",
-            "score": 5,
-            "positive": [
-              "최대 분기"
-            ],
-            "negative": []
-          }
-        ]
+        }
       },
       {
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-        "price": 1459000,
-        "change_pct_1d": -0.6130790190735702,
-        "market_cap": 67538499141632.0,
+        "price": 1469000,
+        "change_pct_1d": -0.20380434782608647,
+        "market_cap": 68001407696896.0,
         "operating_margin": 0.46221,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.25750636132315524,
-        "rsi": 35.299036518082076,
+        "drawdown_52w": 0.25241730279898217,
+        "rsi": 36.95903185845137,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 102.0,
+        "score": 92.0,
         "reasons": [
-          "RSI 35(과매도 반등 후보)",
-          "52주 고점 대비 -26%",
+          "RSI 37(과매도 반등 후보)",
+          "52주 고점 대비 -25%",
           "영업이익률 46%"
         ],
-        "entry_low": 1438850,
-        "entry_high": 1473393,
-        "target": 1536722,
-        "stoploss": 1415821,
+        "entry_low": 1448950,
+        "entry_high": 1483321,
+        "target": 1546335,
+        "stoploss": 1426036,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 35 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 35로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 37 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 영업이익률 46%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -186,13 +176,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "35",
+              "value": "37",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-26%",
+              "value": "-25%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -244,7 +234,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 92.0,
+        "score_original": 82.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -265,34 +255,33 @@
         "ticker": "251270",
         "name": "넷마블",
         "sector": "코스피·코스닥",
-        "price": 42250,
-        "change_pct_1d": -10.297239915074307,
-        "market_cap": 3461735514112.0,
+        "price": 43500,
+        "change_pct_1d": 1.1627906976744207,
+        "market_cap": 3564153602048.0,
         "operating_margin": 0.12943,
         "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.3690472648700614,
-        "rsi": 25.733053832333354,
-        "volume_spike": true,
+        "drawdown_52w": 0.3503800241857437,
+        "rsi": 29.353568212464822,
+        "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 90.89,
+        "score": 80.89,
         "reasons": [
-          "52주 고점 대비 -37%",
-          "거래량 5일평균 1.5배+",
+          "52주 고점 대비 -35%",
           "영업이익률 13%",
           "매출 성장 +23%"
         ],
-        "entry_low": 41028,
-        "entry_high": 43123,
-        "target": 46966,
-        "stoploss": 39630,
+        "entry_low": 42292,
+        "entry_high": 44362,
+        "target": 48158,
+        "stoploss": 40912,
         "narrative": {
-          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 26 반등 신호",
-          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 37% 떨어진 상태에서 RSI 26로 과매도(반등 임박) 구간이며, 거래량 1.5배+로 자금 유입이 확인됩니다.",
+          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 29 반등 신호",
+          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 29로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -308,13 +297,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "26",
+              "value": "29",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-37%",
+              "value": "-35%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -332,8 +321,8 @@
             },
             {
               "label": "거래량 1.5배+",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
             },
             {
@@ -358,110 +347,6 @@
             {
               "name": "매출 성장 ≥5%",
               "points": 37.5
-            },
-            {
-              "name": "거래량 1.5배+",
-              "points": 7
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "010170",
-        "name": "대한광통신",
-        "sector": "전선·전력인프라",
-        "price": 21800,
-        "change_pct_1d": 19.321291735084834,
-        "market_cap": 0.0,
-        "operating_margin": null,
-        "revenue_growth": null,
-        "pe_ratio": null,
-        "drawdown_52w": 0.0,
-        "rsi": 71.8361342721513,
-        "volume_spike": true,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 72.0,
-        "reasons": [
-          "MACD 골든크로스",
-          "거래량 5일평균 1.5배+"
-        ],
-        "entry_low": 20240,
-        "entry_high": 22914,
-        "target": 27817,
-        "stoploss": 18457,
-        "narrative": {
-          "one_liner": "전선·전력인프라 RSI 72 반등 신호",
-          "thesis": "대한광통신(010170)는 RSI 72로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "—",
-              "ok": false,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "—",
-              "ok": false,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "72",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-0%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "✓",
-              "ok": true,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
-            },
-            {
-              "name": "거래량 1.5배+",
-              "points": 7
             }
           ],
           "hold_days": 5
@@ -469,11 +354,11 @@
       }
     ],
     "quant_pick": null,
-    "updated_at_iso": "2026-05-08T10:28:03.875664+09:00",
-    "updated_at_kst": "2026.05.08 (금) 10:28 KST"
+    "updated_at_iso": "2026-05-11T10:31:19.461494+09:00",
+    "updated_at_kst": "2026.05.11 (월) 10:31 KST"
   },
-  "updated_at_iso": "2026-05-09T00:03:13.537740+09:00",
-  "updated_at_kst": "2026.05.09 (토) 00:03 KST",
+  "updated_at_iso": "2026-05-11T10:31:19.461494+09:00",
+  "updated_at_kst": "2026.05.11 (월) 10:31 KST",
   "us": {
     "picks": [
       {
@@ -494,7 +379,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 18.08,
-        "score": 127.23,
+        "score": 132.23,
         "reasons": [
           "52주 고점 대비 -34%",
           "영업이익률 46%",
@@ -582,26 +467,135 @@
           ],
           "hold_days": 5
         },
-        "score_original": 122.23,
+        "score_original": 127.23,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "SoundHound Stock Is Down 13% Today – Is It Outperforming Other AI Stocks Like Palantir and C3.ai?",
-            "link": "https://247wallst.com/investing/2026/05/08/soundhound-stock-is-down-13-today-is-it-outperforming-other-ai-stocks-like-palantir-and-c3-ai/",
+            "title": "Palantir Technologies (PLTR) Price Target Raised to $225 by Citi",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-technologies-pltr-price-target-144939914.html",
             "score": 5,
             "positive": [
-              "outperform"
+              "price target raised"
             ],
             "negative": []
-          },
+          }
+        ]
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "price": 417.1000061035156,
+        "price_krw": 609825,
+        "change_pct_1d": -0.8722064324879875,
+        "market_cap": 3098102988800.0,
+        "operating_margin": 0.46326,
+        "revenue_growth": 0.183,
+        "pe_ratio": 24.839785,
+        "sector": "Technology",
+        "avg_volume": 34680887.6,
+        "rsi": 55.20953354621583,
+        "drawdown_52w": 0.22734246247609813,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 5.22,
+        "score": 127.36,
+        "reasons": [
+          "52주 고점 대비 -23%",
+          "영업이익률 46%",
+          "어닝 서프라이즈 +5.2%"
+        ],
+        "entry_low": 408.84,
+        "entry_high": 423.0,
+        "target": 448.96,
+        "stoploss": 399.4,
+        "narrative": {
+          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 55 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 55로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "18%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "55",
+              "ok": false,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-23%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+5.2%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 57.9
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 27.4
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 122.36,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
           {
-            "title": "Why These 5 Drone Stocks Could Outperform This Summer",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/why-5-drone-stocks-could-000000658.html",
+            "title": "Microsoft Faces Kenya Data Center Delay And China Patent Ruling Risk",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-faces-kenya-data-center-170706129.html",
             "score": 5,
             "positive": [
-              "outperform"
+              "data center"
             ],
             "negative": []
           }
@@ -720,133 +714,6 @@
             "score": 5,
             "positive": [
               "partnership"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "MSFT",
-        "name": "Microsoft Corporation",
-        "price": 417.1000061035156,
-        "price_krw": 609825,
-        "change_pct_1d": -0.8722064324879875,
-        "market_cap": 3098102988800.0,
-        "operating_margin": 0.46326,
-        "revenue_growth": 0.183,
-        "pe_ratio": 24.839785,
-        "sector": "Technology",
-        "avg_volume": 34680887.6,
-        "rsi": 55.20953354621583,
-        "drawdown_52w": 0.22734246247609813,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "earnings_surprise_pct": 5.22,
-        "score": 122.36,
-        "reasons": [
-          "52주 고점 대비 -23%",
-          "영업이익률 46%",
-          "어닝 서프라이즈 +5.2%"
-        ],
-        "entry_low": 408.84,
-        "entry_high": 423.0,
-        "target": 448.96,
-        "stoploss": 399.4,
-        "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 55 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 55로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "46%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "18%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "55",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-23%",
-              "ok": true,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+5.2%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 57.9
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 27.4
-            },
-            {
-              "name": "52주 -15~-40%",
-              "points": 15
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 112.36,
-        "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Anthropic taps SpaceX data center for AI compute power",
-            "link": "https://finance.yahoo.com/video/anthropic-taps-spacex-data-center-for-ai-compute-power-195430868.html",
-            "score": 5,
-            "positive": [
-              "data center"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Stocks take a breather after reaching record highs",
-            "link": "https://finance.yahoo.com/video/stocks-take-a-breather-after-reaching-record-highs-194454152.html",
-            "score": 5,
-            "positive": [
-              "record high"
             ],
             "negative": []
           }
@@ -978,7 +845,7 @@
       "ma_aligned_up": true,
       "volume_spike": false,
       "earnings_surprise_pct": 16.31,
-      "score": 72.31,
+      "score": 62.31,
       "reasons": [
         "5/20일선 정배열 시작",
         "영업이익률 20%",
@@ -1063,7 +930,7 @@
         "hold_days": 5
       },
       "quant_score": 193.11,
-      "score_original": 82.31,
+      "score_original": 72.31,
       "news_boost": -10.0,
       "news_positive": 0,
       "news_negative": 1,
