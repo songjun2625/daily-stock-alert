@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.32,
+      "value": 17.93,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -148,7 +148,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 92.0,
+        "score": 102.0,
         "reasons": [
           "RSI 37(과매도 반등 후보)",
           "52주 고점 대비 -25%",
@@ -234,7 +234,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 82.0,
+        "score_original": 92.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -357,38 +357,38 @@
     "updated_at_iso": "2026-05-11T10:31:19.461494+09:00",
     "updated_at_kst": "2026.05.11 (월) 10:31 KST"
   },
-  "updated_at_iso": "2026-05-11T10:31:19.461494+09:00",
-  "updated_at_kst": "2026.05.11 (월) 10:31 KST",
+  "updated_at_iso": "2026-05-12T01:12:25.519488+09:00",
+  "updated_at_kst": "2026.05.12 (화) 01:12 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 136.0,
-        "price_krw": 198840,
-        "change_pct_1d": -0.7661459528470638,
-        "market_cap": 326034423808.0,
+        "price": 136.02000427246094,
+        "price_krw": 200009,
+        "change_pct_1d": -1.2917262263254847,
+        "market_cap": 326082396160.0,
         "operating_margin": 0.46183997,
         "revenue_growth": 0.847,
-        "pe_ratio": 152.80899,
+        "pe_ratio": 151.13335,
         "sector": "Technology",
-        "avg_volume": 45897898.25,
-        "rsi": 43.91567761817319,
-        "drawdown_52w": 0.34356595806609463,
+        "avg_volume": 44977252.6,
+        "rsi": 43.99311146215343,
+        "drawdown_52w": 0.34346940302618667,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 18.08,
-        "score": 132.23,
+        "score": 122.23,
         "reasons": [
           "52주 고점 대비 -34%",
           "영업이익률 46%",
           "어닝 서프라이즈 +18.1%"
         ],
-        "entry_low": 131.63,
-        "entry_high": 139.12,
-        "target": 152.85,
-        "stoploss": 126.64,
+        "entry_low": 131.65,
+        "entry_high": 139.14,
+        "target": 152.87,
+        "stoploss": 126.66,
         "narrative": {
           "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +18.1% / RSI 44 반등 신호.",
           "thesis": "Palantir Technologies Inc.는 매출 성장률 85% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -466,54 +466,39 @@
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 127.23,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Palantir Technologies (PLTR) Price Target Raised to $225 by Citi",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-technologies-pltr-price-target-144939914.html",
-            "score": 5,
-            "positive": [
-              "price target raised"
-            ],
-            "negative": []
-          }
-        ]
+        }
       },
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 417.1000061035156,
-        "price_krw": 609825,
-        "change_pct_1d": -0.8722064324879875,
-        "market_cap": 3098102988800.0,
+        "price": 410.55999755859375,
+        "price_krw": 603704,
+        "change_pct_1d": -1.0984769734607602,
+        "market_cap": 3049818161152.0,
         "operating_margin": 0.46326,
         "revenue_growth": 0.183,
-        "pe_ratio": 24.839785,
+        "pe_ratio": 24.481812,
         "sector": "Technology",
-        "avg_volume": 34680887.6,
-        "rsi": 55.20953354621583,
-        "drawdown_52w": 0.22734246247609813,
+        "avg_volume": 34764050.3,
+        "rsi": 50.893313318932556,
+        "drawdown_52w": 0.2394575971929212,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
-        "score": 127.36,
+        "score": 117.36,
         "reasons": [
-          "52주 고점 대비 -23%",
+          "52주 고점 대비 -24%",
           "영업이익률 46%",
           "어닝 서프라이즈 +5.2%"
         ],
-        "entry_low": 408.84,
-        "entry_high": 423.0,
-        "target": 448.96,
-        "stoploss": 399.4,
+        "entry_low": 402.3,
+        "entry_high": 416.46,
+        "target": 442.42,
+        "stoploss": 392.86,
         "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 55 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 55로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 51 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 51로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -529,13 +514,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "55",
+              "value": "51",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-23%",
+              "value": "-24%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -585,14 +570,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 122.36,
+        "score_original": 112.36,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Microsoft Faces Kenya Data Center Delay And China Patent Ruling Risk",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-faces-kenya-data-center-170706129.html",
+            "title": "Microsoft Kenya Data Center Faces Delay",
+            "link": "https://finance.yahoo.com/sectors/technology/articles/microsoft-kenya-data-center-faces-143652376.html",
             "score": 5,
             "positive": [
               "data center"
@@ -602,154 +587,36 @@
         ]
       },
       {
-        "ticker": "NVDA",
-        "name": "NVIDIA Corporation",
-        "price": 215.97000122070312,
-        "price_krw": 315761,
-        "change_pct_1d": 2.1134757544695626,
-        "market_cap": 5249515388928.0,
-        "operating_margin": 0.65024,
-        "revenue_growth": 0.732,
-        "pe_ratio": 43.9888,
-        "sector": "Technology",
-        "avg_volume": 146550272.9,
-        "rsi": 66.32608615849186,
-        "drawdown_52w": 0.002954616074258266,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "earnings_surprise_pct": 5.32,
-        "score": 127.0,
-        "reasons": [
-          "MACD 골든크로스",
-          "영업이익률 65%",
-          "어닝 서프라이즈 +5.3%"
-        ],
-        "entry_low": 210.82,
-        "entry_high": 219.65,
-        "target": 235.84,
-        "stoploss": 204.93,
-        "narrative": {
-          "one_liner": "Technology 영업이익률 65%, 어닝 서프라이즈 +5.3% / RSI 66 반등 신호.",
-          "thesis": "NVIDIA Corporation는 매출 성장률 73% · 영업이익률 65%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 0% 떨어진 상태에서 RSI 66로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "65%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "73%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "66",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-0%",
-              "ok": false,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+5.3%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 37.5
-            },
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 122.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "IREN’s Partnership With NVIDIA Expands With $3.4 Billion AI Cloud Contract",
-            "link": "https://investorshub.advfn.com/market-news/article/28047/irens-partnership-with-nvidia-expands-with-3-4-billion-ai-cloud-contract",
-            "score": 5,
-            "positive": [
-              "partnership"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 610.5900268554688,
-        "price_krw": 892719,
-        "change_pct_1d": -1.0084095147199879,
-        "market_cap": 1549935968256.0,
+        "price": 602.5599975585938,
+        "price_krw": 886028,
+        "change_pct_1d": -1.1597210221924392,
+        "market_cap": 1529552306176.0,
         "operating_margin": 0.40617,
         "revenue_growth": 0.331,
-        "pe_ratio": 22.195202,
+        "pe_ratio": 21.919243,
         "sector": "Communication Services",
-        "avg_volume": 15457737.1,
-        "rsi": 42.46391690086602,
-        "drawdown_52w": 0.22528603465971161,
+        "avg_volume": 15829808.65,
+        "rsi": 40.15938100471419,
+        "drawdown_52w": 0.23547450083957813,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 56.79,
         "score": 115.27,
         "reasons": [
-          "52주 고점 대비 -23%",
+          "52주 고점 대비 -24%",
           "영업이익률 41%",
           "어닝 서프라이즈 +56.8%"
         ],
-        "entry_low": 598.12,
-        "entry_high": 619.5,
-        "target": 658.7,
-        "stoploss": 583.86,
+        "entry_low": 589.82,
+        "entry_high": 611.66,
+        "target": 651.7,
+        "stoploss": 575.26,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +56.8% / RSI 42 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +56.8% / RSI 40 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -765,13 +632,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "42",
+              "value": "40",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-23%",
+              "value": "-24%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -825,39 +692,165 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Netflix, Inc.",
+        "price": 86.33999633789062,
+        "price_krw": 126958,
+        "change_pct_1d": -1.3144377116908523,
+        "market_cap": 363560337408.0,
+        "operating_margin": 0.32303002,
+        "revenue_growth": 0.162,
+        "pe_ratio": 27.851612,
+        "sector": "Communication Services",
+        "avg_volume": 42888921.25,
+        "rsi": 31.799571861858198,
+        "drawdown_52w": 0.35525303773124395,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": -1.4,
+        "score": 79.68,
+        "reasons": [
+          "RSI 32(과매도 반등 후보)",
+          "영업이익률 32%"
+        ],
+        "entry_low": 84.94,
+        "entry_high": 87.34,
+        "target": 91.72,
+        "stoploss": 83.35,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 32%, RSI 32 반등 신호.",
+          "thesis": "Netflix, Inc.는 매출 성장률 16% · 영업이익률 32%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 36% 떨어진 상태에서 RSI 32로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "32%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "16%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "32",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-36%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+-1.4%",
+              "ok": false,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 40.4
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 24.3
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 84.68,
+        "news_boost": -5.0,
+        "news_positive": 1,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "Netflix (NFLX) Is Down 5.7% After Cautious Q2 Guide And $25 Billion Buyback Plan - Has The Bull Case Changed?",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-down-5-7-082045235.html",
+            "score": 5,
+            "positive": [
+              "buyback"
+            ],
+            "negative": []
+          },
+          {
+            "title": "Warner Bros. Discovery Q1 Earnings Miss Estimates, Revenues Fall Y/Y",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/warner-bros-discovery-q1-earnings-134000162.html",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "earnings miss"
+            ]
+          }
+        ]
       }
     ],
     "quant_pick": {
       "ticker": "GE",
       "name": "GE Aerospace",
-      "price": 302.6394958496094,
-      "price_krw": 442477,
-      "change_pct_1d": 0.003136161862249409,
-      "market_cap": 316206710784.0,
+      "price": 302.7749938964844,
+      "price_krw": 445212,
+      "change_pct_1d": 1.892983380628821,
+      "market_cap": 316348301312.0,
       "operating_margin": 0.20207001,
       "revenue_growth": 0.247,
-      "pe_ratio": 37.594967,
+      "pe_ratio": 37.6118,
       "sector": "Industrials",
-      "avg_volume": 6929666.7,
-      "rsi": 54.54560273090237,
-      "drawdown_52w": 0.12338649675069562,
+      "avg_volume": 6982264.05,
+      "rsi": 54.304238251235574,
+      "drawdown_52w": 0.12299401850782424,
       "macd_golden_cross": false,
       "ma_aligned_up": true,
       "volume_spike": false,
       "earnings_surprise_pct": 16.31,
-      "score": 62.31,
+      "score": 82.31,
       "reasons": [
         "5/20일선 정배열 시작",
         "영업이익률 20%",
         "어닝 서프라이즈 +16.3%"
       ],
-      "entry_low": 295.2,
-      "entry_high": 307.95,
-      "target": 331.33,
-      "stoploss": 286.7,
+      "entry_low": 295.57,
+      "entry_high": 307.92,
+      "target": 330.56,
+      "stoploss": 287.34,
       "narrative": {
-        "one_liner": "Industrials 영업이익률 20%, 어닝 서프라이즈 +16.3% / RSI 55 반등 신호.",
-        "thesis": "GE Aerospace는 매출 성장률 25% · 영업이익률 20%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 12% 떨어진 상태에서 RSI 55로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+        "one_liner": "Industrials 영업이익률 20%, 어닝 서프라이즈 +16.3% / RSI 54 반등 신호.",
+        "thesis": "GE Aerospace는 매출 성장률 25% · 영업이익률 20%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 12% 떨어진 상태에서 RSI 54로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
         "signals": [
           {
             "label": "영업이익률",
@@ -873,7 +866,7 @@
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "55",
+            "value": "54",
             "ok": false,
             "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
           },
@@ -929,31 +922,16 @@
         ],
         "hold_days": 5
       },
-      "quant_score": 193.11,
-      "score_original": 72.31,
-      "news_boost": -10.0,
-      "news_positive": 0,
-      "news_negative": 1,
-      "news_headlines": [
-        {
-          "title": "GE HealthCare Technologies AGM: Shareholders Elect Directors, Approve Pay; Tariff Mitigation in Focus",
-          "link": "https://www.marketbeat.com/instant-alerts/ge-healthcare-technologies-agm-shareholders-elect-directors-approve-pay-tariff-mitigation-in-focus-2026-05-07/?utm_source=yahoofinance&utm_medium=yahoofinance",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "tariff"
-          ]
-        }
-      ]
+      "quant_score": 193.11
     },
     "traffic_light": {
-      "vix": 17.32,
+      "vix": 17.93,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-05-09T00:03:13.537740+09:00",
-    "updated_at_kst": "2026.05.09 (토) 00:03 KST"
+    "updated_at_iso": "2026-05-12T01:12:25.519488+09:00",
+    "updated_at_kst": "2026.05.12 (화) 01:12 KST"
   },
   "futures": {
     "picks": [
