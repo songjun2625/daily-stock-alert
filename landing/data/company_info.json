@@ -1,25 +1,23 @@
 {
+  "267260": {
+    "ticker": "267260",
+    "market": "kr",
+    "name": "HD현대일렉트릭",
+    "sector": "전선·전력인프라"
+  },
   "068270": {
     "ticker": "068270",
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.96,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.68,
+    "sector_status": "❄️ 부진"
   },
-  "207940": {
-    "ticker": "207940",
+  "066970": {
+    "ticker": "066970",
     "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.96,
-    "sector_status": "📉 약세"
-  },
-  "251270": {
-    "ticker": "251270",
-    "market": "kr",
-    "name": "넷마블",
-    "sector": "코스피·코스닥"
+    "name": "엘앤에프",
+    "sector": "화학·배터리"
   },
   "373220": {
     "ticker": "373220",
@@ -27,24 +25,11 @@
     "name": "LG에너지솔루션",
     "sector": "화학·배터리"
   },
-  "196170": {
-    "ticker": "196170",
+  "055550": {
+    "ticker": "055550",
     "market": "kr",
-    "name": "알테오젠",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.96,
-    "sector_status": "📉 약세"
-  },
-  "META": {
-    "ticker": "META",
-    "market": "us",
-    "name": "Meta Platforms, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 56.79,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 0.03,
-    "sector_status": "➡️ 보합"
+    "name": "신한지주",
+    "sector": "금융"
   },
   "APP": {
     "ticker": "APP",
@@ -52,9 +37,9 @@
     "name": "Applovin Corporation",
     "sector": "Communication Services",
     "next_earnings": "2026-08-05",
-    "last_earnings_surprise_pct": 3.49,
+    "last_earnings_surprise_pct": 2.96,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": 0.03,
+    "sector_momentum_5d_pct": 0.2,
     "sector_status": "➡️ 보합"
   },
   "MSFT": {
@@ -65,11 +50,22 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 4.31,
+    "sector_momentum_5d_pct": 5.78,
     "sector_status": "🔥 강세"
   },
+  "META": {
+    "ticker": "META",
+    "market": "us",
+    "name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-07-29",
+    "last_earnings_surprise_pct": 56.79,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": 0.2,
+    "sector_status": "➡️ 보합"
+  },
   "_meta": {
-    "generated_at_iso": "2026-05-13T00:47:07+09:00",
+    "generated_at_iso": "2026-05-13T10:31:27+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
