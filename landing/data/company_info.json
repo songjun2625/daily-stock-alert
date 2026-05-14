@@ -16,8 +16,8 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 0.04,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.97,
+    "sector_status": "📈 호조"
   },
   "066970": {
     "ticker": "066970",
@@ -31,17 +31,6 @@
     "name": "신한지주",
     "sector": "금융"
   },
-  "PLTR": {
-    "ticker": "PLTR",
-    "market": "us",
-    "name": "Palantir Technologies Inc.",
-    "sector": "Technology",
-    "next_earnings": "2026-08-03",
-    "last_earnings_surprise_pct": 18.08,
-    "last_earnings_date": "2026-05-04",
-    "sector_momentum_5d_pct": 4.01,
-    "sector_status": "🔥 강세"
-  },
   "META": {
     "ticker": "META",
     "market": "us",
@@ -50,7 +39,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -0.5,
+    "sector_momentum_5d_pct": 0.26,
     "sector_status": "➡️ 보합"
   },
   "MSFT": {
@@ -61,7 +50,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 4.01,
+    "sector_momentum_5d_pct": 6.03,
     "sector_status": "🔥 강세"
   },
   "NFLX": {
@@ -72,12 +61,12 @@
     "next_earnings": "2026-07-16",
     "last_earnings_surprise_pct": -6.93,
     "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": -0.5,
+    "sector_momentum_5d_pct": 0.26,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-14T10:35:00+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-05-15T00:34:55+09:00",
+    "tickers_count": 8,
     "dart_enabled": false
   }
 }
