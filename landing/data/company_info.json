@@ -1,4 +1,10 @@
 {
+  "062040": {
+    "ticker": "062040",
+    "market": "kr",
+    "name": "산일전기",
+    "sector": "전선·전력인프라"
+  },
   "267260": {
     "ticker": "267260",
     "market": "kr",
@@ -10,19 +16,13 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -3.07,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": 0.04,
+    "sector_status": "➡️ 보합"
   },
   "066970": {
     "ticker": "066970",
     "market": "kr",
     "name": "엘앤에프",
-    "sector": "화학·배터리"
-  },
-  "373220": {
-    "ticker": "373220",
-    "market": "kr",
-    "name": "LG에너지솔루션",
     "sector": "화학·배터리"
   },
   "055550": {
@@ -39,7 +39,7 @@
     "next_earnings": "2026-08-03",
     "last_earnings_surprise_pct": 18.08,
     "last_earnings_date": "2026-05-04",
-    "sector_momentum_5d_pct": 3.58,
+    "sector_momentum_5d_pct": 4.01,
     "sector_status": "🔥 강세"
   },
   "META": {
@@ -50,8 +50,8 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -1.02,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -0.5,
+    "sector_status": "➡️ 보합"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -61,7 +61,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 3.58,
+    "sector_momentum_5d_pct": 4.01,
     "sector_status": "🔥 강세"
   },
   "NFLX": {
@@ -72,11 +72,11 @@
     "next_earnings": "2026-07-16",
     "last_earnings_surprise_pct": -6.93,
     "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": -1.02,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -0.5,
+    "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-14T00:50:57+09:00",
+    "generated_at_iso": "2026-05-14T10:35:00+09:00",
     "tickers_count": 9,
     "dart_enabled": false
   }
