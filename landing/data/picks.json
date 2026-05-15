@@ -24,14 +24,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 289500,
-        "change_pct_1d": -4.297520661157028,
-        "market_cap": 8845700104192.0,
+        "price": 274000,
+        "change_pct_1d": -6.643952299829648,
+        "market_cap": 8372096073728.0,
         "operating_margin": 0.86063004,
         "revenue_growth": 0.456,
         "pe_ratio": null,
-        "drawdown_52w": 0.13193403298350825,
-        "rsi": 63.62205214835969,
+        "drawdown_52w": 0.17841079460269865,
+        "rsi": 57.87046042764122,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -40,17 +40,17 @@
         "earnings_surprise": null,
         "score": 120.0,
         "reasons": [
-          "52주 고점 대비 -13%",
+          "52주 고점 대비 -18%",
           "영업이익률 86%",
           "매출 성장 +46%"
         ],
-        "entry_low": 269650,
-        "entry_high": 303679,
-        "target": 366065,
-        "stoploss": 246964,
+        "entry_low": 253750,
+        "entry_high": 288464,
+        "target": 352107,
+        "stoploss": 230607,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 86% / RSI 64 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 46% · 영업이익률 86%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 13% 떨어진 상태에서 RSI 64로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 86% / RSI 58 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 46% · 영업이익률 86%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 18% 떨어진 상태에서 RSI 58로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -66,13 +66,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "64",
+              "value": "58",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-13%",
+              "value": "-18%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -129,14 +129,14 @@
         "ticker": "267260",
         "name": "HD현대일렉트릭",
         "sector": "전선·전력인프라",
-        "price": 1262000,
-        "change_pct_1d": -1.4062499999999978,
-        "market_cap": 45422793981952.0,
+        "price": 1215000,
+        "change_pct_1d": -4.104183109707971,
+        "market_cap": 43731134709760.0,
         "operating_margin": 0.2759,
         "revenue_growth": 0.426,
         "pe_ratio": null,
-        "drawdown_52w": 0.11041850949810633,
-        "rsi": 57.1114182085475,
+        "drawdown_52w": 0.14354872348668715,
+        "rsi": 51.92447255176242,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -145,17 +145,17 @@
         "earnings_surprise": null,
         "score": 120.0,
         "reasons": [
-          "52주 고점 대비 -11%",
+          "52주 고점 대비 -14%",
           "영업이익률 28%",
           "매출 성장 +43%"
         ],
-        "entry_low": 1200594,
-        "entry_high": 1305862,
-        "target": 1498853,
-        "stoploss": 1130415,
+        "entry_low": 1152841,
+        "entry_high": 1259399,
+        "target": 1454756,
+        "stoploss": 1081802,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 57 반등 신호",
-          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 11% 떨어진 상태에서 RSI 57로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 52 반등 신호",
+          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 14% 떨어진 상태에서 RSI 52로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -171,13 +171,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "57",
+              "value": "52",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-11%",
+              "value": "-14%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -234,14 +234,14 @@
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 193400,
-        "change_pct_1d": 1.522309711286085,
-        "market_cap": 42204290613248.0,
+        "price": 191800,
+        "change_pct_1d": -1.6914402870322864,
+        "market_cap": 41855131582464.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.22173038229376257,
-        "rsi": 43.33407699344694,
+        "drawdown_52w": 0.22816901408450704,
+        "rsi": 42.34803084204312,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -250,18 +250,18 @@
         "earnings_surprise": null,
         "score": 112.0,
         "reasons": [
-          "RSI 43(과매도 반등 후보)",
-          "52주 고점 대비 -22%",
+          "RSI 42(과매도 반등 후보)",
+          "52주 고점 대비 -23%",
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 188630,
-        "entry_high": 196807,
-        "target": 211798,
-        "stoploss": 183179,
+        "entry_low": 186985,
+        "entry_high": 195239,
+        "target": 210372,
+        "stoploss": 181482,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 43 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 22% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 42 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -277,13 +277,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "43",
+              "value": "42",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-22%",
+              "value": "-23%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -341,37 +341,37 @@
         }
       },
       {
-        "ticker": "066970",
-        "name": "엘앤에프",
-        "sector": "화학·배터리",
-        "price": 170000,
-        "change_pct_1d": 0.591715976331364,
-        "market_cap": 6389700231168.0,
-        "operating_margin": 0.13349,
-        "revenue_growth": 0.691,
+        "ticker": "251270",
+        "name": "넷마블",
+        "sector": "코스피·코스닥",
+        "price": 44100,
+        "change_pct_1d": 0.11350737797957144,
+        "market_cap": 3613314514944.0,
+        "operating_margin": 0.12943,
+        "revenue_growth": 0.229,
         "pe_ratio": null,
-        "drawdown_52w": 0.20187793427230047,
-        "rsi": 43.23724954908735,
+        "drawdown_52w": 0.3414197486572712,
+        "rsi": 35.9350325621141,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 101.7,
+        "score": 95.89,
         "reasons": [
-          "RSI 43(과매도 반등 후보)",
-          "52주 고점 대비 -20%",
+          "RSI 36(과매도 반등 후보)",
+          "52주 고점 대비 -34%",
           "영업이익률 13%",
-          "매출 성장 +69%"
+          "매출 성장 +23%"
         ],
-        "entry_low": 159700,
-        "entry_high": 177357,
-        "target": 209728,
-        "stoploss": 147929,
+        "entry_low": 42888,
+        "entry_high": 44966,
+        "target": 48776,
+        "stoploss": 41502,
         "narrative": {
-          "one_liner": "화학·배터리 영업이익률 13% / RSI 43 반등 신호",
-          "thesis": "엘앤에프(066970)는 매출 성장률 69% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 36 반등 신호",
+          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -381,19 +381,19 @@
             },
             {
               "label": "매출 성장",
-              "value": "69%",
+              "value": "23%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "43",
+              "value": "36",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-20%",
+              "value": "-34%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -428,11 +428,11 @@
               "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
             }
           ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥10%",
-              "points": 33.4
+              "points": 32.4
             },
             {
               "name": "매출 성장 ≥5%",
@@ -456,13 +456,13 @@
       "name": "신한지주",
       "sector": "금융",
       "price": 94600,
-      "change_pct_1d": -0.6302521008403339,
+      "change_pct_1d": -2.2727272727272707,
       "market_cap": 44543768526848.0,
       "operating_margin": 0.5145,
       "revenue_growth": 0.066,
       "pe_ratio": null,
       "drawdown_52w": 0.09310095243573335,
-      "rsi": 41.99547703371039,
+      "rsi": 43.034429872372016,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
@@ -471,17 +471,17 @@
       "earnings_surprise": null,
       "score": 80.84,
       "reasons": [
-        "RSI 42(과매도 반등 후보)",
+        "RSI 43(과매도 반등 후보)",
         "영업이익률 51%",
         "매출 성장 +7%"
       ],
-      "entry_low": 92728,
-      "entry_high": 95937,
-      "target": 101820,
-      "stoploss": 90589,
+      "entry_low": 92692,
+      "entry_high": 95963,
+      "target": 101960,
+      "stoploss": 90511,
       "narrative": {
-        "one_liner": "금융 영업이익률 51% / RSI 42 반등 신호",
-        "thesis": "신한지주(055550)는 매출 성장률 7% · 영업이익률 51%로 꾸준히 돈을 잘 버는 회사입니다. RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "금융 영업이익률 51% / RSI 43 반등 신호",
+        "thesis": "신한지주(055550)는 매출 성장률 7% · 영업이익률 51%로 꾸준히 돈을 잘 버는 회사입니다. RSI 43로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
@@ -497,7 +497,7 @@
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "42",
+            "value": "43",
             "ok": true,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
@@ -557,11 +557,11 @@
       },
       "quant_score": 153.0
     },
-    "updated_at_iso": "2026-05-14T10:34:51.643447+09:00",
-    "updated_at_kst": "2026.05.14 (목) 10:34 KST"
+    "updated_at_iso": "2026-05-15T10:32:36.701784+09:00",
+    "updated_at_kst": "2026.05.15 (금) 10:32 KST"
   },
-  "updated_at_iso": "2026-05-15T00:34:51.557057+09:00",
-  "updated_at_kst": "2026.05.15 (금) 00:34 KST",
+  "updated_at_iso": "2026-05-15T10:32:36.701784+09:00",
+  "updated_at_kst": "2026.05.15 (금) 10:32 KST",
   "us": {
     "picks": [
       {
@@ -582,7 +582,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 7.2,
-        "score": 125.27,
+        "score": 135.27,
         "reasons": [
           "52주 고점 대비 -21%",
           "영업이익률 41%",
@@ -666,22 +666,22 @@
           ],
           "hold_days": 5
         },
-        "score_original": 115.27,
+        "score_original": 125.27,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Nebius stock soars as revenue jumps 684% on booming data center demand",
-            "link": "https://finance.yahoo.com/markets/article/nebius-stock-soars-as-revenue-jumps-684-on-booming-data-center-demand-152316937.html",
+            "title": "Elon Musk’s SpaceXAI has been bleeding staff since its merger",
+            "link": "https://finance.yahoo.com/sectors/technology/articles/elon-musk-spacexai-bleeding-staff-213044583.html",
             "score": 5,
             "positive": [
-              "data center"
+              "merger"
             ],
             "negative": []
           },
           {
-            "title": "Cerebras Looks Set to Open at $330 a Share, Nearly Double Its IPO Price",
+            "title": "Cerebras Stock Jumps 68% After Blockbuster IPO. CEO Sees Bigger Things Ahead.",
             "link": "https://www.barrons.com/articles/cerebras-ipo-stock-ticker-price-eab2b046?siteid=yhoof2&yptr=yahoo",
             "score": 5,
             "positive": [
@@ -709,7 +709,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
-        "score": 112.36,
+        "score": 117.36,
         "reasons": [
           "52주 고점 대비 -24%",
           "영업이익률 46%",
@@ -792,7 +792,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 112.36,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Cerebras Soars in Nasdaq Debut After Pricing IPO Above Range",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/cerebras-soars-nasdaq-debut-pricing-193316983.html",
+            "score": 5,
+            "positive": [
+              "ipo"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "NFLX",

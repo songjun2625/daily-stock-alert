@@ -16,14 +16,14 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.97,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -2.72,
+    "sector_status": "📉 약세"
   },
-  "066970": {
-    "ticker": "066970",
+  "251270": {
+    "ticker": "251270",
     "market": "kr",
-    "name": "엘앤에프",
-    "sector": "화학·배터리"
+    "name": "넷마블",
+    "sector": "코스피·코스닥"
   },
   "055550": {
     "ticker": "055550",
@@ -39,7 +39,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 7.2,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 0.26,
+    "sector_momentum_5d_pct": -0.23,
     "sector_status": "➡️ 보합"
   },
   "MSFT": {
@@ -50,7 +50,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 6.03,
+    "sector_momentum_5d_pct": 5.78,
     "sector_status": "🔥 강세"
   },
   "NFLX": {
@@ -61,11 +61,11 @@
     "next_earnings": "2026-07-16",
     "last_earnings_surprise_pct": -6.93,
     "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": 0.26,
+    "sector_momentum_5d_pct": -0.23,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-15T00:34:55+09:00",
+    "generated_at_iso": "2026-05-15T10:32:42+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
