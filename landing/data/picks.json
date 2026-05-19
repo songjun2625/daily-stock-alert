@@ -24,14 +24,14 @@
         "ticker": "267260",
         "name": "HD현대일렉트릭",
         "sector": "전선·전력인프라",
-        "price": 1115000,
-        "change_pct_1d": -5.428329092451234,
-        "market_cap": 40131864035328.0,
+        "price": 1087000,
+        "change_pct_1d": -5.231037489102008,
+        "market_cap": 39124069253120.0,
         "operating_margin": 0.2759,
         "revenue_growth": 0.426,
         "pe_ratio": null,
-        "drawdown_52w": 0.21403854048366763,
-        "rsi": 43.22639465651357,
+        "drawdown_52w": 0.2337756892428222,
+        "rsi": 40.931088293484535,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -40,18 +40,18 @@
         "earnings_surprise": null,
         "score": 135.0,
         "reasons": [
-          "RSI 43(과매도 반등 후보)",
-          "52주 고점 대비 -21%",
+          "RSI 41(과매도 반등 후보)",
+          "52주 고점 대비 -23%",
           "영업이익률 28%",
           "매출 성장 +43%"
         ],
-        "entry_low": 1053183,
-        "entry_high": 1159155,
-        "target": 1353437,
-        "stoploss": 982535,
+        "entry_low": 1025629,
+        "entry_high": 1130836,
+        "target": 1323716,
+        "stoploss": 955491,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 43 반등 신호",
-          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 41 반등 신호",
+          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -67,13 +67,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "43",
+              "value": "41",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-21%",
+              "value": "-23%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -134,14 +134,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 254000,
-        "change_pct_1d": -5.400372439478584,
-        "market_cap": 7745716617216.0,
+        "price": 251500,
+        "change_pct_1d": -2.7079303675048405,
+        "market_cap": 7684606656512.0,
         "operating_margin": 0.36841,
         "revenue_growth": 0.311,
         "pe_ratio": null,
-        "drawdown_52w": 0.2383808095952024,
-        "rsi": 51.62742756398015,
+        "drawdown_52w": 0.24587706146926536,
+        "rsi": 50.778524327588705,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -150,17 +150,17 @@
         "earnings_surprise": null,
         "score": 120.0,
         "reasons": [
-          "52주 고점 대비 -24%",
+          "52주 고점 대비 -25%",
           "영업이익률 37%",
           "매출 성장 +31%"
         ],
-        "entry_low": 233000,
-        "entry_high": 269000,
-        "target": 335000,
-        "stoploss": 209000,
+        "entry_low": 230200,
+        "entry_high": 266714,
+        "target": 333657,
+        "stoploss": 205857,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 52 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 31% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 52로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 51 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 31% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 51로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -176,13 +176,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "52",
+              "value": "51",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
+              "value": "-25%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -239,14 +239,14 @@
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 182900,
-        "change_pct_1d": -3.125,
-        "market_cap": 39891127762944.0,
+        "price": 181900,
+        "change_pct_1d": -0.709606986899558,
+        "market_cap": 39716548247552.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.26398390342052314,
-        "rsi": 36.12593162677433,
+        "drawdown_52w": 0.26800804828973845,
+        "rsi": 35.46599384674691,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -255,18 +255,18 @@
         "earnings_surprise": null,
         "score": 112.0,
         "reasons": [
-          "RSI 36(과매도 반등 후보)",
-          "52주 고점 대비 -26%",
+          "RSI 35(과매도 반등 후보)",
+          "52주 고점 대비 -27%",
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 177740,
-        "entry_high": 186586,
-        "target": 202803,
-        "stoploss": 171843,
+        "entry_low": 176860,
+        "entry_high": 185500,
+        "target": 201340,
+        "stoploss": 171100,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 36 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 35 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 27% 떨어진 상태에서 RSI 35로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -282,13 +282,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "36",
+              "value": "35",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-26%",
+              "value": "-27%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -346,60 +346,59 @@
         }
       },
       {
-        "ticker": "251270",
-        "name": "넷마블",
-        "sector": "코스피·코스닥",
-        "price": 42550,
-        "change_pct_1d": -1.504629629629628,
-        "market_cap": 3486315970560.0,
-        "operating_margin": 0.12943,
-        "revenue_growth": 0.229,
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 1772000,
+        "change_pct_1d": -3.6956521739130443,
+        "market_cap": 1257862911229952.0,
+        "operating_margin": 0.71535003,
+        "revenue_growth": 1.981,
         "pe_ratio": null,
-        "drawdown_52w": 0.3645671271058252,
-        "rsi": 32.0742739375073,
+        "drawdown_52w": 0.10323886639676114,
+        "rsi": 66.91868099634542,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 110.89,
+        "score": 104.0,
         "reasons": [
-          "RSI 32(과매도 반등 후보)",
-          "52주 고점 대비 -36%",
-          "영업이익률 13%",
-          "매출 성장 +23%"
+          "52주 고점 대비 -10%",
+          "영업이익률 72%",
+          "매출 성장 +198%"
         ],
-        "entry_low": 41250,
-        "entry_high": 43479,
-        "target": 47565,
-        "stoploss": 39764,
+        "entry_low": 1683050,
+        "entry_high": 1835536,
+        "target": 2115093,
+        "stoploss": 1581393,
         "narrative": {
-          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 32 반등 신호",
-          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 36% 떨어진 상태에서 RSI 32로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 72% / RSI 67 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 10% 떨어진 상태에서 RSI 67로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "13%",
+              "value": "72%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "23%",
+              "value": "198%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "32",
-              "ok": true,
+              "value": "67",
+              "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-36%",
-              "ok": false,
+              "value": "-10%",
+              "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
@@ -433,80 +432,94 @@
               "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
             }
           ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥10%",
-              "points": 32.4
+              "points": 62.5
             },
             {
               "name": "매출 성장 ≥5%",
               "points": 37.5
             },
             {
-              "name": "RSI 30~45 구간",
-              "points": 20
+              "name": "52주 -10~-35%",
+              "points": 15
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 114.0,
+        "news_boost": -10.0,
+        "news_positive": 0,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "5 big analyst AI moves: PT hikes for Samsung and SK Hynix, AMD downgraded",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/5-big-analyst-ai-moves-093003635.html",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "downgrade"
+            ]
+          }
+        ]
       }
     ],
     "quant_pick": {
-      "ticker": "055550",
-      "name": "신한지주",
+      "ticker": "105560",
+      "name": "KB금융",
       "sector": "금융",
-      "price": 93400,
-      "change_pct_1d": -1.7875920084121977,
-      "market_cap": 43931643412480.0,
-      "operating_margin": 0.5145,
-      "revenue_growth": 0.066,
+      "price": 151600,
+      "change_pct_1d": -0.9150326797385588,
+      "market_cap": 53770662707200.0,
+      "operating_margin": 0.60714,
+      "revenue_growth": 0.152,
       "pe_ratio": null,
-      "drawdown_52w": 0.10460495726741538,
-      "rsi": 39.830041353834346,
+      "drawdown_52w": 0.08664726193748565,
+      "rsi": 43.46328465782834,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 92.84,
+      "score": 100.0,
       "reasons": [
-        "RSI 40(과매도 반등 후보)",
-        "52주 고점 대비 -10%",
-        "영업이익률 51%",
-        "매출 성장 +7%"
+        "RSI 43(과매도 반등 후보)",
+        "영업이익률 61%",
+        "매출 성장 +15%"
       ],
-      "entry_low": 91281,
-      "entry_high": 94913,
-      "target": 101572,
-      "stoploss": 88860,
+      "entry_low": 148085,
+      "entry_high": 154111,
+      "target": 165158,
+      "stoploss": 144068,
       "narrative": {
-        "one_liner": "금융 영업이익률 51% / RSI 40 반등 신호",
-        "thesis": "신한지주(055550)는 매출 성장률 7% · 영업이익률 51%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 10% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "금융 영업이익률 61% / RSI 43 반등 신호",
+        "thesis": "KB금융(105560)는 매출 성장률 15% · 영업이익률 61%로 꾸준히 돈을 잘 버는 회사입니다. RSI 43로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "51%",
+            "value": "61%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "7%",
+            "value": "15%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "40",
+            "value": "43",
             "ok": true,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-10%",
-            "ok": true,
+            "value": "-9%",
+            "ok": false,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
           {
@@ -548,26 +561,46 @@
           },
           {
             "name": "매출 성장 ≥5%",
-            "points": 19.8
+            "points": 37.5
           },
           {
             "name": "RSI 30~45 구간",
             "points": 20
-          },
-          {
-            "name": "52주 -10~-35%",
-            "points": 15
           }
         ],
         "hold_days": 5
       },
-      "quant_score": 153.0
+      "quant_score": 195.0,
+      "score_original": 95.0,
+      "news_boost": 5.0,
+      "news_positive": 1,
+      "news_negative": 0,
+      "news_headlines": [
+        {
+          "title": "KB Financial (KB) Upgraded to Strong Buy: Here's What You Should Know",
+          "link": "https://finance.yahoo.com/news/kb-financial-kb-upgraded-strong-170004277.html",
+          "score": 5,
+          "positive": [
+            "Buy"
+          ],
+          "negative": []
+        },
+        {
+          "title": "What Makes KB Financial (KB) a Strong Momentum Stock: Buy Now?",
+          "link": "https://finance.yahoo.com/news/makes-kb-financial-kb-strong-170004083.html",
+          "score": 5,
+          "positive": [
+            "Buy"
+          ],
+          "negative": []
+        }
+      ]
     },
-    "updated_at_iso": "2026-05-18T10:51:34.098479+09:00",
-    "updated_at_kst": "2026.05.18 (월) 10:51 KST"
+    "updated_at_iso": "2026-05-19T10:50:18.734053+09:00",
+    "updated_at_kst": "2026.05.19 (화) 10:50 KST"
   },
-  "updated_at_iso": "2026-05-19T01:34:00.139432+09:00",
-  "updated_at_kst": "2026.05.19 (화) 01:34 KST",
+  "updated_at_iso": "2026-05-19T10:50:18.734053+09:00",
+  "updated_at_kst": "2026.05.19 (화) 10:50 KST",
   "us": {
     "picks": [
       {
@@ -588,7 +621,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 3.39,
-        "score": 120.0,
+        "score": 125.0,
         "reasons": [
           "52주 고점 대비 -33%",
           "영업이익률 78%"
@@ -667,7 +700,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 115.0,
+        "score_original": 120.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -701,7 +734,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
-        "score": 102.36,
+        "score": 107.36,
         "reasons": [
           "52주 고점 대비 -22%",
           "영업이익률 46%",
@@ -785,19 +818,19 @@
           ],
           "hold_days": 5
         },
-        "score_original": 112.36,
-        "news_boost": -10.0,
-        "news_positive": 0,
-        "news_negative": 1,
+        "score_original": 102.36,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Dow Jones and Nasdaq climb as oil eases on reports of Iran sanctions lift",
-            "link": "https://www.proactiveinvestors.com/companies/news/1092469/dow-jones-seen-remaining-in-red-oil-eases-on-reports-of-iran-sanctions-lifted-1092469.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "sanctions"
-            ]
+            "title": "Buy the Dip in Nvidia Stock off of Record Highs as Q1 Earnings Approach?",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/buy-dip-nvidia-stock-off-200100924.html",
+            "score": 5,
+            "positive": [
+              "record high"
+            ],
+            "negative": []
           }
         ]
       },
@@ -819,7 +852,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 56.79,
-        "score": 85.27,
+        "score": 90.27,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 41%",
@@ -907,37 +940,19 @@
           ],
           "hold_days": 5
         },
-        "score_original": 115.27,
-        "news_boost": -30.0,
-        "news_positive": 0,
-        "news_negative": 3,
+        "score_original": 85.27,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Dow Jones and Nasdaq climb as oil eases on reports of Iran sanctions lift",
-            "link": "https://www.proactiveinvestors.com/companies/news/1092469/dow-jones-seen-remaining-in-red-oil-eases-on-reports-of-iran-sanctions-lifted-1092469.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "sanctions"
-            ]
-          },
-          {
-            "title": "Meta Lawsuit And Shareholder Demands Put AI Ad Governance In Focus",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/meta-lawsuit-shareholder-demands-put-100953586.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "lawsuit"
-            ]
-          },
-          {
-            "title": "Facebook fraud becomes lightning rod",
-            "link": "https://www.paymentsdive.com/news/facebook-fraud-becomes-lightning-rod-social-media-scams/820468/",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "fraud"
-            ]
+            "title": "Buy the Dip in Nvidia Stock off of Record Highs as Q1 Earnings Approach?",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/buy-dip-nvidia-stock-off-200100924.html",
+            "score": 5,
+            "positive": [
+              "record high"
+            ],
+            "negative": []
           }
         ]
       }
