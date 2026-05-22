@@ -16,7 +16,7 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.31,
+    "sector_momentum_5d_pct": -2.42,
     "sector_status": "📉 약세"
   },
   "251270": {
@@ -39,7 +39,18 @@
     "next_earnings": "2026-08-03",
     "last_earnings_surprise_pct": 18.08,
     "last_earnings_date": "2026-05-04",
-    "sector_momentum_5d_pct": -0.5,
+    "sector_momentum_5d_pct": 2.71,
+    "sector_status": "📈 호조"
+  },
+  "META": {
+    "ticker": "META",
+    "market": "us",
+    "name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-07-29",
+    "last_earnings_surprise_pct": 56.79,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": -0.28,
     "sector_status": "➡️ 보합"
   },
   "APP": {
@@ -48,20 +59,9 @@
     "name": "Applovin Corporation",
     "sector": "Communication Services",
     "next_earnings": "2026-08-05",
-    "last_earnings_surprise_pct": 3.49,
+    "last_earnings_surprise_pct": 3.39,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": -0.86,
-    "sector_status": "➡️ 보합"
-  },
-  "META": {
-    "ticker": "META",
-    "market": "us",
-    "name": "Meta Platforms, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 7.2,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -0.86,
+    "sector_momentum_5d_pct": -0.28,
     "sector_status": "➡️ 보합"
   },
   "MSFT": {
@@ -72,12 +72,23 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -0.5,
+    "sector_momentum_5d_pct": 2.71,
+    "sector_status": "📈 호조"
+  },
+  "GE": {
+    "ticker": "GE",
+    "market": "us",
+    "name": "GE Aerospace",
+    "sector": "Industrials",
+    "next_earnings": "2026-07-16",
+    "last_earnings_surprise_pct": 16.31,
+    "last_earnings_date": "2026-04-21",
+    "sector_momentum_5d_pct": 0.46,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-22T10:50:08+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-05-23T01:01:25+09:00",
+    "tickers_count": 10,
     "dart_enabled": false
   }
 }
