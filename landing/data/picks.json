@@ -129,14 +129,14 @@
         "ticker": "267260",
         "name": "HD현대일렉트릭",
         "sector": "전선·전력인프라",
-        "price": 1181000,
-        "change_pct_1d": 3.9612676056338003,
-        "market_cap": 42507383603200.0,
+        "price": 1173000,
+        "change_pct_1d": 3.257042253521125,
+        "market_cap": 42219440439296.0,
         "operating_margin": 0.2759,
         "revenue_growth": 0.426,
         "pe_ratio": null,
-        "drawdown_52w": 0.16751526126566052,
-        "rsi": 50.73233590884015,
+        "drawdown_52w": 0.17315444662541896,
+        "rsi": 50.049555141678,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -149,13 +149,13 @@
           "영업이익률 28%",
           "매출 성장 +43%"
         ],
-        "entry_low": 1117419,
-        "entry_high": 1226415,
-        "target": 1426241,
-        "stoploss": 1044755,
+        "entry_low": 1109419,
+        "entry_high": 1218415,
+        "target": 1418241,
+        "stoploss": 1036755,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 51 반등 신호",
-          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 17% 떨어진 상태에서 RSI 51로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 50 반등 신호",
+          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 17% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -171,7 +171,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "51",
+              "value": "50",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -234,14 +234,14 @@
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 198950,
-        "change_pct_1d": 4.931434599156126,
-        "market_cap": 43452049915904.0,
+        "price": 198700,
+        "change_pct_1d": 4.799578059071741,
+        "market_cap": 43397448466432.0,
         "operating_margin": 0.35382,
         "revenue_growth": 0.251,
         "pe_ratio": null,
-        "drawdown_52w": 0.1993963782696177,
-        "rsi": 52.74817790380876,
+        "drawdown_52w": 0.20040241448692153,
+        "rsi": 52.56791614757013,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -254,10 +254,10 @@
           "영업이익률 35%",
           "매출 성장 +25%"
         ],
-        "entry_low": 192890,
-        "entry_high": 203279,
-        "target": 222325,
-        "stoploss": 185964,
+        "entry_low": 192640,
+        "entry_high": 203029,
+        "target": 222075,
+        "stoploss": 185714,
         "narrative": {
           "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 53 반등 신호",
           "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 53로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -336,37 +336,36 @@
         }
       },
       {
-        "ticker": "251270",
-        "name": "넷마블",
-        "sector": "코스피·코스닥",
-        "price": 42900,
-        "change_pct_1d": 2.3866348448687402,
-        "market_cap": 3514992951296.0,
-        "operating_margin": 0.12943,
-        "revenue_growth": 0.229,
+        "ticker": "298040",
+        "name": "효성중공업",
+        "sector": "전선·전력인프라",
+        "price": 4007000,
+        "change_pct_1d": 1.9852379740392,
+        "market_cap": 37312146702336.0,
+        "operating_margin": 0.12913999,
+        "revenue_growth": 0.109,
         "pe_ratio": null,
-        "drawdown_52w": 0.3593402997142162,
-        "rsi": 37.24237900912283,
+        "drawdown_52w": 0.12910236905020647,
+        "rsi": 58.59724397336171,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 95.89,
+        "score": 91.99,
         "reasons": [
-          "RSI 37(과매도 반등 후보)",
-          "52주 고점 대비 -36%",
+          "52주 고점 대비 -13%",
           "영업이익률 13%",
-          "매출 성장 +23%"
+          "매출 성장 +11%"
         ],
-        "entry_low": 41552,
-        "entry_high": 43862,
-        "target": 48098,
-        "stoploss": 40012,
+        "entry_low": 3788100,
+        "entry_high": 4163357,
+        "target": 4851328,
+        "stoploss": 3537929,
         "narrative": {
-          "one_liner": "코스피·코스닥 영업이익률 13% / RSI 37 반등 신호",
-          "thesis": "넷마블(251270)는 매출 성장률 23% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 36% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 13% / RSI 59 반등 신호",
+          "thesis": "효성중공업(298040)는 매출 성장률 11% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 13% 떨어진 상태에서 RSI 59로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -376,20 +375,20 @@
             },
             {
               "label": "매출 성장",
-              "value": "23%",
+              "value": "11%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "37",
-              "ok": true,
+              "value": "59",
+              "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-36%",
-              "ok": false,
+              "value": "-13%",
+              "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
@@ -423,19 +422,19 @@
               "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
             }
           ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥10%",
-              "points": 32.4
+              "points": 32.3
             },
             {
               "name": "매출 성장 ≥5%",
-              "points": 37.5
+              "points": 32.7
             },
             {
-              "name": "RSI 30~45 구간",
-              "points": 20
+              "name": "52주 -10~-35%",
+              "points": 15
             }
           ],
           "hold_days": 5
@@ -443,46 +442,46 @@
       }
     ],
     "quant_pick": {
-      "ticker": "009540",
-      "name": "HD한국조선해양",
-      "sector": "코스피·코스닥",
-      "price": 419500,
-      "change_pct_1d": 1.0843373493975905,
-      "market_cap": 29664787562496.0,
-      "operating_margin": 0.12722999,
-      "revenue_growth": 0.138,
+      "ticker": "035420",
+      "name": "NAVER",
+      "sector": "IT 플랫폼",
+      "price": 203000,
+      "change_pct_1d": 1.7543859649122862,
+      "market_cap": 30345418244096.0,
+      "operating_margin": 0.16715,
+      "revenue_growth": 0.163,
       "pe_ratio": null,
-      "drawdown_52w": 0.12421711899791232,
-      "rsi": 46.50213164722584,
+      "drawdown_52w": 0.29386438152368327,
+      "rsi": 46.67141237355239,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 72.45,
+      "score": 75.43,
       "reasons": [
-        "52주 고점 대비 -12%",
-        "영업이익률 13%",
-        "매출 성장 +14%"
+        "52주 고점 대비 -29%",
+        "영업이익률 17%",
+        "매출 성장 +16%"
       ],
-      "entry_low": 402325,
-      "entry_high": 431768,
-      "target": 485747,
-      "stoploss": 382696,
+      "entry_low": 196388,
+      "entry_high": 207723,
+      "target": 228506,
+      "stoploss": 188830,
       "narrative": {
-        "one_liner": "코스피·코스닥 영업이익률 13% / RSI 47 반등 신호",
-        "thesis": "HD한국조선해양(009540)는 매출 성장률 14% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 12% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "IT 플랫폼 영업이익률 17% / RSI 47 반등 신호",
+        "thesis": "NAVER(035420)는 매출 성장률 16% · 영업이익률 17%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "13%",
+            "value": "17%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "14%",
+            "value": "16%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
@@ -494,7 +493,7 @@
           },
           {
             "label": "52주 고점 대비",
-            "value": "-12%",
+            "value": "-29%",
             "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
@@ -533,7 +532,7 @@
         "score_breakdown": [
           {
             "name": "영업이익률 ≥10%",
-            "points": 31.8
+            "points": 41.8
           },
           {
             "name": "매출 성장 ≥5%",
@@ -546,28 +545,13 @@
         ],
         "hold_days": 5
       },
-      "quant_score": 128.53,
-      "score_original": 67.45,
-      "news_boost": 5.0,
-      "news_positive": 1,
-      "news_negative": 0,
-      "news_headlines": [
-        {
-          "title": "“AI 전력 해결사로”…현대건설-테라파워-HD현대중공업, 차세대 원전 사업 MOU",
-          "link": "https://www.mk.co.kr/news/realestate/12054057",
-          "score": 5,
-          "positive": [
-            "MOU"
-          ],
-          "negative": []
-        }
-      ]
+      "quant_score": 148.5
     },
-    "updated_at_iso": "2026-05-22T10:50:02.475468+09:00",
-    "updated_at_kst": "2026.05.22 (금) 10:50 KST"
+    "updated_at_iso": "2026-05-25T10:54:44.381279+09:00",
+    "updated_at_kst": "2026.05.25 (월) 10:54 KST"
   },
-  "updated_at_iso": "2026-05-23T01:01:20.361001+09:00",
-  "updated_at_kst": "2026.05.23 (토) 01:01 KST",
+  "updated_at_iso": "2026-05-25T10:54:44.381279+09:00",
+  "updated_at_kst": "2026.05.25 (월) 10:54 KST",
   "us": {
     "picks": [
       {
@@ -588,7 +572,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 18.08,
-        "score": 137.23,
+        "score": 142.23,
         "reasons": [
           "52주 고점 대비 -34%",
           "영업이익률 46%",
@@ -672,35 +656,17 @@
           ],
           "hold_days": 5
         },
-        "score_original": 122.23,
-        "news_boost": 15.0,
-        "news_positive": 3,
+        "score_original": 137.23,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "SpaceX Will Change the IPO Game Forever. Play at Your Own Risk.",
-            "link": "https://www.barrons.com/articles/spacex-ipo-valuation-stock-price-risk-2a4acd38?siteid=yhoof2&yptr=yahoo",
+            "title": "Palantir Stock Is Down 35% From Its All-Time High. Should You Buy the Dip?",
+            "link": "https://www.fool.com/investing/2026/05/22/palantir-stock-is-down-35-from-its-all-time-high-s/",
             "score": 5,
             "positive": [
-              "ipo"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Palantir Makes Case for DIA Data Upgrade",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-makes-case-dia-data-144014677.html",
-            "score": 5,
-            "positive": [
-              "upgrade"
-            ],
-            "negative": []
-          },
-          {
-            "title": "US Equity Futures Edge Lower Pre-Bell as Nvidia Stock Flat Despite Earnings Beat, Middle East Peace Talks Drag",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-edge-lower-125602202.html",
-            "score": 5,
-            "positive": [
-              "earnings beat"
+              "all-time high"
             ],
             "negative": []
           }
@@ -964,7 +930,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 56.79,
-        "score": 100.27,
+        "score": 110.27,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 41%",
@@ -1052,29 +1018,28 @@
           ],
           "hold_days": 5
         },
-        "score_original": 115.27,
-        "news_boost": -15.0,
-        "news_positive": 1,
-        "news_negative": 2,
+        "score_original": 100.27,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Maybe investors can wait to buy SpaceX after IPO: Lee Munson",
-            "link": "https://finance.yahoo.com/video/maybe-investors-wait-buy-spacex-150000900.html",
+            "title": "Unity And Meta Extend VR Partnership As Investors Weigh Execution Risk",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/unity-meta-extend-vr-partnership-181121515.html",
             "score": 5,
             "positive": [
-              "ipo"
+              "partnership"
             ],
             "negative": []
           },
           {
-            "title": "Meta Settles As $400 Billion School Lawsuit Risk Looms",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/meta-settles-400-billion-school-150915685.html",
-            "score": -20,
-            "positive": [],
-            "negative": [
-              "lawsuit",
-              "settles"
-            ]
+            "title": "AOC Demands EPA Probe After Residents Near Meta Data Center In Georgia Complain Of Murky Drinking Water: Cannot 'Take For Granted'",
+            "link": "https://www.yahoo.com/news/politics/articles/aoc-demands-epa-probe-residents-163137166.html",
+            "score": 5,
+            "positive": [
+              "data center"
+            ],
+            "negative": []
           }
         ]
       }
