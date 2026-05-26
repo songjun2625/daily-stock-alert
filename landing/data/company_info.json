@@ -1,4 +1,10 @@
 {
+  "036570": {
+    "ticker": "036570",
+    "market": "kr",
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
+  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
@@ -16,20 +22,14 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.42,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": 0.26,
+    "sector_status": "➡️ 보합"
   },
-  "298040": {
-    "ticker": "298040",
+  "105560": {
+    "ticker": "105560",
     "market": "kr",
-    "name": "효성중공업",
-    "sector": "전선·전력인프라"
-  },
-  "035420": {
-    "ticker": "035420",
-    "market": "kr",
-    "name": "NAVER",
-    "sector": "IT 플랫폼"
+    "name": "KB금융",
+    "sector": "금융"
   },
   "PLTR": {
     "ticker": "PLTR",
@@ -87,7 +87,7 @@
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-05-26T01:03:44+09:00",
+    "generated_at_iso": "2026-05-26T10:32:24+09:00",
     "tickers_count": 10,
     "dart_enabled": false
   }
