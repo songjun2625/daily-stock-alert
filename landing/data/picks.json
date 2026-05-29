@@ -21,17 +21,263 @@
   "kr": {
     "picks": [
       {
+        "ticker": "207940",
+        "name": "삼성바이오로직스",
+        "sector": "바이오·헬스케어",
+        "price": 1339000,
+        "change_pct_1d": -2.4763292061179887,
+        "market_cap": 61983583895552.0,
+        "operating_margin": 0.46196997,
+        "revenue_growth": 0.258,
+        "pe_ratio": null,
+        "drawdown_52w": 0.31857506361323157,
+        "rsi": 33.90761912112143,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 150.0,
+        "reasons": [
+          "RSI 34(과매도 반등 후보)",
+          "52주 고점 대비 -32%",
+          "영업이익률 46%",
+          "매출 성장 +26%"
+        ],
+        "entry_low": 1301550,
+        "entry_high": 1365750,
+        "target": 1483450,
+        "stoploss": 1258750,
+        "narrative": {
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 34 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 32% 떨어진 상태에서 RSI 34로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "26%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "34",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-32%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 140.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+            "score": 10,
+            "positive": [
+              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
+      },
+      {
+        "ticker": "035420",
+        "name": "NAVER",
+        "sector": "IT 플랫폼",
+        "price": 227500,
+        "change_pct_1d": 10.97560975609757,
+        "market_cap": 34007796416512.0,
+        "operating_margin": 0.16715,
+        "revenue_growth": 0.163,
+        "pe_ratio": null,
+        "drawdown_52w": 0.20864111722481746,
+        "rsi": 63.35625361061334,
+        "volume_spike": true,
+        "macd_golden_cross": true,
+        "ma_aligned_up": true,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 147.43,
+        "reasons": [
+          "52주 고점 대비 -21%",
+          "MACD 골든크로스",
+          "5/20일선 정배열 시작",
+          "거래량 5일평균 1.5배+",
+          "영업이익률 17%",
+          "매출 성장 +16%"
+        ],
+        "entry_low": 219462,
+        "entry_high": 233241,
+        "target": 258501,
+        "stoploss": 210277,
+        "narrative": {
+          "one_liner": "IT 플랫폼 영업이익률 17% / RSI 63 반등 신호",
+          "thesis": "NAVER(035420)는 매출 성장률 16% · 영업이익률 17%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 63로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "17%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "16%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "63",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-21%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "✓",
+              "ok": true,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "✓",
+              "ok": true,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "✓",
+              "ok": true,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 41.8
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            },
+            {
+              "name": "MACD 골든크로스",
+              "points": 10
+            },
+            {
+              "name": "5/20일선 정배열",
+              "points": 8
+            },
+            {
+              "name": "거래량 1.5배+",
+              "points": 7
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
         "ticker": "267260",
         "name": "HD현대일렉트릭",
         "sector": "전선·전력인프라",
-        "price": 1059000,
-        "change_pct_1d": -3.199268738574035,
-        "market_cap": 38116274470912.0,
+        "price": 1022000,
+        "change_pct_1d": -2.387774594078318,
+        "market_cap": 36784545202176.0,
         "operating_margin": 0.2759,
         "revenue_growth": 0.426,
         "pe_ratio": null,
-        "drawdown_52w": 0.2535128380019767,
-        "rsi": 40.662353558437495,
+        "drawdown_52w": 0.2795940702908595,
+        "rsi": 38.058399378534226,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -40,18 +286,18 @@
         "earnings_surprise": null,
         "score": 135.0,
         "reasons": [
-          "RSI 41(과매도 반등 후보)",
-          "52주 고점 대비 -25%",
+          "RSI 38(과매도 반등 후보)",
+          "52주 고점 대비 -28%",
           "영업이익률 28%",
           "매출 성장 +43%"
         ],
-        "entry_low": 999055,
-        "entry_high": 1101818,
-        "target": 1290215,
-        "stoploss": 930547,
+        "entry_low": 958753,
+        "entry_high": 1067177,
+        "target": 1265954,
+        "stoploss": 886470,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 41 반등 신호",
-          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 28% / RSI 38 반등 신호",
+          "thesis": "HD현대일렉트릭(267260)는 매출 성장률 43% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 28% 떨어진 상태에서 RSI 38로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -67,13 +313,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "41",
+              "value": "38",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-25%",
+              "value": "-28%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -134,14 +380,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 250000,
-        "change_pct_1d": -7.4074074074074066,
-        "market_cap": 7638773923840.0,
+        "price": 240000,
+        "change_pct_1d": -5.138339920948621,
+        "market_cap": 7333223071744.0,
         "operating_margin": 0.36908,
         "revenue_growth": 0.521,
         "pe_ratio": null,
-        "drawdown_52w": 0.25037481259370314,
-        "rsi": 48.46721288950495,
+        "drawdown_52w": 0.280359820089955,
+        "rsi": 45.56664354398895,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -150,17 +396,17 @@
         "earnings_surprise": null,
         "score": 120.0,
         "reasons": [
-          "52주 고점 대비 -25%",
+          "52주 고점 대비 -28%",
           "영업이익률 37%",
           "매출 성장 +52%"
         ],
-        "entry_low": 232550,
-        "entry_high": 262464,
-        "target": 317307,
-        "stoploss": 212607,
+        "entry_low": 222475,
+        "entry_high": 252518,
+        "target": 307597,
+        "stoploss": 202446,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 48 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 48로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 46 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 28% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -176,238 +422,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "48",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-25%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "035720",
-        "name": "카카오",
-        "sector": "IT 플랫폼",
-        "price": 40000,
-        "change_pct_1d": -1.2345679012345734,
-        "market_cap": 17649390059520.0,
-        "operating_margin": 0.10885,
-        "revenue_growth": 0.111,
-        "pe_ratio": null,
-        "drawdown_52w": 0.4310220344496155,
-        "rsi": 33.0151425677265,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 113.41,
-        "reasons": [
-          "RSI 33(과매도 반등 후보)",
-          "영업이익률 11%",
-          "매출 성장 +11%"
-        ],
-        "entry_low": 38520,
-        "entry_high": 41057,
-        "target": 45708,
-        "stoploss": 36829,
-        "narrative": {
-          "one_liner": "IT 플랫폼 영업이익률 11% / RSI 33 반등 신호",
-          "thesis": "카카오(035720)는 매출 성장률 11% · 영업이익률 11%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 43% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "11%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "11%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "33",
-              "ok": true,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-43%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 27.2
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 33.3
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 108.41,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Hana Bank to Buy $670 Million Stake in Crypto Exchange Operator Dunamu",
-            "link": "https://www.wsj.com/business/hana-bank-to-buy-670-million-stake-in-crypto-exchange-operator-dunamu-08f99cb5?siteid=yhoof2&yptr=yahoo",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "068270",
-        "name": "셀트리온",
-        "sector": "바이오·헬스케어",
-        "price": 191300,
-        "change_pct_1d": -1.6452442159383018,
-        "market_cap": 41781236334592.0,
-        "operating_margin": 0.35382,
-        "revenue_growth": 0.251,
-        "pe_ratio": null,
-        "drawdown_52w": 0.23018108651911467,
-        "rsi": 46.49389117170153,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 97.0,
-        "reasons": [
-          "52주 고점 대비 -23%",
-          "영업이익률 35%",
-          "매출 성장 +25%"
-        ],
-        "entry_low": 185600,
-        "entry_high": 195371,
-        "target": 213285,
-        "stoploss": 179086,
-        "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 46 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "35%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "25%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
               "value": "46",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-23%",
+              "value": "-28%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -462,59 +483,60 @@
       }
     ],
     "quant_pick": {
-      "ticker": "105560",
-      "name": "KB금융",
-      "sector": "금융",
-      "price": 149700,
-      "change_pct_1d": -2.6657997399219813,
-      "market_cap": 53096755494912.0,
-      "operating_margin": 0.60714,
-      "revenue_growth": 0.152,
+      "ticker": "068270",
+      "name": "셀트리온",
+      "sector": "바이오·헬스케어",
+      "price": 190450,
+      "change_pct_1d": 0.23684210526315752,
+      "market_cap": 41595592245248.0,
+      "operating_margin": 0.35382,
+      "revenue_growth": 0.251,
       "pe_ratio": null,
-      "drawdown_52w": 0.09809429493431135,
-      "rsi": 41.83569254181525,
+      "drawdown_52w": 0.23360160965794768,
+      "rsi": 45.92911756879356,
       "volume_spike": false,
       "macd_golden_cross": false,
-      "ma_aligned_up": false,
+      "ma_aligned_up": true,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 105.0,
+      "score": 107.0,
       "reasons": [
-        "RSI 42(과매도 반등 후보)",
-        "영업이익률 61%",
-        "매출 성장 +15%"
+        "52주 고점 대비 -23%",
+        "5/20일선 정배열 시작",
+        "영업이익률 35%",
+        "매출 성장 +25%"
       ],
-      "entry_low": 145685,
-      "entry_high": 152568,
-      "target": 165187,
-      "stoploss": 141096,
+      "entry_low": 184622,
+      "entry_high": 194612,
+      "target": 212928,
+      "stoploss": 177962,
       "narrative": {
-        "one_liner": "금융 영업이익률 61% / RSI 42 반등 신호",
-        "thesis": "KB금융(105560)는 매출 성장률 15% · 영업이익률 61%로 꾸준히 돈을 잘 버는 회사입니다. RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "바이오·헬스케어 영업이익률 35% / RSI 46 반등 신호",
+        "thesis": "셀트리온(068270)는 매출 성장률 25% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 46로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "61%",
+            "value": "35%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "15%",
+            "value": "25%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "42",
-            "ok": true,
+            "value": "46",
+            "ok": false,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-10%",
-            "ok": false,
+            "value": "-23%",
+            "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
           {
@@ -525,8 +547,8 @@
           },
           {
             "label": "5/20일선 정배열",
-            "value": "—",
-            "ok": false,
+            "value": "✓",
+            "ok": true,
             "explain": "단기·중기 추세선 모두 상승 시작."
           },
           {
@@ -559,43 +581,23 @@
             "points": 37.5
           },
           {
-            "name": "RSI 30~45 구간",
-            "points": 20
+            "name": "52주 -10~-35%",
+            "points": 15
+          },
+          {
+            "name": "5/20일선 정배열",
+            "points": 8
           }
         ],
         "hold_days": 5
       },
-      "quant_score": 195.0,
-      "score_original": 100.0,
-      "news_boost": 5.0,
-      "news_positive": 1,
-      "news_negative": 0,
-      "news_headlines": [
-        {
-          "title": "KB Financial (KB) Upgraded to Strong Buy: Here's What You Should Know",
-          "link": "https://finance.yahoo.com/news/kb-financial-kb-upgraded-strong-170004277.html",
-          "score": 5,
-          "positive": [
-            "Buy"
-          ],
-          "negative": []
-        },
-        {
-          "title": "What Makes KB Financial (KB) a Strong Momentum Stock: Buy Now?",
-          "link": "https://finance.yahoo.com/news/makes-kb-financial-kb-strong-170004083.html",
-          "score": 5,
-          "positive": [
-            "Buy"
-          ],
-          "negative": []
-        }
-      ]
+      "quant_score": 195.0
     },
-    "updated_at_iso": "2026-05-28T10:26:34.985404+09:00",
-    "updated_at_kst": "2026.05.28 (목) 10:26 KST"
+    "updated_at_iso": "2026-05-29T10:48:52.726827+09:00",
+    "updated_at_kst": "2026.05.29 (금) 10:48 KST"
   },
-  "updated_at_iso": "2026-05-29T02:03:14.300883+09:00",
-  "updated_at_kst": "2026.05.29 (금) 02:03 KST",
+  "updated_at_iso": "2026-05-29T10:48:52.726827+09:00",
+  "updated_at_kst": "2026.05.29 (금) 10:48 KST",
   "us": {
     "picks": [
       {
@@ -700,6 +702,128 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "price": 630.9099731445312,
+        "price_krw": 942176,
+        "change_pct_1d": -0.6847647505308418,
+        "market_cap": 1601516601344.0,
+        "operating_margin": 0.40617,
+        "revenue_growth": 0.331,
+        "pe_ratio": 22.933842,
+        "sector": "Communication Services",
+        "avg_volume": 16305473.0,
+        "rsi": 54.69209269747613,
+        "drawdown_52w": 0.19950417535523993,
+        "macd_golden_cross": false,
+        "ma_aligned_up": true,
+        "volume_spike": false,
+        "earnings_surprise_pct": 7.2,
+        "score": 118.27,
+        "reasons": [
+          "5/20일선 정배열 시작",
+          "영업이익률 41%",
+          "어닝 서프라이즈 +7.2%"
+        ],
+        "entry_low": 621.52,
+        "entry_high": 637.62,
+        "target": 667.13,
+        "stoploss": 610.79,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 55 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 55로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "41%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "33%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "55",
+              "ok": false,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-20%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "✓",
+              "ok": true,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+7.2%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 50.8
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "5/20일선 정배열",
+              "points": 8
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 113.27,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Anthropic nears $1 trillion valuation ahead of its mega-IPO",
+            "link": "https://finance.yahoo.com/video/anthropic-nears-1-trillion-valuation-ahead-of-its-mega-ipo-195810141.html",
+            "score": 5,
+            "positive": [
+              "ipo"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "MSFT",
@@ -814,128 +938,6 @@
             "score": 5,
             "positive": [
               "outperform"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "META",
-        "name": "Meta Platforms, Inc.",
-        "price": 630.9099731445312,
-        "price_krw": 942176,
-        "change_pct_1d": -0.6847647505308418,
-        "market_cap": 1601516601344.0,
-        "operating_margin": 0.40617,
-        "revenue_growth": 0.331,
-        "pe_ratio": 22.933842,
-        "sector": "Communication Services",
-        "avg_volume": 16305473.0,
-        "rsi": 54.69209269747613,
-        "drawdown_52w": 0.19950417535523993,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "volume_spike": false,
-        "earnings_surprise_pct": 7.2,
-        "score": 113.27,
-        "reasons": [
-          "5/20일선 정배열 시작",
-          "영업이익률 41%",
-          "어닝 서프라이즈 +7.2%"
-        ],
-        "entry_low": 621.52,
-        "entry_high": 637.62,
-        "target": 667.13,
-        "stoploss": 610.79,
-        "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 55 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 55로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "41%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "33%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "55",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-20%",
-              "ok": true,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+7.2%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 50.8
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -15~-40%",
-              "points": 15
-            },
-            {
-              "name": "5/20일선 정배열",
-              "points": 8
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 108.27,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "BABA vs. META: Which AI Data Center Giant Is the Better Bet?",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/baba-vs-meta-ai-data-144700544.html",
-            "score": 5,
-            "positive": [
-              "data center"
             ],
             "negative": []
           }
