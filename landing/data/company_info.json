@@ -10,7 +10,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.47,
+    "sector_momentum_5d_pct": -2.62,
     "sector_status": "📉 약세"
   },
   "079550": {
@@ -24,7 +24,7 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.47,
+    "sector_momentum_5d_pct": -2.62,
     "sector_status": "📉 약세"
   },
   "105560": {
@@ -41,7 +41,18 @@
     "next_earnings": "2026-08-03",
     "last_earnings_surprise_pct": 18.08,
     "last_earnings_date": "2026-05-04",
-    "sector_momentum_5d_pct": 3.24,
+    "sector_momentum_5d_pct": 3.38,
+    "sector_status": "🔥 강세"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "market": "us",
+    "name": "Microsoft Corporation",
+    "sector": "Technology",
+    "next_earnings": "2026-07-29",
+    "last_earnings_surprise_pct": 5.22,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": 3.38,
     "sector_status": "🔥 강세"
   },
   "APP": {
@@ -52,22 +63,11 @@
     "next_earnings": "2026-08-05",
     "last_earnings_surprise_pct": 3.49,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": -2.82,
-    "sector_status": "📉 약세"
-  },
-  "MSFT": {
-    "ticker": "MSFT",
-    "market": "us",
-    "name": "Microsoft Corporation",
-    "sector": "Technology",
-    "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 5.22,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 3.24,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": -3.05,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-05T01:29:57+09:00",
+    "generated_at_iso": "2026-06-05T10:55:00+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
