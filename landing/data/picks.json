@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 20.83,
+      "value": 22.01,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 150.0,
+        "score": 160.0,
         "reasons": [
           "RSI 35(과매도 반등 후보)",
           "52주 고점 대비 -35%",
@@ -129,7 +129,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 140.0,
+        "score_original": 150.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -379,7 +379,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 109.0,
+        "score": 104.0,
         "reasons": [
           "52주 고점 대비 -15%",
           "영업이익률 43%",
@@ -465,7 +465,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 114.0,
+        "score_original": 109.0,
         "news_boost": -5.0,
         "news_positive": 1,
         "news_negative": 1,
@@ -598,20 +598,20 @@
     "updated_at_iso": "2026-06-10T10:54:08.064803+09:00",
     "updated_at_kst": "2026.06.10 (수) 10:54 KST"
   },
-  "updated_at_iso": "2026-06-10T10:54:08.064803+09:00",
-  "updated_at_kst": "2026.06.10 (수) 10:54 KST",
+  "updated_at_iso": "2026-06-11T01:45:23.187284+09:00",
+  "updated_at_kst": "2026.06.11 (목) 01:45 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 20.83,
+      "vix": 22.01,
       "light": "🟡",
       "label": "조심해서 매수",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     },
-    "updated_at_iso": "2026-06-10T01:13:39.216266+09:00",
-    "updated_at_kst": "2026.06.10 (수) 01:13 KST"
+    "updated_at_iso": "2026-06-11T01:45:23.187284+09:00",
+    "updated_at_kst": "2026.06.11 (목) 01:45 KST"
   },
   "futures": {
     "picks": [
