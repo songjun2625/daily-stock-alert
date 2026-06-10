@@ -24,34 +24,34 @@
         "ticker": "207940",
         "name": "삼성바이오로직스",
         "sector": "바이오·헬스케어",
-        "price": 1278000,
-        "change_pct_1d": 2.8157683024939706,
-        "market_cap": 59159835836416.0,
+        "price": 1287000,
+        "change_pct_1d": -0.694444444444442,
+        "market_cap": 59576456052736.0,
         "operating_margin": 0.46196997,
         "revenue_growth": 0.258,
         "pe_ratio": null,
-        "drawdown_52w": 0.34961832061068704,
-        "rsi": 32.331653324728066,
+        "drawdown_52w": 0.3450381679389313,
+        "rsi": 34.59457194598605,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 160.0,
+        "score": 150.0,
         "reasons": [
-          "RSI 32(과매도 반등 후보)",
+          "RSI 35(과매도 반등 후보)",
           "52주 고점 대비 -35%",
           "영업이익률 46%",
           "매출 성장 +26%"
         ],
-        "entry_low": 1237500,
-        "entry_high": 1306929,
-        "target": 1434215,
-        "stoploss": 1191214,
+        "entry_low": 1246500,
+        "entry_high": 1315929,
+        "target": 1443215,
+        "stoploss": 1200214,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 32 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 32로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 35 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 35로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -67,7 +67,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "32",
+              "value": "35",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -129,7 +129,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 150.0,
+        "score_original": 140.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -150,14 +150,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 220000,
-        "change_pct_1d": 3.0444964871194413,
-        "market_cap": 6722121367552.0,
+        "price": 227500,
+        "change_pct_1d": 1.1111111111111072,
+        "market_cap": 6951284506624.0,
         "operating_margin": 0.36908,
         "revenue_growth": 0.521,
         "pe_ratio": null,
-        "drawdown_52w": 0.3403298350824588,
-        "rsi": 40.86316856353885,
+        "drawdown_52w": 0.31784107946026985,
+        "rsi": 43.969352941758984,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -166,18 +166,18 @@
         "earnings_surprise": null,
         "score": 148.0,
         "reasons": [
-          "RSI 41(과매도 반등 후보)",
-          "52주 고점 대비 -34%",
+          "RSI 44(과매도 반등 후보)",
+          "52주 고점 대비 -32%",
           "영업이익률 37%",
           "매출 성장 +52%"
         ],
-        "entry_low": 204325,
-        "entry_high": 231196,
-        "target": 280460,
-        "stoploss": 186411,
+        "entry_low": 212600,
+        "entry_high": 238143,
+        "target": 284972,
+        "stoploss": 195571,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 41 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 44 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 32% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -193,13 +193,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "41",
+              "value": "44",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-34%",
+              "value": "-32%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -257,60 +257,59 @@
         }
       },
       {
-        "ticker": "068270",
-        "name": "셀트리온",
-        "sector": "바이오·헬스케어",
-        "price": 168100,
-        "change_pct_1d": 5.45796737766624,
-        "market_cap": 38549906784256.0,
-        "operating_margin": 0.28111,
-        "revenue_growth": 0.36,
+        "ticker": "066970",
+        "name": "엘앤에프",
+        "sector": "화학·배터리",
+        "price": 127200,
+        "change_pct_1d": -1.851851851851849,
+        "market_cap": 0.0,
+        "operating_margin": 0.15854,
+        "revenue_growth": 1.028,
         "pe_ratio": null,
-        "drawdown_52w": 0.28971832549035376,
-        "rsi": 39.662909238559045,
+        "drawdown_52w": 0.4028169014084507,
+        "rsi": 33.35813460802072,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 120.0,
+        "score": 134.71,
         "reasons": [
-          "RSI 40(과매도 반등 후보)",
-          "52주 고점 대비 -29%",
-          "영업이익률 28%",
-          "매출 성장 +36%"
+          "RSI 33(과매도 반등 후보)",
+          "영업이익률 16%",
+          "매출 성장 +103%"
         ],
-        "entry_low": 162308,
-        "entry_high": 172237,
-        "target": 190440,
-        "stoploss": 155689,
+        "entry_low": 117670,
+        "entry_high": 134007,
+        "target": 163958,
+        "stoploss": 106779,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 28% / RSI 40 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 36% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "화학·배터리 영업이익률 16% / RSI 33 반등 신호",
+          "thesis": "엘앤에프(066970)는 매출 성장률 103% · 영업이익률 16%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 40% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "28%",
+              "value": "16%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "36%",
+              "value": "103%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "40",
+              "value": "33",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-29%",
-              "ok": true,
+              "value": "-40%",
+              "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
@@ -344,11 +343,11 @@
               "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
             }
           ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥10%",
-              "points": 62.5
+              "points": 39.6
             },
             {
               "name": "매출 성장 ≥5%",
@@ -357,62 +356,58 @@
             {
               "name": "RSI 30~45 구간",
               "points": 20
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
             }
           ],
           "hold_days": 5
         }
       },
       {
-        "ticker": "000660",
-        "name": "SK하이닉스",
+        "ticker": "005930",
+        "name": "삼성전자",
         "sector": "반도체",
-        "price": 2014000,
-        "change_pct_1d": 5.3898482469911135,
-        "market_cap": 1429647778643968.0,
-        "operating_margin": 0.71535003,
-        "revenue_growth": 1.981,
+        "price": 307000,
+        "change_pct_1d": -4.6583850931677055,
+        "market_cap": 2015934973739008.0,
+        "operating_margin": 0.42751,
+        "revenue_growth": 0.692,
         "pe_ratio": null,
-        "drawdown_52w": 0.14769360981802793,
-        "rsi": 55.812820067401525,
+        "drawdown_52w": 0.14840499306518723,
+        "rsi": 53.97709112745732,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 102.0,
+        "score": 109.0,
         "reasons": [
           "52주 고점 대비 -15%",
-          "영업이익률 72%",
-          "매출 성장 +198%"
+          "영업이익률 43%",
+          "매출 성장 +69%"
         ],
-        "entry_low": 1909957,
-        "entry_high": 2088316,
-        "target": 2415306,
-        "stoploss": 1791052,
+        "entry_low": 291225,
+        "entry_high": 318268,
+        "target": 367847,
+        "stoploss": 273196,
         "narrative": {
-          "one_liner": "반도체 영업이익률 72% / RSI 56 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 15% 떨어진 상태에서 RSI 56로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 43% / RSI 54 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 69% · 영업이익률 43%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 15% 떨어진 상태에서 RSI 54로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "72%",
+              "value": "43%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "198%",
+              "value": "69%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "56",
+              "value": "54",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -470,13 +465,13 @@
           ],
           "hold_days": 5
         },
-        "score_original": 107.0,
+        "score_original": 114.0,
         "news_boost": -5.0,
         "news_positive": 1,
         "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Micron Stock Selloff Was a ‘Buying Opportunity’—and There’s Still Room to Run",
+            "title": "Micron Selloff Was a ‘Buying Opportunity’—But the Stock Continues to Fall",
             "link": "https://www.barrons.com/articles/micron-stock-price-buy-selloff-905f0f29?siteid=yhoof2&yptr=yahoo",
             "score": -5,
             "positive": [
@@ -485,72 +480,64 @@
             "negative": [
               "Sell"
             ]
-          },
-          {
-            "title": "Chip Stocks Rebound Amid Dip Buying",
-            "link": "https://www.barrons.com/livecoverage/stock-market-news-today-060926/card/chip-stocks-rebound-amid-dip-buying-JeqOxhaeDRG3PCt6Nx6Y?siteid=yhoof2&yptr=yahoo",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
           }
         ]
       }
     ],
     "quant_pick": {
-      "ticker": "005930",
-      "name": "삼성전자",
-      "sector": "반도체",
-      "price": 302000,
-      "change_pct_1d": 2.1996615905245376,
-      "market_cap": 1983102096244736.0,
-      "operating_margin": 0.42751,
-      "revenue_growth": 0.692,
+      "ticker": "068270",
+      "name": "셀트리온",
+      "sector": "바이오·헬스케어",
+      "price": 166100,
+      "change_pct_1d": -2.2941176470588243,
+      "market_cap": 38091251253248.0,
+      "operating_margin": 0.28111,
+      "revenue_growth": 0.36,
       "pe_ratio": null,
-      "drawdown_52w": 0.1622746185852982,
-      "rsi": 53.70860076460399,
+      "drawdown_52w": 0.29816902952973084,
+      "rsi": 38.94068850683483,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 104.0,
+      "score": 112.0,
       "reasons": [
-        "52주 고점 대비 -16%",
-        "영업이익률 43%",
-        "매출 성장 +69%"
+        "RSI 39(과매도 반등 후보)",
+        "52주 고점 대비 -30%",
+        "영업이익률 28%",
+        "매출 성장 +36%"
       ],
-      "entry_low": 286900,
-      "entry_high": 312786,
-      "target": 360243,
-      "stoploss": 269643,
+      "entry_low": 160298,
+      "entry_high": 170245,
+      "target": 188481,
+      "stoploss": 153666,
       "narrative": {
-        "one_liner": "반도체 영업이익률 43% / RSI 54 반등 신호",
-        "thesis": "삼성전자(005930)는 매출 성장률 69% · 영업이익률 43%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 16% 떨어진 상태에서 RSI 54로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "바이오·헬스케어 영업이익률 28% / RSI 39 반등 신호",
+        "thesis": "셀트리온(068270)는 매출 성장률 36% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "43%",
+            "value": "28%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "69%",
+            "value": "36%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "54",
-            "ok": false,
+            "value": "39",
+            "ok": true,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-16%",
+            "value": "-30%",
             "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
@@ -596,36 +583,23 @@
             "points": 37.5
           },
           {
+            "name": "RSI 30~45 구간",
+            "points": 20
+          },
+          {
             "name": "52주 -10~-35%",
             "points": 15
           }
         ],
         "hold_days": 5
       },
-      "quant_score": 195.0,
-      "score_original": 109.0,
-      "news_boost": -5.0,
-      "news_positive": 1,
-      "news_negative": 1,
-      "news_headlines": [
-        {
-          "title": "Micron Stock Selloff Was a ‘Buying Opportunity’—and There’s Still Room to Run",
-          "link": "https://www.barrons.com/articles/micron-stock-price-buy-selloff-905f0f29?siteid=yhoof2&yptr=yahoo",
-          "score": -5,
-          "positive": [
-            "Buy"
-          ],
-          "negative": [
-            "Sell"
-          ]
-        }
-      ]
+      "quant_score": 188.39
     },
-    "updated_at_iso": "2026-06-09T10:32:44.501096+09:00",
-    "updated_at_kst": "2026.06.09 (화) 10:32 KST"
+    "updated_at_iso": "2026-06-10T10:54:08.064803+09:00",
+    "updated_at_kst": "2026.06.10 (수) 10:54 KST"
   },
-  "updated_at_iso": "2026-06-10T01:13:39.216266+09:00",
-  "updated_at_kst": "2026.06.10 (수) 01:13 KST",
+  "updated_at_iso": "2026-06-10T10:54:08.064803+09:00",
+  "updated_at_kst": "2026.06.10 (수) 10:54 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
