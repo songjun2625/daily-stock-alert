@@ -1,17 +1,17 @@
 {
-  "062040": {
-    "ticker": "062040",
-    "market": "kr",
-    "name": "산일전기",
-    "sector": "전선·전력인프라"
-  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.37,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": 1.02,
+    "sector_status": "📈 호조"
+  },
+  "062040": {
+    "ticker": "062040",
+    "market": "kr",
+    "name": "산일전기",
+    "sector": "전선·전력인프라"
   },
   "066970": {
     "ticker": "066970",
@@ -24,19 +24,19 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.37,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": 1.02,
+    "sector_status": "📈 호조"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -10.97,
+    "sector_momentum_5d_pct": -10.73,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-11T11:05:47+09:00",
+    "generated_at_iso": "2026-06-12T02:02:07+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
