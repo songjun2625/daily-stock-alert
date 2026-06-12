@@ -1,12 +1,4 @@
 {
-  "207940": {
-    "ticker": "207940",
-    "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.02,
-    "sector_status": "📈 호조"
-  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
@@ -19,24 +11,30 @@
     "name": "엘앤에프",
     "sector": "화학·배터리"
   },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 2.66,
+    "sector_status": "📈 호조"
+  },
+  "105560": {
+    "ticker": "105560",
+    "market": "kr",
+    "name": "KB금융",
+    "sector": "금융"
+  },
   "068270": {
     "ticker": "068270",
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.02,
+    "sector_momentum_5d_pct": 2.66,
     "sector_status": "📈 호조"
   },
-  "005930": {
-    "ticker": "005930",
-    "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -10.73,
-    "sector_status": "❄️ 부진"
-  },
   "_meta": {
-    "generated_at_iso": "2026-06-12T02:02:07+09:00",
+    "generated_at_iso": "2026-06-12T11:00:52+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
