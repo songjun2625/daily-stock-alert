@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 19.01,
-      "label": "주의",
-      "light": "🟡",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "value": 16.13,
+      "label": "안정",
+      "light": "🟢",
+      "summary": "공포지수 낮아 변동성 안정"
     }
   },
   "runtime": {
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 148.0,
+        "score": 153.0,
         "reasons": [
           "5/20일선 정배열 시작",
           "영업이익률 61%",
@@ -124,7 +124,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 143.0,
+        "score_original": 148.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -167,7 +167,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 142.0,
         "reasons": [
           "52주 고점 대비 -31%",
           "MACD 골든크로스",
@@ -258,7 +258,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 122.0,
+        "score_original": 132.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -600,20 +600,20 @@
     "updated_at_iso": "2026-06-15T11:06:54.402820+09:00",
     "updated_at_kst": "2026.06.15 (월) 11:06 KST"
   },
-  "updated_at_iso": "2026-06-15T11:06:54.402820+09:00",
-  "updated_at_kst": "2026.06.15 (월) 11:06 KST",
+  "updated_at_iso": "2026-06-16T03:02:34.760176+09:00",
+  "updated_at_kst": "2026.06.16 (화) 03:02 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 19.01,
+      "vix": 16.13,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-06-13T01:28:19.356952+09:00",
-    "updated_at_kst": "2026.06.13 (토) 01:28 KST"
+    "updated_at_iso": "2026-06-16T03:02:34.760176+09:00",
+    "updated_at_kst": "2026.06.16 (화) 03:02 KST"
   },
   "futures": {
     "picks": [
