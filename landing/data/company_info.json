@@ -4,8 +4,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 3.23,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 2.92,
+    "sector_status": "📈 호조"
   },
   "079550": {
     "ticker": "079550",
@@ -30,11 +30,11 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 3.23,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 2.92,
+    "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-16T11:13:12+09:00",
+    "generated_at_iso": "2026-06-17T03:11:39+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
