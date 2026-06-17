@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 15.77,
+      "value": 16.82,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 135.0,
+        "score": 145.0,
         "reasons": [
           "RSI 44(과매도 반등 후보)",
           "52주 고점 대비 -32%",
@@ -129,7 +129,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 125.0,
+        "score_original": 135.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -576,20 +576,20 @@
     "updated_at_iso": "2026-06-17T11:07:01.451328+09:00",
     "updated_at_kst": "2026.06.17 (수) 11:07 KST"
   },
-  "updated_at_iso": "2026-06-17T11:07:01.451328+09:00",
-  "updated_at_kst": "2026.06.17 (수) 11:07 KST",
+  "updated_at_iso": "2026-06-18T01:44:36.468600+09:00",
+  "updated_at_kst": "2026.06.18 (목) 01:44 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 15.77,
+      "vix": 16.82,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-06-17T03:11:39.047279+09:00",
-    "updated_at_kst": "2026.06.17 (수) 03:11 KST"
+    "updated_at_iso": "2026-06-18T01:44:36.468600+09:00",
+    "updated_at_kst": "2026.06.18 (목) 01:44 KST"
   },
   "futures": {
     "picks": [
