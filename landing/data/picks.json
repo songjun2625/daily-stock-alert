@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.82,
+      "value": 16.83,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -20,6 +20,144 @@
   },
   "kr": {
     "picks": [
+      {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 2605000,
+        "change_pct_1d": 3.3320111067036917,
+        "market_cap": 1848462253490176.0,
+        "operating_margin": 0.71535003,
+        "revenue_growth": 1.981,
+        "pe_ratio": null,
+        "drawdown_52w": 0.0,
+        "rsi": 70.3786880581375,
+        "volume_spike": false,
+        "macd_golden_cross": true,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 154.0,
+        "reasons": [
+          "MACD 골든크로스",
+          "영업이익률 72%",
+          "매출 성장 +198%"
+        ],
+        "entry_low": 2483850,
+        "entry_high": 2691536,
+        "target": 3072293,
+        "stoploss": 2345393,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 72% / RSI 70 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. RSI 70로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "72%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "198%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "70",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-0%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "✓",
+              "ok": true,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "MACD 골든크로스",
+              "points": 10
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 139.0,
+        "news_boost": 15.0,
+        "news_positive": 3,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "SK hynix (KOSE:A000660) Partners With Nvidia On AI Memory And Autonomous Fabs",
+            "link": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-partners-020941397.html",
+            "score": 5,
+            "positive": [
+              "MOU"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK하이닉스도 차세대 HBM 샘플 공급…삼성전자와 정면승부",
+            "link": "https://www.hankyung.com/article/2026061851011",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
+          },
+          {
+            "title": "[특징주] SK하이닉스, 사상 첫 270만닉스…삼전도 4.6% 상승마감(종합)",
+            "link": "https://www.yna.co.kr/view/AKR20260618044351008",
+            "score": 5,
+            "positive": [
+              "사상 첫"
+            ],
+            "negative": []
+          }
+        ]
+      },
       {
         "ticker": "207940",
         "name": "삼성바이오로직스",
@@ -38,7 +176,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 142.0,
+        "score": 152.0,
         "reasons": [
           "52주 고점 대비 -27%",
           "5/20일선 정배열 시작",
@@ -129,7 +267,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 132.0,
+        "score_original": 142.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -141,144 +279,6 @@
             "positive": [
               "M&A",
               "Buy"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "sector": "반도체",
-        "price": 2605000,
-        "change_pct_1d": 3.3320111067036917,
-        "market_cap": 1848462253490176.0,
-        "operating_margin": 0.71535003,
-        "revenue_growth": 1.981,
-        "pe_ratio": null,
-        "drawdown_52w": 0.0,
-        "rsi": 70.3786880581375,
-        "volume_spike": false,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 139.0,
-        "reasons": [
-          "MACD 골든크로스",
-          "영업이익률 72%",
-          "매출 성장 +198%"
-        ],
-        "entry_low": 2483850,
-        "entry_high": 2691536,
-        "target": 3072293,
-        "stoploss": 2345393,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 72% / RSI 70 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. RSI 70로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "72%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "198%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "70",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-0%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 114.0,
-        "news_boost": 25.0,
-        "news_positive": 5,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "SK hynix (KOSE:A000660) Partners With Nvidia On AI Memory And Autonomous Fabs",
-            "link": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-kose-a000660-partners-020941397.html",
-            "score": 5,
-            "positive": [
-              "MOU"
-            ],
-            "negative": []
-          },
-          {
-            "title": "AI Memory Bottleneck: This Sizzling ETF Lets You Buy Micron, Sandisk, SK Hynix, and Samsung for Less Than $100",
-            "link": "https://www.fool.com/investing/2026/06/15/ai-memory-bottleneck-this-sizzling-etf-lets-you-bu/",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "SK하이닉스, 차세대 AI 메모리 HBM4E 12단 샘플 공급",
-            "link": "https://www.hankyung.com/article/202606183452g",
-            "score": 5,
-            "positive": [
-              "HBM"
             ],
             "negative": []
           }
@@ -625,20 +625,20 @@
     "updated_at_iso": "2026-06-18T11:04:46.165159+09:00",
     "updated_at_kst": "2026.06.18 (목) 11:04 KST"
   },
-  "updated_at_iso": "2026-06-18T11:04:46.165159+09:00",
-  "updated_at_kst": "2026.06.18 (목) 11:04 KST",
+  "updated_at_iso": "2026-06-19T01:43:39.957603+09:00",
+  "updated_at_kst": "2026.06.19 (금) 01:43 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 16.82,
+      "vix": 16.83,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-06-18T01:44:36.468600+09:00",
-    "updated_at_kst": "2026.06.18 (목) 01:44 KST"
+    "updated_at_iso": "2026-06-19T01:43:39.957603+09:00",
+    "updated_at_kst": "2026.06.19 (금) 01:43 KST"
   },
   "futures": {
     "picks": [

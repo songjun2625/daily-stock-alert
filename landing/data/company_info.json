@@ -4,8 +4,16 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.66,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -2.1,
+    "sector_status": "📉 약세"
+  },
+  "000660": {
+    "ticker": "000660",
+    "market": "kr",
+    "name": "SK하이닉스",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 18.65,
+    "sector_status": "🔥 강세"
   },
   "062040": {
     "ticker": "062040",
@@ -19,24 +27,16 @@
     "name": "엘앤에프",
     "sector": "화학·배터리"
   },
-  "000660": {
-    "ticker": "000660",
-    "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 15.7,
-    "sector_status": "🔥 강세"
-  },
   "068270": {
     "ticker": "068270",
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.66,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -2.1,
+    "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-18T11:04:50+09:00",
+    "generated_at_iso": "2026-06-19T01:43:41+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
