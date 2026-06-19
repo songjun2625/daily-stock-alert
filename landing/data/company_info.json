@@ -1,20 +1,4 @@
 {
-  "207940": {
-    "ticker": "207940",
-    "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.1,
-    "sector_status": "📉 약세"
-  },
-  "000660": {
-    "ticker": "000660",
-    "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 18.65,
-    "sector_status": "🔥 강세"
-  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
@@ -32,11 +16,25 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.1,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.31,
+    "sector_status": "❄️ 부진"
+  },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -3.31,
+    "sector_status": "❄️ 부진"
+  },
+  "036570": {
+    "ticker": "036570",
+    "market": "kr",
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-19T01:43:41+09:00",
+    "generated_at_iso": "2026-06-19T11:33:14+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
