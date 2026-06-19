@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.83,
+      "value": 16.78,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -232,6 +232,127 @@
         }
       },
       {
+        "ticker": "207940",
+        "name": "삼성바이오로직스",
+        "sector": "바이오·헬스케어",
+        "price": 1376000,
+        "change_pct_1d": -3.776223776223775,
+        "market_cap": 63696348905472.0,
+        "operating_margin": 0.46196997,
+        "revenue_growth": 0.258,
+        "pe_ratio": null,
+        "drawdown_52w": 0.29974554707379136,
+        "rsi": 49.86409139417269,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 117.0,
+        "reasons": [
+          "52주 고점 대비 -30%",
+          "영업이익률 46%",
+          "매출 성장 +26%"
+        ],
+        "entry_low": 1330925,
+        "entry_high": 1408196,
+        "target": 1549860,
+        "stoploss": 1279411,
+        "narrative": {
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 50 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "26%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "50",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-30%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 107.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+            "score": 10,
+            "positive": [
+              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
+      },
+      {
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
@@ -340,127 +461,6 @@
           ],
           "hold_days": 5
         }
-      },
-      {
-        "ticker": "207940",
-        "name": "삼성바이오로직스",
-        "sector": "바이오·헬스케어",
-        "price": 1376000,
-        "change_pct_1d": -3.776223776223775,
-        "market_cap": 63696348905472.0,
-        "operating_margin": 0.46196997,
-        "revenue_growth": 0.258,
-        "pe_ratio": null,
-        "drawdown_52w": 0.29974554707379136,
-        "rsi": 49.86409139417269,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 107.0,
-        "reasons": [
-          "52주 고점 대비 -30%",
-          "영업이익률 46%",
-          "매출 성장 +26%"
-        ],
-        "entry_low": 1330925,
-        "entry_high": 1408196,
-        "target": 1549860,
-        "stoploss": 1279411,
-        "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 50 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "46%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "26%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "50",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-30%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 97.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
-            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
-            "score": 10,
-            "positive": [
-              "M&A",
-              "Buy"
-            ],
-            "negative": []
-          }
-        ]
       }
     ],
     "quant_pick": {
@@ -572,20 +572,259 @@
     "updated_at_iso": "2026-06-19T11:33:10.020010+09:00",
     "updated_at_kst": "2026.06.19 (금) 11:33 KST"
   },
-  "updated_at_iso": "2026-06-19T11:33:10.020010+09:00",
-  "updated_at_kst": "2026.06.19 (금) 11:33 KST",
+  "updated_at_iso": "2026-06-20T01:15:16.562297+09:00",
+  "updated_at_kst": "2026.06.20 (토) 01:15 KST",
   "us": {
-    "picks": [],
+    "picks": [
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "price": 379.3999938964844,
+        "price_krw": 581320,
+        "change_pct_1d": 0.12931572923366996,
+        "market_cap": 2818348154880.0,
+        "operating_margin": 0.46326,
+        "revenue_growth": 0.183,
+        "pe_ratio": 22.610249,
+        "sector": "Technology",
+        "avg_volume": 38942640.0,
+        "rsi": 34.98244572538455,
+        "drawdown_52w": 0.2956577403674991,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 5.22,
+        "score": 142.36,
+        "reasons": [
+          "RSI 35(과매도 반등 후보)",
+          "52주 고점 대비 -30%",
+          "영업이익률 46%",
+          "어닝 서프라이즈 +5.2%"
+        ],
+        "entry_low": 370.62,
+        "entry_high": 385.67,
+        "target": 413.26,
+        "stoploss": 360.59,
+        "narrative": {
+          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 35 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 35로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "18%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "35",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-30%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+5.2%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 57.9
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 27.4
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 132.36,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Tech Weekly: A blockbuster IPO, a sweeping online block",
+            "link": "https://finance.yahoo.com/video/tech-weekly-blockbuster-ipo-sweeping-123343495.html",
+            "score": 5,
+            "positive": [
+              "ipo"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SpaceX Is Outperforming Everything. Is It Still the Smartest Buy Right Now?",
+            "link": "https://www.fool.com/investing/2026/06/19/spacex-is-outperforming-everything-is-it-still-the/",
+            "score": 5,
+            "positive": [
+              "outperform"
+            ],
+            "negative": []
+          }
+        ]
+      },
+      {
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "price": 577.219970703125,
+        "price_krw": 884422,
+        "change_pct_1d": 1.6984307627157635,
+        "market_cap": 1465228591104.0,
+        "operating_margin": 0.40617,
+        "revenue_growth": 0.331,
+        "pe_ratio": 20.997452,
+        "sector": "Communication Services",
+        "avg_volume": 19143445.0,
+        "rsi": 42.97510121442339,
+        "drawdown_52w": 0.26694703604567555,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 7.2,
+        "score": 115.27,
+        "reasons": [
+          "52주 고점 대비 -27%",
+          "영업이익률 41%",
+          "어닝 서프라이즈 +7.2%"
+        ],
+        "entry_low": 561.11,
+        "entry_high": 588.73,
+        "target": 639.36,
+        "stoploss": 542.7,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 43 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 27% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "41%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "33%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "43",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-27%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+7.2%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 50.8
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        }
+      }
+    ],
     "quant_pick": null,
-    "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 16.83,
+      "vix": 16.78,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-06-19T01:43:39.957603+09:00",
-    "updated_at_kst": "2026.06.19 (금) 01:43 KST"
+    "updated_at_iso": "2026-06-20T01:15:16.562297+09:00",
+    "updated_at_kst": "2026.06.20 (토) 01:15 KST"
   },
   "futures": {
     "picks": [
