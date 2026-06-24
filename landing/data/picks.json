@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 19.54,
+      "value": 18.17,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -148,7 +148,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 128.0,
+        "score": 138.0,
         "reasons": [
           "52주 고점 대비 -31%",
           "영업이익률 46%",
@@ -234,7 +234,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 118.0,
+        "score_original": 128.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -500,7 +500,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 112.0,
+      "score": 117.0,
       "reasons": [
         "RSI 44(과매도 반등 후보)",
         "52주 고점 대비 -12%",
@@ -592,7 +592,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 107.0,
+      "score_original": 112.0,
       "news_boost": 5.0,
       "news_positive": 1,
       "news_negative": 0,
@@ -620,20 +620,20 @@
     "updated_at_iso": "2026-06-24T10:33:39.390265+09:00",
     "updated_at_kst": "2026.06.24 (수) 10:33 KST"
   },
-  "updated_at_iso": "2026-06-24T10:33:39.390265+09:00",
-  "updated_at_kst": "2026.06.24 (수) 10:33 KST",
+  "updated_at_iso": "2026-06-25T00:39:01.198502+09:00",
+  "updated_at_kst": "2026.06.25 (목) 00:39 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 19.54,
+      "vix": 18.17,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-06-24T01:06:49.980641+09:00",
-    "updated_at_kst": "2026.06.24 (수) 01:06 KST"
+    "updated_at_iso": "2026-06-25T00:39:01.198502+09:00",
+    "updated_at_kst": "2026.06.25 (목) 00:39 KST"
   },
   "futures": {
     "picks": [
