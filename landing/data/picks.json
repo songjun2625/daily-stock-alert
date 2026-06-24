@@ -21,53 +21,53 @@
   "kr": {
     "picks": [
       {
-        "ticker": "207940",
-        "name": "삼성바이오로직스",
-        "sector": "바이오·헬스케어",
-        "price": 1322000,
-        "change_pct_1d": 2.0849420849420763,
-        "market_cap": 61196640190464.0,
-        "operating_margin": 0.46196997,
-        "revenue_growth": 0.258,
+        "ticker": "062040",
+        "name": "산일전기",
+        "sector": "전선·전력인프라",
+        "price": 225000,
+        "change_pct_1d": 1.3513513513513598,
+        "market_cap": 6874896793600.0,
+        "operating_margin": 0.36908,
+        "revenue_growth": 0.521,
         "pe_ratio": null,
-        "drawdown_52w": 0.3272264631043257,
-        "rsi": 44.52320582033208,
+        "drawdown_52w": 0.32533733133433285,
+        "rsi": 44.17817845699982,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 145.0,
+        "score": 148.0,
         "reasons": [
-          "RSI 45(과매도 반등 후보)",
+          "RSI 44(과매도 반등 후보)",
           "52주 고점 대비 -33%",
-          "영업이익률 46%",
-          "매출 성장 +26%"
+          "영업이익률 37%",
+          "매출 성장 +52%"
         ],
-        "entry_low": 1275025,
-        "entry_high": 1355554,
-        "target": 1503190,
-        "stoploss": 1221339,
+        "entry_low": 209225,
+        "entry_high": 236268,
+        "target": 285847,
+        "stoploss": 191196,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 45 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 45로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 44 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 33% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "46%",
+              "value": "37%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "26%",
+              "value": "52%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "45",
+              "value": "44",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -128,78 +128,62 @@
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 135.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
-            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
-            "score": 10,
-            "positive": [
-              "M&A",
-              "Buy"
-            ],
-            "negative": []
-          }
-        ]
+        }
       },
       {
-        "ticker": "066970",
-        "name": "엘앤에프",
-        "sector": "화학·배터리",
-        "price": 118800,
-        "change_pct_1d": -5.489260143198093,
-        "market_cap": 4465272815616.0,
-        "operating_margin": 0.15854,
-        "revenue_growth": 1.028,
+        "ticker": "207940",
+        "name": "삼성바이오로직스",
+        "sector": "바이오·헬스케어",
+        "price": 1359000,
+        "change_pct_1d": 6.755695208169676,
+        "market_cap": 62909405200384.0,
+        "operating_margin": 0.46196997,
+        "revenue_growth": 0.258,
         "pe_ratio": null,
-        "drawdown_52w": 0.4422535211267606,
-        "rsi": 33.15183378268108,
+        "drawdown_52w": 0.3083969465648855,
+        "rsi": 49.494975154274314,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 134.71,
+        "score": 128.0,
         "reasons": [
-          "RSI 33(과매도 반등 후보)",
-          "영업이익률 16%",
-          "매출 성장 +103%"
+          "52주 고점 대비 -31%",
+          "영업이익률 46%",
+          "매출 성장 +26%"
         ],
-        "entry_low": 111035,
-        "entry_high": 124346,
-        "target": 148750,
-        "stoploss": 102161,
+        "entry_low": 1306125,
+        "entry_high": 1396768,
+        "target": 1562947,
+        "stoploss": 1245696,
         "narrative": {
-          "one_liner": "화학·배터리 영업이익률 16% / RSI 33 반등 신호",
-          "thesis": "엘앤에프(066970)는 매출 성장률 103% · 영업이익률 16%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 44% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 49 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 31% 떨어진 상태에서 RSI 49로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "16%",
+              "value": "46%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "103%",
+              "value": "26%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "33",
-              "ok": true,
+              "value": "49",
+              "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-44%",
-              "ok": false,
+              "value": "-31%",
+              "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
@@ -237,111 +221,6 @@
           "score_breakdown": [
             {
               "name": "영업이익률 ≥10%",
-              "points": 39.6
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "062040",
-        "name": "산일전기",
-        "sector": "전선·전력인프라",
-        "price": 233500,
-        "change_pct_1d": 1.7429193899782147,
-        "market_cap": 7134614913024.0,
-        "operating_margin": 0.36908,
-        "revenue_growth": 0.521,
-        "pe_ratio": null,
-        "drawdown_52w": 0.29985007496251875,
-        "rsi": 47.17104348467821,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 120.0,
-        "reasons": [
-          "52주 고점 대비 -30%",
-          "영업이익률 37%",
-          "매출 성장 +52%"
-        ],
-        "entry_low": 218425,
-        "entry_high": 244268,
-        "target": 291647,
-        "stoploss": 201196,
-        "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 47 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "37%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "52%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "47",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-30%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
               "points": 62.5
             },
             {
@@ -354,20 +233,36 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 118.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+            "score": 10,
+            "positive": [
+              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "068270",
         "name": "셀트리온",
         "sector": "바이오·헬스케어",
-        "price": 168200,
-        "change_pct_1d": -0.17804154302670794,
-        "market_cap": 38572837044224.0,
+        "price": 167400,
+        "change_pct_1d": 4.299065420560755,
+        "market_cap": 38389373992960.0,
         "operating_margin": 0.28111,
         "revenue_growth": 0.36,
         "pe_ratio": null,
-        "drawdown_52w": 0.2892957902883849,
-        "rsi": 41.09014247330834,
+        "drawdown_52w": 0.29267607190413575,
+        "rsi": 43.08711074772904,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -376,18 +271,18 @@
         "earnings_surprise": null,
         "score": 112.0,
         "reasons": [
-          "RSI 41(과매도 반등 후보)",
+          "RSI 43(과매도 반등 후보)",
           "52주 고점 대비 -29%",
           "영업이익률 28%",
           "매출 성장 +36%"
         ],
-        "entry_low": 163045,
-        "entry_high": 171882,
-        "target": 188083,
-        "stoploss": 157154,
+        "entry_low": 161910,
+        "entry_high": 171321,
+        "target": 188575,
+        "stoploss": 155636,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 28% / RSI 41 반등 신호",
-          "thesis": "셀트리온(068270)는 매출 성장률 36% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "바이오·헬스케어 영업이익률 28% / RSI 43 반등 신호",
+          "thesis": "셀트리온(068270)는 매출 성장률 36% · 영업이익률 28%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -403,7 +298,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "41",
+              "value": "43",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -465,39 +360,160 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 2611000,
+        "change_pct_1d": 2.191780821917799,
+        "market_cap": 1852721384652800.0,
+        "operating_margin": 0.71535003,
+        "revenue_growth": 1.981,
+        "pe_ratio": null,
+        "drawdown_52w": 0.10551558752997602,
+        "rsi": 61.79079570092023,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 104.0,
+        "reasons": [
+          "52주 고점 대비 -11%",
+          "영업이익률 72%",
+          "매출 성장 +198%"
+        ],
+        "entry_low": 2458050,
+        "entry_high": 2720250,
+        "target": 3200950,
+        "stoploss": 2283250,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 72% / RSI 62 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 11% 떨어진 상태에서 RSI 62로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "72%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "198%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "62",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-11%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 114.0,
+        "news_boost": -10.0,
+        "news_positive": 0,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "South Korean market drops 10% on memory chip stock losses amid sell-off",
+            "link": "https://finance.yahoo.com/video/south-korean-market-drops-10-141631288.html",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
+          }
+        ]
       }
     ],
     "quant_pick": {
       "ticker": "105560",
       "name": "KB금융",
       "sector": "금융",
-      "price": 162200,
-      "change_pct_1d": 3.3121019108280247,
-      "market_cap": 57530352926720.0,
+      "price": 151700,
+      "change_pct_1d": -1.3012361743656498,
+      "market_cap": 53806129741824.0,
       "operating_margin": 0.60714,
       "revenue_growth": 0.152,
       "pe_ratio": null,
-      "drawdown_52w": 0.056976744186046514,
-      "rsi": 52.92328835891892,
+      "drawdown_52w": 0.11802325581395348,
+      "rsi": 44.16639329437729,
       "volume_spike": false,
-      "macd_golden_cross": true,
+      "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 102.0,
+      "score": 112.0,
       "reasons": [
-        "MACD 골든크로스",
+        "RSI 44(과매도 반등 후보)",
+        "52주 고점 대비 -12%",
         "영업이익률 61%",
         "매출 성장 +15%"
       ],
-      "entry_low": 154835,
-      "entry_high": 167461,
-      "target": 190608,
-      "stoploss": 146418,
+      "entry_low": 144275,
+      "entry_high": 157004,
+      "target": 180340,
+      "stoploss": 135789,
       "narrative": {
-        "one_liner": "금융 영업이익률 61% / RSI 53 반등 신호",
-        "thesis": "KB금융(105560)는 매출 성장률 15% · 영업이익률 61%로 꾸준히 돈을 잘 버는 회사입니다. RSI 53로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+        "one_liner": "금융 영업이익률 61% / RSI 44 반등 신호",
+        "thesis": "KB금융(105560)는 매출 성장률 15% · 영업이익률 61%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 12% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
@@ -513,20 +529,20 @@
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "53",
-            "ok": false,
+            "value": "44",
+            "ok": true,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-6%",
-            "ok": false,
+            "value": "-12%",
+            "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
           {
             "label": "MACD 골든크로스",
-            "value": "✓",
-            "ok": true,
+            "value": "—",
+            "ok": false,
             "explain": "추세 전환의 첫 신호."
           },
           {
@@ -565,14 +581,18 @@
             "points": 37.5
           },
           {
-            "name": "MACD 골든크로스",
-            "points": 10
+            "name": "RSI 30~45 구간",
+            "points": 20
+          },
+          {
+            "name": "52주 -10~-35%",
+            "points": 15
           }
         ],
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 97.0,
+      "score_original": 107.0,
       "news_boost": 5.0,
       "news_positive": 1,
       "news_negative": 0,
@@ -597,11 +617,11 @@
         }
       ]
     },
-    "updated_at_iso": "2026-06-23T10:48:55.130940+09:00",
-    "updated_at_kst": "2026.06.23 (화) 10:48 KST"
+    "updated_at_iso": "2026-06-24T10:33:39.390265+09:00",
+    "updated_at_kst": "2026.06.24 (수) 10:33 KST"
   },
-  "updated_at_iso": "2026-06-24T01:06:49.980641+09:00",
-  "updated_at_kst": "2026.06.24 (수) 01:06 KST",
+  "updated_at_iso": "2026-06-24T10:33:39.390265+09:00",
+  "updated_at_kst": "2026.06.24 (수) 10:33 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
