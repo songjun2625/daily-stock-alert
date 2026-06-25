@@ -11,19 +11,19 @@
     "name": "엘앤에프",
     "sector": "화학·배터리"
   },
-  "036570": {
-    "ticker": "036570",
-    "market": "kr",
-    "name": "엔씨소프트",
-    "sector": "코스피·코스닥"
-  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.14,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.25,
+    "sector_status": "❄️ 부진"
+  },
+  "036570": {
+    "ticker": "036570",
+    "market": "kr",
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
   },
   "105560": {
     "ticker": "105560",
@@ -32,7 +32,7 @@
     "sector": "금융"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-25T10:50:59+09:00",
+    "generated_at_iso": "2026-06-26T00:46:10+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
