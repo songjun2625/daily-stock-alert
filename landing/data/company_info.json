@@ -5,25 +5,21 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "066970": {
-    "ticker": "066970",
+  "068270": {
+    "ticker": "068270",
     "market": "kr",
-    "name": "엘앤에프",
-    "sector": "화학·배터리"
+    "name": "셀트리온",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -3.98,
+    "sector_status": "❄️ 부진"
   },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -3.25,
+    "sector_momentum_5d_pct": -3.98,
     "sector_status": "❄️ 부진"
-  },
-  "036570": {
-    "ticker": "036570",
-    "market": "kr",
-    "name": "엔씨소프트",
-    "sector": "코스피·코스닥"
   },
   "105560": {
     "ticker": "105560",
@@ -31,8 +27,14 @@
     "name": "KB금융",
     "sector": "금융"
   },
+  "036570": {
+    "ticker": "036570",
+    "market": "kr",
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
+  },
   "_meta": {
-    "generated_at_iso": "2026-06-26T00:46:10+09:00",
+    "generated_at_iso": "2026-06-26T10:53:57+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
