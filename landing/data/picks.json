@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 19.27,
-      "label": "주의",
-      "light": "🟡",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "value": 17.83,
+      "label": "안정",
+      "light": "🟢",
+      "summary": "공포지수 낮아 변동성 안정"
     }
   },
   "runtime": {
@@ -148,7 +148,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 142.0,
         "reasons": [
           "52주 고점 대비 -29%",
           "5/20일선 정배열 시작",
@@ -238,7 +238,23 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 132.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+            "score": 10,
+            "positive": [
+              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "005930",
@@ -258,7 +274,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 119.0,
+        "score": 124.0,
         "reasons": [
           "52주 고점 대비 -10%",
           "영업이익률 43%",
@@ -344,26 +360,17 @@
           ],
           "hold_days": 5
         },
-        "score_original": 114.0,
+        "score_original": 119.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Samsung Electronics (KOSE:A005930) Board Is Weighing A Big Share Buyback",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-board-140513467.html",
+            "title": "Samsung, SK Hynix stock targets lifted at Barclays on robust HBM demand",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-sk-hynix-stock-targets-150315470.html",
             "score": 5,
             "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Is Meta Platforms (META) One of the Top Trending US Stocks to Buy Now?",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-one-top-192115498.html",
-            "score": 5,
-            "positive": [
-              "Buy"
+              "HBM"
             ],
             "negative": []
           }
@@ -387,7 +394,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 119.0,
+        "score": 114.0,
         "reasons": [
           "52주 고점 대비 -11%",
           "영업이익률 72%",
@@ -473,19 +480,28 @@
           ],
           "hold_days": 5
         },
-        "score_original": 114.0,
-        "news_boost": 5.0,
+        "score_original": 119.0,
+        "news_boost": -5.0,
         "news_positive": 1,
-        "news_negative": 0,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Apple Wants to Buy Blacklisted Chinese Memory. Micron Has Nothing to Worry About",
-            "link": "https://247wallst.com/investing/2026/06/27/apple-wants-to-buy-blacklisted-chinese-memory-micron-has-nothing-to-worry-about/",
+            "title": "Samsung, SK Hynix stock targets lifted at Barclays on robust HBM demand",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-sk-hynix-stock-targets-150315470.html",
             "score": 5,
             "positive": [
-              "Buy"
+              "HBM"
             ],
             "negative": []
+          },
+          {
+            "title": "“맥북 가격 올랐잖아”…美소비자, 삼성·하이닉스·마이크론 ‘담합’ 주장 소송",
+            "link": "https://www.mk.co.kr/news/world/12086032",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "소송"
+            ]
           }
         ]
       }
@@ -508,7 +524,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 112.0,
+      "score": 117.0,
       "reasons": [
         "RSI 44(과매도 반등 후보)",
         "52주 고점 대비 -12%",
@@ -600,7 +616,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 107.0,
+      "score_original": 112.0,
       "news_boost": 5.0,
       "news_positive": 1,
       "news_negative": 0,
@@ -628,20 +644,20 @@
     "updated_at_iso": "2026-06-29T10:56:35.704066+09:00",
     "updated_at_kst": "2026.06.29 (월) 10:56 KST"
   },
-  "updated_at_iso": "2026-06-29T10:56:35.704066+09:00",
-  "updated_at_kst": "2026.06.29 (월) 10:56 KST",
+  "updated_at_iso": "2026-06-30T01:42:57.752855+09:00",
+  "updated_at_kst": "2026.06.30 (화) 01:42 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 19.27,
+      "vix": 17.83,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-06-27T00:34:10.020636+09:00",
-    "updated_at_kst": "2026.06.27 (토) 00:34 KST"
+    "updated_at_iso": "2026-06-30T01:42:57.752855+09:00",
+    "updated_at_kst": "2026.06.30 (화) 01:42 KST"
   },
   "futures": {
     "picks": [
