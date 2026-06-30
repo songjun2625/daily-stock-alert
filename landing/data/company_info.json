@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 3.01,
+    "sector_momentum_5d_pct": 4.34,
     "sector_status": "🔥 강세"
   },
   "068270": {
@@ -12,8 +12,8 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 4.39,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 2.72,
+    "sector_status": "📈 호조"
   },
   "062040": {
     "ticker": "062040",
@@ -26,7 +26,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 3.01,
+    "sector_momentum_5d_pct": 4.34,
     "sector_status": "🔥 강세"
   },
   "207940": {
@@ -34,11 +34,11 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 4.39,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 2.72,
+    "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-30T10:51:30+09:00",
+    "generated_at_iso": "2026-07-01T00:41:45+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
