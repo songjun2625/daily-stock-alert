@@ -1,42 +1,44 @@
 {
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 3.01,
+    "sector_status": "🔥 강세"
+  },
+  "068270": {
+    "ticker": "068270",
+    "market": "kr",
+    "name": "셀트리온",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 4.39,
+    "sector_status": "🔥 강세"
+  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "207940": {
-    "ticker": "207940",
-    "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 3.11,
-    "sector_status": "🔥 강세"
-  },
-  "005930": {
-    "ticker": "005930",
-    "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -8.05,
-    "sector_status": "❄️ 부진"
-  },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -8.05,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": 3.01,
+    "sector_status": "🔥 강세"
   },
-  "105560": {
-    "ticker": "105560",
+  "207940": {
+    "ticker": "207940",
     "market": "kr",
-    "name": "KB금융",
-    "sector": "금융"
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 4.39,
+    "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-06-30T01:42:59+09:00",
+    "generated_at_iso": "2026-06-30T10:51:30+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
