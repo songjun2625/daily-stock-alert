@@ -5,24 +5,12 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "105560": {
-    "ticker": "105560",
-    "market": "kr",
-    "name": "KB금융",
-    "sector": "금융"
-  },
-  "055550": {
-    "ticker": "055550",
-    "market": "kr",
-    "name": "신한지주",
-    "sector": "금융"
-  },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": NaN,
+    "sector_momentum_5d_pct": -3.32,
     "sector_status": "❄️ 부진"
   },
   "005930": {
@@ -30,8 +18,22 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": NaN,
+    "sector_momentum_5d_pct": -3.32,
     "sector_status": "❄️ 부진"
+  },
+  "066970": {
+    "ticker": "066970",
+    "market": "kr",
+    "name": "엘앤에프",
+    "sector": "화학·배터리"
+  },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 0.48,
+    "sector_status": "➡️ 보합"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -89,7 +91,7 @@
     "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-04T00:26:19+09:00",
+    "generated_at_iso": "2026-07-06T10:26:33+09:00",
     "tickers_count": 10,
     "dart_enabled": false
   }
