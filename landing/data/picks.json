@@ -24,14 +24,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 210000,
-        "change_pct_1d": -4.977375565610864,
-        "market_cap": 6416569991168.0,
+        "price": 200000,
+        "change_pct_1d": -3.3816425120772986,
+        "market_cap": 6111019139072.0,
         "operating_margin": 0.36908,
         "revenue_growth": 0.521,
         "pe_ratio": null,
-        "drawdown_52w": 0.37031484257871067,
-        "rsi": 42.03494732207644,
+        "drawdown_52w": 0.4002998500749625,
+        "rsi": 39.47259082776472,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -40,18 +40,17 @@
         "earnings_surprise": null,
         "score": 148.0,
         "reasons": [
-          "RSI 42(과매도 반등 후보)",
-          "52주 고점 대비 -37%",
+          "RSI 39(과매도 반등 후보)",
           "영업이익률 37%",
           "매출 성장 +52%"
         ],
-        "entry_low": 193325,
-        "entry_high": 221911,
-        "target": 274318,
-        "stoploss": 174268,
+        "entry_low": 183050,
+        "entry_high": 212107,
+        "target": 265378,
+        "stoploss": 163679,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 42 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 37% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 39 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 40% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -67,13 +66,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "42",
+              "value": "39",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-37%",
+              "value": "-40%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -130,33 +129,33 @@
         "ticker": "000660",
         "name": "SK하이닉스",
         "sector": "반도체",
-        "price": 2430000,
-        "change_pct_1d": 0.20618556701030855,
-        "market_cap": 1725657327337472.0,
+        "price": 2230000,
+        "change_pct_1d": -4.822876653862574,
+        "market_cap": 1582976500498432.0,
         "operating_margin": 0.71535003,
         "revenue_growth": 1.981,
         "pe_ratio": null,
-        "drawdown_52w": 0.16752312435765673,
-        "rsi": 51.6367633827513,
+        "drawdown_52w": 0.23603973963686195,
+        "rsi": 46.60750465272628,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 124.0,
+        "score": 114.0,
         "reasons": [
-          "52주 고점 대비 -17%",
+          "52주 고점 대비 -24%",
           "영업이익률 72%",
           "매출 성장 +198%"
         ],
-        "entry_low": 2247950,
-        "entry_high": 2560036,
-        "target": 3132193,
-        "stoploss": 2039893,
+        "entry_low": 2046300,
+        "entry_high": 2361214,
+        "target": 2938557,
+        "stoploss": 1836357,
         "narrative": {
-          "one_liner": "반도체 영업이익률 72% / RSI 52 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 17% 떨어진 상태에서 RSI 52로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 72% / RSI 47 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 198% · 영업이익률 72%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -172,13 +171,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "52",
+              "value": "47",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-17%",
+              "value": "-24%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -229,53 +228,20 @@
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 114.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Forget Micron? This New AI Memory Stock Could Be the Best Buy of the Decade",
-            "link": "https://247wallst.com/investing/2026/07/05/forget-micron-this-new-ai-memory-stock-could-be-the-best-buy-of-the-decade/",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Microsoft (MSFT): One of the Best AI and Technology Stocks to Buy Now",
-            "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-msft-one-best-ai-140839126.html",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "미래에셋증권, SK하이닉스서 1.26조 조달…M&A 실탄 확보",
-            "link": "https://www.hankyung.com/article/202607035120i",
-            "score": 5,
-            "positive": [
-              "M&A"
-            ],
-            "negative": []
-          }
-        ]
+        }
       },
       {
         "ticker": "005930",
         "name": "삼성전자",
         "sector": "반도체",
-        "price": 318000,
-        "change_pct_1d": 2.746365105008075,
-        "market_cap": 2088167196852224.0,
+        "price": 298000,
+        "change_pct_1d": -6.2893081761006275,
+        "market_cap": 1958477572341760.0,
         "operating_margin": 0.42751,
         "revenue_growth": 0.692,
         "pe_ratio": null,
-        "drawdown_52w": 0.12275862068965518,
-        "rsi": 50.00365334889023,
+        "drawdown_52w": 0.17793103448275863,
+        "rsi": 45.77866433293708,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -284,17 +250,17 @@
         "earnings_surprise": null,
         "score": 114.0,
         "reasons": [
-          "52주 고점 대비 -12%",
+          "52주 고점 대비 -18%",
           "영업이익률 43%",
           "매출 성장 +69%"
         ],
-        "entry_low": 299562,
-        "entry_high": 331170,
-        "target": 389116,
-        "stoploss": 278491,
+        "entry_low": 278988,
+        "entry_high": 311580,
+        "target": 371334,
+        "stoploss": 257259,
         "narrative": {
-          "one_liner": "반도체 영업이익률 43% / RSI 50 반등 신호",
-          "thesis": "삼성전자(005930)는 매출 성장률 69% · 영업이익률 43%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 12% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 43% / RSI 46 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 69% · 영업이익률 43%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 18% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -310,13 +276,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "50",
+              "value": "46",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-12%",
+              "value": "-18%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -373,14 +339,14 @@
         "ticker": "066970",
         "name": "엘앤에프",
         "sector": "화학·배터리",
-        "price": 103800,
-        "change_pct_1d": -2.075471698113207,
+        "price": 101000,
+        "change_pct_1d": -2.321083172146998,
         "market_cap": 0.0,
         "operating_margin": 0.15854,
         "revenue_growth": 1.028,
         "pe_ratio": null,
-        "drawdown_52w": 0.5126760563380282,
-        "rsi": 34.39000288718749,
+        "drawdown_52w": 0.5258215962441315,
+        "rsi": 33.12221941013685,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -389,17 +355,17 @@
         "earnings_surprise": null,
         "score": 109.71,
         "reasons": [
-          "RSI 34(과매도 반등 후보)",
+          "RSI 33(과매도 반등 후보)",
           "영업이익률 16%",
           "매출 성장 +103%"
         ],
-        "entry_low": 96835,
-        "entry_high": 108775,
-        "target": 130665,
-        "stoploss": 88875,
+        "entry_low": 93810,
+        "entry_high": 106136,
+        "target": 128733,
+        "stoploss": 85593,
         "narrative": {
-          "one_liner": "화학·배터리 영업이익률 16% / RSI 34 반등 신호",
-          "thesis": "엘앤에프(066970)는 매출 성장률 103% · 영업이익률 16%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 51% 떨어진 상태에서 RSI 34로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "화학·배터리 영업이익률 16% / RSI 33 반등 신호",
+          "thesis": "엘앤에프(066970)는 매출 성장률 103% · 영업이익률 16%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 53% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -415,13 +381,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "34",
+              "value": "33",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-51%",
+              "value": "-53%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -479,33 +445,33 @@
       "ticker": "207940",
       "name": "삼성바이오로직스",
       "sector": "바이오·헬스케어",
-      "price": 1388000,
-      "change_pct_1d": -2.3223082336382816,
-      "market_cap": 64251842527232.0,
+      "price": 1403000,
+      "change_pct_1d": -0.1423487544483959,
+      "market_cap": 64946205360128.0,
       "operating_margin": 0.46196997,
       "revenue_growth": 0.258,
       "pe_ratio": null,
-      "drawdown_52w": 0.29363867684478373,
-      "rsi": 50.84331225613561,
+      "drawdown_52w": 0.2860050890585242,
+      "rsi": 52.42650854803229,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 117.0,
+      "score": 107.0,
       "reasons": [
         "52주 고점 대비 -29%",
         "영업이익률 46%",
         "매출 성장 +26%"
       ],
-      "entry_low": 1329925,
-      "entry_high": 1429482,
-      "target": 1612003,
-      "stoploss": 1263554,
+      "entry_low": 1345500,
+      "entry_high": 1444071,
+      "target": 1624785,
+      "stoploss": 1279786,
       "narrative": {
-        "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 51 반등 신호",
-        "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 51로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 52 반등 신호",
+        "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 52로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
@@ -521,7 +487,7 @@
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "51",
+            "value": "52",
             "ok": false,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
@@ -580,7 +546,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 107.0,
+      "score_original": 97.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -597,13 +563,126 @@
         }
       ]
     },
-    "updated_at_iso": "2026-07-06T10:26:26.746241+09:00",
-    "updated_at_kst": "2026.07.06 (월) 10:26 KST"
+    "updated_at_iso": "2026-07-07T10:25:37.879824+09:00",
+    "updated_at_kst": "2026.07.07 (화) 10:25 KST"
   },
-  "updated_at_iso": "2026-07-07T01:30:53.642530+09:00",
-  "updated_at_kst": "2026.07.07 (화) 01:30 KST",
+  "updated_at_iso": "2026-07-07T10:25:37.879824+09:00",
+  "updated_at_kst": "2026.07.07 (화) 10:25 KST",
   "us": {
     "picks": [
+      {
+        "ticker": "APP",
+        "name": "Applovin Corporation",
+        "price": 541.1600952148438,
+        "price_krw": 828283,
+        "change_pct_1d": 2.6752357836988816,
+        "market_cap": 181797060608.0,
+        "operating_margin": 0.78151,
+        "revenue_growth": 0.59,
+        "pe_ratio": 47.098354,
+        "sector": "Communication Services",
+        "avg_volume": 5474044.75,
+        "rsi": 56.44602989460921,
+        "drawdown_52w": 0.2623226373711219,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 3.39,
+        "score": 125.0,
+        "reasons": [
+          "52주 고점 대비 -26%",
+          "영업이익률 78%"
+        ],
+        "entry_low": 517.01,
+        "entry_high": 558.41,
+        "target": 634.31,
+        "stoploss": 489.41,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 78%, RSI 56 반등 신호.",
+          "thesis": "Applovin Corporation는 매출 성장률 59% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 56로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "78%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "59%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "56",
+              "ok": false,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-26%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+3.4%",
+              "ok": false,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 120.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Edgewater Research Upgrade AppLovin Corporation (APP)",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/edgewater-research-upgrade-applovin-corporation-061548340.html",
+            "score": 5,
+            "positive": [
+              "upgrade"
+            ],
+            "negative": []
+          }
+        ]
+      },
       {
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
@@ -835,119 +914,6 @@
         }
       },
       {
-        "ticker": "APP",
-        "name": "Applovin Corporation",
-        "price": 541.1600952148438,
-        "price_krw": 828283,
-        "change_pct_1d": 2.6752357836988816,
-        "market_cap": 181797060608.0,
-        "operating_margin": 0.78151,
-        "revenue_growth": 0.59,
-        "pe_ratio": 47.098354,
-        "sector": "Communication Services",
-        "avg_volume": 5474044.75,
-        "rsi": 56.44602989460921,
-        "drawdown_52w": 0.2623226373711219,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "volume_spike": false,
-        "earnings_surprise_pct": 3.39,
-        "score": 120.0,
-        "reasons": [
-          "52주 고점 대비 -26%",
-          "영업이익률 78%"
-        ],
-        "entry_low": 517.01,
-        "entry_high": 558.41,
-        "target": 634.31,
-        "stoploss": 489.41,
-        "narrative": {
-          "one_liner": "Communication Services 영업이익률 78%, RSI 56 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 59% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 56로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "78%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "59%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "56",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-26%",
-              "ok": true,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+3.4%",
-              "ok": false,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -15~-40%",
-              "points": 15
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 115.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Edgewater Research Upgrade AppLovin Corporation (APP)",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/edgewater-research-upgrade-applovin-corporation-061548340.html",
-            "score": 5,
-            "positive": [
-              "upgrade"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
         "price": 383.9849853515625,
@@ -965,7 +931,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
-        "score": 112.36,
+        "score": 122.36,
         "reasons": [
           "52주 고점 대비 -29%",
           "영업이익률 46%",
@@ -1048,7 +1014,31 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 112.36,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Intel-Backed AI Chip and Software Maker Syntiant Files for IPO",
+            "link": "https://finance.yahoo.com/technology/ai/articles/intel-backed-ai-chip-software-222745613.html",
+            "score": 5,
+            "positive": [
+              "ipo"
+            ],
+            "negative": []
+          },
+          {
+            "title": "S&P 500, Nasdaq End Higher On Support From Strong Tech Gains Led By Nvidia, Dow Hits Record Highs — MSFT, NVDA, LMT, AVGO, SPCX In Focus",
+            "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-end-higher-on-support-from-strong-tech-gains-led-by-nvidia-dow-hits-record-highs-msft-nvda-lmt-avgo-spcx-in-focus/cZm1YfaR7lU",
+            "score": 5,
+            "positive": [
+              "record high"
+            ],
+            "negative": []
+          }
+        ]
       }
     ],
     "quant_pick": {
