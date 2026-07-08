@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.43,
-      "label": "안정",
-      "light": "🟢",
-      "summary": "공포지수 낮아 변동성 안정"
+      "value": 18.06,
+      "label": "주의",
+      "light": "🟡",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
   },
   "runtime": {
@@ -368,7 +368,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 109.0,
+        "score": 104.0,
         "reasons": [
           "52주 고점 대비 -21%",
           "영업이익률 72%",
@@ -454,37 +454,37 @@
           ],
           "hold_days": 5
         },
-        "score_original": 114.0,
+        "score_original": 109.0,
         "news_boost": -5.0,
         "news_positive": 1,
         "news_negative": 1,
         "news_headlines": [
           {
-            "title": "South Korean chip stocks slide after overnight US selloff on AI boom concerns",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/south-korean-chip-stocks-slide-003356117.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "Micron’s New Ford Deal Isn’t Enough to Escape the Gravity of the Memory Selloff",
-            "link": "https://www.barrons.com/articles/micron-stock-price-ford-deal-00448742?siteid=yhoof2&yptr=yahoo",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "UBS Says Buy SK Hynix ADRs After 220% Stock Surge",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/ubs-says-buy-sk-hynix-192024298.html",
+            "title": "AI memory stocks trim losses as investors buy the dip",
+            "link": "https://finance.yahoo.com/markets/stocks/article/ai-memory-stocks-trim-losses-as-investors-buy-the-dip-122848703.html",
             "score": 5,
             "positive": [
               "Buy"
             ],
             "negative": []
+          },
+          {
+            "title": "Nvidia, Micron, AMD Lead Chip Stock Selloff After Trump Said U.S.-Iran 'Truce Is Over'",
+            "link": "https://finance.yahoo.com/technology/articles/nvidia-micron-amd-lead-chip-132126893.html",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
+          },
+          {
+            "title": "MU, Memory Stocks Drop Premarket In Samsung-Triggered Selloff: Poll Shows Most Retail Traders Passing On SK Hynix On Friday",
+            "link": "https://stocktwits.com/news-articles/markets/equity/mu-memory-stocks-drop-premarket-in-samsung-triggered-selloff-poll-shows-most-retail-traders-passing-on-sk-hynix-on-friday/cZmVVLER7NQ",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
           }
         ]
       }
@@ -507,7 +507,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 107.0,
+      "score": 117.0,
       "reasons": [
         "52주 고점 대비 -28%",
         "영업이익률 46%",
@@ -594,7 +594,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 97.0,
+      "score_original": 107.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -614,77 +614,75 @@
     "updated_at_iso": "2026-07-08T10:13:28.349541+09:00",
     "updated_at_kst": "2026.07.08 (수) 10:13 KST"
   },
-  "updated_at_iso": "2026-07-08T10:13:28.349541+09:00",
-  "updated_at_kst": "2026.07.08 (수) 10:13 KST",
+  "updated_at_iso": "2026-07-09T00:36:00.854901+09:00",
+  "updated_at_kst": "2026.07.09 (목) 00:36 KST",
   "us": {
     "picks": [
       {
-        "ticker": "PLTR",
-        "name": "Palantir Technologies Inc.",
-        "price": 135.2799072265625,
-        "price_krw": 204887,
-        "change_pct_1d": 2.0672356113031087,
-        "market_cap": 324308140032.0,
-        "operating_margin": 0.46183997,
-        "revenue_growth": 0.847,
-        "pe_ratio": 151.9999,
+        "ticker": "AVGO",
+        "name": "Broadcom Inc.",
+        "price": 386.57000732421875,
+        "price_krw": 583960,
+        "change_pct_1d": 4.2585923180610274,
+        "market_cap": 1839447146496.0,
+        "operating_margin": 0.48988,
+        "revenue_growth": 0.479,
+        "pe_ratio": 64.33195,
         "sector": "Technology",
-        "avg_volume": 42698064.15,
-        "rsi": 56.55388151688028,
-        "drawdown_52w": 0.3470416449031165,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
+        "avg_volume": 29995012.9,
+        "rsi": 49.5756817581432,
+        "drawdown_52w": 0.19600097771198766,
+        "macd_golden_cross": true,
+        "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 18.08,
-        "score": 135.23,
+        "earnings_surprise_pct": 1.74,
+        "score": 118.73,
         "reasons": [
-          "52주 고점 대비 -35%",
-          "5/20일선 정배열 시작",
-          "영업이익률 46%",
-          "어닝 서프라이즈 +18.1%"
+          "MACD 골든크로스",
+          "영업이익률 49%"
         ],
-        "entry_low": 130.64,
-        "entry_high": 138.6,
-        "target": 153.19,
-        "stoploss": 125.33,
+        "entry_low": 375.02,
+        "entry_high": 394.82,
+        "target": 431.12,
+        "stoploss": 361.82,
         "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +18.1% / RSI 57 반등 신호.",
-          "thesis": "Palantir Technologies Inc.는 매출 성장률 85% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 57로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "one_liner": "Technology 영업이익률 49%, RSI 50 반등 신호.",
+          "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 20% 떨어진 상태에서 RSI 50로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "46%",
+              "value": "49%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
             },
             {
               "label": "매출 성장",
-              "value": "85%",
+              "value": "48%",
               "ok": true,
               "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "57",
+              "value": "50",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-35%",
+              "value": "-20%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
             {
               "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
+              "value": "✓",
+              "ok": true,
               "explain": "주가 추세가 반등으로 막 전환되는 신호."
             },
             {
               "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
             },
             {
@@ -695,16 +693,16 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+18.1%",
-              "ok": true,
+              "value": "+1.7%",
+              "ok": false,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
           ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
-              "points": 57.7
+              "points": 61.2
             },
             {
               "name": "매출 성장 ≥10%",
@@ -715,24 +713,29 @@
               "points": 15
             },
             {
-              "name": "5/20일선 정배열",
-              "points": 8
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
+              "name": "MACD 골든크로스",
+              "points": 10
             }
           ],
           "hold_days": 5
         },
-        "score_original": 130.23,
-        "news_boost": 5.0,
-        "news_positive": 1,
+        "score_original": 108.73,
+        "news_boost": 10.0,
+        "news_positive": 2,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "DA Davidson Upgrades Palantir (PLTR) To Buy",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/da-davidson-upgrades-palantir-pltr-224137213.html",
+            "title": "Apple expands Broadcom partnership with more than $30 billion US chipmaking commitment",
+            "link": "https://www.proactiveinvestors.com/companies/news/1095129/apple-expands-broadcom-partnership-with-more-than-30-billion-us-chipmaking-commitment-1095129.html",
+            "score": 5,
+            "positive": [
+              "partnership"
+            ],
+            "negative": []
+          },
+          {
+            "title": "Dollar Tree upgraded, PayPal initiated: Wall Street's top analyst calls",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-downgraded-unitedhealth-upgraded-wall-135834606.html",
             "score": 5,
             "positive": [
               "upgrade"
@@ -744,35 +747,34 @@
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 393.07000732421875,
-        "price_krw": 595320,
-        "change_pct_1d": 1.6367630060722727,
-        "market_cap": 2919894876160.0,
+        "price": 382.3399963378906,
+        "price_krw": 577570,
+        "change_pct_1d": -1.6716387360398155,
+        "market_cap": 2840187895808.0,
         "operating_margin": 0.46326,
         "revenue_growth": 0.183,
-        "pe_ratio": 23.42491,
+        "pe_ratio": 22.758333,
         "sector": "Technology",
-        "avg_volume": 48212768.85,
-        "rsi": 51.16973122953097,
-        "drawdown_52w": 0.2702798587075324,
+        "avg_volume": 47832013.3,
+        "rsi": 46.11731239443141,
+        "drawdown_52w": 0.2901997329973932,
         "macd_golden_cross": false,
-        "ma_aligned_up": true,
+        "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
-        "score": 115.36,
+        "score": 117.36,
         "reasons": [
-          "52주 고점 대비 -27%",
-          "5/20일선 정배열 시작",
+          "52주 고점 대비 -29%",
           "영업이익률 46%",
           "어닝 서프라이즈 +5.2%"
         ],
-        "entry_low": 383.97,
-        "entry_high": 399.57,
-        "target": 428.17,
-        "stoploss": 373.57,
+        "entry_low": 373.32,
+        "entry_high": 388.78,
+        "target": 417.13,
+        "stoploss": 363.01,
         "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 51 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 27% 떨어진 상태에서 RSI 51로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 46 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 46로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -788,13 +790,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "51",
+              "value": "46",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-27%",
+              "value": "-29%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -806,8 +808,8 @@
             },
             {
               "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
             },
             {
@@ -838,27 +840,23 @@
               "points": 15
             },
             {
-              "name": "5/20일선 정배열",
-              "points": 8
-            },
-            {
               "name": "어닝 서프라이즈 +5%↑",
               "points": 12
             }
           ],
           "hold_days": 5
         },
-        "score_original": 110.36,
+        "score_original": 112.36,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Microsoft (MSFT) Faces Two New Class Actions Over Copilot And Data Center Noise",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-faces-two-class-221143420.html",
+            "title": "Anthropic’s Claude Cowork targets busy work ahead of IPO",
+            "link": "https://finance.yahoo.com/video/anthropics-claude-cowork-targets-busy-work-ahead-of-ipo-202120374.html",
             "score": 5,
             "positive": [
-              "data center"
+              "ipo"
             ],
             "negative": []
           }
@@ -867,33 +865,33 @@
       {
         "ticker": "APP",
         "name": "Applovin Corporation",
-        "price": 525.52001953125,
-        "price_krw": 795921,
-        "change_pct_1d": -3.359745349182408,
-        "market_cap": 176542941184.0,
+        "price": 508.5899963378906,
+        "price_krw": 768286,
+        "change_pct_1d": -3.6724847244481884,
+        "market_cap": 170771496960.0,
         "operating_margin": 0.78151,
         "revenue_growth": 0.59,
-        "pe_ratio": 45.816914,
+        "pe_ratio": 44.165073,
         "sector": "Communication Services",
-        "avg_volume": 5489110.65,
-        "rsi": 53.14146243343812,
-        "drawdown_52w": 0.28364226142250193,
+        "avg_volume": 5512531.2,
+        "rsi": 49.85980067506376,
+        "drawdown_52w": 0.30672026545301884,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 3.49,
+        "earnings_surprise_pct": 3.39,
         "score": 115.0,
         "reasons": [
-          "52주 고점 대비 -28%",
+          "52주 고점 대비 -31%",
           "영업이익률 78%"
         ],
-        "entry_low": 501.53,
-        "entry_high": 542.65,
-        "target": 618.04,
-        "stoploss": 474.12,
+        "entry_low": 484.98,
+        "entry_high": 525.45,
+        "target": 599.63,
+        "stoploss": 458.01,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 78%, RSI 53 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 59% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 28% 떨어진 상태에서 RSI 53로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 78%, RSI 50 반등 신호.",
+          "thesis": "Applovin Corporation는 매출 성장률 59% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 31% 떨어진 상태에서 RSI 50로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -909,13 +907,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "53",
+              "value": "50",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-28%",
+              "value": "-31%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -939,12 +937,12 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+3.5%",
+              "value": "+3.4%",
               "ok": false,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
           ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
@@ -965,34 +963,34 @@
       {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 604.8800048828125,
-        "price_krw": 916115,
-        "change_pct_1d": 0.7646349303635391,
-        "market_cap": 1535441502208.0,
+        "price": 603.4400024414062,
+        "price_krw": 911569,
+        "change_pct_1d": -1.9721261755424546,
+        "market_cap": 1531786166272.0,
         "operating_margin": 0.40617,
         "revenue_growth": 0.331,
-        "pe_ratio": 22.003637,
+        "pe_ratio": 21.927326,
         "sector": "Communication Services",
-        "avg_volume": 18345673.1,
-        "rsi": 55.10199929677681,
-        "drawdown_52w": 0.2318195784599672,
+        "avg_volume": 18172068.2,
+        "rsi": 53.988288343880974,
+        "drawdown_52w": 0.2336483406500357,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 7.2,
-        "score": 105.27,
+        "earnings_surprise_pct": 56.79,
+        "score": 95.27,
         "reasons": [
           "52주 고점 대비 -23%",
           "영업이익률 41%",
-          "어닝 서프라이즈 +7.2%"
+          "어닝 서프라이즈 +56.8%"
         ],
-        "entry_low": 589.34,
-        "entry_high": 615.98,
-        "target": 664.8,
-        "stoploss": 571.59,
+        "entry_low": 587.34,
+        "entry_high": 614.94,
+        "target": 665.56,
+        "stoploss": 568.93,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +7.2% / RSI 55 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 55로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 41%, 어닝 서프라이즈 +56.8% / RSI 54 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 33% · 영업이익률 41%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 54로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -1008,7 +1006,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "55",
+              "value": "54",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -1038,7 +1036,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+7.2%",
+              "value": "+56.8%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -1065,157 +1063,40 @@
           "hold_days": 5
         },
         "score_original": 115.27,
-        "news_boost": -10.0,
+        "news_boost": -20.0,
         "news_positive": 0,
-        "news_negative": 1,
+        "news_negative": 2,
         "news_headlines": [
           {
-            "title": "DeepSeek Wants to Bypass US Sanctions With a Custom Chip. Why Nvidia Stock Is Sliding.",
-            "link": "https://www.barrons.com/articles/nvidia-stock-price-deepseek-china-ai-chip-competition-9a6ce62d?siteid=yhoof2&yptr=yahoo",
+            "title": "Meta (META) Faces $1.4 Trillion Youth Addiction Lawsuit In August Trial",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/meta-meta-faces-1-4-141626500.html",
             "score": -10,
             "positive": [],
             "negative": [
-              "sanctions"
+              "lawsuit"
+            ]
+          },
+          {
+            "title": "French antitrust watchdog orders Meta to resume talks with media groups over publishing fees",
+            "link": "https://finance.yahoo.com/media-advertising/articles/french-antitrust-watchdog-orders-meta-093634084.html",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "antitrust"
             ]
           }
         ]
       }
     ],
-    "quant_pick": {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "price": 366.80999755859375,
-      "price_krw": 555548,
-      "change_pct_1d": -1.8962279897371426,
-      "market_cap": 1746032001024.0,
-      "operating_margin": 0.48988,
-      "revenue_growth": 0.479,
-      "pe_ratio": 60.963455,
-      "sector": "Technology",
-      "avg_volume": 30401187.2,
-      "rsi": 42.75769029910211,
-      "drawdown_52w": 0.23709839404268485,
-      "macd_golden_cross": false,
-      "ma_aligned_up": false,
-      "volume_spike": false,
-      "earnings_surprise_pct": 1.74,
-      "score": 113.73,
-      "reasons": [
-        "52주 고점 대비 -24%",
-        "영업이익률 49%"
-      ],
-      "entry_low": 355.36,
-      "entry_high": 374.99,
-      "target": 410.96,
-      "stoploss": 342.28,
-      "narrative": {
-        "one_liner": "Technology 영업이익률 49%, RSI 43 반등 신호.",
-        "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 43로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
-        "signals": [
-          {
-            "label": "영업이익률",
-            "value": "49%",
-            "ok": true,
-            "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-          },
-          {
-            "label": "매출 성장",
-            "value": "48%",
-            "ok": true,
-            "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-          },
-          {
-            "label": "RSI (과매도 지수)",
-            "value": "43",
-            "ok": true,
-            "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-          },
-          {
-            "label": "52주 고점 대비",
-            "value": "-24%",
-            "ok": true,
-            "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-          },
-          {
-            "label": "MACD 골든크로스",
-            "value": "—",
-            "ok": false,
-            "explain": "주가 추세가 반등으로 막 전환되는 신호."
-          },
-          {
-            "label": "5/20일선 정배열",
-            "value": "—",
-            "ok": false,
-            "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-          },
-          {
-            "label": "거래량 급증",
-            "value": "—",
-            "ok": false,
-            "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-          },
-          {
-            "label": "어닝 서프라이즈",
-            "value": "+1.7%",
-            "ok": false,
-            "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-          }
-        ],
-        "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-        "score_breakdown": [
-          {
-            "name": "영업이익률 ≥20%",
-            "points": 61.2
-          },
-          {
-            "name": "매출 성장 ≥10%",
-            "points": 37.5
-          },
-          {
-            "name": "RSI 30~45 구간",
-            "points": 20
-          },
-          {
-            "name": "52주 -15~-40%",
-            "points": 15
-          }
-        ],
-        "hold_days": 5
-      },
-      "quant_score": 175.73,
-      "score_original": 123.73,
-      "news_boost": -10.0,
-      "news_positive": 0,
-      "news_negative": 1,
-      "news_headlines": [
-        {
-          "title": "Broadcom Stock Drops After Bank Downgrades AI Chip Giant on Valuation",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-drops-bank-downgrades-184733964.html",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "downgrade"
-          ]
-        },
-        {
-          "title": "Broadcom Drops 3% After Downgrade Despite 89% Revenue Growth Outlook",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-drops-3-downgrade-despite-154305628.html",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "downgrade"
-          ]
-        }
-      ]
-    },
+    "quant_pick": null,
     "traffic_light": {
-      "vix": 16.43,
+      "vix": 18.06,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-07-08T00:54:34.143849+09:00",
-    "updated_at_kst": "2026.07.08 (수) 00:54 KST"
+    "updated_at_iso": "2026-07-09T00:36:00.854901+09:00",
+    "updated_at_kst": "2026.07.09 (목) 00:36 KST"
   },
   "futures": {
     "picks": [
