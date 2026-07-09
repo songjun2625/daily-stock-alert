@@ -1,38 +1,73 @@
 {
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -2.62,
+    "sector_status": "📉 약세"
+  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "005930": {
-    "ticker": "005930",
-    "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -13.13,
-    "sector_status": "❄️ 부진"
-  },
-  "066970": {
-    "ticker": "066970",
-    "market": "kr",
-    "name": "엘앤에프",
-    "sector": "화학·배터리"
-  },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -13.13,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -2.62,
+    "sector_status": "📉 약세"
   },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.39,
+    "sector_momentum_5d_pct": -1.53,
+    "sector_status": "📉 약세"
+  },
+  "068270": {
+    "ticker": "068270",
+    "market": "kr",
+    "name": "셀트리온",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -1.53,
+    "sector_status": "📉 약세"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "market": "us",
+    "name": "Broadcom Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-09-03",
+    "last_earnings_surprise_pct": 1.74,
+    "last_earnings_date": "2026-06-03",
+    "sector_momentum_5d_pct": -4.79,
+    "sector_status": "❄️ 부진"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "market": "us",
+    "name": "Microsoft Corporation",
+    "sector": "Technology",
+    "next_earnings": "2026-07-29",
+    "last_earnings_surprise_pct": 5.22,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": -4.79,
+    "sector_status": "❄️ 부진"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-08-05",
+    "last_earnings_surprise_pct": 3.39,
+    "last_earnings_date": "2026-05-06",
+    "sector_momentum_5d_pct": 2.17,
     "sector_status": "📈 호조"
   },
   "META": {
@@ -43,44 +78,11 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 56.79,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 2.49,
+    "sector_momentum_5d_pct": 2.17,
     "sector_status": "📈 호조"
-  },
-  "APP": {
-    "ticker": "APP",
-    "market": "us",
-    "name": "Applovin Corporation",
-    "sector": "Communication Services",
-    "next_earnings": "2026-08-05",
-    "last_earnings_surprise_pct": 3.39,
-    "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": 2.49,
-    "sector_status": "📈 호조"
-  },
-  "MSFT": {
-    "ticker": "MSFT",
-    "market": "us",
-    "name": "Microsoft Corporation",
-    "sector": "Technology",
-    "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 5.22,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -6.57,
-    "sector_status": "❄️ 부진"
-  },
-  "AVGO": {
-    "ticker": "AVGO",
-    "market": "us",
-    "name": "Broadcom Inc.",
-    "sector": "Technology",
-    "next_earnings": "2026-09-03",
-    "last_earnings_surprise_pct": 1.74,
-    "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -6.57,
-    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-09T00:36:05+09:00",
+    "generated_at_iso": "2026-07-09T10:19:26+09:00",
     "tickers_count": 9,
     "dart_enabled": false
   }
