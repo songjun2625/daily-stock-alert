@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.21,
+      "value": 16.48,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -126,6 +126,127 @@
         }
       },
       {
+        "ticker": "207940",
+        "name": "삼성바이오로직스",
+        "sector": "바이오·헬스케어",
+        "price": 1366000,
+        "change_pct_1d": -2.4285714285714244,
+        "market_cap": 63233440350208.0,
+        "operating_margin": 0.46196997,
+        "revenue_growth": 0.258,
+        "pe_ratio": null,
+        "drawdown_52w": 0.3048346055979644,
+        "rsi": 48.43239559457868,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 130.0,
+        "reasons": [
+          "52주 고점 대비 -30%",
+          "영업이익률 46%",
+          "매출 성장 +26%"
+        ],
+        "entry_low": 1314650,
+        "entry_high": 1402679,
+        "target": 1564065,
+        "stoploss": 1255964,
+        "narrative": {
+          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 48 반등 신호",
+          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 48로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "26%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "48",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-30%",
+              "ok": true,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 120.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+            "score": 10,
+            "positive": [
+              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
+      },
+      {
         "ticker": "000660",
         "name": "SK하이닉스",
         "sector": "반도체",
@@ -143,7 +264,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 127.0,
         "reasons": [
           "RSI 38(과매도 반등 후보)",
           "52주 고점 대비 -38%",
@@ -230,14 +351,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 142.0,
-        "news_boost": -10.0,
-        "news_positive": 0,
+        "score_original": 132.0,
+        "news_boost": -5.0,
+        "news_positive": 1,
         "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Dow Jones Futures: Nasdaq Sells Off, Oil Prices Spike On Trump Blockade; Micron, Sandisk, SK Hynix, SpaceX Dive",
-            "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-blockade-micron-sandisk-sk-hynix-spacex/?src=A00220&yptr=yahoo",
+            "title": "Hynix Isn't Selling Shares to Cash Out. It's Funding a $26.5 Billion Factory Bet.",
+            "link": "https://www.fool.com/investing/2026/07/14/hynix-selling-shares-cash-out-fund-factory/",
             "score": -10,
             "positive": [],
             "negative": [
@@ -245,131 +366,10 @@
             ]
           },
           {
-            "title": "Seagate (STX) Stock Falls With AI Chip Selloff As SK Hynix Outlook Rattles Sentiment",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/seagate-stx-stock-falls-ai-231453800.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          }
-        ]
-      },
-      {
-        "ticker": "207940",
-        "name": "삼성바이오로직스",
-        "sector": "바이오·헬스케어",
-        "price": 1366000,
-        "change_pct_1d": -2.4285714285714244,
-        "market_cap": 63233440350208.0,
-        "operating_margin": 0.46196997,
-        "revenue_growth": 0.258,
-        "pe_ratio": null,
-        "drawdown_52w": 0.3048346055979644,
-        "rsi": 48.43239559457868,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 120.0,
-        "reasons": [
-          "52주 고점 대비 -30%",
-          "영업이익률 46%",
-          "매출 성장 +26%"
-        ],
-        "entry_low": 1314650,
-        "entry_high": 1402679,
-        "target": 1564065,
-        "stoploss": 1255964,
-        "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 48 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 48로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "46%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "26%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "48",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-30%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 110.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
-            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
-            "score": 10,
+            "title": "Want to Buy SK Hynix? These 3 ETFs Let You Own It and Thousands of Other Stocks.",
+            "link": "https://www.fool.com/investing/2026/07/14/want-to-buy-sk-hynix-these-3-etfs-let-you-own-it/",
+            "score": 5,
             "positive": [
-              "M&A",
               "Buy"
             ],
             "negative": []
@@ -629,41 +629,41 @@
     "updated_at_iso": "2026-07-14T10:05:06.121162+09:00",
     "updated_at_kst": "2026.07.14 (화) 10:05 KST"
   },
-  "updated_at_iso": "2026-07-14T10:05:06.121162+09:00",
-  "updated_at_kst": "2026.07.14 (화) 10:05 KST",
+  "updated_at_iso": "2026-07-15T00:03:48.451232+09:00",
+  "updated_at_kst": "2026.07.15 (수) 00:03 KST",
   "us": {
     "picks": [
       {
         "ticker": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 390.6499938964844,
-        "price_krw": 583197,
-        "change_pct_1d": 1.4411809153482391,
-        "market_cap": 2901918089216.0,
+        "price": 386.55999755859375,
+        "price_krw": 575487,
+        "change_pct_1d": -1.1330194599421195,
+        "market_cap": 2871758684160.0,
         "operating_margin": 0.46326,
         "revenue_growth": 0.183,
-        "pe_ratio": 23.266825,
+        "pe_ratio": 23.052473,
         "sector": "Technology",
-        "avg_volume": 46232350.35,
-        "rsi": 50.81869033435393,
-        "drawdown_52w": 0.27477252542722796,
+        "avg_volume": 45914393.75,
+        "rsi": 48.43081746629244,
+        "drawdown_52w": 0.2823653732343114,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 5.22,
-        "score": 137.36,
+        "score": 102.36,
         "reasons": [
-          "52주 고점 대비 -27%",
+          "52주 고점 대비 -28%",
           "영업이익률 46%",
           "어닝 서프라이즈 +5.2%"
         ],
-        "entry_low": 382.15,
-        "entry_high": 396.72,
-        "target": 423.45,
-        "stoploss": 372.43,
+        "entry_low": 377.81,
+        "entry_high": 392.81,
+        "target": 420.29,
+        "stoploss": 367.82,
         "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 51 반등 신호.",
-          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 27% 떨어진 상태에서 RSI 51로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +5.2% / RSI 48 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 28% 떨어진 상태에서 RSI 48로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -679,13 +679,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "51",
+              "value": "48",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-27%",
+              "value": "-28%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -735,211 +735,75 @@
           ],
           "hold_days": 5
         },
-        "score_original": 122.36,
-        "news_boost": 15.0,
-        "news_positive": 3,
-        "news_negative": 0,
+        "score_original": 112.36,
+        "news_boost": -10.0,
+        "news_positive": 0,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Perryman says data centers can be beneficial with protections",
-            "link": "https://www.oaoa.com/?p=366403",
-            "score": 5,
-            "positive": [
-              "data center"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Chevron (CVX) Launches AI Data Center Power Venture And Extends Australia Gas Supply",
-            "link": "https://finance.yahoo.com/energy/articles/chevron-cvx-launches-ai-data-231453395.html",
-            "score": 5,
-            "positive": [
-              "data center"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Apple Sat Out the AI Arms Race. It’s the Only Magnificent 7 Stock Near All-Time Highs.",
-            "link": "https://247wallst.com/investing/2026/07/13/apple-sat-out-the-ai-arms-race-its-the-only-magnificent-7-stock-near-all-time-highs/",
-            "score": 5,
-            "positive": [
-              "all-time high"
-            ],
-            "negative": []
+            "title": "Software Stocks, IT Services Firms Pummeled Amid IBM's Q2 Earnings Miss",
+            "link": "https://www.investors.com/news/technology/software-stocks-pummeled-amid-ibms-q2-earnings-miss/?src=A00220&yptr=yahoo",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "earnings miss"
+            ]
           }
         ]
       },
       {
-        "ticker": "NVDA",
-        "name": "NVIDIA Corporation",
-        "price": 206.75999450683594,
-        "price_krw": 308670,
-        "change_pct_1d": -1.990904471636601,
-        "market_cap": 5008418406400.0,
-        "operating_margin": 0.65596,
-        "revenue_growth": 0.852,
-        "pe_ratio": 31.617737,
-        "sector": "Technology",
-        "avg_volume": 141167259.65,
-        "rsi": 52.77317469870072,
-        "drawdown_52w": 0.12190988649689415,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "volume_spike": false,
-        "earnings_surprise_pct": 5.54,
-        "score": 125.0,
-        "reasons": [
-          "5/20일선 정배열 시작",
-          "영업이익률 66%",
-          "어닝 서프라이즈 +5.5%"
-        ],
-        "entry_low": 202.1,
-        "entry_high": 210.09,
-        "target": 224.74,
-        "stoploss": 196.77,
-        "narrative": {
-          "one_liner": "Technology 영업이익률 66%, 어닝 서프라이즈 +5.5% / RSI 53 반등 신호.",
-          "thesis": "NVIDIA Corporation는 매출 성장률 85% · 영업이익률 66%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 12% 떨어진 상태에서 RSI 53로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "66%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "85%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "53",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-12%",
-              "ok": false,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+5.5%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 37.5
-            },
-            {
-              "name": "5/20일선 정배열",
-              "points": 8
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 120.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Why Chipotle Stock Topped the Market Today",
-            "link": "https://www.fool.com/investing/2026/07/13/why-chipotle-stock-topped-the-market-today/",
-            "score": 5,
-            "positive": [
-              "ipo"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "APP",
-        "name": "Applovin Corporation",
-        "price": 452.1449890136719,
-        "price_krw": 675003,
-        "change_pct_1d": -10.816012620689897,
-        "market_cap": 151893377024.0,
-        "operating_margin": 0.78151,
-        "revenue_growth": 0.59,
-        "pe_ratio": 39.282795,
+        "ticker": "NFLX",
+        "name": "Netflix, Inc.",
+        "price": 73.43499755859375,
+        "price_krw": 109326,
+        "change_pct_1d": -0.5350186410191693,
+        "market_cap": 309156839424.0,
+        "operating_margin": 0.32303002,
+        "revenue_growth": 0.162,
+        "pe_ratio": 23.532051,
         "sector": "Communication Services",
-        "avg_volume": 5497187.25,
-        "rsi": 39.530410364070256,
-        "drawdown_52w": 0.3836627534610579,
+        "avg_volume": 48819083.4,
+        "rsi": 38.676231591706824,
+        "drawdown_52w": 0.4236640506045189,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 3.39,
-        "score": 120.0,
+        "earnings_surprise_pct": -6.93,
+        "score": 79.68,
         "reasons": [
-          "RSI 40(과매도 반등 후보)",
-          "영업이익률 78%"
+          "RSI 39(과매도 반등 후보)",
+          "영업이익률 32%"
         ],
-        "entry_low": 427.7,
-        "entry_high": 469.61,
-        "target": 546.44,
-        "stoploss": 399.76,
+        "entry_low": 71.69,
+        "entry_high": 74.68,
+        "target": 80.18,
+        "stoploss": 69.69,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 78%, RSI 40 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 59% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 38% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 32%, RSI 39 반등 신호.",
+          "thesis": "Netflix, Inc.는 매출 성장률 16% · 영업이익률 32%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 42% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "78%",
+              "value": "32%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
             },
             {
               "label": "매출 성장",
-              "value": "59%",
+              "value": "16%",
               "ok": true,
               "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "40",
+              "value": "39",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-38%",
-              "ok": true,
+              "value": "-42%",
+              "ok": false,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
             {
@@ -962,7 +826,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+3.4%",
+              "value": "+-6.9%",
               "ok": false,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -971,34 +835,47 @@
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
-              "points": 62.5
+              "points": 40.4
             },
             {
               "name": "매출 성장 ≥10%",
-              "points": 37.5
+              "points": 24.3
             },
             {
               "name": "RSI 30~45 구간",
               "points": 20
-            },
-            {
-              "name": "52주 -15~-40%",
-              "points": 15
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 84.68,
+        "news_boost": -5.0,
+        "news_positive": 1,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "Paramount, Warner Bros. Face Multistate Lawsuit Seeking to Block Merger",
+            "link": "https://finance.yahoo.com/media-advertising/articles/paramount-warner-bros-face-multistate-191526586.html",
+            "score": -5,
+            "positive": [
+              "merger"
+            ],
+            "negative": [
+              "lawsuit"
+            ]
+          }
+        ]
       }
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 16.21,
+      "vix": 16.48,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-07-14T00:58:09.703998+09:00",
-    "updated_at_kst": "2026.07.14 (화) 00:58 KST"
+    "updated_at_iso": "2026-07-15T00:03:48.451232+09:00",
+    "updated_at_kst": "2026.07.15 (수) 00:03 KST"
   },
   "futures": {
     "picks": [
