@@ -4,16 +4,16 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.12,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.12,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "062040": {
     "ticker": "062040",
@@ -32,8 +32,19 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -4.54,
+    "sector_momentum_5d_pct": NaN,
     "sector_status": "❄️ 부진"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-08-05",
+    "last_earnings_surprise_pct": 3.49,
+    "last_earnings_date": "2026-05-06",
+    "sector_momentum_5d_pct": 3.33,
+    "sector_status": "🔥 강세"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -43,22 +54,11 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 5.22,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": 2.48,
-    "sector_status": "📈 호조"
-  },
-  "NFLX": {
-    "ticker": "NFLX",
-    "market": "us",
-    "name": "Netflix, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-16",
-    "last_earnings_surprise_pct": -6.93,
-    "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": 0.39,
+    "sector_momentum_5d_pct": 0.71,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-15T10:01:48+09:00",
+    "generated_at_iso": "2026-07-16T00:02:05+09:00",
     "tickers_count": 7,
     "dart_enabled": false
   }
