@@ -1,12 +1,4 @@
 {
-  "000660": {
-    "ticker": "000660",
-    "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -7.39,
-    "sector_status": "❄️ 부진"
-  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
@@ -15,10 +7,10 @@
     "sector_momentum_5d_pct": 1.44,
     "sector_status": "📈 호조"
   },
-  "005930": {
-    "ticker": "005930",
+  "000660": {
+    "ticker": "000660",
     "market": "kr",
-    "name": "삼성전자",
+    "name": "SK하이닉스",
     "sector": "반도체",
     "sector_momentum_5d_pct": -7.39,
     "sector_status": "❄️ 부진"
@@ -28,6 +20,14 @@
     "market": "kr",
     "name": "산일전기",
     "sector": "전선·전력인프라"
+  },
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -7.39,
+    "sector_status": "❄️ 부진"
   },
   "068270": {
     "ticker": "068270",
@@ -45,8 +45,8 @@
     "next_earnings": "2026-08-05",
     "last_earnings_surprise_pct": 3.49,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": 1.94,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -0.94,
+    "sector_status": "➡️ 보합"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -56,7 +56,7 @@
     "next_earnings": "2026-09-03",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -4.22,
+    "sector_momentum_5d_pct": -5.7,
     "sector_status": "❄️ 부진"
   },
   "MSFT": {
@@ -67,23 +67,12 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 4.9,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -4.22,
+    "sector_momentum_5d_pct": -5.7,
     "sector_status": "❄️ 부진"
   },
-  "NFLX": {
-    "ticker": "NFLX",
-    "market": "us",
-    "name": "Netflix, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-16",
-    "last_earnings_surprise_pct": 1.45,
-    "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 1.94,
-    "sector_status": "📈 호조"
-  },
   "_meta": {
-    "generated_at_iso": "2026-07-17T10:14:21+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-07-17T23:53:26+09:00",
+    "tickers_count": 8,
     "dart_enabled": false
   }
 }
