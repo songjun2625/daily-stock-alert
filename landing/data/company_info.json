@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": NaN,
+    "sector_momentum_5d_pct": -7.39,
     "sector_status": "❄️ 부진"
   },
   "207940": {
@@ -12,15 +12,15 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": NaN,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": 1.44,
+    "sector_status": "📈 호조"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": NaN,
+    "sector_momentum_5d_pct": -7.39,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -34,8 +34,8 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": NaN,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": 1.44,
+    "sector_status": "📈 호조"
   },
   "APP": {
     "ticker": "APP",
@@ -45,8 +45,8 @@
     "next_earnings": "2026-08-05",
     "last_earnings_surprise_pct": 3.49,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": 3.08,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 1.94,
+    "sector_status": "📈 호조"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -56,7 +56,7 @@
     "next_earnings": "2026-09-03",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -4.39,
+    "sector_momentum_5d_pct": -4.22,
     "sector_status": "❄️ 부진"
   },
   "MSFT": {
@@ -67,7 +67,7 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 4.9,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -4.39,
+    "sector_momentum_5d_pct": -4.22,
     "sector_status": "❄️ 부진"
   },
   "NFLX": {
@@ -76,13 +76,13 @@
     "name": "Netflix, Inc.",
     "sector": "Communication Services",
     "next_earnings": "2026-07-16",
-    "last_earnings_surprise_pct": -6.93,
-    "last_earnings_date": "2026-04-16",
-    "sector_momentum_5d_pct": 3.08,
-    "sector_status": "🔥 강세"
+    "last_earnings_surprise_pct": 1.45,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": 1.94,
+    "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-17T00:13:53+09:00",
+    "generated_at_iso": "2026-07-17T10:14:21+09:00",
     "tickers_count": 9,
     "dart_enabled": false
   }
