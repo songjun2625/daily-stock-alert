@@ -1,18 +1,18 @@
 {
-  "207940": {
-    "ticker": "207940",
+  "005930": {
+    "ticker": "005930",
     "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.44,
-    "sector_status": "📈 호조"
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -12.76,
+    "sector_status": "❄️ 부진"
   },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -7.39,
+    "sector_momentum_5d_pct": -12.76,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -21,32 +21,19 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "005930": {
-    "ticker": "005930",
+  "036570": {
+    "ticker": "036570",
     "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -7.39,
-    "sector_status": "❄️ 부진"
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
   },
-  "068270": {
-    "ticker": "068270",
+  "207940": {
+    "ticker": "207940",
     "market": "kr",
-    "name": "셀트리온",
+    "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.44,
-    "sector_status": "📈 호조"
-  },
-  "APP": {
-    "ticker": "APP",
-    "market": "us",
-    "name": "Applovin Corporation",
-    "sector": "Communication Services",
-    "next_earnings": "2026-08-05",
-    "last_earnings_surprise_pct": 3.49,
-    "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": -0.94,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -2.57,
+    "sector_status": "📉 약세"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -56,8 +43,19 @@
     "next_earnings": "2026-09-03",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -5.7,
+    "sector_momentum_5d_pct": -5.48,
     "sector_status": "❄️ 부진"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-08-05",
+    "last_earnings_surprise_pct": 3.39,
+    "last_earnings_date": "2026-05-06",
+    "sector_momentum_5d_pct": -0.89,
+    "sector_status": "➡️ 보합"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -67,11 +65,11 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 4.9,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -5.7,
+    "sector_momentum_5d_pct": -5.48,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-17T23:53:26+09:00",
+    "generated_at_iso": "2026-07-20T12:07:26+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
