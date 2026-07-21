@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -3.02,
+    "sector_momentum_5d_pct": NaN,
     "sector_status": "❄️ 부진"
   },
   "005930": {
@@ -12,7 +12,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -3.02,
+    "sector_momentum_5d_pct": NaN,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -32,8 +32,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.62,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "APP": {
     "ticker": "APP",
@@ -43,19 +43,8 @@
     "next_earnings": "2026-08-05",
     "last_earnings_surprise_pct": 3.39,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": -0.71,
-    "sector_status": "➡️ 보합"
-  },
-  "AVGO": {
-    "ticker": "AVGO",
-    "market": "us",
-    "name": "Broadcom Inc.",
-    "sector": "Technology",
-    "next_earnings": "2026-09-03",
-    "last_earnings_surprise_pct": 1.74,
-    "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -3.07,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -1.24,
+    "sector_status": "📉 약세"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -65,23 +54,12 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 4.9,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -3.07,
-    "sector_status": "❄️ 부진"
-  },
-  "GOOGL": {
-    "ticker": "GOOGL",
-    "market": "us",
-    "name": "Alphabet Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-22",
-    "last_earnings_surprise_pct": 91.59,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -0.71,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -1.87,
+    "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-21T10:11:20+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-07-22T00:18:21+09:00",
+    "tickers_count": 7,
     "dart_enabled": false
   }
 }
