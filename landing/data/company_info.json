@@ -4,8 +4,8 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 3.67,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "062040": {
     "ticker": "062040",
@@ -18,8 +18,8 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 3.67,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "066970": {
     "ticker": "066970",
@@ -32,8 +32,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.33,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "APP": {
     "ticker": "APP",
@@ -43,8 +43,19 @@
     "next_earnings": "2026-08-05",
     "last_earnings_surprise_pct": 3.49,
     "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": -1.27,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.17,
+    "sector_status": "❄️ 부진"
+  },
+  "META": {
+    "ticker": "META",
+    "market": "us",
+    "name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-07-29",
+    "last_earnings_surprise_pct": 7.2,
+    "last_earnings_date": "2026-04-29",
+    "sector_momentum_5d_pct": -3.17,
+    "sector_status": "❄️ 부진"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -54,12 +65,23 @@
     "next_earnings": "2026-07-29",
     "last_earnings_surprise_pct": 4.9,
     "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -1.55,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -0.24,
+    "sector_status": "➡️ 보합"
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "market": "us",
+    "name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-10-20",
+    "last_earnings_surprise_pct": 1.45,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": -3.17,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-22T10:09:59+09:00",
-    "tickers_count": 7,
+    "generated_at_iso": "2026-07-23T00:17:30+09:00",
+    "tickers_count": 9,
     "dart_enabled": false
   }
 }
