@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -3.65,
+    "sector_momentum_5d_pct": -3.0,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -30,56 +30,12 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -3.65,
-    "sector_status": "❄️ 부진"
-  },
-  "META": {
-    "ticker": "META",
-    "market": "us",
-    "name": "Meta Platforms, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 7.2,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -3.69,
-    "sector_status": "❄️ 부진"
-  },
-  "APP": {
-    "ticker": "APP",
-    "market": "us",
-    "name": "Applovin Corporation",
-    "sector": "Communication Services",
-    "next_earnings": "2026-08-05",
-    "last_earnings_surprise_pct": 3.49,
-    "last_earnings_date": "2026-05-06",
-    "sector_momentum_5d_pct": -3.69,
-    "sector_status": "❄️ 부진"
-  },
-  "MSFT": {
-    "ticker": "MSFT",
-    "market": "us",
-    "name": "Microsoft Corporation",
-    "sector": "Technology",
-    "next_earnings": "2026-07-29",
-    "last_earnings_surprise_pct": 4.9,
-    "last_earnings_date": "2026-04-29",
-    "sector_momentum_5d_pct": -0.72,
-    "sector_status": "➡️ 보합"
-  },
-  "NFLX": {
-    "ticker": "NFLX",
-    "market": "us",
-    "name": "Netflix, Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-10-20",
-    "last_earnings_surprise_pct": 1.45,
-    "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": -3.69,
+    "sector_momentum_5d_pct": -3.0,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-23T10:15:54+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-07-24T00:25:50+09:00",
+    "tickers_count": 5,
     "dart_enabled": false
   }
 }
