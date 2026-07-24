@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 19.78,
+      "value": 18.64,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 162.0,
+        "score": 172.0,
         "reasons": [
           "52주 고점 대비 -24%",
           "MACD 골든크로스",
@@ -134,7 +134,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 152.0,
+        "score_original": 162.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -290,7 +290,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 139.0,
+        "score": 144.0,
         "reasons": [
           "RSI 43(과매도 반등 후보)",
           "52주 고점 대비 -29%",
@@ -381,9 +381,9 @@
           ],
           "hold_days": 5
         },
-        "score_original": 129.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
+        "score_original": 139.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
@@ -392,15 +392,6 @@
             "score": 5,
             "positive": [
               "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Thank Asia for International Stocks' Outperformance This Year",
-            "link": "http://www.etf.com/sections/features/thank-asia-international-stocks-outperformance-year?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss",
-            "score": 5,
-            "positive": [
-              "Outperform"
             ],
             "negative": []
           }
@@ -530,7 +521,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 107.0,
+      "score": 112.0,
       "reasons": [
         "52주 고점 대비 -11%",
         "영업이익률 61%",
@@ -617,9 +608,9 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 92.0,
-      "news_boost": 15.0,
-      "news_positive": 3,
+      "score_original": 107.0,
+      "news_boost": 5.0,
+      "news_positive": 1,
       "news_negative": 0,
       "news_headlines": [
         {
@@ -630,44 +621,26 @@
             "Buy"
           ],
           "negative": []
-        },
-        {
-          "title": "\"KB금융, 올해 주주환원율 55%…ROE 전망치도 11% 넘어\"",
-          "link": "https://www.hankyung.com/article/2026072432636",
-          "score": 5,
-          "positive": [
-            "주주환원"
-          ],
-          "negative": []
-        },
-        {
-          "title": "KB금융, 분기 최대 실적에도 5%대 하락",
-          "link": "https://www.mt.co.kr/stock/2026/07/24/2026072409410790629",
-          "score": 5,
-          "positive": [
-            "최대 실적"
-          ],
-          "negative": []
         }
       ]
     },
     "updated_at_iso": "2026-07-24T10:12:00.308439+09:00",
     "updated_at_kst": "2026.07.24 (금) 10:12 KST"
   },
-  "updated_at_iso": "2026-07-24T10:12:00.308439+09:00",
-  "updated_at_kst": "2026.07.24 (금) 10:12 KST",
+  "updated_at_iso": "2026-07-25T00:08:34.133100+09:00",
+  "updated_at_kst": "2026.07.25 (토) 00:08 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 19.78,
+      "vix": 18.64,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-07-24T00:25:48.995429+09:00",
-    "updated_at_kst": "2026.07.24 (금) 00:25 KST"
+    "updated_at_iso": "2026-07-25T00:08:34.133100+09:00",
+    "updated_at_kst": "2026.07.25 (토) 00:08 KST"
   },
   "futures": {
     "picks": [
