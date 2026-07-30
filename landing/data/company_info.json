@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -23.05,
+    "sector_momentum_5d_pct": NaN,
     "sector_status": "❄️ 부진"
   },
   "000660": {
@@ -12,14 +12,8 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -23.05,
+    "sector_momentum_5d_pct": NaN,
     "sector_status": "❄️ 부진"
-  },
-  "062040": {
-    "ticker": "062040",
-    "market": "kr",
-    "name": "산일전기",
-    "sector": "전선·전력인프라"
   },
   "079550": {
     "ticker": "079550",
@@ -27,16 +21,22 @@
     "name": "LIG넥스원",
     "sector": "코스피·코스닥"
   },
+  "062040": {
+    "ticker": "062040",
+    "market": "kr",
+    "name": "산일전기",
+    "sector": "전선·전력인프라"
+  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.09,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-07-30T10:04:01+09:00",
+    "generated_at_iso": "2026-07-31T00:24:01+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
