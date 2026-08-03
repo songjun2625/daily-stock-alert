@@ -4,16 +4,16 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 2.52,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -6.33,
+    "sector_status": "❄️ 부진"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 2.52,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -6.33,
+    "sector_status": "❄️ 부진"
   },
   "062040": {
     "ticker": "062040",
@@ -32,11 +32,11 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.89,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -3.43,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-01T00:29:23+09:00",
+    "generated_at_iso": "2026-08-03T10:17:18+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
