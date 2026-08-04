@@ -4,8 +4,8 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 2.0,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "062040": {
     "ticker": "062040",
@@ -18,8 +18,8 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 2.0,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "066970": {
     "ticker": "066970",
@@ -32,12 +32,67 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 2.68,
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
+  },
+  "PLTR": {
+    "ticker": "PLTR",
+    "market": "us",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-11-02",
+    "last_earnings_surprise_pct": 18.51,
+    "last_earnings_date": "2026-08-03",
+    "sector_momentum_5d_pct": 8.48,
+    "sector_status": "🔥 강세"
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "market": "us",
+    "name": "NVIDIA Corporation",
+    "sector": "Technology",
+    "next_earnings": "2026-08-26",
+    "last_earnings_surprise_pct": 5.54,
+    "last_earnings_date": "2026-05-20",
+    "sector_momentum_5d_pct": 8.48,
+    "sector_status": "🔥 강세"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-08-05",
+    "last_earnings_surprise_pct": 3.49,
+    "last_earnings_date": "2026-05-06",
+    "sector_momentum_5d_pct": 1.21,
+    "sector_status": "📈 호조"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "market": "us",
+    "name": "Broadcom Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-09-02",
+    "last_earnings_surprise_pct": 1.74,
+    "last_earnings_date": "2026-06-03",
+    "sector_momentum_5d_pct": 8.48,
+    "sector_status": "🔥 강세"
+  },
+  "GOOGL": {
+    "ticker": "GOOGL",
+    "market": "us",
+    "name": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-10-28",
+    "last_earnings_surprise_pct": 214.23,
+    "last_earnings_date": "2026-07-22",
+    "sector_momentum_5d_pct": 1.21,
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-04T10:08:58+09:00",
-    "tickers_count": 5,
+    "generated_at_iso": "2026-08-05T00:36:28+09:00",
+    "tickers_count": 10,
     "dart_enabled": false
   }
 }
