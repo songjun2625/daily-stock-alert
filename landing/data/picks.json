@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.25,
+      "value": 16.32,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -171,7 +171,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 139.0,
+        "score": 134.0,
         "reasons": [
           "52주 고점 대비 -31%",
           "MACD 골든크로스",
@@ -261,7 +261,24 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 139.0,
+        "news_boost": -5.0,
+        "news_positive": 1,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "삼성전자, 넷리스트와 특허 분쟁 마침표…특허 라이센스 등 협력",
+            "link": "https://www.mt.co.kr/industry/2026/08/05/2026080521155192198",
+            "score": -5,
+            "positive": [
+              "협력"
+            ],
+            "negative": [
+              "특허 분쟁"
+            ]
+          }
+        ]
       },
       {
         "ticker": "062040",
@@ -386,7 +403,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 111.3,
+        "score": 116.3,
         "reasons": [
           "52주 고점 대비 -21%",
           "5/20일선 정배열 시작",
@@ -477,7 +494,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 106.3,
+        "score_original": 111.3,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -512,7 +529,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 107.0,
+      "score": 117.0,
       "reasons": [
         "52주 고점 대비 -24%",
         "영업이익률 46%",
@@ -599,7 +616,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 97.0,
+      "score_original": 107.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -619,78 +636,76 @@
     "updated_at_iso": "2026-08-05T10:07:33.336780+09:00",
     "updated_at_kst": "2026.08.05 (수) 10:07 KST"
   },
-  "updated_at_iso": "2026-08-05T10:07:33.336780+09:00",
-  "updated_at_kst": "2026.08.05 (수) 10:07 KST",
+  "updated_at_iso": "2026-08-06T00:28:47.973100+09:00",
+  "updated_at_kst": "2026.08.06 (목) 00:28 KST",
   "us": {
     "picks": [
       {
         "ticker": "PLTR",
         "name": "Palantir Technologies Inc.",
-        "price": 158.375,
-        "price_krw": 225871,
-        "change_pct_1d": 26.044566714454874,
-        "market_cap": 379734196224.0,
-        "operating_margin": 0.46183997,
-        "revenue_growth": 0.847,
-        "pe_ratio": 176.0,
+        "price": 159.08999633789062,
+        "price_krw": 226333,
+        "change_pct_1d": -2.194766533778436,
+        "market_cap": 381484269568.0,
+        "operating_margin": 0.47120997,
+        "revenue_growth": 0.928,
+        "pe_ratio": 136.00856,
         "sector": "Technology",
-        "avg_volume": 37609947.6,
-        "rsi": 71.19895996357992,
-        "drawdown_52w": 0.23556807800527746,
-        "macd_golden_cross": true,
-        "ma_aligned_up": true,
+        "avg_volume": 41644685.95,
+        "rsi": 69.34195853088613,
+        "drawdown_52w": 0.23211699024020774,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 18.51,
-        "score": 155.23,
+        "score": 128.4,
         "reasons": [
-          "52주 고점 대비 -24%",
-          "MACD 골든크로스",
-          "5/20일선 정배열 시작",
-          "영업이익률 46%",
+          "52주 고점 대비 -23%",
+          "영업이익률 47%",
           "어닝 서프라이즈 +18.5%"
         ],
-        "entry_low": 152.69,
-        "entry_high": 162.43,
-        "target": 180.29,
-        "stoploss": 146.2,
+        "entry_low": 153.2,
+        "entry_high": 163.3,
+        "target": 181.81,
+        "stoploss": 146.47,
         "narrative": {
-          "one_liner": "Technology 영업이익률 46%, 어닝 서프라이즈 +18.5% / RSI 71 반등 신호.",
-          "thesis": "Palantir Technologies Inc.는 매출 성장률 85% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 71로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "one_liner": "Technology 영업이익률 47%, 어닝 서프라이즈 +18.5% / RSI 69 반등 신호.",
+          "thesis": "Palantir Technologies Inc.는 매출 성장률 93% · 영업이익률 47%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 69로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "46%",
+              "value": "47%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
             },
             {
               "label": "매출 성장",
-              "value": "85%",
+              "value": "93%",
               "ok": true,
               "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "71",
+              "value": "69",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
+              "value": "-23%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
             {
               "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "주가 추세가 반등으로 막 전환되는 신호."
             },
             {
               "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
             },
             {
@@ -710,7 +725,7 @@
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
-              "points": 57.7
+              "points": 58.9
             },
             {
               "name": "매출 성장 ≥10%",
@@ -721,28 +736,20 @@
               "points": 15
             },
             {
-              "name": "MACD 골든크로스",
-              "points": 10
-            },
-            {
-              "name": "5/20일선 정배열",
-              "points": 8
-            },
-            {
               "name": "어닝 서프라이즈 +5%↑",
               "points": 12
             }
           ],
           "hold_days": 5
         },
-        "score_original": 150.23,
+        "score_original": 123.4,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "US Stock Futures Flat After S&P500, Dow End At Record Highs On Strong Earnings, Easing Geopolitical Concerns — PLTR, AZN, CMG, MRNA In Focus",
-            "link": "https://stocktwits.com/news-articles/markets/equity/us-stock-futures-flat-after-s-and-p500-dow-end-at-record-highs/cZo5yAlRJ4k",
+            "title": "S&P 500, Dow Build on Record Highs Amid AI and Iran Hope",
+            "link": "https://www.barrons.com/livecoverage/stock-market-news-today-080526/card/s-p-500-dow-build-on-record-highs-amid-ai-and-iran-hope-0cEIdwfIGQW44wels53h?siteid=yhoof2&yptr=yahoo",
             "score": 5,
             "positive": [
               "record high"
@@ -754,34 +761,34 @@
       {
         "ticker": "NVDA",
         "name": "NVIDIA Corporation",
-        "price": 209.78500366210938,
-        "price_krw": 299191,
-        "change_pct_1d": 1.5219726489306584,
-        "market_cap": 5081202688000.0,
+        "price": 219.22500610351562,
+        "price_krw": 311885,
+        "change_pct_1d": 3.4372952619567076,
+        "market_cap": 5309485547520.0,
         "operating_margin": 0.65596,
         "revenue_growth": 0.852,
-        "pe_ratio": 31.218008,
+        "pe_ratio": 32.620537,
         "sector": "Technology",
-        "avg_volume": 125263176.55,
-        "rsi": 55.44793904059057,
-        "drawdown_52w": 0.10906295912664715,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
+        "avg_volume": 125875389.8,
+        "rsi": 61.60654079142499,
+        "drawdown_52w": 0.06897216286301139,
+        "macd_golden_cross": false,
+        "ma_aligned_up": true,
         "volume_spike": false,
         "earnings_surprise_pct": 5.54,
-        "score": 127.0,
+        "score": 125.0,
         "reasons": [
-          "MACD 골든크로스",
+          "5/20일선 정배열 시작",
           "영업이익률 66%",
           "어닝 서프라이즈 +5.5%"
         ],
-        "entry_low": 204.41,
-        "entry_high": 213.63,
-        "target": 230.53,
-        "stoploss": 198.26,
+        "entry_low": 213.62,
+        "entry_high": 223.23,
+        "target": 240.85,
+        "stoploss": 207.21,
         "narrative": {
-          "one_liner": "Technology 영업이익률 66%, 어닝 서프라이즈 +5.5% / RSI 55 반등 신호.",
-          "thesis": "NVIDIA Corporation는 매출 성장률 85% · 영업이익률 66%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 11% 떨어진 상태에서 RSI 55로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "one_liner": "Technology 영업이익률 66%, 어닝 서프라이즈 +5.5% / RSI 62 반등 신호.",
+          "thesis": "NVIDIA Corporation는 매출 성장률 85% · 영업이익률 66%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 7% 떨어진 상태에서 RSI 62로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -797,26 +804,26 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "55",
+              "value": "62",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-11%",
+              "value": "-7%",
               "ok": false,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
             {
               "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "주가 추세가 반등으로 막 전환되는 신호."
             },
             {
               "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
+              "value": "✓",
+              "ok": true,
               "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
             },
             {
@@ -843,8 +850,8 @@
               "points": 37.5
             },
             {
-              "name": "MACD 골든크로스",
-              "points": 10
+              "name": "5/20일선 정배열",
+              "points": 8
             },
             {
               "name": "어닝 서프라이즈 +5%↑",
@@ -853,120 +860,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 122.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Chipotle Stops Serving Jalapenos at Certain Restaurants Due to Potential Salmonella Outbreak. Here's What Investors Need to Know.",
-            "link": "https://www.fool.com/investing/2026/08/04/chipotle-stops-serving-jalapenos-at-certain-restaurants-due-to-potential-salmonella-outbreak-heres-what-investors-need-to-know/",
-            "score": 5,
-            "positive": [
-              "ipo"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "AVGO",
-        "name": "Broadcom Inc.",
-        "price": 412.82501220703125,
-        "price_krw": 588763,
-        "change_pct_1d": 5.250745900068576,
-        "market_cap": 1963643633664.0,
-        "operating_margin": 0.48988,
-        "revenue_growth": 0.479,
-        "pe_ratio": 68.334435,
-        "sector": "Technology",
-        "avg_volume": 19492887.75,
-        "rsi": 60.223925462576254,
-        "drawdown_52w": 0.14139509040567114,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "volume_spike": false,
-        "earnings_surprise_pct": 1.74,
-        "score": 116.73,
-        "reasons": [
-          "5/20일선 정배열 시작",
-          "영업이익률 49%"
-        ],
-        "entry_low": 401.03,
-        "entry_high": 421.25,
-        "target": 458.34,
-        "stoploss": 387.54,
-        "narrative": {
-          "one_liner": "Technology 영업이익률 49%, RSI 60 반등 신호.",
-          "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 14% 떨어진 상태에서 RSI 60로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "49%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "48%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "60",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-14%",
-              "ok": false,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+1.7%",
-              "ok": false,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 61.2
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 37.5
-            },
-            {
-              "name": "5/20일선 정배열",
-              "points": 8
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 111.73,
+        "score_original": 120.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -983,64 +877,64 @@
         ]
       },
       {
-        "ticker": "APP",
-        "name": "Applovin Corporation",
-        "price": 414.9818115234375,
-        "price_krw": 591839,
-        "change_pct_1d": 2.172003097741526,
-        "market_cap": 139450171392.0,
-        "operating_margin": 0.78151,
-        "revenue_growth": 0.59,
-        "pe_ratio": 35.238117,
+        "ticker": "META",
+        "name": "Meta Platforms, Inc.",
+        "price": 586.4099731445312,
+        "price_krw": 834268,
+        "change_pct_1d": -0.26023561766873593,
+        "market_cap": 1493883027456.0,
+        "operating_margin": 0.30879,
+        "revenue_growth": 0.28,
+        "pe_ratio": 22.07038,
         "sector": "Communication Services",
-        "avg_volume": 5987869.6,
-        "rsi": 42.33926116101438,
-        "drawdown_52w": 0.4343213940376904,
-        "macd_golden_cross": true,
+        "avg_volume": 18937028.65,
+        "rsi": 46.115660972908586,
+        "drawdown_52w": 0.25527599403336587,
+        "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
-        "earnings_surprise_pct": 3.49,
-        "score": 110.0,
+        "earnings_surprise_pct": -14.42,
+        "score": 91.1,
         "reasons": [
-          "MACD 골든크로스",
-          "영업이익률 78%"
+          "52주 고점 대비 -26%",
+          "영업이익률 31%"
         ],
-        "entry_low": 400.69,
-        "entry_high": 425.19,
-        "target": 470.08,
-        "stoploss": 384.37,
+        "entry_low": 569.44,
+        "entry_high": 598.53,
+        "target": 651.88,
+        "stoploss": 550.04,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 78%, RSI 42 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 59% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 43% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "one_liner": "Communication Services 영업이익률 31%, RSI 46 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 31%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 46로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "78%",
+              "value": "31%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
             },
             {
               "label": "매출 성장",
-              "value": "59%",
+              "value": "28%",
               "ok": true,
               "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "42",
-              "ok": true,
+              "value": "46",
+              "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-43%",
-              "ok": false,
+              "value": "-26%",
+              "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
             {
               "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "주가 추세가 반등으로 막 전환되는 신호."
             },
             {
@@ -1057,161 +951,39 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+3.5%",
+              "value": "+-14.4%",
               "ok": false,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
           ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
-              "points": 62.5
+              "points": 38.6
             },
             {
               "name": "매출 성장 ≥10%",
               "points": 37.5
             },
             {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            },
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
+              "name": "52주 -15~-40%",
+              "points": 15
             }
           ],
           "hold_days": 5
         }
       }
     ],
-    "quant_pick": {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "price": 375.7149963378906,
-      "price_krw": 535837,
-      "change_pct_1d": 0.5903420295614747,
-      "market_cap": 4594970132480.0,
-      "operating_margin": 0.34033,
-      "revenue_growth": 0.242,
-      "pe_ratio": 17.959608,
-      "sector": "Communication Services",
-      "avg_volume": 30068898.05,
-      "rsi": 61.90925577899097,
-      "drawdown_52w": 0.06626744563231877,
-      "macd_golden_cross": false,
-      "ma_aligned_up": true,
-      "volume_spike": false,
-      "earnings_surprise_pct": 214.23,
-      "score": 88.84,
-      "reasons": [
-        "5/20일선 정배열 시작",
-        "영업이익률 34%",
-        "어닝 서프라이즈 +214.2%"
-      ],
-      "entry_low": 366.13,
-      "entry_high": 382.56,
-      "target": 412.68,
-      "stoploss": 355.18,
-      "narrative": {
-        "one_liner": "Communication Services 영업이익률 34%, 어닝 서프라이즈 +214.2% / RSI 62 반등 신호.",
-        "thesis": "Alphabet Inc.는 매출 성장률 24% · 영업이익률 34%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 7% 떨어진 상태에서 RSI 62로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
-        "signals": [
-          {
-            "label": "영업이익률",
-            "value": "34%",
-            "ok": true,
-            "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-          },
-          {
-            "label": "매출 성장",
-            "value": "24%",
-            "ok": true,
-            "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-          },
-          {
-            "label": "RSI (과매도 지수)",
-            "value": "62",
-            "ok": false,
-            "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-          },
-          {
-            "label": "52주 고점 대비",
-            "value": "-7%",
-            "ok": false,
-            "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-          },
-          {
-            "label": "MACD 골든크로스",
-            "value": "—",
-            "ok": false,
-            "explain": "주가 추세가 반등으로 막 전환되는 신호."
-          },
-          {
-            "label": "5/20일선 정배열",
-            "value": "✓",
-            "ok": true,
-            "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-          },
-          {
-            "label": "거래량 급증",
-            "value": "—",
-            "ok": false,
-            "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-          },
-          {
-            "label": "어닝 서프라이즈",
-            "value": "+214.2%",
-            "ok": true,
-            "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-          }
-        ],
-        "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-        "score_breakdown": [
-          {
-            "name": "영업이익률 ≥20%",
-            "points": 42.5
-          },
-          {
-            "name": "매출 성장 ≥10%",
-            "points": 36.3
-          },
-          {
-            "name": "5/20일선 정배열",
-            "points": 8
-          },
-          {
-            "name": "어닝 서프라이즈 +5%↑",
-            "points": 12
-          }
-        ],
-        "hold_days": 5
-      },
-      "quant_score": 218.08,
-      "score_original": 98.84,
-      "news_boost": -10.0,
-      "news_positive": 0,
-      "news_negative": 1,
-      "news_headlines": [
-        {
-          "title": "Alphabet (GOOGL) Could Be 14% Undervalued On Ad Tech Lawsuit Scrutiny",
-          "link": "https://finance.yahoo.com/media-advertising/articles/alphabet-googl-could-14-undervalued-211046310.html",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "lawsuit"
-          ]
-        }
-      ]
-    },
+    "quant_pick": null,
     "traffic_light": {
-      "vix": 16.25,
+      "vix": 16.32,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-08-05T00:36:21.984806+09:00",
-    "updated_at_kst": "2026.08.05 (수) 00:36 KST"
+    "updated_at_iso": "2026-08-06T00:28:47.973100+09:00",
+    "updated_at_kst": "2026.08.06 (목) 00:28 KST"
   },
   "futures": {
     "picks": [
