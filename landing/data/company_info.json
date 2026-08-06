@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 14.43,
+    "sector_momentum_5d_pct": 12.85,
     "sector_status": "🔥 강세"
   },
   "000660": {
@@ -12,7 +12,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 14.43,
+    "sector_momentum_5d_pct": 12.85,
     "sector_status": "🔥 강세"
   },
   "062040": {
@@ -26,7 +26,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 5.41,
+    "sector_momentum_5d_pct": 6.23,
     "sector_status": "🔥 강세"
   },
   "055550": {
@@ -43,18 +43,7 @@
     "next_earnings": "2026-11-02",
     "last_earnings_surprise_pct": 18.51,
     "last_earnings_date": "2026-08-03",
-    "sector_momentum_5d_pct": 11.61,
-    "sector_status": "🔥 강세"
-  },
-  "NVDA": {
-    "ticker": "NVDA",
-    "market": "us",
-    "name": "NVIDIA Corporation",
-    "sector": "Technology",
-    "next_earnings": "2026-08-26",
-    "last_earnings_surprise_pct": 5.54,
-    "last_earnings_date": "2026-05-20",
-    "sector_momentum_5d_pct": 11.61,
+    "sector_momentum_5d_pct": 5.81,
     "sector_status": "🔥 강세"
   },
   "META": {
@@ -65,12 +54,12 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 1.24,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": 4.3,
+    "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-06T10:07:38+09:00",
-    "tickers_count": 8,
+    "generated_at_iso": "2026-08-07T00:33:58+09:00",
+    "tickers_count": 7,
     "dart_enabled": false
   }
 }
