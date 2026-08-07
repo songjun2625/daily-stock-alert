@@ -4,16 +4,14 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 12.85,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": -9.72,
+    "sector_status": "❄️ 부진"
   },
-  "000660": {
-    "ticker": "000660",
+  "055550": {
+    "ticker": "055550",
     "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 12.85,
-    "sector_status": "🔥 강세"
+    "name": "신한지주",
+    "sector": "금융"
   },
   "062040": {
     "ticker": "062040",
@@ -21,19 +19,21 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
+  "000660": {
+    "ticker": "000660",
+    "market": "kr",
+    "name": "SK하이닉스",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -9.72,
+    "sector_status": "❄️ 부진"
+  },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 6.23,
+    "sector_momentum_5d_pct": 7.46,
     "sector_status": "🔥 강세"
-  },
-  "055550": {
-    "ticker": "055550",
-    "market": "kr",
-    "name": "신한지주",
-    "sector": "금융"
   },
   "PLTR": {
     "ticker": "PLTR",
@@ -43,7 +43,7 @@
     "next_earnings": "2026-11-02",
     "last_earnings_surprise_pct": 18.51,
     "last_earnings_date": "2026-08-03",
-    "sector_momentum_5d_pct": 5.81,
+    "sector_momentum_5d_pct": 5.46,
     "sector_status": "🔥 강세"
   },
   "META": {
@@ -54,11 +54,11 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 4.3,
+    "sector_momentum_5d_pct": 4.32,
     "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-07T00:33:58+09:00",
+    "generated_at_iso": "2026-08-07T10:53:23+09:00",
     "tickers_count": 7,
     "dart_enabled": false
   }

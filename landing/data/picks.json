@@ -24,31 +24,31 @@
         "ticker": "005930",
         "name": "삼성전자",
         "sector": "반도체",
-        "price": 236250,
-        "change_pct_1d": -3.963414634146345,
-        "market_cap": 1551350643032064.0,
+        "price": 234000,
+        "change_pct_1d": 1.5184381778741818,
+        "market_cap": 1536575821316096.0,
         "operating_margin": 0.52187,
         "revenue_growth": 1.299,
         "pe_ratio": null,
-        "drawdown_52w": 0.3475571062293539,
-        "rsi": 43.80783369521997,
+        "drawdown_52w": 0.3537708480747886,
+        "rsi": 43.628806051705865,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 152.0,
+        "score": 142.0,
         "reasons": [
           "RSI 44(과매도 반등 후보)",
           "52주 고점 대비 -35%",
           "영업이익률 52%",
           "매출 성장 +130%"
         ],
-        "entry_low": 219610,
-        "entry_high": 248136,
-        "target": 300433,
-        "stoploss": 200593,
+        "entry_low": 217385,
+        "entry_high": 245868,
+        "target": 298087,
+        "stoploss": 198396,
         "narrative": {
           "one_liner": "반도체 영업이익률 52% / RSI 44 반등 신호",
           "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -74,148 +74,6 @@
             {
               "label": "52주 고점 대비",
               "value": "-35%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 147.0,
-        "news_boost": 5.0,
-        "news_positive": 3,
-        "news_negative": 1,
-        "news_headlines": [
-          {
-            "title": "Western Digital Sinks 16%, SanDisk Falls 11%, Micron Drops 6% as Memory Selloff Hits Storage Stocks",
-            "link": "https://247wallst.com/investing/2026/08/06/western-digital-sinks-16-sandisk-falls-11-micron-drops-6-as-memory-selloff-hits-storage-stocks/",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "Citi says buy the pullback in memory stocks as upcycle is still in early innings",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/citi-says-buy-pullback-memory-124904139.html",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "The AI Memory Shortage Just Entered Year 2. These 3 ETFs Own Every Layer From DRAM to HBM",
-            "link": "https://247wallst.com/investing/2026/08/06/the-ai-memory-shortage-just-entered-year-2-these-3-etfs-own-every-layer-from-dram-to-hbm/",
-            "score": 5,
-            "positive": [
-              "HBM"
-            ],
-            "negative": []
-          }
-        ]
-      },
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "sector": "반도체",
-        "price": 1541000,
-        "change_pct_1d": -7.613908872901676,
-        "market_cap": 1093886428577792.0,
-        "operating_margin": 0.76328003,
-        "revenue_growth": 2.568,
-        "pe_ratio": null,
-        "drawdown_52w": 0.4720794792737239,
-        "rsi": 41.551612973239074,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 127.0,
-        "reasons": [
-          "RSI 42(과매도 반등 후보)",
-          "영업이익률 76%",
-          "매출 성장 +257%"
-        ],
-        "entry_low": 1408450,
-        "entry_high": 1635679,
-        "target": 2052265,
-        "stoploss": 1256964,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 76% / RSI 42 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 47% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "76%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "257%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "42",
-              "ok": true,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-47%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -266,95 +124,62 @@
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 122.0,
-        "news_boost": 5.0,
-        "news_positive": 3,
-        "news_negative": 1,
-        "news_headlines": [
-          {
-            "title": "Western Digital Sinks 16%, SanDisk Falls 11%, Micron Drops 6% as Memory Selloff Hits Storage Stocks",
-            "link": "https://247wallst.com/investing/2026/08/06/western-digital-sinks-16-sandisk-falls-11-micron-drops-6-as-memory-selloff-hits-storage-stocks/",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "Citi says buy the pullback in memory stocks as upcycle is still in early innings",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/citi-says-buy-pullback-memory-124904139.html",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "The AI Memory Shortage Just Entered Year 2. These 3 ETFs Own Every Layer From DRAM to HBM",
-            "link": "https://247wallst.com/investing/2026/08/06/the-ai-memory-shortage-just-entered-year-2-these-3-etfs-own-every-layer-from-dram-to-hbm/",
-            "score": 5,
-            "positive": [
-              "HBM"
-            ],
-            "negative": []
-          }
-        ]
+        }
       },
       {
-        "ticker": "207940",
-        "name": "삼성바이오로직스",
-        "sector": "바이오·헬스케어",
-        "price": 1498000,
-        "change_pct_1d": 0.46948356807512415,
-        "market_cap": 69343845023744.0,
-        "operating_margin": 0.46196997,
-        "revenue_growth": 0.258,
+        "ticker": "055550",
+        "name": "신한지주",
+        "sector": "금융",
+        "price": 109400,
+        "change_pct_1d": 1.862197392923659,
+        "market_cap": 51559647936512.0,
+        "operating_margin": 0.52981997,
+        "revenue_growth": 0.141,
         "pe_ratio": null,
-        "drawdown_52w": 0.2376590330788804,
-        "rsi": 55.92887929060239,
+        "drawdown_52w": 0.0,
+        "rsi": 62.59091993673025,
         "volume_spike": false,
         "macd_golden_cross": false,
-        "ma_aligned_up": false,
+        "ma_aligned_up": true,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 117.0,
+        "score": 140.0,
         "reasons": [
-          "52주 고점 대비 -24%",
-          "영업이익률 46%",
-          "매출 성장 +26%"
+          "5/20일선 정배열 시작",
+          "영업이익률 53%",
+          "매출 성장 +14%"
         ],
-        "entry_low": 1442000,
-        "entry_high": 1538000,
-        "target": 1714000,
-        "stoploss": 1378000,
+        "entry_low": 105911,
+        "entry_high": 111892,
+        "target": 122859,
+        "stoploss": 101923,
         "narrative": {
-          "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 56 반등 신호",
-          "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 56로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "금융 영업이익률 53% / RSI 63 반등 신호",
+          "thesis": "신한지주(055550)는 매출 성장률 14% · 영업이익률 53%로 꾸준히 돈을 잘 버는 회사입니다. RSI 63로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "46%",
+              "value": "53%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
             },
             {
               "label": "매출 성장",
-              "value": "26%",
+              "value": "14%",
               "ok": true,
               "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "56",
+              "value": "63",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
-              "ok": true,
+              "value": "-0%",
+              "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
@@ -365,8 +190,8 @@
             },
             {
               "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
+              "value": "✓",
+              "ok": true,
               "explain": "단기·중기 추세선 모두 상승 시작."
             },
             {
@@ -399,23 +224,31 @@
               "points": 37.5
             },
             {
-              "name": "52주 -10~-35%",
-              "points": 15
+              "name": "5/20일선 정배열",
+              "points": 8
             }
           ],
           "hold_days": 5
         },
-        "score_original": 107.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
+        "score_original": 135.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
-            "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
-            "score": 10,
+            "title": "Should Value Investors Buy Macro Bank (BMA) Stock?",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/value-investors-buy-macro-bank-134002321.html",
+            "score": 5,
             "positive": [
-              "M&A",
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "Shinhan Financial (SHG) Upgraded to Strong Buy: Here's What You Should Know",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/shinhan-financial-shg-upgraded-strong-160003419.html",
+            "score": 5,
+            "positive": [
               "Buy"
             ],
             "negative": []
@@ -426,32 +259,33 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 162900,
-        "change_pct_1d": -2.571770334928225,
-        "market_cap": 4977425121280.0,
+        "price": 158900,
+        "change_pct_1d": -1.5489467162329573,
+        "market_cap": 4855204675584.0,
         "operating_margin": 0.36908,
         "revenue_growth": 0.521,
         "pe_ratio": null,
-        "drawdown_52w": 0.511544227886057,
-        "rsi": 46.14273389817425,
+        "drawdown_52w": 0.5235382308845578,
+        "rsi": 44.87855544420168,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 108.0,
+        "score": 123.0,
         "reasons": [
+          "RSI 45(과매도 반등 후보)",
           "영업이익률 37%",
           "매출 성장 +52%"
         ],
-        "entry_low": 152125,
-        "entry_high": 170596,
-        "target": 204460,
-        "stoploss": 139811,
+        "entry_low": 147970,
+        "entry_high": 166707,
+        "target": 201058,
+        "stoploss": 135479,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 46 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 51% 떨어진 상태에서 RSI 46로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 37% / RSI 45 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 52% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 52% 떨어진 상태에서 RSI 45로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -467,8 +301,113 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "46",
+              "value": "45",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-52%",
               "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 1439000,
+        "change_pct_1d": -3.7458193979933108,
+        "market_cap": 1021481198813184.0,
+        "operating_margin": 0.76328003,
+        "revenue_growth": 2.568,
+        "pe_ratio": null,
+        "drawdown_52w": 0.5070229530661186,
+        "rsi": 39.350328904221854,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 107.0,
+        "reasons": [
+          "RSI 39(과매도 반등 후보)",
+          "영업이익률 76%",
+          "매출 성장 +257%"
+        ],
+        "entry_low": 1305300,
+        "entry_high": 1534500,
+        "target": 1954700,
+        "stoploss": 1152500,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 76% / RSI 39 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 51% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "76%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "257%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "39",
+              "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
@@ -517,72 +456,100 @@
             {
               "name": "매출 성장 ≥5%",
               "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 117.0,
+        "news_boost": -10.0,
+        "news_positive": 0,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "Micron's Selloff Exposes a New Risk in the Memory Boom",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/microns-selloff-exposes-risk-memory-162559813.html",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
+          },
+          {
+            "title": "Western Digital Sinks 16%, SanDisk Falls 11%, Micron Drops 6% as Memory Selloff Hits Storage Stocks",
+            "link": "https://247wallst.com/investing/2026/08/06/western-digital-sinks-16-sandisk-falls-11-micron-drops-6-as-memory-selloff-hits-storage-stocks/",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
+          }
+        ]
       }
     ],
     "quant_pick": {
-      "ticker": "055550",
-      "name": "신한지주",
-      "sector": "금융",
-      "price": 106600,
-      "change_pct_1d": 2.895752895752901,
-      "market_cap": 50147052486656.0,
-      "operating_margin": 0.52981997,
-      "revenue_growth": 0.141,
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "sector": "바이오·헬스케어",
+      "price": 1515000,
+      "change_pct_1d": 0.06605019815060231,
+      "market_cap": 70130792923136.0,
+      "operating_margin": 0.46196997,
+      "revenue_growth": 0.258,
       "pe_ratio": null,
-      "drawdown_52w": 0.016597228068030993,
-      "rsi": 58.422739796273135,
+      "drawdown_52w": 0.22900763358778625,
+      "rsi": 57.314444950329644,
       "volume_spike": false,
-      "macd_golden_cross": true,
+      "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 102.0,
+      "score": 107.0,
       "reasons": [
-        "MACD 골든크로스",
-        "영업이익률 53%",
-        "매출 성장 +14%"
+        "52주 고점 대비 -23%",
+        "영업이익률 46%",
+        "매출 성장 +26%"
       ],
-      "entry_low": 102954,
-      "entry_high": 109204,
-      "target": 120663,
-      "stoploss": 98787,
+      "entry_low": 1461450,
+      "entry_high": 1553250,
+      "target": 1721550,
+      "stoploss": 1400250,
       "narrative": {
-        "one_liner": "금융 영업이익률 53% / RSI 58 반등 신호",
-        "thesis": "신한지주(055550)는 매출 성장률 14% · 영업이익률 53%로 꾸준히 돈을 잘 버는 회사입니다. RSI 58로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+        "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 57 반등 신호",
+        "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 23% 떨어진 상태에서 RSI 57로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "53%",
+            "value": "46%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "14%",
+            "value": "26%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "58",
+            "value": "57",
             "ok": false,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-2%",
-            "ok": false,
+            "value": "-23%",
+            "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
           {
             "label": "MACD 골든크로스",
-            "value": "✓",
-            "ok": true,
+            "value": "—",
+            "ok": false,
             "explain": "추세 전환의 첫 신호."
           },
           {
@@ -621,43 +588,35 @@
             "points": 37.5
           },
           {
-            "name": "MACD 골든크로스",
-            "points": 10
+            "name": "52주 -10~-35%",
+            "points": 15
           }
         ],
         "hold_days": 5
       },
-      "quant_score": 190.5,
+      "quant_score": 195.0,
       "score_original": 97.0,
-      "news_boost": 5.0,
-      "news_positive": 1,
+      "news_boost": 10.0,
+      "news_positive": 2,
       "news_negative": 0,
       "news_headlines": [
         {
-          "title": "Should Value Investors Buy Macro Bank (BMA) Stock?",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/value-investors-buy-macro-bank-134002321.html",
-          "score": 5,
+          "title": "Howmet Aerospace to buy hardware business for $1.8B, among other M&A to end 2025",
+          "link": "https://www.manufacturingdive.com/news/howmet-aerospace-stanley-black-decker-deere-tenna-samsung-biologics/809332/",
+          "score": 10,
           "positive": [
-            "Buy"
-          ],
-          "negative": []
-        },
-        {
-          "title": "Shinhan Financial (SHG) Upgraded to Strong Buy: Here's What You Should Know",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/shinhan-financial-shg-upgraded-strong-160003419.html",
-          "score": 5,
-          "positive": [
+            "M&A",
             "Buy"
           ],
           "negative": []
         }
       ]
     },
-    "updated_at_iso": "2026-08-06T10:07:31.081629+09:00",
-    "updated_at_kst": "2026.08.06 (목) 10:07 KST"
+    "updated_at_iso": "2026-08-07T10:53:15.699661+09:00",
+    "updated_at_kst": "2026.08.07 (금) 10:53 KST"
   },
-  "updated_at_iso": "2026-08-07T00:33:55.237246+09:00",
-  "updated_at_kst": "2026.08.07 (금) 00:33 KST",
+  "updated_at_iso": "2026-08-07T10:53:15.699661+09:00",
+  "updated_at_kst": "2026.08.07 (금) 10:53 KST",
   "us": {
     "picks": [
       {
@@ -678,7 +637,7 @@
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 18.51,
-        "score": 123.4,
+        "score": 128.4,
         "reasons": [
           "52주 고점 대비 -24%",
           "영업이익률 47%",
@@ -761,7 +720,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 123.4,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "USA Today Co Inc (TDAY) (Q2 2026) Earnings Call Highlights: AI Partnerships and Record ARPU ...",
+            "link": "https://finance.yahoo.com/media-advertising/articles/usa-today-co-inc-tday-231608577.html",
+            "score": 5,
+            "positive": [
+              "partnership"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "META",
