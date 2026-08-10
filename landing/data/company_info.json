@@ -10,7 +10,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.69,
+    "sector_momentum_5d_pct": -0.85,
     "sector_status": "➡️ 보합"
   },
   "000660": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.69,
+    "sector_momentum_5d_pct": -0.85,
     "sector_status": "➡️ 보합"
   },
   "207940": {
@@ -26,7 +26,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 7.27,
+    "sector_momentum_5d_pct": 8.67,
     "sector_status": "🔥 강세"
   },
   "068270": {
@@ -34,7 +34,7 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 7.27,
+    "sector_momentum_5d_pct": 8.67,
     "sector_status": "🔥 강세"
   },
   "APP": {
@@ -45,8 +45,8 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 2.78,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -0.06,
+    "sector_status": "➡️ 보합"
   },
   "ASML": {
     "ticker": "ASML",
@@ -56,7 +56,7 @@
     "next_earnings": "2026-10-14",
     "last_earnings_surprise_pct": 9.93,
     "last_earnings_date": "2026-07-13",
-    "sector_momentum_5d_pct": 7.2,
+    "sector_momentum_5d_pct": 5.71,
     "sector_status": "🔥 강세"
   },
   "META": {
@@ -67,11 +67,11 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 2.78,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -0.06,
+    "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-10T09:36:55+09:00",
+    "generated_at_iso": "2026-08-10T23:32:29+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
