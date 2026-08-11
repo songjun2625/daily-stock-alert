@@ -4,22 +4,22 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -3.35,
-    "sector_status": "❄️ 부진"
-  },
-  "000660": {
-    "ticker": "000660",
-    "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -3.35,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -1.06,
+    "sector_status": "📉 약세"
   },
   "105560": {
     "ticker": "105560",
     "market": "kr",
     "name": "KB금융",
     "sector": "금융"
+  },
+  "000660": {
+    "ticker": "000660",
+    "market": "kr",
+    "name": "SK하이닉스",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -1.06,
+    "sector_status": "📉 약세"
   },
   "062040": {
     "ticker": "062040",
@@ -32,19 +32,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 5.59,
+    "sector_momentum_5d_pct": 4.07,
     "sector_status": "🔥 강세"
-  },
-  "APP": {
-    "ticker": "APP",
-    "market": "us",
-    "name": "Applovin Corporation",
-    "sector": "Communication Services",
-    "next_earnings": "2026-11-04",
-    "last_earnings_surprise_pct": 0.43,
-    "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 0.44,
-    "sector_status": "➡️ 보합"
   },
   "META": {
     "ticker": "META",
@@ -54,7 +43,7 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 0.44,
+    "sector_momentum_5d_pct": 0.04,
     "sector_status": "➡️ 보합"
   },
   "ASML": {
@@ -65,12 +54,12 @@
     "next_earnings": "2026-10-14",
     "last_earnings_surprise_pct": 9.93,
     "last_earnings_date": "2026-07-13",
-    "sector_momentum_5d_pct": 4.65,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 0.01,
+    "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-11T09:35:50+09:00",
-    "tickers_count": 8,
+    "generated_at_iso": "2026-08-11T23:32:08+09:00",
+    "tickers_count": 7,
     "dart_enabled": false
   }
 }
