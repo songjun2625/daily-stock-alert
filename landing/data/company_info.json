@@ -1,18 +1,18 @@
 {
-  "005930": {
-    "ticker": "005930",
-    "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 8.46,
-    "sector_status": "🔥 강세"
-  },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 8.46,
+    "sector_momentum_5d_pct": 12.15,
+    "sector_status": "🔥 강세"
+  },
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 12.15,
     "sector_status": "🔥 강세"
   },
   "062040": {
@@ -32,7 +32,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.69,
+    "sector_momentum_5d_pct": -2.81,
     "sector_status": "📉 약세"
   },
   "APP": {
@@ -43,8 +43,8 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 0.88,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.52,
+    "sector_status": "📈 호조"
   },
   "META": {
     "ticker": "META",
@@ -54,11 +54,11 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 0.88,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.52,
+    "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-13T23:33:24+09:00",
+    "generated_at_iso": "2026-08-14T09:44:38+09:00",
     "tickers_count": 7,
     "dart_enabled": false
   }
