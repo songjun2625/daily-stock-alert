@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 14.58,
+      "value": 15.04,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 137.0,
         "reasons": [
           "영업이익률 76%",
           "매출 성장 +257%"
@@ -119,23 +119,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 127.0,
+        "score_original": 132.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Needs This; Walmart Looms",
+            "title": "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Nears Key Level; Walmart Looms",
             "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-run-sandisk-soars-nvidia-buy-walmart-target/?src=A00220&yptr=yahoo",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "SK Hynix vs. Monday.com: Which Technology Stock Is a Better Buy in 2026 Amid the Artificial Intelligence Boom?",
-            "link": "https://www.fool.com/coverage/better-buy/2026/08/14/sk-hynix-vs-monday-com-which-technology-stock-is-a-better-buy-in-2026-amid-the-artificial-intelligence-boom/",
             "score": 5,
             "positive": [
               "Buy"
@@ -162,7 +153,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 124.0,
+        "score": 134.0,
         "reasons": [
           "52주 고점 대비 -24%",
           "영업이익률 52%",
@@ -248,7 +239,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 114.0,
+        "score_original": 124.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -487,7 +478,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 107.0,
+      "score": 117.0,
       "reasons": [
         "52주 고점 대비 -21%",
         "영업이익률 46%",
@@ -574,7 +565,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 97.0,
+      "score_original": 107.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -594,40 +585,40 @@
     "updated_at_iso": "2026-08-17T08:57:54.411943+09:00",
     "updated_at_kst": "2026.08.17 (월) 08:57 KST"
   },
-  "updated_at_iso": "2026-08-17T08:57:54.411943+09:00",
-  "updated_at_kst": "2026.08.17 (월) 08:57 KST",
+  "updated_at_iso": "2026-08-17T22:53:46.295577+09:00",
+  "updated_at_kst": "2026.08.17 (월) 22:53 KST",
   "us": {
     "picks": [
       {
         "ticker": "APP",
         "name": "Applovin Corporation",
-        "price": 323.4800109863281,
-        "price_krw": 456844,
-        "change_pct_1d": 3.45731828904412,
-        "market_cap": 108252758016.0,
+        "price": 316.375,
+        "price_krw": 446576,
+        "change_pct_1d": 0.2964105856445576,
+        "market_cap": 105875062784.0,
         "operating_margin": 0.77678,
         "revenue_growth": 0.528,
-        "pe_ratio": 24.86395,
+        "pe_ratio": 24.336538,
         "sector": "Communication Services",
-        "avg_volume": 7261098.45,
-        "rsi": 32.96619217893159,
-        "drawdown_52w": 0.5590512244388235,
+        "avg_volume": 7250038.4,
+        "rsi": 30.75265718496007,
+        "drawdown_52w": 0.5687363542408702,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 0.43,
         "score": 120.0,
         "reasons": [
-          "RSI 33(과매도 반등 후보)",
+          "RSI 31(과매도 반등 후보)",
           "영업이익률 78%"
         ],
-        "entry_low": 307.06,
-        "entry_high": 335.21,
-        "target": 386.8,
-        "stoploss": 288.3,
+        "entry_low": 300.57,
+        "entry_high": 327.66,
+        "target": 377.33,
+        "stoploss": 282.51,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 78%, RSI 33 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 53% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 56% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 78%, RSI 31 반등 신호.",
+          "thesis": "Applovin Corporation는 매출 성장률 53% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 57% 떨어진 상태에서 RSI 31로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -643,13 +634,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "33",
+              "value": "31",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-56%",
+              "value": "-57%",
               "ok": false,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -699,34 +690,33 @@
       {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 598.1900024414062,
-        "price_krw": 844812,
-        "change_pct_1d": 0.5412091192561919,
-        "market_cap": 1523892748288.0,
+        "price": 581.0250854492188,
+        "price_krw": 820140,
+        "change_pct_1d": -1.496124523520137,
+        "market_cap": 1480165031936.0,
         "operating_margin": 0.34827,
         "revenue_growth": 0.28,
-        "pe_ratio": 22.539185,
+        "pe_ratio": 21.89243,
         "sector": "Communication Services",
-        "avg_volume": 15446450.95,
-        "rsi": 50.168122694448634,
-        "drawdown_52w": 0.23570089478584874,
-        "macd_golden_cross": true,
+        "avg_volume": 15368180.1,
+        "rsi": 45.02109308648838,
+        "drawdown_52w": 0.25763221428945193,
+        "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": -14.42,
-        "score": 116.03,
+        "score": 96.03,
         "reasons": [
-          "52주 고점 대비 -24%",
-          "MACD 골든크로스",
+          "52주 고점 대비 -26%",
           "영업이익률 35%"
         ],
-        "entry_low": 583.38,
-        "entry_high": 608.77,
-        "target": 655.32,
-        "stoploss": 566.45,
+        "entry_low": 566.02,
+        "entry_high": 591.74,
+        "target": 638.89,
+        "stoploss": 548.88,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 35%, RSI 50 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 50로 중립 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "one_liner": "Communication Services 영업이익률 35%, RSI 45 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 45로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -742,20 +732,20 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "50",
+              "value": "45",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
+              "value": "-26%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
             {
               "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "주가 추세가 반등으로 막 전환되는 신호."
             },
             {
@@ -790,40 +780,21 @@
             {
               "name": "52주 -15~-40%",
               "points": 15
-            },
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 111.03,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
-            "link": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/",
-            "score": 5,
-            "positive": [
-              "partnership"
-            ],
-            "negative": []
-          }
-        ]
+        }
       }
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 14.58,
+      "vix": 15.04,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-08-14T23:20:18.009511+09:00",
-    "updated_at_kst": "2026.08.14 (금) 23:20 KST"
+    "updated_at_iso": "2026-08-17T22:53:46.295577+09:00",
+    "updated_at_kst": "2026.08.17 (월) 22:53 KST"
   },
   "futures": {
     "picks": [

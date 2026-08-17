@@ -43,8 +43,8 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 1.53,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": 0.76,
+    "sector_status": "➡️ 보합"
   },
   "META": {
     "ticker": "META",
@@ -54,11 +54,11 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 1.53,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": 0.76,
+    "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-17T08:57:59+09:00",
+    "generated_at_iso": "2026-08-17T22:53:48+09:00",
     "tickers_count": 7,
     "dart_enabled": false
   }
