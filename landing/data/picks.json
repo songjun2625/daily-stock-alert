@@ -31,14 +31,14 @@
         "revenue_growth": 2.568,
         "pe_ratio": null,
         "drawdown_52w": 0.4364508393285372,
-        "rsi": 47.32967881267249,
+        "rsi": 47.3296788126725,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 137.0,
+        "score": 132.0,
         "reasons": [
           "영업이익률 76%",
           "매출 성장 +257%"
@@ -119,7 +119,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 132.0,
+        "score_original": 127.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -146,14 +146,14 @@
         "revenue_growth": 1.299,
         "pe_ratio": null,
         "drawdown_52w": 0.24192349485696354,
-        "rsi": 55.06229285501251,
+        "rsi": 55.06229285411638,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 134.0,
+        "score": 119.0,
         "reasons": [
           "52주 고점 대비 -24%",
           "영업이익률 52%",
@@ -239,9 +239,9 @@
           ],
           "hold_days": 5
         },
-        "score_original": 124.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
+        "score_original": 114.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
@@ -250,15 +250,6 @@
             "score": 5,
             "positive": [
               "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "'삼전닉스' 새 주주환원 정책에 주목하는 증권가",
-            "link": "https://www.hankyung.com/article/202608163946i",
-            "score": 5,
-            "positive": [
-              "주주환원"
             ],
             "negative": []
           }
@@ -275,7 +266,7 @@
         "revenue_growth": 0.28,
         "pe_ratio": null,
         "drawdown_52w": 0.4527736131934033,
-        "rsi": 52.51767230046785,
+        "rsi": 52.51767230046784,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -374,8 +365,8 @@
         "operating_margin": 0.25136,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.4330020019689588,
-        "rsi": 51.6776023112961,
+        "drawdown_52w": 0.4330019519243202,
+        "rsi": 51.677602316881966,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -471,14 +462,14 @@
       "revenue_growth": 0.258,
       "pe_ratio": null,
       "drawdown_52w": 0.21221374045801528,
-      "rsi": 56.71466761178654,
+      "rsi": 56.714667611786524,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 117.0,
+      "score": 107.0,
       "reasons": [
         "52주 고점 대비 -21%",
         "영업이익률 46%",
@@ -565,7 +556,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 107.0,
+      "score_original": 97.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -582,11 +573,11 @@
         }
       ]
     },
-    "updated_at_iso": "2026-08-17T08:57:54.411943+09:00",
-    "updated_at_kst": "2026.08.17 (월) 08:57 KST"
+    "updated_at_iso": "2026-08-18T09:00:49.141772+09:00",
+    "updated_at_kst": "2026.08.18 (화) 09:00 KST"
   },
-  "updated_at_iso": "2026-08-17T22:53:46.295577+09:00",
-  "updated_at_kst": "2026.08.17 (월) 22:53 KST",
+  "updated_at_iso": "2026-08-18T09:00:49.141772+09:00",
+  "updated_at_kst": "2026.08.18 (화) 09:00 KST",
   "us": {
     "picks": [
       {
