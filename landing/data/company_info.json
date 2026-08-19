@@ -4,16 +4,16 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 10.47,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 2.51,
+    "sector_status": "📈 호조"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 10.47,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": 2.51,
+    "sector_status": "📈 호조"
   },
   "062040": {
     "ticker": "062040",
@@ -32,8 +32,8 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -2.46,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.64,
+    "sector_status": "❄️ 부진"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -43,7 +43,18 @@
     "next_earnings": "2026-09-02",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -0.25,
+    "sector_momentum_5d_pct": -2.77,
+    "sector_status": "📉 약세"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-11-04",
+    "last_earnings_surprise_pct": 0.43,
+    "last_earnings_date": "2026-08-05",
+    "sector_momentum_5d_pct": 0.85,
     "sector_status": "➡️ 보합"
   },
   "META": {
@@ -54,12 +65,12 @@
     "next_earnings": "2026-10-28",
     "last_earnings_surprise_pct": -14.42,
     "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": -0.71,
+    "sector_momentum_5d_pct": 0.85,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-19T09:00:32+09:00",
-    "tickers_count": 7,
+    "generated_at_iso": "2026-08-19T22:58:24+09:00",
+    "tickers_count": 8,
     "dart_enabled": false
   }
 }

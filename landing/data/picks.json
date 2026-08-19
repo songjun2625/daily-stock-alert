@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 15.68,
+      "value": 15.34,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 122.0,
+        "score": 137.0,
         "reasons": [
           "영업이익률 76%",
           "매출 성장 +257%"
@@ -119,26 +119,35 @@
           ],
           "hold_days": 5
         },
-        "score_original": 127.0,
-        "news_boost": -5.0,
-        "news_positive": 1,
-        "news_negative": 1,
+        "score_original": 122.0,
+        "news_boost": 15.0,
+        "news_positive": 3,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Global bond sell-off pressures stocks: AlphaCheck",
-            "link": "https://finance.yahoo.com/markets/article/global-bond-sell-off-pressures-stocks-alphacheck-135011383.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "Nvidia Is Cutting Rubin Ultra’s Memory. Is Micron’s HBM Boom in Danger?",
-            "link": "https://247wallst.com/investing/2026/08/18/nvidia-is-cutting-rubin-ultras-memory-is-microns-hbm-boom-in-danger/",
+            "title": "Stock Market Today: Dow Rises On Treasury Buybacks; Moderna Soars On Cancer Drug News (Live Coverage)",
+            "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-sk-hynix-skhy/?src=A00220&yptr=yahoo",
             "score": 5,
             "positive": [
-              "HBM"
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK Hynix Rises 6% on $29B Buyback, SanDisk Gains 5%, Micron Climbs 3% as Memory Names Rebound",
+            "link": "https://247wallst.com/investing/2026/08/19/sk-hynix-rises-6-on-29b-buyback-sandisk-gains-5-micron-climbs-3-as-memory-names-rebound/",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK Hynix Stock Rises After $29 Billion Buyback Commitment",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stock-rises-29-123459164.html",
+            "score": 5,
+            "positive": [
+              "Buy"
             ],
             "negative": []
           }
@@ -162,7 +171,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 119.0,
+        "score": 129.0,
         "reasons": [
           "52주 고점 대비 -26%",
           "영업이익률 52%",
@@ -248,17 +257,35 @@
           ],
           "hold_days": 5
         },
-        "score_original": 114.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
+        "score_original": 119.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "This ETF Is Outperforming by Avoiding the S&P 500’s Biggest Problem",
-            "link": "https://www.marketbeat.com/articles/this-etf-is-outperforming-by-avoiding-the-s-and-p-500s-biggest-problem/?utm_source=yahoofinance&utm_medium=yahoofinance",
+            "title": "SK Hynix Rises 6% on $29B Buyback, SanDisk Gains 5%, Micron Climbs 3% as Memory Names Rebound",
+            "link": "https://247wallst.com/investing/2026/08/19/sk-hynix-rises-6-on-29b-buyback-sandisk-gains-5-micron-climbs-3-as-memory-names-rebound/",
             "score": 5,
             "positive": [
-              "Outperform"
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK Hynix Stock Rises After $29 Billion Buyback Commitment",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stock-rises-29-123459164.html",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK Hynix plans $28.6 billion buyback after share price declines",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stock-jumps-amid-29b-treasury-buyback-plan-070906682.html",
+            "score": 5,
+            "positive": [
+              "Buy"
             ],
             "negative": []
           }
@@ -478,7 +505,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 107.0,
+      "score": 117.0,
       "reasons": [
         "52주 고점 대비 -22%",
         "영업이익률 46%",
@@ -565,7 +592,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 97.0,
+      "score_original": 107.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -585,40 +612,41 @@
     "updated_at_iso": "2026-08-19T09:00:25.038881+09:00",
     "updated_at_kst": "2026.08.19 (수) 09:00 KST"
   },
-  "updated_at_iso": "2026-08-19T09:00:25.038881+09:00",
-  "updated_at_kst": "2026.08.19 (수) 09:00 KST",
+  "updated_at_iso": "2026-08-19T22:58:20.603481+09:00",
+  "updated_at_kst": "2026.08.19 (수) 22:58 KST",
   "us": {
     "picks": [
       {
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
-        "price": 379.6199951171875,
-        "price_krw": 535598,
-        "change_pct_1d": -3.4021210334679974,
-        "market_cap": 1806072545280.0,
+        "price": 361.510009765625,
+        "price_krw": 501696,
+        "change_pct_1d": -4.865786903782898,
+        "market_cap": 1719960338432.0,
         "operating_margin": 0.48988,
         "revenue_growth": 0.479,
-        "pe_ratio": 63.27,
+        "pe_ratio": 60.25333,
         "sector": "Technology",
-        "avg_volume": 17548075.85,
-        "rsi": 41.40140093243946,
-        "drawdown_52w": 0.2104558058504168,
+        "avg_volume": 18199529.4,
+        "rsi": 35.05922985848845,
+        "drawdown_52w": 0.2481214556433004,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 1.74,
-        "score": 118.73,
+        "score": 133.73,
         "reasons": [
-          "52주 고점 대비 -21%",
+          "RSI 35(과매도 반등 후보)",
+          "52주 고점 대비 -25%",
           "영업이익률 49%"
         ],
-        "entry_low": 367.81,
-        "entry_high": 388.05,
-        "target": 425.16,
-        "stoploss": 354.32,
+        "entry_low": 349.99,
+        "entry_high": 369.74,
+        "target": 405.93,
+        "stoploss": 336.83,
         "narrative": {
-          "one_liner": "Technology 영업이익률 49%, RSI 41 반등 신호.",
-          "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 49%, RSI 35 반등 신호.",
+          "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 35로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -634,13 +662,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "41",
+              "value": "35",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-21%",
+              "value": "-25%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -689,54 +717,137 @@
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 113.73,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Broadcom Inc. (AVGO) Upgraded to Buy: What Does It Mean for the Stock?",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-inc-avgo-upgraded-buy-160002444.html",
-            "score": 5,
-            "positive": [
-              "upgrade"
-            ],
-            "negative": []
-          }
-        ]
+        }
+      },
+      {
+        "ticker": "APP",
+        "name": "Applovin Corporation",
+        "price": 309.79998779296875,
+        "price_krw": 429934,
+        "change_pct_1d": 0.826654281916217,
+        "market_cap": 103674732544.0,
+        "operating_margin": 0.77678,
+        "revenue_growth": 0.528,
+        "pe_ratio": 23.830769,
+        "sector": "Communication Services",
+        "avg_volume": 7155735.35,
+        "rsi": 30.159931321976316,
+        "drawdown_52w": 0.5776990211245212,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 0.43,
+        "score": 120.0,
+        "reasons": [
+          "RSI 30(과매도 반등 후보)",
+          "영업이익률 78%"
+        ],
+        "entry_low": 295.0,
+        "entry_high": 320.37,
+        "target": 366.88,
+        "stoploss": 278.09,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 78%, RSI 30 반등 신호.",
+          "thesis": "Applovin Corporation는 매출 성장률 53% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 58% 떨어진 상태에서 RSI 30로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "78%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "53%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "30",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-58%",
+              "ok": false,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+0.4%",
+              "ok": false,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            }
+          ],
+          "hold_days": 5
+        }
       },
       {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 549.1932983398438,
-        "price_krw": 774846,
-        "change_pct_1d": -6.892714915467568,
-        "market_cap": 1398899343360.0,
+        "price": 545.375,
+        "price_krw": 756861,
+        "change_pct_1d": 0.31361251189869765,
+        "market_cap": 1389346160640.0,
         "operating_margin": 0.34827,
         "revenue_growth": 0.28,
-        "pe_ratio": 20.667107,
+        "pe_ratio": 20.556915,
         "sector": "Communication Services",
-        "avg_volume": 15541753.0,
-        "rsi": 37.6009441817945,
-        "drawdown_52w": 0.2983033069800159,
+        "avg_volume": 16646048.5,
+        "rsi": 36.82363400289861,
+        "drawdown_52w": 0.2987344464365667,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": -14.42,
         "score": 116.03,
         "reasons": [
-          "RSI 38(과매도 반등 후보)",
+          "RSI 37(과매도 반등 후보)",
           "52주 고점 대비 -30%",
           "영업이익률 35%"
         ],
-        "entry_low": 532.64,
-        "entry_high": 561.02,
-        "target": 613.06,
-        "stoploss": 513.71,
+        "entry_low": 531.93,
+        "entry_high": 554.98,
+        "target": 597.22,
+        "stoploss": 516.57,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 35%, RSI 38 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 38로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 35%, RSI 37 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 30% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -752,7 +863,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "38",
+              "value": "37",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -812,13 +923,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 15.68,
+      "vix": 15.34,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-08-18T22:57:34.860600+09:00",
-    "updated_at_kst": "2026.08.18 (화) 22:57 KST"
+    "updated_at_iso": "2026-08-19T22:58:20.603481+09:00",
+    "updated_at_kst": "2026.08.19 (수) 22:58 KST"
   },
   "futures": {
     "picks": [
