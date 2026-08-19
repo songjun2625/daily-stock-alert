@@ -24,14 +24,14 @@
         "ticker": "000660",
         "name": "SK하이닉스",
         "sector": "반도체",
-        "price": 1645000,
-        "change_pct_1d": 3.264281230382915,
-        "market_cap": 1167711279251456.0,
+        "price": 1662000,
+        "change_pct_1d": 1.0334346504559333,
+        "market_cap": 1179778929393664.0,
         "operating_margin": 0.76328003,
         "revenue_growth": 2.568,
         "pe_ratio": null,
-        "drawdown_52w": 0.4364508393285372,
-        "rsi": 47.3296788126725,
+        "drawdown_52w": 0.4306269270298047,
+        "rsi": 47.96212453164578,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -43,13 +43,13 @@
           "영업이익률 76%",
           "매출 성장 +257%"
         ],
-        "entry_low": 1520800,
-        "entry_high": 1733714,
-        "target": 2124057,
-        "stoploss": 1378857,
+        "entry_low": 1543500,
+        "entry_high": 1746643,
+        "target": 2119072,
+        "stoploss": 1408071,
         "narrative": {
-          "one_liner": "반도체 영업이익률 76% / RSI 47 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 44% 떨어진 상태에서 RSI 47로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 76% / RSI 48 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 43% 떨어진 상태에서 RSI 48로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -65,13 +65,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "47",
+              "value": "48",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-44%",
+              "value": "-43%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -119,9 +119,9 @@
           ],
           "hold_days": 5
         },
-        "score_original": 132.0,
-        "news_boost": -10.0,
-        "news_positive": 0,
+        "score_original": 127.0,
+        "news_boost": -5.0,
+        "news_positive": 1,
         "news_negative": 1,
         "news_headlines": [
           {
@@ -132,6 +132,15 @@
             "negative": [
               "Sell"
             ]
+          },
+          {
+            "title": "Nvidia Is Cutting Rubin Ultra’s Memory. Is Micron’s HBM Boom in Danger?",
+            "link": "https://247wallst.com/investing/2026/08/18/nvidia-is-cutting-rubin-ultras-memory-is-microns-hbm-boom-in-danger/",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
           }
         ]
       },
@@ -139,14 +148,14 @@
         "ticker": "005930",
         "name": "삼성전자",
         "sector": "반도체",
-        "price": 274500,
-        "change_pct_1d": 2.425373134328357,
-        "market_cap": 1802521672679424.0,
+        "price": 268500,
+        "change_pct_1d": -2.1857923497267784,
+        "market_cap": 1763122192842752.0,
         "operating_margin": 0.52187,
         "revenue_growth": 1.299,
         "pe_ratio": null,
-        "drawdown_52w": 0.24192349485696354,
-        "rsi": 55.06229285411638,
+        "drawdown_52w": 0.25849347311145615,
+        "rsi": 53.17190333962154,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -155,17 +164,17 @@
         "earnings_surprise": null,
         "score": 119.0,
         "reasons": [
-          "52주 고점 대비 -24%",
+          "52주 고점 대비 -26%",
           "영업이익률 52%",
           "매출 성장 +130%"
         ],
-        "entry_low": 258510,
-        "entry_high": 285921,
-        "target": 336175,
-        "stoploss": 240236,
+        "entry_low": 253135,
+        "entry_high": 279475,
+        "target": 327765,
+        "stoploss": 235575,
         "narrative": {
-          "one_liner": "반도체 영업이익률 52% / RSI 55 반등 신호",
-          "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 55로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 52% / RSI 53 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 53로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -181,13 +190,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "55",
+              "value": "53",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
+              "value": "-26%",
               "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -245,11 +254,11 @@
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Upbit Profit Crashes 85% Months After Korean Giants Paid $1.5 Billion to Buy In",
-            "link": "https://beincrypto.com/upbit-dunamu-profit-crash-q2-2026/",
+            "title": "This ETF Is Outperforming by Avoiding the S&P 500’s Biggest Problem",
+            "link": "https://www.marketbeat.com/articles/this-etf-is-outperforming-by-avoiding-the-s-and-p-500s-biggest-problem/?utm_source=yahoofinance&utm_medium=yahoofinance",
             "score": 5,
             "positive": [
-              "Buy"
+              "Outperform"
             ],
             "negative": []
           }
@@ -259,14 +268,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 182500,
-        "change_pct_1d": -2.92553191489362,
-        "market_cap": 5576305147904.0,
+        "price": 179200,
+        "change_pct_1d": -1.8082191780821932,
+        "market_cap": 5475473031168.0,
         "operating_margin": 0.37785,
         "revenue_growth": 0.28,
         "pe_ratio": null,
-        "drawdown_52w": 0.4527736131934033,
-        "rsi": 52.51767230046784,
+        "drawdown_52w": 0.4626686656671664,
+        "rsi": 51.11951321892876,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -278,13 +287,13 @@
           "영업이익률 38%",
           "매출 성장 +28%"
         ],
-        "entry_low": 171310,
-        "entry_high": 190493,
-        "target": 225662,
-        "stoploss": 158521,
+        "entry_low": 168605,
+        "entry_high": 186768,
+        "target": 220067,
+        "stoploss": 156496,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 38% / RSI 53 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 28% · 영업이익률 38%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 45% 떨어진 상태에서 RSI 53로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 38% / RSI 51 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 28% · 영업이익률 38%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 46% 떨어진 상태에서 RSI 51로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -300,13 +309,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "53",
+              "value": "51",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-45%",
+              "value": "-46%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -359,14 +368,14 @@
         "ticker": "267260",
         "name": "HD현대일렉트릭",
         "sector": "전선·전력인프라",
-        "price": 803000,
-        "change_pct_1d": 2.292993630573248,
-        "market_cap": 28902141460480.0,
+        "price": 785000,
+        "change_pct_1d": -2.241594022415938,
+        "market_cap": 28254272487424.0,
         "operating_margin": 0.25136,
         "revenue_growth": null,
         "pe_ratio": null,
-        "drawdown_52w": 0.4330019519243202,
-        "rsi": 51.677602316881966,
+        "drawdown_52w": 0.4457117462771997,
+        "rsi": 49.62178651738204,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -377,13 +386,13 @@
         "reasons": [
           "영업이익률 25%"
         ],
-        "entry_low": 759077,
-        "entry_high": 834374,
-        "target": 972418,
-        "stoploss": 708879,
+        "entry_low": 744068,
+        "entry_high": 814237,
+        "target": 942882,
+        "stoploss": 697288,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 25% / RSI 52 반등 신호",
-          "thesis": "HD현대일렉트릭(267260)는 영업이익률 25%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 43% 떨어진 상태에서 RSI 52로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 25% / RSI 50 반등 신호",
+          "thesis": "HD현대일렉트릭(267260)는 영업이익률 25%의 안정적 수익 구조를 가진 기업입니다. 52주 고점 대비 45% 떨어진 상태에서 RSI 50로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -399,13 +408,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "52",
+              "value": "50",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-43%",
+              "value": "-45%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -455,33 +464,33 @@
       "ticker": "207940",
       "name": "삼성바이오로직스",
       "sector": "바이오·헬스케어",
-      "price": 1548000,
-      "change_pct_1d": -1.0230179028132946,
-      "market_cap": 71658391994368.0,
+      "price": 1531000,
+      "change_pct_1d": -1.0981912144702788,
+      "market_cap": 70871448289280.0,
       "operating_margin": 0.46196997,
       "revenue_growth": 0.258,
       "pe_ratio": null,
-      "drawdown_52w": 0.21221374045801528,
-      "rsi": 56.714667611786524,
+      "drawdown_52w": 0.22086513994910942,
+      "rsi": 54.71084463214862,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 117.0,
+      "score": 107.0,
       "reasons": [
-        "52주 고점 대비 -21%",
+        "52주 고점 대비 -22%",
         "영업이익률 46%",
         "매출 성장 +26%"
       ],
-      "entry_low": 1502500,
-      "entry_high": 1580500,
-      "target": 1723500,
-      "stoploss": 1450500,
+      "entry_low": 1487000,
+      "entry_high": 1562429,
+      "target": 1700715,
+      "stoploss": 1436714,
       "narrative": {
-        "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 57 반등 신호",
-        "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 57로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "바이오·헬스케어 영업이익률 46% / RSI 55 반등 신호",
+        "thesis": "삼성바이오로직스(207940)는 매출 성장률 26% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 22% 떨어진 상태에서 RSI 55로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
@@ -497,13 +506,13 @@
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "57",
+            "value": "55",
             "ok": false,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-21%",
+            "value": "-22%",
             "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
@@ -556,7 +565,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 107.0,
+      "score_original": 97.0,
       "news_boost": 10.0,
       "news_positive": 2,
       "news_negative": 0,
@@ -573,11 +582,11 @@
         }
       ]
     },
-    "updated_at_iso": "2026-08-18T09:00:49.141772+09:00",
-    "updated_at_kst": "2026.08.18 (화) 09:00 KST"
+    "updated_at_iso": "2026-08-19T09:00:25.038881+09:00",
+    "updated_at_kst": "2026.08.19 (수) 09:00 KST"
   },
-  "updated_at_iso": "2026-08-18T22:57:34.860600+09:00",
-  "updated_at_kst": "2026.08.18 (화) 22:57 KST",
+  "updated_at_iso": "2026-08-19T09:00:25.038881+09:00",
+  "updated_at_kst": "2026.08.19 (수) 09:00 KST",
   "us": {
     "picks": [
       {
