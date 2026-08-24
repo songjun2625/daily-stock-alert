@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 15.48,
+      "value": 15.99,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 142.0,
+        "score": 147.0,
         "reasons": [
           "영업이익률 76%",
           "매출 성장 +257%"
@@ -119,32 +119,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 127.0,
-        "news_boost": 15.0,
-        "news_positive": 3,
+        "score_original": 142.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
             "title": "SK Hynix Is Buying Back 3.3% of Its Shares and Canceling Every One",
             "link": "https://www.fool.com/investing/2026/08/23/sk-hynix-is-buying-back-3-3-of-its-shares-and-canceling-every-one/",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "A $28.7 Billion Reason to Buy SK hynix Stock Now",
-            "link": "https://www.barchart.com/story/news/3986370/a-28-7-billion-reason-to-buy-sk-hynix-stock-now",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Is SK hynix (NasdaqGS:SKHY) Undervalued After Its 40 Trillion Won Buyback Plan?",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaqgs-skhy-undervalued-110906493.html",
             "score": 5,
             "positive": [
               "Buy"
@@ -492,7 +474,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 124.0,
+      "score": 139.0,
       "reasons": [
         "52주 고점 대비 -22%",
         "영업이익률 52%",
@@ -579,23 +561,23 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 114.0,
-      "news_boost": 10.0,
-      "news_positive": 2,
+      "score_original": 124.0,
+      "news_boost": 15.0,
+      "news_positive": 3,
       "news_negative": 0,
       "news_headlines": [
         {
-          "title": "Another Big Korean Tech Company Is Buying Back Shares",
-          "link": "https://www.investopedia.com/market-update-another-big-korean-tech-company-is-buying-back-shares-12065333",
+          "title": "110兆 환원에도 주가 급락한 삼성전자...배당·자사주 소각 황금 비율은?",
+          "link": "https://www.hankyung.com/article/202608248774i",
           "score": 5,
           "positive": [
-            "Buy"
+            "자사주 소각"
           ],
           "negative": []
         },
         {
-          "title": "삼성전자, 110조+α 역대급 주주환원…성과급용 자사주 15조 매입",
-          "link": "https://www.hankyung.com/article/2026082156601",
+          "title": "삼성전자 배당 낙수효과?…계열사 주주환원은 '온도차'",
+          "link": "https://www.hankyung.com/article/202608248834i",
           "score": 5,
           "positive": [
             "주주환원"
@@ -603,8 +585,8 @@
           "negative": []
         },
         {
-          "title": "삼성전자, 110조원 역대급 주주환원…SK하이닉스와 다른 점은?",
-          "link": "https://www.hankyung.com/article/202608215407i",
+          "title": "110조 쐈는데…삼성전자, 주주환원 발표 후 장 초반 급락",
+          "link": "https://www.hankyung.com/article/2026082478436",
           "score": 5,
           "positive": [
             "주주환원"
@@ -616,41 +598,41 @@
     "updated_at_iso": "2026-08-24T08:59:21.829777+09:00",
     "updated_at_kst": "2026.08.24 (월) 08:59 KST"
   },
-  "updated_at_iso": "2026-08-24T08:59:21.829777+09:00",
-  "updated_at_kst": "2026.08.24 (월) 08:59 KST",
+  "updated_at_iso": "2026-08-24T23:03:37.638784+09:00",
+  "updated_at_kst": "2026.08.24 (월) 23:03 KST",
   "us": {
     "picks": [
       {
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
-        "price": 366.55499267578125,
-        "price_krw": 507928,
-        "change_pct_1d": 0.6936224775297317,
-        "market_cap": 1743914795008.0,
+        "price": 362.3550109863281,
+        "price_krw": 501130,
+        "change_pct_1d": -1.654227444367229,
+        "market_cap": 1723932999680.0,
         "operating_margin": 0.48988,
         "revenue_growth": 0.479,
-        "pe_ratio": 60.990845,
+        "pe_ratio": 60.29201,
         "sector": "Technology",
-        "avg_volume": 19225008.5,
-        "rsi": 37.66622062656619,
-        "drawdown_52w": 0.23762876027021257,
+        "avg_volume": 19128534.7,
+        "rsi": 36.57628038605716,
+        "drawdown_52w": 0.24636399866938755,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 1.74,
-        "score": 128.73,
+        "score": 138.73,
         "reasons": [
-          "RSI 38(과매도 반등 후보)",
-          "52주 고점 대비 -24%",
+          "RSI 37(과매도 반등 후보)",
+          "52주 고점 대비 -25%",
           "영업이익률 49%"
         ],
-        "entry_low": 356.05,
-        "entry_high": 374.06,
-        "target": 407.08,
-        "stoploss": 344.04,
+        "entry_low": 352.95,
+        "entry_high": 369.08,
+        "target": 398.65,
+        "stoploss": 342.19,
         "narrative": {
-          "one_liner": "Technology 영업이익률 49%, RSI 38 반등 신호.",
-          "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 24% 떨어진 상태에서 RSI 38로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 49%, RSI 37 반등 신호.",
+          "thesis": "Broadcom Inc.는 매출 성장률 48% · 영업이익률 49%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -666,13 +648,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "38",
+              "value": "37",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-24%",
+              "value": "-25%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -723,61 +705,149 @@
           "hold_days": 5
         },
         "score_original": 133.73,
-        "news_boost": -5.0,
+        "news_boost": 5.0,
         "news_positive": 1,
-        "news_negative": 1,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Nvidia initiated, Teradyne downgraded: Wall Street's top analyst calls",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-initiated-teradyne-downgraded-wall-133824309.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "downgrade"
-            ]
-          },
-          {
-            "title": "Latest News In AI Chips - Cloudera NVIDIA Partnership Boosts Apache Spark Performance",
-            "link": "https://finance.yahoo.com/technology/ai/articles/latest-news-ai-chips-cloudera-113739829.html",
+            "title": "Billionaire Investor Stanley Druckenmiller Sold Broadcom, Intel, and Micron and Bought Another Chip Stock That Expects to Double Data Center Sales in 2027",
+            "link": "https://www.fool.com/investing/2026/08/24/billionaire-stanley-druckenmiller-sold-micron-2027/",
             "score": 5,
             "positive": [
-              "partnership"
+              "data center"
             ],
             "negative": []
           }
         ]
       },
       {
+        "ticker": "APP",
+        "name": "Applovin Corporation",
+        "price": 301.42498779296875,
+        "price_krw": 416865,
+        "change_pct_1d": -1.421003164737944,
+        "market_cap": 101260566528.0,
+        "operating_margin": 0.77678,
+        "revenue_growth": 0.528,
+        "pe_ratio": 23.186537,
+        "sector": "Communication Services",
+        "avg_volume": 7112230.55,
+        "rsi": 28.77718390119452,
+        "drawdown_52w": 0.5891153246669399,
+        "macd_golden_cross": true,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 0.43,
+        "score": 110.0,
+        "reasons": [
+          "MACD 골든크로스",
+          "영업이익률 78%"
+        ],
+        "entry_low": 288.11,
+        "entry_high": 310.94,
+        "target": 352.79,
+        "stoploss": 272.89,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 78%, RSI 29 반등 신호.",
+          "thesis": "Applovin Corporation는 매출 성장률 53% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 59% 떨어진 상태에서 RSI 29로 과매도(반등 임박) 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "78%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "53%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "29",
+              "ok": false,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-59%",
+              "ok": false,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "✓",
+              "ok": true,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+0.4%",
+              "ok": false,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 37.5
+            },
+            {
+              "name": "MACD 골든크로스",
+              "points": 10
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
         "ticker": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 549.60498046875,
-        "price_krw": 761577,
-        "change_pct_1d": 0.6916005460881225,
-        "market_cap": 1400185815040.0,
+        "price": 553.760009765625,
+        "price_krw": 765839,
+        "change_pct_1d": 0.7019431133278076,
+        "market_cap": 1410707095552.0,
         "operating_margin": 0.34827,
         "revenue_growth": 0.28,
-        "pe_ratio": 20.7173,
+        "pe_ratio": 20.849398,
         "sector": "Communication Services",
-        "avg_volume": 16810696.25,
-        "rsi": 38.546800873822306,
-        "drawdown_52w": 0.29329530851632735,
+        "avg_volume": 16888085.5,
+        "rsi": 40.26109557034721,
+        "drawdown_52w": 0.2879526568148829,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": -14.42,
-        "score": 111.03,
+        "score": 86.03,
         "reasons": [
-          "RSI 39(과매도 반등 후보)",
           "52주 고점 대비 -29%",
           "영업이익률 35%"
         ],
-        "entry_low": 537.75,
-        "entry_high": 558.07,
-        "target": 595.33,
-        "stoploss": 524.2,
+        "entry_low": 542.17,
+        "entry_high": 562.04,
+        "target": 598.45,
+        "stoploss": 528.93,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 35%, RSI 39 반등 신호.",
-          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 35%, RSI 40 반등 신호.",
+          "thesis": "Meta Platforms, Inc.는 매출 성장률 28% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 29% 떨어진 상태에서 RSI 40로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -793,7 +863,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "39",
+              "value": "40",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -849,36 +919,18 @@
           ],
           "hold_days": 5
         },
-        "score_original": 116.03,
-        "news_boost": -5.0,
-        "news_positive": 1,
+        "score_original": 96.03,
+        "news_boost": -10.0,
+        "news_positive": 0,
         "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Tech stocks today: Nvidia earnings on the horizon, as Anthropic prepares IPO plans",
-            "link": "https://finance.yahoo.com/technology/live/tech-stocks-today-nvidia-earnings-on-the-horizon-as-anthropic-prepares-ipo-plans-132945569.html",
-            "score": 5,
-            "positive": [
-              "ipo"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Update: Market Chatter: Meta Platforms, Google, Snap See Teen Dismiss Lawsuit Ahead of October Trial",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-meta-platforms-google-124949911.html",
+            "title": "Gary Black Sees META Stock Underperform S&P 500 As $1.4 Trillion ‘Tobacco-Like’ Legal Overhang Looms",
+            "link": "https://stocktwits.com/news-articles/markets/equity/meta-stock-gary-black-1-4-trillion-tobacco-legal-overhang-sp-500/cZYKWq6RJnr",
             "score": -10,
             "positive": [],
             "negative": [
-              "lawsuit"
-            ]
-          },
-          {
-            "title": "Market Chatter: Meta Platforms, Google, Snap See Teen Dismiss Lawsuit Ahead of October Trial",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-meta-platforms-google-081148927.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "lawsuit"
+              "underperform"
             ]
           }
         ]
@@ -886,13 +938,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 15.48,
+      "vix": 15.99,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-08-21T22:59:03.275207+09:00",
-    "updated_at_kst": "2026.08.21 (금) 22:59 KST"
+    "updated_at_iso": "2026-08-24T23:03:37.638784+09:00",
+    "updated_at_kst": "2026.08.24 (월) 23:03 KST"
   },
   "futures": {
     "picks": [
