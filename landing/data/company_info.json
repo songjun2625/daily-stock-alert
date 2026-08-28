@@ -5,12 +5,6 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "055550": {
-    "ticker": "055550",
-    "market": "kr",
-    "name": "신한지주",
-    "sector": "금융"
-  },
   "267260": {
     "ticker": "267260",
     "market": "kr",
@@ -22,19 +16,25 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.87,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -2.55,
+    "sector_status": "📉 약세"
+  },
+  "298040": {
+    "ticker": "298040",
+    "market": "kr",
+    "name": "효성중공업",
+    "sector": "전선·전력인프라"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.87,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -2.55,
+    "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-08-28T07:58:30+09:00",
+    "generated_at_iso": "2026-08-28T16:06:10+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
