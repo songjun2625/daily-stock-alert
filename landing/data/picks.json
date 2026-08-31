@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 14.43,
+      "value": 15.02,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 137.0,
+        "score": 147.0,
         "reasons": [
           "52주 고점 대비 -31%",
           "영업이익률 52%",
@@ -124,25 +124,35 @@
           ],
           "hold_days": 5
         },
-        "score_original": 127.0,
+        "score_original": 137.0,
         "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
+        "news_positive": 4,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Jim Cramer Said Micron Technology, Inc. (NASDAQ:MU) Fell Because Of Samsung’s Share Buybacks",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-said-micron-technology-091630456.html",
+            "title": "The Memory Shortage Isn’t Close to Ending — Samsung Just Locked Up 70% of HBM Capacity Through 2031",
+            "link": "https://247wallst.com/investing/2026/08/31/the-memory-shortage-isnt-close-to-ending-samsung-just-locked-up-70-of-hbm-capacity-through-2031/",
             "score": 5,
             "positive": [
-              "Buy"
+              "HBM"
             ],
             "negative": []
           },
           {
-            "title": "\"삼성전자, HBM 경쟁력 회복…목표가 45만원으로 상향\"-LS",
-            "link": "https://www.hankyung.com/article/2026083125036",
+            "title": "코스피 막판 반등…삼전닉스 주주환원이 떠받쳤다",
+            "link": "https://www.hankyung.com/article/2026083146481",
             "score": 5,
             "positive": [
+              "주주환원"
+            ],
+            "negative": []
+          },
+          {
+            "title": "삼성전자 목표가 상향…HBM4 수율개선 효과",
+            "link": "https://www.hankyung.com/article/2026083146451",
+            "score": 10,
+            "positive": [
+              "목표가 상향",
               "HBM"
             ],
             "negative": []
@@ -267,7 +277,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 120.0,
+        "score": 125.0,
         "reasons": [
           "5/20일선 정배열 시작",
           "영업이익률 59%",
@@ -353,7 +363,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 115.0,
+        "score_original": 120.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -516,7 +526,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 127.0,
+      "score": 142.0,
       "reasons": [
         "RSI 44(과매도 반등 후보)",
         "52주 고점 대비 -25%",
@@ -608,7 +618,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 112.0,
+      "score_original": 127.0,
       "news_boost": 15.0,
       "news_positive": 3,
       "news_negative": 0,
@@ -624,8 +634,8 @@
           "negative": []
         },
         {
-          "title": "삼성바이오, 인수자금 마련 위해 3조 유증",
-          "link": "https://www.hankyung.com/article/2026082800571",
+          "title": "삼성바이오, 2.7조 폴리펩타이드 인수 공개매수 착수",
+          "link": "https://www.yna.co.kr/view/AKR20260831110500017",
           "score": 5,
           "positive": [
             "인수"
@@ -637,20 +647,20 @@
     "updated_at_iso": "2026-08-31T10:38:26.725245+09:00",
     "updated_at_kst": "2026.08.31 (월) 10:38 KST"
   },
-  "updated_at_iso": "2026-08-31T10:38:26.725245+09:00",
-  "updated_at_kst": "2026.08.31 (월) 10:38 KST",
+  "updated_at_iso": "2026-09-01T04:30:46.724236+09:00",
+  "updated_at_kst": "2026.09.01 (화) 04:30 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 14.43,
+      "vix": 15.02,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-08-29T08:03:15.230253+09:00",
-    "updated_at_kst": "2026.08.29 (토) 08:03 KST"
+    "updated_at_iso": "2026-09-01T04:30:46.724236+09:00",
+    "updated_at_kst": "2026.09.01 (화) 04:30 KST"
   },
   "futures": {
     "picks": [
