@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 15.02,
+      "value": 16.01,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -271,7 +271,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 120.0,
+        "score": 125.0,
         "reasons": [
           "5/20일선 정배열 시작",
           "영업이익률 59%",
@@ -357,7 +357,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 115.0,
+        "score_original": 120.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -645,20 +645,20 @@
     "updated_at_iso": "2026-09-01T11:04:43.021444+09:00",
     "updated_at_kst": "2026.09.01 (화) 11:04 KST"
   },
-  "updated_at_iso": "2026-09-01T11:04:43.021444+09:00",
-  "updated_at_kst": "2026.09.01 (화) 11:04 KST",
+  "updated_at_iso": "2026-09-02T02:20:07.272432+09:00",
+  "updated_at_kst": "2026.09.02 (수) 02:20 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 15.02,
+      "vix": 16.01,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-09-01T04:30:46.724236+09:00",
-    "updated_at_kst": "2026.09.01 (화) 04:30 KST"
+    "updated_at_iso": "2026-09-02T02:20:07.272432+09:00",
+    "updated_at_kst": "2026.09.02 (수) 02:20 KST"
   },
   "futures": {
     "picks": [
