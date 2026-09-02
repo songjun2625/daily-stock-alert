@@ -10,8 +10,8 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -2.35,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.91,
+    "sector_status": "❄️ 부진"
   },
   "267260": {
     "ticker": "267260",
@@ -30,11 +30,11 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -2.35,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.91,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-02T10:27:04+09:00",
+    "generated_at_iso": "2026-09-03T02:10:55+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
