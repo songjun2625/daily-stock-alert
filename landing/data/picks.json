@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 14.0,
+      "value": 15.3,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 145.0,
+        "score": 150.0,
         "reasons": [
           "영업이익률 76%",
           "매출 성장 +257%"
@@ -119,9 +119,9 @@
           ],
           "hold_days": 5
         },
-        "score_original": 135.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
+        "score_original": 145.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
@@ -130,15 +130,6 @@
             "score": 5,
             "positive": [
               "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "삼성전자, SK하이닉스 FCF 50% 주주환원이 던지는 질문 [이강연의 재무제표 읽기]",
-            "link": "https://www.hankyung.com/article/202608313342i",
-            "score": 5,
-            "positive": [
-              "주주환원"
             ],
             "negative": []
           }
@@ -574,20 +565,20 @@
     "updated_at_iso": "2026-09-07T10:19:25.879456+09:00",
     "updated_at_kst": "2026.09.07 (월) 10:19 KST"
   },
-  "updated_at_iso": "2026-09-07T10:19:25.879456+09:00",
-  "updated_at_kst": "2026.09.07 (월) 10:19 KST",
+  "updated_at_iso": "2026-09-08T03:15:36.859959+09:00",
+  "updated_at_kst": "2026.09.08 (화) 03:15 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 14.0,
+      "vix": 15.3,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-09-05T01:52:48.786100+09:00",
-    "updated_at_kst": "2026.09.05 (토) 01:52 KST"
+    "updated_at_iso": "2026-09-08T03:15:36.859959+09:00",
+    "updated_at_kst": "2026.09.08 (화) 03:15 KST"
   },
   "futures": {
     "picks": [
