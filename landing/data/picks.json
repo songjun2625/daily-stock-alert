@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 15.28,
+      "value": 16.29,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 149.0,
+        "score": 154.0,
         "reasons": [
           "52주 고점 대비 -25%",
           "5/20일선 정배열 시작",
@@ -128,7 +128,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 149.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "2분기 기업 성장성·수익성 역대 최고…삼전·닉스 빼도 개선",
+            "link": "https://www.yna.co.kr/view/AKR20260909093500002",
+            "score": 5,
+            "positive": [
+              "역대 최고"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "062040",
@@ -559,20 +574,20 @@
     "updated_at_iso": "2026-09-09T10:36:12.668421+09:00",
     "updated_at_kst": "2026.09.09 (수) 10:36 KST"
   },
-  "updated_at_iso": "2026-09-09T10:36:12.668421+09:00",
-  "updated_at_kst": "2026.09.09 (수) 10:36 KST",
+  "updated_at_iso": "2026-09-10T02:10:17.221802+09:00",
+  "updated_at_kst": "2026.09.10 (목) 02:10 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 15.28,
+      "vix": 16.29,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-09-09T02:15:49.219435+09:00",
-    "updated_at_kst": "2026.09.09 (수) 02:15 KST"
+    "updated_at_iso": "2026-09-10T02:10:17.221802+09:00",
+    "updated_at_kst": "2026.09.10 (목) 02:10 KST"
   },
   "futures": {
     "picks": [
