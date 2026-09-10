@@ -16,7 +16,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 5.89,
+    "sector_momentum_5d_pct": 7.97,
     "sector_status": "🔥 강세"
   },
   "042700": {
@@ -24,7 +24,7 @@
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 5.89,
+    "sector_momentum_5d_pct": 7.97,
     "sector_status": "🔥 강세"
   },
   "005930": {
@@ -32,11 +32,11 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 5.89,
+    "sector_momentum_5d_pct": 7.97,
     "sector_status": "🔥 강세"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-10T10:30:24+09:00",
+    "generated_at_iso": "2026-09-11T02:01:04+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
