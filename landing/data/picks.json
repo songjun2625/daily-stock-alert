@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.34,
+      "value": 15.72,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -121,6 +121,131 @@
         }
       },
       {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 1781000,
+        "change_pct_1d": -3.8855909336211525,
+        "market_cap": 1264251540865024.0,
+        "operating_margin": 0.76328003,
+        "revenue_growth": 2.568,
+        "pe_ratio": null,
+        "drawdown_52w": 0.38972725245597517,
+        "rsi": 53.487506942331386,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 132.0,
+        "reasons": [
+          "52주 고점 대비 -39%",
+          "영업이익률 76%",
+          "매출 성장 +257%"
+        ],
+        "entry_low": 1716072,
+        "entry_high": 1827377,
+        "target": 2031436,
+        "stoploss": 1641869,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 76% / RSI 53 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 39% 떨어진 상태에서 RSI 53로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "76%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "257%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "53",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-39%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 127.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "AMD, BE, CRWV In Focus: Situational Awareness Has Been Reportedly Buying Options Tied To These Stocks",
+            "link": "https://stocktwits.com/news-articles/markets/equity/amd-be-crwv-in-focus-situational-awareness-has-been-reportedly-buying-options-tied-to-these-stocks/cZtXVIiRBbT",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "Leopold Aschenbrenner's Situational Awareness buying options after collapse",
+            "link": "https://qz.com/situational-awareness-options-amd-coreweave-bloom-energy-091126",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
+      },
+      {
         "ticker": "036570",
         "name": "엔씨소프트",
         "sector": "코스피·코스닥",
@@ -221,107 +346,6 @@
             {
               "name": "RSI 30~45 구간",
               "points": 20
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "sector": "반도체",
-        "price": 1781000,
-        "change_pct_1d": -3.8855909336211525,
-        "market_cap": 1264251540865024.0,
-        "operating_margin": 0.76328003,
-        "revenue_growth": 2.568,
-        "pe_ratio": null,
-        "drawdown_52w": 0.38972725245597517,
-        "rsi": 53.487506942331386,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 127.0,
-        "reasons": [
-          "52주 고점 대비 -39%",
-          "영업이익률 76%",
-          "매출 성장 +257%"
-        ],
-        "entry_low": 1716072,
-        "entry_high": 1827377,
-        "target": 2031436,
-        "stoploss": 1641869,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 76% / RSI 53 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 39% 떨어진 상태에서 RSI 53로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "76%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "257%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "53",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-39%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
             }
           ],
           "hold_days": 5
@@ -446,7 +470,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 109.0,
+      "score": 114.0,
       "reasons": [
         "52주 고점 대비 -28%",
         "영업이익률 52%",
@@ -533,14 +557,23 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 114.0,
-      "news_boost": -5.0,
+      "score_original": 109.0,
+      "news_boost": 5.0,
       "news_positive": 1,
-      "news_negative": 1,
+      "news_negative": 0,
       "news_headlines": [
         {
           "title": "Why hardware will attract buyers to Apple's new lineup over AI features",
           "link": "https://finance.yahoo.com/video/why-hardware-attract-buyers-apples-192906871.html",
+          "score": 5,
+          "positive": [
+            "Buy"
+          ],
+          "negative": []
+        },
+        {
+          "title": "Samsung Gets $250 For Every iPhone Duo You Buy",
+          "link": "https://beincrypto.com/apple-samsung-iphone-duo-folding-screen-deal/",
           "score": 5,
           "positive": [
             "Buy"
@@ -555,35 +588,26 @@
             "Buy"
           ],
           "negative": []
-        },
-        {
-          "title": "[특징주] 삼전닉스, 약보합 마감…기관은 사고, 외국인은 팔고(종합)",
-          "link": "https://www.yna.co.kr/view/AKR20260910039551008",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "사고"
-          ]
         }
       ]
     },
     "updated_at_iso": "2026-09-11T10:30:06.711181+09:00",
     "updated_at_kst": "2026.09.11 (금) 10:30 KST"
   },
-  "updated_at_iso": "2026-09-11T10:30:06.711181+09:00",
-  "updated_at_kst": "2026.09.11 (금) 10:30 KST",
+  "updated_at_iso": "2026-09-12T02:02:22.325682+09:00",
+  "updated_at_kst": "2026.09.12 (토) 02:02 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 17.34,
+      "vix": 15.72,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-09-11T02:01:03.683147+09:00",
-    "updated_at_kst": "2026.09.11 (금) 02:01 KST"
+    "updated_at_iso": "2026-09-12T02:02:22.325682+09:00",
+    "updated_at_kst": "2026.09.12 (토) 02:02 KST"
   },
   "futures": {
     "picks": [
