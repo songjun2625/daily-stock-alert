@@ -5,38 +5,38 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "036570": {
-    "ticker": "036570",
-    "market": "kr",
-    "name": "엔씨소프트",
-    "sector": "코스피·코스닥"
-  },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -4.99,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -0.83,
+    "sector_status": "➡️ 보합"
   },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -4.99,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -0.83,
+    "sector_status": "➡️ 보합"
+  },
+  "036570": {
+    "ticker": "036570",
+    "market": "kr",
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -4.99,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -0.83,
+    "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-18T02:38:19+09:00",
+    "generated_at_iso": "2026-09-18T10:34:36+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
