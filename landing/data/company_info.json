@@ -4,20 +4,20 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 8.97,
+    "sector_momentum_5d_pct": 7.29,
     "sector_status": "🔥 강세"
-  },
-  "298040": {
-    "ticker": "298040",
-    "market": "kr",
-    "name": "효성중공업",
-    "sector": "전선·전력인프라"
   },
   "009150": {
     "ticker": "009150",
     "market": "kr",
     "name": "삼성전기",
     "sector": "전자부품"
+  },
+  "298040": {
+    "ticker": "298040",
+    "market": "kr",
+    "name": "효성중공업",
+    "sector": "전선·전력인프라"
   },
   "062040": {
     "ticker": "062040",
@@ -30,12 +30,67 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 8.97,
+    "sector_momentum_5d_pct": 7.29,
     "sector_status": "🔥 강세"
   },
+  "NVDA": {
+    "ticker": "NVDA",
+    "market": "us",
+    "name": "NVIDIA Corporation",
+    "sector": "Technology",
+    "next_earnings": "2026-11-17",
+    "last_earnings_surprise_pct": 6.16,
+    "last_earnings_date": "2026-08-26",
+    "sector_momentum_5d_pct": 6.56,
+    "sector_status": "🔥 강세"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "market": "us",
+    "name": "Broadcom Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-12-09",
+    "last_earnings_surprise_pct": 2.53,
+    "last_earnings_date": "2026-09-02",
+    "sector_momentum_5d_pct": 6.56,
+    "sector_status": "🔥 강세"
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "market": "us",
+    "name": "Adobe Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-12-09",
+    "last_earnings_surprise_pct": 0.71,
+    "last_earnings_date": "2026-09-10",
+    "sector_momentum_5d_pct": 6.56,
+    "sector_status": "🔥 강세"
+  },
+  "GE": {
+    "ticker": "GE",
+    "market": "us",
+    "name": "GE Aerospace",
+    "sector": "Industrials",
+    "next_earnings": "2026-10-20",
+    "last_earnings_surprise_pct": 8.62,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": 0.77,
+    "sector_status": "➡️ 보합"
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "market": "us",
+    "name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-10-20",
+    "last_earnings_surprise_pct": 1.45,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": 0.12,
+    "sector_status": "➡️ 보합"
+  },
   "_meta": {
-    "generated_at_iso": "2026-09-22T10:55:20+09:00",
-    "tickers_count": 5,
+    "generated_at_iso": "2026-09-23T02:39:09+09:00",
+    "tickers_count": 10,
     "dart_enabled": false
   }
 }
