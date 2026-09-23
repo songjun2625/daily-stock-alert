@@ -1,24 +1,4 @@
 {
-  "005930": {
-    "ticker": "005930",
-    "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 7.29,
-    "sector_status": "🔥 강세"
-  },
-  "009150": {
-    "ticker": "009150",
-    "market": "kr",
-    "name": "삼성전기",
-    "sector": "전자부품"
-  },
-  "298040": {
-    "ticker": "298040",
-    "market": "kr",
-    "name": "효성중공업",
-    "sector": "전선·전력인프라"
-  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
@@ -30,7 +10,31 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 7.29,
+    "sector_momentum_5d_pct": 6.38,
+    "sector_status": "🔥 강세"
+  },
+  "042700": {
+    "ticker": "042700",
+    "market": "kr",
+    "name": "한미반도체",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 6.38,
+    "sector_status": "🔥 강세"
+  },
+  "196170": {
+    "ticker": "196170",
+    "market": "kr",
+    "name": "알테오젠",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 0.89,
+    "sector_status": "➡️ 보합"
+  },
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 6.38,
     "sector_status": "🔥 강세"
   },
   "NVDA": {
@@ -41,8 +45,8 @@
     "next_earnings": "2026-11-17",
     "last_earnings_surprise_pct": 6.16,
     "last_earnings_date": "2026-08-26",
-    "sector_momentum_5d_pct": 6.56,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -52,8 +56,8 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 2.53,
     "last_earnings_date": "2026-09-02",
-    "sector_momentum_5d_pct": 6.56,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "ADBE": {
     "ticker": "ADBE",
@@ -63,8 +67,8 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": 6.56,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "GE": {
     "ticker": "GE",
@@ -74,8 +78,8 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 8.62,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 0.77,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "NFLX": {
     "ticker": "NFLX",
@@ -85,11 +89,11 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 1.45,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 0.12,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": NaN,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-23T02:39:09+09:00",
+    "generated_at_iso": "2026-09-23T10:50:25+09:00",
     "tickers_count": 10,
     "dart_enabled": false
   }
