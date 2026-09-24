@@ -37,9 +37,53 @@
     "sector_momentum_5d_pct": 0.36,
     "sector_status": "➡️ 보합"
   },
+  "AVGO": {
+    "ticker": "AVGO",
+    "market": "us",
+    "name": "Broadcom Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-12-09",
+    "last_earnings_surprise_pct": 2.53,
+    "last_earnings_date": "2026-09-02",
+    "sector_momentum_5d_pct": 5.74,
+    "sector_status": "🔥 강세"
+  },
+  "ASML": {
+    "ticker": "ASML",
+    "market": "us",
+    "name": "ASML Holding N.V. - New York Re",
+    "sector": "Technology",
+    "next_earnings": "2026-10-14",
+    "last_earnings_surprise_pct": 9.09,
+    "last_earnings_date": "2026-07-13",
+    "sector_momentum_5d_pct": 5.74,
+    "sector_status": "🔥 강세"
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "market": "us",
+    "name": "Adobe Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-12-09",
+    "last_earnings_surprise_pct": 0.71,
+    "last_earnings_date": "2026-09-10",
+    "sector_momentum_5d_pct": 5.74,
+    "sector_status": "🔥 강세"
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "market": "us",
+    "name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-10-20",
+    "last_earnings_surprise_pct": 1.45,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": 0.89,
+    "sector_status": "➡️ 보합"
+  },
   "_meta": {
-    "generated_at_iso": "2026-09-24T10:40:30+09:00",
-    "tickers_count": 5,
+    "generated_at_iso": "2026-09-25T02:52:25+09:00",
+    "tickers_count": 9,
     "dart_enabled": false
   }
 }
