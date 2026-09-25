@@ -45,7 +45,7 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 2.53,
     "last_earnings_date": "2026-09-02",
-    "sector_momentum_5d_pct": 5.74,
+    "sector_momentum_5d_pct": 5.98,
     "sector_status": "🔥 강세"
   },
   "ASML": {
@@ -56,7 +56,7 @@
     "next_earnings": "2026-10-14",
     "last_earnings_surprise_pct": 9.09,
     "last_earnings_date": "2026-07-13",
-    "sector_momentum_5d_pct": 5.74,
+    "sector_momentum_5d_pct": 5.98,
     "sector_status": "🔥 강세"
   },
   "ADBE": {
@@ -67,7 +67,7 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": 5.74,
+    "sector_momentum_5d_pct": 5.98,
     "sector_status": "🔥 강세"
   },
   "NFLX": {
@@ -78,11 +78,11 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 1.45,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 0.89,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.21,
+    "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-25T02:52:25+09:00",
+    "generated_at_iso": "2026-09-25T10:57:34+09:00",
     "tickers_count": 9,
     "dart_enabled": false
   }
