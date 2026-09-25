@@ -45,18 +45,18 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 2.53,
     "last_earnings_date": "2026-09-02",
-    "sector_momentum_5d_pct": 5.98,
+    "sector_momentum_5d_pct": 3.86,
     "sector_status": "🔥 강세"
   },
-  "ASML": {
-    "ticker": "ASML",
+  "MSFT": {
+    "ticker": "MSFT",
     "market": "us",
-    "name": "ASML Holding N.V. - New York Re",
+    "name": "Microsoft Corporation",
     "sector": "Technology",
-    "next_earnings": "2026-10-14",
-    "last_earnings_surprise_pct": 9.09,
-    "last_earnings_date": "2026-07-13",
-    "sector_momentum_5d_pct": 5.98,
+    "next_earnings": "2026-10-28",
+    "last_earnings_surprise_pct": 11.81,
+    "last_earnings_date": "2026-07-29",
+    "sector_momentum_5d_pct": 3.86,
     "sector_status": "🔥 강세"
   },
   "ADBE": {
@@ -67,7 +67,7 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": 5.98,
+    "sector_momentum_5d_pct": 3.86,
     "sector_status": "🔥 강세"
   },
   "NFLX": {
@@ -78,11 +78,11 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 1.45,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 1.21,
+    "sector_momentum_5d_pct": 2.18,
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-25T10:57:34+09:00",
+    "generated_at_iso": "2026-09-26T02:57:56+09:00",
     "tickers_count": 9,
     "dart_enabled": false
   }

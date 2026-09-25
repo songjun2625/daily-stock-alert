@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 15.74,
+      "value": 14.98,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 150.0,
+        "score": 160.0,
         "reasons": [
           "RSI 33(과매도 반등 후보)",
           "52주 고점 대비 -30%",
@@ -129,7 +129,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 140.0,
+        "score_original": 150.0,
         "news_boost": 10.0,
         "news_positive": 2,
         "news_negative": 0,
@@ -265,7 +265,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 127.0,
+        "score": 132.0,
         "reasons": [
           "52주 고점 대비 -36%",
           "영업이익률 76%",
@@ -346,7 +346,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 127.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Are AI Memory Stocks Ready For Another Run? Micron, Sandisk Attempt To Clear New Buy Points",
+            "link": "https://www.investors.com/research/ibd-industry-themes/micron-stock-mu-sandisk-sndk-memory-stocks/?src=A00220&yptr=yahoo",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "042700",
@@ -467,7 +482,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 130.0,
+      "score": 135.0,
       "reasons": [
         "RSI 35(과매도 반등 후보)",
         "영업이익률 50%",
@@ -554,7 +569,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 125.0,
+      "score_original": 130.0,
       "news_boost": 5.0,
       "news_positive": 1,
       "news_negative": 0,
@@ -573,40 +588,40 @@
     "updated_at_iso": "2026-09-25T10:57:27.766660+09:00",
     "updated_at_kst": "2026.09.25 (금) 10:57 KST"
   },
-  "updated_at_iso": "2026-09-25T10:57:27.766660+09:00",
-  "updated_at_kst": "2026.09.25 (금) 10:57 KST",
+  "updated_at_iso": "2026-09-26T02:57:52.321838+09:00",
+  "updated_at_kst": "2026.09.26 (토) 02:57 KST",
   "us": {
     "picks": [
       {
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
-        "price": 349.8900146484375,
-        "price_krw": 478492,
-        "change_pct_1d": -1.436653349738215,
-        "market_cap": 1670245515264.0,
+        "price": 352.8299865722656,
+        "price_krw": 478399,
+        "change_pct_1d": 0.7049895319023447,
+        "market_cap": 1684279787520.0,
         "operating_margin": 0.54307,
         "revenue_growth": 0.855,
-        "pe_ratio": 44.685825,
+        "pe_ratio": 44.946495,
         "sector": "Technology",
-        "avg_volume": 27175040.4,
-        "rsi": 42.11441120097157,
-        "drawdown_52w": 0.27096388118586745,
+        "avg_volume": 27059435.65,
+        "rsi": 44.05413079526535,
+        "drawdown_52w": 0.26483815803044464,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 2.53,
         "score": 115.0,
         "reasons": [
-          "52주 고점 대비 -27%",
+          "52주 고점 대비 -26%",
           "영업이익률 54%"
         ],
-        "entry_low": 342.72,
-        "entry_high": 355.01,
-        "target": 377.54,
-        "stoploss": 334.53,
+        "entry_low": 345.73,
+        "entry_high": 357.9,
+        "target": 380.21,
+        "stoploss": 337.62,
         "narrative": {
-          "one_liner": "Technology 영업이익률 54%, RSI 42 반등 신호.",
-          "thesis": "Broadcom Inc.는 매출 성장률 86% · 영업이익률 54%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 27% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 54%, RSI 44 반등 신호.",
+          "thesis": "Broadcom Inc.는 매출 성장률 86% · 영업이익률 54%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 44로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -622,13 +637,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "42",
+              "value": "44",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-27%",
+              "value": "-26%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -680,58 +695,58 @@
         }
       },
       {
-        "ticker": "ASML",
-        "name": "ASML Holding N.V. - New York Re",
-        "price": 1722.7750244140625,
-        "price_krw": 2355981,
-        "change_pct_1d": -1.2515668900691224,
-        "market_cap": 661717909504.0,
-        "operating_margin": 0.37057,
-        "revenue_growth": 0.213,
-        "pe_ratio": 59.140923,
+        "ticker": "MSFT",
+        "name": "Microsoft Corporation",
+        "price": 517.3400268554688,
+        "price_krw": 701456,
+        "change_pct_1d": 3.898145214226134,
+        "market_cap": 3841532100608.0,
+        "operating_margin": 0.45111,
+        "revenue_growth": 0.177,
+        "pe_ratio": 28.789095,
         "sector": "Technology",
-        "avg_volume": 1272440.55,
-        "rsi": 52.59514375608365,
-        "drawdown_52w": 0.132920265989336,
+        "avg_volume": 21184302.8,
+        "rsi": 63.76545508696998,
+        "drawdown_52w": 0.037768944185120376,
         "macd_golden_cross": false,
         "ma_aligned_up": true,
         "volume_spike": false,
-        "earnings_surprise_pct": 9.09,
-        "score": 108.27,
+        "earnings_surprise_pct": 11.81,
+        "score": 107.94,
         "reasons": [
           "5/20일선 정배열 시작",
-          "영업이익률 37%",
-          "어닝 서프라이즈 +9.1%"
+          "영업이익률 45%",
+          "어닝 서프라이즈 +11.8%"
         ],
-        "entry_low": 1683.95,
-        "entry_high": 1750.51,
-        "target": 1872.54,
-        "stoploss": 1639.57,
+        "entry_low": 509.68,
+        "entry_high": 522.81,
+        "target": 546.88,
+        "stoploss": 500.93,
         "narrative": {
-          "one_liner": "Technology 영업이익률 37%, 어닝 서프라이즈 +9.1% / RSI 53 반등 신호.",
-          "thesis": "ASML Holding N.V. - New York Re는 매출 성장률 21% · 영업이익률 37%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 13% 떨어진 상태에서 RSI 53로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "one_liner": "Technology 영업이익률 45%, 어닝 서프라이즈 +11.8% / RSI 64 반등 신호.",
+          "thesis": "Microsoft Corporation는 매출 성장률 18% · 영업이익률 45%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 4% 떨어진 상태에서 RSI 64로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
           "signals": [
             {
               "label": "영업이익률",
-              "value": "37%",
+              "value": "45%",
               "ok": true,
               "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
             },
             {
               "label": "매출 성장",
-              "value": "21%",
+              "value": "18%",
               "ok": true,
               "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "53",
+              "value": "64",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-13%",
+              "value": "-4%",
               "ok": false,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -755,7 +770,7 @@
             },
             {
               "label": "어닝 서프라이즈",
-              "value": "+9.1%",
+              "value": "+11.8%",
               "ok": true,
               "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
             }
@@ -764,11 +779,11 @@
           "score_breakdown": [
             {
               "name": "영업이익률 ≥20%",
-              "points": 46.3
+              "points": 56.4
             },
             {
               "name": "매출 성장 ≥10%",
-              "points": 31.9
+              "points": 26.5
             },
             {
               "name": "5/20일선 정배열",
@@ -781,23 +796,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 103.27,
+        "score_original": 102.94,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "3 AI Infrastructure Stocks Investors Should Watch As Data Center Spending Builds",
-            "link": "https://finance.yahoo.com/technology/ai/articles/3-ai-infrastructure-stocks-investors-091849195.html",
-            "score": 5,
-            "positive": [
-              "data center"
-            ],
-            "negative": []
-          },
-          {
-            "title": "Morphotonics raises €40M to expand its display tech into data centers",
-            "link": "https://finance.yahoo.com/technology/articles/morphotonics-raises-40m-expand-display-060000218.html",
+            "title": "Microsoft CEO: We 'have to earn that permission' to build data centers from communities",
+            "link": "https://finance.yahoo.com/markets/stocks/article/microsoft-ceo-we-have-to-earn-that-permission-to-build-data-centers-from-communities-172505836.html",
             "score": 5,
             "positive": [
               "data center"
@@ -809,31 +815,31 @@
       {
         "ticker": "ADBE",
         "name": "Adobe Inc.",
-        "price": 237.13999938964844,
-        "price_krw": 324301,
-        "change_pct_1d": -1.4749275066470724,
-        "market_cap": 94263148544.0,
+        "price": 236.38999938964844,
+        "price_krw": 320519,
+        "change_pct_1d": -1.0630700891451017,
+        "market_cap": 93965025280.0,
         "operating_margin": 0.34822,
         "revenue_growth": 0.129,
-        "pe_ratio": 13.240647,
+        "pe_ratio": 13.191406,
         "sector": "Technology",
-        "avg_volume": 5655366.4,
-        "rsi": 37.49819703339408,
-        "drawdown_52w": 0.34195409550527733,
+        "avg_volume": 5508901.3,
+        "rsi": 37.071654824869846,
+        "drawdown_52w": 0.3440352898615281,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 0.71,
-        "score": 107.88,
+        "score": 97.88,
         "reasons": [
           "RSI 37(과매도 반등 후보)",
           "52주 고점 대비 -34%",
           "영업이익률 35%"
         ],
-        "entry_low": 230.14,
-        "entry_high": 242.14,
-        "target": 264.16,
-        "stoploss": 222.13,
+        "entry_low": 230.2,
+        "entry_high": 240.81,
+        "target": 260.28,
+        "stoploss": 223.12,
         "narrative": {
           "one_liner": "Technology 영업이익률 35%, RSI 37 반등 신호.",
           "thesis": "Adobe Inc.는 매출 성장률 13% · 영업이익률 35%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
@@ -907,53 +913,38 @@
             }
           ],
           "hold_days": 5
-        },
-        "score_original": 102.88,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "Adobe (ADBE) Expands AI Holiday Planning Through A Multi Year Travel Partnership",
-            "link": "https://finance.yahoo.com/technology/ai/articles/adobe-adbe-expands-ai-holiday-091528783.html",
-            "score": 5,
-            "positive": [
-              "partnership"
-            ],
-            "negative": []
-          }
-        ]
+        }
       },
       {
         "ticker": "NFLX",
         "name": "Netflix, Inc.",
-        "price": 71.71399688720703,
-        "price_krw": 98072,
-        "change_pct_1d": 0.4960710115298417,
-        "market_cap": 298612752384.0,
+        "price": 71.08999633789062,
+        "price_krw": 96390,
+        "change_pct_1d": -0.8784228556742435,
+        "market_cap": 296014446592.0,
         "operating_margin": 0.33381,
         "revenue_growth": 0.134,
-        "pe_ratio": 22.55157,
+        "pe_ratio": 22.355345,
         "sector": "Communication Services",
-        "avg_volume": 31813792.7,
-        "rsi": 38.20499335146541,
-        "drawdown_52w": 0.4222902835373913,
+        "avg_volume": 31869978.05,
+        "rsi": 36.96026660215829,
+        "drawdown_52w": 0.4273170732306931,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 1.45,
         "score": 81.83,
         "reasons": [
-          "RSI 38(과매도 반등 후보)",
+          "RSI 37(과매도 반등 후보)",
           "영업이익률 33%"
         ],
-        "entry_low": 70.12,
-        "entry_high": 72.85,
-        "target": 77.86,
-        "stoploss": 68.3,
+        "entry_low": 69.68,
+        "entry_high": 72.1,
+        "target": 76.54,
+        "stoploss": 68.06,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 33%, RSI 38 반등 신호.",
-          "thesis": "Netflix, Inc.는 매출 성장률 13% · 영업이익률 33%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 42% 떨어진 상태에서 RSI 38로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 33%, RSI 37 반등 신호.",
+          "thesis": "Netflix, Inc.는 매출 성장률 13% · 영업이익률 33%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 43% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -969,13 +960,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "38",
+              "value": "37",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-42%",
+              "value": "-43%",
               "ok": false,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -1025,13 +1016,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 15.74,
+      "vix": 14.98,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-09-25T02:52:21.250219+09:00",
-    "updated_at_kst": "2026.09.25 (금) 02:52 KST"
+    "updated_at_iso": "2026-09-26T02:57:52.321838+09:00",
+    "updated_at_kst": "2026.09.26 (토) 02:57 KST"
   },
   "futures": {
     "picks": [
