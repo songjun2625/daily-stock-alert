@@ -10,7 +10,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 4.08,
+    "sector_momentum_5d_pct": 3.03,
     "sector_status": "🔥 강세"
   },
   "042700": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 4.08,
+    "sector_momentum_5d_pct": 3.03,
     "sector_status": "🔥 강세"
   },
   "196170": {
@@ -26,7 +26,7 @@
     "market": "kr",
     "name": "알테오젠",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.08,
+    "sector_momentum_5d_pct": -0.52,
     "sector_status": "➡️ 보합"
   },
   "005930": {
@@ -34,7 +34,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 4.08,
+    "sector_momentum_5d_pct": 3.03,
     "sector_status": "🔥 강세"
   },
   "AVGO": {
@@ -43,21 +43,10 @@
     "name": "Broadcom Inc.",
     "sector": "Technology",
     "next_earnings": "2026-12-09",
-    "last_earnings_surprise_pct": 1.74,
-    "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": 3.64,
-    "sector_status": "🔥 강세"
-  },
-  "MSFT": {
-    "ticker": "MSFT",
-    "market": "us",
-    "name": "Microsoft Corporation",
-    "sector": "Technology",
-    "next_earnings": "2026-10-28",
-    "last_earnings_surprise_pct": 11.81,
-    "last_earnings_date": "2026-07-29",
-    "sector_momentum_5d_pct": 3.64,
-    "sector_status": "🔥 강세"
+    "last_earnings_surprise_pct": 2.53,
+    "last_earnings_date": "2026-09-02",
+    "sector_momentum_5d_pct": -0.16,
+    "sector_status": "➡️ 보합"
   },
   "ADBE": {
     "ticker": "ADBE",
@@ -67,8 +56,8 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": 3.64,
-    "sector_status": "🔥 강세"
+    "sector_momentum_5d_pct": -0.16,
+    "sector_status": "➡️ 보합"
   },
   "NFLX": {
     "ticker": "NFLX",
@@ -78,12 +67,12 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 1.45,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 2.28,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -3.1,
+    "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-28T11:00:47+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-09-29T05:07:56+09:00",
+    "tickers_count": 8,
     "dart_enabled": false
   }
 }
