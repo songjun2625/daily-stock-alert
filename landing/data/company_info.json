@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.71,
+    "sector_momentum_5d_pct": 0.65,
     "sector_status": "➡️ 보합"
   },
   "062040": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 0.71,
+    "sector_momentum_5d_pct": 0.65,
     "sector_status": "➡️ 보합"
   },
   "036570": {
@@ -32,7 +32,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.96,
+    "sector_momentum_5d_pct": -0.8,
     "sector_status": "➡️ 보합"
   },
   "AVGO": {
@@ -41,9 +41,9 @@
     "name": "Broadcom Inc.",
     "sector": "Technology",
     "next_earnings": "2026-12-09",
-    "last_earnings_surprise_pct": 1.74,
-    "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -0.16,
+    "last_earnings_surprise_pct": 2.53,
+    "last_earnings_date": "2026-09-02",
+    "sector_momentum_5d_pct": -0.78,
     "sector_status": "➡️ 보합"
   },
   "ADBE": {
@@ -54,7 +54,7 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": -0.16,
+    "sector_momentum_5d_pct": -0.78,
     "sector_status": "➡️ 보합"
   },
   "NFLX": {
@@ -65,11 +65,11 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 1.45,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": -3.11,
-    "sector_status": "❄️ 부진"
+    "sector_momentum_5d_pct": -1.98,
+    "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-29T11:47:04+09:00",
+    "generated_at_iso": "2026-09-30T03:39:26+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
