@@ -1,4 +1,12 @@
 {
+  "042700": {
+    "ticker": "042700",
+    "market": "kr",
+    "name": "한미반도체",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 0.71,
+    "sector_status": "➡️ 보합"
+  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
@@ -10,32 +18,22 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 3.03,
-    "sector_status": "🔥 강세"
-  },
-  "042700": {
-    "ticker": "042700",
-    "market": "kr",
-    "name": "한미반도체",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 3.03,
-    "sector_status": "🔥 강세"
-  },
-  "196170": {
-    "ticker": "196170",
-    "market": "kr",
-    "name": "알테오젠",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.52,
+    "sector_momentum_5d_pct": 0.71,
     "sector_status": "➡️ 보합"
   },
-  "005930": {
-    "ticker": "005930",
+  "036570": {
+    "ticker": "036570",
     "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 3.03,
-    "sector_status": "🔥 강세"
+    "name": "엔씨소프트",
+    "sector": "코스피·코스닥"
+  },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -0.96,
+    "sector_status": "➡️ 보합"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -43,8 +41,8 @@
     "name": "Broadcom Inc.",
     "sector": "Technology",
     "next_earnings": "2026-12-09",
-    "last_earnings_surprise_pct": 2.53,
-    "last_earnings_date": "2026-09-02",
+    "last_earnings_surprise_pct": 1.74,
+    "last_earnings_date": "2026-06-03",
     "sector_momentum_5d_pct": -0.16,
     "sector_status": "➡️ 보합"
   },
@@ -67,11 +65,11 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 1.45,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": -3.1,
+    "sector_momentum_5d_pct": -3.11,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-29T05:07:56+09:00",
+    "generated_at_iso": "2026-09-29T11:47:04+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
