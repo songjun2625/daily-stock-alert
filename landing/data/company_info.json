@@ -1,4 +1,12 @@
 {
+  "000660": {
+    "ticker": "000660",
+    "market": "kr",
+    "name": "SK하이닉스",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -1.93,
+    "sector_status": "📉 약세"
+  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
@@ -11,20 +19,12 @@
     "name": "HD현대일렉트릭",
     "sector": "전선·전력인프라"
   },
-  "000660": {
-    "ticker": "000660",
-    "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -1.3,
-    "sector_status": "📉 약세"
-  },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -1.3,
+    "sector_momentum_5d_pct": -1.93,
     "sector_status": "📉 약세"
   },
   "196170": {
@@ -32,7 +32,18 @@
     "market": "kr",
     "name": "알테오젠",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.28,
+    "sector_momentum_5d_pct": -1.24,
+    "sector_status": "📉 약세"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-11-04",
+    "last_earnings_surprise_pct": 0.43,
+    "last_earnings_date": "2026-08-05",
+    "sector_momentum_5d_pct": -0.71,
     "sector_status": "➡️ 보합"
   },
   "AVGO": {
@@ -43,34 +54,45 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -0.9,
+    "sector_momentum_5d_pct": 0.65,
     "sector_status": "➡️ 보합"
   },
-  "ADBE": {
-    "ticker": "ADBE",
+  "MSFT": {
+    "ticker": "MSFT",
     "market": "us",
-    "name": "Adobe Inc.",
+    "name": "Microsoft Corporation",
     "sector": "Technology",
-    "next_earnings": "2026-12-09",
-    "last_earnings_surprise_pct": 0.71,
-    "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": -0.9,
+    "next_earnings": "2026-10-28",
+    "last_earnings_surprise_pct": 11.81,
+    "last_earnings_date": "2026-07-29",
+    "sector_momentum_5d_pct": 0.65,
     "sector_status": "➡️ 보합"
   },
-  "NFLX": {
-    "ticker": "NFLX",
+  "GOOGL": {
+    "ticker": "GOOGL",
     "market": "us",
-    "name": "Netflix, Inc.",
+    "name": "Alphabet Inc.",
     "sector": "Communication Services",
+    "next_earnings": "2026-10-28",
+    "last_earnings_surprise_pct": 214.23,
+    "last_earnings_date": "2026-07-22",
+    "sector_momentum_5d_pct": -0.71,
+    "sector_status": "➡️ 보합"
+  },
+  "GE": {
+    "ticker": "GE",
+    "market": "us",
+    "name": "GE Aerospace",
+    "sector": "Industrials",
     "next_earnings": "2026-10-20",
-    "last_earnings_surprise_pct": 1.45,
+    "last_earnings_surprise_pct": 8.62,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": -1.81,
+    "sector_momentum_5d_pct": -1.46,
     "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-09-30T11:27:50+09:00",
-    "tickers_count": 8,
+    "generated_at_iso": "2026-10-01T03:27:30+09:00",
+    "tickers_count": 10,
     "dart_enabled": false
   }
 }
