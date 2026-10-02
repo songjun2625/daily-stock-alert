@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "알테오젠",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.57,
+    "sector_momentum_5d_pct": -1.49,
     "sector_status": "📉 약세"
   },
   "062040": {
@@ -18,28 +18,61 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -1.22,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -0.96,
+    "sector_status": "➡️ 보합"
   },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -1.22,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -0.96,
+    "sector_status": "➡️ 보합"
   },
   "207940": {
     "ticker": "207940",
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -1.57,
+    "sector_momentum_5d_pct": -1.49,
+    "sector_status": "📉 약세"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "market": "us",
+    "name": "Broadcom Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-12-09",
+    "last_earnings_surprise_pct": 1.74,
+    "last_earnings_date": "2026-06-03",
+    "sector_momentum_5d_pct": 1.76,
+    "sector_status": "📈 호조"
+  },
+  "GE": {
+    "ticker": "GE",
+    "market": "us",
+    "name": "GE Aerospace",
+    "sector": "Industrials",
+    "next_earnings": "2026-10-20",
+    "last_earnings_surprise_pct": 8.62,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": -0.36,
+    "sector_status": "➡️ 보합"
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "market": "us",
+    "name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "next_earnings": "2026-10-20",
+    "last_earnings_surprise_pct": 1.45,
+    "last_earnings_date": "2026-07-16",
+    "sector_momentum_5d_pct": -2.47,
     "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-02T11:36:06+09:00",
-    "tickers_count": 5,
+    "generated_at_iso": "2026-10-03T03:26:19+09:00",
+    "tickers_count": 8,
     "dart_enabled": false
   }
 }

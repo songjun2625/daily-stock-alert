@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.46,
+      "value": 15.61,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -557,20 +557,323 @@
     "updated_at_iso": "2026-10-02T11:36:02.413657+09:00",
     "updated_at_kst": "2026.10.02 (금) 11:36 KST"
   },
-  "updated_at_iso": "2026-10-02T11:36:02.413657+09:00",
-  "updated_at_kst": "2026.10.02 (금) 11:36 KST",
+  "updated_at_iso": "2026-10-03T03:26:16.515578+09:00",
+  "updated_at_kst": "2026.10.03 (토) 03:26 KST",
   "us": {
-    "picks": [],
+    "picks": [
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom Inc.",
+        "price": 354.6099853515625,
+        "price_krw": 477131,
+        "change_pct_1d": 3.1922855999025224,
+        "market_cap": 1692729212928.0,
+        "operating_margin": 0.54307,
+        "revenue_growth": 0.855,
+        "pe_ratio": 45.287357,
+        "sector": "Technology",
+        "avg_volume": 24587180.3,
+        "rsi": 47.525606823128456,
+        "drawdown_52w": 0.2611293259269028,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 1.74,
+        "score": 115.0,
+        "reasons": [
+          "52주 고점 대비 -26%",
+          "영업이익률 54%"
+        ],
+        "entry_low": 347.64,
+        "entry_high": 359.59,
+        "target": 381.48,
+        "stoploss": 339.68,
+        "narrative": {
+          "one_liner": "Technology 영업이익률 54%, RSI 48 반등 신호.",
+          "thesis": "Broadcom Inc.는 매출 성장률 86% · 영업이익률 54%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 48로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "54%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "86%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "48",
+              "ok": false,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-26%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+1.7%",
+              "ok": false,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 37.5
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "GE",
+        "name": "GE Aerospace",
+        "price": 311.2699890136719,
+        "price_krw": 418817,
+        "change_pct_1d": -0.3585343904241256,
+        "market_cap": 322962063360.0,
+        "operating_margin": 0.20571,
+        "revenue_growth": 0.211,
+        "pe_ratio": 36.749702,
+        "sector": "Industrials",
+        "avg_volume": 4324685.7,
+        "rsi": 35.9110921361067,
+        "drawdown_52w": 0.18348987981492204,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 8.62,
+        "score": 89.36,
+        "reasons": [
+          "RSI 36(과매도 반등 후보)",
+          "영업이익률 21%",
+          "어닝 서프라이즈 +8.6%"
+        ],
+        "entry_low": 305.34,
+        "entry_high": 315.51,
+        "target": 334.15,
+        "stoploss": 298.56,
+        "narrative": {
+          "one_liner": "Industrials 영업이익률 21%, 어닝 서프라이즈 +8.6% / RSI 36 반등 신호.",
+          "thesis": "GE Aerospace는 매출 성장률 21% · 영업이익률 21%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 18% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "21%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "21%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "36",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-18%",
+              "ok": true,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+8.6%",
+              "ok": true,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 25.7
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 31.6
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "52주 -15~-40%",
+              "points": 15
+            },
+            {
+              "name": "어닝 서프라이즈 +5%↑",
+              "points": 12
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Netflix, Inc.",
+        "price": 66.91500091552734,
+        "price_krw": 90035,
+        "change_pct_1d": -1.378036226412549,
+        "market_cap": 278630006784.0,
+        "operating_margin": 0.33381,
+        "revenue_growth": 0.134,
+        "pe_ratio": 21.042452,
+        "sector": "Communication Services",
+        "avg_volume": 35075008.95,
+        "rsi": 30.813817492208486,
+        "drawdown_52w": 0.4609497743264041,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "volume_spike": false,
+        "earnings_surprise_pct": 1.45,
+        "score": 81.83,
+        "reasons": [
+          "RSI 31(과매도 반등 후보)",
+          "영업이익률 33%"
+        ],
+        "entry_low": 65.55,
+        "entry_high": 67.89,
+        "target": 72.16,
+        "stoploss": 64.0,
+        "narrative": {
+          "one_liner": "Communication Services 영업이익률 33%, RSI 31 반등 신호.",
+          "thesis": "Netflix, Inc.는 매출 성장률 13% · 영업이익률 33%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 46% 떨어진 상태에서 RSI 31로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "33%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
+            },
+            {
+              "label": "매출 성장",
+              "value": "13%",
+              "ok": true,
+              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "31",
+              "ok": true,
+              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-46%",
+              "ok": false,
+              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "주가 추세가 반등으로 막 전환되는 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
+            },
+            {
+              "label": "거래량 급증",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "어닝 서프라이즈",
+              "value": "+1.4%",
+              "ok": false,
+              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥20%",
+              "points": 41.7
+            },
+            {
+              "name": "매출 성장 ≥10%",
+              "points": 20.1
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            }
+          ],
+          "hold_days": 5
+        }
+      }
+    ],
     "quant_pick": null,
-    "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 16.46,
+      "vix": 15.61,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-10-02T03:54:19.175566+09:00",
-    "updated_at_kst": "2026.10.02 (금) 03:54 KST"
+    "updated_at_iso": "2026-10-03T03:26:16.515578+09:00",
+    "updated_at_kst": "2026.10.03 (토) 03:26 KST"
   },
   "futures": {
     "picks": [
