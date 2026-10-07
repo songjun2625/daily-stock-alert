@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.16,
+    "sector_momentum_5d_pct": 0.0,
     "sector_status": "➡️ 보합"
   },
   "298040": {
@@ -13,28 +13,39 @@
     "name": "효성중공업",
     "sector": "전선·전력인프라"
   },
-  "000660": {
-    "ticker": "000660",
-    "market": "kr",
-    "name": "SK하이닉스",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": -0.76,
-    "sector_status": "➡️ 보합"
-  },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -0.76,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -1.31,
+    "sector_status": "📉 약세"
+  },
+  "000660": {
+    "ticker": "000660",
+    "market": "kr",
+    "name": "SK하이닉스",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -1.31,
+    "sector_status": "📉 약세"
   },
   "196170": {
     "ticker": "196170",
     "market": "kr",
     "name": "알테오젠",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.16,
+    "sector_momentum_5d_pct": 0.0,
+    "sector_status": "➡️ 보합"
+  },
+  "APP": {
+    "ticker": "APP",
+    "market": "us",
+    "name": "Applovin Corporation",
+    "sector": "Communication Services",
+    "next_earnings": "2026-11-04",
+    "last_earnings_surprise_pct": 0.43,
+    "last_earnings_date": "2026-08-05",
+    "sector_momentum_5d_pct": 0.34,
     "sector_status": "➡️ 보합"
   },
   "AVGO": {
@@ -45,41 +56,8 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": 3.86,
-    "sector_status": "🔥 강세"
-  },
-  "APP": {
-    "ticker": "APP",
-    "market": "us",
-    "name": "Applovin Corporation",
-    "sector": "Communication Services",
-    "next_earnings": "2026-11-04",
-    "last_earnings_surprise_pct": 0.43,
-    "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 0.16,
-    "sector_status": "➡️ 보합"
-  },
-  "PLTR": {
-    "ticker": "PLTR",
-    "market": "us",
-    "name": "Palantir Technologies Inc.",
-    "sector": "Technology",
-    "next_earnings": "2026-11-02",
-    "last_earnings_surprise_pct": 18.51,
-    "last_earnings_date": "2026-08-03",
-    "sector_momentum_5d_pct": 3.86,
-    "sector_status": "🔥 강세"
-  },
-  "GOOGL": {
-    "ticker": "GOOGL",
-    "market": "us",
-    "name": "Alphabet Inc.",
-    "sector": "Communication Services",
-    "next_earnings": "2026-10-28",
-    "last_earnings_surprise_pct": 214.23,
-    "last_earnings_date": "2026-07-22",
-    "sector_momentum_5d_pct": 0.16,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 2.74,
+    "sector_status": "📈 호조"
   },
   "GE": {
     "ticker": "GE",
@@ -89,12 +67,23 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 8.62,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 1.45,
+    "sector_momentum_5d_pct": 0.58,
+    "sector_status": "➡️ 보합"
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "market": "us",
+    "name": "Adobe Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-12-09",
+    "last_earnings_surprise_pct": 0.71,
+    "last_earnings_date": "2026-09-10",
+    "sector_momentum_5d_pct": 2.74,
     "sector_status": "📈 호조"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-07T11:43:08+09:00",
-    "tickers_count": 10,
+    "generated_at_iso": "2026-10-08T04:21:34+09:00",
+    "tickers_count": 9,
     "dart_enabled": false
   }
 }
