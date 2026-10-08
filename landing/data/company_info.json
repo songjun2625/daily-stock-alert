@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "알테오젠",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.57,
+    "sector_momentum_5d_pct": -0.45,
     "sector_status": "➡️ 보합"
   },
   "267260": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "한화에어로스페이스",
     "sector": "방산",
-    "sector_momentum_5d_pct": -6.5,
+    "sector_momentum_5d_pct": -7.24,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -32,8 +32,8 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -1.76,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.56,
+    "sector_status": "❄️ 부진"
   },
   "APP": {
     "ticker": "APP",
@@ -43,8 +43,8 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 0.26,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": 1.82,
+    "sector_status": "📈 호조"
   },
   "AVGO": {
     "ticker": "AVGO",
@@ -54,8 +54,8 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": 2.88,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -0.33,
+    "sector_status": "➡️ 보합"
   },
   "GE": {
     "ticker": "GE",
@@ -65,7 +65,7 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 8.62,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": 0.52,
+    "sector_momentum_5d_pct": -0.28,
     "sector_status": "➡️ 보합"
   },
   "ADBE": {
@@ -76,12 +76,23 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": 2.88,
-    "sector_status": "📈 호조"
+    "sector_momentum_5d_pct": -0.33,
+    "sector_status": "➡️ 보합"
+  },
+  "AAPL": {
+    "ticker": "AAPL",
+    "market": "us",
+    "name": "Apple Inc.",
+    "sector": "Technology",
+    "next_earnings": "2026-11-02",
+    "last_earnings_surprise_pct": 6.74,
+    "last_earnings_date": "2026-07-30",
+    "sector_momentum_5d_pct": -0.33,
+    "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-08T12:00:04+09:00",
-    "tickers_count": 9,
+    "generated_at_iso": "2026-10-09T04:17:26+09:00",
+    "tickers_count": 10,
     "dart_enabled": false
   }
 }
