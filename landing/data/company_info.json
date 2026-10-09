@@ -7,12 +7,6 @@
     "sector_momentum_5d_pct": -0.45,
     "sector_status": "➡️ 보합"
   },
-  "267260": {
-    "ticker": "267260",
-    "market": "kr",
-    "name": "HD현대일렉트릭",
-    "sector": "전선·전력인프라"
-  },
   "012450": {
     "ticker": "012450",
     "market": "kr",
@@ -20,12 +14,6 @@
     "sector": "방산",
     "sector_momentum_5d_pct": -7.24,
     "sector_status": "❄️ 부진"
-  },
-  "062040": {
-    "ticker": "062040",
-    "market": "kr",
-    "name": "산일전기",
-    "sector": "전선·전력인프라"
   },
   "000660": {
     "ticker": "000660",
@@ -35,6 +23,20 @@
     "sector_momentum_5d_pct": -3.56,
     "sector_status": "❄️ 부진"
   },
+  "042700": {
+    "ticker": "042700",
+    "market": "kr",
+    "name": "한미반도체",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -3.56,
+    "sector_status": "❄️ 부진"
+  },
+  "062040": {
+    "ticker": "062040",
+    "market": "kr",
+    "name": "산일전기",
+    "sector": "전선·전력인프라"
+  },
   "APP": {
     "ticker": "APP",
     "market": "us",
@@ -43,7 +45,7 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 1.82,
+    "sector_momentum_5d_pct": 1.94,
     "sector_status": "📈 호조"
   },
   "AVGO": {
@@ -52,9 +54,9 @@
     "name": "Broadcom Inc.",
     "sector": "Technology",
     "next_earnings": "2026-12-09",
-    "last_earnings_surprise_pct": 1.74,
-    "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -0.33,
+    "last_earnings_surprise_pct": 2.53,
+    "last_earnings_date": "2026-09-02",
+    "sector_momentum_5d_pct": -0.02,
     "sector_status": "➡️ 보합"
   },
   "GE": {
@@ -65,7 +67,7 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 8.62,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": -0.28,
+    "sector_momentum_5d_pct": -0.14,
     "sector_status": "➡️ 보합"
   },
   "ADBE": {
@@ -76,7 +78,7 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 0.71,
     "last_earnings_date": "2026-09-10",
-    "sector_momentum_5d_pct": -0.33,
+    "sector_momentum_5d_pct": -0.02,
     "sector_status": "➡️ 보합"
   },
   "AAPL": {
@@ -87,11 +89,11 @@
     "next_earnings": "2026-11-02",
     "last_earnings_surprise_pct": 6.74,
     "last_earnings_date": "2026-07-30",
-    "sector_momentum_5d_pct": -0.33,
+    "sector_momentum_5d_pct": -0.02,
     "sector_status": "➡️ 보합"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-09T04:17:26+09:00",
+    "generated_at_iso": "2026-10-09T12:06:48+09:00",
     "tickers_count": 10,
     "dart_enabled": false
   }
