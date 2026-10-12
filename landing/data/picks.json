@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 14.87,
+      "value": 15.21,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -562,40 +562,40 @@
     "updated_at_iso": "2026-10-12T11:40:21.438033+09:00",
     "updated_at_kst": "2026.10.12 (월) 11:40 KST"
   },
-  "updated_at_iso": "2026-10-12T11:40:21.438033+09:00",
-  "updated_at_kst": "2026.10.12 (월) 11:40 KST",
+  "updated_at_iso": "2026-10-13T06:45:01.116310+09:00",
+  "updated_at_kst": "2026.10.13 (화) 06:45 KST",
   "us": {
     "picks": [
       {
         "ticker": "APP",
         "name": "Applovin Corporation",
-        "price": 276.8450012207031,
-        "price_krw": 371302,
-        "change_pct_1d": -1.169139637859229,
-        "market_cap": 93003177984.0,
+        "price": 270.8699951171875,
+        "price_krw": 361332,
+        "change_pct_1d": -2.2271199961842014,
+        "market_cap": 90995933184.0,
         "operating_margin": 0.77678,
         "revenue_growth": 0.528,
-        "pe_ratio": 21.2794,
+        "pe_ratio": 20.820137,
         "sector": "Communication Services",
-        "avg_volume": 5422505.05,
-        "rsi": 35.34151502276805,
-        "drawdown_52w": 0.6226213052970963,
+        "avg_volume": 5414888.65,
+        "rsi": 33.18930086785417,
+        "drawdown_52w": 0.6307660794279069,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 0.43,
         "score": 120.0,
         "reasons": [
-          "RSI 35(과매도 반등 후보)",
+          "RSI 33(과매도 반등 후보)",
           "영업이익률 78%"
         ],
-        "entry_low": 267.91,
-        "entry_high": 283.23,
-        "target": 311.31,
-        "stoploss": 257.7,
+        "entry_low": 261.71,
+        "entry_high": 277.42,
+        "target": 306.22,
+        "stoploss": 251.23,
         "narrative": {
-          "one_liner": "Communication Services 영업이익률 78%, RSI 35 반등 신호.",
-          "thesis": "Applovin Corporation는 매출 성장률 53% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 62% 떨어진 상태에서 RSI 35로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Communication Services 영업이익률 78%, RSI 33 반등 신호.",
+          "thesis": "Applovin Corporation는 매출 성장률 53% · 영업이익률 78%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 63% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -611,13 +611,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "35",
+              "value": "33",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-62%",
+              "value": "-63%",
               "ok": false,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -667,33 +667,33 @@
       {
         "ticker": "AVGO",
         "name": "Broadcom Inc.",
-        "price": 362.2200012207031,
-        "price_krw": 485806,
-        "change_pct_1d": 0.5775494217980848,
-        "market_cap": 1729152024576.0,
+        "price": 354.7300109863281,
+        "price_krw": 473199,
+        "change_pct_1d": -1.8836082861207304,
+        "market_cap": 1693349838848.0,
         "operating_margin": 0.54307,
         "revenue_growth": 0.855,
-        "pe_ratio": 46.261814,
+        "pe_ratio": 45.303963,
         "sector": "Technology",
-        "avg_volume": 23772278.95,
-        "rsi": 50.56285290785966,
-        "drawdown_52w": 0.24527298293824049,
+        "avg_volume": 23186414.7,
+        "rsi": 46.52368958065458,
+        "drawdown_52w": 0.2608791917191052,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 1.74,
         "score": 115.0,
         "reasons": [
-          "52주 고점 대비 -25%",
+          "52주 고점 대비 -26%",
           "영업이익률 54%"
         ],
-        "entry_low": 355.01,
-        "entry_high": 367.37,
-        "target": 390.05,
-        "stoploss": 346.76,
+        "entry_low": 347.51,
+        "entry_high": 359.89,
+        "target": 382.58,
+        "stoploss": 339.26,
         "narrative": {
-          "one_liner": "Technology 영업이익률 54%, RSI 51 반등 신호.",
-          "thesis": "Broadcom Inc.는 매출 성장률 86% · 영업이익률 54%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 51로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
+          "one_liner": "Technology 영업이익률 54%, RSI 47 반등 신호.",
+          "thesis": "Broadcom Inc.는 매출 성장률 86% · 영업이익률 54%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 26% 떨어진 상태에서 RSI 47로 중립 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -709,13 +709,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "51",
+              "value": "47",
               "ok": false,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-25%",
+              "value": "-26%",
               "ok": true,
               "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
             },
@@ -765,35 +765,34 @@
       {
         "ticker": "GE",
         "name": "GE Aerospace",
-        "price": 307.5899963378906,
-        "price_krw": 412537,
-        "change_pct_1d": 0.644591732274491,
-        "market_cap": 319143837696.0,
+        "price": 308.6400146484375,
+        "price_krw": 411717,
+        "change_pct_1d": 0.14276522517160384,
+        "market_cap": 320233308160.0,
         "operating_margin": 0.20571,
         "revenue_growth": 0.211,
-        "pe_ratio": 36.272408,
+        "pe_ratio": 36.39623,
         "sector": "Industrials",
-        "avg_volume": 4640087.1,
-        "rsi": 38.0257632081494,
-        "drawdown_52w": 0.19191618660400897,
-        "macd_golden_cross": true,
+        "avg_volume": 4571412.2,
+        "rsi": 39.321075562522736,
+        "drawdown_52w": 0.1891576352511547,
+        "macd_golden_cross": false,
         "ma_aligned_up": false,
         "volume_spike": false,
         "earnings_surprise_pct": 8.62,
-        "score": 99.36,
+        "score": 89.36,
         "reasons": [
-          "RSI 38(과매도 반등 후보)",
-          "MACD 골든크로스",
+          "RSI 39(과매도 반등 후보)",
           "영업이익률 21%",
           "어닝 서프라이즈 +8.6%"
         ],
-        "entry_low": 302.28,
-        "entry_high": 311.38,
-        "target": 328.07,
-        "stoploss": 296.21,
+        "entry_low": 303.47,
+        "entry_high": 312.33,
+        "target": 328.57,
+        "stoploss": 297.57,
         "narrative": {
-          "one_liner": "Industrials 영업이익률 21%, 어닝 서프라이즈 +8.6% / RSI 38 반등 신호.",
-          "thesis": "GE Aerospace는 매출 성장률 21% · 영업이익률 21%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 38로 약세 구간(반등 가능) 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "one_liner": "Industrials 영업이익률 21%, 어닝 서프라이즈 +8.6% / RSI 39 반등 신호.",
+          "thesis": "GE Aerospace는 매출 성장률 21% · 영업이익률 21%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 19% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 거래량 급증으로 자금 유입이 확인됩니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -809,7 +808,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "38",
+              "value": "39",
               "ok": true,
               "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
             },
@@ -821,8 +820,8 @@
             },
             {
               "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
+              "value": "—",
+              "ok": false,
               "explain": "주가 추세가 반등으로 막 전환되는 신호."
             },
             {
@@ -863,113 +862,6 @@
               "points": 15
             },
             {
-              "name": "MACD 골든크로스",
-              "points": 10
-            },
-            {
-              "name": "어닝 서프라이즈 +5%↑",
-              "points": 12
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "AAPL",
-        "name": "Apple Inc.",
-        "price": 337.1300048828125,
-        "price_krw": 452155,
-        "change_pct_1d": -0.966455676854705,
-        "market_cap": 4920097898496.0,
-        "operating_margin": 0.32623002,
-        "revenue_growth": 0.164,
-        "pe_ratio": 38.6614,
-        "sector": "Technology",
-        "avg_volume": 37165109.6,
-        "rsi": 56.75019214371018,
-        "drawdown_52w": 0.011551887755585941,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "volume_spike": false,
-        "earnings_surprise_pct": 6.74,
-        "score": 85.38,
-        "reasons": [
-          "5/20일선 정배열 시작",
-          "영업이익률 33%",
-          "어닝 서프라이즈 +6.7%"
-        ],
-        "entry_low": 332.61,
-        "entry_high": 340.36,
-        "target": 354.57,
-        "stoploss": 327.44,
-        "narrative": {
-          "one_liner": "Technology 영업이익률 33%, 어닝 서프라이즈 +6.7% / RSI 57 반등 신호.",
-          "thesis": "Apple Inc.는 매출 성장률 16% · 영업이익률 33%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 1% 떨어진 상태에서 RSI 57로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "33%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 20% 이상이면 돈 잘 버는 회사로 분류."
-            },
-            {
-              "label": "매출 성장",
-              "value": "16%",
-              "ok": true,
-              "explain": "전년 대비 매출이 얼마나 늘었는지. 10% 이상이면 성장 회사."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "57",
-              "ok": false,
-              "explain": "낮을수록 과매도 → 반등 가능성↑. 30~45 구간이 스윙에 좋은 진입대."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-1%",
-              "ok": false,
-              "explain": "좋은 회사가 고점 대비 -15~-40% 빠졌으면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "주가 추세가 반등으로 막 전환되는 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
-              "explain": "단기·중기 추세선 모두 상승 시작 → 추세 전환 확정."
-            },
-            {
-              "label": "거래량 급증",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 2배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "어닝 서프라이즈",
-              "value": "+6.7%",
-              "ok": true,
-              "explain": "최근 분기 EPS가 컨센서스보다 +5% 이상 상회하면 모멘텀."
-            }
-          ],
-          "risk": "레버리지·옵션이 아닌 일반 주식이지만, 단기 변동성이 평소보다 클 수 있습니다. 정해둔 손절가에 도달하면 감정 빼고 즉시 매도하세요.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥20%",
-              "points": 40.8
-            },
-            {
-              "name": "매출 성장 ≥10%",
-              "points": 24.6
-            },
-            {
-              "name": "5/20일선 정배열",
-              "points": 8
-            },
-            {
               "name": "어닝 서프라이즈 +5%↑",
               "points": 12
             }
@@ -980,13 +872,13 @@
     ],
     "quant_pick": null,
     "traffic_light": {
-      "vix": 14.87,
+      "vix": 15.21,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-10-10T03:49:48.044625+09:00",
-    "updated_at_kst": "2026.10.10 (토) 03:49 KST"
+    "updated_at_iso": "2026-10-13T06:45:01.116310+09:00",
+    "updated_at_kst": "2026.10.13 (화) 06:45 KST"
   },
   "futures": {
     "picks": [
