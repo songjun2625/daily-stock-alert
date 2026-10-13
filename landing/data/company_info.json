@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -15.61,
+    "sector_momentum_5d_pct": -15.0,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -15.61,
+    "sector_momentum_5d_pct": -15.0,
     "sector_status": "❄️ 부진"
   },
   "042700": {
@@ -26,7 +26,7 @@
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -15.61,
+    "sector_momentum_5d_pct": -15.0,
     "sector_status": "❄️ 부진"
   },
   "068270": {
@@ -34,7 +34,7 @@
     "market": "kr",
     "name": "셀트리온",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -4.65,
+    "sector_momentum_5d_pct": -4.04,
     "sector_status": "❄️ 부진"
   },
   "APP": {
@@ -45,7 +45,7 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": -0.14,
+    "sector_momentum_5d_pct": 0.59,
     "sector_status": "➡️ 보합"
   },
   "AVGO": {
@@ -56,8 +56,8 @@
     "next_earnings": "2026-12-09",
     "last_earnings_surprise_pct": 1.74,
     "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -2.27,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -3.01,
+    "sector_status": "❄️ 부진"
   },
   "GE": {
     "ticker": "GE",
@@ -67,11 +67,11 @@
     "next_earnings": "2026-10-20",
     "last_earnings_surprise_pct": 8.62,
     "last_earnings_date": "2026-07-16",
-    "sector_momentum_5d_pct": -0.56,
-    "sector_status": "➡️ 보합"
+    "sector_momentum_5d_pct": -1.7,
+    "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-13T12:55:26+09:00",
+    "generated_at_iso": "2026-10-14T04:52:35+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }
