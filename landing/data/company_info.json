@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -15.0,
+    "sector_momentum_5d_pct": -13.06,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -15.0,
+    "sector_momentum_5d_pct": -13.06,
     "sector_status": "❄️ 부진"
   },
   "042700": {
@@ -26,16 +26,14 @@
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -15.0,
+    "sector_momentum_5d_pct": -13.06,
     "sector_status": "❄️ 부진"
   },
-  "068270": {
-    "ticker": "068270",
+  "105560": {
+    "ticker": "105560",
     "market": "kr",
-    "name": "셀트리온",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -4.04,
-    "sector_status": "❄️ 부진"
+    "name": "KB금융",
+    "sector": "금융"
   },
   "APP": {
     "ticker": "APP",
@@ -45,7 +43,7 @@
     "next_earnings": "2026-11-04",
     "last_earnings_surprise_pct": 0.43,
     "last_earnings_date": "2026-08-05",
-    "sector_momentum_5d_pct": 0.59,
+    "sector_momentum_5d_pct": 0.56,
     "sector_status": "➡️ 보합"
   },
   "AVGO": {
@@ -54,10 +52,10 @@
     "name": "Broadcom Inc.",
     "sector": "Technology",
     "next_earnings": "2026-12-09",
-    "last_earnings_surprise_pct": 1.74,
-    "last_earnings_date": "2026-06-03",
-    "sector_momentum_5d_pct": -3.01,
-    "sector_status": "❄️ 부진"
+    "last_earnings_surprise_pct": 2.53,
+    "last_earnings_date": "2026-09-02",
+    "sector_momentum_5d_pct": -2.83,
+    "sector_status": "📉 약세"
   },
   "GE": {
     "ticker": "GE",
@@ -71,7 +69,7 @@
     "sector_status": "📉 약세"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-14T04:52:35+09:00",
+    "generated_at_iso": "2026-10-14T11:12:23+09:00",
     "tickers_count": 8,
     "dart_enabled": false
   }

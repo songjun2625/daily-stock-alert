@@ -24,34 +24,34 @@
         "ticker": "005930",
         "name": "삼성전자",
         "sector": "반도체",
-        "price": 231000,
-        "change_pct_1d": -11.832061068702293,
-        "market_cap": 1516876148506624.0,
+        "price": 236000,
+        "change_pct_1d": 1.724137931034475,
+        "market_cap": 1536813789347840.0,
         "operating_margin": 0.52182,
         "revenue_growth": 1.3,
         "pe_ratio": null,
-        "drawdown_52w": 0.3620558372020349,
-        "rsi": 34.54054517364381,
+        "drawdown_52w": 0.34824752198995773,
+        "rsi": 36.974282901230254,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 167.0,
+        "score": 147.0,
         "reasons": [
-          "RSI 35(과매도 반등 후보)",
-          "52주 고점 대비 -36%",
+          "RSI 37(과매도 반등 후보)",
+          "52주 고점 대비 -35%",
           "영업이익률 52%",
           "매출 성장 +130%"
         ],
-        "entry_low": 222875,
-        "entry_high": 236804,
-        "target": 262340,
-        "stoploss": 213589,
+        "entry_low": 228175,
+        "entry_high": 241589,
+        "target": 266182,
+        "stoploss": 219232,
         "narrative": {
-          "one_liner": "반도체 영업이익률 52% / RSI 35 반등 신호",
-          "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 36% 떨어진 상태에서 RSI 35로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 52% / RSI 37 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -67,14 +67,14 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "35",
+              "value": "37",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-36%",
-              "ok": false,
+              "value": "-35%",
+              "ok": true,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
             {
@@ -121,13 +121,17 @@
             {
               "name": "RSI 30~45 구간",
               "points": 20
+            },
+            {
+              "name": "52주 -10~-35%",
+              "points": 15
             }
           ],
           "hold_days": 5
         },
-        "score_original": 157.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
+        "score_original": 142.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
@@ -138,15 +142,6 @@
               "협력"
             ],
             "negative": []
-          },
-          {
-            "title": "삼전닉스 자사주 매입 끝나자 주가 와르르 … 코스피 사줄 사람이 없다 [머니닥터 시장진단]",
-            "link": "https://www.mk.co.kr/news/stock/12174815",
-            "score": 5,
-            "positive": [
-              "자사주 매입"
-            ],
-            "negative": []
           }
         ]
       },
@@ -154,14 +149,14 @@
         "ticker": "062040",
         "name": "산일전기",
         "sector": "전선·전력인프라",
-        "price": 203500,
-        "change_pct_1d": -8.539325842696632,
-        "market_cap": 6202684604416.0,
+        "price": 212500,
+        "change_pct_1d": 0.7109004739336511,
+        "market_cap": 6492957704192.0,
         "operating_margin": 0.37785,
         "revenue_growth": 0.28,
         "pe_ratio": null,
-        "drawdown_52w": 0.38980509745127434,
-        "rsi": 48.82637815367632,
+        "drawdown_52w": 0.36281859070464767,
+        "rsi": 53.39740360454422,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -170,17 +165,17 @@
         "earnings_surprise": null,
         "score": 133.0,
         "reasons": [
-          "52주 고점 대비 -39%",
+          "52주 고점 대비 -36%",
           "영업이익률 38%",
           "매출 성장 +28%"
         ],
-        "entry_low": 195025,
-        "entry_high": 209554,
-        "target": 236190,
-        "stoploss": 185339,
+        "entry_low": 203975,
+        "entry_high": 218589,
+        "target": 245382,
+        "stoploss": 194232,
         "narrative": {
-          "one_liner": "전선·전력인프라 영업이익률 38% / RSI 49 반등 신호",
-          "thesis": "산일전기(062040)는 매출 성장률 28% · 영업이익률 38%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 39% 떨어진 상태에서 RSI 49로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "전선·전력인프라 영업이익률 38% / RSI 53 반등 신호",
+          "thesis": "산일전기(062040)는 매출 성장률 28% · 영업이익률 38%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 36% 떨어진 상태에서 RSI 53로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -196,13 +191,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "49",
+              "value": "53",
               "ok": false,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-39%",
+              "value": "-36%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -255,14 +250,14 @@
         "ticker": "000660",
         "name": "SK하이닉스",
         "sector": "반도체",
-        "price": 1460000,
-        "change_pct_1d": -13.146936347412252,
-        "market_cap": 1038170233765888.0,
+        "price": 1467000,
+        "change_pct_1d": 1.6632016632016633,
+        "market_cap": 1043858850840576.0,
         "operating_margin": 0.76328003,
         "revenue_growth": 2.568,
         "pe_ratio": null,
-        "drawdown_52w": 0.49972026310259615,
-        "rsi": 32.487959677083325,
+        "drawdown_52w": 0.49732166162432095,
+        "rsi": 33.49273504641407,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -271,17 +266,17 @@
         "earnings_surprise": null,
         "score": 132.0,
         "reasons": [
-          "RSI 32(과매도 반등 후보)",
+          "RSI 33(과매도 반등 후보)",
           "영업이익률 76%",
           "매출 성장 +257%"
         ],
-        "entry_low": 1403550,
-        "entry_high": 1500321,
-        "target": 1677735,
-        "stoploss": 1339036,
+        "entry_low": 1414950,
+        "entry_high": 1504179,
+        "target": 1667765,
+        "stoploss": 1355464,
         "narrative": {
-          "one_liner": "반도체 영업이익률 76% / RSI 32 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 50% 떨어진 상태에서 RSI 32로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 76% / RSI 33 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 257% · 영업이익률 76%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 50% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -297,7 +292,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "32",
+              "value": "33",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -360,14 +355,14 @@
         "ticker": "042700",
         "name": "한미반도체",
         "sector": "반도체",
-        "price": 220500,
-        "change_pct_1d": -17.41573033707865,
-        "market_cap": 20915085639680.0,
+        "price": 221500,
+        "change_pct_1d": -3.275109170305679,
+        "market_cap": 21009939824640.0,
         "operating_margin": 0.51897,
         "revenue_growth": 0.395,
         "pe_ratio": null,
-        "drawdown_52w": 0.46153846153846156,
-        "rsi": 41.39172397058654,
+        "drawdown_52w": 0.4590964590964591,
+        "rsi": 40.892812350253664,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
@@ -380,10 +375,10 @@
           "영업이익률 52%",
           "매출 성장 +40%"
         ],
-        "entry_low": 210712,
-        "entry_high": 227491,
-        "target": 258251,
-        "stoploss": 199527,
+        "entry_low": 211975,
+        "entry_high": 228304,
+        "target": 258240,
+        "stoploss": 201089,
         "narrative": {
           "one_liner": "반도체 영업이익률 52% / RSI 41 반등 신호",
           "thesis": "한미반도체(042700)는 매출 성장률 40% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 46% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
@@ -463,59 +458,59 @@
       }
     ],
     "quant_pick": {
-      "ticker": "068270",
-      "name": "셀트리온",
-      "sector": "바이오·헬스케어",
-      "price": 177700,
-      "change_pct_1d": -1.0579064587973308,
-      "market_cap": 40520202059776.0,
-      "operating_margin": 0.32417,
-      "revenue_growth": 0.45,
+      "ticker": "105560",
+      "name": "KB금융",
+      "sector": "금융",
+      "price": 160500,
+      "change_pct_1d": -1.169950738916259,
+      "market_cap": 56352529448960.0,
+      "operating_margin": 0.58942,
+      "revenue_growth": 0.185,
       "pe_ratio": null,
-      "drawdown_52w": 0.24915494610134362,
-      "rsi": 41.52083998749444,
+      "drawdown_52w": 0.13215155445580024,
+      "rsi": 35.90776839281797,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 112.0,
+      "score": 107.0,
       "reasons": [
-        "RSI 42(과매도 반등 후보)",
-        "52주 고점 대비 -25%",
-        "영업이익률 32%",
-        "매출 성장 +45%"
+        "RSI 36(과매도 반등 후보)",
+        "52주 고점 대비 -13%",
+        "영업이익률 59%",
+        "매출 성장 +18%"
       ],
-      "entry_low": 174868,
-      "entry_high": 179723,
-      "target": 188626,
-      "stoploss": 171630,
+      "entry_low": 157375,
+      "entry_high": 162732,
+      "target": 172553,
+      "stoploss": 153804,
       "narrative": {
-        "one_liner": "바이오·헬스케어 영업이익률 32% / RSI 42 반등 신호",
-        "thesis": "셀트리온(068270)는 매출 성장률 45% · 영업이익률 32%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 25% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "금융 영업이익률 59% / RSI 36 반등 신호",
+        "thesis": "KB금융(105560)는 매출 성장률 18% · 영업이익률 59%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 13% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "32%",
+            "value": "59%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "45%",
+            "value": "18%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "42",
+            "value": "36",
             "ok": true,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-25%",
+            "value": "-13%",
             "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
@@ -573,11 +568,11 @@
       },
       "quant_score": 195.0
     },
-    "updated_at_iso": "2026-10-13T12:55:18.403709+09:00",
-    "updated_at_kst": "2026.10.13 (화) 12:55 KST"
+    "updated_at_iso": "2026-10-14T11:11:17.762205+09:00",
+    "updated_at_kst": "2026.10.14 (수) 11:11 KST"
   },
-  "updated_at_iso": "2026-10-14T04:52:31.377774+09:00",
-  "updated_at_kst": "2026.10.14 (수) 04:52 KST",
+  "updated_at_iso": "2026-10-14T11:11:17.762205+09:00",
+  "updated_at_kst": "2026.10.14 (수) 11:11 KST",
   "us": {
     "picks": [
       {
