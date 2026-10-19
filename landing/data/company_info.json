@@ -4,30 +4,8 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -16.0,
+    "sector_momentum_5d_pct": -12.77,
     "sector_status": "❄️ 부진"
-  },
-  "267260": {
-    "ticker": "267260",
-    "market": "kr",
-    "name": "HD현대일렉트릭",
-    "sector": "전선·전력인프라"
-  },
-  "012450": {
-    "ticker": "012450",
-    "market": "kr",
-    "name": "한화에어로스페이스",
-    "sector": "방산",
-    "sector_momentum_5d_pct": -6.14,
-    "sector_status": "❄️ 부진"
-  },
-  "207940": {
-    "ticker": "207940",
-    "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -0.08,
-    "sector_status": "➡️ 보합"
   },
   "062040": {
     "ticker": "062040",
@@ -35,8 +13,32 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 1.36,
+    "sector_status": "📈 호조"
+  },
+  "012450": {
+    "ticker": "012450",
+    "market": "kr",
+    "name": "한화에어로스페이스",
+    "sector": "방산",
+    "sector_momentum_5d_pct": -2.64,
+    "sector_status": "📉 약세"
+  },
+  "042700": {
+    "ticker": "042700",
+    "market": "kr",
+    "name": "한미반도체",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -12.77,
+    "sector_status": "❄️ 부진"
+  },
   "_meta": {
-    "generated_at_iso": "2026-10-17T02:25:59+09:00",
+    "generated_at_iso": "2026-10-19T10:47:43+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
