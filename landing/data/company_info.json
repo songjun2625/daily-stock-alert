@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -12.77,
+    "sector_momentum_5d_pct": -11.49,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 1.36,
+    "sector_momentum_5d_pct": 1.68,
     "sector_status": "📈 호조"
   },
   "012450": {
@@ -26,19 +26,19 @@
     "market": "kr",
     "name": "한화에어로스페이스",
     "sector": "방산",
-    "sector_momentum_5d_pct": -2.64,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": 1.45,
+    "sector_status": "📈 호조"
   },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -12.77,
+    "sector_momentum_5d_pct": -11.49,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-19T10:47:43+09:00",
+    "generated_at_iso": "2026-10-20T04:20:41+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
