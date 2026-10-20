@@ -4,7 +4,7 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -8.07,
+    "sector_momentum_5d_pct": -8.92,
     "sector_status": "❄️ 부진"
   },
   "062040": {
@@ -18,7 +18,7 @@
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -8.07,
+    "sector_momentum_5d_pct": -8.92,
     "sector_status": "❄️ 부진"
   },
   "036570": {
@@ -34,7 +34,7 @@
     "sector": "금융"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-20T11:08:35+09:00",
+    "generated_at_iso": "2026-10-21T02:59:51+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
