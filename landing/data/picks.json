@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.4,
+      "value": 16.63,
       "label": "안정",
       "light": "🟢",
       "summary": "공포지수 낮아 변동성 안정"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 155.0,
+        "score": 150.0,
         "reasons": [
           "RSI 40(과매도 반등 후보)",
           "52주 고점 대비 -38%",
@@ -125,17 +125,26 @@
           ],
           "hold_days": 5
         },
-        "score_original": 150.0,
-        "news_boost": 5.0,
+        "score_original": 155.0,
+        "news_boost": -5.0,
         "news_positive": 1,
-        "news_negative": 0,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "삼전닉스 OB들은 지금 K소부장 혁신중",
-            "link": "https://www.hankyung.com/article/2026102040521",
+            "title": "반도체 반등 올라탄 초고수…삼성전기 사고 삼전우 팔았다",
+            "link": "https://www.hankyung.com/article/202610215426i",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "사고"
+            ]
+          },
+          {
+            "title": "AI 기업 호실적에 삼전닉스 7% 급등…코스피 '매수 사이드카'",
+            "link": "https://www.hankyung.com/article/2026102155386",
             "score": 5,
             "positive": [
-              "혁신"
+              "호실적"
             ],
             "negative": []
           }
@@ -269,7 +278,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 130.0,
+        "score": 135.0,
         "reasons": [
           "RSI 33(과매도 반등 후보)",
           "영업이익률 76%",
@@ -355,19 +364,28 @@
           ],
           "hold_days": 5
         },
-        "score_original": 140.0,
-        "news_boost": -10.0,
-        "news_positive": 0,
-        "news_negative": 1,
+        "score_original": 130.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "반도체 떨어지자 '줍줍'…초고수, SK하이닉스 사고 라온시큐어 팔았다",
-            "link": "https://www.hankyung.com/article/202610214769i",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "사고"
-            ]
+            "title": "SK하이닉스, 40조 자사주 매입 한 달 앞당겨 끝냈다",
+            "link": "https://www.hankyung.com/article/2026102165657",
+            "score": 5,
+            "positive": [
+              "자사주 매입"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK하이닉스, 40조원 규모 자사주 매입 완료",
+            "link": "https://www.yna.co.kr/view/AKR20261021146600003",
+            "score": 5,
+            "positive": [
+              "자사주 매입"
+            ],
+            "negative": []
           }
         ]
       },
@@ -624,20 +642,20 @@
     "updated_at_iso": "2026-10-21T11:04:18.061855+09:00",
     "updated_at_kst": "2026.10.21 (수) 11:04 KST"
   },
-  "updated_at_iso": "2026-10-21T11:04:18.061855+09:00",
-  "updated_at_kst": "2026.10.21 (수) 11:04 KST",
+  "updated_at_iso": "2026-10-22T03:04:17.770589+09:00",
+  "updated_at_kst": "2026.10.22 (목) 03:04 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 17.4,
+      "vix": 16.63,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-10-21T02:59:50.866640+09:00",
-    "updated_at_kst": "2026.10.21 (수) 02:59 KST"
+    "updated_at_iso": "2026-10-22T03:04:17.770589+09:00",
+    "updated_at_kst": "2026.10.22 (목) 03:04 KST"
   },
   "futures": {
     "picks": [
