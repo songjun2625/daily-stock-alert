@@ -4,8 +4,8 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -2.9,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -4.38,
+    "sector_status": "❄️ 부진"
   },
   "062040": {
     "ticker": "062040",
@@ -18,27 +18,27 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -2.9,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -4.38,
+    "sector_status": "❄️ 부진"
   },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -2.9,
-    "sector_status": "📉 약세"
+    "sector_momentum_5d_pct": -4.38,
+    "sector_status": "❄️ 부진"
   },
   "196170": {
     "ticker": "196170",
     "market": "kr",
     "name": "알테오젠",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -5.82,
+    "sector_momentum_5d_pct": -6.22,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-26T10:47:44+09:00",
+    "generated_at_iso": "2026-10-27T04:20:45+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
