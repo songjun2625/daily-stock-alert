@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.51,
-      "label": "주의",
-      "light": "🟡",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "value": 17.76,
+      "label": "안정",
+      "light": "🟢",
+      "summary": "공포지수 낮아 변동성 안정"
     }
   },
   "runtime": {
@@ -20,136 +20,6 @@
   },
   "kr": {
     "picks": [
-      {
-        "ticker": "005930",
-        "name": "삼성전자",
-        "sector": "반도체",
-        "price": 223000,
-        "change_pct_1d": 4.694835680751175,
-        "market_cap": 1452158775984128.0,
-        "operating_margin": 0.52182,
-        "revenue_growth": 1.3,
-        "pe_ratio": null,
-        "drawdown_52w": 0.3841491415413584,
-        "rsi": 41.48405126240789,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 147.0,
-        "reasons": [
-          "RSI 41(과매도 반등 후보)",
-          "52주 고점 대비 -38%",
-          "영업이익률 52%",
-          "매출 성장 +130%"
-        ],
-        "entry_low": 213538,
-        "entry_high": 229759,
-        "target": 259499,
-        "stoploss": 202723,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 52% / RSI 41 반등 신호",
-          "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 38% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "52%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "130%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "41",
-              "ok": true,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-38%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 142.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "“개미들 다시 웃을까”…실적발표 앞둔 삼전닉스 주주환원에 쏠린 눈",
-            "link": "https://www.mk.co.kr/news/stock/12186761",
-            "score": 5,
-            "positive": [
-              "주주환원"
-            ],
-            "negative": []
-          },
-          {
-            "title": "KB증권 \"'삼전닉스', 총 120조 추가 주주환원 기대…저평가 해소 계기\"",
-            "link": "https://www.yna.co.kr/view/AKR20261027024600008",
-            "score": 5,
-            "positive": [
-              "주주환원"
-            ],
-            "negative": []
-          }
-        ]
-      },
       {
         "ticker": "000660",
         "name": "SK하이닉스",
@@ -168,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 125.0,
+        "score": 130.0,
         "reasons": [
           "RSI 40(과매도 반등 후보)",
           "영업이익률 76%",
@@ -253,7 +123,22 @@
             }
           ],
           "hold_days": 5
-        }
+        },
+        "score_original": 125.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "삼성전자, HBM 매출 하이닉스 첫 추월 가능성…\"주가 재평가\" [분석+]",
+            "link": "https://www.hankyung.com/article/2026102790476",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "042700",
@@ -464,6 +349,145 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "005930",
+        "name": "삼성전자",
+        "sector": "반도체",
+        "price": 223000,
+        "change_pct_1d": 4.694835680751175,
+        "market_cap": 1452158775984128.0,
+        "operating_margin": 0.52182,
+        "revenue_growth": 1.3,
+        "pe_ratio": null,
+        "drawdown_52w": 0.3841491415413584,
+        "rsi": 41.48405126240789,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 122.0,
+        "reasons": [
+          "RSI 41(과매도 반등 후보)",
+          "52주 고점 대비 -38%",
+          "영업이익률 52%",
+          "매출 성장 +130%"
+        ],
+        "entry_low": 213538,
+        "entry_high": 229759,
+        "target": 259499,
+        "stoploss": 202723,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 52% / RSI 41 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 130% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 38% 떨어진 상태에서 RSI 41로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "52%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "130%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "41",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-38%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 147.0,
+        "news_boost": -25.0,
+        "news_positive": 1,
+        "news_negative": 3,
+        "news_headlines": [
+          {
+            "title": "갤S21 최적화 방식 안 알렸다고…공정위, 삼성전자에 '뒷북 과징금'",
+            "link": "https://www.hankyung.com/article/2026102788081",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "과징금"
+            ]
+          },
+          {
+            "title": "삼성전자, HBM 매출 하이닉스 첫 추월 가능성…\"주가 재평가\" [분석+]",
+            "link": "https://www.hankyung.com/article/2026102790476",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
+          },
+          {
+            "title": "‘삼성전자 EUV기술 유출’ 대학교수 불구속 기소",
+            "link": "https://www.mk.co.kr/news/society/12187716",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "기소"
+            ]
+          }
+        ]
       }
     ],
     "quant_pick": {
@@ -580,20 +604,20 @@
     "updated_at_iso": "2026-10-27T11:27:06.313143+09:00",
     "updated_at_kst": "2026.10.27 (화) 11:27 KST"
   },
-  "updated_at_iso": "2026-10-27T11:27:06.313143+09:00",
-  "updated_at_kst": "2026.10.27 (화) 11:27 KST",
+  "updated_at_iso": "2026-10-28T03:42:33.374789+09:00",
+  "updated_at_kst": "2026.10.28 (수) 03:42 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 18.51,
+      "vix": 17.76,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-10-27T04:20:44.678316+09:00",
-    "updated_at_kst": "2026.10.27 (화) 04:20 KST"
+    "updated_at_iso": "2026-10-28T03:42:33.374789+09:00",
+    "updated_at_kst": "2026.10.28 (수) 03:42 KST"
   },
   "futures": {
     "picks": [
