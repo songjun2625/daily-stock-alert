@@ -1,24 +1,24 @@
 {
+  "005930": {
+    "ticker": "005930",
+    "market": "kr",
+    "name": "삼성전자",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": 9.18,
+    "sector_status": "🔥 강세"
+  },
   "062040": {
     "ticker": "062040",
     "market": "kr",
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
-  "005930": {
-    "ticker": "005930",
-    "market": "kr",
-    "name": "삼성전자",
-    "sector": "반도체",
-    "sector_momentum_5d_pct": 7.06,
-    "sector_status": "🔥 강세"
-  },
   "042700": {
     "ticker": "042700",
     "market": "kr",
     "name": "한미반도체",
     "sector": "반도체",
-    "sector_momentum_5d_pct": 7.06,
+    "sector_momentum_5d_pct": 9.18,
     "sector_status": "🔥 강세"
   },
   "035420": {
@@ -32,11 +32,11 @@
     "market": "kr",
     "name": "삼성바이오로직스",
     "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": -3.9,
+    "sector_momentum_5d_pct": -3.41,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-10-29T11:56:58+09:00",
+    "generated_at_iso": "2026-10-30T03:58:30+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
