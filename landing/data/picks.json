@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.06,
-      "label": "안정",
-      "light": "🟢",
-      "summary": "공포지수 낮아 변동성 안정"
+      "value": 23.14,
+      "label": "주의",
+      "light": "🟡",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
   },
   "runtime": {
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 147.0,
+        "score": 152.0,
         "reasons": [
           "RSI 42(과매도 반등 후보)",
           "52주 고점 대비 -40%",
@@ -125,26 +125,17 @@
           ],
           "hold_days": 5
         },
-        "score_original": 142.0,
+        "score_original": 147.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "\"삼성전자, 주주환원은 시점 문제…비중확대 기회\"-대신",
-            "link": "https://www.hankyung.com/article/2026103049266",
+            "title": "삼성전자, 삼성디스플레이 보유 中 TCL CSOT 지분 전량 인수",
+            "link": "https://www.hankyung.com/article/2026103066757",
             "score": 5,
             "positive": [
-              "주주환원"
-            ],
-            "negative": []
-          },
-          {
-            "title": "삼전 주주환원 엇갈린 평가…\"1월 추가 모멘텀\" \"기대치 못미쳐\"",
-            "link": "https://www.yna.co.kr/view/AKR20261030032100008",
-            "score": 5,
-            "positive": [
-              "주주환원"
+              "인수"
             ],
             "negative": []
           }
@@ -273,7 +264,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 122.0,
+        "score": 127.0,
         "reasons": [
           "RSI 45(과매도 반등 후보)",
           "영업이익률 76%",
@@ -359,7 +350,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 117.0,
+        "score_original": 122.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -393,7 +384,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 122.0,
+        "score": 127.0,
         "reasons": [
           "RSI 37(과매도 반등 후보)",
           "영업이익률 52%",
@@ -479,7 +470,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 117.0,
+        "score_original": 122.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
@@ -610,20 +601,20 @@
     "updated_at_iso": "2026-10-30T11:59:53.965672+09:00",
     "updated_at_kst": "2026.10.30 (금) 11:59 KST"
   },
-  "updated_at_iso": "2026-10-30T11:59:53.965672+09:00",
-  "updated_at_kst": "2026.10.30 (금) 11:59 KST",
+  "updated_at_iso": "2026-10-31T03:38:29.951675+09:00",
+  "updated_at_kst": "2026.10.31 (토) 03:38 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 17.06,
-      "light": "🟢",
-      "label": "매수 OK",
-      "summary": "공포지수 낮아서 매수 괜찮은 날"
+      "vix": 23.14,
+      "light": "🟡",
+      "label": "조심해서 매수",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     },
-    "updated_at_iso": "2026-10-30T03:58:29.592772+09:00",
-    "updated_at_kst": "2026.10.30 (금) 03:58 KST"
+    "updated_at_iso": "2026-10-31T03:38:29.951675+09:00",
+    "updated_at_kst": "2026.10.31 (토) 03:38 KST"
   },
   "futures": {
     "picks": [
