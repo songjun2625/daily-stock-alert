@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 23.14,
+      "value": 21.15,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -460,7 +460,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 122.0,
+      "score": 127.0,
       "reasons": [
         "5/20일선 정배열 시작",
         "영업이익률 80%",
@@ -547,23 +547,14 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 112.0,
-      "news_boost": 10.0,
-      "news_positive": 2,
+      "score_original": 122.0,
+      "news_boost": 5.0,
+      "news_positive": 1,
       "news_negative": 0,
       "news_headlines": [
         {
-          "title": "\"SK하이닉스, 4분기 영업익 사상 첫 100조 돌파 전망\"-KB",
-          "link": "https://www.hankyung.com/article/2026110289926",
-          "score": 5,
-          "positive": [
-            "사상 첫"
-          ],
-          "negative": []
-        },
-        {
-          "title": "SK스퀘어, 4.3조 이상 주주환원…하이닉스 배당수입 70% 푼다",
-          "link": "https://www.yna.co.kr/view/AKR20261102061000017",
+          "title": "SK하이닉스가 쏜 '주주환원=주가반등' 공식…코스닥 유망 종목은",
+          "link": "https://www.hankyung.com/article/202611020498i",
           "score": 5,
           "positive": [
             "주주환원"
@@ -575,20 +566,20 @@
     "updated_at_iso": "2026-11-02T11:45:50.907685+09:00",
     "updated_at_kst": "2026.11.02 (월) 11:45 KST"
   },
-  "updated_at_iso": "2026-11-02T11:45:50.907685+09:00",
-  "updated_at_kst": "2026.11.02 (월) 11:45 KST",
+  "updated_at_iso": "2026-11-03T07:19:34.535223+09:00",
+  "updated_at_kst": "2026.11.03 (화) 07:19 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 23.14,
+      "vix": 21.15,
       "light": "🟡",
       "label": "조심해서 매수",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     },
-    "updated_at_iso": "2026-10-31T03:38:29.951675+09:00",
-    "updated_at_kst": "2026.10.31 (토) 03:38 KST"
+    "updated_at_iso": "2026-11-03T07:19:34.535223+09:00",
+    "updated_at_kst": "2026.11.03 (화) 07:19 KST"
   },
   "futures": {
     "picks": [
