@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 16.83,
-      "label": "안정",
-      "light": "🟢",
-      "summary": "공포지수 낮아 변동성 안정"
+      "value": 25.91,
+      "label": "위험",
+      "light": "🔴",
+      "summary": "변동성 매우 높음 — 신규 진입 자제"
     }
   },
   "runtime": {
@@ -143,7 +143,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 137.0,
         "reasons": [
           "RSI 37(과매도 반등 후보)",
           "영업이익률 55%",
@@ -229,28 +229,19 @@
           ],
           "hold_days": 5
         },
-        "score_original": 142.0,
-        "news_boost": -10.0,
-        "news_positive": 0,
-        "news_negative": 1,
+        "score_original": 132.0,
+        "news_boost": 5.0,
+        "news_positive": 1,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Asian shares mostly advance following US midterms, though Kospi falls on selling of chipmakers",
-            "link": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-mostly-advance-following-025925939.html",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "South Korean Chip Selloff Triggers Trading Halt on Main Bourse",
-            "link": "https://www.wsj.com/finance/stocks/nikkei-rises-0-7-led-by-auto-pharma-stocks-f42def12?siteid=yhoof2&yptr=yahoo",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
+            "title": "Is the Sharp Drop in Micron Stock a Buying Opportunity?",
+            "link": "https://www.barrons.com/articles/micron-stock-price-drop-e2480de5?siteid=yhoof2&yptr=yahoo",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
           }
         ]
       },
@@ -494,7 +485,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 107.0,
+      "score": 102.0,
       "reasons": [
         "RSI 39(과매도 반등 후보)",
         "영업이익률 80%",
@@ -581,23 +572,23 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 117.0,
-      "news_boost": -10.0,
-      "news_positive": 0,
+      "score_original": 107.0,
+      "news_boost": -5.0,
+      "news_positive": 1,
       "news_negative": 1,
       "news_headlines": [
         {
-          "title": "Asian shares mostly advance following US midterms, though Kospi falls on selling of chipmakers",
-          "link": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-mostly-advance-following-025925939.html",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "Sell"
-          ]
+          "title": "Is the Sharp Drop in Micron Stock a Buying Opportunity?",
+          "link": "https://www.barrons.com/articles/micron-stock-price-drop-e2480de5?siteid=yhoof2&yptr=yahoo",
+          "score": 5,
+          "positive": [
+            "Buy"
+          ],
+          "negative": []
         },
         {
-          "title": "South Korean Chip Selloff Triggers Trading Halt on Main Bourse",
-          "link": "https://www.wsj.com/finance/stocks/nikkei-rises-0-7-led-by-auto-pharma-stocks-f42def12?siteid=yhoof2&yptr=yahoo",
+          "title": "Micron stock declines 12% as chip sell-off deepens",
+          "link": "https://finance.yahoo.com/markets/article/micron-declines-12-as-chip-sell-off-deepens-163137019.html",
           "score": -10,
           "positive": [],
           "negative": [
@@ -609,20 +600,20 @@
     "updated_at_iso": "2026-11-05T12:45:44.897594+09:00",
     "updated_at_kst": "2026.11.05 (목) 12:45 KST"
   },
-  "updated_at_iso": "2026-11-05T12:45:44.897594+09:00",
-  "updated_at_kst": "2026.11.05 (목) 12:45 KST",
+  "updated_at_iso": "2026-11-06T05:41:06.055083+09:00",
+  "updated_at_kst": "2026.11.06 (금) 05:41 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
+    "no_pick_reason": "미장 변동성 매우 높음 (VIX 25.9 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
     "traffic_light": {
-      "vix": 16.83,
-      "light": "🟢",
-      "label": "매수 OK",
-      "summary": "공포지수 낮아서 매수 괜찮은 날"
+      "vix": 25.91,
+      "light": "🔴",
+      "label": "오늘은 쉬자",
+      "summary": "변동성 매우 높음 — 신규 진입 자제"
     },
-    "updated_at_iso": "2026-11-05T05:26:21.577814+09:00",
-    "updated_at_kst": "2026.11.05 (목) 05:26 KST"
+    "updated_at_iso": "2026-11-06T05:41:06.055083+09:00",
+    "updated_at_kst": "2026.11.06 (금) 05:41 KST"
   },
   "futures": {
     "picks": [
