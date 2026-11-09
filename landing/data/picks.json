@@ -21,36 +21,142 @@
   "kr": {
     "picks": [
       {
+        "ticker": "112610",
+        "name": "CS윈드",
+        "sector": "전선·전력인프라",
+        "price": 49750,
+        "change_pct_1d": 1.323828920570258,
+        "market_cap": 2070237937664.0,
+        "operating_margin": 0.12531,
+        "revenue_growth": 0.056,
+        "pe_ratio": null,
+        "drawdown_52w": 0.3530559167750325,
+        "rsi": 57.62534240865556,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": true,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 126.5,
+        "reasons": [
+          "52주 고점 대비 -35%",
+          "5/20일선 정배열 시작",
+          "영업이익률 13%",
+          "매출 성장 +6%"
+        ],
+        "entry_low": 47134,
+        "entry_high": 51619,
+        "target": 59841,
+        "stoploss": 44144,
+        "narrative": {
+          "one_liner": "전선·전력인프라 영업이익률 13% / RSI 58 반등 신호",
+          "thesis": "CS윈드(112610)는 매출 성장률 6% · 영업이익률 13%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 35% 떨어진 상태에서 RSI 58로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "13%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "6%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "58",
+              "ok": false,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-35%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "✓",
+              "ok": true,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 31.3
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 16.8
+            },
+            {
+              "name": "5/20일선 정배열",
+              "points": 8
+            }
+          ],
+          "hold_days": 5
+        }
+      },
+      {
         "ticker": "042700",
         "name": "한미반도체",
         "sector": "반도체",
-        "price": 161200,
-        "change_pct_1d": -4.671791839148431,
-        "market_cap": 15290303774720.0,
+        "price": 167600,
+        "change_pct_1d": 3.8413878562577386,
+        "market_cap": 15897363218432.0,
         "operating_margin": 0.51897,
         "revenue_growth": 0.395,
         "pe_ratio": null,
-        "drawdown_52w": 0.6063492063492063,
-        "rsi": 33.45742989963672,
+        "drawdown_52w": 0.5907203907203907,
+        "rsi": 36.644546648821326,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 117.0,
         "reasons": [
-          "RSI 33(과매도 반등 후보)",
+          "RSI 37(과매도 반등 후보)",
           "영업이익률 52%",
           "매출 성장 +40%"
         ],
-        "entry_low": 151705,
-        "entry_high": 167982,
-        "target": 197823,
-        "stoploss": 140854,
+        "entry_low": 158150,
+        "entry_high": 174350,
+        "target": 204050,
+        "stoploss": 147350,
         "narrative": {
-          "one_liner": "반도체 영업이익률 52% / RSI 33 반등 신호",
-          "thesis": "한미반도체(042700)는 매출 성장률 40% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 61% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 52% / RSI 37 반등 신호",
+          "thesis": "한미반도체(042700)는 매출 성장률 40% · 영업이익률 52%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 59% 떨어진 상태에서 RSI 37로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -66,13 +172,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "33",
+              "value": "37",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-61%",
+              "value": "-59%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -129,33 +235,33 @@
         "ticker": "000660",
         "name": "SK하이닉스",
         "sector": "반도체",
-        "price": 1175000,
-        "change_pct_1d": -7.041139240506333,
-        "market_cap": 828578648293376.0,
+        "price": 1179000,
+        "change_pct_1d": 4.151943462897534,
+        "market_cap": 831399368065024.0,
         "operating_margin": 0.79657,
         "revenue_growth": 3.279,
         "pe_ratio": null,
-        "drawdown_52w": 0.5973776090038017,
-        "rsi": 34.40260414492572,
+        "drawdown_52w": 0.5960069795876445,
+        "rsi": 36.216821663493,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 127.0,
+        "score": 107.0,
         "reasons": [
-          "RSI 34(과매도 반등 후보)",
+          "RSI 36(과매도 반등 후보)",
           "영업이익률 80%",
           "매출 성장 +328%"
         ],
-        "entry_low": 1091850,
-        "entry_high": 1234393,
-        "target": 1495722,
-        "stoploss": 996821,
+        "entry_low": 1096700,
+        "entry_high": 1237786,
+        "target": 1496443,
+        "stoploss": 1002643,
         "narrative": {
-          "one_liner": "반도체 영업이익률 80% / RSI 34 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 328% · 영업이익률 80%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 60% 떨어진 상태에서 RSI 34로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 80% / RSI 36 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 328% · 영업이익률 80%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 60% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -171,7 +277,7 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "34",
+              "value": "36",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
@@ -229,14 +335,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 137.0,
+        "score_original": 117.0,
         "news_boost": -10.0,
         "news_positive": 0,
         "news_negative": 1,
         "news_headlines": [
           {
-            "title": "SK hynix Stocks Plunge 10.44% as AI Memory Leader Leads Seoul Selloff",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-plunge-10-162015806.html",
+            "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html",
             "score": -10,
             "positive": [],
             "negative": [
@@ -244,8 +350,8 @@
             ]
           },
           {
-            "title": "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
-            "link": "https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html",
+            "title": "IPOs Struggle in Tech Selloff. Berkshire Has a Winner.",
+            "link": "https://www.barrons.com/articles/ipo-stocks-berkshire-spacex-cerebras-bending-spoons-a91d4b25?siteid=yhoof2&yptr=yahoo",
             "score": -10,
             "positive": [],
             "negative": [
@@ -258,33 +364,33 @@
         "ticker": "005930",
         "name": "삼성전자",
         "sector": "반도체",
-        "price": 192400,
-        "change_pct_1d": -4.516129032258065,
-        "market_cap": 1252243617611776.0,
+        "price": 194700,
+        "change_pct_1d": 3.1796502384737746,
+        "market_cap": 1267872198295552.0,
         "operating_margin": 0.55044,
         "revenue_growth": 1.268,
         "pe_ratio": null,
-        "drawdown_52w": 0.459444604968653,
-        "rsi": 33.03662257720144,
+        "drawdown_52w": 0.45298266417565874,
+        "rsi": 35.51064331062365,
         "volume_spike": false,
         "macd_golden_cross": false,
         "ma_aligned_up": false,
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 127.0,
+        "score": 97.0,
         "reasons": [
-          "RSI 33(과매도 반등 후보)",
+          "RSI 36(과매도 반등 후보)",
           "영업이익률 55%",
           "매출 성장 +127%"
         ],
-        "entry_low": 181538,
-        "entry_high": 200159,
-        "target": 234299,
-        "stoploss": 169123,
+        "entry_low": 183955,
+        "entry_high": 202375,
+        "target": 236145,
+        "stoploss": 171675,
         "narrative": {
-          "one_liner": "반도체 영업이익률 55% / RSI 33 반등 신호",
-          "thesis": "삼성전자(005930)는 매출 성장률 127% · 영업이익률 55%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 46% 떨어진 상태에서 RSI 33로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "one_liner": "반도체 영업이익률 55% / RSI 36 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 127% · 영업이익률 55%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 45% 떨어진 상태에서 RSI 36로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
           "signals": [
             {
               "label": "영업이익률",
@@ -300,13 +406,13 @@
             },
             {
               "label": "RSI (과매도 지수)",
-              "value": "33",
+              "value": "36",
               "ok": true,
               "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
             },
             {
               "label": "52주 고점 대비",
-              "value": "-46%",
+              "value": "-45%",
               "ok": false,
               "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
             },
@@ -358,14 +464,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 137.0,
-        "news_boost": -10.0,
+        "score_original": 117.0,
+        "news_boost": -20.0,
         "news_positive": 0,
-        "news_negative": 1,
+        "news_negative": 2,
         "news_headlines": [
           {
-            "title": "SK hynix Stocks Plunge 10.44% as AI Memory Leader Leads Seoul Selloff",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-plunge-10-162015806.html",
+            "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html",
             "score": -10,
             "positive": [],
             "negative": [
@@ -373,181 +479,71 @@
             ]
           },
           {
-            "title": "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
-            "link": "https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html",
+            "title": "5000선 사수 총력전…삼전 사고 닉스 팔고 [주식 초고수는 지금]",
+            "link": "https://www.mk.co.kr/news/stock/12202159",
             "score": -10,
             "positive": [],
             "negative": [
-              "Sell"
+              "사고"
             ]
           }
         ]
-      },
-      {
-        "ticker": "035420",
-        "name": "NAVER",
-        "sector": "IT 플랫폼",
-        "price": 188600,
-        "change_pct_1d": 2.0010816657652697,
-        "market_cap": 26967546003456.0,
-        "operating_margin": 0.15354,
-        "revenue_growth": 0.162,
-        "pe_ratio": null,
-        "drawdown_52w": 0.3359542192191697,
-        "rsi": 56.14348566266408,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": true,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 120.71,
-        "reasons": [
-          "52주 고점 대비 -34%",
-          "5/20일선 정배열 시작",
-          "영업이익률 15%",
-          "매출 성장 +16%"
-        ],
-        "entry_low": 183325,
-        "entry_high": 192368,
-        "target": 208947,
-        "stoploss": 177296,
-        "narrative": {
-          "one_liner": "IT 플랫폼 영업이익률 15% / RSI 56 반등 신호",
-          "thesis": "NAVER(035420)는 매출 성장률 16% · 영업이익률 15%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 34% 떨어진 상태에서 RSI 56로 중립 구간이며, 5/20일선 정배열(상승 추세) 시작 단계라 단기 반등 가능성이 높습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "15%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "16%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "56",
-              "ok": false,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-34%",
-              "ok": true,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "✓",
-              "ok": true,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 38.4
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "52주 -10~-35%",
-              "points": 15
-            },
-            {
-              "name": "5/20일선 정배열",
-              "points": 8
-            }
-          ],
-          "hold_days": 5
-        }
       }
     ],
     "quant_pick": {
-      "ticker": "196170",
-      "name": "알테오젠",
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
       "sector": "바이오·헬스케어",
-      "price": 201500,
-      "change_pct_1d": -4.728132387706852,
-      "market_cap": 14006988308480.0,
-      "operating_margin": 0.49613,
-      "revenue_growth": 2.695,
+      "price": 1552000,
+      "change_pct_1d": 2.37467018469657,
+      "market_cap": 72250954874880.0,
+      "operating_margin": 0.44397,
+      "revenue_growth": 0.302,
       "pe_ratio": null,
-      "drawdown_52w": 0.5309990157380088,
-      "rsi": 33.51180407714443,
+      "drawdown_52w": 0.21017811704834605,
+      "rsi": 62.61015063780933,
       "volume_spike": false,
       "macd_golden_cross": false,
       "ma_aligned_up": false,
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 115.0,
+      "score": 102.0,
       "reasons": [
-        "RSI 34(과매도 반등 후보)",
-        "영업이익률 50%",
-        "매출 성장 +270%"
+        "52주 고점 대비 -21%",
+        "영업이익률 44%",
+        "매출 성장 +30%"
       ],
-      "entry_low": 192435,
-      "entry_high": 207975,
-      "target": 236465,
-      "stoploss": 182075,
+      "entry_low": 1497750,
+      "entry_high": 1590750,
+      "target": 1761250,
+      "stoploss": 1435750,
       "narrative": {
-        "one_liner": "바이오·헬스케어 영업이익률 50% / RSI 34 반등 신호",
-        "thesis": "알테오젠(196170)는 매출 성장률 270% · 영업이익률 50%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 53% 떨어진 상태에서 RSI 34로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+        "one_liner": "바이오·헬스케어 영업이익률 44% / RSI 63 반등 신호",
+        "thesis": "삼성바이오로직스(207940)는 매출 성장률 30% · 영업이익률 44%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 21% 떨어진 상태에서 RSI 63로 중립 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
         "signals": [
           {
             "label": "영업이익률",
-            "value": "50%",
+            "value": "44%",
             "ok": true,
             "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
           },
           {
             "label": "매출 성장",
-            "value": "270%",
+            "value": "30%",
             "ok": true,
             "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
           },
           {
             "label": "RSI (과매도 지수)",
-            "value": "34",
-            "ok": true,
+            "value": "63",
+            "ok": false,
             "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
           },
           {
             "label": "52주 고점 대비",
-            "value": "-53%",
-            "ok": false,
+            "value": "-21%",
+            "ok": true,
             "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
           },
           {
@@ -581,7 +577,7 @@
             "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
           }
         ],
-        "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+        "risk": "개별 종목 리스크는 시장 전체 흐름과 무관하게 발생할 수 있습니다. 정해둔 손절 라인에 도달하면 즉시 매도해 손실 확대를 막으세요.",
         "score_breakdown": [
           {
             "name": "영업이익률 ≥10%",
@@ -592,19 +588,34 @@
             "points": 37.5
           },
           {
-            "name": "RSI 30~45 구간",
-            "points": 20
+            "name": "52주 -10~-35%",
+            "points": 15
           }
         ],
         "hold_days": 5
       },
-      "quant_score": 195.0
+      "quant_score": 195.0,
+      "score_original": 97.0,
+      "news_boost": 5.0,
+      "news_positive": 1,
+      "news_negative": 0,
+      "news_headlines": [
+        {
+          "title": "삼성바이오에피스, 키트루다 바이오시밀러 임상 3상서 동등성 확인",
+          "link": "https://www.mk.co.kr/news/it/12202201",
+          "score": 5,
+          "positive": [
+            "임상 3상"
+          ],
+          "negative": []
+        }
+      ]
     },
-    "updated_at_iso": "2026-11-06T12:41:30.019498+09:00",
-    "updated_at_kst": "2026.11.06 (금) 12:41 KST"
+    "updated_at_iso": "2026-11-09T12:01:23.576980+09:00",
+    "updated_at_kst": "2026.11.09 (월) 12:01 KST"
   },
-  "updated_at_iso": "2026-11-07T04:57:47.738788+09:00",
-  "updated_at_kst": "2026.11.07 (토) 04:57 KST",
+  "updated_at_iso": "2026-11-09T12:01:23.576980+09:00",
+  "updated_at_kst": "2026.11.09 (월) 12:01 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
