@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 24.56,
+      "value": 19.92,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -614,20 +614,20 @@
     "updated_at_iso": "2026-11-09T12:01:23.576980+09:00",
     "updated_at_kst": "2026.11.09 (월) 12:01 KST"
   },
-  "updated_at_iso": "2026-11-09T12:01:23.576980+09:00",
-  "updated_at_kst": "2026.11.09 (월) 12:01 KST",
+  "updated_at_iso": "2026-11-10T07:59:34.458702+09:00",
+  "updated_at_kst": "2026.11.10 (화) 07:59 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 24.56,
-      "light": "🟡",
-      "label": "조심해서 매수",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "vix": 19.92,
+      "light": "🟢",
+      "label": "매수 OK",
+      "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-11-07T04:57:47.738788+09:00",
-    "updated_at_kst": "2026.11.07 (토) 04:57 KST"
+    "updated_at_iso": "2026-11-10T07:59:34.458702+09:00",
+    "updated_at_kst": "2026.11.10 (화) 07:59 KST"
   },
   "futures": {
     "picks": [
