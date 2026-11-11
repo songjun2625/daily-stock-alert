@@ -10,31 +10,35 @@
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -8.2,
+    "sector_momentum_5d_pct": -6.78,
     "sector_status": "❄️ 부진"
   },
-  "062040": {
-    "ticker": "062040",
+  "042700": {
+    "ticker": "042700",
     "market": "kr",
-    "name": "산일전기",
-    "sector": "전선·전력인프라"
-  },
-  "036570": {
-    "ticker": "036570",
-    "market": "kr",
-    "name": "엔씨소프트",
-    "sector": "코스피·코스닥"
+    "name": "한미반도체",
+    "sector": "반도체",
+    "sector_momentum_5d_pct": -6.78,
+    "sector_status": "❄️ 부진"
   },
   "000660": {
     "ticker": "000660",
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -8.2,
+    "sector_momentum_5d_pct": -6.78,
     "sector_status": "❄️ 부진"
   },
+  "196170": {
+    "ticker": "196170",
+    "market": "kr",
+    "name": "알테오젠",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": -2.39,
+    "sector_status": "📉 약세"
+  },
   "_meta": {
-    "generated_at_iso": "2026-11-11T05:28:33+09:00",
+    "generated_at_iso": "2026-11-11T12:05:43+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
