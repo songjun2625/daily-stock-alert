@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 17.45,
-      "label": "안정",
-      "light": "🟢",
-      "summary": "공포지수 낮아 변동성 안정"
+      "value": 18.84,
+      "label": "주의",
+      "light": "🟡",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
   },
   "runtime": {
@@ -176,7 +176,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 139.0,
+        "score": 134.0,
         "reasons": [
           "RSI 44(과매도 반등 후보)",
           "MACD 골든크로스",
@@ -267,14 +267,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 129.0,
-        "news_boost": 10.0,
-        "news_positive": 2,
-        "news_negative": 0,
+        "score_original": 139.0,
+        "news_boost": -5.0,
+        "news_positive": 1,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Nvidia vs. SK Hynix: Which AI Chip Stock Is a Better Buy for 2027?",
-            "link": "https://www.fool.com/coverage/better-buy/2026/11/11/nvidia-vs-sk-hynix-which-ai-chip-stock-is-a-better-buy-for-2027/",
+            "title": "Samsung Stocks Rise as Foreign Buyers Step In Despite NVIDIA Turmoil",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-rise-foreign-buyers-194545026.html",
             "score": 5,
             "positive": [
               "Buy"
@@ -282,22 +282,13 @@
             "negative": []
           },
           {
-            "title": "Samsung Electronics Stocks Rise 3.57% as Foreign Buyers Return to AI Memory",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-stocks-rise-3-191025640.html",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          },
-          {
-            "title": "SK hynix Rides the AI Data Center Boom and HBM4 Ramp-Up",
-            "link": "https://finance.yahoo.com/technology/ai/articles/sk-hynix-rides-ai-data-162200615.html",
-            "score": 5,
-            "positive": [
-              "HBM"
-            ],
-            "negative": []
+            "title": "외국인 삼전 사고, 하이닉스 팔고…삼전 0.9%↑·하닉 1.80%↓(종합)",
+            "link": "https://www.yna.co.kr/view/AKR20261112046051008",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "사고"
+            ]
           }
         ]
       },
@@ -626,20 +617,20 @@
     "updated_at_iso": "2026-11-12T13:21:08.518870+09:00",
     "updated_at_kst": "2026.11.12 (목) 13:21 KST"
   },
-  "updated_at_iso": "2026-11-12T13:21:08.518870+09:00",
-  "updated_at_kst": "2026.11.12 (목) 13:21 KST",
+  "updated_at_iso": "2026-11-13T05:50:20.922151+09:00",
+  "updated_at_kst": "2026.11.13 (금) 05:50 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 17.45,
+      "vix": 18.84,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-11-12T05:12:43.672519+09:00",
-    "updated_at_kst": "2026.11.12 (목) 05:12 KST"
+    "updated_at_iso": "2026-11-13T05:50:20.922151+09:00",
+    "updated_at_kst": "2026.11.13 (금) 05:50 KST"
   },
   "futures": {
     "picks": [
