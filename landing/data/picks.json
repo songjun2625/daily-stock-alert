@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.84,
+      "value": 18.96,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -38,7 +38,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 159.0,
+        "score": 169.0,
         "reasons": [
           "RSI 44(과매도 반등 후보)",
           "MACD 골든크로스",
@@ -129,14 +129,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 154.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
+        "score_original": 159.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Samsung in talks to buy data center cooling firm Modine, Bloomberg reports",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-talks-buy-data-center-005809830.html",
+            "title": "Modine Stock Just Soared 29% on a Report That Samsung Wants to Buy It. Is It Too Late to Buy?",
+            "link": "https://www.fool.com/investing/2026/11/13/modine-stock-just-soared-29-on-a-report-that-samsung-wants-to-buy-it-is-it-too-late-to-buy/",
             "score": 5,
             "positive": [
               "Buy"
@@ -144,8 +144,17 @@
             "negative": []
           },
           {
-            "title": "Samsung Stocks Rise as Foreign Buyers Step In Despite NVIDIA Turmoil",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-rise-foreign-buyers-194545026.html",
+            "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-3-183209379.html",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
+          },
+          {
+            "title": "Samsung Wants to Buy an American AI Data Center Cooling Company",
+            "link": "https://247wallst.com/investing/2026/11/13/samsung-wants-to-buy-an-american-ai-data-center-cooling-company/",
             "score": 5,
             "positive": [
               "Buy"
@@ -172,7 +181,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 134.0,
+        "score": 144.0,
         "reasons": [
           "RSI 42(과매도 반등 후보)",
           "MACD 골든크로스",
@@ -263,14 +272,23 @@
           ],
           "hold_days": 5
         },
-        "score_original": 129.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
+        "score_original": 134.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Samsung Stocks Rise as Foreign Buyers Step In Despite NVIDIA Turmoil",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-rise-foreign-buyers-194545026.html",
+            "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-3-183209379.html",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
+          },
+          {
+            "title": "3 Unstoppable Memory Stocks to Buy Hand Over Fist in 2027",
+            "link": "https://www.fool.com/investing/2026/11/13/unstoppable-memory-stocks-buy-hand-over-fist/",
             "score": 5,
             "positive": [
               "Buy"
@@ -599,20 +617,20 @@
     "updated_at_iso": "2026-11-13T12:38:17.731834+09:00",
     "updated_at_kst": "2026.11.13 (금) 12:38 KST"
   },
-  "updated_at_iso": "2026-11-13T12:38:17.731834+09:00",
-  "updated_at_kst": "2026.11.13 (금) 12:38 KST",
+  "updated_at_iso": "2026-11-14T05:29:54.955701+09:00",
+  "updated_at_kst": "2026.11.14 (토) 05:29 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 18.84,
+      "vix": 18.96,
       "light": "🟢",
       "label": "매수 OK",
       "summary": "공포지수 낮아서 매수 괜찮은 날"
     },
-    "updated_at_iso": "2026-11-13T05:50:20.922151+09:00",
-    "updated_at_kst": "2026.11.13 (금) 05:50 KST"
+    "updated_at_iso": "2026-11-14T05:29:54.955701+09:00",
+    "updated_at_kst": "2026.11.14 (토) 05:29 KST"
   },
   "futures": {
     "picks": [
