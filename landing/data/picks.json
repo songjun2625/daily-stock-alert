@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 18.96,
+      "value": 22.91,
       "label": "주의",
       "light": "🟡",
       "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
@@ -386,7 +386,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 122.0,
+        "score": 117.0,
         "reasons": [
           "52주 고점 대비 -13%",
           "5/20일선 정배열 시작",
@@ -477,7 +477,7 @@
           ],
           "hold_days": 5
         },
-        "score_original": 127.0,
+        "score_original": 122.0,
         "news_boost": -5.0,
         "news_positive": 1,
         "news_negative": 1,
@@ -514,7 +514,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 127.0,
+      "score": 122.0,
       "reasons": [
         "RSI 37(과매도 반등 후보)",
         "영업이익률 74%",
@@ -601,35 +601,26 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 117.0,
-      "news_boost": 10.0,
-      "news_positive": 2,
-      "news_negative": 0,
+      "score_original": 127.0,
+      "news_boost": -5.0,
+      "news_positive": 1,
+      "news_negative": 1,
       "news_headlines": [
         {
-          "title": "Samsung’s $34 Billion HBM Bet Raises Memory Glut Risks",
-          "link": "https://247wallst.com/investing/2026/11/14/samsungs-34-billion-hbm-bet-raises-memory-glut-risks/",
-          "score": 5,
-          "positive": [
-            "HBM"
-          ],
-          "negative": []
+          "title": "AI Chip Stocks Extend Their Sell-Off as Monday Opens Deep in the Red",
+          "link": "https://beincrypto.com/chip-stocks-260-billion-hit-650-billion-two-days/",
+          "score": -10,
+          "positive": [],
+          "negative": [
+            "Sell"
+          ]
         },
         {
-          "title": "SK hynix Stocks Fall 3.03% as Nvidia Leadership Shock Hits Key HBM Supplier",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-fall-3-183209379.html",
+          "title": "하이닉스 공장 속 소부장 실험실…\"협력사 생산기간 30% 단축\"",
+          "link": "https://www.hankyung.com/article/2026111601531",
           "score": 5,
           "positive": [
-            "HBM"
-          ],
-          "negative": []
-        },
-        {
-          "title": "3 Unstoppable Memory Stocks to Buy Hand Over Fist in 2027",
-          "link": "https://www.fool.com/investing/2026/11/13/unstoppable-memory-stocks-buy-hand-over-fist/",
-          "score": 5,
-          "positive": [
-            "Buy"
+            "협력"
           ],
           "negative": []
         }
@@ -638,20 +629,20 @@
     "updated_at_iso": "2026-11-16T12:13:09.599323+09:00",
     "updated_at_kst": "2026.11.16 (월) 12:13 KST"
   },
-  "updated_at_iso": "2026-11-16T12:13:09.599323+09:00",
-  "updated_at_kst": "2026.11.16 (월) 12:13 KST",
+  "updated_at_iso": "2026-11-17T07:54:37.642932+09:00",
+  "updated_at_kst": "2026.11.17 (화) 07:54 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
     "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 18.96,
-      "light": "🟢",
-      "label": "매수 OK",
-      "summary": "공포지수 낮아서 매수 괜찮은 날"
+      "vix": 22.91,
+      "light": "🟡",
+      "label": "조심해서 매수",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     },
-    "updated_at_iso": "2026-11-14T05:29:54.955701+09:00",
-    "updated_at_kst": "2026.11.14 (토) 05:29 KST"
+    "updated_at_iso": "2026-11-17T07:54:37.642932+09:00",
+    "updated_at_kst": "2026.11.17 (화) 07:54 KST"
   },
   "futures": {
     "picks": [
