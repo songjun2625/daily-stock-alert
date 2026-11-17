@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 22.91,
-      "label": "주의",
-      "light": "🟡",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "value": 25.46,
+      "label": "위험",
+      "light": "🔴",
+      "summary": "변동성 매우 높음 — 신규 진입 자제"
     }
   },
   "runtime": {
@@ -353,7 +353,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 107.0,
+        "score": 102.0,
         "reasons": [
           "RSI 35(과매도 반등 후보)",
           "영업이익률 74%",
@@ -439,11 +439,20 @@
           ],
           "hold_days": 5
         },
-        "score_original": 117.0,
-        "news_boost": -10.0,
-        "news_positive": 0,
+        "score_original": 107.0,
+        "news_boost": -5.0,
+        "news_positive": 1,
         "news_negative": 1,
         "news_headlines": [
+          {
+            "title": "5 Best Blue Chip Stocks to Buy and Hold for 3 Years",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-blue-chip-stocks-144831704.html",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
           {
             "title": "AMD, MU, SKHY, AVGO: Chip Stocks Ease Overnight After Selloff On New US Chip Restrictions Targeting China",
             "link": "https://stocktwits.com/news-articles/markets/equity/amd-mu-skhy-avgo-chip-stocks-ease-overnight-after-selloff-on-new-us-chip-restrictions-targeting-china/cNba10cR9gA",
@@ -565,20 +574,20 @@
     "updated_at_iso": "2026-11-17T14:15:15.584986+09:00",
     "updated_at_kst": "2026.11.17 (화) 14:15 KST"
   },
-  "updated_at_iso": "2026-11-17T14:15:15.584986+09:00",
-  "updated_at_kst": "2026.11.17 (화) 14:15 KST",
+  "updated_at_iso": "2026-11-18T06:46:43.604448+09:00",
+  "updated_at_kst": "2026.11.18 (수) 06:46 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
+    "no_pick_reason": "미장 변동성 매우 높음 (VIX 25.5 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
     "traffic_light": {
-      "vix": 22.91,
-      "light": "🟡",
-      "label": "조심해서 매수",
-      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
+      "vix": 25.46,
+      "light": "🔴",
+      "label": "오늘은 쉬자",
+      "summary": "변동성 매우 높음 — 신규 진입 자제"
     },
-    "updated_at_iso": "2026-11-17T07:54:37.642932+09:00",
-    "updated_at_kst": "2026.11.17 (화) 07:54 KST"
+    "updated_at_iso": "2026-11-18T06:46:43.604448+09:00",
+    "updated_at_kst": "2026.11.18 (수) 06:46 KST"
   },
   "futures": {
     "picks": [
