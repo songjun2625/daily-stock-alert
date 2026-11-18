@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 25.46,
-      "label": "위험",
-      "light": "🔴",
-      "summary": "변동성 매우 높음 — 신규 진입 자제"
+      "value": 24.54,
+      "label": "주의",
+      "light": "🟡",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
   },
   "runtime": {
@@ -139,6 +139,127 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 1154000,
+        "change_pct_1d": 5.1001821493624755,
+        "market_cap": 814475183652864.0,
+        "operating_margin": 0.745,
+        "revenue_growth": 3.279,
+        "pe_ratio": null,
+        "drawdown_52w": 0.6045734134386274,
+        "rsi": 39.14884403281136,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 140.0,
+        "reasons": [
+          "RSI 39(과매도 반등 후보)",
+          "영업이익률 74%",
+          "매출 성장 +328%"
+        ],
+        "entry_low": 1076800,
+        "entry_high": 1209143,
+        "target": 1451772,
+        "stoploss": 988571,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 74% / RSI 39 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 328% · 영업이익률 74%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 60% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "74%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "328%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "39",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-60%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 130.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
+        "news_headlines": [
+          {
+            "title": "Nvidia’s Annual GPU Upgrades Are Changing the HBM Investment Outlook",
+            "link": "https://247wallst.com/technology-3/2026/11/18/nvidias-annual-gpu-upgrades-are-changing-the-hbm-investment-outlook/",
+            "score": 10,
+            "positive": [
+              "HBM",
+              "GPU"
+            ],
+            "negative": []
+          }
+        ]
       },
       {
         "ticker": "267260",
@@ -349,126 +470,6 @@
           ],
           "hold_days": 5
         }
-      },
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "sector": "반도체",
-        "price": 1154000,
-        "change_pct_1d": 5.1001821493624755,
-        "market_cap": 814475183652864.0,
-        "operating_margin": 0.745,
-        "revenue_growth": 3.279,
-        "pe_ratio": null,
-        "drawdown_52w": 0.6045734134386274,
-        "rsi": 39.14884403281136,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 130.0,
-        "reasons": [
-          "RSI 39(과매도 반등 후보)",
-          "영업이익률 74%",
-          "매출 성장 +328%"
-        ],
-        "entry_low": 1076800,
-        "entry_high": 1209143,
-        "target": 1451772,
-        "stoploss": 988571,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 74% / RSI 39 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 328% · 영업이익률 74%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 60% 떨어진 상태에서 RSI 39로 약세 구간(반등 가능) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "74%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "328%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "39",
-              "ok": true,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-60%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 125.0,
-        "news_boost": 5.0,
-        "news_positive": 1,
-        "news_negative": 0,
-        "news_headlines": [
-          {
-            "title": "5 Best Blue Chip Stocks to Buy and Hold for 3 Years",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-blue-chip-stocks-144831704.html",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          }
-        ]
       }
     ],
     "quant_pick": {
@@ -489,7 +490,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 122.0,
+      "score": 137.0,
       "reasons": [
         "RSI 38(과매도 반등 후보)",
         "영업이익률 46%",
@@ -576,23 +577,24 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 117.0,
-      "news_boost": 5.0,
-      "news_positive": 1,
+      "score_original": 122.0,
+      "news_boost": 15.0,
+      "news_positive": 3,
       "news_negative": 0,
       "news_headlines": [
         {
-          "title": "'20만전자 코앞'…엔비디아 호실적에 삼전닉스 동반 강세",
-          "link": "https://www.hankyung.com/article/2026111836546",
-          "score": 5,
+          "title": "Nvidia’s Annual GPU Upgrades Are Changing the HBM Investment Outlook",
+          "link": "https://247wallst.com/technology-3/2026/11/18/nvidias-annual-gpu-upgrades-are-changing-the-hbm-investment-outlook/",
+          "score": 10,
           "positive": [
-            "호실적"
+            "HBM",
+            "GPU"
           ],
           "negative": []
         },
         {
-          "title": "엔비디아 호실적에 '5000피' 회복…삼전닉스 모처럼 날았다",
-          "link": "https://www.hankyung.com/article/2026111837076",
+          "title": "'20만전자 코앞'…엔비디아 호실적에 삼전닉스 동반 강세",
+          "link": "https://www.hankyung.com/article/2026111836546",
           "score": 5,
           "positive": [
             "호실적"
@@ -604,20 +606,20 @@
     "updated_at_iso": "2026-11-18T13:44:13.116382+09:00",
     "updated_at_kst": "2026.11.18 (수) 13:44 KST"
   },
-  "updated_at_iso": "2026-11-18T13:44:13.116382+09:00",
-  "updated_at_kst": "2026.11.18 (수) 13:44 KST",
+  "updated_at_iso": "2026-11-19T06:26:43.713040+09:00",
+  "updated_at_kst": "2026.11.19 (목) 06:26 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "미장 변동성 매우 높음 (VIX 25.5 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
+    "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 25.46,
-      "light": "🔴",
-      "label": "오늘은 쉬자",
-      "summary": "변동성 매우 높음 — 신규 진입 자제"
+      "vix": 24.54,
+      "light": "🟡",
+      "label": "조심해서 매수",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     },
-    "updated_at_iso": "2026-11-18T06:46:43.604448+09:00",
-    "updated_at_kst": "2026.11.18 (수) 06:46 KST"
+    "updated_at_iso": "2026-11-19T06:26:43.713040+09:00",
+    "updated_at_kst": "2026.11.19 (목) 06:26 KST"
   },
   "futures": {
     "picks": [
