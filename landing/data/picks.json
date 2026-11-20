@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 28.44,
+      "value": 38.47,
       "label": "위험",
       "light": "🔴",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
@@ -358,7 +358,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 102.0,
+        "score": 92.0,
         "reasons": [
           "RSI 38(과매도 반등 후보)",
           "영업이익률 74%",
@@ -444,14 +444,14 @@
           ],
           "hold_days": 5
         },
-        "score_original": 117.0,
-        "news_boost": -15.0,
-        "news_positive": 1,
-        "news_negative": 2,
+        "score_original": 102.0,
+        "news_boost": -10.0,
+        "news_positive": 0,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "South Korea’s Stock Market and the Nikkei 225 Sink More Than 4% as the AI Selloff Spreads From Wall Street. Here’s How Much of a Target-Date Fund Is in Samsung, SK Hynix and TSMC",
-            "link": "https://247wallst.com/investing/2026/11/19/south-koreas-stock-market-and-the-nikkei-225-sink-more-than-4-as-the-ai-selloff-spreads-from-wall-street-heres-how-much-of-a-target-date-fund-is-in-samsung-sk-hynix-and-tsmc/",
+            "title": "Anthropic’s Post-IPO Selloff Is Near Facebook Levels of Pain",
+            "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-20-2026/card/anthropic-s-post-ipo-selloff-is-near-facebook-levels-of-pain-co8TaLZTppXgHnjPNRMr?siteid=yhoof2&yptr=yahoo",
             "score": -10,
             "positive": [],
             "negative": [
@@ -459,17 +459,8 @@
             ]
           },
           {
-            "title": "South Korea’s Stock Market Sinks 4.6% as KOSPI Heavyweights SK Hynix and Samsung Fall 6% After Wall Street’s AI Selloff",
-            "link": "https://247wallst.com/investing/2026/11/19/south-koreas-stock-market-sinks-4-6-as-kospi-heavyweights-sk-hynix-and-samsung-fall-6-after-wall-streets-ai-selloff/",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "Record profits but record outflows: 'Sell Korea' trade stalks Seoul market",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/analysis-record-profits-record-outflows-111842731.html",
+            "title": "Micron Sinks 6%, Sandisk Down 7% as Chip Selloff Deepens Memory’s “Abject Disaster”",
+            "link": "https://www.tikr.com/blog/micron-sinks-6-sandisk-down-7-as-chip-selloff-deepens-memorys-abject-disaster?ref=yahoofinance&tlnk=yf-261120-gwxqp9q2",
             "score": -10,
             "positive": [],
             "negative": [
@@ -497,7 +488,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 102.0,
+      "score": 97.0,
       "reasons": [
         "RSI 35(과매도 반등 후보)",
         "영업이익률 46%",
@@ -584,10 +575,10 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 117.0,
-      "news_boost": -15.0,
+      "score_original": 102.0,
+      "news_boost": -5.0,
       "news_positive": 1,
-      "news_negative": 2,
+      "news_negative": 1,
       "news_headlines": [
         {
           "title": "South Korea’s Stock Market and the Nikkei 225 Sink More Than 4% as the AI Selloff Spreads From Wall Street. Here’s How Much of a Target-Date Fund Is in Samsung, SK Hynix and TSMC",
@@ -621,20 +612,20 @@
     "updated_at_iso": "2026-11-20T13:21:25.651242+09:00",
     "updated_at_kst": "2026.11.20 (금) 13:21 KST"
   },
-  "updated_at_iso": "2026-11-20T13:21:25.651242+09:00",
-  "updated_at_kst": "2026.11.20 (금) 13:21 KST",
+  "updated_at_iso": "2026-11-21T06:07:27.177387+09:00",
+  "updated_at_kst": "2026.11.21 (토) 06:07 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "미장 변동성 매우 높음 (VIX 28.4 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
+    "no_pick_reason": "미장 변동성 매우 높음 (VIX 38.5 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
     "traffic_light": {
-      "vix": 28.44,
+      "vix": 38.47,
       "light": "🔴",
       "label": "오늘은 쉬자",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
     },
-    "updated_at_iso": "2026-11-20T06:37:00.517081+09:00",
-    "updated_at_kst": "2026.11.20 (금) 06:37 KST"
+    "updated_at_iso": "2026-11-21T06:07:27.177387+09:00",
+    "updated_at_kst": "2026.11.21 (토) 06:07 KST"
   },
   "futures": {
     "picks": [
