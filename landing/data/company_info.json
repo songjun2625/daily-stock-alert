@@ -5,6 +5,14 @@
     "name": "산일전기",
     "sector": "전선·전력인프라"
   },
+  "207940": {
+    "ticker": "207940",
+    "market": "kr",
+    "name": "삼성바이오로직스",
+    "sector": "바이오·헬스케어",
+    "sector_momentum_5d_pct": 2.88,
+    "sector_status": "📈 호조"
+  },
   "267260": {
     "ticker": "267260",
     "market": "kr",
@@ -16,27 +24,19 @@
     "market": "kr",
     "name": "SK하이닉스",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -4.29,
+    "sector_momentum_5d_pct": -7.76,
     "sector_status": "❄️ 부진"
-  },
-  "207940": {
-    "ticker": "207940",
-    "market": "kr",
-    "name": "삼성바이오로직스",
-    "sector": "바이오·헬스케어",
-    "sector_momentum_5d_pct": 0.31,
-    "sector_status": "➡️ 보합"
   },
   "005930": {
     "ticker": "005930",
     "market": "kr",
     "name": "삼성전자",
     "sector": "반도체",
-    "sector_momentum_5d_pct": -4.29,
+    "sector_momentum_5d_pct": -7.76,
     "sector_status": "❄️ 부진"
   },
   "_meta": {
-    "generated_at_iso": "2026-11-20T06:37:01+09:00",
+    "generated_at_iso": "2026-11-20T13:21:29+09:00",
     "tickers_count": 5,
     "dart_enabled": false
   }
