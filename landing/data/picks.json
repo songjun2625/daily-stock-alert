@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 26.62,
+      "value": 26.36,
       "label": "위험",
       "light": "🔴",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
@@ -120,116 +120,6 @@
             {
               "name": "RSI 30~45 구간",
               "points": 20
-            }
-          ],
-          "hold_days": 5
-        }
-      },
-      {
-        "ticker": "000660",
-        "name": "SK하이닉스",
-        "sector": "반도체",
-        "price": 1158000,
-        "change_pct_1d": 6.728110599078341,
-        "market_cap": 816590723481600.0,
-        "operating_margin": 0.745,
-        "revenue_growth": 3.279,
-        "pe_ratio": null,
-        "drawdown_52w": 0.6032027840224701,
-        "rsi": 42.26804003041903,
-        "volume_spike": false,
-        "macd_golden_cross": true,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 137.0,
-        "reasons": [
-          "RSI 42(과매도 반등 후보)",
-          "MACD 골든크로스",
-          "영업이익률 74%",
-          "매출 성장 +328%"
-        ],
-        "entry_low": 1089100,
-        "entry_high": 1207214,
-        "target": 1423757,
-        "stoploss": 1010357,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 74% / RSI 42 반등 신호",
-          "thesis": "SK하이닉스(000660)는 매출 성장률 328% · 영업이익률 74%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 60% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "74%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "328%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "42",
-              "ok": true,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-60%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "✓",
-              "ok": true,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            },
-            {
-              "name": "MACD 골든크로스",
-              "points": 10
             }
           ],
           "hold_days": 5
@@ -449,6 +339,149 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "000660",
+        "name": "SK하이닉스",
+        "sector": "반도체",
+        "price": 1158000,
+        "change_pct_1d": 6.728110599078341,
+        "market_cap": 816590723481600.0,
+        "operating_margin": 0.745,
+        "revenue_growth": 3.279,
+        "pe_ratio": null,
+        "drawdown_52w": 0.6032027840224701,
+        "rsi": 42.26804003041903,
+        "volume_spike": false,
+        "macd_golden_cross": true,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 127.0,
+        "reasons": [
+          "RSI 42(과매도 반등 후보)",
+          "MACD 골든크로스",
+          "영업이익률 74%",
+          "매출 성장 +328%"
+        ],
+        "entry_low": 1089100,
+        "entry_high": 1207214,
+        "target": 1423757,
+        "stoploss": 1010357,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 74% / RSI 42 반등 신호",
+          "thesis": "SK하이닉스(000660)는 매출 성장률 328% · 영업이익률 74%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 60% 떨어진 상태에서 RSI 42로 약세 구간(반등 가능) 구간이며, MACD 골든크로스(추세 전환 신호)가 막 발생해 단기 반등 모멘텀이 형성됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "74%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "328%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "42",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-60%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "✓",
+              "ok": true,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            },
+            {
+              "name": "MACD 골든크로스",
+              "points": 10
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 137.0,
+        "news_boost": -10.0,
+        "news_positive": 2,
+        "news_negative": 2,
+        "news_headlines": [
+          {
+            "title": "Micron Just Hit a $700 Ceiling, Caught a Downgrade, and Is Down 10% Today. Is MU a Toxic Stock or a Prime Bargain?",
+            "link": "https://247wallst.com/investing/2026/11/24/micron-just-hit-a-700-ceiling-caught-a-downgrade-and-is-down-10-today-is-mu-a-toxic-stock-or-a-prime-bargain/",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "downgrade"
+            ]
+          },
+          {
+            "title": "Micron Stock Is Counting on a Buyback Bounce. Why It’s No Slam Dunk.",
+            "link": "https://www.barrons.com/articles/micron-stock-buyback-4b2a8026?siteid=yhoof2&yptr=yahoo",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK hynix Stocks Rise 6.73% as Huang's Return Lifts Seoul's HBM Leader",
+            "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-rise-6-174140838.html",
+            "score": 5,
+            "positive": [
+              "HBM"
+            ],
+            "negative": []
+          }
+        ]
       }
     ],
     "quant_pick": {
@@ -469,7 +502,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 120.0,
+      "score": 130.0,
       "reasons": [
         "RSI 41(과매도 반등 후보)",
         "영업이익률 46%",
@@ -556,50 +589,48 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 125.0,
-      "news_boost": -5.0,
-      "news_positive": 1,
-      "news_negative": 1,
+      "score_original": 120.0,
+      "news_boost": 10.0,
+      "news_positive": 2,
+      "news_negative": 0,
       "news_headlines": [
         {
-          "title": "Korean Semiconductor Stocks After The Selloff With Samsung Electronics In Focus",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/korean-semiconductor-stocks-selloff-samsung-080741244.html",
-          "score": -10,
-          "positive": [],
-          "negative": [
-            "Sell"
-          ]
-        },
-        {
-          "title": "Can Samsung and SK Hynix Buybacks Stop Korea's $115 Billion Selloff?",
-          "link": "https://beincrypto.com/samsung-sk-hynix-buybacks-korea-selloff/",
-          "score": -5,
+          "title": "Micron Stock Is Counting on a Buyback Bounce. Why It’s No Slam Dunk.",
+          "link": "https://www.barrons.com/articles/micron-stock-buyback-4b2a8026?siteid=yhoof2&yptr=yahoo",
+          "score": 5,
           "positive": [
             "Buy"
           ],
-          "negative": [
-            "Sell"
-          ]
+          "negative": []
+        },
+        {
+          "title": "준감위 \"삼성전자 주주환원 결정, 준법 위반·이해상충 아냐\"(종합)",
+          "link": "https://www.yna.co.kr/view/AKR20261124122351003",
+          "score": 5,
+          "positive": [
+            "주주환원"
+          ],
+          "negative": []
         }
       ]
     },
     "updated_at_iso": "2026-11-24T16:07:12.971649+09:00",
     "updated_at_kst": "2026.11.24 (화) 16:07 KST"
   },
-  "updated_at_iso": "2026-11-24T16:07:12.971649+09:00",
-  "updated_at_kst": "2026.11.24 (화) 16:07 KST",
+  "updated_at_iso": "2026-11-25T08:01:36.981620+09:00",
+  "updated_at_kst": "2026.11.25 (수) 08:01 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "미장 변동성 매우 높음 (VIX 26.6 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
+    "no_pick_reason": "미장 변동성 매우 높음 (VIX 26.4 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
     "traffic_light": {
-      "vix": 26.62,
+      "vix": 26.36,
       "light": "🔴",
       "label": "오늘은 쉬자",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
     },
-    "updated_at_iso": "2026-11-24T09:53:27.177253+09:00",
-    "updated_at_kst": "2026.11.24 (화) 09:53 KST"
+    "updated_at_iso": "2026-11-25T08:01:36.981620+09:00",
+    "updated_at_kst": "2026.11.25 (수) 08:01 KST"
   },
   "futures": {
     "picks": [
