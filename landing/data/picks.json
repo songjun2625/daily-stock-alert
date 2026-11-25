@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 26.36,
+      "value": 28.29,
       "label": "위험",
       "light": "🔴",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
@@ -20,135 +20,6 @@
   },
   "kr": {
     "picks": [
-      {
-        "ticker": "005930",
-        "name": "삼성전자",
-        "sector": "반도체",
-        "price": 171000,
-        "change_pct_1d": -9.714889123548042,
-        "market_cap": 1113539594944512.0,
-        "operating_margin": 0.46132,
-        "revenue_growth": 1.269,
-        "pe_ratio": null,
-        "drawdown_52w": 0.5195687497382518,
-        "rsi": 34.025623507744626,
-        "volume_spike": false,
-        "macd_golden_cross": false,
-        "ma_aligned_up": false,
-        "foreign_streak": 0,
-        "institution_streak": 0,
-        "earnings_surprise": null,
-        "score": 127.0,
-        "reasons": [
-          "RSI 34(과매도 반등 후보)",
-          "영업이익률 46%",
-          "매출 성장 +127%"
-        ],
-        "entry_low": 162422,
-        "entry_high": 177127,
-        "target": 204084,
-        "stoploss": 152620,
-        "narrative": {
-          "one_liner": "반도체 영업이익률 46% / RSI 34 반등 신호",
-          "thesis": "삼성전자(005930)는 매출 성장률 127% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 52% 떨어진 상태에서 RSI 34로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
-          "signals": [
-            {
-              "label": "영업이익률",
-              "value": "46%",
-              "ok": true,
-              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
-            },
-            {
-              "label": "매출 성장",
-              "value": "127%",
-              "ok": true,
-              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
-            },
-            {
-              "label": "RSI (과매도 지수)",
-              "value": "34",
-              "ok": true,
-              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
-            },
-            {
-              "label": "52주 고점 대비",
-              "value": "-52%",
-              "ok": false,
-              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
-            },
-            {
-              "label": "MACD 골든크로스",
-              "value": "—",
-              "ok": false,
-              "explain": "추세 전환의 첫 신호."
-            },
-            {
-              "label": "5/20일선 정배열",
-              "value": "—",
-              "ok": false,
-              "explain": "단기·중기 추세선 모두 상승 시작."
-            },
-            {
-              "label": "거래량 1.5배+",
-              "value": "—",
-              "ok": false,
-              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
-            },
-            {
-              "label": "외국인 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
-            },
-            {
-              "label": "기관 연속 순매수",
-              "value": "0일",
-              "ok": false,
-              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
-            }
-          ],
-          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
-          "score_breakdown": [
-            {
-              "name": "영업이익률 ≥10%",
-              "points": 62.5
-            },
-            {
-              "name": "매출 성장 ≥5%",
-              "points": 37.5
-            },
-            {
-              "name": "RSI 30~45 구간",
-              "points": 20
-            }
-          ],
-          "hold_days": 5
-        },
-        "score_original": 132.0,
-        "news_boost": -5.0,
-        "news_positive": 1,
-        "news_negative": 1,
-        "news_headlines": [
-          {
-            "title": "SoftBank Shares Drop 10% as Samsung and SK Hynix Fall Over 7% in AI Sell Off",
-            "link": "https://beincrypto.com/softbank-shares-drop-samsung-sk-hynix/",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "Micron Stock Is Counting on a Buyback Bounce. Why It’s No Slam Dunk.",
-            "link": "https://www.barrons.com/articles/micron-stock-buyback-4b2a8026?siteid=yhoof2&yptr=yahoo",
-            "score": 5,
-            "positive": [
-              "Buy"
-            ],
-            "negative": []
-          }
-        ]
-      },
       {
         "ticker": "196170",
         "name": "알테오젠",
@@ -363,6 +234,144 @@
           ],
           "hold_days": 5
         }
+      },
+      {
+        "ticker": "005930",
+        "name": "삼성전자",
+        "sector": "반도체",
+        "price": 171000,
+        "change_pct_1d": -9.714889123548042,
+        "market_cap": 1113539594944512.0,
+        "operating_margin": 0.46132,
+        "revenue_growth": 1.269,
+        "pe_ratio": null,
+        "drawdown_52w": 0.5195687497382518,
+        "rsi": 34.025623507744626,
+        "volume_spike": false,
+        "macd_golden_cross": false,
+        "ma_aligned_up": false,
+        "foreign_streak": 0,
+        "institution_streak": 0,
+        "earnings_surprise": null,
+        "score": 122.0,
+        "reasons": [
+          "RSI 34(과매도 반등 후보)",
+          "영업이익률 46%",
+          "매출 성장 +127%"
+        ],
+        "entry_low": 162422,
+        "entry_high": 177127,
+        "target": 204084,
+        "stoploss": 152620,
+        "narrative": {
+          "one_liner": "반도체 영업이익률 46% / RSI 34 반등 신호",
+          "thesis": "삼성전자(005930)는 매출 성장률 127% · 영업이익률 46%로 꾸준히 돈을 잘 버는 회사입니다. 52주 고점 대비 52% 떨어진 상태에서 RSI 34로 과매도(반등 임박) 구간이며, 기술적·펀더멘털 신호 조합으로 단기 진입 후보로 선정됐습니다.",
+          "signals": [
+            {
+              "label": "영업이익률",
+              "value": "46%",
+              "ok": true,
+              "explain": "매출 100원 중 이만큼이 이익. 10% 이상이면 KR 평균 이상 수익성."
+            },
+            {
+              "label": "매출 성장",
+              "value": "127%",
+              "ok": true,
+              "explain": "전년 대비 매출 성장률. 5% 이상이면 성장 기업."
+            },
+            {
+              "label": "RSI (과매도 지수)",
+              "value": "34",
+              "ok": true,
+              "explain": "30~45 구간이 스윙 진입에 좋은 저평가 구간."
+            },
+            {
+              "label": "52주 고점 대비",
+              "value": "-52%",
+              "ok": false,
+              "explain": "좋은 회사가 -10~-35% 빠지면 '세일 중'."
+            },
+            {
+              "label": "MACD 골든크로스",
+              "value": "—",
+              "ok": false,
+              "explain": "추세 전환의 첫 신호."
+            },
+            {
+              "label": "5/20일선 정배열",
+              "value": "—",
+              "ok": false,
+              "explain": "단기·중기 추세선 모두 상승 시작."
+            },
+            {
+              "label": "거래량 1.5배+",
+              "value": "—",
+              "ok": false,
+              "explain": "5일 평균 대비 1.5배+ 거래 → 큰손 자금 유입."
+            },
+            {
+              "label": "외국인 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "외국인은 시장 방향성을 가장 빠르게 반영."
+            },
+            {
+              "label": "기관 연속 순매수",
+              "value": "0일",
+              "ok": false,
+              "explain": "연기금·자산운용사 자금 유입은 안정적 상승 동력."
+            }
+          ],
+          "risk": "고점 대비 큰 폭 하락한 종목 — 추가 하락 리스크 있음. 손절 라인 엄수.",
+          "score_breakdown": [
+            {
+              "name": "영업이익률 ≥10%",
+              "points": 62.5
+            },
+            {
+              "name": "매출 성장 ≥5%",
+              "points": 37.5
+            },
+            {
+              "name": "RSI 30~45 구간",
+              "points": 20
+            }
+          ],
+          "hold_days": 5
+        },
+        "score_original": 127.0,
+        "news_boost": -5.0,
+        "news_positive": 1,
+        "news_negative": 1,
+        "news_headlines": [
+          {
+            "title": "Qualcomm vs. Sandisk: Which Technology Stock Is a Better Buy for 2027?",
+            "link": "https://www.fool.com/coverage/better-buy/2026/11/25/qualcomm-vs-sandisk-which-technology-stock-is-a-better-buy-for-2027/",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "Broadcom vs. Qualcomm: Which Technology Stock Is a Better Buy for 2027?",
+            "link": "https://www.fool.com/coverage/better-buy/2026/11/25/broadcom-vs-qualcomm-which-technology-stock-is-a-better-buy-for-2027/",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SoftBank Shares Drop 10% as Samsung and SK Hynix Fall Over 7% in AI Sell Off",
+            "link": "https://beincrypto.com/softbank-shares-drop-samsung-sk-hynix/",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
+          }
+        ]
       },
       {
         "ticker": "000660",
@@ -612,20 +621,20 @@
     "updated_at_iso": "2026-11-25T14:42:22.250280+09:00",
     "updated_at_kst": "2026.11.25 (수) 14:42 KST"
   },
-  "updated_at_iso": "2026-11-25T14:42:22.250280+09:00",
-  "updated_at_kst": "2026.11.25 (수) 14:42 KST",
+  "updated_at_iso": "2026-11-26T07:34:06.792387+09:00",
+  "updated_at_kst": "2026.11.26 (목) 07:34 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "미장 변동성 매우 높음 (VIX 26.4 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
+    "no_pick_reason": "미장 변동성 매우 높음 (VIX 28.3 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
     "traffic_light": {
-      "vix": 26.36,
+      "vix": 28.29,
       "light": "🔴",
       "label": "오늘은 쉬자",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
     },
-    "updated_at_iso": "2026-11-25T08:01:36.981620+09:00",
-    "updated_at_kst": "2026.11.25 (수) 08:01 KST"
+    "updated_at_iso": "2026-11-26T07:34:06.792387+09:00",
+    "updated_at_kst": "2026.11.26 (목) 07:34 KST"
   },
   "futures": {
     "picks": [
