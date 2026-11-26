@@ -7,7 +7,7 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 28.29,
+      "value": 26.8,
       "label": "위험",
       "light": "🔴",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
@@ -358,7 +358,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 122.0,
+        "score": 117.0,
         "reasons": [
           "RSI 39(과매도 반등 후보)",
           "영업이익률 74%",
@@ -444,14 +444,32 @@
           ],
           "hold_days": 5
         },
-        "score_original": 117.0,
-        "news_boost": 5.0,
+        "score_original": 122.0,
+        "news_boost": -5.0,
         "news_positive": 1,
-        "news_negative": 0,
+        "news_negative": 1,
         "news_headlines": [
           {
-            "title": "Asian tech stocks jump as bargain buyers boost battered AI trade",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-jump-bargain-030316035.html",
+            "title": "4 Memory and Storage Stocks Cut by More Than 30% That I'd Buy Now and Hold for the Next Decade",
+            "link": "https://www.fool.com/investing/2026/11/26/4-memory-and-storage-stocks-cut-by-more-than-30-that-i-d-buy-now-and-hold-for-the-next-decade/",
+            "score": 5,
+            "positive": [
+              "Buy"
+            ],
+            "negative": []
+          },
+          {
+            "title": "SK hynix Just Hit a New 52-Week Low After Sinking 9% in a Week. Is the Selling Overdone?",
+            "link": "https://www.tikr.com/blog/sk-hynix-just-hit-a-new-52-week-low-after-sinking-9-in-a-week-is-the-selling-overdone?ref=yahoofinance&tlnk=yf-261126-ww3x89g9",
+            "score": -10,
+            "positive": [],
+            "negative": [
+              "Sell"
+            ]
+          },
+          {
+            "title": "MU, SNDK, SKHY Jump As Nvidia Tests Kioxia Memory Fix — Analyst Presses Memory Giants For ‘Massive’ Buybacks",
+            "link": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhy-nvidia-kioxia-memory-fix-analyst-memory-giants-buybacks/cNbxQFgR9ZK",
             "score": 5,
             "positive": [
               "Buy"
@@ -479,7 +497,7 @@
       "foreign_streak": 0,
       "institution_streak": 0,
       "earnings_surprise": null,
-      "score": 112.0,
+      "score": 107.0,
       "reasons": [
         "RSI 36(과매도 반등 후보)",
         "영업이익률 46%",
@@ -566,7 +584,7 @@
         "hold_days": 5
       },
       "quant_score": 195.0,
-      "score_original": 117.0,
+      "score_original": 112.0,
       "news_boost": -5.0,
       "news_positive": 1,
       "news_negative": 1,
@@ -581,42 +599,33 @@
           "negative": []
         },
         {
-          "title": "Qualcomm vs. Sandisk: Which Technology Stock Is a Better Buy for 2027?",
-          "link": "https://www.fool.com/coverage/better-buy/2026/11/25/qualcomm-vs-sandisk-which-technology-stock-is-a-better-buy-for-2027/",
-          "score": 5,
-          "positive": [
-            "Buy"
-          ],
-          "negative": []
-        },
-        {
-          "title": "Broadcom vs. Qualcomm: Which Technology Stock Is a Better Buy for 2027?",
-          "link": "https://www.fool.com/coverage/better-buy/2026/11/25/broadcom-vs-qualcomm-which-technology-stock-is-a-better-buy-for-2027/",
-          "score": 5,
-          "positive": [
-            "Buy"
-          ],
-          "negative": []
+          "title": "삼전닉스 주가 가를 변수…\"中 메모리 수요 줄고 美 규제 강화\"",
+          "link": "https://www.hankyung.com/article/2026112610286",
+          "score": -10,
+          "positive": [],
+          "negative": [
+            "규제 강화"
+          ]
         }
       ]
     },
     "updated_at_iso": "2026-11-26T14:29:49.390804+09:00",
     "updated_at_kst": "2026.11.26 (목) 14:29 KST"
   },
-  "updated_at_iso": "2026-11-26T14:29:49.390804+09:00",
-  "updated_at_kst": "2026.11.26 (목) 14:29 KST",
+  "updated_at_iso": "2026-11-27T07:22:03.017474+09:00",
+  "updated_at_kst": "2026.11.27 (금) 07:22 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "미장 변동성 매우 높음 (VIX 28.3 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
+    "no_pick_reason": "미장 변동성 매우 높음 (VIX 26.8 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
     "traffic_light": {
-      "vix": 28.29,
+      "vix": 26.8,
       "light": "🔴",
       "label": "오늘은 쉬자",
       "summary": "변동성 매우 높음 — 신규 진입 자제"
     },
-    "updated_at_iso": "2026-11-26T07:34:06.792387+09:00",
-    "updated_at_kst": "2026.11.26 (목) 07:34 KST"
+    "updated_at_iso": "2026-11-27T07:22:03.017474+09:00",
+    "updated_at_kst": "2026.11.27 (금) 07:22 KST"
   },
   "futures": {
     "picks": [
