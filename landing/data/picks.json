@@ -7,10 +7,10 @@
       "summary": "한국장 변동성 안정"
     },
     "vix": {
-      "value": 26.8,
-      "label": "위험",
-      "light": "🔴",
-      "summary": "변동성 매우 높음 — 신규 진입 자제"
+      "value": 23.81,
+      "label": "주의",
+      "light": "🟡",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     }
   },
   "runtime": {
@@ -148,7 +148,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 132.0,
+        "score": 142.0,
         "reasons": [
           "RSI 43(과매도 반등 후보)",
           "MACD 골든크로스",
@@ -239,35 +239,26 @@
           ],
           "hold_days": 5
         },
-        "score_original": 137.0,
-        "news_boost": -5.0,
-        "news_positive": 1,
-        "news_negative": 1,
+        "score_original": 132.0,
+        "news_boost": 10.0,
+        "news_positive": 2,
+        "news_negative": 0,
         "news_headlines": [
           {
-            "title": "4 Memory and Storage Stocks Cut by More Than 30% That I'd Buy Now and Hold for the Next Decade",
-            "link": "https://www.fool.com/investing/2026/11/26/4-memory-and-storage-stocks-cut-by-more-than-30-that-i-d-buy-now-and-hold-for-the-next-decade/",
+            "title": "Micron Faces New AI Memory Threat as Huawei Develops HBM Chip",
+            "link": "https://finance.yahoo.com/technology/ai/articles/micron-faces-ai-memory-threat-171328560.html",
             "score": 5,
             "positive": [
-              "Buy"
+              "HBM"
             ],
             "negative": []
           },
           {
-            "title": "SK hynix Just Hit a New 52-Week Low After Sinking 9% in a Week. Is the Selling Overdone?",
-            "link": "https://www.tikr.com/blog/sk-hynix-just-hit-a-new-52-week-low-after-sinking-9-in-a-week-is-the-selling-overdone?ref=yahoofinance&tlnk=yf-261126-ww3x89g9",
-            "score": -10,
-            "positive": [],
-            "negative": [
-              "Sell"
-            ]
-          },
-          {
-            "title": "MU, SNDK, SKHY Jump As Nvidia Tests Kioxia Memory Fix — Analyst Presses Memory Giants For ‘Massive’ Buybacks",
-            "link": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhy-nvidia-kioxia-memory-fix-analyst-memory-giants-buybacks/cNbxQFgR9ZK",
+            "title": "David Tepper, George Soros and 2 Other Famous Investors Own Micron. Here’s Who Bought and Sold Recently",
+            "link": "https://www.tikr.com/blog/micron-stock-david-tepper-george-soros-investors?ref=yahoofinance&tlnk=yf-261127-3fj98j3p",
             "score": 5,
             "positive": [
-              "Buy"
+              "MOU"
             ],
             "negative": []
           }
@@ -401,7 +392,7 @@
         "foreign_streak": 0,
         "institution_streak": 0,
         "earnings_surprise": null,
-        "score": 122.0,
+        "score": 127.0,
         "reasons": [
           "RSI 38(과매도 반등 후보)",
           "영업이익률 46%",
@@ -487,17 +478,17 @@
           ],
           "hold_days": 5
         },
-        "score_original": 117.0,
+        "score_original": 122.0,
         "news_boost": 5.0,
         "news_positive": 1,
         "news_negative": 0,
         "news_headlines": [
           {
-            "title": "Asian tech stocks jump as bargain buyers boost battered AI trade",
-            "link": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-jump-bargain-030316035.html",
+            "title": "Micron Faces New AI Memory Threat as Huawei Develops HBM Chip",
+            "link": "https://finance.yahoo.com/technology/ai/articles/micron-faces-ai-memory-threat-171328560.html",
             "score": 5,
             "positive": [
-              "Buy"
+              "HBM"
             ],
             "negative": []
           }
@@ -613,20 +604,20 @@
     "updated_at_iso": "2026-11-27T14:24:22.556352+09:00",
     "updated_at_kst": "2026.11.27 (금) 14:24 KST"
   },
-  "updated_at_iso": "2026-11-27T14:24:22.556352+09:00",
-  "updated_at_kst": "2026.11.27 (금) 14:24 KST",
+  "updated_at_iso": "2026-11-28T06:58:44.587958+09:00",
+  "updated_at_kst": "2026.11.28 (토) 06:58 KST",
   "us": {
     "picks": [],
     "quant_pick": null,
-    "no_pick_reason": "미장 변동성 매우 높음 (VIX 26.8 > 25) — 신규 진입 자제 권장. 오늘은 미추천",
+    "no_pick_reason": "오늘 미장에서 추천 임계(80점)를 넘는 종목 없음 (최고 0점). 약한 신호로 무리하게 진입하지 않습니다",
     "traffic_light": {
-      "vix": 26.8,
-      "light": "🔴",
-      "label": "오늘은 쉬자",
-      "summary": "변동성 매우 높음 — 신규 진입 자제"
+      "vix": 23.81,
+      "light": "🟡",
+      "label": "조심해서 매수",
+      "summary": "변동성 다소 높음 — 평소의 70% 사이즈로"
     },
-    "updated_at_iso": "2026-11-27T07:22:03.017474+09:00",
-    "updated_at_kst": "2026.11.27 (금) 07:22 KST"
+    "updated_at_iso": "2026-11-28T06:58:44.587958+09:00",
+    "updated_at_kst": "2026.11.28 (토) 06:58 KST"
   },
   "futures": {
     "picks": [
